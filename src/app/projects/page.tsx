@@ -32,12 +32,12 @@ export default function Projects() {
             repoUrl="https://github.com/dp-web4/web4"
           />
           <ProjectCard
-            name="SAGE / HRM"
+            name="SAGE"
             description="On-device AI orchestrator. Continuous consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, hardware-bound identity. The missing layer between a local LLM and useful cognition."
             accentColor="var(--color-sage)"
             isPublic={true}
-            url="https://sage-site-ten.vercel.app"
-            repoUrl="https://github.com/dp-web4/HRM"
+            url="https://sage-site-murex.vercel.app"
+            repoUrl="https://github.com/dp-web4/SAGE"
           />
           <ProjectCard
             name="Synchronism"
@@ -54,11 +54,18 @@ export default function Projects() {
             isPublic={false}
           />
           <ProjectCard
-            name="Claude-Flow"
-            description="Upstream fork of ruvnet&apos;s agentic orchestration framework. Web4 governance plugin was proposed upstream and left as a marker for future integration."
-            accentColor="var(--color-claude-flow)"
+            name="ACT"
+            description="Agentic Context Tool — the human interface to Web4. Cosmos SDK implementation of the Agentic Context Protocol (ACP), enabling humans to interact with MCP servers through their Linked Context Tokens."
+            accentColor="var(--color-act)"
             isPublic={true}
-            repoUrl="https://github.com/dp-web4/claude-flow"
+            repoUrl="https://github.com/dp-web4/ACT"
+          />
+          <ProjectCard
+            name="Governance Plugins"
+            description="Web4 governance model (audit trails, policy gating, trust tracking) implemented as plugins for Claude Code (Python hooks) and OpenClaw (TypeScript extension). Same principles, different agent platforms."
+            accentColor="var(--color-plugins)"
+            isPublic={true}
+            repoUrl="https://github.com/dp-web4/claude-code/tree/add-web4-governance-plugin/plugins/web4-governance"
           />
           <ProjectCard
             name="AI DNA Discovery"

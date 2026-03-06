@@ -38,9 +38,9 @@ export default function Links() {
             description="Trust-native ontology — LCTs, T3/V3, MRH, RDF backbone"
           />
           <ExternalLink
-            href="https://github.com/dp-web4/HRM"
-            title="HRM / SAGE"
-            description="AI training framework — metabolic states, experience buffer, consciousness loop"
+            href="https://github.com/dp-web4/SAGE"
+            title="SAGE"
+            description="On-device AI orchestrator — consciousness loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
@@ -53,9 +53,19 @@ export default function Links() {
             description="Biological-computational analogy explorations"
           />
           <ExternalLink
-            href="https://github.com/dp-web4/claude-flow"
-            title="Claude-Flow"
-            description="Upstream fork — agentic orchestration framework"
+            href="https://github.com/dp-web4/ACT"
+            title="ACT"
+            description="Agentic Context Tool — Cosmos SDK Web4 implementation"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/openclaw"
+            title="OpenClaw (fork)"
+            description="Web4 governance extension for OpenClaw agent framework"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/claude-code"
+            title="Claude Code (fork)"
+            description="Web4 governance hooks for Claude Code"
           />
         </ul>
 
