@@ -26,7 +26,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. Lifelong Capability Tokens (LCTs), T3/V3 trust tensors, Markov Relevancy Horizons, ATP/ADP resource cycles — all backed by RDF triples. The shared language everything else speaks."
+            description="Trust-native ontology. Linked Context Tokens (LCTs), T3/V3 trust tensors, Markov Relevancy Horizons, ATP/ADP resource cycles — all backed by RDF triples. The shared language everything else speaks."
             accentColor="var(--color-web4)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/web4"
