@@ -19,9 +19,9 @@ export default function Links() {
             description="On-device AI orchestrator — consciousness loop, metabolic states, hardware-bound identity"
           />
           <ExternalLink
-            href="https://4-life-phi.vercel.app"
+            href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="The human side of running an AI research lab"
+            description="Trust-native society research prototype — agents, ATP, karma, Web4 in miniature"
           />
         </ul>
 

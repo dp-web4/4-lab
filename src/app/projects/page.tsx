@@ -76,10 +76,10 @@ export default function Projects() {
           />
           <ProjectCard
             name="4-Life"
-            description="Explainer site for dp-web4&apos;s broader research life — the human side of running an AI research lab."
+            description="Research prototype exploring trust-native societies for humans and AI. Agents earn ATP, build trust, die, and are reborn with karma carried forward — a Web4 society in miniature."
             accentColor="var(--color-4life)"
             isPublic={true}
-            url="https://4-life-phi.vercel.app"
+            url="https://4-life-ivory.vercel.app"
           />
         </div>
 
