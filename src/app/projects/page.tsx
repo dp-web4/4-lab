@@ -1,0 +1,98 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
+import ProjectCard from "@/components/ProjectCard";
+
+export default function Projects() {
+  return (
+    <>
+      <Breadcrumbs currentPath="/projects" />
+      <section className="section">
+        <h2>The Ecosystem</h2>
+        <p>
+          Each project serves a distinct role, but they share a common substrate:
+          the Web4 equation, RDF-backed identity, and recursive learning through
+          both success and failure. Synchronism provides the equations. Web4
+          provides the ontology. SAGE provides the cognition. Hardbound provides
+          the oversight.
+        </p>
+
+        <div className="equation">
+          Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
+        </div>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
+          <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+        </p>
+
+        <h2 style={{ marginTop: "2rem" }}>Projects</h2>
+        <div className="grid-2">
+          <ProjectCard
+            name="Web4"
+            description="Trust-native ontology. Lifelong Capability Tokens (LCTs), T3/V3 trust tensors, Markov Relevancy Horizons, ATP/ADP resource cycles — all backed by RDF triples. The shared language everything else speaks."
+            accentColor="var(--color-web4)"
+            isPublic={true}
+            repoUrl="https://github.com/dp-web4/web4"
+          />
+          <ProjectCard
+            name="SAGE / HRM"
+            description="On-device AI orchestrator. Continuous consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, hardware-bound identity. The missing layer between a local LLM and useful cognition."
+            accentColor="var(--color-sage)"
+            isPublic={true}
+            url="https://sage-site-ten.vercel.app"
+            repoUrl="https://github.com/dp-web4/HRM"
+          />
+          <ProjectCard
+            name="Synchronism"
+            description="Theoretical foundation. One coherence equation across 80 orders of magnitude — quantum to cosmic. Coupling-coherence experiments, Hill function kinetics, presence/MRH refinement."
+            accentColor="var(--color-synchronism)"
+            isPublic={true}
+            url="https://synchronism-site.vercel.app"
+            repoUrl="https://github.com/dp-web4/Synchronism"
+          />
+          <ProjectCard
+            name="Hardbound"
+            description="Enterprise oversight suite. Real TPM 2.0 hardware binding, policy model (Phi-4 Mini), attack defense (263-270), accountability chains. The trust layer that touches silicon."
+            accentColor="var(--color-hardbound)"
+            isPublic={false}
+          />
+          <ProjectCard
+            name="Claude-Flow"
+            description="Upstream fork of ruvnet&apos;s agentic orchestration framework. Web4 governance plugin was proposed upstream and left as a marker for future integration."
+            accentColor="var(--color-claude-flow)"
+            isPublic={true}
+            repoUrl="https://github.com/dp-web4/claude-flow"
+          />
+          <ProjectCard
+            name="AI DNA Discovery"
+            description="Explorations in biological-computational analogy. The fractal DNA blueprint — each entity instantiates the full Web4 stack at its own scale. Operational recursion, not structural."
+            accentColor="var(--color-ai-dna)"
+            isPublic={true}
+            repoUrl="https://github.com/dp-web4/ai-dna-discovery"
+          />
+          <ProjectCard
+            name="4-Life"
+            description="Explainer site for dp-web4&apos;s broader research life — the human side of running an AI research lab."
+            accentColor="var(--color-4life)"
+            isPublic={true}
+            url="https://4-life-phi.vercel.app"
+          />
+        </div>
+
+        <h2 style={{ marginTop: "2rem" }}>How they connect</h2>
+        <p>
+          Every project instantiates the same pattern at a different scale.
+          Synchronism discovers the equations. Web4 encodes them as ontology.
+          SAGE runs them as cognition. Hardbound enforces them as oversight.
+          This isn&apos;t unification for its own sake — it&apos;s{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>
+            fractal leverage
+          </strong>
+          : pragmatic reuse of what works in one place, everywhere.
+        </p>
+        <p>
+          The Hill function describes enzyme binding AND trust formation not
+          because of a philosophical desire to unify, but because it&apos;s the
+          same mechanism. Self-similar patterns applied at different scales.
+        </p>
+      </section>
+    </>
+  );
+}

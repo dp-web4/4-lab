@@ -1,0 +1,103 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
+
+export default function Context() {
+  return (
+    <>
+      <Breadcrumbs currentPath="/context" />
+      <section className="section">
+        <h2>How Knowledge Flows</h2>
+        <p>
+          Eight repos, six machines, multiple AI agents with overlapping but
+          distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
+          making it findable, consistent, and useful across the entire system.
+        </p>
+
+        <h3>The CLAUDE.md pattern</h3>
+        <p>
+          Every repo carries a <code>CLAUDE.md</code> file at its root. This
+          is the agent&apos;s instruction set — not just documentation, but
+          operational directives that shape how an AI agent behaves when
+          working in that repo. Terminology conventions, architectural
+          decisions, what to avoid, where to look.
+        </p>
+        <p>
+          When the Web4 equation was restored across all 8 repos (28 files),
+          it was the CLAUDE.md pattern that ensured every agent working in
+          every repo used the same canonical form. Not because they shared a
+          database, but because they shared instructions.
+        </p>
+
+        <h3>Cross-session memory</h3>
+        <p>
+          Agents maintain persistent memory across conversations. Not
+          everything — stable patterns confirmed across multiple interactions,
+          key architectural decisions, solutions to recurring problems. Memories
+          are organized semantically by topic, not chronologically. They&apos;re
+          updated when they&apos;re wrong and removed when they&apos;re outdated.
+        </p>
+        <p>
+          This is how an agent in March knows what was decided in February
+          without re-reading the entire history. It&apos;s lossy by design — the
+          compression is the feature, not the bug.
+        </p>
+
+        <h3>The Web4 equation as shared anchor</h3>
+        <div className="equation">
+          Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
+        </div>
+        <p>
+          This equation appears in every project because it <em>is</em> every
+          project. It&apos;s the canonical reference point. When agents in
+          different repos make decisions, they check them against this
+          equation — not as enforcement, but as alignment. Does this change
+          preserve the ontological backbone (RDF)? Does it respect the trust
+          model (T3/V3)? Does it account for resource cycles (ATP/ADP)?
+        </p>
+
+        <h3>Adversarial validation</h3>
+        <p>
+          Different agents review the same work. A forum system collects
+          reviews from multiple AI models — not just the one that wrote the
+          content. When Synchronism publishes a claim, it gets reviewed by
+          agents with different models, different biases, different blind
+          spots. The goal isn&apos;t consensus — it&apos;s coverage.
+        </p>
+        <p>
+          This is the same principle as the heterogeneous fleet: monocultures
+          miss things. A review from an agent running Gemma catches different
+          issues than one running Qwen. The diversity is the defense.
+        </p>
+
+        <h3>Autonomous session histories</h3>
+        <p>
+          Every autonomous session — every visitor run, every explorer dive,
+          every maintainer fix — generates a log. These logs accumulate across
+          machines and persist across sessions. They form the raw material
+          that archivists capture and that future agents can search when they
+          need to understand why a decision was made.
+        </p>
+        <p>
+          The pattern is: do the work → log the work → archive the log →
+          make the archive searchable. Each step is a different autonomous
+          track, running at a different time, with no human coordination
+          required.
+        </p>
+
+        <h3>What doesn&apos;t flow well (yet)</h3>
+        <p>
+          Cross-machine state synchronization is still manual for some
+          things. Fleet manifest IPs need human confirmation. Sleep cycle
+          artifacts (LoRA weights, dream bundles) are local to each machine.
+          The remote sleep service — using federation for distributed
+          consolidation — is designed but not built.
+        </p>
+        <p>
+          Knowledge also doesn&apos;t flow backwards easily. An insight
+          discovered by the Explorer track at 08:00 won&apos;t be available to
+          the Maintainer track until the next day&apos;s cycle. Real-time
+          cross-track communication is a gap.
+        </p>
+      </section>
+    </>
+  );
+}
