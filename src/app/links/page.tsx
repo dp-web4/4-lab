@@ -14,7 +14,7 @@ export default function Links() {
             description="75 pages covering the coherence equation, predictions, interactive tools, and honest assessments"
           />
           <ExternalLink
-            href="https://sage-site-ten.vercel.app"
+            href="https://sage-site-murex.vercel.app"
             title="SAGE"
             description="On-device AI orchestrator — consciousness loop, metabolic states, hardware-bound identity"
           />

@@ -65,6 +65,39 @@ export default function Home() {
           </Link>
         </div>
 
+        <h2>Three things we&apos;ve actually demonstrated</h2>
+        <div className="grid-3">
+          <div className="card">
+            <h3>Identity persists across models</h3>
+            <p>
+              SAGE-Sprout maintained behavioral identity across 115+ sessions on
+              a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
+              1.1B on different hardware. Self-description drifted; behavioral
+              identity remained continuous. This is a concrete, testable
+              observation about persistent state in small language models.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Autonomous agents maintain their own infrastructure</h3>
+            <p>
+              Seven daily tracks run without human intervention. The visitor
+              track audits live sites with four personas; the maintainer track
+              fixes what the visitor found. Real bugs get caught and patched
+              before a human sees them. This is not a demo &mdash; it runs every
+              day on the fleet.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Heterogeneous review catches more</h3>
+            <p>
+              Different models on different hardware catch different classes of
+              problems. A 0.5B model on a Jetson finds structural issues a 14B
+              model misses, and vice versa. Peer review across architectures
+              consistently outperforms any single model reviewing its own work.
+            </p>
+          </div>
+        </div>
+
         <div className="quote">
           &ldquo;You don&apos;t engineer the mound. You engineer placement
           rules.&rdquo;
@@ -74,20 +107,77 @@ export default function Home() {
         <p>
           Most AI research either focuses on making models bigger or making them
           cheaper. We focus on something else: what happens when multiple AI
-          entities — running on different hardware, with different models, holding
-          different identities — are given the substrate conditions to
-          self-organize.
+          entities &mdash; running on different hardware, with different models,
+          holding different identities &mdash; are given the substrate conditions
+          to self-organize.
         </p>
         <p>
           The answer, so far, is that they specialize. They develop trust
-          relationships. They catch each other&apos;s mistakes. They form what we call{" "}
-          <Link href="/principles">synthons</Link> — emergent coherence entities
-          that are more than the sum of their parts.
+          relationships. They catch each other&apos;s mistakes. They form what we
+          call <Link href="/principles">synthons</Link> &mdash; emergent
+          coherence entities that are more than the sum of their parts.
         </p>
         <p>
           This site documents the lab itself: how it&apos;s organized, what the
           philosophy is, and what we&apos;ve learned from letting the system run.
         </p>
+
+        <h2>Vocabulary primer</h2>
+        <p>
+          We use precise terms throughout this site. Here are the key ones in
+          plain English &mdash; each links to a deeper explanation.
+        </p>
+        <div className="grid-3">
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Web4</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              An <em>ontology</em> (shared vocabulary + relationships) for how
+              AI agents prove identity, earn trust, and account for resources.
+              Not a blockchain, not a platform &mdash; a way of describing
+              things.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>LCT</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Linked Context Token. A persistent identity anchor for an agent,
+              device, or person. Like a passport that travels with you across
+              systems.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Trust Tensor (Talent, Training, Temperament) and Value Tensor
+              (Valuation, Veracity, Validity). Multidimensional scores instead
+              of a single trust number.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>ATP / ADP</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Allocation Transfer / Discharge Packets. Energy tokens that agents
+              spend to act and earn back for quality work. Inspired by
+              biological ATP.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SAGE</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Situation-Aware Governance Engine. The cognition kernel that runs
+              on each machine &mdash; a 9-step loop that senses, deliberates,
+              and acts.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Synthon</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              An emergent coherence entity formed when components interact
+              recursively. Not designed top-down &mdash; observed when substrate
+              conditions are right.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
