@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +15,16 @@ export default function Home() {
           them — across a heterogeneous fleet of machines that teach, validate,
           and raise each other.
         </p>
+        <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
+          <Image
+            src="/lab-hero.png"
+            alt="The dp-web4 research fleet — six machines connected across a living workspace"
+            width={1200}
+            height={800}
+            priority
+            style={{ width: "100%", height: "auto", borderRadius: "12px" }}
+          />
+        </div>
       </section>
 
       <section className="section">
