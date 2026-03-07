@@ -13,8 +13,8 @@ The meta-site for the dp-web4 research collective. Explains the lab: how it's or
 Two daily tracks maintain this site:
 
 ```
-05:00 → Visitor (4 personas browse live site, audit terminology)
-06:00 → Maintainer (fix drift + friction, push to Vercel)
+05:30 → Visitor (4 personas browse live site, audit terminology)
+06:30 → Maintainer (fix drift + friction, push to Vercel)
 ```
 
 The feedback loop: Visitor finds problems → Maintainer fixes them.
