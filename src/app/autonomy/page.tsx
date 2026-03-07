@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Autonomy() {
@@ -26,7 +27,8 @@ export default function Autonomy() {
             <div className="timeline-time">04:00</div>
             <div className="timeline-title">Archivist</div>
             <div className="timeline-desc">
-              Captures session logs, research findings, and cross-repo state.
+              Captures session logs, research findings, and{" "}
+              <Link href="/context" style={{ color: "var(--color-accent)" }}>cross-repo state</Link>.
               Ensures nothing discovered yesterday is lost today.
             </div>
           </div>
@@ -42,7 +44,8 @@ export default function Autonomy() {
             <div className="timeline-time">05:00</div>
             <div className="timeline-title">Visitor</div>
             <div className="timeline-desc">
-              Four personas visit the public explainer sites as if encountering
+              Four personas visit the{" "}
+              <Link href="/links" style={{ color: "var(--color-accent)" }}>public explainer sites</Link> as if encountering
               them for the first time. Tests clarity, navigation, broken links,
               and whether the content makes sense to an outsider.
             </div>
@@ -127,8 +130,9 @@ export default function Autonomy() {
           Deep technical errors that require domain expertise. Subtle framing
           issues. Content that is technically correct but misleading. The
           visitor personas are good at surface-level quality but not at
-          validating the underlying research. That&apos;s what adversarial
-          validation and human review are for.
+          validating the underlying research. That&apos;s what{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>adversarial
+          validation</Link> and human review are for.
         </p>
         <p>
           The loop also has a tendency to suggest changes that aren&apos;t

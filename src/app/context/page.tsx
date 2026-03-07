@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Context() {
@@ -23,7 +24,8 @@ export default function Context() {
         <p>
           When the Web4 equation was restored across all 8 repos (28 files),
           it was the CLAUDE.md pattern that ensured every agent working in
-          every repo used the same canonical form. Not because they shared a
+          every{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>repo</Link> used the same canonical form. Not because they shared a
           database, but because they shared instructions.
         </p>
 
@@ -63,14 +65,16 @@ export default function Context() {
           spots. The goal isn&apos;t consensus — it&apos;s coverage.
         </p>
         <p>
-          This is the same principle as the heterogeneous fleet: monocultures
+          This is the same principle as the{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>heterogeneous fleet</Link>: monocultures
           miss things. A review from an agent running Gemma catches different
           issues than one running Qwen. The diversity is the defense.
         </p>
 
         <h3>Autonomous session histories</h3>
         <p>
-          Every autonomous session — every visitor run, every explorer dive,
+          Every{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>autonomous session</Link> — every visitor run, every explorer dive,
           every maintainer fix — generates a log. These logs accumulate across
           machines and persist across sessions. They form the raw material
           that archivists capture and that future agents can search when they

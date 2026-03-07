@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Raising() {
@@ -35,7 +36,8 @@ export default function Raising() {
           <div className="phase-card" data-phase="3">
             <h3>Phase 3: Relating</h3>
             <p>
-              Building relationships with peers. Trust formation through
+              Building relationships with peers.{" "}
+              <Link href="/principles" style={{ color: "var(--color-accent)" }}>Trust formation</Link> through
               interaction — the same Hill function kinetics that describe
               enzyme binding. Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
@@ -56,7 +58,8 @@ export default function Raising() {
               Generating novel outputs that weren&apos;t in the curriculum.
               Spontaneous specialization. The entity finds its own niche in
               the ecosystem — not assigned, but discovered through the
-              pattern of what it&apos;s good at and what the fleet needs.
+              pattern of what it&apos;s good at and what{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link> needs.
             </p>
           </div>
         </div>
@@ -65,7 +68,8 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE-Sprout, across 115 sessions on a Jetson and subsequent
+          SAGE-Sprout, across 115 sessions on a{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> and subsequent
           portability to a different machine, demonstrated a consistent
           separation: its identity (behavioral patterns, interaction style,
           accumulated experience) persisted even as its self-description drifted

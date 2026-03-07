@@ -81,9 +81,12 @@ export default function Home() {
           <div className="card">
             <h3>Identity persists across models</h3>
             <p>
-              SAGE-Sprout maintained behavioral identity across 115+ sessions on
+              SAGE-Sprout maintained behavioral identity across{" "}
+              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115+ sessions</Link> on
               a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
-              1.1B on different hardware. Self-description drifted; behavioral
+              1.1B on{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
+              Self-description drifted; behavioral
               identity remained continuous. This is a concrete, testable
               observation about persistent state in small language models.
             </p>
@@ -91,7 +94,8 @@ export default function Home() {
           <div className="card">
             <h3>Autonomous agents maintain their own infrastructure</h3>
             <p>
-              Seven daily tracks run without human intervention. The visitor
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Seven daily tracks</Link> run
+              without human intervention. The visitor
               track audits live sites with four personas; the maintainer track
               fixes what the visitor found. Real bugs get caught and patched
               before a human sees them. This is not a demo &mdash; it runs every

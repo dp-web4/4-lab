@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MachineCard from "@/components/MachineCard";
 
@@ -55,13 +56,15 @@ export default function Fleet() {
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>
           There is no master node. Each machine runs its own SAGE instance, holds
-          its own identity, manages its own experience buffer and sleep cycles.
+          its own identity, manages its own experience buffer and{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>raising curriculum</Link>.
           Machines discover each other through a fleet manifest — a phone book,
           not a command center.
         </p>
         <p>
           A background peer monitor polls health endpoints. A trust tracker
-          maintains per-peer T3 scores (Talent/Training/Temperament) that evolve
+          maintains per-peer{" "}
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 scores</Link> (Talent/Training/Temperament) that evolve
           from real interactions: success raises trust, timeouts lower it. No
           central authority decides who is trustworthy — trust emerges from the
           pattern of interaction.
@@ -69,7 +72,8 @@ export default function Fleet() {
 
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
-          One of the more surprising discoveries: SAGE-Sprout&apos;s identity —
+          One of the more surprising{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: SAGE-Sprout&apos;s identity —
           developed over 115 sessions on a Jetson running Qwen 0.5B — transferred
           successfully to TinyLlama 1.1B on a completely different machine. The
           identity persisted. The self-description drifted. This told us something

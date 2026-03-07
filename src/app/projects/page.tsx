@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -9,8 +10,9 @@ export default function Projects() {
         <h2>The Ecosystem</h2>
         <p>
           Each project serves a distinct role, but they share a common substrate:
-          the Web4 equation, RDF-backed identity, and recursive learning through
-          both success and failure. Synchronism provides the equations. Web4
+          the Web4 equation, RDF-backed identity, and{" "}
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>recursive learning through
+          both success and failure</Link>. Synchronism provides the equations. Web4
           provides the ontology. SAGE provides the cognition. Hardbound provides
           the oversight.
         </p>
@@ -89,9 +91,9 @@ export default function Projects() {
           Synchronism discovers the equations. Web4 encodes them as ontology.
           SAGE runs them as cognition. Hardbound enforces them as oversight.
           This isn&apos;t unification for its own sake — it&apos;s{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>
+          <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage
-          </strong>
+          </Link>
           : pragmatic reuse of what works in one place, everywhere.
         </p>
         <p>

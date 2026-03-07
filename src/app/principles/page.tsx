@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Principles() {
@@ -20,7 +21,9 @@ export default function Principles() {
               rules.&rdquo;
             </div>
             <div className="principle-text">
-              All of this — Web4, SAGE, the fleet, the autonomous cycles — is
+              All of this — Web4, SAGE,{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> — is
               pheromone field engineering. We build substrate conditions for
               emergence, not architecture of emergence itself. The synthon
               forms because the conditions are right, not because we designed
@@ -95,7 +98,8 @@ export default function Principles() {
               showed that trust thresholds are empirical, not derivable from
               first principles. That&apos;s a finding, not a failure. We
               document what didn&apos;t work alongside what did. Honest
-              assessment pages ship with every explainer site.
+              assessment pages ship with every{" "}
+              <Link href="/links" style={{ color: "var(--color-accent)" }}>explainer site</Link>.
             </div>
           </div>
 
