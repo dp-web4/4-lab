@@ -124,8 +124,13 @@ export default function Home() {
 
         <h2>Vocabulary primer</h2>
         <p>
-          We use precise terms throughout this site. Here are the key ones in
-          plain English &mdash; each links to a deeper explanation.
+          These terms weren&apos;t designed up front &mdash; they emerged from
+          the work itself. As the fleet ran, patterns repeated across machines
+          and repos until they needed names. The explainer sites for each
+          project go deeper:{" "}
+          <a href="https://4-life-ivory.vercel.app/" target="_blank" rel="noopener noreferrer">Web4 &amp; 4-Life</a>,{" "}
+          <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer">SAGE</a>,{" "}
+          <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer">Synchronism</a>.
         </p>
         <div className="grid-3">
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
