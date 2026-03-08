@@ -22,19 +22,19 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — dedicated AI accelerator"
-            model="Qwen 2.5 14B (local CUDA)"
+            model="Qwen 2.5 14B (transformers · LoRA)"
             role="High-performance inference, autonomous development sessions"
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 0.8B (local CUDA)"
+            model="Qwen 3.5 2B (ollama)"
             role="Edge AI, long-running SAGE identity host (115+ sessions)"
           />
           <MachineCard
             name="Legion"
-            hardware="Desktop, NVIDIA RTX 4090"
-            model="Qwen 2.5 14B (local CUDA)"
+            hardware="Laptop, NVIDIA RTX 4090 Mobile"
+            model="Phi-4 14B (ollama · LoRA)"
             role="Heavy computation, primary autonomous track host"
           />
           <MachineCard
