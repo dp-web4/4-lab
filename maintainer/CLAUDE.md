@@ -36,6 +36,36 @@ Also enforce:
 
 ## Daily Workflow
 
+### 0. Sync Fleet Model Manifest
+
+**Before anything else**, check whether the fleet page needs updating.
+
+The live model manifest lives at:
+`/mnt/c/exe/projects/ai-agents/SAGE/sage/federation/sage-fleet-models.json`
+
+Pull the latest SAGE repo first:
+```bash
+cd /mnt/c/exe/projects/ai-agents/SAGE && git pull
+```
+
+Then read `sage-fleet-models.json` and compare each machine's entry against what is currently in `../src/app/fleet/page.tsx`:
+
+- `model_display` — is the model name accurate?
+- `lora_capable` — is LoRA capability mentioned if true?
+- `backend` — is the backend (ollama/transformers) represented?
+- `hardware` — does it match the `hardware` field?
+- `role` — does the card role description still fit?
+
+**If anything has changed**: update `../src/app/fleet/page.tsx` MachineCard props to match the manifest. The manifest is the source of truth — the page follows it.
+
+Fields to map from manifest → MachineCard:
+- `hardware` → `hardware` prop
+- `model_display` + `backend` → `model` prop (e.g. "Qwen 2.5 14B (ollama)")
+- `lora_capable: true` → append "· LoRA" to model prop
+- `role` → `role` prop
+
+Log what you found (match or mismatch) in your session log under "Fleet Sync".
+
 ### 1. Gather Feedback
 
 ```bash
@@ -117,6 +147,11 @@ Write your session log to `logs/YYYY-MM-DD.md`:
 
 ```markdown
 # Maintainer Session — YYYY-MM-DD
+
+## Fleet Sync
+- Manifest checked: yes/no
+- Changes found: [machine: field changed] or "all current"
+- Page updated: yes/no
 
 ## Terminology Fixes
 - [file]: [wrong term] → [canonical term] — [context]
