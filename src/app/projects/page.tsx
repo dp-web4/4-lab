@@ -64,10 +64,14 @@ export default function Projects() {
           />
           <ProjectCard
             name="Governance Plugins"
-            description="Web4 governance model (audit trails, policy gating, trust tracking) implemented as plugins for Claude Code (Python hooks) and OpenClaw (TypeScript extension). Same principles, different agent platforms."
+            description="Web4 governance model (audit trails, policy gating, trust tracking) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM plugin), and Claude Code (Python hooks). Same principles, different substrates."
             accentColor="var(--color-plugins)"
             isPublic={true}
-            repoUrl="https://github.com/dp-web4/claude-code/tree/add-web4-governance-plugin/plugins/web4-governance"
+            links={[
+              { label: "OpenClaw", url: "https://github.com/dp-web4/moltbot/tree/web4-governance-complete/extensions/web4-governance" },
+              { label: "Claude Flow", url: "https://github.com/dp-web4/claude-flow/tree/main/v3/plugins/web4-governance" },
+              { label: "Claude Code", url: "https://github.com/dp-web4/claude-code/tree/add-web4-governance-plugin/plugins/web4-governance" },
+            ]}
           />
           <ProjectCard
             name="AI DNA Discovery"

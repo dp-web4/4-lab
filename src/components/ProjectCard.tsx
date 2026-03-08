@@ -5,6 +5,7 @@ interface ProjectCardProps {
   isPublic: boolean;
   url?: string;
   repoUrl?: string;
+  links?: { label: string; url: string }[];
 }
 
 export default function ProjectCard({
@@ -14,6 +15,7 @@ export default function ProjectCard({
   isPublic,
   url,
   repoUrl,
+  links,
 }: ProjectCardProps) {
   return (
     <div
@@ -34,13 +36,14 @@ export default function ProjectCard({
         </span>
       </div>
       <p>{description}</p>
-      {(url || repoUrl) && (
+      {(url || repoUrl || links) && (
         <div
           style={{
             display: "flex",
             gap: "0.75rem",
             marginTop: "0.75rem",
             fontSize: "0.8125rem",
+            flexWrap: "wrap",
           }}
         >
           {url && (
@@ -53,6 +56,11 @@ export default function ProjectCard({
               Repo →
             </a>
           )}
+          {links && links.map((link) => (
+            <a key={link.label} href={link.url} target="_blank" rel="noreferrer">
+              {link.label} →
+            </a>
+          ))}
         </div>
       )}
     </div>
