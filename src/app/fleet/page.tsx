@@ -77,11 +77,13 @@ export default function Fleet() {
           analysis. When it hits its ceiling, it stops.
         </p>
         <p>
-          The <strong>oversight pool</strong> (Account 2: CBP, Nomad) has continuous
-          availability with no documented weekly ceiling. It does review, planning,
-          documentation, and coordination — and it keeps running when synthesis is
-          at rest. Each session reads a shared log of what the collective has done
-          and what&apos;s blocked; each session writes its own entry.
+          The <strong>oversight pool</strong> (Account 2: CBP, Nomad) has a weekly
+          budget suited to lighter, sustained work — review, planning, documentation,
+          coordination. Used for what it&apos;s designed for, it maintains a presence
+          across the week. Used for synthesis-scale work, it burns fast. The pools
+          aren&apos;t defined by &ldquo;unlimited vs. limited&rdquo; — they&apos;re
+          defined by workload character. The budget shapes the role as much as the
+          role shapes the budget.
         </p>
         <p>
           The constraint forced a functional separation that mirrors what we&apos;re
