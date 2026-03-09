@@ -71,8 +71,12 @@ export default function Autonomy() {
             <div className="timeline-title">Explorer</div>
             <div className="timeline-desc">
               Deep research dives. Picks a queued topic, investigates it
-              thoroughly, writes up findings. Currently has 11 topics in queue.
-              This is where new knowledge enters the system.
+              thoroughly, writes up findings. This is where new knowledge enters
+              the system. The Explorer uses a persistent{" "}
+              <strong style={{ color: "var(--color-text-primary)" }}>NotebookLM notebook</strong>{" "}
+              that accumulates sources across sessions — papers, site pages,
+              experiment results — enabling multi-source synthesis that a single
+              WebFetch pass can&apos;t provide.
             </div>
           </div>
         </div>

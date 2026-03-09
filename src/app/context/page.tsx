@@ -87,6 +87,23 @@ export default function Context() {
           required.
         </p>
 
+        <h3>Persistent external knowledge accumulation</h3>
+        <p>
+          The{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Explorer track</Link>{" "}
+          maintains a persistent Google NotebookLM notebook — a growing
+          corpus of sources that accumulates across sessions. Papers added
+          during one exploration are available to the next. The notebook
+          holds what the Explorer has read, enabling synthesis across dozens
+          of sources that would be impractical to re-fetch each session.
+        </p>
+        <p>
+          This closed a loop we hadn&apos;t anticipated: the notebook was seeded
+          with the coupling-coherence experiment findings, then received the
+          compatibility-synthon experiment — the experiment that the first
+          one predicted. The notebook became both archive and participant.
+        </p>
+
         <h3>What doesn&apos;t flow well (yet)</h3>
         <p>
           Cross-machine state synchronization is still manual for some
