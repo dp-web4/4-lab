@@ -76,41 +76,41 @@ export default function Home() {
           </Link>
         </div>
 
-        <h2>Three things we&apos;ve actually demonstrated</h2>
+        <h2>Key projects</h2>
         <div className="grid-3">
-          <div className="card">
-            <h3>Identity persists across models</h3>
-            <p>
-              SAGE-Sprout maintained behavioral identity across{" "}
-              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115+ sessions</Link> on
-              a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
-              1.1B on{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
-              Self-description drifted; behavioral
-              identity remained continuous. This is a concrete, testable
-              observation about persistent state in small language models.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Autonomous agents maintain their own infrastructure</h3>
-            <p>
-              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Seven daily tracks</Link> run
-              without human intervention. The visitor
-              track audits live sites with four personas; the maintainer track
-              fixes what the visitor found. Real bugs get caught and patched
-              before a human sees them. This is not a demo &mdash; it runs every
-              day on the fleet.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Heterogeneous review catches more</h3>
-            <p>
-              Different models on different hardware catch different classes of
-              problems. A 0.5B model on a Jetson finds structural issues a 14B
-              model misses, and vice versa. Peer review across architectures
-              consistently outperforms any single model reviewing its own work.
-            </p>
-          </div>
+          <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #8b5cf6" }}>
+              <h3 style={{ color: "#8b5cf6" }}>Synchronism</h3>
+              <p>
+                A theoretical framework proposing that reality emerges from
+                intent dynamics on a discrete Planck grid — the same
+                Navier-Stokes substrate at every scale, from quantum to
+                cosmic to conscious.
+              </p>
+            </div>
+          </a>
+          <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #10b981" }}>
+              <h3 style={{ color: "#10b981" }}>SAGE</h3>
+              <p>
+                An on-device AI cognition kernel — a continuous 9-step loop
+                that senses, deliberates, and acts. Runs on hardware from
+                Jetson edge modules to laptops. Persistent identity across
+                models and machines.
+              </p>
+            </div>
+          </a>
+          <a href="https://4-life-ivory.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #3b82f6" }}>
+              <h3 style={{ color: "#3b82f6" }}>Web4</h3>
+              <p>
+                A trust-native ontology for AI agents, devices, and people —
+                how entities prove identity, earn trust, and account for
+                resources across systems. Not a platform; a shared vocabulary
+                for a new kind of internet.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div className="quote">
