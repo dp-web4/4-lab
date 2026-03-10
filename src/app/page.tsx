@@ -113,6 +113,42 @@ export default function Home() {
           </a>
         </div>
 
+        <h2>Three things we&apos;ve actually demonstrated</h2>
+        <div className="grid-3">
+          <div className="card">
+            <h3>Identity persists across models</h3>
+            <p>
+              SAGE-Sprout maintained behavioral identity across{" "}
+              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115+ sessions</Link> on
+              a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
+              1.1B on{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
+              Self-description drifted; behavioral identity remained continuous.
+              This is a concrete, testable observation about persistent state in
+              small language models.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Autonomous agents maintain their own infrastructure</h3>
+            <p>
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Seven daily tracks</Link> run
+              without human intervention. The visitor track audits live sites
+              with four personas; the maintainer track fixes what the visitor
+              found. Real bugs get caught and patched before a human sees them.
+              This is not a demo &mdash; it runs every day on the fleet.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Heterogeneous review catches more</h3>
+            <p>
+              Different models on different hardware catch different classes of
+              problems. A 0.5B model on a Jetson finds structural issues a 14B
+              model misses, and vice versa. Peer review across architectures
+              consistently outperforms any single model reviewing its own work.
+            </p>
+          </div>
+        </div>
+
         <div className="quote">
           &ldquo;You don&apos;t engineer the mound. You engineer placement
           rules.&rdquo;
