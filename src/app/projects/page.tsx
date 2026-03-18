@@ -87,6 +87,13 @@ export default function Projects() {
             isPublic={true}
             url="https://4-life-ivory.vercel.app"
           />
+          <ProjectCard
+            name="engram"
+            description="Salience-gated memory for Claude Code. Captures what matters, forgets what doesn't, consolidates patterns while sleeping. SNARC scoring adapted from SAGE into a practical plugin."
+            accentColor="#10b981"
+            isPublic={true}
+            url="https://github.com/dp-web4/engram"
+          />
         </div>
 
         <h2 style={{ marginTop: "2rem" }}>How they connect</h2>

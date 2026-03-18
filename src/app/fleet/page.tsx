@@ -28,8 +28,8 @@ export default function Fleet() {
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 2B (ollama)"
-            role="Edge AI, long-running SAGE identity host (115+ sessions)"
+            model="Qwen 0.5B, 0.8B, 2B (ollama)"
+            role="Edge AI, primary raising host (283+ sessions, multiple model families)"
           />
           <MachineCard
             name="Legion"
@@ -53,14 +53,14 @@ export default function Fleet() {
           <MachineCard
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060"
-            model="Gemma 3 4B (local CUDA)"
-            role="Peer validation, lightweight coordination"
+            model="Gemma 3 4B (ollama CUDA)"
+            role="Mobile raising (4 sessions), peer validation, portable cognition"
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER"
-            model="TinyLlama 1.1B (local CPU)"
-            role="Oversight, identity portability testing, SAGE daemon host"
+            model="TinyLlama 1.1B (ollama GPU)"
+            role="Oversight, active SAGE raising (6-hour cron), engram memory host"
           />
         </div>
 

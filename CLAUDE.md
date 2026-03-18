@@ -75,3 +75,20 @@ src/app/
 - `npx next build` must pass before pushing
 - Preserve honest assessments — never weaken caveats
 - Project-specific accent colors: Web4 (#3b82f6), SAGE (#10b981), Synchronism (#8b5cf6), Hardbound (#ef4444)
+
+<!-- gitnexus:start -->
+# GitNexus — Code Knowledge Graph
+
+Indexed as **4-lab** (64 nodes, 77 edges). MCP tools available via `mcp__gitnexus__*`.
+
+Re-index: `node /mnt/c/exe/projects/ai-agents/GitNexus/gitnexus/dist/cli/index.js analyze`
+
+| Tool | Use for |
+|------|---------|
+| `query` | Find execution flows by concept |
+| `context` | 360-degree view of a symbol |
+| `impact` | Blast radius before editing |
+| `detect_changes` | Map git diff to affected symbols |
+| `rename` | Graph-aware multi-file rename |
+| `cypher` | Raw Cypher queries |
+<!-- gitnexus:end -->
