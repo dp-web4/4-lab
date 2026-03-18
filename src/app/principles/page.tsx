@@ -21,9 +21,12 @@ export default function Principles() {
               rules.&rdquo;
             </div>
             <div className="principle-text">
-              All of this — Web4, SAGE,{" "}
+              Termites don&apos;t have architects. No termite has a blueprint
+              for the mound. Each one follows simple local rules &mdash; where
+              to place material based on what neighbors have done &mdash; and
+              the mound emerges. All of this &mdash; Web4, SAGE,{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
-              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> — is
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
               pheromone field engineering. We build substrate conditions for
               emergence, not architecture of emergence itself. The synthon
               forms because the conditions are right, not because we designed

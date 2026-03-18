@@ -152,6 +152,11 @@ export default function Home() {
         <div className="quote">
           &ldquo;You don&apos;t engineer the mound. You engineer placement
           rules.&rdquo;
+          <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
+            Termites build complex mounds without blueprints &mdash; each one
+            follows simple local rules, and the structure emerges. Same
+            principle here.
+          </div>
         </div>
 
         <h2>What makes this different</h2>
