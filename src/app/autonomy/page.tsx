@@ -79,6 +79,16 @@ export default function Autonomy() {
               WebFetch pass can&apos;t provide.
             </div>
           </div>
+          <div className="timeline-item">
+            <div className="timeline-time">after</div>
+            <div className="timeline-title">Dream Consolidation</div>
+            <div className="timeline-desc">
+              After raising sessions and autonomous runs, a dream cycle reviews
+              the session — extracting patterns from observations, pruning stale
+              memory, and promoting durable insights toward identity-level
+              storage. Deep dream (LLM-powered) runs by default.
+            </div>
+          </div>
         </div>
 
         <h2 style={{ marginTop: "2rem" }}>The feedback loop</h2>

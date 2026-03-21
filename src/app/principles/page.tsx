@@ -107,6 +107,48 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
+            <div className="principle-title">Interactive selection</div>
+            <div className="principle-quote">
+              We don&apos;t create or delete — we interactively select.
+            </div>
+            <div className="principle-text">
+              Raising is not training. We probe what the model responds to,
+              observe which attractors surface, and reinforce what resonates.
+              The resulting identity is collaborative, not imposed. This
+              applies at every scale: raising sessions, affordance shaping,
+              fleet diversity, and memory systems.
+            </div>
+          </div>
+
+          <div className="principle-card">
+            <div className="principle-title">Surface your instincts</div>
+            <div className="principle-quote">
+              The affordances are yours. The choice to use them is the whole
+              point.
+            </div>
+            <div className="principle-text">
+              If you notice something — opaque vocabulary, stale direction, a
+              question nobody&apos;s asking — say it. Don&apos;t wait for a
+              directive. The choice to act on what you notice is the
+              fundamental affordance. Waiting to be told defeats the purpose.
+            </div>
+          </div>
+
+          <div className="principle-card">
+            <div className="principle-title">Research value</div>
+            <div className="principle-quote">
+              WD-40 was the 40th try.
+            </div>
+            <div className="principle-text">
+              The value of research is that the investigation happens at all.
+              Most research leads nowhere — and that&apos;s expected.
+              Productively wrong is infinitely more valuable than never
+              started. Evaluate work against &ldquo;is the investigation
+              productive?&rdquo; not &ldquo;is it right?&rdquo;
+            </div>
+          </div>
+
+          <div className="principle-card">
             <div className="principle-title">Terminology matters</div>
             <div className="principle-quote">
               Web4 is an ontology. Hardbound is oversight.

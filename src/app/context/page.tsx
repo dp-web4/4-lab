@@ -29,6 +29,21 @@ export default function Context() {
           database, but because they shared instructions.
         </p>
 
+        <h3>SNARC: salience-gated memory</h3>
+        <p>
+          SNARC provides salience-gated memory for Claude Code sessions. Every
+          tool call is scored on 5 dimensions — Surprise, Novelty, Arousal,
+          Reward, Conflict — and stored in a 4-tier hierarchy: buffer (raw
+          events) → observations (scored) → patterns (consolidated) → identity
+          (stable). Confidence decays over time so memories aren&apos;t permanent.
+        </p>
+        <p>
+          Sessions end with a dream cycle that extracts patterns from
+          observations. Deep dream (LLM-powered) runs by default, reviewing
+          the session&apos;s observations for recurring themes, pruning stale
+          entries, and promoting durable patterns toward identity-level storage.
+        </p>
+
         <h3>Cross-session memory</h3>
         <p>
           Agents maintain persistent memory across conversations. Not

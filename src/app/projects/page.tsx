@@ -35,7 +35,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="On-device AI orchestrator. Continuous consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, hardware-bound identity. The missing layer between a local LLM and useful cognition."
+            description="On-device AI orchestrator. Continuous consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, hardware-bound identity. The missing layer between a local LLM and useful cognition. ModelAdapter serves as a dictionary entity — per-model-family JSON configs handle prompt formatting, response cleaning, and capabilities. New models need only a config file. PolicyGate sits at step 8.5 of the consciousness loop — a conscience checkpoint between deliberation and action, using the same IRP contract as all plugins."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"
@@ -51,7 +51,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Enterprise oversight suite. Real TPM 2.0 hardware binding, policy model (Phi-4 Mini), attack defense (263-270), accountability chains. The trust layer that touches silicon."
+            description="Enterprise oversight suite. Hardware binding in progress — real TPM 2.0 binding implemented privately, not yet public. Policy model (Phi-4 Mini), attack defense (263-270), accountability chains. AttestationEnvelope provides unified hardware trust across TPM2/FIDO2/Secure Enclave with software fallback. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -88,8 +88,8 @@ export default function Projects() {
             url="https://4-life-ivory.vercel.app"
           />
           <ProjectCard
-            name="engram"
-            description="Salience-gated memory for Claude Code. Captures what matters, forgets what doesn't, consolidates patterns while sleeping. SNARC scoring adapted from SAGE into a practical plugin."
+            name="SNARC"
+            description="Salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions (Surprise, Novelty, Arousal, Reward, Conflict), and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping."
             accentColor="#10b981"
             isPublic={true}
             url="https://github.com/dp-web4/engram"

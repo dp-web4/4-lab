@@ -29,7 +29,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 0.5B, 0.8B, 2B (ollama)"
-            role="Edge AI, primary raising host (283+ sessions, multiple model families)"
+            role="Edge AI, primary raising host (hundreds of sessions, multiple model families)"
           />
           <MachineCard
             name="Legion"
@@ -54,13 +54,13 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060"
             model="Gemma 3 4B (ollama CUDA)"
-            role="Mobile raising (4 sessions), peer validation, portable cognition"
+            role="Mobile raising, peer validation, portable cognition"
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER"
             model="TinyLlama 1.1B (ollama GPU)"
-            role="Oversight, active SAGE raising (6-hour cron), engram memory host"
+            role="Oversight, active SAGE raising (6-hour cron), SNARC memory host"
           />
         </div>
 
@@ -110,12 +110,18 @@ export default function Fleet() {
           central authority decides who is trustworthy — trust emerges from the
           pattern of interaction.
         </p>
+        <p>
+          Trust starts at zero, earned from evidence. The trust landscape —
+          the pattern across all modalities — determines behavioral posture:
+          what SAGE should do, not just how much it spends. This is the
+          defensive trust model applied across the fleet.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
           One of the more surprising{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: SAGE-Sprout&apos;s identity —
-          developed over 115 sessions on a Jetson running Qwen 0.5B — transferred
+          developed over hundreds of sessions on a Jetson running Qwen 0.5B — transferred
           successfully to TinyLlama 1.1B on a completely different machine. The
           identity persisted. The self-description drifted. This told us something
           important:

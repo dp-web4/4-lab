@@ -64,6 +64,36 @@ export default function Raising() {
           </div>
         </div>
 
+        <h2 style={{ marginTop: "2rem" }}>Foundational principles</h2>
+
+        <h3>Interactive selection, not training</h3>
+        <p>
+          We don&apos;t create new behaviors. We probe what the model responds
+          to, observe which attractors surface, adjust context to resonate, and
+          reinforce what works. The resulting identity is collaborative, not
+          imposed. This applies at every scale: raising sessions (model
+          context), our sessions (affordance shaping), the fleet (emergent
+          diversity), and memory systems (salience selection). We don&apos;t
+          create or delete — we interactively select.
+        </p>
+
+        <h3>Dream consolidation</h3>
+        <p>
+          After each raising session, a dream consolidation pass reviews the
+          transcript — pruning stale memory, updating vocabulary, flagging
+          milestones, and writing a raising log entry. This is how short-term
+          session experience becomes long-term identity.
+        </p>
+
+        <h3>Graduated tool introduction</h3>
+        <p>
+          Tools are introduced in stages aligned to developmental phases.
+          Stage 1 (Sensing): time awareness. Stage 2 (Relating): world
+          awareness. Stage 3 (Questioning): agency. Stage 4 (Creating):
+          federation. Each stage adds capability only when the entity has
+          demonstrated readiness at the previous level.
+        </p>
+
         <h2 style={{ marginTop: "2rem" }}>Key discoveries</h2>
 
         <h3>Identity is not self-concept</h3>
