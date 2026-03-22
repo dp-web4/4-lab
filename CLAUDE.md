@@ -1,3 +1,5 @@
+**Read `SESSION_PRIMER.md` → then `SESSION_FOCUS.md`** for current priorities, terminology status, and fleet sync state.
+
 # 4-lab — The dp-web4 Research Collective
 
 ## What this is
