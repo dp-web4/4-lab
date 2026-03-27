@@ -79,6 +79,7 @@ src/app/
 - Project-specific accent colors: Web4 (#3b82f6), SAGE (#10b981), Synchronism (#8b5cf6), Hardbound (#ef4444)
 
 <!-- gitnexus:start -->
+<!-- gitnexus:keep -->
 # GitNexus — Code Knowledge Graph
 
 Indexed as **4-lab** (64 nodes, 77 edges). MCP tools available via `mcp__gitnexus__*`.
