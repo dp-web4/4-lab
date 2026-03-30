@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/SiteSearch";
+import MobileNav from "@/components/MobileNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Link href="/context">Context</Link>
             <Link href="/links">Links</Link>
           </nav>
+          <MobileNav />
         </header>
         <main>{children}</main>
         <footer className="footer">

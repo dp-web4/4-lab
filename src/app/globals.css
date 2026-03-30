@@ -460,15 +460,104 @@ a:hover {
   opacity: 0.5;
 }
 
+/* ── Mobile nav button (hidden on desktop) ── */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--color-dark-border);
+  border-radius: 0.375rem;
+  padding: 0.375rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.mobile-menu-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent-dim);
+}
+
+/* ── Mobile nav overlay ── */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 45;
+}
+
+/* ── Mobile nav dropdown ── */
+.mobile-nav-dropdown {
+  display: none;
+  position: fixed;
+  top: 3.25rem;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--color-dark-surface);
+  border-bottom: 1px solid var(--color-dark-border);
+  padding: 0.75rem 1rem;
+  flex-direction: column;
+  gap: 0.125rem;
+  max-height: calc(100vh - 3.25rem);
+  overflow-y: auto;
+}
+
+.mobile-nav-dropdown.open {
+  display: flex;
+}
+
+.mobile-nav-search {
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-dark-border);
+}
+
+.mobile-nav-search input {
+  width: 100% !important;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary) !important;
+  border-radius: 0.375rem;
+  transition: color 0.2s, background 0.2s;
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-accent) !important;
+  background: var(--color-accent-glow);
+}
+
+.mobile-nav-link.active {
+  color: var(--color-accent) !important;
+  background: var(--color-accent-glow);
+}
+
 /* ── Mobile ── */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
   .navbar {
     padding: 0.75rem 1rem;
   }
 
   .nav-links {
-    gap: 0.75rem;
-    font-size: 0.75rem;
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
   }
 
   .hero {
