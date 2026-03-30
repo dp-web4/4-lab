@@ -94,6 +94,20 @@ export default function Projects() {
             isPublic={true}
             url="https://github.com/dp-web4/engram"
           />
+          <ProjectCard
+            name="Membot"
+            description="Brain cartridge server for AI agents. Embedding-based semantic memory — 768-dim Nomic embeddings + binary Hamming codes + keyword reranking. Swappable cartridges per knowledge domain. Currently integrated with SNARC in a dual-write experiment testing whether embeddings find connections keywords miss (7/7 semantic reach, 30% divergent tail)."
+            accentColor="#f97316"
+            isPublic={true}
+            repoUrl="https://github.com/dp-web4/membot"
+          />
+          <ProjectCard
+            name="ARC-AGI-3"
+            description="Active competition entry. Interactive reasoning benchmark — agents dropped into novel environments with no instructions, must explore, learn, and solve. Frontier AI scores 0.26%, humans 100%. SAGE's consciousness loop maps directly to what the benchmark demands. $700K grand prize, milestones June and September 2026."
+            accentColor="#a855f7"
+            isPublic={false}
+            url="https://arcprize.org/arc-agi/3"
+          />
         </div>
 
         <h2 style={{ marginTop: "2rem" }}>How they connect</h2>

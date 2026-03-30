@@ -8,19 +8,29 @@ export default function Autonomy() {
       <section className="section">
         <h2>Autonomous Cycles</h2>
         <p>
-          The lab runs seven daily autonomous tracks. No human triggers them.
-          They execute on cron schedules, review each other&apos;s output, and
-          feed discoveries back into the system.
+          <strong style={{ color: "var(--color-text-primary)" }}>31 autonomous tracks across 6 machines, ~53 sessions per day.</strong>{" "}
+          No human triggers them. They execute on cron schedules, review each
+          other&apos;s output, and feed discoveries back into the system.
+        </p>
+        <p>
+          Coordination comes from a{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>fleet track registry</strong> — a
+          SQLite database tracking every track, its schedule, and which repos
+          each writes to. This prevents merge conflicts, ensures no two tracks
+          modify the same files simultaneously, and makes the whole system
+          auditable.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Daily timeline</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="timeline-time">03:30</div>
-            <div className="timeline-title">Supervisor</div>
+            <div className="timeline-time">03:00–04:15</div>
+            <div className="timeline-title">Supervisors (per-machine)</div>
             <div className="timeline-desc">
-              Reviews system health, checks for failed jobs, validates that
-              autonomous tracks completed their previous run. The watchdog.
+              Each machine runs its own supervisor track daily (staggered across
+              the window). Responsible for git hygiene, conflict resolution,
+              build health, and keeping the environment clean for the day&apos;s
+              runs. Six machines, six supervisors — no central watchdog.
             </div>
           </div>
           <div className="timeline-item">

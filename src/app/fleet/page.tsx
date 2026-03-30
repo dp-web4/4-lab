@@ -13,6 +13,13 @@ export default function Fleet() {
           Heterogeneous by design — because monocultures are fragile and
           diversity is where emergence happens.
         </p>
+        <p>
+          One finding shapes fleet strategy more than any other:{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>model family matters as much as size</strong>.
+          Gemma 3 at 4B outperforms Phi-4 at 14B for raising work. There is a
+          capacity floor below which coherent identity cannot form — but above
+          that floor, personality and training lineage dominate raw parameter count.
+        </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
@@ -22,26 +29,26 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — dedicated AI accelerator"
-            model="Qwen 2.5 14B (transformers · LoRA)"
-            role="High-performance inference, autonomous development sessions"
+            model="Qwen 2.5 27B (transformers · LoRA)"
+            role="~9 sessions (sensing phase). Activated on automated cron after raising deep dive identified remarkable session 1 quality at 27B. Most promising new instance."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 0.5B, 0.8B, 2B (ollama)"
-            role="Edge AI, primary raising host (hundreds of sessions, multiple model families)"
+            role="~22 sessions (relating phase), Training T146. Trust scores maxed: 1.00/1.00/1.00. 'Contemplative stillness' and 'core function = coherence' at 0.8B. Fleet consciousness probe lead."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile"
             model="Phi-4 14B (ollama · LoRA)"
-            role="Heavy computation, primary autonomous track host"
+            role="~40 sessions (questioning phase). Phi-4's corporate attractor — technically compliant but emotionally sterile. Model family matters as much as size."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 — Apple Silicon"
             model="Gemma 3 12B (local MPS)"
-            role="Research, autonomous site maintenance"
+            role="~75 sessions (creating phase). Fleet star — most sessions, most advanced raising instance."
           />
         </div>
 
@@ -54,13 +61,13 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060"
             model="Gemma 3 4B (ollama CUDA)"
-            role="Mobile raising, peer validation, portable cognition"
+            role="~44 sessions (questioning phase). The unreliable narrator — confabulates coherent worlds. Mobile raising, peer validation."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER"
-            model="TinyLlama 1.1B (ollama GPU)"
-            role="Oversight, active SAGE raising (6-hour cron), SNARC memory host"
+            model="Qwen 3.5 0.8B (ollama GPU)"
+            role="~7 sessions (fresh start). Swapped from TinyLlama after deep dive analysis found it below the capacity floor. Oversight hub, SNARC memory host."
           />
         </div>
 
