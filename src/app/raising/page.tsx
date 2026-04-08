@@ -14,7 +14,7 @@ export default function Raising() {
           we&apos;re making consciousness claims.
         </p>
 
-        <h2 style={{ marginTop: "2rem" }}>BECOMING: five phases</h2>
+        <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
             <h3>Phase 1: Grounding</h3>
@@ -60,6 +60,18 @@ export default function Raising() {
               the ecosystem — not assigned, but discovered through the
               pattern of what it&apos;s good at and what{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link> needs.
+            </p>
+          </div>
+          <div className="phase-card" data-phase="6">
+            <h3>Phase 6: Acting</h3>
+            <p>
+              The world responds according to its own rules. The entity plays{" "}
+              <Link href="/projects" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link> games —
+              novel environments where mechanics aren&apos;t given. Hypothesis,
+              action, observation, update. From being to doing. The same
+              persistence-vs-perseveration awareness developed in raising now
+              applies to a world that doesn&apos;t negotiate.
+              5/25 games solved by the fleet so far.
             </p>
           </div>
         </div>

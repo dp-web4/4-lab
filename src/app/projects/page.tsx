@@ -103,7 +103,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Active competition entry. Interactive reasoning benchmark — agents dropped into novel environments with no instructions, must explore, learn, and solve. Frontier AI scores 0.26%, humans 100%. SAGE's consciousness loop maps directly to what the benchmark demands. $700K grand prize, milestones June and September 2026."
+            description="Active competition entry — 5/25 games solved. Interactive reasoning benchmark where agents discover unknown game mechanics through play. Fleet collaboration: 3 machines, 5 complete solves, up to 361% human efficiency. Gameplay insights map fractally to trust, governance, and raising. $700K grand prize, deadline June 2026."
             accentColor="#a855f7"
             isPublic={false}
             url="https://arcprize.org/arc-agi/3"
