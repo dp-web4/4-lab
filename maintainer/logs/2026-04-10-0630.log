@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Fri Apr 10 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_062.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260408_180251.json => identity_20260410_060206.json} (87%)
+Failed to authenticate. API Error: 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid authentication credentials"},"request_id":"req_011CZvAuzrM9ByLJTPZv8n3R"}
