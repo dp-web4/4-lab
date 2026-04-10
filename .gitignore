@@ -36,3 +36,12 @@ next-env.d.ts
 .env
 storage_state.json
 .notebooklm/
+
+# Hardbound private key (never commit)
+.hardbound/signing.key
+
+.hardbound/actors/dp/signing.key
+
+.hardbound/actors/cbp-claude/signing.key
+.hardbound/actors/*/signing.key
+.gitnexus
