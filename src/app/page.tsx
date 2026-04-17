@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         <h2>Key projects</h2>
-        <div className="grid-2" style={{ marginBottom: "1.5rem" }}>
+        <div className="grid-2">
           <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div className="card" style={{ borderTop: "3px solid #8b5cf6" }}>
               <h3 style={{ color: "#8b5cf6" }}>Synchronism</h3>
@@ -111,9 +111,7 @@ export default function Home() {
               </p>
             </div>
           </a>
-        </div>
-        <div className="grid-2">
-          <a href="https://arcprize.org/scorecards/c0d62617-a0bc-4100-bb4e-982fa5d7fde7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <Link href="/arc-agi-3" style={{ textDecoration: "none" }}>
             <div className="card" style={{ borderTop: "3px solid #a855f7" }}>
               <h3 style={{ color: "#a855f7" }}>ARC-AGI-3</h3>
               <p>
@@ -124,17 +122,11 @@ export default function Home() {
                 is the gain.
               </p>
             </div>
-          </a>
-          <Link href="/projects" style={{ textDecoration: "none" }}>
-            <div className="card" style={{ borderTop: "3px solid var(--color-accent)" }}>
-              <h3 style={{ color: "var(--color-accent)" }}>Full Ecosystem →</h3>
-              <p>
-                Hardbound, Membot, SNARC, governance plugins, and more &mdash;
-                each project instantiates the same pattern at a different
-                scale. See the{" "}
-                <span style={{ color: "var(--color-accent)" }}>complete project list</span>.
-              </p>
-            </div>
+          </Link>
+        </div>
+        <div style={{ marginTop: "1rem", textAlign: "center" }}>
+          <Link href="/projects" style={{ color: "var(--color-accent)", fontSize: "0.9375rem" }}>
+            Full ecosystem: Hardbound, Membot, SNARC, governance plugins, and more →
           </Link>
         </div>
 

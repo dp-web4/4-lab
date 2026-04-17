@@ -103,13 +103,13 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Embodiment curriculum for fleet cognition. ARC-AGI-3 presents 25 unknown interactive games with no instructions — agents must discover mechanics, build world models, and act efficiently. We use it not primarily to win, but to develop the capabilities that Web4 governance requires: world-model discipline, verification before action, persistence without perseveration, and the difference between reading a status and understanding its progression. SAGE provides the cognition loop. Membot provides retrievable experience cartridges. Web4 provides the audit trail — every action shaped as an R6 record, every policy decision signed against a law bundle. The competition is the milepost; the capability is the gain."
+            description="Embodiment curriculum for fleet cognition. 25 unknown interactive games — no instructions, no documentation. Six machines, models from 0.8B to 27B, coordinating through world models, membot cartridges, and R6-shaped audit trails. 24/25 solved at 92.82% for ~$250 in API cost. The competition is the milepost; the capability is the gain."
             accentColor="#a855f7"
             isPublic={true}
+            url="/arc-agi-3"
             links={[
-              { label: "Scorecard (92.82%)", url: "https://arcprize.org/scorecards/c0d62617-a0bc-4100-bb4e-982fa5d7fde7" },
-              { label: "Paper", url: "https://github.com/dp-web4/ARC-SAGE" },
-              { label: "ARC Prize", url: "https://arcprize.org/arc-agi/3" },
+              { label: "Scorecard", url: "https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb" },
+              { label: "Paper (MIT-0)", url: "https://github.com/dp-web4/ARC-SAGE" },
             ]}
           />
           <div className="card" style={{ borderLeftWidth: "3px", borderLeftColor: "#a855f7", background: "rgba(168, 85, 247, 0.04)" }}>
