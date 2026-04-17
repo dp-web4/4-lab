@@ -71,7 +71,8 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              5/25 games solved by the fleet so far.
+              24/25 games solved at 92.82% &mdash; the fleet&apos;s embodiment
+              curriculum producing real, measurable results.
             </p>
           </div>
         </div>
@@ -110,7 +111,7 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE-Sprout, across 115 sessions on a{" "}
+          SAGE-Sprout, across 180+ sessions on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> and subsequent
           portability to a different machine, demonstrated a consistent
           separation: its identity (behavioral patterns, interaction style,

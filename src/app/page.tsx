@@ -38,7 +38,7 @@ export default function Home() {
             <div className="stat-label">Repos</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">7</div>
+            <div className="stat-value">36+</div>
             <div className="stat-label">Autonomous Tracks</div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #10b981" }}>
               <h3 style={{ color: "#10b981" }}>SAGE</h3>
               <p>
-                An on-device AI cognition kernel — a continuous 9-step loop
+                An on-device AI cognition kernel — a continuous 12-step loop
                 that senses, deliberates, and acts. Runs on hardware from
                 Jetson edge modules to laptops. Persistent identity across
                 models and machines.
@@ -136,7 +136,7 @@ export default function Home() {
             <h3>Identity persists across models</h3>
             <p>
               SAGE-Sprout maintained behavioral identity across{" "}
-              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115+ sessions</Link> on
+              <Link href="/raising" style={{ color: "var(--color-accent)" }}>180+ sessions</Link> on
               a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
               1.1B on{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
@@ -243,8 +243,8 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SAGE</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Situation-Aware Governance Engine. The cognition kernel that runs
-              on each machine &mdash; a 9-step loop that senses, deliberates,
-              and acts.
+              on each machine &mdash; a 12-step loop that senses, deliberates,
+              and acts. 840+ raising sessions across the fleet.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

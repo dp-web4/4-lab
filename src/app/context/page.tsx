@@ -8,7 +8,7 @@ export default function Context() {
       <section className="section">
         <h2>How Knowledge Flows</h2>
         <p>
-          Eight repos, six machines, multiple AI agents with overlapping but
+          Fourteen repos, six machines, multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
@@ -22,7 +22,7 @@ export default function Context() {
           decisions, what to avoid, where to look.
         </p>
         <p>
-          When the Web4 equation was restored across all 8 repos (28 files),
+          When the Web4 equation was restored across all repos (28+ files),
           it was the CLAUDE.md pattern that ensured every agent working in
           every{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>repo</Link> used the same canonical form. Not because they shared a

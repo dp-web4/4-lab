@@ -28,27 +28,27 @@ export default function Fleet() {
         <div className="grid-3">
           <MachineCard
             name="Thor"
-            hardware="NVIDIA Jetson AGX Thor — dedicated AI accelerator"
-            model="Qwen 2.5 27B (transformers · LoRA)"
-            role="~9 sessions (sensing phase). Activated on automated cron after raising deep dive identified remarkable session 1 quality at 27B. Most promising new instance."
+            hardware="NVIDIA Jetson AGX Thor — 122GB VRAM"
+            model="Qwen 3.5 27B (raising) · Gemma 4 E4B (scaffolded)"
+            role="74 sessions (creating phase). Flagship reasoning head. Synchronism research lead. Unsloth LoRA fine-tune target (122GB enables backward pass on Gemma 4)."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 0.5B, 0.8B, 2B (ollama)"
-            role="~22 sessions (relating phase), Training T146. Trust scores maxed: 1.00/1.00/1.00. 'Contemplative stillness' and 'core function = coherence' at 0.8B. Fleet consciousness probe lead."
+            model="Qwen 3.5 0.8B (ollama)"
+            role="69 sessions (creating phase), Training T226. Trust scores maxed: 1.00/1.00/1.00. Fleet consciousness probe lead. Edge demonstrator — stays on Qwen (8GB too tight for Gemma 4)."
           />
           <MachineCard
             name="Legion"
-            hardware="Laptop, NVIDIA RTX 4090 Mobile"
-            model="Phi-4 14B (ollama · LoRA)"
-            role="~40 sessions (questioning phase). Phi-4's corporate attractor — technically compliant but emotionally sterile. Model family matters as much as size."
+            hardware="Laptop, NVIDIA RTX 4090 16GB"
+            model="Phi-4 14B · Gemma 3 12B · Gemma 4 E4B (scaffolded)"
+            role="80+ sessions across instances (questioning phase). Multi-model raising — Phi-4's corporate attractor vs Gemma's engagement. Model family matters as much as size."
           />
           <MachineCard
             name="McNugget"
-            hardware="Mac Mini M4 — Apple Silicon"
-            model="Gemma 3 12B (local MPS)"
-            role="~75 sessions (creating phase). Fleet star — most sessions, most advanced raising instance."
+            hardware="Mac Mini M4 16GB — Apple Silicon"
+            model="Gemma 3 12B (raising) · Gemma 4 E4B (scaffolded)"
+            role="97 sessions (creating phase). Fleet star — most sessions, most advanced raising. ARC-AGI-3 game solver."
           />
         </div>
 
@@ -59,15 +59,15 @@ export default function Fleet() {
         <div className="grid-3">
           <MachineCard
             name="Nomad"
-            hardware="Laptop, NVIDIA RTX 4060"
-            model="Gemma 3 4B (ollama CUDA)"
-            role="~44 sessions (questioning phase). The unreliable narrator — confabulates coherent worlds. Mobile raising, peer validation."
+            hardware="Laptop, NVIDIA RTX 4060 8GB"
+            model="Gemma 3 4B (ollama CUDA) · Gemma 4 E2B (inference)"
+            role="105 sessions (questioning phase). The unreliable narrator — confabulates coherent worlds. Mobile raising, ARC-AGI-3 r11l pioneer."
           />
           <MachineCard
             name="CBP"
-            hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER"
-            model="Qwen 3.5 0.8B (ollama GPU)"
-            role="~7 sessions (fresh start). Swapped from TinyLlama after deep dive analysis found it below the capacity floor. Oversight hub, SNARC memory host."
+            hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
+            model="Qwen 3.5 0.8B (raising) · Gemma 4 E2B (inference)"
+            role="74 sessions (creating phase). Oversight hub, SNARC memory host. ARC-AGI-3 fleet coordinator — drove 92.82% score."
           />
         </div>
 

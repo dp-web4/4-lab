@@ -35,7 +35,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="On-device AI orchestrator. Continuous consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, hardware-bound identity. The missing layer between a local LLM and useful cognition. ModelAdapter serves as a dictionary entity — per-model-family JSON configs handle prompt formatting, response cleaning, and capabilities. New models need only a config file. PolicyGate sits at step 8.5 of the consciousness loop — a conscience checkpoint between deliberation and action, using the same IRP contract as all plugins."
+            description="On-device AI orchestrator. 12-step consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, three-layer hardware-bound identity. 840+ raising sessions across 6 machines, 10 active instances from 0.8B to 27B. PolicyGate at step 8.5 — conscience checkpoint between deliberation and action, evaluating against signed law bundles. Tool use integration (v0.4.0a6) with three-tier capability detection."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"
@@ -43,7 +43,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. One coherence equation across 80 orders of magnitude — quantum to cosmic. Coupling-coherence experiments, Hill function kinetics, presence/MRH refinement."
+            description="Theoretical foundation. One coherence equation across 80 orders of magnitude — quantum to cosmic. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Publication readiness 0.97."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             url="https://synchronism-site.vercel.app"
@@ -51,7 +51,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Enterprise oversight suite. Hardware binding in progress — real TPM 2.0 binding implemented privately, not yet public. Policy model (Phi-4 Mini), attack defense (263-270), accountability chains. AttestationEnvelope provides unified hardware trust across TPM2/FIDO2/Secure Enclave with software fallback. The trust layer that touches silicon."
+            description="Enterprise oversight suite. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope provides unified hardware trust. 424+ attack vectors catalogued. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />

@@ -67,6 +67,21 @@ export default function Links() {
             title="Claude Code (fork)"
             description="Web4 governance hooks for Claude Code"
           />
+          <ExternalLink
+            href="https://github.com/dp-web4/ARC-SAGE"
+            title="ARC-SAGE"
+            description="ARC-AGI-3 harness — 92.82% public set, world models, multi-agent frame-questioning (MIT-0)"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/gemma4-good-submission"
+            title="Gemma 4 Good Submission"
+            description="Hackathon submission — self-governing AI for constrained environments (Apache 2.0)"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/membot"
+            title="Membot"
+            description="Brain cartridge server — embedding-based semantic memory with swappable cartridges"
+          />
         </ul>
 
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>
