@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Six machines. Eight repos.{" "}
+          Six machines. Fourteen repos.{" "}
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="stat-label">Machines</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">8+</div>
+            <div className="stat-value">14</div>
             <div className="stat-label">Repos</div>
           </div>
           <div className="stat-card">
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         <h2>Key projects</h2>
-        <div className="grid-3">
+        <div className="grid-2" style={{ marginBottom: "1.5rem" }}>
           <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div className="card" style={{ borderTop: "3px solid #8b5cf6" }}>
               <h3 style={{ color: "#8b5cf6" }}>Synchronism</h3>
@@ -111,6 +111,31 @@ export default function Home() {
               </p>
             </div>
           </a>
+        </div>
+        <div className="grid-2">
+          <a href="https://arcprize.org/scorecards/c0d62617-a0bc-4100-bb4e-982fa5d7fde7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #a855f7" }}>
+              <h3 style={{ color: "#a855f7" }}>ARC-AGI-3</h3>
+              <p>
+                Embodiment curriculum for fleet cognition. 25 unknown interactive
+                games, no instructions &mdash; agents discover mechanics, build
+                world models, and act under governance. 24/25 solved, 92.82%
+                public score. The competition is the milepost; the capability
+                is the gain.
+              </p>
+            </div>
+          </a>
+          <Link href="/projects" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid var(--color-accent)" }}>
+              <h3 style={{ color: "var(--color-accent)" }}>Full Ecosystem →</h3>
+              <p>
+                Hardbound, Membot, SNARC, governance plugins, and more &mdash;
+                each project instantiates the same pattern at a different
+                scale. See the{" "}
+                <span style={{ color: "var(--color-accent)" }}>complete project list</span>.
+              </p>
+            </div>
+          </Link>
         </div>
 
         <h2>Three things we&apos;ve actually demonstrated</h2>
