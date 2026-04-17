@@ -103,11 +103,27 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Active competition entry — 5/25 games solved. Interactive reasoning benchmark where agents discover unknown game mechanics through play. Fleet collaboration: 3 machines, 5 complete solves, up to 361% human efficiency. Gameplay insights map fractally to trust, governance, and raising. $700K grand prize, deadline June 2026."
+            description="Embodiment curriculum for fleet cognition. ARC-AGI-3 presents 25 unknown interactive games with no instructions — agents must discover mechanics, build world models, and act efficiently. We use it not primarily to win, but to develop the capabilities that Web4 governance requires: world-model discipline, verification before action, persistence without perseveration, and the difference between reading a status and understanding its progression. SAGE provides the cognition loop. Membot provides retrievable experience cartridges. Web4 provides the audit trail — every action shaped as an R6 record, every policy decision signed against a law bundle. The competition is the milepost; the capability is the gain."
             accentColor="#a855f7"
-            isPublic={false}
-            url="https://arcprize.org/arc-agi/3"
+            isPublic={true}
+            links={[
+              { label: "Scorecard (92.82%)", url: "https://arcprize.org/scorecards/c0d62617-a0bc-4100-bb4e-982fa5d7fde7" },
+              { label: "Paper", url: "https://github.com/dp-web4/ARC-SAGE" },
+              { label: "ARC Prize", url: "https://arcprize.org/arc-agi/3" },
+            ]}
           />
+          <div className="card" style={{ borderLeftWidth: "3px", borderLeftColor: "#a855f7", background: "rgba(168, 85, 247, 0.04)" }}>
+            <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
+            <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
+              <tbody>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games, 92.82%</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <h2 style={{ marginTop: "2rem" }}>How they connect</h2>
