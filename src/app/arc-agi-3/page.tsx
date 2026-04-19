@@ -67,20 +67,28 @@ export default function ArcAgi3Page() {
 
         <h3>The broader gain</h3>
         <p>
-          The 92.82% score is instrumental. The research question is whether
-          recognition and adaptation against structured external memory can
-          substitute for raw model capacity on genuinely novel problems. Phase 1
-          established the capability ceiling using a frontier model (Claude Opus
-          4.6). Phase 2 targets transfer to Gemma 4 E4B via membot cartridges
-          &mdash; the same world models, action traces, and cross-game patterns,
-          retrievable by a model that fits on a 16GB consumer GPU.
+          The 94.85% score is on the <strong>public game set</strong> using
+          Claude Opus 4.6 as the model inside the SAGE cognition loop. This
+          demonstrates the ceiling &mdash; what the architecture can achieve
+          with a frontier model and network access.
         </p>
         <p>
-          A well-documented failure is more valuable than an undocumented win.
-          The fleet&apos;s game-playing data &mdash; every frame, every action,
-          every dead end &mdash; is the corpus a future small model needs to
-          learn what works and what doesn&apos;t. The game is the tool. Training
-          data is the deliverable.
+          The actual competition is harder: the Kaggle sandbox constrains
+          entries to <strong>32GB VRAM, no internet access</strong>, and a
+          private game set the model has never seen. Our Phase 2 work targets
+          this &mdash; building a SAGE competitor that runs locally on Gemma 4
+          E4B via membot cartridges, with the world models, action traces,
+          and cross-game patterns from Phase 1 retrievable without network.
+          That work is in progress.
+        </p>
+        <p>
+          The research question: can recognition and adaptation against
+          structured external memory substitute for raw model capacity on
+          genuinely novel problems? A well-documented failure is more
+          valuable than an undocumented win. The fleet&apos;s game-playing
+          data &mdash; every frame, every action, every dead end &mdash; is
+          the corpus the local model needs to learn what works and what
+          doesn&apos;t.
         </p>
 
         <h3>Current status</h3>
