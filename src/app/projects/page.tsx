@@ -103,7 +103,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Embodiment curriculum for fleet cognition. 25 unknown interactive games — no instructions, no documentation. Six machines, models from 0.8B to 27B, coordinating through world models, membot cartridges, and R6-shaped audit trails. 24/25 solved at 92.82% for ~$250 in API cost. The competition is the milepost; the capability is the gain."
+            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B to 27B, coordinating through world models, membot cartridges, and R6-shaped audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             url="/arc-agi-3"
@@ -116,7 +116,7 @@ export default function Projects() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games, 92.82%</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games, 94.85%</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>

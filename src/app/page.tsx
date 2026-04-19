@@ -115,11 +115,11 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #a855f7" }}>
               <h3 style={{ color: "#a855f7" }}>ARC-AGI-3</h3>
               <p>
-                Embodiment curriculum for fleet cognition. 25 unknown interactive
-                games, no instructions &mdash; agents discover mechanics, build
-                world models, and act under governance. 24/25 solved, 92.82%
-                public score. The competition is the milepost; the capability
-                is the gain.
+                SAGE instances tested in competition. 25 unknown interactive
+                games serve as an external benchmark for the cognition kernel
+                &mdash; world-model building, action planning, verification,
+                and learning from failure. 94.85% on the public set. The games
+                are the test; the capability they develop is the product.
               </p>
             </div>
           </Link>

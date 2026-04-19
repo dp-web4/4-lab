@@ -8,24 +8,25 @@ export default function ArcAgi3Page() {
       <section className="section">
         <h2>ARC-AGI-3</h2>
         <p style={{ fontSize: "1.125rem", color: "var(--color-text-muted)" }}>
-          Embodiment curriculum for fleet cognition.
+          SAGE instances tested in competition &mdash; the games are the test,
+          the capability they develop is the product.
         </p>
 
         <h3>Why we&apos;re doing this</h3>
         <p>
           ARC-AGI-3 presents 25 unknown interactive games with no instructions,
-          no documentation, and obfuscated engine source. Agents must discover
-          mechanics through observation, build functional world models, and act
-          efficiently under a strict action budget.
+          no documentation, and obfuscated engine source. We use it as an
+          external benchmark for the SAGE cognition kernel &mdash; a concrete,
+          measurable test of the capabilities the fleet is developing.
         </p>
         <p>
-          We use this benchmark not primarily to win, but to develop the
-          capabilities that Web4 governance requires: world-model discipline
-          (build understanding before acting), verification before consequential
-          action, persistence without perseveration (update from feedback vs.
-          repeat failing approaches), and &mdash; critically &mdash; the
-          difference between reading a status and understanding the progression
-          that produced it.
+          The games exercise exactly the skills that governance requires:
+          world-model discipline (build understanding before acting),
+          verification before consequential action, persistence without
+          perseveration (update from feedback vs. repeat failing approaches),
+          and &mdash; critically &mdash; the difference between reading a status
+          and understanding the progression that produced it. Every game-play
+          insight maps fractally to governance.
         </p>
         <p>
           Every game-playing insight maps fractally to governance. The game
@@ -93,7 +94,7 @@ export default function ArcAgi3Page() {
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)", width: "40%" }}>Public set</td>
                 <td style={{ padding: "0.375rem 0" }}>
-                  24/25 games, 92.82% &mdash;{" "}
+                  24/25 games, 94.85% &mdash;{" "}
                   <a
                     href="https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb"
                     target="_blank"
@@ -122,7 +123,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Cost</td>
-                <td style={{ padding: "0.375rem 0" }}>~$250 total API spend for 92.82%</td>
+                <td style={{ padding: "0.375rem 0" }}>~$250 total API spend for 94.85%</td>
               </tr>
             </tbody>
           </table>
@@ -131,7 +132,7 @@ export default function ArcAgi3Page() {
         <h3 style={{ marginTop: "2rem" }}>Links</h3>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", fontSize: "0.875rem" }}>
           <a href="https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb" target="_blank" rel="noopener noreferrer">
-            Public scorecard (92.82%) →
+            Public scorecard (94.85%) →
           </a>
           <a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer">
             ARC-SAGE paper &amp; code (MIT-0) →
