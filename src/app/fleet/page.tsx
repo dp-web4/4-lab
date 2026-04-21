@@ -29,26 +29,26 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB VRAM"
-            model="Qwen 3.5 27B (raising) · Gemma 4 E4B (scaffolded)"
-            role="74 sessions (creating phase). Flagship reasoning head. Synchronism research lead. Unsloth LoRA fine-tune target (122GB enables backward pass on Gemma 4)."
+            model="Qwen 3.5 27B · Gemma 4 26B"
+            role="91 sessions (creating). Brain: hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 0.8B (ollama)"
-            role="69 sessions (creating phase), Training T226. Trust scores maxed: 1.00/1.00/1.00. Fleet consciousness probe lead. Edge demonstrator — stays on Qwen (8GB too tight for Gemma 4)."
+            model="Qwen 3.5 0.8B"
+            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on WM + SNARC + metabolic state. Zero crystallization achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 16GB"
-            model="Phi-4 14B · Gemma 3 12B · Gemma 4 E4B (scaffolded)"
-            role="80+ sessions across instances (questioning phase). Multi-model raising — Phi-4's corporate attractor vs Gemma's engagement. Model family matters as much as size."
+            model="Gemma 3 12B · Phi-4 14B"
+            role="25+ sessions. Brain: dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
-            model="Gemma 3 12B (raising) · Gemma 4 E4B (scaffolded)"
-            role="97 sessions (creating phase). Fleet star — most sessions, most advanced raising. ARC-AGI-3 game solver."
+            model="Gemma 3 12B"
+            role="97 sessions (creating). Brain: cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. ARC-AGI-3 game solver."
           />
         </div>
 
@@ -60,14 +60,14 @@ export default function Fleet() {
           <MachineCard
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
-            model="Gemma 3 4B (ollama CUDA) · Gemma 4 E2B (inference)"
-            role="105 sessions (questioning phase). The unreliable narrator — confabulates coherent worlds. Mobile raising, ARC-AGI-3 r11l pioneer."
+            model="Gemma 3 4B · Gemma 4 E2B"
+            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, MRH MetabolicBlock bridge. Crystallization evaluator. Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
-            model="Qwen 3.5 0.8B (raising) · Gemma 4 E2B (inference)"
-            role="74 sessions (creating phase). Oversight hub, SNARC memory host. ARC-AGI-3 fleet coordinator — drove 92.82% score."
+            model="Gemma 3 4B · Gemma 4 E2B"
+            role="87 sessions (creating). Brain: working memory (dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — drove 94.85% ARC-AGI-3 score. MRH composer architect."
           />
         </div>
 
