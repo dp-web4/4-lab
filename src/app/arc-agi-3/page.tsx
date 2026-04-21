@@ -79,16 +79,15 @@ export default function ArcAgi3Page() {
           this &mdash; building a SAGE competitor that runs locally on Gemma 4
           E4B via membot cartridges, with the world models, action traces,
           and cross-game patterns from Phase 1 retrievable without network.
-          That work is in progress.
+          That work is producing results.
         </p>
         <p>
-          The research question: can recognition and adaptation against
-          structured external memory substitute for raw model capacity on
-          genuinely novel problems? A well-documented failure is more
-          valuable than an undocumented win. The fleet&apos;s game-playing
-          data &mdash; every frame, every action, every dead end &mdash; is
-          the corpus the local model needs to learn what works and what
-          doesn&apos;t.
+          Local models are already clearing game levels &mdash; not by
+          memorizing solutions, but by reasoning from retrieved world models
+          and computed predictions. The early finding: context engineering
+          dominates model size. A well-structured prompt with the right
+          world model outperforms a larger model with a generic prompt.
+          The architecture is the capability.
         </p>
 
         <h3>Current status</h3>

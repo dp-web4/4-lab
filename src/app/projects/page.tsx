@@ -35,7 +35,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="On-device AI orchestrator. 12-step consciousness loop (IRP), metabolic states, experience buffer, sleep consolidation, three-layer hardware-bound identity. 840+ raising sessions across 6 machines, 10 active instances from 0.8B to 27B. PolicyGate at step 8.5 — conscience checkpoint between deliberation and action, evaluating against signed law bundles. Tool use integration (v0.4.0a6) with three-tier capability detection."
+            description="On-device cognition kernel — evolving from orchestrator to world-shaper. 12-step consciousness loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"

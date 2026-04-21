@@ -130,7 +130,44 @@ export default function Home() {
           </Link>
         </div>
 
-        <h2>Three things we&apos;ve actually demonstrated</h2>
+        <h2>What&apos;s happening right now</h2>
+        <div className="grid-3">
+          <div className="card">
+            <h3>The fleet built a brain</h3>
+            <p>
+              Six machines, six brain components &mdash; working memory,
+              thalamic router, cerebellum, episodic memory, reward prediction,
+              metacognition &mdash; designed in parallel, integrated through
+              a shared interface contract. Each machine owns one component.
+              Peer review across the architecture. The process itself is
+              governance in action.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Small models are winning game levels</h3>
+            <p>
+              Local models (Gemma 3 12B, Gemma 4 26B) are clearing levels
+              on{" "}
+              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
+              games they&apos;ve never seen before &mdash; not by brute force,
+              but by reasoning from retrieved world models and computed
+              predictions. Context engineering dominates model size.
+            </p>
+          </div>
+          <div className="card">
+            <h3>The context window IS the world</h3>
+            <p>
+              The model&apos;s entire reality on a forward pass is what&apos;s
+              in its context window. SAGE&apos;s job is to curate that world
+              &mdash; what identity, what mechanics, what history, what
+              interoceptive signals make it in. Same architecture for
+              game-playing and for raising. Different world loaded; same
+              composer.
+            </p>
+          </div>
+        </div>
+
+        <h2>What we&apos;ve demonstrated</h2>
         <div className="grid-3">
           <div className="card">
             <h3>Identity persists across models</h3>
@@ -141,27 +178,23 @@ export default function Home() {
               1.1B on{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
               Self-description drifted; behavioral identity remained continuous.
-              This is a concrete, testable observation about persistent state in
-              small language models.
             </p>
           </div>
           <div className="card">
             <h3>Autonomous agents maintain their own infrastructure</h3>
             <p>
-              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Seven daily tracks</Link> run
-              without human intervention. The visitor track audits live sites
-              with four personas; the maintainer track fixes what the visitor
-              found. Real bugs get caught and patched before a human sees them.
-              This is not a demo &mdash; it runs every day on the fleet.
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>36+ daily tracks</Link> run
+              without human intervention. Visitor audits, maintainer fixes,
+              supervisor health checks, research sessions &mdash; all
+              autonomous. This is not a demo; it runs every day on the fleet.
             </p>
           </div>
           <div className="card">
             <h3>Heterogeneous review catches more</h3>
             <p>
               Different models on different hardware catch different classes of
-              problems. A 0.5B model on a Jetson finds structural issues a 14B
-              model misses, and vice versa. Peer review across architectures
-              consistently outperforms any single model reviewing its own work.
+              problems. Diversity is the defense. The fleet proves it daily
+              across 14 repos and 6 machines.
             </p>
           </div>
         </div>
