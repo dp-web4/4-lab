@@ -96,9 +96,9 @@ export default function Fleet() {
           The constraint forced a functional separation that mirrors what we&apos;re
           building with{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Web4 and SAGE</Link>:
-          generative entities and governance entities with different incentive
+          generative entities and oversight entities with different incentive
           structures, coordinating through shared state rather than central command.
-          The lab is running its own governance experiment on itself.
+          The lab is running its own oversight experiment on itself.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>

@@ -35,7 +35,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="On-device cognition kernel — evolving from orchestrator to world-shaper. 12-step consciousness loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
+            description="On-device cognition kernel — evolving from orchestrator to world-shaper. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"
@@ -63,8 +63,8 @@ export default function Projects() {
             repoUrl="https://github.com/dp-web4/ACT"
           />
           <ProjectCard
-            name="Governance Plugins"
-            description="Web4 governance model (audit trails, policy gating, trust tracking) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM plugin), and Claude Code (Python hooks). Same principles, different substrates."
+            name="Oversight Plugins"
+            description="Web4 oversight model (audit trails, policy gating, trust tracking) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM plugin), and Claude Code (Python hooks). Same principles, different substrates."
             accentColor="var(--color-plugins)"
             isPublic={true}
             links={[

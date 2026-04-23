@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div style={{ marginTop: "1rem", textAlign: "center" }}>
           <Link href="/projects" style={{ color: "var(--color-accent)", fontSize: "0.9375rem" }}>
-            Full ecosystem: Hardbound, Membot, SNARC, governance plugins, and more →
+            Full ecosystem: Hardbound, Membot, SNARC, oversight plugins, and more →
           </Link>
         </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
               metacognition &mdash; designed in parallel, integrated through
               a shared interface contract. Each machine owns one component.
               Peer review across the architecture. The process itself is
-              governance in action.
+              oversight in action.
             </p>
           </div>
           <div className="card">

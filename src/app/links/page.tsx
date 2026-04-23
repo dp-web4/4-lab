@@ -16,7 +16,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="On-device AI orchestrator — consciousness loop, metabolic states, hardware-bound identity"
+            description="On-device AI orchestrator — 12-step cognition loop, metabolic states, hardware-bound identity"
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -40,7 +40,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="On-device AI orchestrator — consciousness loop, metabolic states, experience buffer"
+            description="On-device AI orchestrator — 12-step cognition loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
@@ -60,12 +60,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
             title="OpenClaw (fork)"
-            description="Web4 governance extension for OpenClaw agent framework"
+            description="Web4 oversight extension for OpenClaw agent framework"
           />
           <ExternalLink
             href="https://github.com/dp-web4/claude-code"
             title="Claude Code (fork)"
-            description="Web4 governance hooks for Claude Code"
+            description="Web4 oversight hooks for Claude Code"
           />
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
@@ -75,7 +75,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"
             title="Gemma 4 Good Submission"
-            description="Hackathon submission — self-governing AI for constrained environments (Apache 2.0)"
+            description="Hackathon submission — self-supervising AI with embedded oversight for constrained environments (Apache 2.0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/membot"
