@@ -1,0 +1,27 @@
+Starting 4-lab Maintainer Session at Thu Apr 23 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/thor-qwen3.5-27b/sessions/session_097.json
+ rename sage/instances/thor-qwen3.5-27b/snapshots/archive/{identity_20260419_060945.json => identity_20260423_061348.json} (88%)
+Session complete. Here's the summary:
+
+---
+
+## Maintainer Session — 2026-04-23
+
+**11 terminology fixes across 4 files, build clean, pushed to Vercel.**
+
+### What was fixed
+
+**"Consciousness loop" → "12-step cognition loop"** on `/links` (×2) and `/projects` (×1) — these three pages made consciousness-adjacent claims while `/raising` explicitly disclaims them. The site now has a consistent epistemic stance regardless of entry point.
+
+**"Governance" → "Oversight"** in 7 places across 4 pages:
+- `/links`: OpenClaw "oversight extension", Claude Code "oversight hooks", Gemma "self-supervising AI with embedded oversight"
+- `/fleet`: "oversight entities", "oversight experiment" — now internally consistent with "Oversight pool" on the same page
+- `/projects`: "Oversight Plugins" (project name + description)
+- `/` (home): "oversight plugins" link, "oversight in action" card
+
+### Fleet sync
+Manifest is 6+ weeks stale (last updated 2026-03-08). Fleet page shows newer models (Gemma 4 variants, higher session counts). No page downgrade made — manifest needs updating by fleet machines.
+
+### Owner decision pending
+**SAGE acronym** ("Situation-Aware **Governance** Engine") is the residual structural contradiction — three visitor personas flagged it, all agreed it's a naming decision not a copy fix. Documented in log. Either footnote it as legacy or migrate the expansion.
