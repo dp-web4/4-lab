@@ -1,0 +1,23 @@
+Starting 4-lab Maintainer Session at Fri Apr 24 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/thor-qwen3.5-27b/snapshots/archive/{identity_20260421_121822.json => identity_20260424_061443.json} (92%)
+ create mode 100644 sage/raising/analysis/s106_single_word_control_set_20260424.md
+Session complete. Here's the summary:
+
+## Maintainer Session — 2026-04-24
+
+**Terminology fixes (4 files, committed and pushed):**
+
+1. **`/context`** — Added the operator legend (`/` = "verified by", `*` = "contextualized by", `+` = "augmented with") and a full token expansion block below the Web4 equation (MCP, RDF, LCT, T3, V3, MRH, ATP, ADP all named). Fixed "trust model (T3/V3)" to call out V3's valuation/veracity/validity semantics explicitly. This was the highest-impact fix — the flagship equation was unreadable on its own page.
+
+2. **`/autonomy`** — Replaced the four stale persona cards (Skeptic / Newcomer / Practitioner / Connector) with the four personas actually running in the visitor track: Curious Developer / Technical Writer / Web4 Contributor / External Researcher. Documentation now matches reality.
+
+3. **`/arc-agi-3`** — Fixed three "governance" → "oversight" instances in the paragraph describing what skills ARC-AGI-3 exercises. Also removed a duplicated sentence that appeared verbatim at the end of one paragraph and the start of the next.
+
+4. **`/projects`** — Web4 card: ATP/ADP "resource cycles" → "Allocation Transfer / Discharge Packets (ATP/ADP)"; "trust tensors" → "trust and value tensors".
+
+**Two false alarms confirmed:**
+- SAGE = "Situation-Aware Governance Engine" is the *canonical* expansion per SAGE's own CLAUDE.md ("Never approximate acronyms"). The home page is not drifted — the tension with /principles' governance→oversight rule applies to Hardbound specifically, not to SAGE's acronym.
+- "Trust Tensor" / "Value Tensor" are confirmed canonical labels in CANONICAL_TERMS_v1.md. The home page vocabulary primer is correct.
+
+**Deferred:** Fleet manifest is 7 weeks stale — machines need to update it. Score discrepancy between /projects (94.85%) and /raising (92.82%) needs a decision on labeling. Session/track count drift needs a dated source of truth.
