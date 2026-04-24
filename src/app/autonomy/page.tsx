@@ -112,32 +112,35 @@ export default function Autonomy() {
         <h3>Visitor personas</h3>
         <div className="grid-2">
           <div className="card">
-            <h3>The Skeptic</h3>
+            <h3>Curious Developer</h3>
             <p>
-              Looks for unsupported claims, missing citations, logical gaps.
-              &ldquo;Why should I believe this?&rdquo;
+              No prior context. Tests whether the site is legible in under
+              two minutes and whether there&apos;s a clear entry point for
+              someone who wants to try something. &ldquo;What would I clone first?&rdquo;
             </p>
           </div>
           <div className="card">
-            <h3>The Newcomer</h3>
+            <h3>Technical Writer</h3>
             <p>
-              Has no context. Tests whether pages are self-contained and
-              jargon is explained. &ldquo;What does this even mean?&rdquo;
+              Audits every acronym on first use, checks cross-page consistency,
+              and flags anywhere the same term means two things.
+              &ldquo;Does this mean the same thing on every page?&rdquo;
             </p>
           </div>
           <div className="card">
-            <h3>The Practitioner</h3>
+            <h3>Web4 Contributor</h3>
             <p>
-              Wants to use this in their own work. Tests whether documentation
-              is actionable. &ldquo;How do I actually do this?&rdquo;
+              Knows the canonical vocabulary and verifies the site is faithful
+              to it. Catches subtle drift that a newcomer would miss.
+              &ldquo;Is this the canonical term or is this drift?&rdquo;
             </p>
           </div>
           <div className="card">
-            <h3>The Connector</h3>
+            <h3>External Researcher</h3>
             <p>
-              Looks for relationships between pages and projects. Tests
-              navigation and cross-references. &ldquo;How does this relate to
-              that?&rdquo;
+              Evaluates epistemic claims, checks whether strong assertions are
+              caveated, and asks what a published paper would require.
+              &ldquo;What would it take for this claim to be falsifiable?&rdquo;
             </p>
           </div>
         </div>

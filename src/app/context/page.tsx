@@ -62,13 +62,22 @@ export default function Context() {
         <div className="equation">
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
+          <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+        </p>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
+          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token<br />
+          T3 = Trust Tensor (Talent/Training/Temperament) &nbsp;&bull;&nbsp; V3 = Value Tensor (Valuation/Veracity/Validity)<br />
+          MRH = Markov Relevancy Horizon &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
+        </p>
         <p>
           This equation appears in every project because it <em>is</em> every
           project. It&apos;s the canonical reference point. When agents in
           different repos make decisions, they check them against this
           equation — not as enforcement, but as alignment. Does this change
           preserve the ontological backbone (RDF)? Does it respect the trust
-          model (T3/V3)? Does it account for resource cycles (ATP/ADP)?
+          and value model (T3 = Talent/Training/Temperament; V3 = Valuation/Veracity/Validity)?
+          Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
         </p>
 
         <h3>Adversarial validation</h3>

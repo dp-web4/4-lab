@@ -20,18 +20,14 @@ export default function ArcAgi3Page() {
           measurable test of the capabilities the fleet is developing.
         </p>
         <p>
-          The games exercise exactly the skills that governance requires:
+          The games exercise exactly the skills that oversight requires:
           world-model discipline (build understanding before acting),
           verification before consequential action, persistence without
           perseveration (update from feedback vs. repeat failing approaches),
           and &mdash; critically &mdash; the difference between reading a status
-          and understanding the progression that produced it. Every game-play
-          insight maps fractally to governance.
-        </p>
-        <p>
-          Every game-playing insight maps fractally to governance. The game
-          doesn&apos;t know the agent is an AI. The governance shouldn&apos;t
-          need to, either.
+          and understanding the progression that produced it. Every game-playing
+          insight maps fractally to oversight. The game doesn&apos;t know the
+          agent is an AI. The oversight shouldn&apos;t need to, either.
         </p>
 
         <h3>What we bring to the competition</h3>
