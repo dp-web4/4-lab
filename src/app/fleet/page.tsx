@@ -21,6 +21,10 @@ export default function Fleet() {
           that floor, personality and training lineage dominate raw parameter count.
         </p>
 
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
+        </p>
+
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           High compute budget. Primary generative work: code, implementations, large agent tasks.

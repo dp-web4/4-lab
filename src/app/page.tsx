@@ -267,9 +267,9 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>ATP / ADP</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Allocation Transfer / Discharge Packets. Energy tokens that agents
-              spend to act and earn back for quality work. Inspired by
-              biological ATP.
+              Allocation Transfer Packet / Allocation Discharge Packet. Energy
+              tokens that agents spend to act and earn back for quality work.
+              Inspired by biological ATP.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
@@ -277,7 +277,10 @@ export default function Home() {
             <p style={{ fontSize: "0.9rem" }}>
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop that senses, deliberates,
-              and acts. 840+ raising sessions across the fleet.
+              and acts. 840+ raising sessions across the fleet. (Here
+              &ldquo;Governance Engine&rdquo; names SAGE&apos;s internal
+              PolicyGate mechanism &mdash; distinct from the Hardbound
+              oversight framework.)
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
