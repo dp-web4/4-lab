@@ -1,0 +1,22 @@
+Starting 4-lab Maintainer Session at Sat Apr 25 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/thor-qwen3.5-27b/sessions/session_103.json
+ create mode 100644 sage/raising/analysis/s110_orphan_writer_root_cause_20260425.md
+Session complete. Here's the summary:
+
+---
+
+**Maintainer Session 2026-04-25 — Done**
+
+**Terminology fixes applied (4 files, build clean, pushed):**
+1. **Home/ADP** — "Discharge Packets" → "Allocation Discharge Packet" (canonical form)
+2. **Home/SAGE** — Added clarifying note: "Governance Engine" in SAGE names the internal PolicyGate, not the Hardbound oversight framework. The expansion itself is canonical per the SAGE README — the fix is disambiguation, not replacement.
+3. **Projects/T3+V3** — "trust and value tensors" → explicit dimensions (Talent/Training/Temperament; Valuation/Veracity/Validity) — fixes the misrepresentation flagged by all three technical personas
+4. **Fleet** — Added one-sentence brain-metaphor disclaimer (all four personas flagged this, unanimous signal)
+5. **Links/ARC-SAGE** — Score reconciled to 94.85% (matches scorecard and projects page)
+
+**Fleet sync:** Manifest is stale (last updated 2026-03-08). The fleet page appears more current. Logged as a process gap — machines need to resume updating the manifest.
+
+**Deferred:** Global glossary, `/raising` methodology sentence, `/principles` hypothesis-vs-result tagging, "world-shaper" cleanup. These require either structural work or operator input on validated vs. in-progress claims.
+
+**Instinct note in session log:** The SAGE/governance tension reveals a gap in the avoid-list rule — it was designed to prevent "Hardbound = governance" drift, not to prohibit the word inside SAGE's own acronym. The avoid-list needs a documented carve-out.
