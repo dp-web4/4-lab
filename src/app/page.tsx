@@ -259,17 +259,25 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Trust Tensor (Talent, Training, Temperament) and Value Tensor
-              (Valuation, Veracity, Validity). Multidimensional scores instead
+              Trust Tensor (Talent/Training/Temperament) and Value Tensor
+              (Valuation/Veracity/Validity). Multidimensional scores instead
               of a single trust number.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>ATP / ADP</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Allocation Transfer Packet / Allocation Discharge Packet. Energy
-              tokens that agents spend to act and earn back for quality work.
-              Inspired by biological ATP.
+              Allocation Transfer Packet / Allocation Discharge Packet. ATP
+              allocates resources for an action; ADP records its discharge —
+              two distinct audit artifacts for every spend.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MRH</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Markov Relevancy Horizon. The boundary of what an entity can know
+              or affect &mdash; its context window of relevancy. Contextualizes
+              the T3/V3 trust tensor in the Web4 equation.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

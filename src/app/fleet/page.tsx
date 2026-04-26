@@ -40,7 +40,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 0.8B"
-            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on WM + SNARC + metabolic state. Zero crystallization achieved (S100). Edge demonstrator."
+            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -65,13 +65,13 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 3 4B · Gemma 4 E2B"
-            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, MRH MetabolicBlock bridge. Crystallization evaluator. Mobile."
+            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator. Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B · Gemma 4 E2B"
-            role="87 sessions (creating). Brain: working memory (dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — drove 94.85% ARC-AGI-3 score. MRH composer architect."
+            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — drove 94.85% ARC-AGI-3 score. MRH composer architect."
           />
         </div>
 

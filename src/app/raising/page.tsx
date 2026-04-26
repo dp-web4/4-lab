@@ -71,7 +71,7 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              24/25 games solved at 92.82% &mdash; the fleet&apos;s embodiment
+              24/25 games solved at 94.85% &mdash; the fleet&apos;s embodiment
               curriculum producing real, measurable results.
             </p>
           </div>

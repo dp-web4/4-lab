@@ -28,7 +28,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. Linked Context Tokens (LCTs), T3 (Talent/Training/Temperament) and V3 (Valuation/Veracity/Validity) tensors, Markov Relevancy Horizons (MRH), Allocation Transfer Packets (ATP) and Allocation Discharge Packets (ADP) — all backed by RDF triples. The shared language everything else speaks."
+            description="Trust-native ontology built on MCP (Model Context Protocol) and RDF (Resource Description Framework). Linked Context Token (LCT), T3 (Talent/Training/Temperament) and V3 (Valuation/Veracity/Validity) tensors, Markov Relevancy Horizon (MRH), Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — all backed by RDF triples. The shared language everything else speaks."
             accentColor="var(--color-web4)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/web4"
@@ -103,7 +103,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B to 27B, coordinating through world models, membot cartridges, and R6-shaped audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B to 27B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules/Role/Request/Reference/Resource/Result) audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             url="/arc-agi-3"
