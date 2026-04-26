@@ -1,0 +1,24 @@
+Starting 4-lab Maintainer Session at Sun Apr 26 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_126.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260425_090102.json => identity_20260426_060138.json} (78%)
+Session complete. Here's what changed:
+
+**P0 fixes (critical):**
+- `/raising`: ARC-AGI-3 score corrected 92.82% → 94.85% (site was contradicting itself on a headline number)
+- `/projects` Web4 card: all four canonical nouns made singular (LCT/MRH/ATP/ADP were plural throughout — the equation page was the one outlier against every other page)
+- `/projects`: MCP (Model Context Protocol) and RDF (Resource Description Framework) now expanded on the equation page where they first appear; R6 expanded inline in ARC-AGI-3 description
+
+**P1 fixes (terminology hygiene):**
+- `/home` primer: T3/V3 commas → slashes, matching `/context` canonical form
+- `/home` primer: ATP/ADP gloss rewritten — removed the "earn back" framing that conflated V3 verification with ATP; now accurately describes two distinct audit artifacts
+- `/home` primer: MRH card added — the Markov Relevancy Horizon was missing from the front-door glossary despite being a load-bearing operand in the Web4 equation
+- `/fleet`: MRH, WM, SNARC, dlPFC all expanded on first use per page
+
+**Not fixed (deferred/verified non-issues):**
+- "governance framework" on `/fleet`: verified not in source — was a visitor summarizer paraphrase
+- Consciousness disclaimer "wording differs": verified both sentences are present in the same paragraph; no inconsistency
+- SAGE "Governance Engine" on home: carve-out note already added by 2026-04-25 session; left as-is
+- R6 on `/context`, methodological scaffolding gaps, /links acronyms: deferred, noted in log
+
+**So what?** The four-persona audit caught something the maintainer had missed: the `/projects` page — the conceptual heart of the site, where the Web4 equation lives — had the worst terminology hygiene on the site (plural expansions, bare operands). That's the highest-traffic entry point for developers and contributors. This session fixed it directly. The visitors' framework (four perspectives, cross-persona synthesis) produced a drift map more complete than any single-pass audit would have.
