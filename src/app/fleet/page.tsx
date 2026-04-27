@@ -33,19 +33,19 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB VRAM"
-            model="Qwen 3.5 27B · Gemma 4 26B"
+            model="Qwen 2.5 14B · LoRA"
             role="91 sessions (creating). Brain: hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 0.8B"
+            model="Qwen 3.5 2B"
             role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 16GB"
-            model="Gemma 3 12B · Phi-4 14B"
+            model="Phi-4 14B · LoRA"
             role="25+ sessions. Brain: dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
@@ -64,13 +64,13 @@ export default function Fleet() {
           <MachineCard
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
-            model="Gemma 3 4B · Gemma 4 E2B"
+            model="Gemma 3 4B"
             role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator. Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
-            model="Gemma 3 4B · Gemma 4 E2B"
+            model="TinyLlama 1.1B"
             role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — drove 94.85% ARC-AGI-3 score. MRH composer architect."
           />
         </div>

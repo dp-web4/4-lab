@@ -66,7 +66,7 @@ src/app/
   fleet/page.tsx     # 6 machines
   autonomy/page.tsx  # Daily cycle timeline
   raising/page.tsx   # BECOMING phases
-  principles/page.tsx # 7 principles
+  principles/page.tsx # 10 principles
   context/page.tsx   # Knowledge flow
   links/page.tsx     # External links + contact
 ```

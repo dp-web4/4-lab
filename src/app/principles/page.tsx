@@ -37,9 +37,8 @@ export default function Principles() {
           <div className="principle-card">
             <div className="principle-title">Fractal leverage</div>
             <div className="principle-quote">
-              The Hill function describes enzyme binding AND trust formation —
-              not because of philosophy, but because it&apos;s the same
-              mechanism.
+              Trust formation through interaction — the same Hill function
+              kinetics that describe enzyme binding.
             </div>
             <div className="principle-text">
               When a pattern works at one scale, apply it at every scale. Not

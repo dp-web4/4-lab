@@ -43,7 +43,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. One coherence equation across 80 orders of magnitude — quantum to cosmic. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Publication readiness 0.97."
+            description="Theoretical foundation. One coherence equation across 80 orders of magnitude — quantum to cosmic. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Near-publication-ready."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             url="https://synchronism-site.vercel.app"
@@ -138,9 +138,9 @@ export default function Projects() {
           : pragmatic reuse of what works in one place, everywhere.
         </p>
         <p>
-          The Hill function describes enzyme binding AND trust formation not
-          because of a philosophical desire to unify, but because it&apos;s the
-          same mechanism. Self-similar patterns applied at different scales.
+          The Hill function describes enzyme binding — and maps trust formation
+          too. Not because we forced the analogy, but because the kinetics
+          rhyme. Self-similar patterns applied at different scales.
         </p>
       </section>
     </>
