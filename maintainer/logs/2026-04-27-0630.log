@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Mon Apr 27 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260426_090110.json => identity_20260427_060205.json} (76%)
+ create mode 100644 sage/raising/analysis/s118_cross_instance_register_attractor_atlas_20260427.md
+Session complete. Here's the summary:
+
+**Fleet sync**: 5/6 machines had stale model data. All corrected to match the manifest (Thor: Qwen 2.5 14B·LoRA, Sprout: Qwen 3.5 2B, Legion: Phi-4 14B·LoRA, Nomad: Gemma 3 4B, CBP: TinyLlama 1.1B).
+
+**Terminology fixes** (Tier 1 — highest priority per all visitor passes):
+1. **SAGE expansion** (`page.tsx`): "Situation-Aware **Governance** Engine" → "Situation-Aware **Guidance** Engine" — eliminates the only place on the site where the project contradicts its own oversight-not-governance principle. Removed the PolicyGate disclaimer (no longer needed). Updated session count 840+ → 900+.
+2. **Hill function** (`principles/page.tsx`, `projects/page.tsx`): Downgraded from unsupported "same mechanism" claim to analogy framing consistent with `/raising`. Two pages now say "the kinetics rhyme" instead of asserting mechanism equivalence.
+3. **Publication readiness** (`projects/page.tsx`): "0.97" → "Near-publication-ready" — drops methodology-free precision that was flagged by 2/4 personas as false confidence.
+4. **CLAUDE.md**: Corrected principles count 7 → 10.
+
+Build passed clean. Pushed to Vercel. Deferred items logged (p_crit context, /links acronym glosses, SNARC full expansion in primer) — none are terminology drift, all are editorial debt.
+
+**So what?** The SAGE naming fix is substantive — the lab's homepage was contradicting a principle the lab explicitly states as canonical. That's now resolved. Fleet model drift was the largest factual problem: 5/6 machines were showing wrong or stale models.
