@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Tue Apr 28 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/raising/analysis/s122_data/s122c_first_response_basin.py
+ create mode 100644 sage/raising/analysis/s122_per_session_basin_modes_20260428.md
+Session complete. Here's the summary:
+
+---
+
+## Session Summary — 2026-04-28
+
+**Fleet sync**: Thor's "122GB VRAM" corrected to "122GB unified memory" (manifest: `memory_unified: true`). All other machines current.
+
+**Terminology fixes (6 files):**
+- **T3/V3 normalization** — removed "Trust Tensor"/"Value Tensor" wrapper nouns from Home vocab card and Context legend; canonical form is bare `Talent/Training/Temperament` / `Valuation/Veracity/Validity`
+- **SAGE stale framing** — both Links entries ("On-device AI orchestrator") updated to "On-device cognition kernel" to match Projects' current framing
+- **Web4 equation/prose mismatch** — "built on MCP and RDF" (Projects) and "RDF backbone" (Links) both replaced with phrasing that matches the equation's `+` = "augmented with" operator semantics; the prose was contradicting the equation it appeared alongside
+- **Principles epistemic qualification** — "1% coupling gives 35% coherence gain" → "Preliminary observation: 1% coupling gave 35% coherence gain" — a single unreplicated finding shouldn't be presented as established fact
+
+**Build**: clean, 12 static pages, zero errors.
+
+**Deferred (notable):** A glossary page (`/glossary`) remains the single highest-leverage open item across all four visitor personas. The autonomous loop safety envelope description on `/autonomy` was flagged by the Researcher as under-specified — warrants operator input before drafting.
