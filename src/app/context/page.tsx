@@ -67,7 +67,7 @@ export default function Context() {
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token<br />
-          T3 = Trust Tensor (Talent/Training/Temperament) &nbsp;&bull;&nbsp; V3 = Value Tensor (Valuation/Veracity/Validity)<br />
+          T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
           MRH = Markov Relevancy Horizon &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
         <p>

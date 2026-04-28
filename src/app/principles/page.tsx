@@ -85,8 +85,8 @@ export default function Principles() {
               The synthon is the concept that bridges component behavior and
               system emergence. You can&apos;t build a synthon. You can create
               conditions where synthons form: compatible elements, sufficient
-              coupling density, shared context. Even 1% coupling gives 35%
-              coherence gain — sparse trust suffices.
+              coupling density, shared context. Preliminary observation: 1% coupling
+              gave 35% coherence gain — sparse trust may suffice.
             </div>
           </div>
 

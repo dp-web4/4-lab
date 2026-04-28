@@ -32,7 +32,7 @@ export default function Fleet() {
         <div className="grid-3">
           <MachineCard
             name="Thor"
-            hardware="NVIDIA Jetson AGX Thor — 122GB VRAM"
+            hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 2.5 14B · LoRA"
             role="91 sessions (creating). Brain: hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />

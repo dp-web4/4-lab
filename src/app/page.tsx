@@ -259,9 +259,9 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Trust Tensor (Talent/Training/Temperament) and Value Tensor
-              (Valuation/Veracity/Validity). Multidimensional scores instead
-              of a single trust number.
+              Talent / Training / Temperament and Valuation / Veracity / Validity
+              — the canonical three-dimensional trust and value scores.
+              Multidimensional, not a single number.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

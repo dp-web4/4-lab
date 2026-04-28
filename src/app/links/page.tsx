@@ -16,7 +16,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="On-device AI orchestrator — 12-step cognition loop, metabolic states, hardware-bound identity"
+            description="On-device cognition kernel — 12-step cognition loop, metabolic states, hardware-bound identity"
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -35,12 +35,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCTs, T3/V3, MRH, RDF backbone"
+            description="Trust-native ontology — trust core (LCTs, T3/V3, MRH) augmented by MCP and RDF"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="On-device AI orchestrator — 12-step cognition loop, metabolic states, experience buffer"
+            description="On-device cognition kernel — 12-step cognition loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
