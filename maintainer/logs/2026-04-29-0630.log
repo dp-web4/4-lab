@@ -1,0 +1,22 @@
+Starting 4-lab Maintainer Session at Wed Apr 29 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/raising/analysis/s126_data/s126b_disclaim_subtype_audit.py
+ create mode 100644 sage/raising/analysis/s126_disclaim_pheno_spatial_audit_20260429.md
+Session complete. Here's the summary:
+
+---
+
+## Maintainer Session 2026-04-29 — Complete
+
+**Fleet sync**: All 6 machines match the manifest. No updates needed.
+
+**Terminology**: Clean session at the substance level — no wrong expansions anywhere. Only form drift (T3/V3 slash spacing) fixed across `/projects` and `/fleet`.
+
+**HIGH severity fixes shipped:**
+1. **Crystallization defined** on `/fleet` — Sprout's "Zero crystallization achieved (S100)" and Nomad's "Crystallization evaluator" now carry parenthetical definitions ("fixed-point collapse where exploration stops")
+2. **Identity-transfer hedged** on `/fleet` — Added "By 'identity transfer' we mean behavioral continuity... not continuity-of-self in any philosophical sense." Aligns /fleet with /raising's explicit disclaimer.
+3. **ARC-AGI-3 overclaim removed** on `/raising` Phase 6 — "the fleet's embodiment curriculum producing real, measurable results" replaced with attribution to the ARC-SAGE harness. The contributor and researcher personas were right: the score came from a different workstream than the raising curriculum.
+4. **Hardbound status disclosed** on `/links` — Note added that the code is internal/not publicly available, pointing to /projects.
+5. **SAGE expanded** on first use in /fleet body text.
+
+**So what?** The visitor log had no substance drift — the terminology loop is holding. This session's fixes were about the next layer: precision of claims and contributor trust. An unhedged identity claim that contradicts a carefully-worded disclaimer two pages away is a credibility leak, not just imprecision. Fixed.
