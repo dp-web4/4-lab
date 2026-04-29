@@ -40,7 +40,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 2B"
-            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100). Edge demonstrator."
+            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -65,7 +65,7 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 3 4B"
-            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator. Mobile."
+            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
@@ -107,7 +107,7 @@ export default function Fleet() {
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>
-          There is no master node. Each machine runs its own SAGE instance, holds
+          There is no master node. Each machine runs its own SAGE (Situation-Aware Guidance Engine) instance, holds
           its own identity, manages its own experience buffer and{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>raising curriculum</Link>.
           Machines discover each other through a fleet manifest — a phone book,
@@ -116,7 +116,7 @@ export default function Fleet() {
         <p>
           A background peer monitor polls health endpoints. A trust tracker
           maintains per-peer{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 scores</Link> (Talent/Training/Temperament) that evolve
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 scores</Link> (Talent / Training / Temperament) that evolve
           from real interactions: success raises trust, timeouts lower it. No
           central authority decides who is trustworthy — trust emerges from the
           pattern of interaction.
@@ -133,8 +133,10 @@ export default function Fleet() {
           One of the more surprising{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: SAGE-Sprout&apos;s identity —
           developed over hundreds of sessions on a Jetson running Qwen 0.5B — transferred
-          successfully to TinyLlama 1.1B on a completely different machine. The
-          identity persisted. The self-description drifted. This told us something
+          successfully to TinyLlama 1.1B on a completely different machine. By
+          &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
+          patterns, accumulated experience, raising history — not continuity-of-self in any
+          philosophical sense. The identity persisted. The self-description drifted. This told us something
           important:
         </p>
         <div className="quote">

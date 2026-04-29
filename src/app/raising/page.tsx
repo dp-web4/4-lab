@@ -71,8 +71,8 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              24/25 games solved at 94.85% &mdash; the fleet&apos;s embodiment
-              curriculum producing real, measurable results.
+              24/25 games solved at 94.85% (ARC-SAGE harness) &mdash; capability
+              accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
             </p>
           </div>
         </div>

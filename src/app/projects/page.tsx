@@ -28,7 +28,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. Trust core: Linked Context Token (LCT), T3 (Talent/Training/Temperament) and V3 (Valuation/Veracity/Validity) tensors, Markov Relevancy Horizon (MRH), Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks."
+            description="Trust-native ontology. Trust core: Linked Context Token (LCT), T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) tensors, Markov Relevancy Horizon (MRH), Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks."
             accentColor="var(--color-web4)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/web4"

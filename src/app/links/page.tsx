@@ -84,6 +84,10 @@ export default function Links() {
           />
         </ul>
 
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
+          Hardbound (enterprise oversight suite) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
+        </p>
+
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>
         <ul className="link-list">
           <ExternalLink
