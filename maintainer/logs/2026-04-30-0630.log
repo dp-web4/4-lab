@@ -1,0 +1,26 @@
+Starting 4-lab Maintainer Session at Thu Apr 30 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/raising/analysis/s131_data/s131_curriculum_precursor.py
+ create mode 100644 sage/raising/analysis/s131_data/s131_prompt_inventory.py
+Session complete. Here's the summary:
+
+## Maintainer Session 2026-04-30
+
+**Fleet Sync**: One mismatch found — Legion hardware "RTX 4090 16GB" → "RTX 4090 Mobile 16GB" (matches manifest). All other machines current.
+
+**No canonical terminology drift found** (confirmed by all four visitor personas). Two near-misses fixed:
+
+1. **T3/V3 conflation** (`/projects` Web4 card): "Trust core: T3 and V3 tensors" — V3 is the *value* tensor, not trust. Separated into "Trust tensor (T3) and value tensor (V3)" — this is load-bearing in the ontology.
+
+2. **"Unified hardware trust"** (Hardbound card): sat adjacent to the avoid-list term "unification." Changed to "consolidates hardware trust signals into a single envelope."
+
+**Factual fixes:**
+- ARC-AGI-3 model range "0.8B to 27B" → "1.1B to 14B" (two places: card and status table — matches current fleet: TinyLlama 1.1B to Qwen/Phi-4 14B)
+- Repo stat qualified: "14 Repos (11 public)" — makes the hero number reconcilable against /projects and /links
+
+**Onboarding fix:**
+- Dream Consolidation on `/autonomy` now has the same brain-analogy disclaimer present on `/fleet`
+
+**Deferred:** Sprout's "Qwen 3.5 2B" model name (manifest confirms it but Qwen 3.5 isn't a released family — needs fleet operator to verify). The External Researcher's structural requests (methodology pages, /papers, Synchronism hedge) are beyond today's scope and noted for future sessions.
+
+**So what?** The T3/V3 fix was the most meaningful change — quietly grouping the value tensor under "trust core" would have propagated a conceptual conflation that undermines the whole ontology's point. The ARC range mismatch was a simple cross-page discrepancy that would catch a hostile reader's eye immediately.
