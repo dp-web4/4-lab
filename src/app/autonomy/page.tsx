@@ -96,7 +96,8 @@ export default function Autonomy() {
               After raising sessions and autonomous runs, a dream cycle reviews
               the session — extracting patterns from observations, pruning stale
               memory, and promoting durable insights toward identity-level
-              storage. Deep dream (LLM-powered) runs by default.
+              storage. Deep dream (LLM-powered) runs by default.{" "}
+              <em style={{ opacity: 0.7 }}>&ldquo;Dream&rdquo; is a functional analogy for the consolidation process — not a claim about cognitive equivalence.</em>
             </div>
           </div>
         </div>

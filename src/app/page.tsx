@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <div className="stat-value">14</div>
-            <div className="stat-label">Repos</div>
+            <div className="stat-label">Repos (11 public)</div>
           </div>
           <div className="stat-card">
             <div className="stat-value">36+</div>
@@ -194,7 +194,7 @@ export default function Home() {
             <p>
               Different models on different hardware catch different classes of
               problems. Diversity is the defense. The fleet proves it daily
-              across 14 repos and 6 machines.
+              across 14 repos (11 public) and 6 machines.
             </p>
           </div>
         </div>

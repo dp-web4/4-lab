@@ -28,7 +28,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. Trust core: Linked Context Token (LCT), T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) tensors, Markov Relevancy Horizon (MRH), Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks."
+            description="Trust-native ontology. Trust tensor (T3: Talent / Training / Temperament) and value tensor (V3: Valuation / Veracity / Validity) over Linked Context Tokens (LCT), scoped by Markov Relevancy Horizon (MRH), with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks."
             accentColor="var(--color-web4)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/web4"
@@ -51,7 +51,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Enterprise oversight suite. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope provides unified hardware trust. 424+ attack vectors catalogued. The trust layer that touches silicon."
+            description="Enterprise oversight suite. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -103,7 +103,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B to 27B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules/Role/Request/Reference/Resource/Result) audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules/Role/Request/Reference/Resource/Result) audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             url="/arc-agi-3"
@@ -117,7 +117,7 @@ export default function Projects() {
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games, 94.85%</td></tr>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 1.1B to 14B</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td></tr>

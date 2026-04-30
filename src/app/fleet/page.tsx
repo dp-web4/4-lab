@@ -44,7 +44,7 @@ export default function Fleet() {
           />
           <MachineCard
             name="Legion"
-            hardware="Laptop, NVIDIA RTX 4090 16GB"
+            hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
             model="Phi-4 14B · LoRA"
             role="25+ sessions. Brain: dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
