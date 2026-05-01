@@ -21,7 +21,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="Trust-native society research prototype — agents, ATP, karma, Web4 in miniature"
+            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet), karma, Web4 in miniature"
           />
         </ul>
 
@@ -85,7 +85,7 @@ export default function Links() {
         </ul>
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
-          Hardbound (enterprise oversight suite) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
+          Hardbound (hardware-bound oversight suite) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>

@@ -38,7 +38,7 @@ export default function Home() {
             <div className="stat-label">Repos (11 public)</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">36+</div>
+            <div className="stat-value">31+</div>
             <div className="stat-label">Autonomous Tracks</div>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function Home() {
           <div className="card">
             <h3>Autonomous agents maintain their own infrastructure</h3>
             <p>
-              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>36+ daily tracks</Link> run
+              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>31+ daily tracks</Link> run
               without human intervention. Visitor audits, maintainer fixes,
               supervisor health checks, research sessions &mdash; all
               autonomous. This is not a demo; it runs every day on the fleet.

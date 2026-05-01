@@ -25,6 +25,9 @@ export default function Projects() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Developmental and lifecycle terms below — &ldquo;raising&rdquo;, &ldquo;identity&rdquo;, &ldquo;die and rebirth&rdquo;, &ldquo;world-shaper&rdquo; — are functional descriptions of system behavior, not phenomenal claims. See the <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link> page for the full framing and consciousness caveats.
+        </p>
         <div className="grid-2">
           <ProjectCard
             name="Web4"
@@ -35,7 +38,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="On-device cognition kernel — evolving from orchestrator to world-shaper. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Guidance Engine — on-device cognition kernel, evolving from orchestrator to world-shaper. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"
@@ -51,13 +54,13 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Enterprise oversight suite. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Hardware binding via TPM 2.0, FIDO2 (Fast IDentity Online), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Cosmos SDK implementation of the Agentic Context Protocol (ACP), enabling humans to interact with MCP servers through their Linked Context Tokens."
+            description="Agentic Context Tool — the human interface to Web4. Cosmos SDK implementation of the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP layers Web4 trust primitives — LCT binding and attestation — over MCP transport; they are complementary, not alternatives."
             accentColor="var(--color-act)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/ACT"
