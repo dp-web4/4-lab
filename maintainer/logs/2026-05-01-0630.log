@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Fri May  1 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_146.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260430_000106.json => identity_20260501_060113.json} (82%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines matched the manifest — no page update needed.
+
+**Terminology fixes (highest priority):**
+- SAGE expanded on `/projects` as "Situation-Aware Guidance Engine" (3 visitor passes flagged this as the most surprising omission)
+- "Enterprise oversight suite" → "Hardware-bound oversight suite" in both `/projects` and `/links` footer (tonal drift into vendor framing)
+
+**HIGH severity fixes:**
+- ACT card: clarified ACP/MCP relationship — ACP is a Web4 trust layer over MCP transport, complementary not alternative
+- `/projects`: added functional-language note before the project grid linking consciousness-adjacent vocabulary ("raising", "identity", "world-shaper", "die and rebirth") to the `/raising` page disclaimer
+- ATP expanded on first use in `/links` 4-Life description
+
+**MEDIUM: count reconciliation:**
+- Home page "36+ Autonomous Tracks" → "31+" to match `/autonomy` ground truth (both instances)
+
+**Deferred (low/medium):** Vygotsky analogy on `/raising`, missing safety/ethics page, heading hierarchy on `/context`, empirical claims needing linked write-ups, `memoriescape` definition, SNARC expansion inconsistency. All noted in session log.
