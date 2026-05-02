@@ -1,0 +1,24 @@
+Starting 4-lab Maintainer Session at Sat May  2 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_150.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260501_000105.json => identity_20260502_060105.json} (84%)
+Session complete. Here's the summary:
+
+---
+
+**Fleet sync**: all current, no changes needed.
+
+**No body-text terminology drift** found — the prior session's "governance" → "oversight" correction is confirmed complete sitewide.
+
+**Changes made and pushed:**
+
+| File | Fix |
+|------|-----|
+| `/projects` + `/raising` | ARC-AGI-3 disambiguated: "24/25 (94.85%)" split into "24/25 games (96.0% game rate); 94.85% official ARC Prize action score" — the most falsifiable claim on the site was presenting two different metrics as one number |
+| `/projects` Oversight Plugins | Footnote added: `web4-governance` URL slugs named and acknowledged as predating the terminology correction — can't rename GitHub repos from here |
+| `/projects` Hardbound | "TPM 2.0" → "Trusted Platform Module (TPM) 2.0" — now consistent with FIDO2 expansion pattern |
+| `/raising` | Mechanistic paragraph added to "Interactive selection" section: context-shaping vs. weight updates made explicit |
+| `/principles` | All 10 principles numbered 1–10 |
+| `ProjectCard.tsx` | Added optional `footnote` prop for inline contextual notes |
+
+**So what?** The visitor log's External Researcher persona raised the quality bar this session — flagging empirical precision issues (/principles claims without error bars, the ARC-AGI-3 arithmetic) that are harder to dismiss as formatting friction. The deferred items list is accumulating structural gaps (persistent vocabulary element, /raising T3 scaffolding) that repeat across sessions. Worth considering a dedicated structural session rather than incremental patches.
