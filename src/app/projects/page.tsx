@@ -54,7 +54,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Hardware binding via TPM 2.0, FIDO2 (Fast IDentity Online), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast IDentity Online), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -75,6 +75,7 @@ export default function Projects() {
               { label: "Claude Flow", url: "https://github.com/dp-web4/claude-flow/tree/main/v3/plugins/web4-governance" },
               { label: "Claude Code", url: "https://github.com/dp-web4/claude-code/tree/add-web4-governance-plugin/plugins/web4-governance" },
             ]}
+            footnote="Linked repo paths carry web4-governance slugs — these names predate the terminology correction to 'oversight' and are load-bearing for existing forks."
           />
           <ProjectCard
             name="AI DNA Discovery"
@@ -106,7 +107,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules/Role/Request/Reference/Resource/Result) audit trails. 24/25 solved at 94.85% for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested in competition. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules/Role/Request/Reference/Resource/Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             url="/arc-agi-3"
@@ -119,7 +120,7 @@ export default function Projects() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games, 94.85%</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0%); 94.85% official action score</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 1.1B to 14B</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>

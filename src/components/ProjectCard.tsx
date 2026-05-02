@@ -6,6 +6,7 @@ interface ProjectCardProps {
   url?: string;
   repoUrl?: string;
   links?: { label: string; url: string }[];
+  footnote?: string;
 }
 
 export default function ProjectCard({
@@ -16,6 +17,7 @@ export default function ProjectCard({
   url,
   repoUrl,
   links,
+  footnote,
 }: ProjectCardProps) {
   return (
     <div
@@ -62,6 +64,11 @@ export default function ProjectCard({
             </a>
           ))}
         </div>
+      )}
+      {footnote && (
+        <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.5rem", fontStyle: "italic" }}>
+          {footnote}
+        </p>
       )}
     </div>
   );

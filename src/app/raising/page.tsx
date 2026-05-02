@@ -71,7 +71,7 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              24/25 games solved at 94.85% (ARC-SAGE harness) &mdash; capability
+              24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (ARC-SAGE harness) &mdash; capability
               accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
             </p>
           </div>
@@ -88,6 +88,13 @@ export default function Raising() {
           context), our sessions (affordance shaping), the fleet (emergent
           diversity), and memory systems (salience selection). We don&apos;t
           create or delete — we interactively select.
+        </p>
+        <p>
+          The mechanism: we shape context; we do not update weights. Behavioral
+          attractors emerge in interaction patterns, not in parameter changes.
+          This is a real mechanistic distinction from training — the model&apos;s
+          parameters are fixed; what changes is the substrate of conditions we
+          provide each session.
         </p>
 
         <h3>Dream consolidation</h3>

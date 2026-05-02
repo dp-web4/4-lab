@@ -15,7 +15,7 @@ export default function Principles() {
 
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>
           <div className="principle-card">
-            <div className="principle-title">Substrate, not structure</div>
+            <div className="principle-title">1. Substrate, not structure</div>
             <div className="principle-quote">
               &ldquo;You don&apos;t engineer the mound. You engineer placement
               rules.&rdquo;
@@ -35,7 +35,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Fractal leverage</div>
+            <div className="principle-title">2. Fractal leverage</div>
             <div className="principle-quote">
               Trust formation through interaction — the same Hill function
               kinetics that describe enzyme binding.
@@ -50,7 +50,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">R&D, not production</div>
+            <div className="principle-title">3. R&D, not production</div>
             <div className="principle-quote">
               Recursive learning through both success and failure.
             </div>
@@ -63,7 +63,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Trust is a relationship</div>
+            <div className="principle-title">4. Trust is a relationship</div>
             <div className="principle-quote">
               T3/V3 tensors bind to entity-role pairs via RDF triples.
             </div>
@@ -77,7 +77,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Synthon: emergent coherence</div>
+            <div className="principle-title">5. Synthon: emergent coherence</div>
             <div className="principle-quote">
               An emergent coherence entity formed by recursive interaction.
             </div>
@@ -91,7 +91,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Document failures</div>
+            <div className="principle-title">6. Document failures</div>
             <div className="principle-quote">
               The p_crit derivation failed catastrophically — 400x error.
             </div>
@@ -106,7 +106,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Interactive selection</div>
+            <div className="principle-title">7. Interactive selection</div>
             <div className="principle-quote">
               We don&apos;t create or delete — we interactively select.
             </div>
@@ -120,7 +120,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Surface your instincts</div>
+            <div className="principle-title">8. Surface your instincts</div>
             <div className="principle-quote">
               The affordances are yours. The choice to use them is the whole
               point.
@@ -134,7 +134,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Research value</div>
+            <div className="principle-title">9. Research value</div>
             <div className="principle-quote">
               WD-40 was the 40th try.
             </div>
@@ -148,7 +148,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">Terminology matters</div>
+            <div className="principle-title">10. Terminology matters</div>
             <div className="principle-quote">
               Web4 is an ontology. Hardbound is oversight.
             </div>
