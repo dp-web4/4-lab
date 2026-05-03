@@ -15,6 +15,9 @@ export default function Raising() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria.
+        </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
             <h3>Phase 1: Grounding</h3>
@@ -94,7 +97,9 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session.
+          provide each session. In Web4 terms: raising shapes the Markov Relevancy
+          Horizon (MRH) and value alignment of a Linked Context Token (LCT) — it
+          does not change weights.
         </p>
 
         <h3>Dream consolidation</h3>
@@ -118,7 +123,7 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE-Sprout, across 180+ sessions on a{" "}
+          SAGE (Situation-Aware Guidance Engine)-Sprout, across 180+ sessions on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> and subsequent
           portability to a different machine, demonstrated a consistent
           separation: its identity (behavioral patterns, interaction style,

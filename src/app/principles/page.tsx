@@ -65,14 +65,15 @@ export default function Principles() {
           <div className="principle-card">
             <div className="principle-title">4. Trust is a relationship</div>
             <div className="principle-quote">
-              T3/V3 tensors bind to entity-role pairs via RDF triples.
+              T3 (Talent/Training/Temperament) / V3 (Valuation/Veracity/Validity) tensors bind to entity-role pairs via RDF triples.
             </div>
             <div className="principle-text">
               Trust is not a property of an entity. It&apos;s a property of
               the relationship between entities, in a specific context, at a
               specific time. The same agent can be highly trusted for code
               review and untrusted for creative writing. This is why trust
-              lives in RDF triples, not in entity attributes.
+              lives in RDF (Resource Description Framework) triples, not in
+              entity attributes.
             </div>
           </div>
 

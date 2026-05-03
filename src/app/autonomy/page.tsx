@@ -146,6 +146,19 @@ export default function Autonomy() {
           </div>
         </div>
 
+        <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
+        <p>
+          These tracks operate within the{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> oversight
+          envelope — the hardware-bound suite that defines what autonomous operation
+          is and is not authorized to do. Publisher only acts on changes the
+          supervisor has cleared. No track can modify the shared fleet registry or
+          acquire credentials beyond its declared scope. In Web4 terms, each scheduled
+          track is an ATP (Allocation Transfer Packet) allocation; its completion or
+          failure is recorded as an ADP (Allocation Discharge Packet) — the registry
+          is the bookkeeping layer that makes autonomous operation auditable.
+        </p>
+
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>
         <h3>What the loop catches</h3>
         <p>

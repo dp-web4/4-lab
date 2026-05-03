@@ -93,10 +93,10 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #10b981" }}>
               <h3 style={{ color: "#10b981" }}>SAGE</h3>
               <p>
-                An on-device AI cognition kernel — a continuous 12-step loop
-                that senses, deliberates, and acts. Runs on hardware from
-                Jetson edge modules to laptops. Persistent identity across
-                models and machines.
+                Situation-Aware Guidance Engine — an on-device AI cognition
+                kernel running a continuous 12-step loop: sense, deliberate,
+                act. Runs on hardware from Jetson edge modules to laptops.
+                Persistent identity across models and machines.
               </p>
             </div>
           </a>
@@ -168,6 +168,9 @@ export default function Home() {
         </div>
 
         <h2>What we&apos;ve demonstrated</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Developmental and lifecycle terms below (identity, behavioral continuity) are functional descriptions of observed system behavior — not phenomenal or philosophical claims.
+        </p>
         <div className="grid-3">
           <div className="card">
             <h3>Identity persists across models</h3>
