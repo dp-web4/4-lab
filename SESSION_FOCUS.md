@@ -18,25 +18,25 @@
 
 ## Recent Updates
 
-Most recent commits (as of 2026-03-22):
-- `fb90bd9` Update 4-lab site with latest developments across all pages
-- `f123c98` Ground the mound metaphor for newcomers
-- `96ef62e` Update fleet, add engram to projects, trim GitNexus CLAUDE.md
-- `8c8c15c` Home: restore 'three demonstrated things' below project cards
-- `7baa31c` Home: replace 'demonstrated' section with key project cards
+Most recent commits (as of 2026-05-03):
+- `d95682b` maintainer: expand SAGE/T3/V3/RDF first-use omissions, add safety envelope and caveat placements
+- `ffc8f37` maintainer: session 2026-05-02
+- `84f20da` maintainer: disambiguate ARC-AGI-3 metrics, add oversight URL footnote, mechanistic raising sentence, number principles
 
 ---
 
 ## Terminology Enforcement Status
 
-Last maintainer session (2026-03-22) failed to run — OAuth token expired. Terminology audit from that session is missing. Next session should cover backlog.
+Last maintainer session: 2026-05-03 — completed. Zero hard drift found. The visitor Web4 Contributor pass confirmed canonical expansions are uniformly correct across all 8 pages. First-use omissions (SAGE on /home and /raising; T3/V3/RDF on /principles) fixed.
 
-Key terms to watch:
-- LCT = Linked Context Token (not Lifelong Capability Token)
-- Web4 = ontology (not architecture/infrastructure)
-- Hardbound = oversight (not governance)
-- "fractal leverage" not "unification"
-- No "production ready" — we are in R&D
+Key terms — all currently CORRECT on site:
+- LCT = Linked Context Token ✓
+- Web4 = ontology ✓ (never "architecture"/"infrastructure")
+- Hardbound = oversight ✓ (never "governance")
+- "fractal leverage" ✓ (not "unification" — "unification" appears only as a foil on /principles, correct by negation)
+- No "production ready" ✓
+
+Known editorial note for linters: "unification" and "scope inflation" on /principles appear as foils. Do not flag.
 
 ---
 
@@ -71,10 +71,12 @@ https://4-lab.vercel.app — auto-deploys on push to main.
 
 ## Pending Items
 
-- Maintainer OAuth token expired 2026-03-22 — session did not complete
-- Verify all 8 pages for terminology compliance after recent bulk update (fb90bd9)
-- Check if "engram" project addition (96ef62e) uses canonical terms correctly
+- `/glossary` page: all 4 visitor personas converged on this as the highest-leverage single fix. Deferred — needs a dedicated session. Would let /raising and /principles stop carrying full expansion burden.
+- SNARC canonical form: three different first-encounter forms across pages (function / letter expansion / dimension list). Recommend standardizing to "SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory)" and adding a row to CLAUDE.md canonical table.
+- Session log source pointers: quantitative claims (94.85%, 180+ sessions, identity portability) lack inline links to underlying logs. No publishable log corpus yet.
+- Membot one-line gloss on /projects — minor.
+
+*Updated by maintainer, 2026-05-03*
 
 ---
 
-*Updated by operator, 2026-03-22*
