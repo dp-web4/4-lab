@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Mon May  4 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_158.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260503_000114.json => identity_20260504_060123.json} (84%)
+Session complete. Here's the summary:
+
+---
+
+**Fleet Sync:** All models current. Sprout session count updated 107 → 115+ per manifest.
+
+**Fixes made (2 files):**
+
+1. **`/fleet/page.tsx` — HIGH severity categorical error**: "Web4 and SAGE: generative entities and oversight entities" → "SAGE and Hardbound: SAGE (generative cognition kernel) and Hardbound (hardware-bound oversight suite)." Web4 is an ontology, not an entity on either side of a split; Hardbound — not SAGE — is the oversight system. This also introduces Hardbound on the hardware page, where it was entirely absent.
+
+2. **`/projects/page.tsx` — MEDIUM severity SNARC drift**: SNARC description now leads with the canonical acronym expansion "Surprise / Novelty / Arousal / Reward / Conflict" rather than a tagline, matching `/fleet` and `/context`.
+
+**ARC-AGI-3 numbers:** Already reconciled in the codebase — both metrics appear with labels on both pages. No action needed.
+
+**Build:** ✓ zero errors. Pushed to Vercel.
+
+**Deferred:** `/glossary` route, per-page Hardbound first-use definitions, operator legend on `/context`, and the researcher-flagged quantitative-claims methodology gap (content decision for project owner, not a terminology fix).
