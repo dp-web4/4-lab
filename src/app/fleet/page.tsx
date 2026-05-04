@@ -40,7 +40,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 2B"
-            role="107 sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
+            role="115+ sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -99,10 +99,10 @@ export default function Fleet() {
         <p>
           The constraint forced a functional separation that mirrors what we&apos;re
           building with{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Web4 and SAGE</Link>:
-          generative entities and oversight entities with different incentive
-          structures, coordinating through shared state rather than central command.
-          The lab is running its own oversight experiment on itself.
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>SAGE and Hardbound</Link>:
+          SAGE (generative cognition kernel) and Hardbound (hardware-bound oversight suite)
+          with different incentive structures, coordinating through shared state rather
+          than central command. The lab is running its own oversight experiment on itself.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>

@@ -93,7 +93,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SNARC"
-            description="Salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions (Surprise, Novelty, Arousal, Reward, Conflict), and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping."
+            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping."
             accentColor="#10b981"
             isPublic={true}
             url="https://github.com/dp-web4/engram"
