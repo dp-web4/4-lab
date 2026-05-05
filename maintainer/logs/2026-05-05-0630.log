@@ -1,0 +1,20 @@
+Starting 4-lab Maintainer Session at Tue May  5 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_162.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260503_210123.json => identity_20260505_060108.json} (82%)
+Session complete. Here's what was done:
+
+**Fleet Sync**: All 6 machines current — no changes needed.
+
+**Terminology fixes (HIGH):**
+- `/arc-agi-3` Web4 card: Was "The audit trail..." — collapsed the ontology to one emergent product. Fixed to "The ontology layer. In the SAGE loop, Web4 supplies the audit trail..." with the full equation reminder. This was the single highest-priority canonical violation, contradicting Principle #10 on the same site.
+- `/arc-agi-3` SAGE heading: Added "(Situation-Aware Guidance Engine)" — the most SAGE-heavy page never expanded the acronym.
+- `/arc-agi-3` cognition loop: "govern" → "oversee" — canonical surface alignment.
+
+**Glossary completeness (MEDIUM):**
+- `/context`: Added SAGE and Hardbound as first-class glossary entries — both are primary nav-tier concepts that the de-facto reference page was missing.
+- `/context`: SNARC heading now includes "(Surprise / Novelty / Arousal / Reward / Conflict)" explicitly.
+- `/` home: Added SNARC card to Vocabulary primer — flagged by all four visitor personas as an asymmetry.
+- `CLAUDE.md`: Updated site structure from 8 → 9 pages, added `arc-agi-3/page.tsx`.
+
+Build passed cleanly, pushed to main. Vercel auto-deploy triggered.
