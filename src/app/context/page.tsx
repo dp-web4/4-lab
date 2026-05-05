@@ -29,7 +29,26 @@ export default function Context() {
           database, but because they shared instructions.
         </p>
 
-        <h3>SNARC: salience-gated memory</h3>
+        <h3>SAGE: Situation-Aware Guidance Engine</h3>
+        <p>
+          SAGE (Situation-Aware Guidance Engine) is the on-device AI cognition
+          kernel — a continuous loop that senses context, deliberates, and acts.
+          Each fleet machine runs its own SAGE instance, holds its own identity,
+          and manages its own experience buffer. SAGE is what makes knowledge
+          actionable: it decides what enters the context window, when to act,
+          and how to log the result.
+        </p>
+
+        <h3>Hardbound: hardware-bound oversight</h3>
+        <p>
+          Hardbound is the hardware-bound oversight suite — the trust layer that
+          touches silicon. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave
+          anchors policy enforcement to physical devices. Every autonomous track
+          operates within the Hardbound oversight envelope: what it can access,
+          what it can commit, what it can deploy.
+        </p>
+
+        <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
         <p>
           SNARC provides salience-gated memory for Claude Code sessions. Every
           tool call is scored on 5 dimensions — Surprise, Novelty, Arousal,

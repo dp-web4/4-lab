@@ -33,11 +33,11 @@ export default function ArcAgi3Page() {
         <h3>What we bring to the competition</h3>
         <div className="grid-3" style={{ marginTop: "1rem" }}>
           <div className="card" style={{ borderLeft: "3px solid #10b981" }}>
-            <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE</h4>
+            <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Guidance Engine)</h4>
             <p style={{ fontSize: "0.875rem" }}>
               The cognition loop. Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; govern &rarr; filter &rarr; act. PolicyGate at step
+              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate at step
               8.5 evaluates every action against signed law before it fires.
             </p>
           </div>
@@ -53,10 +53,10 @@ export default function ArcAgi3Page() {
           <div className="card" style={{ borderLeft: "3px solid #3b82f6" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#3b82f6" }}>Web4</h4>
             <p style={{ fontSize: "0.875rem" }}>
-              The audit trail. Every action shaped as an R6 record. Every policy
-              decision signed against a law bundle. Every salient experience
-              consolidated into a dream bundle that IS the training data for
-              the next generation.
+              The ontology layer. In the SAGE loop, Web4 supplies the audit trail
+              &mdash; every action shaped as an R6 record, every policy decision
+              signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>)
+              is the ontology that makes signed, reviewable action records possible.
             </p>
           </div>
         </div>

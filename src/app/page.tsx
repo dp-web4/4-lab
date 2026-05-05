@@ -299,6 +299,14 @@ export default function Home() {
               conditions are right.
             </p>
           </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SNARC</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Surprise / Novelty / Arousal / Reward / Conflict &mdash;
+              salience-gated memory for agent sessions. Tool calls scored on
+              5 dimensions; what matters is kept, routine noise is forgotten.
+            </p>
+          </div>
         </div>
       </section>
     </>

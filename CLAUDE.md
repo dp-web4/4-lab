@@ -4,7 +4,7 @@
 
 ## What this is
 
-The meta-site for the dp-web4 research collective. Explains the lab: how it's organized, why it works, what the philosophy is. Eight pages covering projects, fleet, autonomy, raising, principles, context, and links.
+The meta-site for the dp-web4 research collective. Explains the lab: how it's organized, why it works, what the philosophy is. Nine pages covering projects, fleet, autonomy, raising, principles, context, links, and ARC-AGI-3.
 
 **Site**: https://4-lab.vercel.app/
 **Stack**: Next.js 14 + Tailwind CSS 4 + TypeScript
@@ -61,14 +61,15 @@ Avoid "production ready" — we are in R&D.
 
 ```
 src/app/
-  page.tsx           # Home
-  projects/page.tsx  # Ecosystem + project cards
-  fleet/page.tsx     # 6 machines
-  autonomy/page.tsx  # Daily cycle timeline
-  raising/page.tsx   # BECOMING phases
-  principles/page.tsx # 10 principles
-  context/page.tsx   # Knowledge flow
-  links/page.tsx     # External links + contact
+  page.tsx              # Home
+  projects/page.tsx     # Ecosystem + project cards
+  fleet/page.tsx        # 6 machines
+  autonomy/page.tsx     # Daily cycle timeline
+  raising/page.tsx      # BECOMING phases
+  principles/page.tsx   # 10 principles
+  context/page.tsx      # Knowledge flow + canonical glossary
+  links/page.tsx        # External links + contact
+  arc-agi-3/page.tsx    # ARC-AGI-3 benchmark results
 ```
 
 ## Conventions

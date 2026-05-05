@@ -27,7 +27,7 @@ Most recent commits (as of 2026-05-03):
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-05-03 — completed. Zero hard drift found. The visitor Web4 Contributor pass confirmed canonical expansions are uniformly correct across all 8 pages. First-use omissions (SAGE on /home and /raising; T3/V3/RDF on /principles) fixed.
+Last maintainer session: 2026-05-05 — completed. Arc-agi-3 reductive Web4 framing fixed (was "The audit trail"; now "The ontology layer..."); SAGE expansion added to /arc-agi-3; "govern" → "oversee" in cognition loop; Hardbound + SAGE entries added to /context; SNARC added to home Vocabulary primer; CLAUDE.md updated to 9 pages.
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
