@@ -99,6 +99,43 @@ export default function Context() {
           Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
         </p>
 
+        <h3>R6: Six-Element Action Framework</h3>
+        <p>
+          R6 is the canonical action record structure used throughout the SAGE
+          loop and Web4 audit trail:{" "}
+          <strong>Rules / Role / Request / Reference / Resource / Result</strong>.
+          Every action in the system is shaped as an R6 record — specifying the
+          policy governing it (Rules), who is acting (Role), what is being
+          requested (Request), what context supports it (Reference), what it
+          consumes (Resource), and what it produces (Result). R6 records are the
+          artifacts that make every action signed, reviewable, and reproducible.
+        </p>
+
+        <h3>Raising: shaping context, not weights</h3>
+        <p>
+          Raising is the practice of shaping the substrate conditions — context,
+          experience buffer, interaction history — in which an agent develops.
+          It is not training: the model&apos;s parameters are fixed. What changes
+          is the scaffolding that determines what the agent encounters, in what
+          order, and with what structure. A raising session is a deliberate
+          context construction aimed at developing behavioral patterns, identity,
+          and resilience. See{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>{" "}
+          for the full framework.
+        </p>
+
+        <h3>Synthon: emergent coherence</h3>
+        <p>
+          A synthon is an emergent coherence entity formed when components
+          interact recursively under the right substrate conditions. Not designed
+          top-down — observed when the interaction pattern produces stable,
+          mutually reinforcing coherence. The term is 4-lab vocabulary describing
+          a phenomenon observed across raising sessions and cross-machine
+          experiments. The clearest definition is on{" "}
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
+          (Principle 5).
+        </p>
+
         <h3>Adversarial validation</h3>
         <p>
           Different agents review the same work. A forum system collects

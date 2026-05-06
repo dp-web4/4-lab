@@ -69,7 +69,7 @@ export default function Home() {
               <h3>Connected Ecosystem</h3>
               <p>
                 Synchronism provides equations. Web4 provides ontology. SAGE
-                provides cognition. Hardbound provides oversight. They share one
+                provides cognition. Hardbound (hardware-bound oversight suite) provides oversight. They share one
                 equation.
               </p>
             </div>

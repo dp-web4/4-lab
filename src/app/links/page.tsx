@@ -35,7 +35,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — trust core (LCTs, T3/V3, MRH) augmented by MCP and RDF"
+            description="Trust-native ontology — trust core (LCT, T3/V3, MRH) augmented by MCP and RDF"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"

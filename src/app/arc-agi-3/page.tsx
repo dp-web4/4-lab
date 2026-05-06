@@ -14,7 +14,7 @@ export default function ArcAgi3Page() {
 
         <h3>Why we&apos;re doing this</h3>
         <p>
-          ARC-AGI-3 presents 25 unknown interactive games with no instructions,
+          ARC-AGI-3 (Abstraction and Reasoning Corpus, generation 3) presents 25 unknown interactive games with no instructions,
           no documentation, and obfuscated engine source. We use it as an
           external benchmark for the SAGE cognition kernel &mdash; a concrete,
           measurable test of the capabilities the fleet is developing.
@@ -54,8 +54,9 @@ export default function ArcAgi3Page() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#3b82f6" }}>Web4</h4>
             <p style={{ fontSize: "0.875rem" }}>
               The ontology layer. In the SAGE loop, Web4 supplies the audit trail
-              &mdash; every action shaped as an R6 record, every policy decision
-              signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>)
+              &mdash; every action shaped as an R6 record (Six-Element Action
+              Framework: Rules/Role/Request/Reference/Resource/Result), every
+              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>)
               is the ontology that makes signed, reviewable action records possible.
             </p>
           </div>
@@ -97,7 +98,7 @@ export default function ArcAgi3Page() {
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)", width: "40%" }}>Public set</td>
                 <td style={{ padding: "0.375rem 0" }}>
-                  24/25 games, 94.85% &mdash;{" "}
+                  24/25 games solved (96.0%); 94.85% official action score &mdash;{" "}
                   <a
                     href="https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb"
                     target="_blank"
