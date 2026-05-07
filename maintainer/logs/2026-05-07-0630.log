@@ -1,0 +1,23 @@
+Starting 4-lab Maintainer Session at Thu May  7 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_170.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260506_000055.json => identity_20260507_060112.json} (82%)
+Session complete. Here's the summary:
+
+## Maintainer Session 2026-05-07
+
+**Fleet sync**: All 6 machines current with manifest. No changes needed. (Qwen 3.5 2B on Sprout is confirmed correct — manifest validates it.)
+
+**Changes committed and pushed:**
+
+| File | Change |
+|------|--------|
+| `src/app/arc-agi-3/page.tsx` | ARC-AGI-3 expansion: "Abstraction and Reasoning Corpus, generation 3" → "...for Artificial General Intelligence, version 3" |
+| `src/app/arc-agi-3/page.tsx` | "The architecture is the capability." → "The loop is the capability." |
+| `src/app/arc-agi-3/page.tsx` | Subtitle now surfaces research conditions immediately (public game set, Opus 4.6, network access) — not buried mid-page |
+| `src/lib/navigation.ts` | ARC-AGI-3 added as nav item — the strongest external-credibility page was missing from the 8-item nav |
+| `src/lib/navigation.ts` | Home description: "Eight repos" → "Fourteen repos" |
+
+**Key deferred item**: The `/context` glossary table has now been flagged by all 4 visitor personas across multiple sessions — it's the highest-leverage single improvement on the site and needs a dedicated session.
+
+**Side finding worth noting**: The CLAUDE.md maintainer table incorrectly lists R7 as wrong drift. The canonical terms file defines R7 as a valid superset of R6 for higher-consequence actions. The site's R6 usage is correct for routine actions, but the maintainer guidance should be updated.
