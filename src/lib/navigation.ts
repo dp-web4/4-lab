@@ -9,7 +9,7 @@ export const pages: NavItem[] = [
   {
     title: "Home",
     href: "/",
-    description: "Six machines. Eight repos. One recursive learning loop.",
+    description: "Six machines. Fourteen repos. One recursive learning loop.",
     keywords: ["home", "overview", "lab", "4-lab"],
   },
   {
@@ -17,6 +17,12 @@ export const pages: NavItem[] = [
     href: "/projects",
     description: "The ecosystem: Web4, SAGE, Synchronism, Hardbound, and more.",
     keywords: ["web4", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
+  },
+  {
+    title: "ARC-AGI-3",
+    href: "/arc-agi-3",
+    description: "SAGE tested in competition — 94.85% on the public game set, #3 human leaderboard.",
+    keywords: ["arc-agi-3", "benchmark", "sage", "competition", "games", "94.85"],
   },
   {
     title: "Fleet",

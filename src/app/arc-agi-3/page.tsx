@@ -8,13 +8,14 @@ export default function ArcAgi3Page() {
       <section className="section">
         <h2>ARC-AGI-3</h2>
         <p style={{ fontSize: "1.125rem", color: "var(--color-text-muted)" }}>
-          SAGE instances tested in competition &mdash; the games are the test,
-          the capability they develop is the product.
+          SAGE instances tested in competition &mdash; public game set, research
+          conditions (Claude Opus 4.6 with network access). The games are the
+          test; the capability they develop is the product.
         </p>
 
         <h3>Why we&apos;re doing this</h3>
         <p>
-          ARC-AGI-3 (Abstraction and Reasoning Corpus, generation 3) presents 25 unknown interactive games with no instructions,
+          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, version 3) presents 25 unknown interactive games with no instructions,
           no documentation, and obfuscated engine source. We use it as an
           external benchmark for the SAGE cognition kernel &mdash; a concrete,
           measurable test of the capabilities the fleet is developing.
@@ -84,7 +85,7 @@ export default function ArcAgi3Page() {
           and computed predictions. The early finding: context engineering
           dominates model size. A well-structured prompt with the right
           world model outperforms a larger model with a generic prompt.
-          The architecture is the capability.
+          The loop is the capability.
         </p>
 
         <h3>Current status</h3>
