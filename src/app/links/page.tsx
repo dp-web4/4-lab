@@ -16,7 +16,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="On-device cognition kernel — 12-step cognition loop, metabolic states, hardware-bound identity"
+            description="On-device cognition kernel — 12-step cognition loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -70,7 +70,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% public set (24/25 games), world models, multi-agent frame-questioning (MIT-0)"
+            description="ARC-AGI-3 harness — 94.85% public set (Claude Opus 4.6, 24/25 games), world models, multi-agent frame-questioning (MIT-0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"

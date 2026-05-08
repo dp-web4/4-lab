@@ -118,8 +118,9 @@ export default function Home() {
                 SAGE instances tested in competition. 25 unknown interactive
                 games serve as an external benchmark for the cognition kernel
                 &mdash; world-model building, action planning, verification,
-                and learning from failure. 94.85% on the public set. The games
-                are the test; the capability they develop is the product.
+                and learning from failure. 94.85% on the public set (Claude
+                Opus 4.6). The games are the test; the capability they develop
+                is the product.
               </p>
             </div>
           </Link>
@@ -263,7 +264,7 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Talent / Training / Temperament and Valuation / Veracity / Validity
-              — the canonical three-dimensional trust and value scores.
+              — the canonical three-dimensional trust and value tensors.
               Multidimensional, not a single number.
             </p>
           </div>

@@ -40,7 +40,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 2B"
-            role="115+ sessions (creating), Training T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
+            role="115+ sessions (creating), Session T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -71,7 +71,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B"
-            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — drove 94.85% ARC-AGI-3 score. MRH composer architect."
+            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the run that produced the 94.85% ARC-AGI-3 result (Claude Opus 4.6, public set). MRH composer architect."
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function Fleet() {
         <p>
           A background peer monitor polls health endpoints. A trust tracker
           maintains per-peer{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 scores</Link> (Talent / Training / Temperament) that evolve
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
           from real interactions: success raises trust, timeouts lower it. No
           central authority decides who is trustworthy — trust emerges from the
           pattern of interaction.

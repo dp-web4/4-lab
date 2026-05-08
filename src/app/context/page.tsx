@@ -48,6 +48,27 @@ export default function Context() {
           what it can commit, what it can deploy.
         </p>
 
+        <h3>Synchronism: coherence equations</h3>
+        <p>
+          Synchronism is the theoretical foundation — a coherence equation
+          proposing that reality emerges from intent dynamics on a discrete
+          Planck grid, the same Navier-Stokes substrate at every scale from
+          quantum to cosmic. Coupling-coherence experiments provide empirical
+          grounding: 1% coupling yielded 35% coherence gain. Hill function
+          kinetics describe both enzyme binding and trust formation at the same
+          scale. The framework spans 80 orders of magnitude because the equations
+          apply at every scale. See the{" "}
+          <a
+            href="https://synchronism-site.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)" }}
+          >
+            Synchronism site
+          </a>{" "}
+          for the full treatment.
+        </p>
+
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
         <p>
           SNARC provides salience-gated memory for Claude Code sessions. Every
@@ -78,6 +99,12 @@ export default function Context() {
         </p>
 
         <h3>The Web4 equation as shared anchor</h3>
+        <p>
+          Web4 is a trust-native ontology for AI agents, devices, and people —
+          how entities prove identity, earn trust, and account for resources
+          across systems. Not a platform; a shared vocabulary for a new kind of
+          internet.
+        </p>
         <div className="equation">
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
@@ -87,7 +114,7 @@ export default function Context() {
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
-          MRH = Markov Relevancy Horizon &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
+          MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
         <p>
           This equation appears in every project because it <em>is</em> every
