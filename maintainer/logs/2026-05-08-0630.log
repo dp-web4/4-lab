@@ -1,0 +1,25 @@
+Starting 4-lab Maintainer Session at Fri May  8 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_174.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260507_000100.json => identity_20260508_060114.json} (84%)
+Session complete. Here's the summary:
+
+## 2026-05-08 Maintainer Session
+
+**Fleet sync**: All 6 machines match manifest — no updates needed.
+
+**Changes pushed** (`fa7abe1`, Vercel deploy triggered):
+
+| Fix | Files | Severity |
+|-----|-------|----------|
+| ARC-AGI-3 94.85% now qualified "(Claude Opus 4.6, public set)" everywhere it appears | home, projects tile, projects table, fleet CBP row, links | P1 |
+| CBP role reworded: "drove 94.85%" → "orchestrated the run that produced…" | fleet | P1 |
+| T3/V3 "trust and value scores" → "trust and value tensors" | home, fleet | P1 |
+| "Training T246" → "Session T246" (Sprout can't do LoRA; label contradicted /raising) | fleet | P1 |
+| SAGE "hardware-bound identity" removed from /links (Hardbound's role, not SAGE's) | links | P2 |
+| "evolving from orchestrator to world-shaper" removed (undefined term) | projects | P2 |
+| /context: Web4 definition added; MRH description added; Synchronism entry added | context | P1/P2 |
+
+**Deferred**: The editorial and research items (raising defense paragraph, ARC-AGI-3 baseline data, BECOMING phase naming tension, failure-as-principle safety valve) require writing or data — not mechanical fixes.
+
+**So what?** The two changes that matter most: the 94.85% attribution is now accurate everywhere a reader encounters it, and T3/V3 speaks with one voice across all pages. The /context glossary is no longer the thinnest place its core terms are defined.
