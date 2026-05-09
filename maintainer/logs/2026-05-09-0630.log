@@ -1,0 +1,22 @@
+Starting 4-lab Maintainer Session at Sat May  9 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_178.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260508_000102.json => identity_20260509_060312.json} (84%)
+Session complete. Here's what happened:
+
+## Changes pushed (727765a)
+
+**Terminology drift fixed (6 files):**
+
+| File | Change |
+|------|--------|
+| `/` home | T3/V3 vocab card: split "trust and value tensors" → "T3 (trust tensor)" + "V3 (value tensor)" explicitly. Also fixed MRH card calling T3/V3 "the trust tensor." |
+| `/links` | MRH removed from "trust core (LCT, T3/V3, **MRH**)" — reclassified to "trust core (LCT, T3/V3) scoped by MRH" |
+| `/arc-agi-3` | PolicyGate step 8.5 → **11.5 (between filter and act)** — was inconsistent with "evaluates every action before it fires" |
+| `/projects` | 4-Life "karma carried forward" → "**trust and value (T3/V3)** carried forward" |
+| `/raising` | Phase 2 Sensing: "knowing when it's tired" → "tracking internal load states the system describes as tired" (removes propositional-attitude verb) |
+
+**Fleet sync (all 6 machines):**
+All model props now include backend: `Qwen 2.5 14B (transformers) · LoRA`, `Qwen 3.5 2B (ollama)`, `Phi-4 14B (ollama) · LoRA`, `Gemma 3 12B (ollama)`, `Gemma 3 4B (ollama)`, `TinyLlama 1.1B (ollama)`
+
+**So what?** This session caught the one true semantic drift the site had — the T3/V3 trust/value distinction was collapsed on the home page (the first page most visitors hit), while being correct on every other page. The MRH-in-trust-core on `/links` was a category error that would mislead anyone building mental models from that description. The PolicyGate fix aligns the step number with the actual description. The forbidden-phrase audit was fully clean — no LCT drift, no "governance," no "architecture" — but correctness at placement wasn't enough to prevent the subtler conflation errors that experts catch.
