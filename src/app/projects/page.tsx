@@ -86,7 +86,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="4-Life"
-            description="Research prototype exploring trust-native societies for humans and AI. Agents earn ATP, build trust, die, and are reborn with karma carried forward — a Web4 society in miniature."
+            description="Research prototype exploring trust-native societies for humans and AI. Agents earn ATP, build trust, die, and are reborn with trust and value (T3/V3) carried forward — a Web4 society in miniature."
             accentColor="var(--color-4life)"
             isPublic={true}
             url="https://4-life-ivory.vercel.app"

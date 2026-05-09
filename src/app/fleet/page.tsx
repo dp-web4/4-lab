@@ -33,25 +33,25 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
-            model="Qwen 2.5 14B · LoRA"
+            model="Qwen 2.5 14B (transformers) · LoRA"
             role="91 sessions (creating). Brain: hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 2B"
+            model="Qwen 3.5 2B (ollama)"
             role="115+ sessions (creating), Session T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
-            model="Phi-4 14B · LoRA"
+            model="Phi-4 14B (ollama) · LoRA"
             role="25+ sessions. Brain: dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
-            model="Gemma 3 12B"
+            model="Gemma 3 12B (ollama)"
             role="97 sessions (creating). Brain: cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. ARC-AGI-3 game solver."
           />
         </div>
@@ -64,13 +64,13 @@ export default function Fleet() {
           <MachineCard
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
-            model="Gemma 3 4B"
+            model="Gemma 3 4B (ollama)"
             role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
-            model="TinyLlama 1.1B"
+            model="TinyLlama 1.1B (ollama)"
             role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the run that produced the 94.85% ARC-AGI-3 result (Claude Opus 4.6, public set). MRH composer architect."
           />
         </div>

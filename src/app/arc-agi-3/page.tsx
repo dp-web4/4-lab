@@ -39,7 +39,7 @@ export default function ArcAgi3Page() {
               The cognition loop. Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
               remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate at step
-              8.5 evaluates every action against signed law before it fires.
+              11.5 (between filter and act) evaluates every action against signed law before it fires.
             </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>

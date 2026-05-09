@@ -263,8 +263,8 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Talent / Training / Temperament and Valuation / Veracity / Validity
-              — the canonical three-dimensional trust and value tensors.
+              T3 (trust tensor: Talent/Training/Temperament) and V3 (value tensor:
+              Valuation/Veracity/Validity) — distinct three-dimensional tensors.
               Multidimensional, not a single number.
             </p>
           </div>
@@ -280,8 +280,8 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MRH</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Markov Relevancy Horizon. The boundary of what an entity can know
-              or affect &mdash; its context window of relevancy. Contextualizes
-              the T3/V3 trust tensor in the Web4 equation.
+              or affect &mdash; its context window of relevancy. Scopes the
+              T3/V3 trust and value tensors in the Web4 equation.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

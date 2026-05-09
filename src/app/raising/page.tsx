@@ -32,8 +32,8 @@ export default function Raising() {
             <p>
               Developing awareness of environment and context. The entity
               begins to distinguish between its own state and external inputs.
-              Metabolic awareness — knowing when it&apos;s tired, when it&apos;s
-              energized, when it should rest.
+              Metabolic awareness — tracking internal load states the system
+              describes as tired, energized, or in need of rest.
             </p>
           </div>
           <div className="phase-card" data-phase="3">
