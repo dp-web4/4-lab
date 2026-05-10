@@ -13,6 +13,11 @@ export default function ArcAgi3Page() {
           test; the capability they develop is the product.
         </p>
 
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          New here? This page uses Web4 vocabulary (LCT, T3/V3, MRH, ATP/ADP, MCP, RDF). See{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
+        </p>
+
         <h3>Why we&apos;re doing this</h3>
         <p>
           ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, version 3) presents 25 unknown interactive games with no instructions,
@@ -38,8 +43,9 @@ export default function ArcAgi3Page() {
             <p style={{ fontSize: "0.875rem" }}>
               The cognition loop. Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate at step
-              11.5 (between filter and act) evaluates every action against signed law before it fires.
+              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate &mdash; a gate inside the{" "}
+              <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight suite</Link>{" "}
+              &mdash; at step 11.5 (between filter and act) evaluates every action against signed law before it fires.
             </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>

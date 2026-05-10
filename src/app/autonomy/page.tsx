@@ -149,8 +149,7 @@ export default function Autonomy() {
         <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
         <p>
           These tracks operate within the{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> oversight
-          envelope — the hardware-bound suite that defines what autonomous operation
+          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the hardware-bound oversight suite that defines what autonomous operation
           is and is not authorized to do. Publisher only acts on changes the
           supervisor has cleared. No track can modify the shared fleet registry or
           acquire credentials beyond its declared scope. In Web4 terms, each scheduled
