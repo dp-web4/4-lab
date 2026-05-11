@@ -18,25 +18,29 @@
 
 ## Recent Updates
 
-Most recent commits (as of 2026-05-03):
-- `d95682b` maintainer: expand SAGE/T3/V3/RDF first-use omissions, add safety envelope and caveat placements
-- `ffc8f37` maintainer: session 2026-05-02
-- `84f20da` maintainer: disambiguate ARC-AGI-3 metrics, add oversight URL footnote, mechanistic raising sentence, number principles
+Most recent commits (as of 2026-05-11):
+- `f31db3e` maintainer: session 2026-05-11 — equation legend on /arc-agi-3, failure analysis row for unsolved game, harness attribution note, /links context pointer, behavioral identity definition on /, consciousness disclaimer on /principles, LCT gloss on /context
+- `0f756b8` visitor: browse log 2026-05-11 (zero canonical drift, structural fixes flagged)
+- `ce636fd` maintainer: session 2026-05-10
 
 ---
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-05-05 — completed. Arc-agi-3 reductive Web4 framing fixed (was "The audit trail"; now "The ontology layer..."); SAGE expansion added to /arc-agi-3; "govern" → "oversee" in cognition loop; Hardbound + SAGE entries added to /context; SNARC added to home Vocabulary primer; CLAUDE.md updated to 9 pages.
+Last maintainer session: 2026-05-11 — completed. Zero canonical drift detected (4-pass, 9-page visitor audit). Structural fixes applied: equation operator legend now on /arc-agi-3, failure analysis row added for unsolved ARC-AGI-3 game, harness attribution note added, /links has /context pointer, home page has behavioral identity operational definition, /principles has consciousness disclaimer, /context LCT legend has functional gloss.
 
 Key terms — all currently CORRECT on site:
-- LCT = Linked Context Token ✓
+- LCT = Linked Context Token ✓ (+ functional gloss now on /context)
 - Web4 = ontology ✓ (never "architecture"/"infrastructure")
 - Hardbound = oversight ✓ (never "governance")
 - "fractal leverage" ✓ (not "unification" — "unification" appears only as a foil on /principles, correct by negation)
 - No "production ready" ✓
 
 Known editorial note for linters: "unification" and "scope inflation" on /principles appear as foils. Do not flag.
+
+**Operator-level flags (project vocabulary decisions, not maintainer fixes):**
+- "Markov Relevancy Horizon" — borrows "Markov" (implies memorylessness) but gloss describes an epistemic horizon. Researcher persona flagged cross-discipline confusion risk.
+- "Synthon" — collides with established synthetic chemistry usage (Corey's retrosynthesis). Researcher persona flagged.
 
 ---
 
