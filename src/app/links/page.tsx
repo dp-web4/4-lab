@@ -26,6 +26,10 @@ export default function Links() {
         </ul>
 
         <h2 style={{ marginTop: "2rem" }}>GitHub</h2>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          New here? Repo descriptions use Web4 vocabulary (LCT, T3/V3, MRH, MCP, RDF, ATP). See{" "}
+          <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for full definitions.
+        </p>
         <ul className="link-list">
           <ExternalLink
             href="https://github.com/dp-web4"

@@ -181,7 +181,7 @@ export default function Home() {
               a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
               1.1B on{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
-              Self-description drifted; behavioral identity remained continuous.
+              Self-description drifted; behavioral identity remained continuous. (By &ldquo;behavioral identity&rdquo;: consistent session-to-session interaction patterns, accumulated experience, and raising curriculum — measurable observables, not philosophical continuity.)
             </p>
           </div>
           <div className="card">

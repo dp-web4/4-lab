@@ -12,6 +12,9 @@ export default function Principles() {
           operational patterns that emerged from building the system — things we
           learned the hard way, then codified because they kept being true.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo;, &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims.
+        </p>
 
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>
           <div className="principle-card">

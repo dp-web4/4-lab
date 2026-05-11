@@ -63,7 +63,7 @@ export default function ArcAgi3Page() {
               The ontology layer. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
               Framework: Rules/Role/Request/Reference/Resource/Result), every
-              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>)
+              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = verified by, <code>*</code> = contextualized by, <code>+</code> = augmented with</span>)
               is the ontology that makes signed, reviewable action records possible.
             </p>
           </div>
@@ -75,6 +75,9 @@ export default function ArcAgi3Page() {
           Claude Opus 4.6 as the model inside the SAGE cognition loop. This
           demonstrates the ceiling &mdash; what the architecture can achieve
           with a frontier model and network access.
+        </p>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
+          Attribution note: the result is Claude Opus 4.6 operating within the SAGE harness. The harness contributes the structured world-model building, R6 action framing, and multi-agent frame-questioning; the base model contributes inference. Phase 2 (local models) isolates the harness&apos;s independent contribution directly.
         </p>
         <p>
           The actual competition is harder: the Kaggle sandbox constrains
@@ -131,6 +134,10 @@ export default function ArcAgi3Page() {
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td>
+              </tr>
+              <tr>
+                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Unsolved game (1/25)</td>
+                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Failure analysis per Principle 6 in progress — session trace available in ARC-SAGE repository. Current working hypothesis: the game required multi-turn state correlation that the world-model phase did not adequately capture.</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Cost</td>

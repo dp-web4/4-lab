@@ -112,7 +112,7 @@ export default function Context() {
           <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
-          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token<br />
+          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — a persistent identity anchor, like a passport that travels with you across systems<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
           MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
