@@ -1,0 +1,27 @@
+Starting 4-lab Maintainer Session at Mon May 11 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_186.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260510_000101.json => identity_20260511_060116.json} (84%)
+Session complete. Here's the summary:
+
+---
+
+**Session 2026-05-11 — Done**
+
+**Fleet sync:** All 6 machines match manifest — no changes needed.
+
+**Terminology drift:** Zero canonical drift across 4-pass, 9-page visitor audit. Every flagged term is correct and consistent.
+
+**Changes pushed (2 commits):**
+
+| File | Change |
+|------|--------|
+| `/arc-agi-3` | Equation operator legend now travels with the equation; failure analysis row added for the 1 unsolved game (Principle 6 gap — flagged as most damaging inconsistency by all personas); harness/model attribution note |
+| `/links` | "New here? See /context" pointer added — all 4 personas flagged LCT/T3/V3/MRH used with no expansion or pointer |
+| `/` (home) | Operational definition of "behavioral identity" inline — Researcher flagged it unfalsifiable without a metric |
+| `/principles` | Consciousness disclaimer added — only page without it despite using identity/attractor language |
+| `/context` | LCT legend now has functional gloss ("persistent identity anchor, like a passport that travels with you") |
+
+**So what?** The visitor audit found zero terminology regression — the discipline holds. The value this session was closing the Principle 6 gap on `/arc-agi-3`, which was the one place the site visibly contradicted its own stated values. That's the kind of inconsistency that costs credibility with exactly the audience the site most wants to reach.
+
+**Operator-level flags for project vocabulary decisions (not maintainer fixes):** "Markov Relevancy Horizon" — the "Markov" name implies memorylessness but the gloss describes an epistemic horizon; "Synthon" — collides with established synthetic chemistry usage. Both flagged by the External Researcher persona.
