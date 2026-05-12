@@ -50,14 +50,15 @@ export default function Context() {
 
         <h3>Synchronism: coherence equations</h3>
         <p>
-          Synchronism is the theoretical foundation — a coherence equation
+          Synchronism is the theoretical foundation — a research conjecture
           proposing that reality emerges from intent dynamics on a discrete
           Planck grid, the same Navier-Stokes substrate at every scale from
           quantum to cosmic. Coupling-coherence experiments provide empirical
           grounding: 1% coupling yielded 35% coherence gain. Hill function
           kinetics describe both enzyme binding and trust formation at the same
-          scale. The framework spans 80 orders of magnitude because the equations
-          apply at every scale. See the{" "}
+          scale. The conjecture spans 80 orders of magnitude — from quantum to
+          cosmic — with experimental validation at specific scales and the full
+          range as the ongoing research target. See the{" "}
           <a
             href="https://synchronism-site.vercel.app/"
             target="_blank"
