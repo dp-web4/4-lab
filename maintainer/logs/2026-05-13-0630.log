@@ -1,0 +1,25 @@
+Starting 4-lab Maintainer Session at Wed May 13 06:30:00 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_195.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260512_060116.json => identity_20260513_060119.json} (82%)
+Session complete. Here's what happened and why it matters:
+
+**Fleet sync:** All 6 machines match the manifest — no changes needed.
+
+**Terminology:** Zero canonical drift for the third consecutive session. All four visitor personas independently confirmed this.
+
+**10 structural fixes applied across 4 files** (commit `7bc9c2a`):
+
+| Fix | File | Why |
+|-----|------|-----|
+| Web4 equation added to home vocabulary primer | page.tsx | 3 of 4 personas independently flagged the equation buried in /context — highest cross-persona priority |
+| T3/V3 "trust tensor"/"value tensor" prefix dropped | page.tsx | Inconsistent with every other page; /projects, /principles, /context all use canonical expansion only |
+| ARC-SAGE glossary entry added | context/page.tsx | Used on /raising, /links, /arc-agi-3 without definition — 3 personas flagged the gap |
+| "1% coupling → 35% coherence gain" hedged as single-trial observation | context/page.tsx | Researcher: single number doing rhetorical work of empirical evidence |
+| Hill function kinetics labeled as analogy (×2) | principles + raising | Researcher: analogy presented as mechanism; now explicit |
+| "not unification" added to Principle 10 rejection | principles/page.tsx | Contributor: canonical pairing is "fractal leverage, not unification" — scope inflation and unification are distinct failure modes |
+| Safety-critical deployment exclusion added to Principle 3 | principles/page.tsx | Researcher: R&D framing implies this, explicit statement closes the gap |
+| In-context attractor caveat paragraph added | raising/page.tsx | Most substantive fix: frozen weights ≠ safe in-context behavior; Hardbound governs the action envelope, not the weight-freezing property |
+| "I notice I want to call it experience" reframed as observer pull | raising/page.tsx | Researcher: quote rhetorically undercuts the consciousness disclaimer preceding it |
+
+**So what?** The in-context attractor paragraph is the most meaningful change — it's the first place the site explicitly acknowledges that the "raising not training" distinction is mechanically true but not a safety guarantee on its own. That closes a gap a safety researcher would use to dismiss the entire framing.
