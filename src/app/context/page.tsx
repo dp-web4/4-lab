@@ -54,7 +54,7 @@ export default function Context() {
           proposing that reality emerges from intent dynamics on a discrete
           Planck grid, the same Navier-Stokes substrate at every scale from
           quantum to cosmic. Coupling-coherence experiments provide empirical
-          grounding: 1% coupling yielded 35% coherence gain. Hill function
+          grounding (single-trial observation, no independent replication yet): 1% coupling yielded 35% coherence gain. Hill function
           kinetics describe both enzyme binding and trust formation at the same
           scale. The conjecture spans 80 orders of magnitude — from quantum to
           cosmic — with experimental validation at specific scales and the full
@@ -137,6 +137,18 @@ export default function Context() {
           requested (Request), what context supports it (Reference), what it
           consumes (Resource), and what it produces (Result). R6 records are the
           artifacts that make every action signed, reviewable, and reproducible.
+        </p>
+
+        <h3>ARC-SAGE: SAGE variant for ARC-AGI-3</h3>
+        <p>
+          ARC-SAGE is the SAGE variant configured for the{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3 benchmark</Link>.
+          Separate codebase, shared lineage with the core SAGE kernel — adapted
+          for interactive game environments where mechanics aren&apos;t given and
+          must be inferred through play. Public repo:{" "}
+          <a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>
+            github.com/dp-web4/ARC-SAGE
+          </a>.
         </p>
 
         <h3>Raising: shaping context, not weights</h3>

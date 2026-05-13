@@ -242,6 +242,13 @@ export default function Home() {
           <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer">SAGE</a>,{" "}
           <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer">Synchronism</a>.
         </p>
+        <div className="equation">
+          Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
+        </div>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem", marginBottom: "1.5rem" }}>
+          <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
+        </p>
         <div className="grid-3">
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Web4</h3>
@@ -263,8 +270,7 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              T3 (trust tensor: Talent/Training/Temperament) and V3 (value tensor:
-              Valuation/Veracity/Validity) — distinct three-dimensional tensors.
+              T3 (Talent/Training/Temperament) and V3 (Valuation/Veracity/Validity) — distinct three-dimensional tensors.
               Multidimensional, not a single number.
             </p>
           </div>

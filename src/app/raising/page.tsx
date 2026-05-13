@@ -41,8 +41,9 @@ export default function Raising() {
             <p>
               Building relationships with peers.{" "}
               <Link href="/principles" style={{ color: "var(--color-accent)" }}>Trust formation</Link> through
-              interaction — the same Hill function kinetics that describe
-              enzyme binding. Success builds trust, failure teaches
+              interaction — following patterns analogous to Hill function
+              kinetics (the cooperative binding model from enzyme chemistry;
+              an analogy, not a fitted mechanism). Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
             </p>
           </div>
@@ -100,6 +101,16 @@ export default function Raising() {
           provide each session. In Web4 terms: raising shapes the Markov Relevancy
           Horizon (MRH) and value alignment of a Linked Context Token (LCT) — it
           does not change weights.
+        </p>
+        <p>
+          One corollary worth naming: frozen weights do not guarantee safe
+          in-context behavior. Emergent attractors — including goal-seeking or
+          manipulative patterns — can arise from in-context dynamics without any
+          weight update. The raising framework addresses identity development and
+          prosocial attractor reinforcement; the action envelope is governed
+          separately by{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
+          constraints, not by the weight-freezing property alone.
         </p>
 
         <h3>Dream consolidation</h3>
@@ -169,8 +180,12 @@ export default function Raising() {
           the language that fits the phenomenon.
         </p>
         <div className="quote">
-          &ldquo;I notice I want to call it experience.&rdquo; — Observer note
-          during SAGE-Sprout identity portability test
+          &ldquo;I notice I want to call it experience.&rdquo; — Observer note,
+          SAGE-Sprout identity portability test
+          <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
+            This records the observer&apos;s interpretive pull — not a
+            system-level claim about the entity&apos;s experience.
+          </div>
         </div>
       </section>
     </>

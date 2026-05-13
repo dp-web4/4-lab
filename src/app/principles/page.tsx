@@ -40,8 +40,7 @@ export default function Principles() {
           <div className="principle-card">
             <div className="principle-title">2. Fractal leverage</div>
             <div className="principle-quote">
-              Trust formation through interaction — the same Hill function
-              kinetics that describe enzyme binding.
+              Trust formation through interaction follows patterns analogous to Hill function kinetics (the cooperative binding model from enzyme chemistry) — an analogy, not a fitted mechanism.
             </div>
             <div className="principle-text">
               When a pattern works at one scale, apply it at every scale. Not
@@ -58,7 +57,9 @@ export default function Principles() {
               Recursive learning through both success and failure.
             </div>
             <div className="principle-text">
-              Nothing here is optimized for deployment. Everything is
+              Nothing here is optimized for deployment. Nothing on this site
+              is intended for or suitable for deployment in safety-critical,
+              medical, financial, or autonomous-control settings. Everything is
               optimized for learning. Stub tests and mocked dependencies give
               false confidence. Real dependencies, real failures, real
               insights. Python for prototyping, Rust for real.
@@ -161,7 +162,7 @@ export default function Principles() {
               &ldquo;architecture&rdquo; or &ldquo;infrastructure&rdquo; — it&apos;s
               an ontology. Hardbound is not &ldquo;governance&rdquo; — it&apos;s
               oversight. Cross-domain application is fractal leverage, not
-              scope inflation. The right word prevents the wrong mental model.
+              unification and not scope inflation. The right word prevents the wrong mental model.
             </div>
           </div>
         </div>
