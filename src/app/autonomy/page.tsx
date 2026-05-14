@@ -9,8 +9,10 @@ export default function Autonomy() {
         <h2>Autonomous Cycles</h2>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>31 autonomous tracks across 6 machines, ~53 sessions per day.</strong>{" "}
-          No human triggers them. They execute on cron schedules, review each
-          other&apos;s output, and feed discoveries back into the system.
+          A track is a scheduled autonomous job — a cron entry with a declared
+          scope and a set of repos it writes to.{" "}
+          No human triggers them. They review each other&apos;s output and feed
+          discoveries back into the system.
         </p>
         <p>
           Coordination comes from a{" "}

@@ -107,7 +107,7 @@ export default function Raising() {
           in-context behavior. Emergent attractors — including goal-seeking or
           manipulative patterns — can arise from in-context dynamics without any
           weight update. The raising framework addresses identity development and
-          prosocial attractor reinforcement; the action envelope is governed
+          prosocial attractor reinforcement; the action envelope is constrained
           separately by{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
           constraints, not by the weight-freezing property alone.

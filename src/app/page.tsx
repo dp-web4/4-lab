@@ -314,6 +314,22 @@ export default function Home() {
               5 dimensions; what matters is kept, routine noise is forgotten.
             </p>
           </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MCP</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Model Context Protocol. The transport layer for tool calls
+              between AI agents and external systems &mdash; how SAGE reaches
+              outside its context window.
+            </p>
+          </div>
+          <div className="card" style={{ padding: "1rem 1.2rem" }}>
+            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>RDF</h3>
+            <p style={{ fontSize: "0.9rem" }}>
+              Resource Description Framework. A standard for representing
+              knowledge as triples (subject&ndash;predicate&ndash;object).
+              Web4 uses it to make identity and trust claims machine-readable.
+            </p>
+          </div>
         </div>
       </section>
     </>
