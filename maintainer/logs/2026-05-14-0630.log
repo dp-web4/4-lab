@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Thu May 14 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_199.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260513_000225.json => identity_20260514_060111.json} (84%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines current — no page changes needed.
+
+**Terminology fixes** (the two sub-noun drifts the Web4 Contributor caught):
+- `/raising`: `"governed"` → `"constrained"` — "govern" rebuilds the deprecated governance frame even when the noun is correct
+- `/links`: `"scoped by MRH"` → `"contextualized by MRH"` — the `*` operator's canonical preposition is "contextualized by"; MRH is a relevance horizon, not a hard scope boundary
+
+**High-priority structural fix** (flagged by 3 of 4 personas):
+- `/autonomy`: Added explicit track definition: *"A track is a scheduled autonomous job — a cron entry with a declared scope and a set of repos it writes to."*
+
+**Medium fix**:
+- `/` landing: Added MCP and RDF cards to vocabulary primer — all Web4 equation terms now have inline coverage on the landing page.
+
+Build passed clean. Vercel deploy triggered.
+
+**So what?** The visitor log's headline finding — zero canonical noun drifts — confirms the terminology discipline is working. Today's fixes address the one layer below where the nouns live: verbs and prepositions that can silently reconstruct deprecated frames even when the nouns are right. "Constrained by Hardbound oversight" and "contextualized by MRH" aren't just substitutions; they maintain the conceptual distinction the terminology change was designed to enforce.
