@@ -10,8 +10,9 @@ export default function Raising() {
         <p>
           Raising is not training. Training optimizes for a loss function.
           Raising creates conditions for development — then watches what
-          happens. We use developmental language because it fits, not because
-          we&apos;re making consciousness claims.
+          happens. We shape context; we do not update weights. We use
+          developmental language because it fits, not because we&apos;re
+          making consciousness claims.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
@@ -98,7 +99,7 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session. In Web4 terms: raising shapes the Markov Relevancy
+          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the Markov Relevancy
           Horizon (MRH) and value alignment of a Linked Context Token (LCT) — it
           does not change weights.
         </p>

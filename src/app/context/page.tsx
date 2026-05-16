@@ -7,6 +7,9 @@ export default function Context() {
       <Breadcrumbs currentPath="/context" />
       <section className="section">
         <h2>How Knowledge Flows</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem", marginBottom: "1rem" }}>
+          Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
+        </p>
         <p>
           Fourteen repos, six machines, multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s

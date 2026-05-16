@@ -142,6 +142,9 @@ export default function Fleet() {
         <div className="quote">
           Identity lives in state files and prompt construction, not in model
           weights. The model is weather. The identity is organism.
+          <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
+            Observed behavioral continuity — not a claim about continuity-of-self in any philosophical sense.
+          </div>
         </div>
         <p>
           This has practical implications: you can upgrade hardware, swap models,

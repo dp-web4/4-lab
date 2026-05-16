@@ -10,7 +10,8 @@ export default function Autonomy() {
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>31 autonomous tracks across 6 machines, ~53 sessions per day.</strong>{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
-          scope and a set of repos it writes to.{" "}
+          scope and a set of repos it writes to, operating under supervisor and
+          Hardbound gating.{" "}
           No human triggers them. They review each other&apos;s output and feed
           discoveries back into the system.
         </p>
