@@ -6,7 +6,7 @@
 
 The meta-site for the dp-web4 research collective. Explains the lab: how it's organized, why it works, what the philosophy is. Nine pages covering projects, fleet, autonomy, raising, principles, context, links, and ARC-AGI-3.
 
-**Site**: https://4-lab.vercel.app/
+**Site**: https://4-lab.io/ (custom domain; default Vercel subdomain `4-lab.vercel.app` still resolves)
 **Stack**: Next.js 14 + Tailwind CSS 4 + TypeScript
 **Theme**: Dark (#050816) with warm amber/gold accent (#f59e0b)
 
