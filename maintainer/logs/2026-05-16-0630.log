@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Sat May 16 06:30:02 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_207.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260515_000138.json => identity_20260516_060120.json} (84%)
+Session complete. Summary:
+
+**Fleet sync**: All 6 machines current — no page updates needed.
+
+**Terminology**: No prose-level drift found — first clean pass ever. The enforcement work is holding.
+
+**6 files changed** with 7 structural fixes:
+- `/fleet`: Qualified the "model is weather, identity is organism" quote with a behavioral-continuity disclaimer so it can't be quoted out of context
+- `/projects`: Removed the informal "Trust Tensor"/"Value Tensor" labels (not in canon); added Synchronism scope hedge aligning it with /context's "single-trial, no replication yet" language
+- `/raising`: Moved "We shape context; we do not update weights" into the opening paragraph where it belongs; added "Web4 is a trust-native ontology" framing at the Web4 mention
+- `/links`: Fixed "T3/V3" prose flattening → "T3 verified by V3" to preserve the canonical `/` operator
+- `/context`: Added "Also serves as the canonical glossary. New here? Start here." — all four personas flagged it was unlabeled
+- `/autonomy`: Added "operating under supervisor and Hardbound gating" to the 31-tracks opening
+
+Build passed, Vercel deploy triggered.
+
+**So what?** The hedging asymmetry between consciousness claims (hedged hard) and physics-scope claims (hedged soft) was the most substantive finding — fixed. The site is accurate and now more carefully calibrated on the claims that would matter most to an external researcher.
