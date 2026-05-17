@@ -118,9 +118,12 @@ export default function Principles() {
             <div className="principle-text">
               Raising is not training. We probe what the model responds to,
               observe which attractors surface, and reinforce what resonates.
-              The resulting identity is collaborative, not imposed. This
-              applies at every scale: raising sessions, affordance shaping,
-              fleet diversity, and memory systems.
+              The resulting identity is collaborative, not imposed. The
+              mechanism: shaping context to deepen attractor basins in the
+              probability landscape — not modifying parameters. It is not
+              training; it is also not nothing. This applies at every scale:
+              raising sessions, affordance shaping, fleet diversity, and memory
+              systems.
             </div>
           </div>
 

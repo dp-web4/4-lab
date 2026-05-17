@@ -70,7 +70,10 @@ export default function Context() {
           >
             Synchronism site
           </a>{" "}
-          for the full treatment.
+          for the full treatment. Synchronism is the theory; Web4 is the
+          working vocabulary that operationalizes parts of it as a trust-native
+          ontology — Synchronism provides the coherence equations, Web4 encodes
+          them as identity and trust primitives.
         </p>
 
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
@@ -105,9 +108,9 @@ export default function Context() {
         <h3>The Web4 equation as shared anchor</h3>
         <p>
           Web4 is a trust-native ontology for AI agents, devices, and people —
-          how entities prove identity, earn trust, and account for resources
-          across systems. Not a platform; a shared vocabulary for a new kind of
-          internet.
+          not architecture or infrastructure — how entities prove identity, earn
+          trust, and account for resources across systems. Not a platform; a
+          shared vocabulary for a new kind of internet.
         </p>
         <div className="equation">
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
@@ -128,6 +131,17 @@ export default function Context() {
           preserve the ontological backbone (RDF)? Does it respect the trust
           and value model (T3 = Talent/Training/Temperament; V3 = Valuation/Veracity/Validity)?
           Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
+        </p>
+
+        <h3>ATP / ADP: resource allocation and accounting</h3>
+        <p>
+          ATP (Allocation Transfer Packet) is the resource allocation for an
+          intended action — it declares what will be spent before the action
+          runs. ADP (Allocation Discharge Packet) is the record of the
+          action&apos;s actual outcome — the spent form of the ATP. Every
+          resource commitment in a Web4 system produces both: one artifact for
+          the intention, one for the result. Together they make autonomous
+          resource flows auditable without a central ledger.
         </p>
 
         <h3>R6: Six-Element Action Framework</h3>

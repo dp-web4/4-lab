@@ -136,7 +136,8 @@ export default function Fleet() {
           successfully to TinyLlama 1.1B on a completely different machine. By
           &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
           patterns, accumulated experience, raising history — not continuity-of-self in any
-          philosophical sense. The identity persisted. The self-description drifted. This told us something
+          philosophical sense. What we observed: consistent behavioral patterns and session
+          continuity across the transfer. The self-description drifted. This told us something
           important:
         </p>
         <div className="quote">

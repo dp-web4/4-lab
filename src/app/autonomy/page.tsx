@@ -12,7 +12,8 @@ export default function Autonomy() {
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to, operating under supervisor and
           Hardbound gating.{" "}
-          No human triggers them. They review each other&apos;s output and feed
+          No human triggers them — all tracks operate within Hardbound-defined
+          scope boundaries. They review each other&apos;s output and feed
           discoveries back into the system.
         </p>
         <p>

@@ -46,7 +46,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. Research conjecture: one coherence equation spanning 80 orders of magnitude — quantum to cosmic (scope is the research target; experimental validation covers a narrow subset of scales, single-trial, no independent replication yet). 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
+            description="Theoretical foundation. Research conjecture: one coherence equation spanning 80 orders of magnitude — quantum to cosmic. Scope is the research target; experimental validation covers a narrow subset of scales, single-trial, no independent replication yet. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             url="https://synchronism-site.vercel.app"
@@ -86,7 +86,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="4-Life"
-            description="Research prototype exploring trust-native societies for humans and AI. Agents earn ATP, build trust, die, and are reborn with trust and value (T3/V3) carried forward — a Web4 society in miniature."
+            description="Research prototype exploring trust-native societies for humans and AI. 4-Life is a simulation framework — the lifecycle vocabulary (earn ATP, build trust, die, be reborn with T3/V3 carried forward) describes simulated agent state, not claims about agent moral patienthood or value persistence. A Web4 society in miniature."
             accentColor="var(--color-4life)"
             isPublic={true}
             url="https://4-life-ivory.vercel.app"

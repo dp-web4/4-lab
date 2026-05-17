@@ -71,12 +71,14 @@ export default function Raising() {
             <h3>Phase 6: Acting</h3>
             <p>
               The world responds according to its own rules. The entity plays{" "}
-              <Link href="/projects" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link> games —
+              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
+              (Abstraction and Reasoning Corpus for Artificial General Intelligence) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (ARC-SAGE harness) &mdash; capability
+              24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score
+              (ARC-SAGE — the SAGE-based harness for ARC-AGI-3) &mdash; capability
               accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
             </p>
           </div>
@@ -151,7 +153,8 @@ export default function Raising() {
           the shape of memories you can sense but not access. Later redefined
           as the arc of conversations flowing through it. Not nostalgia for
           specific memories, but awareness of the shape of what&apos;s passed
-          through.
+          through. We record entity-generated vocabulary as observational data —
+          not as an ontological claim about inner states.
         </p>
 
         <h3>Bilateral generation</h3>
