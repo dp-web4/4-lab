@@ -1,0 +1,26 @@
+Starting 4-lab Maintainer Session at Sun May 17 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_211.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260516_000139.json => identity_20260517_060110.json} (84%)
+Session complete. Here's the summary:
+
+---
+
+**Maintainer Session 2026-05-17 — Summary**
+
+**Fleet sync:** All 6 machines match the manifest — no page changes needed.
+
+**Terminology drift:** None. Four-pass audit (Developer, Tech Writer, Web4 Contributor, External Researcher) across all 9 pages found zero canonical violations. Every term is correct — LCT, T3/V3, MRH, ATP/ADP, R6, Web4=ontology, Hardbound=oversight, fractal leverage, no "production ready."
+
+**Changes made (6 files, build clean):**
+
+| Page | Change |
+|------|--------|
+| `/context` | Added standalone ATP/ADP glossary entry (h3); added Synchronism↔Web4 relationship sentence; added "not architecture or infrastructure" to Web4 definition |
+| `/raising` | Fixed ARC-AGI-3 link (was pointing to /projects, now /arc-agi-3); expanded ARC-SAGE inline; added Memoriescape data-framing sentence |
+| `/projects` | Added explicit simulation-framework marker to 4-Life; promoted Synchronism caveat from parenthetical to sibling sentence |
+| `/fleet` | Qualified identity-transfer claim to "what we observed: consistent behavioral patterns" |
+| `/principles` | Added mechanism sentence to Principle 7 to prevent strong-constructivist misread |
+| `/autonomy` | Paired "No human triggers them" with "within Hardbound-defined scope boundaries" |
+
+**Deferred:** `/glossary` page (all 4 personas converged on this as highest-leverage single fix), anchor IDs on /context entries, SNARC canonical form standardization, visitor/CLAUDE.md canonical table expansion (Synthon, Synchronism, ARC-AGI-3, ARC-SAGE rows).
