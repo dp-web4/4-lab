@@ -18,16 +18,16 @@
 
 ## Recent Updates
 
-Most recent commits (as of 2026-05-11):
+Most recent commits (as of 2026-05-17):
+- `fd5ef81` maintainer: session 2026-05-17 — ATP/ADP standalone entries on /context, Synchronism↔Web4 link, "not architecture or infrastructure" in Web4 entry, ARC-AGI-3 link fixed on /raising, ARC-SAGE expanded, Memoriescape data-framing, 4-Life simulation marker on /projects, Synchronism caveat promoted, identity-transfer claim qualified on /fleet, Principle 7 mechanism sentence, autonomy Hardbound scope pairing
+- `10e5cf5` visitor: browse log 2026-05-17 (zero canonical drift, completeness/placement gaps flagged)
 - `f31db3e` maintainer: session 2026-05-11 — equation legend on /arc-agi-3, failure analysis row for unsolved game, harness attribution note, /links context pointer, behavioral identity definition on /, consciousness disclaimer on /principles, LCT gloss on /context
-- `0f756b8` visitor: browse log 2026-05-11 (zero canonical drift, structural fixes flagged)
-- `ce636fd` maintainer: session 2026-05-10
 
 ---
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-05-11 — completed. Zero canonical drift detected (4-pass, 9-page visitor audit). Structural fixes applied: equation operator legend now on /arc-agi-3, failure analysis row added for unsolved ARC-AGI-3 game, harness attribution note added, /links has /context pointer, home page has behavioral identity operational definition, /principles has consciousness disclaimer, /context LCT legend has functional gloss.
+Last maintainer session: 2026-05-17 — completed. Zero canonical drift detected (4-pass, 9-page visitor audit). Completeness fixes applied: ATP/ADP promoted to standalone glossary entries on /context, Synchronism↔Web4 relationship sentence added, Web4 "not architecture or infrastructure" disambiguation added to /context, ARC-AGI-3 link corrected on /raising + ARC-SAGE expanded, 4-Life simulation-framework marker added on /projects, Synchronism caveat promoted from parenthetical, identity-transfer claim qualified on /fleet, Principle 7 mechanism sentence added, autonomy Hardbound scope boundary paired with autonomy headline.
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓ (+ functional gloss now on /context)
