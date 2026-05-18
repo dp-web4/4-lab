@@ -17,7 +17,7 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria.
+          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. Phases 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Phase 6 (Acting) alone is externally validated: the 94.85% ARC-AGI-3 action score is the quantified output.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">

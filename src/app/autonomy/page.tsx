@@ -184,6 +184,19 @@ export default function Autonomy() {
           semantic depth, proposing nonexistent continuations based on surface
           similarity.
         </p>
+        <h3>Maintainer track: higher blast radius</h3>
+        <p>
+          The maintainer loop acts on visitor feedback and autonomously commits
+          and pushes to Vercel — the only track that ships changes to the public
+          site without a human gate. Its failure modes differ from the visitor
+          loop: a wrong push deploys before review. Known failure patterns:
+          acting on a visitor suggestion that pattern-matched but lacked semantic
+          depth; applying a correct fix to the wrong context. Rollback path:
+          Vercel preserves full deployment history — any push can be reverted to
+          the prior deploy in under a minute. Each session produces a dated audit
+          log recording what changed, what visitor feedback was acted on, and
+          why — the primary human review surface after the session completes.
+        </p>
       </section>
     </>
   );

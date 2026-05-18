@@ -136,7 +136,10 @@ export default function Fleet() {
           successfully to TinyLlama 1.1B on a completely different machine. By
           &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
           patterns, accumulated experience, raising history — not continuity-of-self in any
-          philosophical sense. What we observed: consistent behavioral patterns and session
+          philosophical sense. This is the practical demonstration of what{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Linked Context Tokens (LCT)</Link>{" "}
+          are designed to formalize at the protocol level: portable identity grounded in
+          witnessed history, not model weights. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The self-description drifted. This told us something
           important:
         </p>

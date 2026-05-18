@@ -19,6 +19,12 @@ export const pages: NavItem[] = [
     keywords: ["web4", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
   },
   {
+    title: "Context",
+    href: "/context",
+    description: "Canonical Web4 glossary: all terms, acronyms, and the knowledge flow model. Start here if the vocabulary is new.",
+    keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "knowledge", "memory", "web4", "terms", "definitions"],
+  },
+  {
     title: "ARC-AGI-3",
     href: "/arc-agi-3",
     description: "SAGE tested in competition — 94.85% on the public game set, #3 human leaderboard.",
@@ -47,12 +53,6 @@ export const pages: NavItem[] = [
     href: "/principles",
     description: "Substrate not structure. Fractal leverage. Trust is a relationship.",
     keywords: ["principles", "philosophy", "substrate", "fractal", "trust", "synthon"],
-  },
-  {
-    title: "Context",
-    href: "/context",
-    description: "How knowledge flows across repos and machines.",
-    keywords: ["context", "knowledge", "memory", "claude", "cross-repo", "validation"],
   },
   {
     title: "Links",
