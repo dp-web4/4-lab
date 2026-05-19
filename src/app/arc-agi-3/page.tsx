@@ -62,7 +62,7 @@ export default function ArcAgi3Page() {
             <p style={{ fontSize: "0.875rem" }}>
               The ontology layer. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
-              Framework: Rules/Role/Request/Reference/Resource/Result), every
+              Framework: Rules / Role / Request / Reference / Resource / Result), every
               policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = verified by, <code>*</code> = contextualized by, <code>+</code> = augmented with</span>)
               is the ontology that makes signed, reviewable action records possible.
             </p>

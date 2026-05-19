@@ -69,7 +69,7 @@ export default function Principles() {
           <div className="principle-card">
             <div className="principle-title">4. Trust is a relationship</div>
             <div className="principle-quote">
-              T3 (Talent/Training/Temperament) / V3 (Valuation/Veracity/Validity) tensors bind to entity-role pairs via RDF triples.
+              T3 (Talent / Training / Temperament) / V3 (Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF triples.
             </div>
             <div className="principle-text">
               Trust is not a property of an entity. It&apos;s a property of

@@ -25,11 +25,12 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link href="/projects">Projects</Link>
+            <Link href="/context">Context</Link>
+            <Link href="/arc-agi-3">ARC-AGI-3</Link>
             <Link href="/fleet">Fleet</Link>
             <Link href="/autonomy">Autonomy</Link>
             <Link href="/raising">Raising</Link>
             <Link href="/principles">Principles</Link>
-            <Link href="/context">Context</Link>
             <Link href="/links">Links</Link>
           </nav>
           <MobileNav />

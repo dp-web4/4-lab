@@ -270,7 +270,7 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              T3 (Talent/Training/Temperament) and V3 (Valuation/Veracity/Validity) — distinct three-dimensional tensors.
+              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-dimensional tensors.
               Multidimensional, not a single number.
             </p>
           </div>
@@ -278,8 +278,9 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>ATP / ADP</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Allocation Transfer Packet / Allocation Discharge Packet. ATP
-              allocates resources for an action; ADP records its discharge —
-              two distinct audit artifacts for every spend.
+              declares intended resource spend before an action runs; ADP
+              records the actual outcome — intent and discharge as two distinct
+              audit artifacts.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
