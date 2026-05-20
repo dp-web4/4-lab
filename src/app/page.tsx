@@ -94,9 +94,11 @@ export default function Home() {
               <h3 style={{ color: "#10b981" }}>SAGE</h3>
               <p>
                 Situation-Aware Guidance Engine — an on-device AI cognition
-                kernel running a continuous 12-step loop: sense, deliberate,
-                act. Runs on hardware from Jetson edge modules to laptops.
-                Persistent identity across models and machines.
+                kernel running a continuous 12-step loop (sense &rarr; salience &rarr;
+                metabolize &rarr; posture &rarr; select &rarr; budget &rarr; execute &rarr;
+                learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on
+                hardware from Jetson edge modules to laptops. Persistent identity
+                across models and machines.
               </p>
             </div>
           </a>
@@ -118,9 +120,9 @@ export default function Home() {
                 SAGE instances tested in competition. 25 unknown interactive
                 games serve as an external benchmark for the cognition kernel
                 &mdash; world-model building, action planning, verification,
-                and learning from failure. 94.85% on the public set (Claude
-                Opus 4.6). The games are the test; the capability they develop
-                is the product.
+                and learning from failure. 94.85% official ARC Prize action
+                score; 24/25 games (96.0%) on the public set (Claude Opus 4.6).
+                The games are the test; the capability they develop is the product.
               </p>
             </div>
           </Link>
@@ -270,8 +272,8 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-dimensional tensors.
-              Multidimensional, not a single number.
+              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-element tensors.
+              Three components each, not a single number.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
@@ -295,8 +297,10 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SAGE</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Situation-Aware Guidance Engine. The cognition kernel that runs
-              on each machine &mdash; a 12-step loop that senses, deliberates,
-              and acts. 900+ raising sessions across the fleet.
+              on each machine &mdash; a 12-step loop (sense → salience →
+              metabolize → posture → select → budget → execute → learn →
+              remember → oversee → filter → act). 900+ raising sessions
+              across the fleet.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

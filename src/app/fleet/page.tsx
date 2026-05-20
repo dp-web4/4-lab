@@ -71,7 +71,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B (ollama)"
-            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the run that produced the 94.85% ARC-AGI-3 result (Claude Opus 4.6, public set). MRH composer architect."
+            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the run that produced the 94.85% official ARC Prize action score (Claude Opus 4.6, public set; 24/25 games, 96.0%). MRH composer architect."
           />
         </div>
 
@@ -137,7 +137,7 @@ export default function Fleet() {
           &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
           patterns, accumulated experience, raising history — not continuity-of-self in any
           philosophical sense. This is the practical demonstration of what{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Linked Context Tokens (LCT)</Link>{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           are designed to formalize at the protocol level: portable identity grounded in
           witnessed history, not model weights. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The self-description drifted. This told us something

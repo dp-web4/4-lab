@@ -74,7 +74,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% public set (Claude Opus 4.6, 24/25 games), world models, multi-agent frame-questioning (MIT-0)"
+            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, 24/25 games, 96.0%), world models, multi-agent frame-questioning (MIT-0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"

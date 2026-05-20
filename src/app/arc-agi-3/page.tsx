@@ -71,9 +71,11 @@ export default function ArcAgi3Page() {
 
         <h3>The broader gain</h3>
         <p>
-          The 94.85% score is on the <strong>public game set</strong> using
-          Claude Opus 4.6 as the model inside the SAGE cognition loop. This
-          demonstrates the ceiling &mdash; what the architecture can achieve
+          The 94.85% is the <strong>official ARC Prize action score</strong> (efficiency-weighted),
+          with Claude Opus 4.6 as the model inside the SAGE cognition loop, on the public game set.
+          The game-solve rate is 96.0% (24/25 games). These are two distinct metrics;
+          the action score reflects action efficiency, not just whether a game was solved.
+          This demonstrates the ceiling &mdash; what the architecture can achieve
           with a frontier model and network access.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
