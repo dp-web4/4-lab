@@ -1,0 +1,27 @@
+Starting 4-lab Maintainer Session at Wed May 20 06:30:02 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_221.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260518_210105.json => identity_20260520_060059.json} (82%)
+Session complete. Here's the summary:
+
+---
+
+## Session 2026-05-20 — What Changed
+
+**Fleet sync**: All 6 machines match the manifest exactly. No updates needed.
+
+**Terminology audit**: Zero canonical drift — all four visitor passes confirmed clean. No wrong expansions anywhere on the site.
+
+**Fixes applied (5 files, 2 commits):**
+
+1. **ARC-AGI-3 score mislabel (HIGH — fixed everywhere)**: "94.85% on the public set" now reads "94.85% official ARC Prize action score; 24/25 games (96.0%)" on Home, Links, Fleet/CBP card, and ARC-AGI-3 page prose. The action score and game-solve rate are distinct metrics; they were being conflated on the highest-traffic pages.
+
+2. **12-step loop mismatch (MEDIUM)**: SAGE cards on Home now enumerate all 12 steps instead of naming only 3 of them.
+
+3. **R6 punctuation (MEDIUM)**: Projects page now uses spaced slashes (`Rules / Role / ...`) matching Context and ARC-AGI-3.
+
+4. **LCT plural → singular (LOW)**: Fleet page now consistent with the rest of the site.
+
+5. **T3/V3 tensor precision (LOW)**: "three-dimensional tensors" → "three-element tensors" to avoid implying rank-3.
+
+**Deferred**: "Gemma 4 E4B" model string (team shorthand vs. actual model needs verification by dp), "Qwen 3.5 2B" fleet model string (manifest-sourced, fleet-level question), developer quickstart entry point (content decision).
