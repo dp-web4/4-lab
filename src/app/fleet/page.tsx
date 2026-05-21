@@ -71,7 +71,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B (ollama)"
-            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the run that produced the 94.85% official ARC Prize action score (Claude Opus 4.6, public set; 24/25 games, 96.0%). MRH composer architect."
+            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the ARC Prize run; Claude Opus 4.6 (public set, network access) produced the 94.85% official action score (24/25 games, 96.0%). MRH composer architect."
           />
         </div>
 

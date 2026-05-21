@@ -92,6 +92,16 @@ export default function Links() {
           Hardbound (hardware-bound oversight suite) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
         </p>
 
+        <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
+        <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Questions or contributions? Open an issue on any public repo.{" "}
+          <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> and{" "}
+          <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
+          are the most active entry points. The{" "}
+          <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
+          has 11 public repos — clone what interests you, experiment, and open a discussion if you want to engage.
+        </p>
+
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>
         <ul className="link-list">
           <ExternalLink
