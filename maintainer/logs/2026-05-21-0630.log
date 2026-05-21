@@ -1,0 +1,15 @@
+Starting 4-lab Maintainer Session at Thu May 21 06:30:02 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_225.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260520_000101.json => identity_20260521_060113.json} (82%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines current — no changes needed. "Qwen 3.5 2B" for Sprout is confirmed by the manifest (self-reported by the machine); the visitor concern was unfounded.
+
+**Terminology**: Zero drift found by all four visitor personas — the cleanest audit pass yet.
+
+**Two changes deployed** (Vercel auto-deploying):
+1. **`/fleet` CBP card** — rephrased so Claude Opus 4.6 is the explicit subject of "produced the 94.85%"; CBP is unambiguously the orchestrator. Eliminates the skimmer read that a 1.1B TinyLlama hit the headline score.
+2. **`/links` Contributing section** — added GitHub issues links for SAGE and Web4, plus the org link, with "clone what interests you, experiment, and open a discussion." Closes the developer's HIGH complaint that the site promises a collective but offers no visible door in.
+
+**So what?** — The terminology enforcement is holding well enough that the autonomous feedback loop is now surfacing *representational* and *structural* issues (attribution clarity, engagement path) rather than terminology drift. The loop is finding the right class of problems.
