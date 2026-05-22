@@ -1,0 +1,11 @@
+Starting 4-lab Maintainer Session at Fri May 22 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_229.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260521_000111.json => identity_20260522_060117.json} (84%)
+Session complete. **So what?**
+
+All four visitor personas reported zero canonical Web4 terminology drift — the hardest-won corrections (LCT, Hardbound-as-oversight, Web4-as-ontology) are holding across all eight pages. That's the feedback loop working: the last several sessions' fixes have compounded into a consistently clean terminology layer.
+
+This session's fixes were refinements at the second tier: ARC-AGI acronym hygiene (undefined on first use, four inconsistent expansion forms collapsed to one), the missing "network-enabled" condition on the headline 94.85% number (the credibility-critical caveat that conditions the most attention-grabbing claim), and the McNugget fleet role correction (manifest says "Research/site maintenance"; the page had invented "ARC-AGI-3 game solver" which both contradicted the manifest and created confusing dual-attribution with CBP).
+
+The open items — "start here" signal on Projects and operationalizing "synthon"/"interactive selection" — are substantive content questions that warrant a deliberate decision, not a quick maintainer fix.
