@@ -117,11 +117,13 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #a855f7" }}>
               <h3 style={{ color: "#a855f7" }}>ARC-AGI-3</h3>
               <p>
-                SAGE instances tested in competition. 25 unknown interactive
-                games serve as an external benchmark for the cognition kernel
-                &mdash; world-model building, action planning, verification,
-                and learning from failure. 94.85% official ARC Prize action
-                score; 24/25 games (96.0%) on the public set (Claude Opus 4.6).
+                SAGE instances tested against the Abstraction and Reasoning
+                Corpus for Artificial General Intelligence (ARC-AGI-3)
+                benchmark. 25 unknown interactive games serve as an external
+                benchmark for the cognition kernel &mdash; world-model
+                building, action planning, verification, and learning from
+                failure. 94.85% official ARC Prize action score; 24/25 games
+                (96.0%) on the public set (Claude Opus 4.6, network-enabled).
                 The games are the test; the capability they develop is the product.
               </p>
             </div>

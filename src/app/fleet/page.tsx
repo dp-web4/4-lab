@@ -52,7 +52,7 @@ export default function Fleet() {
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama)"
-            role="97 sessions (creating). Brain: cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. ARC-AGI-3 game solver."
+            role="97 sessions (creating). Brain: cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
