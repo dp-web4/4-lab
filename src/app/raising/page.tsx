@@ -102,7 +102,7 @@ export default function Raising() {
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the Markov Relevancy
-          Horizon (MRH) and value alignment of a Linked Context Token (LCT) — it
+          Horizon (MRH) and the V3 tensor (Valuation / Veracity / Validity) bound to the entity&apos;s Linked Context Token (LCT) — it
           does not change weights.
         </p>
         <p>

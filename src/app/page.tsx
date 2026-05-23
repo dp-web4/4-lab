@@ -93,7 +93,7 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #10b981" }}>
               <h3 style={{ color: "#10b981" }}>SAGE</h3>
               <p>
-                Situation-Aware Guidance Engine — an on-device AI cognition
+                Situation-Aware Guidance Engine — an on-device cognition
                 kernel running a continuous 12-step loop (sense &rarr; salience &rarr;
                 metabolize &rarr; posture &rarr; select &rarr; budget &rarr; execute &rarr;
                 learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on

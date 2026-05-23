@@ -38,7 +38,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Guidance Engine — on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Guidance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines. The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             url="https://sage-site-murex.vercel.app"

@@ -16,7 +16,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="On-device cognition kernel — 12-step cognition loop, metabolic states, experience buffer"
+            description="Situation-Aware Guidance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -44,7 +44,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="On-device cognition kernel — 12-step cognition loop, metabolic states, experience buffer"
+            description="Situation-Aware Guidance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"

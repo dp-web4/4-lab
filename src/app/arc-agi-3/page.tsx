@@ -41,11 +41,11 @@ export default function ArcAgi3Page() {
           <div className="card" style={{ borderLeft: "3px solid #10b981" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Guidance Engine)</h4>
             <p style={{ fontSize: "0.875rem" }}>
-              The cognition loop. Sense &rarr; salience &rarr; metabolize &rarr;
+              The cognition loop has 12 functional steps: Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate &mdash; a gate inside the{" "}
-              <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight suite</Link>{" "}
-              &mdash; at step 11.5 (between filter and act) evaluates every action against signed law before it fires.
+              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate &mdash; a{" "}
+              <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
+              sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>
@@ -123,7 +123,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Fleet</td>
-                <td style={{ padding: "0.375rem 0" }}>6 machines, models from 0.8B (Sprout) to 27B (Thor)</td>
+                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 1.1B (CBP) to 14B (Thor).</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Methodology</td>
