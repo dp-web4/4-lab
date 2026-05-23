@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Sat May 23 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_233.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260522_000112.json => identity_20260523_060115.json} (84%)
+Session complete. Here's the summary:
+
+---
+
+**Fleet sync**: All 6 machines match the manifest — no updates needed.
+
+**Fixes shipped (6 files, build clean):**
+
+1. **SAGE one-liner locked** across all 5 pages that had variants — canonical is now "Situation-Aware Guidance Engine — an on-device cognition kernel" site-wide. Eliminated the rogue "generative cognition kernel" variant on `/fleet` and restored the formal expansion on both `/links` entries.
+
+2. **`/arc-agi-3` model sizes** — fleet row now shows both the benchmark-time range (0.8B–27B) and current fleet (1.1B–14B), resolving the direct contradiction with `/fleet`.
+
+3. **`/arc-agi-3` PolicyGate ambiguity** — reworded to make explicit: "12 functional steps; PolicyGate is a Hardbound sub-gate inset between step 11 (filter) and step 12 (act), not an additional step." Resolves the 11-vs-12-step misread four personas flagged.
+
+4. **`/raising` "value alignment of a Linked Context Token"** — corrected to "the V3 tensor (Valuation / Veracity / Validity) bound to the entity's LCT." LCT is the identity anchor; V3 carries valuation. The AI-safety "value alignment" phrase was imported onto the wrong Web4 object.
+
+**Deferred**: Synthon three-definition drift (semantically compatible, needs authorial judgment), AI DNA Discovery fractal leverage cross-reference (nearby /projects prose already covers it), Synchronism scope hedge (scope caveat already present on card, wording differs slightly).
