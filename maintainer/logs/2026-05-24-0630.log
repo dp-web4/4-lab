@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Sun May 24 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_237.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260523_000118.json => identity_20260524_060210.json} (84%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines match the manifest — no updates needed.
+
+**Site changes pushed** (7 files, 71 insertions):
+
+- **`/context`**: Added 4 missing glossary entries — PolicyGate, ACP, T3/V3 (with philosophical glosses matching LCT/MRH/ATP/ADP treatment), and fractal leverage. Tightened Synthon differentia to "coherence sustained by the recursion itself, not by external coordination."
+- **`/projects`**: Reconciled fractal leverage to the canonical recursive-instantiation form ("each entity instantiates the full Web4 stack at its own scale") — was "pragmatic reuse of what works in one place, everywhere."
+- **`/raising`**: Phase 6 disclaimer demotes the ARC-AGI-3 score from *operationalization of Acting* to *one externally validated demonstration consistent with the Acting phase*. Memoriescape reframed from phenomenal "awareness" language to "token-production behavior."
+- **`/arc-agi-3`**: "the architecture" → "the SAGE architecture" — removes residual ambiguity.
+- **`/principles`**: SAGE expanded on first use (Principle 1) — was the only page that hadn't done this.
+- **`/links`**: ADP added to vocabulary callout (was omitted alongside ATP).
+- **`/page.tsx`**: On-ramp paragraph before the Web4 equation — "New to this vocabulary? Start with /context."
+
+**Deferred**: repo rename (`web4-governance`), incident post-mortems, ablation study, sitewide anchor links, `/glossary` page.
