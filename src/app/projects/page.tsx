@@ -139,7 +139,7 @@ export default function Projects() {
           <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage
           </Link>
-          : pragmatic reuse of what works in one place, everywhere.
+          : each entity instantiates the full Web4 stack at its own scale.
         </p>
         <p>
           The Hill function describes enzyme binding — and maps trust formation

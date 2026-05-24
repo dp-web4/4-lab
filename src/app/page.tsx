@@ -246,6 +246,11 @@ export default function Home() {
           <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer">SAGE</a>,{" "}
           <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer">Synchronism</a>.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          New to this vocabulary?{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
+          — canonical definitions for every term used on this site. The cards below cover the essentials.
+        </p>
         <div className="equation">
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>

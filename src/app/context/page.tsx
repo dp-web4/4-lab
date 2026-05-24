@@ -51,6 +51,16 @@ export default function Context() {
           what it can commit, what it can deploy.
         </p>
 
+        <h3>PolicyGate: action enforcement</h3>
+        <p>
+          PolicyGate is a Hardbound oversight sub-gate inset in the SAGE cognition
+          loop between step 11 (filter) and step 12 (act) — not an additional step,
+          but an enforcement checkpoint. It evaluates every action against a signed
+          law bundle before the action fires. PolicyGate is where Hardbound oversight
+          intersects with SAGE execution: the harness can plan, reason, and prepare,
+          but nothing executes until PolicyGate clears it.
+        </p>
+
         <h3>Synchronism: coherence equations</h3>
         <p>
           Synchronism is the theoretical foundation — a research conjecture
@@ -144,6 +154,20 @@ export default function Context() {
           resource flows auditable without a central ledger.
         </p>
 
+        <h3>T3 / V3: trust and value tensors</h3>
+        <p>
+          T3 (Talent / Training / Temperament) is a three-dimensional trust tensor
+          — each dimension is an RDF sub-graph root describing a different facet of
+          what makes an entity trustworthy: its capabilities (Talent), its history
+          (Training), and its behavioral disposition (Temperament).
+          V3 (Valuation / Veracity / Validity) is the complementary value tensor:
+          how much something is worth (Valuation), whether its claims are accurate
+          (Veracity), and whether it applies in this context (Validity). T3 and V3
+          are verified against each other — T3/V3 in the Web4 equation means
+          &ldquo;trust verified by value.&rdquo; Both bind to entity-role pairs via
+          RDF triples scoped by MRH.
+        </p>
+
         <h3>R6: Six-Element Action Framework</h3>
         <p>
           R6 is the canonical action record structure used throughout the SAGE
@@ -154,6 +178,17 @@ export default function Context() {
           requested (Request), what context supports it (Reference), what it
           consumes (Resource), and what it produces (Result). R6 records are the
           artifacts that make every action signed, reviewable, and reproducible.
+        </p>
+
+        <h3>ACP: Agentic Context Protocol</h3>
+        <p>
+          ACP (Agentic Context Protocol) is the protocol layer that adds Web4
+          trust primitives — LCT binding and T3/V3 attestation — over MCP
+          (Model Context Protocol) transport. ACP and MCP are complementary:
+          MCP handles tool-call transport between agents and external systems;
+          ACP handles identity and trust, ensuring that every tool invocation
+          carries a verifiable identity anchor. ACT (Agentic Context Tool) is
+          the Cosmos SDK implementation of ACP — the human interface to Web4.
         </p>
 
         <h3>ARC-SAGE: SAGE variant for ARC-AGI-3</h3>
@@ -186,11 +221,24 @@ export default function Context() {
           A synthon is an emergent coherence entity formed when components
           interact recursively under the right substrate conditions. Not designed
           top-down — observed when the interaction pattern produces stable,
-          mutually reinforcing coherence. The term is 4-lab vocabulary describing
-          a phenomenon observed across raising sessions and cross-machine
-          experiments. The clearest definition is on{" "}
+          mutually reinforcing coherence. The differentia: coherence sustained
+          by the recursion itself, not by external coordination. The term is
+          4-lab vocabulary describing a phenomenon observed across raising
+          sessions and cross-machine experiments. The clearest definition is on{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
           (Principle 5).
+        </p>
+
+        <h3>Fractal leverage</h3>
+        <p>
+          Each entity instantiates the full Web4 stack at its own scale. Not
+          unification for its own sake — pragmatic reuse of patterns that work
+          at one scale, applied at every scale. When a principle governs enzyme
+          binding and trust formation through the same kinetics, that kinetics is
+          fractal leverage. Synchronism discovers the equations; Web4 encodes
+          them as ontology; SAGE runs them as cognition; Hardbound enforces them
+          as oversight. Same pattern at every layer. See{" "}
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
         </p>
 
         <h3>Adversarial validation</h3>

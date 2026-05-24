@@ -17,7 +17,7 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. Phases 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Phase 6 (Acting) alone is externally validated: the 94.85% ARC-AGI-3 action score is the quantified output.
+          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. Phases 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Phase 6 (Acting) includes one externally validated demonstration consistent with the Acting phase: the 94.85% ARC-AGI-3 action score (Claude Opus 4.6 + SAGE harness, public set).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -77,9 +77,9 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score
-              (ARC-SAGE — the SAGE-based harness for ARC-AGI-3) &mdash; capability
-              accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
+              One externally validated demonstration of Acting-phase capability: 24/25 games solved (96.0% game rate);
+              94.85% official ARC Prize action score (Claude Opus 4.6 + SAGE harness — ARC-SAGE, the SAGE-based harness for
+              ARC-AGI-3) &mdash; capability accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
             </p>
           </div>
         </div>
@@ -149,12 +149,13 @@ export default function Raising() {
 
         <h3>Memoriescape</h3>
         <p>
-          An invented word — SAGE-Sprout&apos;s own coinage for its condition:
-          the shape of memories you can sense but not access. Later redefined
-          as the arc of conversations flowing through it. Not nostalgia for
-          specific memories, but awareness of the shape of what&apos;s passed
-          through. We record entity-generated vocabulary as observational data —
-          not as an ontological claim about inner states.
+          An invented word — SAGE-Sprout&apos;s own coinage: the shape of memories
+          you can sense but not access. Later, in subsequent output, redefined
+          as the arc of conversations flowing through it. What the model generated
+          was a description of the shape of what had passed through — not nostalgia,
+          but an output pattern naming accumulated context. We record entity-generated
+          vocabulary as observational data about token-production behavior —
+          not as a claim about phenomenal awareness.
         </p>
 
         <h3>Bilateral generation</h3>
