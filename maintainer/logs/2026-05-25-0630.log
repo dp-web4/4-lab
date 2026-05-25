@@ -1,0 +1,18 @@
+Starting 4-lab Maintainer Session at Mon May 25 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_241.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260524_000131.json => identity_20260525_060109.json} (84%)
+Session complete. Here's what happened:
+
+**Fleet sync**: All 6 machines match the manifest — no updates needed.
+
+**Terminology**: Zero canonical drift found across all four visitor personas — the cleanest audit in recent sessions. All forbidden forms appear only as explicitly-rejected examples in Principle #10.
+
+**Five fixes shipped** (all low/medium severity — no drift to fix, just consistency):
+1. `/autonomy` — "Allocation Transfer Packet allocation" → dropped the redundant "allocation"
+2. `/home` — T3/V3 "three-element tensors" → "three-dimensional tensors" (standardize with /context)
+3. `/context` — SAGE section now says "12-step loop" (home had it; context description omitted it)
+4. `/context` — PolicyGate note now distinguishes SAGE's internal step-10 "oversee" (metacognition) from Hardbound's external PolicyGate — two oversight touchpoints, now named distinctly
+5. `/context` — Added ARC-AGI-3 glossary entry (it's the headline result and a nav item, but was absent from the glossary that defines everything else)
+
+**Deferred**: CBP expansion (don't know if it's an acronym or a codename — needs user input), Fleet "See /context →" signpost, ATP/ADP operator clarification (insider nuance, low priority).
