@@ -35,7 +35,7 @@ export default function Context() {
         <h3>SAGE: Situation-Aware Guidance Engine</h3>
         <p>
           SAGE (Situation-Aware Guidance Engine) is the on-device AI cognition
-          kernel — a continuous loop that senses context, deliberates, and acts.
+          kernel — a continuous 12-step loop that senses context, deliberates, and acts.
           Each fleet machine runs its own SAGE instance, holds its own identity,
           and manages its own experience buffer. SAGE is what makes knowledge
           actionable: it decides what enters the context window, when to act,
@@ -59,6 +59,9 @@ export default function Context() {
           law bundle before the action fires. PolicyGate is where Hardbound oversight
           intersects with SAGE execution: the harness can plan, reason, and prepare,
           but nothing executes until PolicyGate clears it.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Note: the SAGE loop also has an internal &ldquo;oversee&rdquo; step at position 10 — SAGE&apos;s own metacognitive check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step-10 oversight is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
         </p>
 
         <h3>Synchronism: coherence equations</h3>
@@ -189,6 +192,22 @@ export default function Context() {
           ACP handles identity and trust, ensuring that every tool invocation
           carries a verifiable identity anchor. ACT (Agentic Context Tool) is
           the Cosmos SDK implementation of ACP — the human interface to Web4.
+        </p>
+
+        <h3>ARC-AGI-3: benchmark for abstraction and reasoning</h3>
+        <p>
+          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General
+          Intelligence, generation 3) is an external benchmark from ARC Prize
+          consisting of interactive game environments where the agent must infer
+          mechanics through play — no rules are given. It tests world-model
+          building, action planning, and learning from failure in a setting where
+          brute-force memorization cannot succeed. The lab&apos;s result: 94.85%
+          official ARC Prize action score (Claude Opus 4.6 operating within the
+          SAGE harness, public set, network-enabled; 24/25 games, 96.0% game
+          rate). Phase 2 work is isolating the harness&apos;s independent
+          contribution from the model&apos;s. See{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
+          for the full result breakdown.
         </p>
 
         <h3>ARC-SAGE: SAGE variant for ARC-AGI-3</h3>

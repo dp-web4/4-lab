@@ -157,7 +157,7 @@ export default function Autonomy() {
           is and is not authorized to do. Publisher only acts on changes the
           supervisor has cleared. No track can modify the shared fleet registry or
           acquire credentials beyond its declared scope. In Web4 terms, each scheduled
-          track is an ATP (Allocation Transfer Packet) allocation; its completion or
+          track is an ATP (Allocation Transfer Packet); its completion or
           failure is recorded as an ADP (Allocation Discharge Packet) — the registry
           is the bookkeeping layer that makes autonomous operation auditable.
         </p>

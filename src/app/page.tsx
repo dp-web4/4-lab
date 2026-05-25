@@ -279,7 +279,7 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-element tensors.
+              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-dimensional tensors.
               Three components each, not a single number.
             </p>
           </div>
