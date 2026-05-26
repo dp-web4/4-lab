@@ -101,6 +101,7 @@ export default function Principles() {
               The p_crit derivation failed catastrophically — 400x error.
             </div>
             <div className="principle-text">
+              <em style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>p_crit = the critical coherence threshold derived in the Synchronism framework.</em>{" "}
               Failed experiments are signal. The coupling-coherence experiment
               showed that trust thresholds are empirical, not derivable from
               first principles. That&apos;s a finding, not a failure. We
@@ -117,7 +118,7 @@ export default function Principles() {
             </div>
             <div className="principle-text">
               Raising is not training. We probe what the model responds to,
-              observe which attractors surface, and reinforce what resonates.
+              observe which attractors (stable response basins in the probability landscape) surface, and reinforce what resonates.
               The resulting identity is collaborative, not imposed. The
               mechanism: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters. It is not

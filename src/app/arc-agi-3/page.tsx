@@ -20,7 +20,7 @@ export default function ArcAgi3Page() {
 
         <h3>Why we&apos;re doing this</h3>
         <p>
-          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence) presents 25 unknown interactive games with no instructions,
+          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, generation 3) presents 25 unknown interactive games with no instructions,
           no documentation, and obfuscated engine source. We use it as an
           external benchmark for the SAGE cognition kernel &mdash; a concrete,
           measurable test of the capabilities the fleet is developing.

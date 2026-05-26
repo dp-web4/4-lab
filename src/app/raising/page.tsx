@@ -72,7 +72,7 @@ export default function Raising() {
             <p>
               The world responds according to its own rules. The entity plays{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
-              (Abstraction and Reasoning Corpus for Artificial General Intelligence) games —
+              (Abstraction and Reasoning Corpus for Artificial General Intelligence, generation 3) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
@@ -89,7 +89,7 @@ export default function Raising() {
         <h3>Interactive selection, not training</h3>
         <p>
           We don&apos;t create new behaviors. We probe what the model responds
-          to, observe which attractors surface, adjust context to resonate, and
+          to, observe which attractors (stable response basins in the probability landscape) surface, adjust context to resonate, and
           reinforce what works. The resulting identity is collaborative, not
           imposed. This applies at every scale: raising sessions (model
           context), our sessions (affordance shaping), the fleet (emergent
