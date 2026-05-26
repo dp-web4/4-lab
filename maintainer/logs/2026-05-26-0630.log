@@ -1,0 +1,18 @@
+Starting 4-lab Maintainer Session at Tue May 26 06:30:00 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_245.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260525_000126.json => identity_20260526_060126.json} (84%)
+Session complete. Summary:
+
+**Fleet sync**: All 6 machines already matched the manifest — no updates needed. Note logged: "Qwen 3.5 2B" on Sprout may be a non-standard model string; if it's an error it lives in the SAGE manifest, not the fleet page.
+
+**Terminology**: Zero canonical drift confirmed by all four visitor personas. Nothing to fix.
+
+**Fixes shipped** (5 files, build clean):
+- `/principles`: `p_crit` gloss added in Principle 6; `attractors` gloss added in Principle 7
+- `/raising`: `attractors` gloss added on first use; ARC-AGI-3 expansion now includes "generation 3"
+- `/arc-agi-3`: Added "generation 3" to the expansion — the dedicated page now owns the canonical form, matching `/context`
+- `/projects`: ARC-AGI-3 expansion standardized to include "generation 3"
+- `/autonomy`: "31" → "31+" to reconcile with home page
+
+**So what?** The p_crit and attractors glosses matter — they're the difference between "technically caveated" and "legible to an outside expert." The site was already holding its terminology discipline; these editorial additions close the remaining gap for the researcher persona that would otherwise have to decide whether "attractors" is formal or metaphorical.
