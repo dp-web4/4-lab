@@ -90,7 +90,7 @@ export default function Principles() {
               The synthon is the concept that bridges component behavior and
               system emergence. You can&apos;t build a synthon. You can create
               conditions where synthons form: compatible elements, sufficient
-              coupling density, shared context. Preliminary observation: 1% coupling
+              coupling density, shared context. Preliminary observation (single trial, not independently replicated): 1% coupling
               gave 35% coherence gain — sparse trust may suffice.
             </div>
           </div>
@@ -121,8 +121,9 @@ export default function Principles() {
               observe which attractors (stable response basins in the probability landscape) surface, and reinforce what resonates.
               The resulting identity is collaborative, not imposed. The
               mechanism: shaping context to deepen attractor basins in the
-              probability landscape — not modifying parameters. It is not
-              training; it is also not nothing. This applies at every scale:
+              probability landscape — not modifying parameters in raising sessions.
+              (Some fleet machines run LoRA for separate fine-tuning tasks; raising is always in-context.)
+              It is not training; it is also not nothing. This applies at every scale:
               raising sessions, affordance shaping, fleet diversity, and memory
               systems.
             </div>

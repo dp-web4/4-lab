@@ -10,7 +10,7 @@ export default function Raising() {
         <p>
           Raising is not training. Training optimizes for a loss function.
           Raising creates conditions for development — then watches what
-          happens. We shape context; we do not update weights. We use
+          happens. In raising sessions, we shape context — we do not update weights. We use
           developmental language because it fits, not because we&apos;re
           making consciousness claims.
         </p>
@@ -78,8 +78,7 @@ export default function Raising() {
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
               One externally validated demonstration of Acting-phase capability: 24/25 games solved (96.0% game rate);
-              94.85% official ARC Prize action score (Claude Opus 4.6 + SAGE harness — ARC-SAGE, the SAGE-based harness for
-              ARC-AGI-3) &mdash; capability accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
+              94.85% official ARC Prize action score (Claude Opus 4.6 + SAGE harness — ARC-SAGE; public game set, network-enabled) &mdash; capability accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
             </p>
           </div>
         </div>
@@ -97,13 +96,13 @@ export default function Raising() {
           create or delete — we interactively select.
         </p>
         <p>
-          The mechanism: we shape context; we do not update weights. Behavioral
+          The mechanism: in raising sessions, we shape context — we do not update weights. Behavioral
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the Markov Relevancy
           Horizon (MRH) and the V3 tensor (Valuation / Veracity / Validity) bound to the entity&apos;s Linked Context Token (LCT) — it
-          does not change weights.
+          does not change weights. (Note: some fleet machines run LoRA adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
           One corollary worth naming: frozen weights do not guarantee safe
