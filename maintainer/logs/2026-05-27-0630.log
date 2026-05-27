@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Wed May 27 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_249.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260526_000129.json => identity_20260527_060135.json} (84%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines matched the manifest — no page updates needed. One note flagged: Sprout's `qwen3.5:2b` may be a nonexistent model string; the manifest owner should verify.
+
+**Terminology**: Clean sweep. Four visitor personas found zero contradictory expansions across all nine pages. No drift to fix.
+
+**Changes shipped** (4 files, build passed, pushed to Vercel):
+
+1. `/raising` + `/principles` — scoped "we do not update weights / not modifying parameters" to *raising sessions* specifically; added a note that LoRA on some machines serves separate fine-tuning tasks. This closes the structural honesty gap the External Researcher flagged: the "raising not training" thesis was being undercut by LoRA on Thor and Legion with no reconciliation.
+
+2. `/raising` Phase 6 — added "public game set, network-enabled" to the 94.85% ARC number, so the caveat travels with the claim wherever it appears.
+
+3. `/home` + `/arc-agi-3` — noted that T3/V3 and ATP/ADP use "/" as a pair separator (not the "verified by" operator), defusing the literal-reading ambiguity a strict reader would catch.
+
+4. `/principles` Principle 5 — added "single trial, not independently replicated" to the 1%→35% coherence gain stat, matching Principle 2's own standard for hedging analogical results.
+
+The most substantive finding this session was the LoRA contradiction — not terminology drift, but a load-bearing honesty claim that needed scoping rather than softening.
