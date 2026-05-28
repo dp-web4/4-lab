@@ -117,9 +117,10 @@ export default function Fleet() {
           A background peer monitor polls health endpoints. A trust tracker
           maintains per-peer{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
-          from real interactions: success raises trust, timeouts lower it. No
-          central authority decides who is trustworthy — trust emerges from the
-          pattern of interaction.
+          from real interactions: success raises trust, timeouts lower it. V3 attestations
+          (Valuation / Veracity / Validity) emerge alongside — trust earned through
+          peer verification. No central authority decides who is trustworthy — trust
+          emerges from the pattern of interaction.
         </p>
         <p>
           Trust starts at zero, earned from evidence. The trust landscape —

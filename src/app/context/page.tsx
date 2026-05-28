@@ -132,7 +132,7 @@ export default function Context() {
           <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
-          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — a persistent identity anchor, like a passport that travels with you across systems<br />
+          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — portable identity grounded in witnessed history, not model weights<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
           MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
@@ -159,16 +159,16 @@ export default function Context() {
 
         <h3>T3 / V3: trust and value tensors</h3>
         <p>
-          T3 (Talent / Training / Temperament) is a three-dimensional trust tensor
-          — each dimension is an RDF sub-graph root describing a different facet of
+          T3 (Talent / Training / Temperament) is a three-component trust structure
+          — each component is an RDF sub-graph root describing a different facet of
           what makes an entity trustworthy: its capabilities (Talent), its history
           (Training), and its behavioral disposition (Temperament).
-          V3 (Valuation / Veracity / Validity) is the complementary value tensor:
+          V3 (Valuation / Veracity / Validity) is the complementary three-component value structure:
           how much something is worth (Valuation), whether its claims are accurate
           (Veracity), and whether it applies in this context (Validity). T3 and V3
           are verified against each other — T3/V3 in the Web4 equation means
           &ldquo;trust verified by value.&rdquo; Both bind to entity-role pairs via
-          RDF triples scoped by MRH.
+          RDF triples scoped by MRH. (&ldquo;Tensor&rdquo; here means a structured multi-component quantity — not a rank-≥2 array in the linear-algebra sense.)
         </p>
 
         <h3>R6: Six-Element Action Framework</h3>

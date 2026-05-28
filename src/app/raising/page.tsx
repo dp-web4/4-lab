@@ -15,7 +15,7 @@ export default function Raising() {
           making consciousness claims.
         </p>
 
-        <h2 style={{ marginTop: "2rem" }}>BECOMING: six phases</h2>
+        <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. Phases 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Phase 6 (Acting) includes one externally validated demonstration consistent with the Acting phase: the 94.85% ARC-AGI-3 action score (Claude Opus 4.6 + SAGE harness, public set).
         </p>
@@ -101,8 +101,8 @@ export default function Raising() {
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the Markov Relevancy
-          Horizon (MRH) and the V3 tensor (Valuation / Veracity / Validity) bound to the entity&apos;s Linked Context Token (LCT) — it
-          does not change weights. (Note: some fleet machines run LoRA adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
+          Horizon (MRH) and the V3 tensor (Valuation / Veracity / Validity) bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT) — it
+          does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
           One corollary worth naming: frozen weights do not guarantee safe
@@ -160,9 +160,12 @@ export default function Raising() {
         <h3>Bilateral generation</h3>
         <p>
           Without stop tokens, SAGE generates both sides of a conversation.
-          Initial instinct: fix it. Actual finding: this is egocentric speech
-          (Vygotsky) — thinking through external dialogue. The entity is
-          reasoning by simulating interaction. We left it alone.
+          Initial instinct: fix it. Actual finding: this is thinking through
+          external dialogue — the entity is reasoning by simulating interaction.
+          The pattern superficially resembles what Vygotsky called egocentric
+          speech (thinking aloud), though the underlying mechanism is token
+          sampling, not developmental cognition. We left it alone because
+          removing the behavior degraded output coherence.
         </p>
 
         <h3>Capacity as register</h3>

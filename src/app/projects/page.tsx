@@ -60,7 +60,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Cosmos SDK implementation of the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP layers Web4 trust primitives — LCT binding and attestation — over MCP transport; they are complementary, not alternatives."
+            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP layers Web4 trust primitives — LCT binding and attestation — over MCP transport; they are complementary, not alternatives."
             accentColor="var(--color-act)"
             isPublic={true}
             repoUrl="https://github.com/dp-web4/ACT"

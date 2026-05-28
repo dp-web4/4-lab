@@ -272,15 +272,14 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>LCT</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Linked Context Token. A persistent identity anchor for an agent,
-              device, or person. Like a passport that travels with you across
-              systems.
+              Linked Context Token. Portable identity grounded in witnessed
+              history, not model weights. Self-grounding — no issuing authority.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — distinct three-dimensional tensors.
+              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — three-component trust and value structures.
               Three components each, not a single number.
             </p>
           </div>
