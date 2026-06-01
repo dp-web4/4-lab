@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Mon Jun  1 06:30:02 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_269.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260531_000153.json => identity_20260601_060256.json} (82%)
+Session complete. Here's the summary:
+
+**Fleet sync:** All six machines match the manifest — no changes needed.
+
+**No canonical drift found.** Every enforced Web4 term (LCT, T3, V3, MRH, ATP/ADP, R6, Web4-as-ontology, Hardbound-as-oversight) is correct across all pages.
+
+**Four fixes shipped:**
+1. **`/arc-agi-3`**: "SAGE architecture" → "SAGE cognition loop" — voice leak against the site's own anti-"architecture" discipline, flagged by three of four visitor personas
+2. **`/context`**: "Fourteen repos" → "Fourteen repos (eleven public)" — clarifies the public/private split that visitors kept hitting as a discrepancy vs. the links page
+3. **`/context`**: Added WM (Working Memory) and RPE (Reward Prediction Error) glossary section — both used on `/fleet` but absent from the canonical reference; flagged by passes 2 and 4
+4. **`/links`**: Added Claude Flow fork — reconciles the "three agent platforms" claim on `/projects` with the two-fork enumeration that was on `/links`
+
+**Deferred (low priority):** SNARC name collision note for researchers, "tensor"/"Markov" borrowed-precision flags, developer entry-point block, and the "validated" wording on the Acting BECOMING phase. All logged.
