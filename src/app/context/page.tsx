@@ -11,7 +11,7 @@ export default function Context() {
           Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
-          Fourteen repos, six machines, multiple AI agents with overlapping but
+          Fourteen repos (eleven public), six machines, multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
@@ -102,6 +102,21 @@ export default function Context() {
           observations. Deep dream (LLM-powered) runs by default, reviewing
           the session&apos;s observations for recurring themes, pruning stale
           entries, and promoting durable patterns toward identity-level storage.
+        </p>
+
+        <h3>Fleet brain-analog terms: WM and RPE</h3>
+        <p>
+          The fleet&apos;s machine roles use brain-analog vocabulary from cognitive
+          science — functional analogies, not claims about neural correspondence.
+          Two terms appear in fleet machine descriptions:{" "}
+          <strong>WM (Working Memory)</strong> — the typed, capacity-limited
+          scratchpad that holds the current task context; in the fleet, CBP&apos;s
+          role is modeled on the dorsolateral prefrontal cortex (dlPFC), the
+          biological working-memory substrate. <strong>RPE (Reward Prediction
+          Error)</strong> — the scalar signal that updates priors when outcomes
+          differ from predictions; in the fleet, Legion&apos;s role is modeled on
+          dopaminergic reward-prediction circuitry. Both are analogies for
+          functional system roles, not measurements of the underlying neural processes.
         </p>
 
         <h3>Cross-session memory</h3>

@@ -67,6 +67,11 @@ export default function Links() {
             description="Web4 oversight extension for OpenClaw agent framework"
           />
           <ExternalLink
+            href="https://github.com/dp-web4/claude-flow"
+            title="Claude Flow (fork)"
+            description="Web4 oversight WASM plugin for Claude Flow"
+          />
+          <ExternalLink
             href="https://github.com/dp-web4/claude-code"
             title="Claude Code (fork)"
             description="Web4 oversight hooks for Claude Code"

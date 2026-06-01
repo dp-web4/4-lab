@@ -75,7 +75,7 @@ export default function ArcAgi3Page() {
           with Claude Opus 4.6 as the model inside the SAGE cognition loop, on the public game set.
           The game-solve rate is 96.0% (24/25 games). These are two distinct metrics;
           the action score reflects action efficiency, not just whether a game was solved.
-          This demonstrates the ceiling &mdash; what the SAGE architecture can achieve
+          This demonstrates the ceiling &mdash; what the SAGE cognition loop can achieve
           with a frontier model and network access.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
