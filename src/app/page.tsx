@@ -151,7 +151,7 @@ export default function Home() {
           <div className="card">
             <h3>Small models are winning game levels</h3>
             <p>
-              Local models (Gemma 3 12B, Gemma 4 26B) are clearing levels
+              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing levels
               on{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
               games they&apos;ve never seen before &mdash; not by brute force,
