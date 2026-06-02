@@ -1,0 +1,15 @@
+Starting 4-lab Maintainer Session at Tue Jun  2 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_274.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260601_060256.json => identity_20260602_060124.json} (82%)
+Session complete. Here's what happened:
+
+**Fleet sync:** All 6 machines match the manifest — no changes needed.
+
+**Terminology:** Zero canonical drift found (visitor Tech Writer + Contributor both confirmed clean pass). No forbidden expansions anywhere.
+
+**Fixes applied (2 commits, pushed):**
+1. `src/app/page.tsx`: "Gemma 4 26B" → "Gemma 4 E4B" — no Gemma 4 26B exists in the fleet; Phase 2 ARC target is E4B
+2. `src/app/arc-agi-3/page.tsx` + `projects/page.tsx` + `raising/page.tsx` + `context/page.tsx`: Removed ", generation 3" from ARC-AGI-3 expansion in all 4 occurrences — canonical expansion does not include "generation 3"
+
+**So what?** The "generation 3" drift is a recurring pattern — it's been corrected before and re-appeared in 4 places. Worth watching in future sessions. The workflow sweep was valuable here: it caught 3 additional instances the main file reads missed. The fix agents are unreliable though — grep verification after workflow is now in memory.
