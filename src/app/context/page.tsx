@@ -212,7 +212,7 @@ export default function Context() {
         <h3>ARC-AGI-3: benchmark for abstraction and reasoning</h3>
         <p>
           ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General
-          Intelligence, generation 3) is an external benchmark from ARC Prize
+          Intelligence) is an external benchmark from ARC Prize
           consisting of interactive game environments where the agent must infer
           mechanics through play — no rules are given. It tests world-model
           building, action planning, and learning from failure in a setting where

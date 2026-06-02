@@ -107,7 +107,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, generation 3) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             url="/arc-agi-3"

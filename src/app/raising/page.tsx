@@ -72,7 +72,7 @@ export default function Raising() {
             <p>
               The world responds according to its own rules. The entity plays{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
-              (Abstraction and Reasoning Corpus for Artificial General Intelligence, generation 3) games —
+              (Abstraction and Reasoning Corpus for Artificial General Intelligence) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
