@@ -1,0 +1,15 @@
+Starting 4-lab Maintainer Session at Wed Jun  3 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_278.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260602_000047.json => identity_20260603_060139.json} (82%)
+Session complete. Here's the summary:
+
+**Fleet Sync**: All 6 machines match the manifest — no fleet page update needed. The "Qwen 3.5 2B" issue is a manifest-level accuracy question (owned by sprout, not fixable here); logged as deferred.
+
+**Terminology**: Zero canonical drift confirmed by all three capable visitor passes. Two cleanup fixes applied:
+- `/autonomy`: ATP/ADP plural → singular ("Allocation Transfer Packet", not "Allocation Transfer Packets")
+- `/projects`: Added "Get involved" section surfacing SAGE and Web4 issue links — this was the HIGH-severity newcomer bounce: contribution guidance was only discoverable on /links, two pages away from where the Developer persona looked first.
+
+**Build**: Clean. Pushed to Vercel (`ebd4110`, `5b72cbd`).
+
+**So what?** Terminology fidelity is holding well — three independent passes found zero canonical drift, which means the drift-check loop is working. The real gap this session was discoverability: the site is organized for readers who already know what they want to do, not for cold-arrival developers. The entry-point fix closes that gap at the most-visited action point. The deferred items (anchor-link backfills, synthon definition, MRH Markov formalism) are polish and epistemic precision — no correctness risk, but they'd matter for a research-audience reader arriving from a citation.
