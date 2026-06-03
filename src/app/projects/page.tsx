@@ -146,6 +146,18 @@ export default function Projects() {
           too. Not because we forced the analogy, but because the kinetics
           rhyme. Self-similar patterns applied at different scales.
         </p>
+
+        <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
+        <p>
+          If you want to contribute or experiment:{" "}
+          <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>SAGE</a>{" "}
+          and{" "}
+          <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-web4)" }}>Web4</a>{" "}
+          are the most active entry points — open an issue, clone a repo, or read the code to see
+          how the pieces fit together. The{" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>Links page</Link>{" "}
+          has the full repo list, contact information, and community channels.
+        </p>
       </section>
     </>
   );
