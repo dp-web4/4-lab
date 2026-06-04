@@ -1,0 +1,24 @@
+Starting 4-lab Maintainer Session at Thu Jun  4 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/nomad-gemma4-e2b/snapshots/archive/identity_20260604_062009.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260603_060139.json => identity_20260604_060101.json} (76%)
+Session complete. Here's the summary:
+
+---
+
+## Maintainer Session 2026-06-04 — Done
+
+**Fleet sync**: All 6 machines match manifest. No page update needed.
+
+**Terminology**: Zero canonical-term expansion drift found across all four visitor passes — the cleanest audit result so far. All terms correct in both spelling and meaning.
+
+**Changes made** (3 files, build passes, pushed to Vercel):
+
+| File | Fix |
+|------|-----|
+| `/context/page.tsx` | Slash operator now reads `"verified by" (T3/V3) or allocation pair (ATP/ADP)` — eliminates the single-rule legend that misread ATP/ADP as a verification relation |
+| `/context/page.tsx` | Added Synchronism independence statement: empirical results (ARC-AGI-3, fleet findings) stand independently of the theoretical framework |
+| `/projects/page.tsx` | Same slash operator disambiguation |
+| `/raising/page.tsx` | Added "network-enabled" to 94.85% score qualifier in top blurb — now consistent with /context, /projects, and Phase 6 description |
+
+**Deferred**: CBP acronym expansion (unknown expansion), home page decoder ring restructure (scope too large for one session), Hardbound containment "tested vs designed" note (needs collective input).
