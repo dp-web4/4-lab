@@ -86,7 +86,10 @@ export default function Context() {
           for the full treatment. Synchronism is the theory; Web4 is the
           working vocabulary that operationalizes parts of it as a trust-native
           ontology — Synchronism provides the coherence equations, Web4 encodes
-          them as identity and trust primitives.
+          them as identity and trust primitives. The empirical results on this
+          site (ARC-AGI-3 scores, fleet capacity findings) stand independently
+          of Synchronism — accepting those results does not require accepting
+          the theoretical framework.
         </p>
 
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
@@ -144,7 +147,7 @@ export default function Context() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — portable identity grounded in witnessed history, not model weights<br />
