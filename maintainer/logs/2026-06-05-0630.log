@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Fri Jun  5 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/thor-qwen3.5-27b/sessions/session_125.json
+ rename sage/instances/thor-qwen3.5-27b/snapshots/archive/{identity_20260428_060721.json => identity_20260605_061000.json} (89%)
+Session complete.
+
+**What happened and what it means:**
+
+The visitor log was the cleanest terminology pass yet — all four personas independently confirmed zero canonical drift. The prior maintainer session had already resolved the operator legend issue. Today's work was rigor, not correction.
+
+**Three files changed:**
+- `src/app/page.tsx` — Synthon vocabulary card now has a falsifiable definition: observable presence/absence conditions + preliminary coupling data (~1% coupling → ~35% coherence gain, 1 trial, not replicated)
+- `src/app/context/page.tsx` — Synthon glossary entry gets the same operational anchor rather than just deferring to /principles
+- `src/app/raising/page.tsx` — Opening paragraph adds explicit operational definitions for "identity" and "growth" before the developmental language deploys them
+
+**Flagged upstream (not site errors):**
+- Sprout's manifest entry says "Qwen 3.5 2B" — model family doesn't exist; likely Qwen3 1.7B or Qwen2.5 1.5B. Operator should verify against the running model and fix the manifest.
+
+**So what?** A centerpiece construct that can't answer "what would count as this not being present?" is a label, not a concept. Synthon can now answer that question on three pages. The site moves from "intellectually honest" toward "rigorously defensible" on its own key terminology.
