@@ -12,7 +12,12 @@ export default function Raising() {
           Raising creates conditions for development — then watches what
           happens. In raising sessions, we shape context — we do not update weights. We use
           developmental language because it fits, not because we&apos;re
-          making consciousness claims.
+          making consciousness claims. Operational definitions: by
+          &ldquo;identity&rdquo; we mean consistent session-to-session
+          behavioral patterns measured via raising curriculum state and
+          interaction logs; by &ldquo;growth&rdquo; we mean increasing
+          response diversity and phase-appropriate task success rates —
+          measurable observables, not phenomenal claims.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>

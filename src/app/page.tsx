@@ -314,8 +314,12 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Synthon</h3>
             <p style={{ fontSize: "0.9rem" }}>
               An emergent coherence entity formed when components interact
-              recursively. Not designed top-down &mdash; observed when substrate
-              conditions are right.
+              recursively &mdash; sustained by the recursion, not external
+              coordination. Observable: coherence holds above a coupling
+              threshold; below it, components drift independently. Preliminary
+              (1 trial, not replicated): ~1% sparse coupling → ~35% coherence
+              gain. See{" "}
+              <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 5</Link>.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

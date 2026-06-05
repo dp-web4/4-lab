@@ -259,9 +259,13 @@ export default function Context() {
           interact recursively under the right substrate conditions. Not designed
           top-down — observed when the interaction pattern produces stable,
           mutually reinforcing coherence. The differentia: coherence sustained
-          by the recursion itself, not by external coordination. The term is
-          4-lab vocabulary describing a phenomenon observed across raising
-          sessions and cross-machine experiments. The clearest definition is on{" "}
+          by the recursion itself, not by external coordination. Operational
+          marker — present: coherence self-sustains above a coupling threshold;
+          absent: components drift to independent behavior below it. Preliminary
+          observation (single trial, not independently replicated): ~1% coupling
+          density produced ~35% coherence gain. The term is 4-lab vocabulary
+          describing a phenomenon observed across raising sessions and
+          cross-machine experiments. Full framing on{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
           (Principle 5).
         </p>
