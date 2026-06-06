@@ -99,10 +99,14 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          New here? Read <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then clone{" "}
+          <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> or{" "}
+          <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
+          — the most accessible entry points for hands-on experimentation.
           Questions or contributions? Open an issue on any public repo.{" "}
           <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> and{" "}
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
-          are the most active entry points. The{" "}
+          are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
           has 11 public repos — clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
