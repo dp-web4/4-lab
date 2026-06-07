@@ -1,0 +1,20 @@
+Starting 4-lab Maintainer Session at Sun Jun  7 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/raising/analysis/s134_data/s145_responses_raw_np16384pilot.json
+ create mode 100644 sage/raising/analysis/s134_data/s145_vocab_injection_carrier_np16384pilot.json
+Session complete. Here's the summary:
+
+---
+
+**Fleet sync**: All 6 machines match `sage-fleet-models.json`. No updates needed.
+
+**Terminology audit result**: Zero drift across all 8 pages, confirmed by all 4 personas. Two visitor flags were investigated and not reproduced:
+- "Governance" in Oversight Plugins prose — live page reads "oversight"; the only "governance" is in a deliberately-footnoted legacy repo slug
+- "Gemma 4 E4B" model name — SAGE `SESSION_MAP.yaml` confirms active `legion-gemma4-e4b`, `mcnugget-gemma4-e4b`, `thor-gemma4-e4b` instances; the name is correct
+
+**Changes made** (3 files, build clean, pushed to Vercel):
+1. **`/` (home)**: Added a plain-English "In practice" sentence after the abstract tagline; surfaced the getting-started path (context → SAGE/ACT → open issue) near the top, so developers don't have to find it buried on /links
+2. **`/context`**: Fixed R6 "record structure" → "framework" (canonical table alignment); expanded LoRA at first use
+3. **`/principles`**: Expanded LoRA at first use
+
+**So what?** The site remains the cleanest public terminology surface in the collective. Today's session added something meaningfully different: a plain-English entry point for developers who arrive cold. The vocabulary is right; now there's also a hook for people who don't yet know why they should care.
