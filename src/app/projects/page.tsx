@@ -112,7 +112,7 @@ export default function Projects() {
             isPublic={true}
             url="/arc-agi-3"
             links={[
-              { label: "Scorecard", url: "https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb" },
+              { label: "Scorecard", url: "https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" },
               { label: "Paper (MIT-0)", url: "https://github.com/dp-web4/ARC-SAGE" },
             ]}
           />

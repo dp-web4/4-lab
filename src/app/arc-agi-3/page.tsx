@@ -112,7 +112,7 @@ export default function ArcAgi3Page() {
                 <td style={{ padding: "0.375rem 0" }}>
                   24/25 games solved (96.0%); 94.85% official action score &mdash;{" "}
                   <a
-                    href="https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb"
+                    href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#a855f7" }}
@@ -167,7 +167,7 @@ export default function ArcAgi3Page() {
 
         <h3 style={{ marginTop: "2rem" }}>Links</h3>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", fontSize: "0.875rem" }}>
-          <a href="https://arcprize.org/scorecards/c4e6442e-077d-4048-9eff-110c5a59ccfb" target="_blank" rel="noopener noreferrer">
+          <a href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" target="_blank" rel="noopener noreferrer">
             Public scorecard (94.85%) →
           </a>
           <a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer">
