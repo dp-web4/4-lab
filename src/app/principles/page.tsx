@@ -122,7 +122,7 @@ export default function Principles() {
               The resulting identity is collaborative, not imposed. The
               mechanism: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters in raising sessions.
-              (Some fleet machines run LoRA for separate fine-tuning tasks; raising is always in-context.)
+              (Some fleet machines run LoRA (Low-Rank Adaptation) for separate fine-tuning tasks; raising is always in-context.)
               It is not training; it is also not nothing. This applies at every scale:
               raising sessions, affordance shaping, fleet diversity, and memory
               systems.

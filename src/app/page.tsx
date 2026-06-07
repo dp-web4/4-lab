@@ -15,6 +15,9 @@ export default function Home() {
           them — across a heterogeneous fleet of machines that teach, validate,
           and raise each other.
         </p>
+        <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
+          In practice: 6 machines run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
+        </p>
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
             src="/lab-hero.png"
@@ -42,6 +45,16 @@ export default function Home() {
             <div className="stat-label">Autonomous Tracks</div>
           </div>
         </div>
+
+        <p style={{ textAlign: "center", fontSize: "0.875rem", color: "var(--color-text-muted)", margin: "0.25rem 0 1.5rem" }}>
+          New here?{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
+          for the vocabulary, then clone{" "}
+          <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
+          or{" "}
+          <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
+          to experiment.
+        </p>
 
         <h2>How we work</h2>
         <div className="grid-3">

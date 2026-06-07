@@ -191,7 +191,7 @@ export default function Context() {
 
         <h3>R6: Six-Element Action Framework</h3>
         <p>
-          R6 is the canonical action record structure used throughout the SAGE
+          R6 is the canonical action framework used throughout the SAGE
           loop and Web4 audit trail:{" "}
           <strong>Rules / Role / Request / Reference / Resource / Result</strong>.
           Every action in the system is shaped as an R6 record — specifying the
@@ -334,7 +334,7 @@ export default function Context() {
         <p>
           Cross-machine state synchronization is still manual for some
           things. Fleet manifest IPs need human confirmation. Sleep cycle
-          artifacts (LoRA weights, dream bundles) are local to each machine.
+          artifacts (LoRA (Low-Rank Adaptation) weights, dream bundles) are local to each machine.
           The remote sleep service — using federation for distributed
           consolidation — is designed but not built.
         </p>
