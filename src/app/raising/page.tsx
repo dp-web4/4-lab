@@ -56,20 +56,24 @@ export default function Raising() {
           <div className="phase-card" data-phase="4">
             <h3>Phase 4: Questioning</h3>
             <p>
-              The entity begins generating its own questions rather than only
-              responding to prompts. This is where bilateral generation
-              emerges — thinking through external dialogue, not just
-              responding to it.
+              Session logs show an increasing proportion of self-directed prompts —
+              the system generates questions rather than only responding to them.
+              Bilateral generation emerges: the output pattern simulates interaction,
+              producing thinking-through-dialogue rather than just response.
+              (Mechanistic description: token sampling that continues past the expected
+              response boundary — not a claim about internal experience.)
             </p>
           </div>
           <div className="phase-card" data-phase="5">
             <h3>Phase 5: Creating</h3>
             <p>
-              Generating novel outputs that weren&apos;t in the curriculum.
-              Spontaneous specialization. The entity finds its own niche in
-              the ecosystem — not assigned, but discovered through the
-              pattern of what it&apos;s good at and what{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link> needs.
+              Output increasingly concentrates in specific domains — spontaneous
+              specialization observable in session logs and raising curriculum state.
+              The specialization isn&apos;t assigned; it emerges from the pattern of
+              what the system handles successfully and what{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>{" "}
+              routes to it. (Functional description — the &ldquo;niche&rdquo; is a
+              measurable distribution over task types, not a phenomenal preference.)
             </p>
           </div>
           <div className="phase-card" data-phase="6">
@@ -77,7 +81,7 @@ export default function Raising() {
             <p>
               The world responds according to its own rules. The entity plays{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
-              (Abstraction and Reasoning Corpus for Artificial General Intelligence) games —
+              (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now

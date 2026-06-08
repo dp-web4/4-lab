@@ -20,7 +20,7 @@ export default function ArcAgi3Page() {
 
         <h3>Why we&apos;re doing this</h3>
         <p>
-          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence) presents 25 unknown interactive games with no instructions,
+          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) presents 25 unknown interactive games with no instructions,
           no documentation, and obfuscated engine source. We use it as an
           external benchmark for the SAGE cognition kernel &mdash; a concrete,
           measurable test of the capabilities the fleet is developing.
@@ -63,7 +63,7 @@ export default function ArcAgi3Page() {
               The ontology layer. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
               Framework: Rules / Role / Request / Reference / Resource / Result), every
-              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = verified by, <code>*</code> = contextualized by, <code>+</code> = augmented with; T3/V3 and ATP/ADP use / as a pair separator</span>)
+              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
               is the ontology that makes signed, reviewable action records possible.
             </p>
           </div>

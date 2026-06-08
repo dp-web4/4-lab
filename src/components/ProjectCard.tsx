@@ -3,6 +3,7 @@ interface ProjectCardProps {
   description: string;
   accentColor: string;
   isPublic: boolean;
+  maturity?: "runnable" | "research-stage";
   url?: string;
   repoUrl?: string;
   links?: { label: string; url: string }[];
@@ -14,6 +15,7 @@ export default function ProjectCard({
   description,
   accentColor,
   isPublic,
+  maturity,
   url,
   repoUrl,
   links,
@@ -30,12 +32,25 @@ export default function ProjectCard({
           alignItems: "center",
           gap: "0.5rem",
           marginBottom: "0.5rem",
+          flexWrap: "wrap",
         }}
       >
         <h3 style={{ margin: 0 }}>{name}</h3>
         <span className={isPublic ? "badge badge-public" : "badge badge-private"}>
           {isPublic ? "public" : "private"}
         </span>
+        {maturity && (
+          <span style={{
+            fontSize: "0.7rem",
+            padding: "0.15rem 0.5rem",
+            borderRadius: "3px",
+            background: maturity === "runnable" ? "rgba(16, 185, 129, 0.12)" : "rgba(245, 158, 11, 0.1)",
+            color: maturity === "runnable" ? "#10b981" : "#d97706",
+            letterSpacing: "0.04em",
+          }}>
+            {maturity}
+          </span>
+        )}
       </div>
       <p>{description}</p>
       {(url || repoUrl || links) && (

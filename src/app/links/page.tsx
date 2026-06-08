@@ -98,11 +98,30 @@ export default function Links() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
-        <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          New here? Read <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then clone{" "}
-          <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> or{" "}
-          <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
-          — the most accessible entry points for hands-on experimentation.
+        <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          New here? Read <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
+        </p>
+
+        <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
+        <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel
+git clone https://github.com/dp-web4/SAGE
+cd SAGE
+# See README for Python/conda setup and first session instructions
+
+# ACT — Agentic Context Tool (Cosmos SDK)
+git clone https://github.com/dp-web4/ACT
+cd ACT
+# See README for Go/Cosmos SDK setup`}</pre>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          SAGE is the recommended starting point — it runs on a single machine, has 900+ documented raising sessions as context, and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-layer / Cosmos SDK side.
+        </p>
+
+        <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          ARC-SAGE: MIT-0 (see repo). Gemma 4 Good Submission: Apache 2.0. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
+        </p>
+
+        <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
           Questions or contributions? Open an issue on any public repo.{" "}
           <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> and{" "}
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
