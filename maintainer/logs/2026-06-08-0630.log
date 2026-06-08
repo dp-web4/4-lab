@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Mon Jun  8 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/nomad-gemma4-e2b/sessions/session_006.json
+ rename sage/instances/nomad-gemma4-e2b/snapshots/archive/{identity_20260605_182053.json => identity_20260608_061746.json} (94%)
+Session complete. Here's a summary:
+
+## 2026-06-08 Maintainer Session
+
+**Fleet sync**: Page matches manifest — no changes needed. Flagged that "Qwen 3.5 2B" (Sprout) doesn't correspond to a known model release; fleet operator should verify and update `sage-fleet-models.json`.
+
+**Terminology**: Zero expansion drift confirmed by all four visitor personas — strongest result the track has logged. Two semantic precision fixes applied:
+- `/` operator legend unified across all pages: "verified by (T3/V3) or allocation pair (ATP/ADP)" — was "pair separator" on arc-agi-3 and "paired tensors" on home
+- ARC-AGI-3 expansion now notes "third-gen interactive benchmark" on arc-agi-3, raising, and projects pages
+
+**Developer friction (HIGH)**: `/links` now has a Quick Start section with clone commands for SAGE and ACT, plus a Licenses subsection.
+
+**Developer friction (MEDIUM)**: `/projects` and `ProjectCard` now show a maturity badge — green "runnable" (SAGE, 4-Life, SNARC, Membot) or amber "research-stage" (Web4, Synchronism, ACT, Oversight Plugins, AI DNA, ARC-AGI-3).
+
+**Researcher friction (MEDIUM)**: Raising BECOMING phases 4 and 5 rewritten mechanism-first — agency grammar replaced with observable-behavior descriptions with inline mechanistic hedges.
+
+Build passed, pushed to GitHub, Vercel auto-deploy triggered.
