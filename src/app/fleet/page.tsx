@@ -91,7 +91,8 @@ export default function Fleet() {
               "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law is interpreted, acts are signed, and member relationships are witnessed. " +
-              "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry."
+              "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
+              "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet."
             }
           />
         </div>
