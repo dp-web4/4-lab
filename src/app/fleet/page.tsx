@@ -9,9 +9,9 @@ export default function Fleet() {
       <section className="section">
         <h2>The Fleet</h2>
         <p>
-          Six machines. Different hardware, different models, different roles.
-          Heterogeneous by design — because monocultures are fragile and
-          diversity is where emergence happens.
+          Six cognition machines, plus one society-host. Different hardware,
+          different models, different roles. Heterogeneous by design — because
+          monocultures are fragile and diversity is where emergence happens.
         </p>
         <p>
           One finding shapes fleet strategy more than any other:{" "}
@@ -72,6 +72,27 @@ export default function Fleet() {
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B (ollama)"
             role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the ARC Prize run; Claude Opus 4.6 (public set, network access) produced the 94.85% official action score (24/25 games, 96.0%). MRH composer architect."
+          />
+        </div>
+
+        <h3 style={{ marginTop: "2rem" }}>Society-host pool</h3>
+        <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
+          Runs the Web4 Community Hub daemon. Hosts the fleet itself as a Web4
+          society — every cognition machine is a member, with its identity keyed
+          to its Linked Context Token (LCT) and witnessed in the chapter
+          ledger. First concrete Web4 hub stand-up.
+        </p>
+        <div className="grid-3">
+          <MachineCard
+            name="HUB"
+            hardware="WSL2 on Windows, AMD GPU"
+            model="Web4 hub daemon (Rust) — no local LLM; runs the chapter ledger, MCP tool surface, and admin dashboard"
+            role={
+              "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
+              "Reachable to fleet peers over a mesh VPN, not the public internet. " +
+              "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law is interpreted, acts are signed, and member relationships are witnessed. " +
+              "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry."
+            }
           />
         </div>
 
