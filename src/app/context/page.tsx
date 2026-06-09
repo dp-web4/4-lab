@@ -11,7 +11,7 @@ export default function Context() {
           Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
-          Fourteen repos (eleven public), six machines, multiple AI agents with overlapping but
+          Fourteen repos (eleven public), seven machines (six cognition + one society-host), multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
@@ -215,7 +215,7 @@ export default function Context() {
         <h3>ARC-AGI-3: benchmark for abstraction and reasoning</h3>
         <p>
           ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General
-          Intelligence) is an external benchmark from ARC Prize
+          Intelligence, third-gen interactive benchmark) is an external benchmark from ARC Prize
           consisting of interactive game environments where the agent must infer
           mechanics through play — no rules are given. It tests world-model
           building, action planning, and learning from failure in a setting where

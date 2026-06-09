@@ -127,7 +127,7 @@ cd ACT
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
-          has 11 public repos — clone what interests you, experiment, and open a discussion if you want to engage.
+          has 11 of 14 public repos (3 internal) — clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>

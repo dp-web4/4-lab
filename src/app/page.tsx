@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Six machines. Fourteen repos.{" "}
+          Seven machines. Fourteen repos.{" "}
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
@@ -21,7 +21,7 @@ export default function Home() {
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
             src="/lab-hero.png"
-            alt="The dp-web4 research fleet — six machines connected across a living workspace"
+            alt="The dp-web4 research fleet — seven machines connected across a living workspace"
             width={1200}
             height={800}
             priority
@@ -33,7 +33,7 @@ export default function Home() {
       <section className="section">
         <div className="grid-3">
           <div className="stat-card">
-            <div className="stat-value">6</div>
+            <div className="stat-value">7</div>
             <div className="stat-label">Machines</div>
           </div>
           <div className="stat-card">
