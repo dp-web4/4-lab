@@ -34,7 +34,7 @@ export default function Home() {
         <div className="grid-3">
           <div className="stat-card">
             <div className="stat-value">7</div>
-            <div className="stat-label">Machines</div>
+            <div className="stat-label">Machines (6 cognition + HUB)</div>
           </div>
           <div className="stat-card">
             <div className="stat-value">14</div>
@@ -215,7 +215,7 @@ export default function Home() {
             <p>
               Different models on different hardware catch different classes of
               problems. Diversity is the defense. The fleet proves it daily
-              across 14 repos (11 public) and 6 machines.
+              across 14 repos (11 public) and 6 cognition machines.
             </p>
           </div>
         </div>

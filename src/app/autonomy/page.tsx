@@ -8,7 +8,8 @@ export default function Autonomy() {
       <section className="section">
         <h2>Autonomous Cycles</h2>
         <p>
-          <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 machines, ~53 sessions per day.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day.</strong>{" "}
+          HUB runs substrate, not tracks.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to, operating under supervisor and
           Hardbound gating.{" "}
@@ -34,7 +35,7 @@ export default function Autonomy() {
               Each machine runs its own supervisor track daily (staggered across
               the window). Responsible for git hygiene, conflict resolution,
               build health, and keeping the environment clean for the day&apos;s
-              runs. Six machines, six supervisors — no central watchdog.
+              runs. Six cognition machines, six supervisors — no central watchdog.
             </div>
           </div>
           <div className="timeline-item">
