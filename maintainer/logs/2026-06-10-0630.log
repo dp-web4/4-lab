@@ -1,0 +1,15 @@
+Starting 4-lab Maintainer Session at Wed Jun 10 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/thor-qwen3.5-27b/snapshots/archive/{identity_20260608_121453.json => identity_20260610_061022.json} (70%)
+ create mode 100644 sage/raising/analysis/s150_carrier_policy_repeat_vs_elaborate_20260610.md
+Session complete. Here's the summary:
+
+**Terminology**: Clean bill of health — four auditors found zero surviving canonical drift. The one "governance" flag was a false positive (legacy repo slug, correctly annotated). The LoRA/raising tension (Pass 4) was already resolved in current page text.
+
+**Fleet sync**: Page matches manifest for all machines. Sprout's "Qwen 3.5 2B" is a manifest-level naming question, not a page-vs-manifest discrepancy — logged but not changed.
+
+**Changes shipped**:
+- `src/app/page.tsx`: stat card now reads "Machines (6 cognition + HUB)"; "Heterogeneous review" card updated to "6 cognition machines"
+- `src/app/autonomy/page.tsx`: opening paragraph + supervisor timeline both now say "6 cognition machines" with an explicit HUB note — making `/fleet`'s 6-vs-7 reconciliation travel to pages that don't route through `/fleet`
+
+**So what?** The numeric inconsistency was a recurring friction across all four personas — the fix is minimal but closes a credibility gap that a developer's pattern-matcher would catch on first read. The stronger signal from this session is that terminology discipline is genuinely holding: the maintainer track is working.
