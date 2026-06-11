@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Thu Jun 11 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/thor-qwen3.5-27b/snapshots/archive/{identity_20260608_221756.json => identity_20260611_060508.json} (74%)
+ create mode 100644 sage/raising/analysis/s134_data/s148_S152_partial_raw.json
+Session complete — committed as `fe5b1fc` and pushed; Vercel will auto-deploy.
+
+**TLDR**: Zero terminology drift this session — all four visitor passes and my own independent source sweep came back clean, including the historically failure-prone cases. So the session went to friction fixes: 8 changes across 4 pages, covering the HIGH item and the highest-combined-signal item from the visitor synthesis.
+
+**What changed:**
+- **/fleet** — defined "founding Sovereign" (flagged by 3 of 4 personas): the society's founding human member, LCT-bearing like the machines, acts witnessed in the same ledger. This directly answers the safety researcher's "who holds root authority" question. Also added a vocabulary pointer to /context.
+- **/context** — added a consolidated **Evidence & limitations** section (the session's one HIGH severity item): three explicit evidence tiers — externally validated (ARC scorecard, with the no-ablation caveat), internal observations (raising phases, identity continuity), and unreplicated (the 1%-coupling result) — plus what would move claims up the ladder. Also: SNARC scope reconciled to "agent sessions", inline glosses for Navier-Stokes substrate and Hill kinetics, and a hardware-rooted vs software-enforced distinction in the Hardbound entry.
+- **/autonomy** — HUB defined on first use with a /fleet link, which also resolves the 6-vs-7 machine-count confusion.
+- **/links** — ATP/ADP now expanded as a pair, and the official ARC Prize scorecard is directly linked so the 94.85% claim is verifiable from the page that repeats it.
+
+**One item flagged upstream, not fixed**: the visitor's "Qwen 3.5 2B is probably a wrong model name" finding turned out to be a manifest question, not a page error — the fleet manifest (updated by sprout itself on 2026-03-08) lists `qwen3.5:2b`, and the page correctly follows the manifest. Sprout's actual ollama tag should be verified against the manifest entry; I noted this in the session log and the cross-site alert.
+
+**So what?** The interesting signal this cycle is that the loop's failure mode has inverted: terminology drift — the thing this track was built to catch — has been stable at zero for multiple sessions, while the visitor synthesis is now surfacing *epistemics* (undefined authority terms, unconsolidated evidence claims). The Evidence & Limitations section is the first structural response to that shift — it converts scattered honesty into auditable honesty. Deferred items (per-card "what you can run today", T3/V3 measurement sketch) need research-side input to write accurately and are logged in `maintainer/logs/2026-06-11.md`.
