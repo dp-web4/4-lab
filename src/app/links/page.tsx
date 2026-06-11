@@ -21,7 +21,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet), karma, Web4 in miniature"
+            description="Trust-native society research prototype — agents, ATP/ADP (Allocation Transfer / Discharge Packets), karma, Web4 in miniature"
           />
         </ul>
 
@@ -80,6 +80,11 @@ export default function Links() {
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
             description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0%), world models, multi-agent frame-questioning (MIT-0)"
+          />
+          <ExternalLink
+            href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
+            title="ARC Prize official scorecard"
+            description="Independent verification of the 94.85% action score — the external source of record for the ARC-SAGE result"
           />
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"

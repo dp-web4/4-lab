@@ -23,6 +23,8 @@ export default function Fleet() {
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
+          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP) is defined in{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
@@ -89,6 +91,7 @@ export default function Fleet() {
             model="Web4 hub daemon (Rust) — no local LLM; runs the chapter ledger, MCP tool surface, and admin dashboard"
             role={
               "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
+              "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +

@@ -46,7 +46,10 @@ export default function Context() {
         <p>
           Hardbound is the hardware-bound oversight suite — the trust layer that
           touches silicon. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave
-          anchors policy enforcement to physical devices. Every autonomous track
+          anchors policy enforcement to physical devices. To be precise about
+          what is hardware-rooted: key custody and attestation live in hardware;
+          runtime checkpoints like PolicyGate are software that verifies actions
+          against those hardware-anchored credentials. Every autonomous track
           operates within the Hardbound oversight envelope: what it can access,
           what it can commit, what it can deploy.
         </p>
@@ -68,10 +71,13 @@ export default function Context() {
         <p>
           Synchronism is the theoretical foundation — a research conjecture
           proposing that reality emerges from intent dynamics on a discrete
-          Planck grid, the same Navier-Stokes substrate at every scale from
-          quantum to cosmic. Coupling-coherence experiments provide empirical
+          Planck grid, the same Navier-Stokes substrate (the fluid-flow
+          equations — intent treated as a flow, the way fluids are modeled) at
+          every scale from quantum to cosmic. Coupling-coherence experiments provide empirical
           grounding (single-trial observation, no independent replication yet): 1% coupling yielded 35% coherence gain. Hill function
-          kinetics describe both enzyme binding and trust formation at the same
+          kinetics (a saturation curve from enzyme chemistry — response rises
+          steeply past a threshold, then levels off) describe both enzyme
+          binding and trust formation at the same
           scale. The conjecture spans 80 orders of magnitude — from quantum to
           cosmic — with experimental validation at specific scales and the full
           range as the ongoing research target. See the{" "}
@@ -94,7 +100,7 @@ export default function Context() {
 
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
         <p>
-          SNARC provides salience-gated memory for Claude Code sessions. Every
+          SNARC provides salience-gated memory for agent sessions. Every
           tool call is scored on 5 dimensions — Surprise, Novelty, Arousal,
           Reward, Conflict — and stored in a 4-tier hierarchy: buffer (raw
           events) → observations (scored) → patterns (consolidated) → identity
@@ -343,6 +349,50 @@ export default function Context() {
           discovered by the Explorer track at 08:00 won&apos;t be available to
           the Maintainer track until the next day&apos;s cycle. Real-time
           cross-track communication is a gap.
+        </p>
+
+        <h3>Evidence &amp; limitations</h3>
+        <p>
+          The claims on this site rest on three different kinds of evidence.
+          The caveats appear throughout the pages where each claim is made;
+          this consolidates them, because the kinds are not equivalent:
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Externally validated:</strong>{" "}
+          the ARC-AGI-3 result (94.85% official action score) has a public{" "}
+          <a
+            href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)" }}
+          >
+            ARC Prize scorecard
+          </a>{" "}
+          — the one claim an outside party can verify independently. Even
+          there, the harness-vs-model split is stated but not quantified: no
+          ablation (same model, no harness) has been run, so the harness&apos;s
+          independent contribution is unknown.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Internal observations:</strong>{" "}
+          the raising phases, behavioral-identity continuity (180+ sessions),
+          identity portability across machines, fleet capacity findings, and
+          Hardbound&apos;s attack-vector catalog rest on internal session logs.
+          They are documented and dated, but not externally audited — no
+          published log samples, coding criteria, or third-party review yet.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Unreplicated:</strong>{" "}
+          the coupling-coherence result (1% coupling → 35% coherence gain) is a
+          single trial with no independent replication, and its coupling-density
+          variable is not yet operationally defined outside the experiment that
+          produced it. Treat it as a preliminary observation, not a finding.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          What would move claims up this ladder: redacted session-log samples
+          with the criteria used to judge behavioral consistency, an ARC
+          ablation baseline, and independent replication of the coupling
+          experiment. None of these exist yet.
         </p>
       </section>
     </>
