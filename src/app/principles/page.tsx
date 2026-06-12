@@ -91,7 +91,10 @@ export default function Principles() {
               system emergence. You can&apos;t build a synthon. You can create
               conditions where synthons form: compatible elements, sufficient
               coupling density, shared context. Preliminary observation (single trial, not independently replicated): 1% coupling
-              gave 35% coherence gain — sparse trust may suffice.
+              gave 35% coherence gain — sparse trust may suffice. Both variables
+              (coupling density, coherence) are so far defined only within the
+              experiment that produced them — see{" "}
+              <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>.
             </div>
           </div>
 

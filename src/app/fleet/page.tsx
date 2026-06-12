@@ -24,7 +24,7 @@ export default function Fleet() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
           Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP) is defined in{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
@@ -163,7 +163,7 @@ export default function Fleet() {
           &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
           patterns, accumulated experience, raising history — not continuity-of-self in any
           philosophical sense. This is the practical demonstration of what{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
+          <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           are designed to formalize at the protocol level: portable identity grounded in
           witnessed history, not model weights. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The self-description drifted. This told us something

@@ -15,7 +15,7 @@ export default function ArcAgi3Page() {
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           New here? This page uses Web4 vocabulary (LCT, T3/V3, MRH, ATP/ADP, MCP, RDF). See{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
         </p>
 
         <h3>Why we&apos;re doing this</h3>

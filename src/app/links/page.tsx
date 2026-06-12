@@ -28,7 +28,7 @@ export default function Links() {
         <h2 style={{ marginTop: "2rem" }}>GitHub</h2>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           New here? Repo descriptions use Web4 vocabulary (LCT, T3/V3, MRH, MCP, RDF, ATP/ADP). See{" "}
-          <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for full definitions.
+          <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</a> for full definitions.
         </p>
         <ul className="link-list">
           <ExternalLink
@@ -104,7 +104,7 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/context" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
+          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>

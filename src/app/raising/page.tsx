@@ -142,6 +142,13 @@ export default function Raising() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Key discoveries</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Evidence status: the claims in this section rest on internal session
+          logs — documented and dated, but not externally audited, and no log
+          samples or coding criteria are published yet. See{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
+          for what each kind of claim on this site does and doesn&apos;t have behind it.
+        </p>
 
         <h3>Identity is not self-concept</h3>
         <p>

@@ -16,6 +16,64 @@ export default function Context() {
           making it findable, consistent, and useful across the entire system.
         </p>
 
+        <h3 id="glossary">Glossary at a glance</h3>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Exact expansions and one-line definitions, scannable. The narrative
+          sections below go deeper on each. Source of truth: the canonical terms
+          reference in the public web4 repo —{" "}
+          <a
+            href="https://github.com/dp-web4/web4/blob/main/docs/reference/CANONICAL_TERMS_v1.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)" }}
+          >
+            CANONICAL_TERMS_v1.md
+          </a>
+          . When this page and that document disagree, the document governs.
+        </p>
+        <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+          <table style={{ width: "100%", fontSize: "0.85rem", borderCollapse: "collapse" }}>
+            <thead>
+              <tr style={{ borderBottom: "1px solid var(--color-dark-border)", textAlign: "left", color: "var(--color-text-secondary)" }}>
+                <th style={{ padding: "0.375rem 0.75rem 0.375rem 0" }}>Term</th>
+                <th style={{ padding: "0.375rem 0.75rem 0.375rem 0" }}>Expansion</th>
+                <th style={{ padding: "0.375rem 0" }}>One line</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["web4", "Web4", "—", "A trust-native ontology for AI agents, devices, and people — not architecture or infrastructure."],
+                ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
+                ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
+                ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],
+                ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root."],
+                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3: worth assessed, claims truthful, reasoning sound."],
+                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect — scopes T3/V3 to context."],
+                ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs."],
+                ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome."],
+                ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
+                ["sage", "SAGE", "Situation-Aware Guidance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop."],
+                ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept."],
+                ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation anchored in silicon."],
+                ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps."],
+                ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) layered over MCP transport."],
+                ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
+                ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
+                ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination."],
+                ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
+                ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
+                ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
+              ].map(([id, term, expansion, def]) => (
+                <tr key={id} id={id} style={{ borderBottom: "1px solid var(--color-dark-border)", verticalAlign: "top" }}>
+                  <td style={{ padding: "0.375rem 0.75rem 0.375rem 0", whiteSpace: "nowrap", color: "var(--color-text-primary)", fontWeight: 600 }}>{term}</td>
+                  <td style={{ padding: "0.375rem 0.75rem 0.375rem 0" }}>{expansion}</td>
+                  <td style={{ padding: "0.375rem 0", color: "var(--color-text-secondary)" }}>{def}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         <h3>The CLAUDE.md pattern</h3>
         <p>
           Every repo carries a <code>CLAUDE.md</code> file at its root. This
@@ -161,6 +219,14 @@ export default function Context() {
           MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
         <p>
+          What the two borrowed standards contribute: MCP is the interaction
+          surface — the transport agents use to reach tools, data, and each
+          other. RDF is the semantic substrate — the graph where LCTs, T3/V3
+          tensors, and MRH scopes live as machine-readable triples. Web4
+          doesn&apos;t reinvent either; it augments them with the trust and
+          resource primitives the rest of the equation defines.
+        </p>
+        <p>
           This equation appears in every project because it <em>is</em> every
           project. It&apos;s the canonical reference point. When agents in
           different repos make decisions, they check them against this
@@ -189,7 +255,7 @@ export default function Context() {
           (Training), and its behavioral disposition (Temperament).
           V3 (Valuation / Veracity / Validity) is the complementary three-component value structure:
           how much something is worth (Valuation), whether its claims are accurate
-          (Veracity), and whether it applies in this context (Validity). T3 and V3
+          (Veracity), and whether its reasoning is sound (Validity). T3 and V3
           are verified against each other — T3/V3 in the Web4 equation means
           &ldquo;trust verified by value.&rdquo; Both bind to entity-role pairs via
           RDF triples scoped by MRH. (&ldquo;Tensor&rdquo; here means a structured multi-component quantity — not a rank-≥2 array in the linear-algebra sense.)
@@ -351,7 +417,7 @@ export default function Context() {
           cross-track communication is a gap.
         </p>
 
-        <h3>Evidence &amp; limitations</h3>
+        <h3 id="evidence">Evidence &amp; limitations</h3>
         <p>
           The claims on this site rest on three different kinds of evidence.
           The caveats appear throughout the pages where each claim is made;
@@ -384,8 +450,9 @@ export default function Context() {
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Unreplicated:</strong>{" "}
           the coupling-coherence result (1% coupling → 35% coherence gain) is a
-          single trial with no independent replication, and its coupling-density
-          variable is not yet operationally defined outside the experiment that
+          single trial with no independent replication, and neither of its
+          variables — coupling density and the coherence measure itself — is
+          yet operationally defined outside the experiment that
           produced it. Treat it as a preliminary observation, not a finding.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>

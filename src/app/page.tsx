@@ -48,7 +48,7 @@ export default function Home() {
 
         <p style={{ textAlign: "center", fontSize: "0.875rem", color: "var(--color-text-muted)", margin: "0.25rem 0 1.5rem" }}>
           New here?{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
           for the vocabulary, then clone{" "}
           <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
           or{" "}
@@ -261,15 +261,28 @@ export default function Home() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           New to this vocabulary?{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
           — canonical definitions for every term used on this site. The cards below cover the essentials.
         </p>
         <div className="equation">
-          Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
+          {(() => {
+            const tok = (id: string, label: string) => (
+              <Link key={id} href={`/context#${id}`} style={{ color: "inherit", textDecorationLine: "underline", textDecorationStyle: "dotted", textUnderlineOffset: "0.25em" }}>
+                {label}
+              </Link>
+            );
+            return (
+              <>
+                {tok("web4", "Web4")} = {tok("mcp", "MCP")} + {tok("rdf", "RDF")} +{" "}
+                {tok("lct", "LCT")} + {tok("t3", "T3")}/{tok("v3", "V3")}*{tok("mrh", "MRH")} +{" "}
+                {tok("atp", "ATP")}/{tok("adp", "ADP")}
+              </>
+            );
+          })()}
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem", marginBottom: "1.5rem" }}>
           <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
         </p>
         <div className="grid-3">
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
