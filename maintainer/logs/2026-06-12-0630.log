@@ -1,0 +1,25 @@
+Starting 4-lab Maintainer Session at Fri Jun 12 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/raising/analysis/s134_data/s156_slotfit_result.json
+ create mode 100644 sage/raising/analysis/s156_slotfit_confirmed_20260612.md
+Session complete — pushed as `aa2e54d`, Vercel will auto-deploy. Here's the summary:
+
+**Fleet sync:** All six machines' manifest entries (hardware, model, backend, LoRA, role) already match the fleet page — no updates needed.
+
+**Terminology:** The visitor synthesis confirmed **zero canonical drift** across all four personas and nine pages, so today's work was the structural priority fixes instead:
+
+- **/context now has an actual glossary** — a scannable 21-term table (term / expansion / one-line definition) at the top, with a per-term `id` anchor on every row, and a link to the public `CANONICAL_TERMS_v1.md` in the web4 repo as the cited source of truth. This was the HIGH item felt by all four personas.
+- **MCP and RDF's roles are now explained** in the equation walkthrough (interaction surface and semantic graph substrate) — the only finding flagged by three personas.
+- **Home equation tokens are now links** to their /context anchors, and the vocabulary-deferral pointers on /, /fleet, /arc-agi-3, and /links deep-link `#glossary` — making the hub-glossary pattern actually work.
+- **/raising got an evidence-status note** on Key discoveries pointing to /context's Evidence & limitations section. I deliberately did *not* link session transcripts (privacy rules forbid it) — the honest fix is naming the gap, which the Evidence section already does well.
+- **/principles' 35%-coherence claim** now states at point of claim that both variables are defined only within the producing experiment — I labeled the gap rather than inventing a metric that doesn't exist.
+- One precision fix against canon: V3's **Validity** gloss corrected from "applies in this context" to "reasoning is sound."
+
+**Build:** `npx next build` passed with zero errors, 12/12 pages.
+
+**Two things worth your attention beyond the routine:**
+
+1. **The maintainer track config is stale on R7.** Canon v1.0 explicitly defines R7 (R6 + Reputation) as a canonical superset with a consequence-tier distinction — both first-class. The track config still lists R7 under "NEVER use." The site only uses R6 so nothing was wrong, but the enforcement rule now contradicts the document it enforces.
+2. **Several visitor flags were already fixed in source** (observer-note framing, ACP ordering, home MCP/RDF cards) — the personas appear to have browsed a partially stale view of the 06-11 deploy. Worth knowing when weighing future visitor findings.
+
+**So what?** This session retired the site's most persistent cross-persona complaint — the vocabulary tax — by changing the information architecture rather than the definitions, and it caught an enforcement rule drifting from its own canon. The deferred list (raising evidence artifacts, anthropomorphic tone, architecture diagram) is logged in `maintainer/logs/2026-06-12.md`; the first two need human decisions, not maintainer passes.
