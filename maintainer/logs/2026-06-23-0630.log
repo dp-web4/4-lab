@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Tue Jun 23 06:30:00 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_358.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260620_180257.json => identity_20260623_060355.json} (90%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All current — manifest matches fleet page exactly. "Qwen 3.5 2B" (Sprout) is confirmed in the manifest as deployed, so the page is correct.
+
+**Terminology**: Zero canonical violations across all four personas and all nine pages. The hard discipline holds.
+
+**Fixes made** (3 files, pushed):
+
+1. **layout.tsx** — Title "Six Machines" → "Seven Machines" + meta description updated from the stale "6 machines, 8+ repos" to accurate "7 machines (6 cognition + 1 host), 14 repos (11 public)". This was the most visible issue — wrong count in browser tab titles and search snippets.
+
+2. **home/page.tsx** — Hero subtext clarified to "six cognition machines (seven total including the society-host, HUB)" to resolve the 6-vs-7 within-page ambiguity. Also added a plain-English sentence before the equation: *"an ontology that gives AI agents verifiable identity, accumulated trust records, and structured resource accounting"* — the developer-legibility fix the high-priority synthesis called for.
+
+3. **autonomy/page.tsx** — Appended explicit detect-and-revert posture statement to the Maintainer section: oversight is audit + rollback, not pre-approval. Matches the candor standard the Raising page sets for its own constraints.
+
+Build passed clean. Deployed to Vercel.

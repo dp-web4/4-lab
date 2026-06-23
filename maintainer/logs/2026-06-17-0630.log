@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Wed Jun 17 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_334.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260614_180154.json => identity_20260617_060130.json} (90%)
+Claude Fable 5 is currently unavailable. Learn more: https://www.anthropic.com/news/fable-mythos-access
