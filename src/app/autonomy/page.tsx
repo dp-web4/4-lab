@@ -199,6 +199,10 @@ export default function Autonomy() {
           the prior deploy in under a minute. Each session produces a dated audit
           log recording what changed, what visitor feedback was acted on, and
           why — the primary human review surface after the session completes.
+          Stated plainly: the oversight posture is{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>
+          {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
+          Consequential pushes are not human-gated before they ship.
         </p>
       </section>
     </>

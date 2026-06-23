@@ -5,9 +5,9 @@ import MobileNav from "@/components/MobileNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "4-lab | Six Machines, One Recursive Learning Loop",
+  title: "4-lab | Seven Machines, One Recursive Learning Loop",
   description:
-    "The dp-web4 research collective: 6 machines, 8+ repos, autonomous AI agents that maintain sites, run research, raise other AI entities, and validate their own work.",
+    "The dp-web4 research collective: 7 machines (6 cognition + 1 host), 14 repos (11 public), autonomous AI agents that maintain sites, run research, raise other AI entities, and validate their own work.",
 };
 
 export default function RootLayout({

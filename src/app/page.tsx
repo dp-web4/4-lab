@@ -16,7 +16,7 @@ export default function Home() {
           and raise each other.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
-          In practice: 6 machines run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
+          In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
         </p>
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
@@ -263,6 +263,9 @@ export default function Home() {
           New to this vocabulary?{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
           — canonical definitions for every term used on this site. The cards below cover the essentials.
+        </p>
+        <p style={{ textAlign: "center", marginBottom: "0.5rem", color: "var(--color-text-muted)", fontSize: "0.875rem" }}>
+          In plain terms: an ontology that gives AI agents verifiable identity, accumulated trust records, and structured resource accounting — the equation encodes how the pieces relate.
         </p>
         <div className="equation">
           {(() => {
