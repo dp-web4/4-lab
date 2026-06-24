@@ -160,6 +160,9 @@ export default function Home() {
               Peer review across the architecture. The process itself is
               oversight in action.
             </p>
+            <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.25rem" }}>
+              Brain-component vocabulary is a functional analogy for system roles &mdash; not a claim about neural correspondence. See <a href="/raising" style={{ color: "var(--color-accent)" }}>Raising</a> for the full framing.
+            </p>
           </div>
           <div className="card">
             <h3>Small models are winning game levels</h3>
@@ -335,7 +338,7 @@ export default function Home() {
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
               remember → oversee → filter → act). 900+ raising sessions
-              across the fleet.
+              across the fleet (internally logged).
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
