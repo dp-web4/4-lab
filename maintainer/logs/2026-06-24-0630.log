@@ -1,0 +1,21 @@
+Starting 4-lab Maintainer Session at Wed Jun 24 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_362.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260621_180242.json => identity_20260624_060131.json} (90%)
+Session complete. Here's the summary:
+
+---
+
+**Maintainer session 2026-06-24 — pushed to Vercel.**
+
+**Terminology:** Zero canonical drift found by all four visitor personas across all 9 pages. The cleanest pass recorded — no fixes needed.
+
+**Fleet sync:** All machines match the manifest. One upstream flag: Sprout's `"Qwen 3.5 2B"` in the manifest doesn't correspond to a known Qwen release. Fleet page is correct per manifest; the fix belongs in the SAGE manifest once Sprout's actual `ollama list` is verified.
+
+**Changes made (3 files, 4 edits):**
+- `/` — Added brain-analogy disclaimer directly inside the "fleet built a brain" card (caveats now travel with the headline, not just appear below it in a different section)
+- `/` — Tagged "900+ raising sessions" with "(internally logged)" in SAGE vocab card
+- `/projects` — Tagged "900+ raising sessions" with "(internally logged)" in SAGE project card  
+- `/links` — Changed "documented" to "internally logged" in the contributing blurb
+
+**So what?** The site's epistemic discipline was already strong; these edits close the gap between what a skim-reader encounters and what a careful reader finds. The 94.85% benchmark and the "900+ sessions" figure now carry their audit status wherever they appear, not just on the pages that host the full caveats.
