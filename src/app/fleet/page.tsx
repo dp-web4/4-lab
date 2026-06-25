@@ -9,7 +9,7 @@ export default function Fleet() {
       <section className="section">
         <h2>The Fleet</h2>
         <p>
-          Six cognition machines, plus one society-host. Different hardware,
+          Six cognition machines, plus one society-host (HUB). Different hardware,
           different models, different roles. Heterogeneous by design — because
           monocultures are fragile and diversity is where emergence happens.
         </p>

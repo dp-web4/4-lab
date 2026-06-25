@@ -86,7 +86,7 @@ export default function ArcAgi3Page() {
           entries to <strong>32GB VRAM, no internet access</strong>, and a
           private game set the model has never seen. Our Phase 2 work targets
           this &mdash; building a SAGE competitor that runs locally on Gemma 4
-          E4B via membot cartridges, with the world models, action traces,
+          E4B (4-bit quantized edge variant) via membot cartridges, with the world models, action traces,
           and cross-game patterns from Phase 1 retrievable without network.
           That work is producing results.
         </p>
@@ -110,7 +110,7 @@ export default function ArcAgi3Page() {
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)", width: "40%" }}>Public set</td>
                 <td style={{ padding: "0.375rem 0" }}>
-                  24/25 games solved (96.0%); 94.85% official action score &mdash;{" "}
+                  24/25 games solved (96.0%); 94.85% official action score (Claude Opus 4.6, network access) &mdash;{" "}
                   <a
                     href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
                     target="_blank"

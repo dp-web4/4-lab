@@ -93,7 +93,7 @@ export default function Home() {
         <div className="grid-2">
           <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div className="card" style={{ borderTop: "3px solid #8b5cf6" }}>
-              <h3 style={{ color: "#8b5cf6" }}>Synchronism</h3>
+              <h3 style={{ color: "#8b5cf6" }}>Synchronism <span style={{ fontSize: "0.7rem", color: "var(--color-text-muted)", fontWeight: "normal", marginLeft: "0.4rem" }}>research conjecture</span></h3>
               <p>
                 A theoretical framework proposing that reality emerges from
                 intent dynamics on a discrete Planck grid — the same
