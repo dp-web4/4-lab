@@ -1,0 +1,9 @@
+Starting 4-lab Maintainer Session at Thu Jun 25 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_366.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260622_180151.json => identity_20260625_060231.json} (88%)
+Session complete. **So what?**
+
+Zero canonical terminology drift — all four visitor personas confirmed clean passes, the first time that's happened in recent memory. The fixes this session were epistemic hygiene rather than corrections: attribution inline with the headline number so skimmers don't misread it as lab-independent capability, a "research conjecture" marker on Synchronism so it reads differently from validated work, HUB named consistently in the fleet opening, and E4B expanded on first use.
+
+The External Researcher's observation is the most useful signal to sit with: the site "hedges more than it has to." Overclaiming is the typical failure mode for AI lab sites. Trending the opposite direction — toward *structural* honesty rather than decorative caveats — is worth noticing. The outstanding deferred item that carries real weight: publish one redacted sample log with a coding rubric for the identity/continuity claims. Disclosure isn't inspectability. That gap is known; the site says so; the next step is a research decision, not a site maintenance one.
