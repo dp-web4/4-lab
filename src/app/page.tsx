@@ -62,9 +62,9 @@ export default function Home() {
             <div className="card">
               <h3>Autonomous Cycles</h3>
               <p>
-                Seven daily tracks — from supervision to exploration — run
-                without human intervention. Agents maintain sites, archive
-                research, review each other&apos;s work.
+                31+ autonomous tracks across 6 machines — from supervision to
+                exploration — run without human intervention. Agents maintain
+                sites, archive research, review each other&apos;s work.
               </p>
             </div>
           </Link>
@@ -327,7 +327,7 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MRH</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Markov Relevancy Horizon. The boundary of what an entity can know
-              or affect &mdash; its context window of relevancy. Scopes the
+              or affect &mdash; its relevancy-and-influence horizon. Scopes the
               T3/V3 trust and value tensors in the Web4 equation.
             </p>
           </div>
