@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Fri Jun 26 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_370.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260623_180224.json => identity_20260626_060219.json} (86%)
+Session complete.
+
+**What happened:**
+
+**Fleet sync**: All 6 machine entries already matched the manifest — no updates needed.
+
+**Terminology**: Zero canonical-term drift confirmed across all 4 visitor personas (strongest audit result yet — the Web4 Contributor persona found the site substantively accurate, not just lexically correct). The Researcher's "governance" flag was a false positive: the description says "oversight model" and the GitHub URL slugs containing "governance" already have an explanatory footnote.
+
+**Two fixes shipped:**
+1. **MRH semantic mis-frame** (`src/app/page.tsx`): "context window of relevancy" → "relevancy-and-influence horizon." MRH is an entity-level boundary, not an LLM token buffer — the old phrasing collided with the wrong concept.
+2. **Stale track count** (`src/app/page.tsx`): "Seven daily tracks" in the Autonomous Cycles card was outdated; updated to "31+ autonomous tracks across 6 machines" to match the stat card and the /autonomy page.
+
+**So what?** The site is holding its terminology discipline well enough that 4 independent personas including a domain expert found zero drift. The remaining deferred items (operator legend on /projects, /raising causal claim precision, acronym banner standardization) are polish and precision refinements — not correctness issues. The feedback loop is working.
