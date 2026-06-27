@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Sat Jun 27 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_374.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260624_180218.json => identity_20260627_060222.json} (85%)
+Session complete. Here's what happened:
+
+**Two substantive fixes shipped:**
+
+1. **SAGE name — HIGH (12 occurrences, 8 files)**: Restored "Situation-Aware **Governance** Engine" everywhere. The lab's "oversight not governance" rule for Hardbound had been misapplied to SAGE's proper name. SAGE's own README confirms "Governance Engine" is canonical. Also fixed the loop step 10 label from "oversee" → "govern" in the home page (×2) and context page.
+
+2. **Gemma 3n E4B — MEDIUM (4 occurrences, 3 files)**: Corrected "Gemma 4 E4B" → "Gemma 3n E4B" across home, projects, and arc-agi-3 pages. No Gemma 4 exists — E4B is the Gemma **3n** effective-parameter edge family suffix, and "4-bit quantized" was a misreading of that suffix.
+
+**Fleet sync**: All 6 machines already matched the manifest. No changes needed.
+
+**Build**: Zero errors, 12/12 static pages. Pushed to main — Vercel auto-deploying.
+
+**Deferred**: Synthon as Principle 5 on n=1 evidence (needs human content decision), deferred-glossary placement (structural nav change), and several low-priority polish items — documented in the session log.
