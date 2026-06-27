@@ -39,7 +39,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Guidance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines (internally logged). The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 900+ raising sessions across 6 machines (internally logged). The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"
@@ -133,7 +133,7 @@ export default function Projects() {
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0%); 94.85% official action score (Claude Opus 4.6)</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 1.1B to 14B</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 3n E4B via membot cartridges</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td></tr>
               </tbody>
             </table>

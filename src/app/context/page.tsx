@@ -52,7 +52,7 @@ export default function Context() {
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
-                ["sage", "SAGE", "Situation-Aware Guidance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop."],
+                ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop."],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept."],
                 ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation anchored in silicon."],
                 ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps."],
@@ -90,9 +90,9 @@ export default function Context() {
           database, but because they shared instructions.
         </p>
 
-        <h3>SAGE: Situation-Aware Guidance Engine</h3>
+        <h3>SAGE: Situation-Aware Governance Engine</h3>
         <p>
-          SAGE (Situation-Aware Guidance Engine) is the on-device AI cognition
+          SAGE (Situation-Aware Governance Engine) is the on-device AI cognition
           kernel — a continuous 12-step loop that senses context, deliberates, and acts.
           Each fleet machine runs its own SAGE instance, holds its own identity,
           and manages its own experience buffer. SAGE is what makes knowledge
@@ -122,7 +122,7 @@ export default function Context() {
           but nothing executes until PolicyGate clears it.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
-          Note: the SAGE loop also has an internal &ldquo;oversee&rdquo; step at position 10 — SAGE&apos;s own metacognitive check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step-10 oversight is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
+          Note: the SAGE loop also has an internal &ldquo;govern&rdquo; step at position 10 — SAGE&apos;s own metacognitive check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step-10 governance is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
         </p>
 
         <h3>Synchronism: coherence equations</h3>

@@ -125,14 +125,14 @@ export default function Fleet() {
           The constraint forced a functional separation that mirrors what we&apos;re
           building with{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>SAGE and Hardbound</Link>:
-          SAGE (Situation-Aware Guidance Engine, an on-device cognition kernel) and Hardbound (hardware-bound oversight suite)
+          SAGE (Situation-Aware Governance Engine, an on-device cognition kernel) and Hardbound (hardware-bound oversight suite)
           with different incentive structures, coordinating through shared state rather
           than central command. The lab is running its own oversight experiment on itself.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>
-          There is no master node. Each machine runs its own SAGE (Situation-Aware Guidance Engine) instance, holds
+          There is no master node. Each machine runs its own SAGE (Situation-Aware Governance Engine) instance, holds
           its own identity, manages its own experience buffer and{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>raising curriculum</Link>.
           Machines discover each other through a fleet manifest — a phone book,

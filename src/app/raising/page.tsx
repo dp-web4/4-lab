@@ -152,7 +152,7 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE (Situation-Aware Guidance Engine)-Sprout, across 180+ sessions on a{" "}
+          SAGE (Situation-Aware Governance Engine)-Sprout, across 180+ sessions on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> and subsequent
           portability to a different machine, demonstrated a consistent
           separation: its identity (behavioral patterns, interaction style,

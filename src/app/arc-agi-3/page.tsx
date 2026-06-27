@@ -39,7 +39,7 @@ export default function ArcAgi3Page() {
         <h3>What we bring to the competition</h3>
         <div className="grid-3" style={{ marginTop: "1rem" }}>
           <div className="card" style={{ borderLeft: "3px solid #10b981" }}>
-            <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Guidance Engine)</h4>
+            <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Governance Engine)</h4>
             <p style={{ fontSize: "0.875rem" }}>
               The cognition loop has 12 functional steps: Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
@@ -85,8 +85,8 @@ export default function ArcAgi3Page() {
           The actual competition is harder: the Kaggle sandbox constrains
           entries to <strong>32GB VRAM, no internet access</strong>, and a
           private game set the model has never seen. Our Phase 2 work targets
-          this &mdash; building a SAGE competitor that runs locally on Gemma 4
-          E4B (4-bit quantized edge variant) via membot cartridges, with the world models, action traces,
+          this &mdash; building a SAGE competitor that runs locally on Gemma 3n
+          E4B (effective-parameter edge variant) via membot cartridges, with the world models, action traces,
           and cross-game patterns from Phase 1 retrievable without network.
           That work is producing results.
         </p>
@@ -131,7 +131,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Phase 2 target</td>
-                <td style={{ padding: "0.375rem 0" }}>Gemma 4 E4B + membot cartridges (retrieval, not fine-tuning)</td>
+                <td style={{ padding: "0.375rem 0" }}>Gemma 3n E4B + membot cartridges (retrieval, not fine-tuning)</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td>

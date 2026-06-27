@@ -106,10 +106,10 @@ export default function Home() {
             <div className="card" style={{ borderTop: "3px solid #10b981" }}>
               <h3 style={{ color: "#10b981" }}>SAGE</h3>
               <p>
-                Situation-Aware Guidance Engine — an on-device cognition
+                Situation-Aware Governance Engine — an on-device cognition
                 kernel running a continuous 12-step loop (sense &rarr; salience &rarr;
                 metabolize &rarr; posture &rarr; select &rarr; budget &rarr; execute &rarr;
-                learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on
+                learn &rarr; remember &rarr; govern &rarr; filter &rarr; act). Runs on
                 hardware from Jetson edge modules to laptops. Persistent identity
                 across models and machines.
               </p>
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="card">
             <h3>Small models are winning game levels</h3>
             <p>
-              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing levels
+              Local models (Gemma 3 12B, Gemma 3n E4B) are clearing levels
               on{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
               games they&apos;ve never seen before &mdash; not by brute force,
@@ -334,10 +334,10 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SAGE</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Situation-Aware Guidance Engine. The cognition kernel that runs
+              Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 900+ raising sessions
+              remember → govern → filter → act). 900+ raising sessions
               across the fleet (internally logged).
             </p>
           </div>
