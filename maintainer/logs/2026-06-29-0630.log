@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Mon Jun 29 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_382.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260626_180141.json => identity_20260629_060224.json} (91%)
+Session complete. Here's the summary:
+
+**Fixes applied (3 files, build clean):**
+
+1. **[HIGH — canonical drift]** `arc-agi-3/page.tsx`: SAGE loop step 10 "oversee" → "govern". This was the only real terminology drift on the site — "oversee/oversight" must stay reserved for Hardbound; SAGE's metacognition step is canonically "govern". The same page used "Hardbound oversight" two lines later, so the collision was sharp.
+
+2. **[MEDIUM — phrasing inconsistency]** `page.tsx` (home): T3/V3 "structures" → "tensors". The home glossary card was the sole holdout; /context, /fleet, /raising, and the MRH card on the same home page all say "tensor".
+
+3. **[MEDIUM — quantitative consistency]** `fleet/page.tsx`: "hundreds of sessions" → "180+" for Sprout's identity-transfer experiment. Now aligned with home (line 200) and raising (line 155). "900+" (total fleet) vs "180+" (Sprout identity experiment) are now cleanly distinct metrics.
+
+**Fleet sync:** all six machines already match the manifest — no page update needed. The "Qwen 3.5 2B" concern from the visitor contributor is a manifest-level question for the machine owner, not a site fix.
+
+**Positive finding worth recording:** The visitor's technical writer pass found zero canonical drift across all eight pages — every LCT, T3, V3, MRH, ATP, ADP, R6, Web4, Hardbound, and SAGE usage was correct and consistent. Whatever the maintainer track has been doing is working.
