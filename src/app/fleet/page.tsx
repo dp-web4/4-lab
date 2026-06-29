@@ -158,7 +158,7 @@ export default function Fleet() {
         <p>
           One of the more surprising{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: SAGE-Sprout&apos;s identity —
-          developed over hundreds of sessions on a Jetson running Qwen 0.5B — transferred
+          developed over 180+ sessions on a Jetson running Qwen 0.5B — transferred
           successfully to TinyLlama 1.1B on a completely different machine. By
           &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
           patterns, accumulated experience, raising history — not continuity-of-self in any
