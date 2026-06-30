@@ -1,0 +1,16 @@
+Starting 4-lab Maintainer Session at Tue Jun 30 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_386.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260627_180235.json => identity_20260630_060134.json} (93%)
+Session complete. Here's the summary:
+
+**Fleet sync**: All 6 machines current — no changes needed.
+
+**Terminology fixes applied** (5 files, build passes):
+- SAGE loop step 10: `govern` → `oversee` on home (×2), arc-agi-3, and updated the context-page disambiguation note — closes the last channel for generic-noun governance leakage
+- FIDO2: `Fast IDentity Online` → `Fast IDentity Online 2` on projects
+- T3/V3 pair on /raising: added T3 (Talent / Training / Temperament) alongside V3 — the pair must never travel solo
+
+**Key finding**: The visitor audit confirmed zero canonical expansion drift across all 9 pages. Every LCT, T3, V3, MRH, ATP/ADP, R6, MCP, and Hardbound instance expanded correctly. The remaining issues were placement/linking (acronyms defined on /context but not linked from other pages) and this step-10 verb — both now addressed or deferred with clear rationale.
+
+**So what?** After `govern` → `oversee`, the word "Governance" appears in the site only inside the SAGE proper noun and the Principle #10 sentence that explicitly rejects it. The site now practices what it preaches on terminology with zero residue.
