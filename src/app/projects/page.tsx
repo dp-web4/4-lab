@@ -57,7 +57,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast IDentity Online), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast IDentity Online 2), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />

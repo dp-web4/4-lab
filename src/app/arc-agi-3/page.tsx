@@ -43,7 +43,7 @@ export default function ArcAgi3Page() {
             <p style={{ fontSize: "0.875rem" }}>
               The cognition loop has 12 functional steps: Sense &rarr; salience &rarr; metabolize &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; govern &rarr; filter &rarr; act. PolicyGate &mdash; a{" "}
+              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate &mdash; a{" "}
               <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
               sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>

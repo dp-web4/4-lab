@@ -109,7 +109,7 @@ export default function Home() {
                 Situation-Aware Governance Engine — an on-device cognition
                 kernel running a continuous 12-step loop (sense &rarr; salience &rarr;
                 metabolize &rarr; posture &rarr; select &rarr; budget &rarr; execute &rarr;
-                learn &rarr; remember &rarr; govern &rarr; filter &rarr; act). Runs on
+                learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on
                 hardware from Jetson edge modules to laptops. Persistent identity
                 across models and machines.
               </p>
@@ -337,7 +337,7 @@ export default function Home() {
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → govern → filter → act). 900+ raising sessions
+              remember → oversee → filter → act). 900+ raising sessions
               across the fleet (internally logged).
             </p>
           </div>

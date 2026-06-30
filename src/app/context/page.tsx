@@ -122,7 +122,7 @@ export default function Context() {
           but nothing executes until PolicyGate clears it.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
-          Note: the SAGE loop also has an internal &ldquo;govern&rdquo; step at position 10 — SAGE&apos;s own metacognitive check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step-10 governance is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
+          Note: SAGE loop step 10 (&ldquo;oversee&rdquo;) is SAGE&apos;s own metacognitive self-check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step 10 is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
         </p>
 
         <h3>Synchronism: coherence equations</h3>

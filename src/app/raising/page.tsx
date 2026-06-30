@@ -109,8 +109,8 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the Markov Relevancy
-          Horizon (MRH) and the V3 tensor (Valuation / Veracity / Validity) bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT) — it
+          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament), the Markov Relevancy
+          Horizon (MRH), and the V3 tensor (Valuation / Veracity / Validity) bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT) — it
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
