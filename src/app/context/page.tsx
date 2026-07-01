@@ -99,6 +99,9 @@ export default function Context() {
           actionable: it decides what enters the context window, when to act,
           and how to log the result.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
+          Terminology note: &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction (see Hardbound below). The name is retained upstream across code, papers, and the ARC Prize benchmark &mdash; the same reason the web4-governance repo slugs are retained.
+        </p>
 
         <h3>Hardbound: hardware-bound oversight</h3>
         <p>

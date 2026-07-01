@@ -45,6 +45,7 @@ export default function Projects() {
             maturity="runnable"
             url="https://sage-site-murex.vercel.app"
             repoUrl="https://github.com/dp-web4/SAGE"
+            footnote="'Governance' in SAGE's name predates the lab's governance→oversight terminology correction; the name is retained upstream across code, papers, and the ARC Prize benchmark — the same reason the web4-governance repo slugs are retained."
           />
           <ProjectCard
             name="Synchronism"
