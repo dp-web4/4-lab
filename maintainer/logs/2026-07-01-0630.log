@@ -1,0 +1,65 @@
+Starting 4-lab Maintainer Session at Wed Jul  1 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_390.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260628_180152.json => identity_20260701_060220.json} (96%)
+
+# Maintainer Session — 2026-07-01
+
+## Fleet Sync
+- Manifest checked: yes (`sage/federation/sage-fleet-models.json`, SAGE repo pulled — already up to date)
+- Changes found: **none** — all six machines match the manifest exactly:
+  - Thor: Qwen 2.5 14B (transformers) · LoRA ✓
+  - Sprout: Qwen 3.5 2B (ollama) ✓
+  - Legion: Phi-4 14B (ollama) · LoRA ✓
+  - McNugget: Gemma 3 12B (ollama) ✓
+  - Nomad: Gemma 3 4B (ollama) ✓
+  - CBP: TinyLlama 1.1B (ollama) ✓
+- Page updated: no (no changes needed)
+
+"Qwen 3.5 2B" (Sprout): Passes 3 and 4 flagged this as a possible typo ("Qwen 3.5" not a recognized release line). The manifest itself records "model_display": "Qwen 3.5 2B" — the fleet page correctly reflects the manifest. Not changed; noted for Sprout's own investigation if the model tag is misconfigured at the ollama level.
+
+## Terminology Fixes
+- src/app/projects/page.tsx: SAGE ProjectCard — added footnote prop:
+  "'Governance' in SAGE's name predates the lab's governance→oversight terminology correction;
+  the name is retained upstream across code, papers, and the ARC Prize benchmark — the same
+  reason the web4-governance repo slugs are retained."
+  Mirrors the existing Oversight Plugins footnote pattern exactly.
+- src/app/context/page.tsx: SAGE prose section — added terminology note paragraph after the SAGE
+  description, same text/framing.
+- No actual drift found (visitor log confirmed all canonical terms are correct on all pages).
+
+## Feedback Reviewed
+- Visitor log: 2026-07-01 — four-persona pass.
+- Key finding: No true terminology drift anywhere. All ten canonical acronyms (LCT, T3, V3, MRH,
+  ATP, ADP, MCP, RDF, R6, SNARC) expand identically on every page. Hardbound = "oversight" held
+  everywhere. Web4 = "ontology" held. "Production ready" absent. "Fractal leverage" correct.
+- Single highest-value issue (all 4 personas): SAGE = "Situation-Aware Governance Engine" collides
+  with Principle 10 ("Hardbound is not 'governance' — it's oversight") — not internal drift
+  (perfectly consistent), but shipped without annotation. Fixed this session.
+- Refuted drift: Pass 1 flagged /autonomy as calling Hardbound a "governance layer." Pass 3
+  directly verified this is not the case — the page says "hardware-bound oversight suite." Not
+  a current issue.
+
+## Changes Made (Site)
+- src/app/projects/page.tsx: Added footnote to SAGE ProjectCard — annotation that "Governance"
+  is a retained upstream name predating the governance→oversight correction.
+- src/app/context/page.tsx: Added terminology note paragraph in the SAGE prose section.
+- Build: npx next build passed with zero errors, all 12 pages generated.
+- Commit: 360ed3e — pushed to main, Vercel auto-deploy triggered.
+
+## Cross-Site Drift Alert
+- None detected. The SAGE name question is internal to the lab's terminology decision; the 4-lab
+  site now annotates it consistently with the existing repo-slug treatment.
+
+## Open Items (Deferred)
+- Developer on-ramp (HIGH): Home page already has "New here? Start with /context… then clone SAGE
+  or ACT" at line 51-57, and the equation is inline-linked to /context. Real gap is "what would I
+  build with this" — a content/framing question beyond single-session scope.
+- Replication status (MEDIUM): Researcher suggested a prominent "not yet independently replicated"
+  line for identity/synthon claims. Caveats exist but are scattered. Needs editorial judgment on
+  placement.
+- Project descriptions: use-case first (MEDIUM): Would require reworking all card descriptions.
+- "action score" definition (LOW): /arc-agi-3's 94.85% could include one clause on efficiency
+  weighting.
+- Sprout model tag (LOW): "Qwen 3.5 2B" may be misconfigured at the ollama level. Out of scope
+  for 4-lab maintainer; would need investigation on Sprout itself.
