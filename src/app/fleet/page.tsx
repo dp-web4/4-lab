@@ -129,6 +129,10 @@ export default function Fleet() {
           with different incentive structures, coordinating through shared state rather
           than central command. The lab is running its own oversight experiment on itself.
         </p>
+        <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
+          &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
+          <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>

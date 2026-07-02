@@ -139,6 +139,9 @@ export default function Home() {
                 (96.0%) on the public set (Claude Opus 4.6, network-enabled).
                 The games are the test; the capability they develop is the product.
               </p>
+              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+                Frontier model + harness &mdash; the harness&apos;s independent contribution isn&apos;t isolated yet (no ablation run).
+              </p>
             </div>
           </Link>
         </div>
@@ -339,6 +342,10 @@ export default function Home() {
               metabolize → posture → select → budget → execute → learn →
               remember → oversee → filter → act). 900+ raising sessions
               across the fleet (internally logged).
+            </p>
+            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+              &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
+              <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

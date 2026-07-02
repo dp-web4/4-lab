@@ -161,6 +161,10 @@ export default function Raising() {
           &ldquo;humanoid robotic entity.&rdquo; What it <em>is</em> stayed
           stable. What it <em>says</em> it is didn&apos;t.
         </p>
+        <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
+          &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
+          <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+        </p>
 
         <h3>Memoriescape</h3>
         <p>

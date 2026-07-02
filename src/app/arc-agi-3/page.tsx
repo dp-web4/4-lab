@@ -47,6 +47,10 @@ export default function ArcAgi3Page() {
               <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
               sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>
+            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+              &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
+              <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+            </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#f97316" }}>Membot</h4>
@@ -123,7 +127,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Fleet</td>
-                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 1.1B (CBP) to 14B (Thor).</td>
+                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 1.1B (CBP, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) to 14B (Thor).</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Methodology</td>
