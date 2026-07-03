@@ -23,7 +23,7 @@ export default function Fleet() {
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
-          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP) is defined in{" "}
+          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP, crystallization, chapter ledger, chapter law) is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
@@ -42,7 +42,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 2B (ollama)"
-            role="115+ sessions (creating), Session T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization (fixed-point collapse where exploration stops) achieved (S100). Edge demonstrator."
+            role="115+ sessions (creating), Session T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -81,8 +81,10 @@ export default function Fleet() {
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           Runs the Web4 Community Hub daemon. Hosts the fleet itself as a Web4
           society — every cognition machine is a member, with its identity keyed
-          to its Linked Context Token (LCT) and witnessed in the chapter
-          ledger. First concrete Web4 hub stand-up.
+          to its Linked Context Token (LCT) and witnessed in the{" "}
+          <Link href="/context#chapter-ledger" style={{ color: "var(--color-accent)" }}>chapter ledger</Link>{" "}
+          — the society&apos;s append-only record of signed member acts. First
+          concrete Web4 hub stand-up.
         </p>
         <div className="grid-3">
           <MachineCard
@@ -93,7 +95,7 @@ export default function Fleet() {
               "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
               "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
-              "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law is interpreted, acts are signed, and member relationships are witnessed. " +
+              "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
               "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet."
             }

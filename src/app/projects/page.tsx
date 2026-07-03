@@ -85,7 +85,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="AI DNA Discovery"
-            description="Explorations in biological-computational analogy. The fractal DNA blueprint — each entity instantiates the full Web4 stack at its own scale. Operational recursion, not structural."
+            description="Explorations in biological-computational analogy. The fractal DNA blueprint — each entity instantiates the full Web4 stack at its own scale. Operational recursion, not structural. Concretely, the repo holds dated experiment scripts, reports, and papers: cross-model pattern probing, memory experiments, and Jetson sensor-integration work."
             accentColor="var(--color-ai-dna)"
             isPublic={true}
             maturity="research-stage"
@@ -101,7 +101,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SNARC"
-            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping."
+            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping. Code lives in the dp-web4/engram repo — that's where the link below lands."
             accentColor="#10b981"
             isPublic={true}
             maturity="runnable"

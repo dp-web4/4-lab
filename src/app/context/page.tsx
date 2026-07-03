@@ -62,6 +62,10 @@ export default function Context() {
                 ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination."],
                 ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
+                ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing one coherence equation across scales. Web4 operationalizes parts of it; narrative section below."],
+                ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
+                ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
+                ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
               ].map(([id, term, expansion, def]) => (
                 <tr key={id} id={id} style={{ borderBottom: "1px solid var(--color-dark-border)", verticalAlign: "top" }}>

@@ -10,13 +10,18 @@ export default function Home() {
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
-          The dp-web4 research collective builds trust-native ontology,
-          autonomous AI cognition, and the theoretical frameworks that connect
-          them — across a heterogeneous fleet of machines that teach, validate,
-          and raise each other.
+          The dp-web4 research collective builds a trust-native ontology — a
+          shared vocabulary and trust model for AI agents, in the
+          knowledge-representation sense — plus autonomous AI cognition and the
+          theoretical frameworks that connect them, across a heterogeneous fleet
+          of machines that teach, validate, and raise each other.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
           In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
+        </p>
+        <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
+          Developmental language on this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;, and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a claim about consciousness or experience. Full framing on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>.
         </p>
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image

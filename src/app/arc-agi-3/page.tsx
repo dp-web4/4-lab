@@ -90,7 +90,8 @@ export default function ArcAgi3Page() {
           entries to <strong>32GB VRAM, no internet access</strong>, and a
           private game set the model has never seen. Our Phase 2 work targets
           this &mdash; building a SAGE competitor that runs locally on Gemma 3n
-          E4B (effective-parameter edge variant) via membot cartridges, with the world models, action traces,
+          E4B (E4B = &ldquo;effective 4B&rdquo; &mdash; an edge variant that runs in the
+          memory footprint of a ~4B-parameter model) via membot cartridges, with the world models, action traces,
           and cross-game patterns from Phase 1 retrievable without network.
           That work is producing results.
         </p>

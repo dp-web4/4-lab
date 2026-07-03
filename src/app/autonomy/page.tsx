@@ -159,10 +159,21 @@ export default function Autonomy() {
           <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the hardware-bound oversight suite that defines what autonomous operation
           is and is not authorized to do. Publisher only acts on changes the
           supervisor has cleared. No track can modify the shared fleet registry or
-          acquire credentials beyond its declared scope. In Web4 terms, each scheduled
+          acquire credentials beyond its declared scope. In{" "}
+          <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link> terms, each scheduled
           track issues an ATP (Allocation Transfer Packet) for its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping layer that makes autonomous operation auditable.
+        </p>
+        <p>
+          To be precise about mechanism: these boundaries are enforced at the
+          process level — scoped credentials, the track registry, and dated
+          audit logs reviewed after the fact — not cryptographic guarantees.
+          Hardware-anchored enforcement (key custody and attestation — see{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Hardbound on /context</Link>)
+          is what the Hardbound research is building toward; the fleet&apos;s
+          current posture is detect-and-revert, described below. A description
+          of practice, not a verifiable mechanism — the distinction matters.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>
