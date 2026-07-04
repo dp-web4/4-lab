@@ -199,22 +199,31 @@ export default function Autonomy() {
           similarity.
         </p>
         <h3>Maintainer track: higher blast radius</h3>
-        <p>
-          The maintainer loop acts on visitor feedback and autonomously commits
-          and pushes to Vercel — the only track that ships changes to the public
-          site without a human gate. Its failure modes differ from the visitor
-          loop: a wrong push deploys before review. Known failure patterns:
-          acting on a visitor suggestion that pattern-matched but lacked semantic
-          depth; applying a correct fix to the wrong context. Rollback path:
-          Vercel preserves full deployment history — any push can be reverted to
-          the prior deploy in under a minute. Each session produces a dated audit
-          log recording what changed, what visitor feedback was acted on, and
-          why — the primary human review surface after the session completes.
-          Stated plainly: the oversight posture is{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>
-          {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
-          Consequential pushes are not human-gated before they ship.
-        </p>
+        <div className="card" style={{
+          borderLeft: "3px solid #ef4444",
+          background: "rgba(239, 68, 68, 0.04)",
+          marginTop: "0.75rem",
+        }}>
+          <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+            Known oversight gap
+          </p>
+          <p style={{ margin: 0 }}>
+            The maintainer loop acts on visitor feedback and autonomously commits
+            and pushes to Vercel — the only track that ships changes to the public
+            site without a human gate. Its failure modes differ from the visitor
+            loop: a wrong push deploys before review. Known failure patterns:
+            acting on a visitor suggestion that pattern-matched but lacked semantic
+            depth; applying a correct fix to the wrong context. Rollback path:
+            Vercel preserves full deployment history — any push can be reverted to
+            the prior deploy in under a minute. Each session produces a dated audit
+            log recording what changed, what visitor feedback was acted on, and
+            why — the primary human review surface after the session completes.
+            Stated plainly: the oversight posture is{" "}
+            <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>
+            {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
+            Consequential pushes are not human-gated before they ship.
+          </p>
+        </div>
       </section>
     </>
   );

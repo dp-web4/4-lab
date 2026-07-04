@@ -72,7 +72,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Oversight Plugins"
-            description="Web4 oversight model (audit trails, policy gating, trust tracking) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM plugin), and Claude Code (Python hooks). Same principles, different substrates."
+            description="Web4 oversight model (audit trails, policy gating, trust tracking) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM/WebAssembly plugin), and Claude Code (Python hooks). Same principles, different substrates."
             accentColor="var(--color-plugins)"
             isPublic={true}
             maturity="research-stage"

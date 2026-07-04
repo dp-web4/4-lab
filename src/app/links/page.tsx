@@ -59,7 +59,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK Web4 implementation"
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4"
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
@@ -69,7 +69,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/claude-flow"
             title="Claude Flow (fork)"
-            description="Web4 oversight WASM plugin for Claude Flow"
+            description="Web4 oversight WASM (WebAssembly) plugin for Claude Flow"
           />
           <ExternalLink
             href="https://github.com/dp-web4/claude-code"

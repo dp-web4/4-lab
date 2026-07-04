@@ -141,9 +141,10 @@ export default function Context() {
           every scale from quantum to cosmic. Coupling-coherence experiments provide empirical
           grounding (single-trial observation, no independent replication yet): 1% coupling yielded 35% coherence gain. Hill function
           kinetics (a saturation curve from enzyme chemistry — response rises
-          steeply past a threshold, then levels off) describe both enzyme
-          binding and trust formation at the same
-          scale. The conjecture spans 80 orders of magnitude — from quantum to
+          steeply past a threshold, then levels off) is borrowed by analogy for
+          both enzyme binding and trust formation — the same curve shape observed
+          at both scales, not yet a derivation showing why it must hold at both.
+          The conjecture spans 80 orders of magnitude — from quantum to
           cosmic — with experimental validation at specific scales and the full
           range as the ongoing research target. See the{" "}
           <a
@@ -218,7 +219,8 @@ export default function Context() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+          <code>/</code> means two different things on this line: &ldquo;verified by&rdquo; in <code>T3/V3</code>, but a plain declared&rarr;discharged allocation pair in <code>ATP/ADP</code> — same glyph, unrelated semantics.
+          &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — portable identity grounded in witnessed history, not model weights<br />
@@ -241,6 +243,36 @@ export default function Context() {
           preserve the ontological backbone (RDF)? Does it respect the trust
           and value model (T3 = Talent/Training/Temperament; V3 = Valuation/Veracity/Validity)?
           Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
+        </p>
+
+        <h3>Worked example: one action through the equation</h3>
+        <p>
+          The primitives above aren&apos;t independent — they compose on every
+          single autonomous action. Take one maintainer-track commit, end to end:
+        </p>
+        <p>
+          The maintainer agent holds an <strong>LCT</strong> — its portable
+          identity, grounded in the session history it has accumulated, not in
+          which model happens to be running it. Before it acts, the track
+          declares an <strong>ATP</strong> (Allocation Transfer Packet) — the
+          resource budget for this session. The agent&apos;s <strong>T3</strong>{" "}
+          (Talent / Training / Temperament — has it done this kind of fix
+          reliably before?) is checked against its <strong>V3</strong>{" "}
+          (Valuation / Veracity / Validity — is this specific proposed change
+          accurate and well-reasoned?) — that&apos;s the <code>T3/V3</code>{" "}
+          &ldquo;verified by&rdquo; relationship. That check is scoped by{" "}
+          <strong>MRH</strong> (Markov Relevancy Horizon) to what this agent can
+          actually know and affect — a maintainer session shouldn&apos;t reason
+          about, or touch, repos outside its declared scope. The action itself
+          is shaped as an <strong>R6</strong> record: Rules (the terminology
+          conventions in CLAUDE.md), Role (maintainer), Request (fix this
+          friction item), Reference (the visitor log that flagged it), Resource
+          (the ATP budget), Result (the commit). Once the commit lands, an{" "}
+          <strong>ADP</strong> (Allocation Discharge Packet) records what was
+          actually spent — closing the loop the ATP opened. Every step above is
+          logged to the{" "}
+          <a href="#chapter-ledger" style={{ color: "var(--color-accent)" }}>chapter ledger</a>,
+          witnessed and signed. That&apos;s the equation, instantiated once.
         </p>
 
         <h3>ATP / ADP: resource allocation and accounting</h3>

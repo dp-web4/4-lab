@@ -25,6 +25,7 @@ export default function Fleet() {
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
           Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP, crystallization, chapter ledger, chapter law) is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB) are proper names, not acronyms.
         </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>

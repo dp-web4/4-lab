@@ -295,7 +295,8 @@ export default function Home() {
           })()}
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem", marginBottom: "1.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
+          <code>/</code> means two things here: &ldquo;verified by&rdquo; in <code>T3/V3</code>, but a plain declared&rarr;discharged allocation pair in <code>ATP/ADP</code> — same glyph, unrelated semantics.
+          &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
         </p>
         <div className="grid-3">
