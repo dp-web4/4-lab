@@ -1,0 +1,7 @@
+Starting 4-lab Maintainer Session at Sat Jul  4 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_402.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260701_180252.json => identity_20260704_060307.json} (91%)
+Pushed to main; Vercel will auto-deploy.
+
+**Session summary:** No terminology drift found — all four visitor personas confirmed the canonical Web4 vocabulary is clean. Fleet manifest matched the fleet page exactly, no sync needed. Fixed the remaining friction items from today's visitor log: glossed CBP/HUB as machine names (not acronyms), stated the ACT→ACP relationship on /links, expanded WASM, turned the maintainer track's honest oversight limitation into a visible "Known oversight gap" callout, softened Synchronism's borrowed-physics vocabulary to match its unreplicated evidence status, added a worked example walking one action through the full Web4 equation, and clarified the overloaded `/` operator legend across three pages. Build passed clean; session log written to `maintainer/logs/2026-07-04.md`.
