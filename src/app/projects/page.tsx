@@ -49,7 +49,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. Research conjecture: one coherence equation spanning 80 orders of magnitude — quantum to cosmic. Scope is the research target; experimental validation covers a narrow subset of scales, single-trial, no independent replication yet. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
+            description="Theoretical foundation. Research conjecture, single-trial and not independently replicated: proposes one coherence equation spanning 80 orders of magnitude — quantum to cosmic — though experimental validation so far covers only a narrow subset of scales. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             maturity="research-stage"

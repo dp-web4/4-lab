@@ -56,9 +56,9 @@ export default function Home() {
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
           for the vocabulary, then clone{" "}
           <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
-          or{" "}
+          — the recommended starting point — or{" "}
           <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
-          to experiment.
+          for the Web4 trust-layer side.
         </p>
 
         <h2>How we work</h2>
@@ -117,6 +117,9 @@ export default function Home() {
                 learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on
                 hardware from Jetson edge modules to laptops. Persistent identity
                 across models and machines.
+              </p>
+              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+                &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction (see /context).
               </p>
             </div>
           </a>
@@ -350,7 +353,7 @@ export default function Home() {
               across the fleet (internally logged).
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-              &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
+              &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
               <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
             </p>
           </div>
