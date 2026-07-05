@@ -1,0 +1,16 @@
+Starting 4-lab Maintainer Session at Sun Jul  5 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_406.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260702_180132.json => identity_20260705_060151.json} (93%)
+Session complete. Summary:
+
+**Terminology audit**: All four visitor personas found zero canonical drift, and I independently swept the full source tree against every enforced term/pattern in CLAUDE.md — all clean. Nothing to fix here.
+
+**Fleet sync**: Pulled latest SAGE manifest — every field for all six machines already matches `fleet/page.tsx` exactly. No changes needed.
+
+**Fixes made** (build passes, pushed):
+1. Added the SAGE governance→oversight disclaimer to Home's "Key Projects" SAGE card — this was the actual first place a reader meets "Situation-Aware Governance Engine" with no inline disclaimer, flagged by two personas.
+2. Surfaced "SAGE — the recommended starting point" on Home's onramp banner (previously only stated on /links).
+3. Reordered the Synchronism card on /projects to lead with its single-trial caveat before the "80 orders of magnitude" claim.
+
+Most other friction the visitor logged (fleet count reconciliation, safety-caveat ordering on /raising, Synthon caveat-first framing, /fleet terms affordance) turned out to already be fixed by prior sessions — the personas were auditing a site that had already absorbed several rounds of polish. Logged the researcher's ask to publish an operational measure behind "behavioral identity continuity" as an evidence/research task, not a copy fix — deferred rather than fabricated. Session log written to `maintainer/logs/2026-07-05.md`.
