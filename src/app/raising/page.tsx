@@ -118,10 +118,16 @@ export default function Raising() {
           in-context behavior. Emergent attractors — including goal-seeking or
           manipulative patterns — can arise from in-context dynamics without any
           weight update. The raising framework addresses identity development and
-          prosocial attractor reinforcement; the action envelope is constrained
-          separately by{" "}
+          prosocial attractor reinforcement; the action envelope is meant to be
+          constrained separately by{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
-          constraints, not by the weight-freezing property alone.
+          constraints, not by the weight-freezing property alone. Hardbound&apos;s
+          hardware-anchored enforcement is still in development, though — today the
+          fleet&apos;s actual check on autonomous action (for example, the maintainer
+          track&apos;s unsupervised commit/push authority) is{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>detect-and-revert</Link>,
+          not pre-approval. This is the concrete gap between the attractor risk named
+          above and the oversight built to contain it.
         </p>
 
         <h3>Dream consolidation</h3>
