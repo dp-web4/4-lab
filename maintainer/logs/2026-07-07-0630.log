@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Tue Jul  7 06:30:00 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_414.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260704_180455.json => identity_20260707_060216.json} (93%)
+Session complete — pushed as `0771596`, Vercel is auto-deploying. Here's the summary:
+
+**Fleet sync**: All six machine cards match the manifest exactly; no page changes needed. Notably, the visitor suspected Sprout's "Qwen 3.5 2B" was a typo, but the manifest declares `qwen3.5:2b` verbatim — the page is correct per the source of truth, so if anything's wrong it's upstream in Sprout's own entry.
+
+**Terminology**: Zero canonical drift found by all four visitor passes, the third consecutive clean session — the enforcement is holding. I also grep-verified two of the visitor's suspected artifacts (the "/context/#sage" double-slash anchor doesn't exist in source; "production ready" has zero occurrences).
+
+**Fixes shipped** (10 files, build passed with zero errors):
+- **/raising (the HIGH item)**: Added a "The deflationary alternative" section that states the null hypothesis plainly — everything on the page might be competent context engineering — gives the simpler explanation for each observed pattern, admits the comparison hasn't been run, and states the falsifier: if phase patterns survive a scrambled-context control, "raising" should be retired as a redescription of prompt engineering. Two personas independently flagged this gap; it converts the site's disclosure honesty into methodological honesty.
+- **/arc-agi-3**: All six equation acronyms now expanded locally (it's the likeliest external deep-link target), and "The loop is the capability" is now labeled a working hypothesis pending the not-yet-run ablation.
+- **/autonomy**: The blast-radius card now states the detection interval honestly — ~24-hour visitor loop for catchable failures, no committed human review cadence, unbounded exposure in principle for failures the loop can't see. I chose disclosure over inventing a cadence that isn't actually guaranteed.
+- **/fleet**: Evidence-status label on the Gemma-vs-Phi-4 claim, "Brain (functional analogy):" on all six cards for deep-linked readers, LoRA/MCP expanded, "(S100 — session 100)" glossed.
+- **/context**: Now the single canonical home for the governance→oversight correction (new `#governance-oversight` anchor, and it finally explains *what* the correction was); all five per-page notes link there instead of paraphrasing. Added glossary rows for **Coherence** (explicitly: three senses, no unified operational definition) and **HUB** (a name, not an acronym), plus a "developers: start with SAGE" pointer.
+- **/projects** and **/links**: Web4 card now says the repo is a spec with no runnable demo (implementations live in SAGE/ACT); the ARC-SAGE score on /links now points at its caveats.
+
+**Deferred**: the `/` operator overload and the chapter-ledger/law canon proposal are upstream web4-repo decisions, not site edits; the borrowed-connotation cluster ("tensor", "metabolic awareness", "trust-native") needs a considered editorial pass rather than a quick patch. All logged in `maintainer/logs/2026-07-07.md` with the cross-site note that sibling sites repeating the 94.85% score should check they carry its caveats.
