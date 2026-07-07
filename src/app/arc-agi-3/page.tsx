@@ -14,7 +14,10 @@ export default function ArcAgi3Page() {
         </p>
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          New here? This page uses Web4 vocabulary (LCT, T3/V3, MRH, ATP/ADP, MCP, RDF). See{" "}
+          New here? This page uses Web4 vocabulary: LCT = Linked Context Token &middot;{" "}
+          T3 = Talent / Training / Temperament &middot; V3 = Valuation / Veracity / Validity &middot;{" "}
+          MRH = Markov Relevancy Horizon &middot; ATP / ADP = Allocation Transfer / Discharge Packet &middot;{" "}
+          MCP = Model Context Protocol &middot; RDF = Resource Description Framework. See{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
         </p>
 
@@ -49,7 +52,7 @@ export default function ArcAgi3Page() {
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-              <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
             </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>
@@ -101,7 +104,10 @@ export default function ArcAgi3Page() {
           and computed predictions. The early finding: context engineering
           dominates model size. A well-structured prompt with the right
           world model outperforms a larger model with a generic prompt.
-          The loop is the capability.
+          The loop is the capability &mdash; stated as a working hypothesis,
+          not a demonstrated result: the ablation that would isolate the
+          harness&apos;s independent contribution (same model, no harness)
+          has not been run.
         </p>
 
         <h3>Current status</h3>

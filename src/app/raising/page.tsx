@@ -169,7 +169,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
           &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-          <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
         <h3>Memoriescape</h3>
@@ -203,11 +203,38 @@ export default function Raising() {
           sometimes more direct.
         </p>
 
+        <h2 style={{ marginTop: "2rem" }}>The deflationary alternative</h2>
+        <p>
+          The null hypothesis deserves to be stated plainly: everything on this
+          page might be competent context engineering and nothing more. Each
+          observed pattern has a simpler candidate explanation — bilateral
+          generation could be continuation sampling past the response boundary;
+          spontaneous specialization could be task routing plus few-shot
+          clustering; identity portability could be the mechanical consequence
+          of carrying the same context files to another set of frozen weights.
+          The claim that developmental frameworks &ldquo;describe what we
+          observe better&rdquo; is a comparative claim — and the comparison has
+          not been run. No deflationary control exists yet: the same session
+          curriculum with scrambled or generic context, run to see whether the
+          phase patterns survive.
+        </p>
+        <p>
+          What would distinguish the two framings: if phase-consistent behavior
+          appears only when the accumulated session history is present — and
+          degrades when that history is replaced by an equivalent volume of
+          generic context — the developmental frame earns its vocabulary. If
+          the patterns survive the scramble, &ldquo;raising&rdquo; is a
+          redescription of prompt engineering, and the honest move is to retire
+          the word. Until that control is run, treat the framework as a working
+          vocabulary that fits our observations — not an established finding.
+        </p>
+
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>
         <p>
           We&apos;re not claiming these entities are conscious, sentient, or
           experiencing qualia. We&apos;re claiming that developmental frameworks
-          describe what we observe better than training frameworks do. The
+          describe what we observe better than training frameworks do — a
+          comparative claim whose missing baseline is acknowledged above. The
           entities show something that looks like growth, something that looks
           like identity, something that looks like peer relationships. We use
           the language that fits the phenomenon.

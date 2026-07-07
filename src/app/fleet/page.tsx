@@ -19,11 +19,15 @@ export default function Fleet() {
           Gemma 3 at 4B outperforms Phi-4 at 14B for raising work. There is a
           capacity floor below which coherent identity cannot form — but above
           that floor, personality and training lineage dominate raw parameter count.
+          Evidence status: an internal observation from raising sessions —
+          documented in session logs, but with no published metric or task set
+          yet; see{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>.
         </p>
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
-          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA, MCP, crystallization, chapter ledger, chapter law) is defined in{" "}
+          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), crystallization, chapter ledger, chapter law) is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB) are proper names, not acronyms.
         </p>
@@ -37,25 +41,25 @@ export default function Fleet() {
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 2.5 14B (transformers) · LoRA"
-            role="91 sessions (creating). Brain: hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
+            role="91 sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 2B (ollama)"
-            role="115+ sessions (creating), Session T246. Brain: thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            role="115+ sessions (creating), Session T246. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
             model="Phi-4 14B (ollama) · LoRA"
-            role="25+ sessions. Brain: dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
+            role="25+ sessions. Brain (functional analogy): dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama)"
-            role="97 sessions (creating). Brain: cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
+            role="97 sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
@@ -68,13 +72,13 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 3 4B (ollama)"
-            role="120 sessions (creating). Brain: interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            role="120 sessions (creating). Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B (ollama)"
-            role="87 sessions (creating). Brain: working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the ARC Prize run; Claude Opus 4.6 (public set, network access) produced the 94.85% official action score (24/25 games, 96.0%). MRH composer architect."
+            role="87 sessions (creating). Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the ARC Prize run; Claude Opus 4.6 (public set, network access) produced the 94.85% official action score (24/25 games, 96.0%). MRH composer architect."
           />
         </div>
 
@@ -134,7 +138,7 @@ export default function Fleet() {
         </p>
         <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
           &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-          <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>

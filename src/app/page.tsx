@@ -354,7 +354,7 @@ export default function Home() {
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-              <Link href="/context#sage" style={{ color: "var(--color-accent)" }}>/context</Link>.
+              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

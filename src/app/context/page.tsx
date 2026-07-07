@@ -15,6 +15,12 @@ export default function Context() {
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Developers: SAGE is the recommended starting point — it runs on a
+          single machine. Quick-start commands are on{" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
+          This page covers the vocabulary; that one covers the first clone.
+        </p>
 
         <h3 id="glossary">Glossary at a glance</h3>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
@@ -64,6 +70,8 @@ export default function Context() {
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
                 ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing one coherence equation across scales. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
+                ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context."],
+                ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — the fleet's society-host machine, running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
@@ -103,8 +111,18 @@ export default function Context() {
           actionable: it decides what enters the context window, when to act,
           and how to log the result.
         </p>
-        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
-          Terminology note: &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction (see Hardbound below). The name is retained upstream across code, papers, and the ARC Prize benchmark &mdash; the same reason the web4-governance repo slugs are retained.
+        <p id="governance-oversight" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
+          Terminology note &mdash; the governance&rarr;oversight correction, in
+          one place: the lab originally described its control layers as
+          &ldquo;governance.&rdquo; What these systems actually do is
+          oversight &mdash; watching, gating, and reverting actions &mdash; not
+          deciding what should happen. The vocabulary was corrected lab-wide,
+          and Hardbound is described as an oversight suite everywhere on this
+          site. Names minted before the correction are retained where they are
+          load-bearing: &ldquo;Governance&rdquo; in SAGE&apos;s name (kept
+          across code, papers, and the ARC Prize benchmark) and the
+          web4-governance repo slugs. Other pages that mention the correction
+          link here rather than re-explaining it.
         </p>
 
         <h3>Hardbound: hardware-bound oversight</h3>

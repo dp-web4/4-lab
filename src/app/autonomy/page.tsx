@@ -222,6 +222,14 @@ export default function Autonomy() {
             <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>
             {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
             Consequential pushes are not human-gated before they ship.
+            Detection interval, stated honestly: the visitor track re-browses
+            the live site on the next daily cycle, so automated detection of a
+            bad push runs on a roughly 24-hour loop — but only for the failure
+            classes that pass can catch. Human review of the audit logs is
+            asynchronous, with no committed cadence; for failures the visitor
+            loop misses (content that is technically correct but misleading),
+            the exposure window is unbounded in principle. That is the current
+            gap, not a solved property.
           </p>
         </div>
       </section>

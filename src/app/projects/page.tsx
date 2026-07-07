@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks."
+            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
