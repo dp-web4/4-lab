@@ -21,7 +21,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="Trust-native society research prototype — agents, ATP/ADP (Allocation Transfer / Discharge Packets), karma, Web4 in miniature"
+            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), karma, Web4 in miniature"
           />
         </ul>
 
@@ -39,7 +39,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT identity, T3 verified by V3, contextualized by MRH (Markov Relevancy Horizon), augmented by MCP and RDF"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 verified by V3, contextualized by MRH (Markov Relevancy Horizon), augmented with MCP and RDF"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"

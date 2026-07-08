@@ -28,7 +28,10 @@ export default function Principles() {
               Termites don&apos;t have architects. No termite has a blueprint
               for the mound. Each one follows simple local rules &mdash; where
               to place material based on what neighbors have done &mdash; and
-              the mound emerges. All of this &mdash; Web4, SAGE (Situation-Aware Governance Engine),{" "}
+              the mound emerges. All of this &mdash; Web4 (the trust-native
+              ontology &mdash; see{" "}
+              <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>/context</Link>),
+              SAGE (Situation-Aware Governance Engine),{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
               <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
               pheromone field engineering. We build substrate conditions for
@@ -94,7 +97,10 @@ export default function Principles() {
               coupling density, shared context. Preliminary observation (single trial, not independently replicated): 1% coupling
               gave 35% coherence gain — sparse trust may suffice. Both variables
               (coupling density, coherence) are so far defined only within the
-              experiment that produced them — see{" "}
+              experiment that produced them — the number quantifies the
+              experiment&apos;s internal metric, not any of the{" "}
+              <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>glossary&apos;s three senses of &ldquo;coherence&rdquo;</Link>,
+              which remain without a single operational definition — see{" "}
               <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>.
             </div>
           </div>

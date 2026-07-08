@@ -118,6 +118,11 @@ export default function Autonomy() {
         </p>
 
         <h3>Visitor personas</h3>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          Mechanically, each persona is an LLM agent session on the daily cron,
+          prompted with a role and browsing the live deployed site &mdash; the
+          personas are prompts, not people, and not fixed scripts.
+        </p>
         <div className="grid-2">
           <div className="card">
             <h3>Curious Developer</h3>
@@ -160,7 +165,8 @@ export default function Autonomy() {
           is and is not authorized to do. Publisher only acts on changes the
           supervisor has cleared. No track can modify the shared fleet registry or
           acquire credentials beyond its declared scope. In{" "}
-          <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link> terms, each scheduled
+          <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
+          (the trust-native ontology) terms, each scheduled
           track issues an ATP (Allocation Transfer Packet) for its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping layer that makes autonomous operation auditable.

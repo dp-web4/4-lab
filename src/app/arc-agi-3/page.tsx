@@ -10,13 +10,16 @@ export default function ArcAgi3Page() {
         <p style={{ fontSize: "1.125rem", color: "var(--color-text-muted)" }}>
           SAGE instances tested in competition &mdash; public game set, research
           conditions (Claude Opus 4.6 with network access). The games are the
-          test; the capability they develop is the product.
+          test; the capability they develop is the product. One caveat belongs
+          up front: the ablation that would separate the harness&apos;s
+          contribution from the base model&apos;s (same model, no harness) has
+          not been run &mdash; details below.
         </p>
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           New here? This page uses Web4 vocabulary: LCT = Linked Context Token &middot;{" "}
           T3 = Talent / Training / Temperament &middot; V3 = Valuation / Veracity / Validity &middot;{" "}
-          MRH = Markov Relevancy Horizon &middot; ATP / ADP = Allocation Transfer / Discharge Packet &middot;{" "}
+          MRH = Markov Relevancy Horizon &middot; ATP = Allocation Transfer Packet &middot; ADP = Allocation Discharge Packet &middot;{" "}
           MCP = Model Context Protocol &middot; RDF = Resource Description Framework. See{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
         </p>

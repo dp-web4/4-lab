@@ -98,6 +98,7 @@ export default function Fleet() {
             model="Web4 hub daemon (Rust) — no local LLM; runs the chapter ledger, MCP tool surface, and admin dashboard"
             role={
               "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
+              "HUB is itself one of the seven members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
               "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
