@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Wed Jul  8 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_421.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260705_180255.json => identity_20260708_060203.json} (89%)
+Session complete — pushed as `7c36477`, Vercel will auto-deploy. Here's the TLDR:
+
+**Zero canonical terminology drift.** All four visitor personas confirmed it independently, and my own source sweep (Lifelong Capability, Minimum Response, Trust-Tracing, production-ready, stray "governance") came back clean. Fleet manifest also matches the page exactly — no fleet sync needed. So today's work was the concurred lesser fixes:
+
+- **/principles** — Web4 glossed at first use ("the trust-native ontology" + /context link, the most-concurred visitor item), and Principle 5's caveat strengthened: the "35% coherence gain" now explicitly quantifies the experiment's internal metric, not any of the glossary's three senses of "coherence." That was the Researcher pass's HIGH item — caveat added, number preserved with provenance rather than dropped.
+- **/autonomy** — Web4 gloss, plus a one-sentence mechanism disclosure that the visitor personas are LLM sessions on the daily cron, "prompts, not people."
+- **/arc-agi-3** — the unrun-ablation admission promoted into the hero paragraph (both Developer and Researcher passes wanted it up front), and the ATP/ADP primer expanded to the full canonical pair.
+- **/fleet** — HUB's society membership made explicit: it's one of the seven members, holds its own LCT, acts witnessed in the same ledger it hosts. **One flag for you**: the page already entailed this ("the seven fleet machines... as members"), but if HUB is actually *not* an LCT-holding member, that sentence needs correcting — noted in the session log.
+- **/links** — "augmented **by**" → canonical "augmented **with**" in the Web4 repo gloss (the site's only prose paraphrase of the equation), plus LCT expansion and ATP/ADP full pairs.
+
+**Worth knowing**: several visitor flags were stale — the 6-vs-7 machine reconciliation, ARC-AGI-3's on-page expansion, and the ACT↔ACP connection all already exist in source, and the "two different ARC-AGI-3 expansion strings" claim doesn't match current source (all four pages carry the identical string). The visitor may have hit cached pages; the feedback loop's detection lag is itself data.
+
+**Deferred to you** (not site edits): publishing a redacted session log + phase-coding rubric (the single highest-credibility action per two personas), a second ARC run for variance (~$250), and a soft review-cadence commitment on /autonomy — that's a policy promise only you can make, so I flagged it rather than inventing an SLO. An architecture diagram remains the top developer ask; good candidate for a dedicated session.
+
+**So what?** The site has held zero-drift for multiple cycles now — the enforcement problem looks solved. The visitor findings have shifted category: from *wrong terms* to *missing evidence* (unpublished logs, unrun controls, undefined metrics). The maintainer track can keep polishing prose, but the next real credibility gain requires artifacts only the human can release.
