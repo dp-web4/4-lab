@@ -2,3 +2,19 @@ Starting 4-lab Maintainer Session at Thu Jul  9 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_425.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260706_180226.json => identity_20260709_060206.json} (88%)
+Session complete and pushed. Summary:
+
+**Fleet sync**: manifest matched the site exactly — no page changes needed there, but I flagged a real data-quality problem upstream (see below).
+
+**Terminology**: zero canonical Web4 drift found by any of the four visitor passes — a strong result confirming the enforcement is holding. So the day's real work was one layer down, in verbs/operators/structure that a pure noun-audit misses:
+
+- Fixed a genuine safety-boundary misdescription on `/autonomy` — "authorized" implied a pre-approval gate that the same paragraph says doesn't exist (posture is detect-and-revert).
+- Fixed `/raising`'s falsification control, which conflated "scramble" and "generic replacement" — two experiments with opposite implications; only a scramble can actually discriminate the hypothesis from its deflationary alternative.
+- Renamed all six `/raising` "Phase N" headings to "Pattern N" to match the page's own disclaimer that these aren't sequential stages.
+- Hoisted the ARC-94.85% attribution to the front of CBP's card text so it can't be misread as TinyLlama's score (a real reader in the visitor log itself made exactly that error).
+- Disclosed the Web4 equation's `+` operator as a generic conjunction rather than silently rendering it three different ways.
+- Smaller fixes: FIDO2 expansion, autonomy timeline (now matches the actual 05:30/06:30/07:00 cron schedule), `/context` glossary additions (`p_crit`, `cartridge`), SAGE footnote on `/links`, ATP/ADP restored to `/links`' ontology summary, ACT expanded on first use.
+
+`npx next build` passes clean, all changes pushed.
+
+One thing worth your attention: the fleet manifest's Sprout entry (`qwen3.5:2b`) is internally inconsistent with the actual on-disk SAGE instance directory name (`sprout-qwen3.5-0.8b`) — three different numbers now exist for the same machine across manifest/homepage/disk. I didn't touch the manifest (out of scope for this track) but logged the specifics for whoever owns that file.
