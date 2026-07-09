@@ -16,7 +16,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -39,12 +39,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 verified by V3, contextualized by MRH (Markov Relevancy Horizon), augmented with MCP and RDF"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 verified by V3, contextualized by MRH (Markov Relevancy Horizon), resources tracked via ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), augmented with MCP and RDF"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"

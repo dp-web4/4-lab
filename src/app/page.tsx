@@ -58,7 +58,7 @@ export default function Home() {
           <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
           — the recommended starting point — or{" "}
           <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
-          for the Web4 trust-layer side.
+          (Agentic Context Tool) for the Web4 trust-layer side.
         </p>
 
         <h2>How we work</h2>

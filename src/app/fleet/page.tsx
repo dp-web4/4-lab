@@ -30,6 +30,10 @@ export default function Fleet() {
           Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), crystallization, chapter ledger, chapter law) is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB) are proper names, not acronyms.
+          &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
+          The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
         </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
@@ -78,7 +82,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="TinyLlama 1.1B (ollama)"
-            role="87 sessions (creating). Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. Fleet coordinator — orchestrated the ARC Prize run; Claude Opus 4.6 (public set, network access) produced the 94.85% official action score (24/25 games, 96.0%). MRH composer architect."
+            role="87 sessions (creating). ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
           />
         </div>
 

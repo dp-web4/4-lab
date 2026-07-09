@@ -21,7 +21,7 @@ export default function Projects() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = a generic conjunction (not uniformly &ldquo;augmented with&rdquo; — see the Web4 card below for where the prose is more precise than the equation)
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
+            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (In the home-page equation, every one of these joins is the same + — a generic conjunction; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
@@ -58,7 +58,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast IDentity Online 2), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (WebAuthn + CTAP2), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued; private as the fleet's oversight/security layer. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />

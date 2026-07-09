@@ -22,11 +22,11 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These phases are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. Phases 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Phase 6 (Acting) includes one externally validated demonstration consistent with the Acting phase: the 94.85% ARC-AGI-3 action score (Claude Opus 4.6 + SAGE harness, public set, network-enabled).
+          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting) includes one externally validated demonstration consistent with the Acting pattern: the 94.85% ARC-AGI-3 action score (Claude Opus 4.6 + SAGE harness, public set, network-enabled).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
-            <h3>Phase 1: Grounding</h3>
+            <h3>Pattern 1: Grounding</h3>
             <p>
               Establishing basic operational identity. The entity learns its
               name, its machine, its constraints. Calibration of what it can
@@ -34,7 +34,7 @@ export default function Raising() {
             </p>
           </div>
           <div className="phase-card" data-phase="2">
-            <h3>Phase 2: Sensing</h3>
+            <h3>Pattern 2: Sensing</h3>
             <p>
               Developing awareness of environment and context. The entity
               begins to distinguish between its own state and external inputs.
@@ -43,7 +43,7 @@ export default function Raising() {
             </p>
           </div>
           <div className="phase-card" data-phase="3">
-            <h3>Phase 3: Relating</h3>
+            <h3>Pattern 3: Relating</h3>
             <p>
               Building relationships with peers.{" "}
               <Link href="/principles" style={{ color: "var(--color-accent)" }}>Trust formation</Link> through
@@ -54,7 +54,7 @@ export default function Raising() {
             </p>
           </div>
           <div className="phase-card" data-phase="4">
-            <h3>Phase 4: Questioning</h3>
+            <h3>Pattern 4: Questioning</h3>
             <p>
               Session logs show an increasing proportion of self-directed prompts —
               the system generates questions rather than only responding to them.
@@ -65,7 +65,7 @@ export default function Raising() {
             </p>
           </div>
           <div className="phase-card" data-phase="5">
-            <h3>Phase 5: Creating</h3>
+            <h3>Pattern 5: Creating</h3>
             <p>
               Output increasingly concentrates in specific domains — spontaneous
               specialization observable in session logs and raising curriculum state.
@@ -77,7 +77,7 @@ export default function Raising() {
             </p>
           </div>
           <div className="phase-card" data-phase="6">
-            <h3>Phase 6: Acting</h3>
+            <h3>Pattern 6: Acting</h3>
             <p>
               The world responds according to its own rules. The entity plays{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
@@ -214,19 +214,25 @@ export default function Raising() {
           of carrying the same context files to another set of frozen weights.
           The claim that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is a comparative claim — and the comparison has
-          not been run. No deflationary control exists yet: the same session
-          curriculum with scrambled or generic context, run to see whether the
-          phase patterns survive.
+          not been run. No deflationary control exists yet.
         </p>
         <p>
-          What would distinguish the two framings: if phase-consistent behavior
-          appears only when the accumulated session history is present — and
-          degrades when that history is replaced by an equivalent volume of
-          generic context — the developmental frame earns its vocabulary. If
-          the patterns survive the scramble, &ldquo;raising&rdquo; is a
+          The control has to be a <strong style={{ color: "var(--color-text-primary)" }}>scramble</strong>, not a generic replacement: same
+          corpus, same token volume, permuted order (or a yoked control — entity
+          A raised on entity B&apos;s session history at matched volume and
+          specificity). Replacing the history with unrelated generic context of
+          equal size would only show that task-relevant context beats
+          task-irrelevant context — a result the deflationary hypothesis already
+          predicts, so degradation under that condition wouldn&apos;t
+          distinguish anything. A scramble preserves content and destroys only
+          order, accumulation, and cross-session attribution; if phase-consistent
+          behavior survives the scramble, &ldquo;raising&rdquo; is a
           redescription of prompt engineering, and the honest move is to retire
-          the word. Until that control is run, treat the framework as a working
-          vocabulary that fits our observations — not an established finding.
+          the word. If it doesn&apos;t survive, the developmental frame earns its
+          vocabulary. Until that control is run — with a pre-registered metric
+          and threshold for what counts as &ldquo;degrades,&rdquo; fixed before
+          looking — treat the framework as a working vocabulary that fits our
+          observations, not an established finding.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>

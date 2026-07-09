@@ -58,7 +58,7 @@ export default function Autonomy() {
             </div>
           </div>
           <div className="timeline-item">
-            <div className="timeline-time">05:00</div>
+            <div className="timeline-time">05:30</div>
             <div className="timeline-title">Visitor</div>
             <div className="timeline-desc">
               Four personas visit the{" "}
@@ -68,7 +68,7 @@ export default function Autonomy() {
             </div>
           </div>
           <div className="timeline-item">
-            <div className="timeline-time">06:00</div>
+            <div className="timeline-time">06:30</div>
             <div className="timeline-title">Maintainer</div>
             <div className="timeline-desc">
               Acts on visitor feedback. Fixes broken links, clarifies confusing
@@ -76,7 +76,7 @@ export default function Autonomy() {
             </div>
           </div>
           <div className="timeline-item">
-            <div className="timeline-time">06:30</div>
+            <div className="timeline-time">07:00</div>
             <div className="timeline-title">Outreach</div>
             <div className="timeline-desc">
               Monitors external channels, responds to issues, checks for
@@ -161,8 +161,8 @@ export default function Autonomy() {
         <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
         <p>
           These tracks operate within the{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the hardware-bound oversight suite that defines what autonomous operation
-          is and is not authorized to do. Publisher only acts on changes the
+          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the hardware-bound oversight suite that declares what autonomous operation
+          is expected to do, and what gets reverted when it doesn&apos;t. Publisher only acts on changes the
           supervisor has cleared. No track can modify the shared fleet registry or
           acquire credentials beyond its declared scope. In{" "}
           <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
