@@ -28,6 +28,9 @@ export default function Projects() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Developmental and lifecycle terms below — &ldquo;raising&rdquo;, &ldquo;identity&rdquo;, &ldquo;die and rebirth&rdquo;, &ldquo;world-shaper&rdquo; — are functional descriptions of system behavior, not phenomenal claims. See the <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link> page for the full framing and consciousness caveats.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Status labels: <strong style={{ color: "var(--color-text-primary)" }}>runnable</strong> = clone it and it executes end to end today (a demo, a script, a server) — not a claim about polish or completeness. <strong style={{ color: "var(--color-text-primary)" }}>research-stage</strong> = design docs, specs, and experiments; may not run end to end without additional setup or missing pieces.
+        </p>
         <div className="grid-2">
           <ProjectCard
             name="Web4"

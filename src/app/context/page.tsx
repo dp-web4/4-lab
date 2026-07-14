@@ -70,6 +70,7 @@ export default function Context() {
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
                 ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing one coherence equation across scales. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
+                ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — described as tired, energized, or in need of rest. Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
                 ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context."],
                 ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — the fleet's society-host machine, running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
@@ -112,6 +113,18 @@ export default function Context() {
           and manages its own experience buffer. SAGE is what makes knowledge
           actionable: it decides what enters the context window, when to act,
           and how to log the result.
+        </p>
+        <p id="sage-loop" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          The 12 steps, in order: sense &rarr; salience &rarr;{" "}
+          <strong>metabolize</strong> (compute{" "}
+          <Link href="#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolic state</Link>{" "}
+          — internal load: tired, energized, needs rest) &rarr;{" "}
+          <strong>posture</strong> (translate the trust landscape into a
+          behavioral stance — cautious, exploratory, and so on — not just a
+          spend limit) &rarr; select &rarr; <strong>budget</strong> (commit an
+          ATP for the chosen action) &rarr; execute &rarr; learn &rarr;
+          remember &rarr; oversee &rarr; filter &rarr; act. The last two,
+          filter and act, are where PolicyGate (below) sits.
         </p>
         <p id="governance-oversight" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           Terminology note &mdash; the governance&rarr;oversight correction, in
@@ -519,6 +532,36 @@ export default function Context() {
           with the criteria used to judge behavioral consistency, an ARC
           ablation baseline, and independent replication of the coupling
           experiment. None of these exist yet.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Session-count basis:</strong>{" "}
+          this site currently uses at least three different counting bases for
+          &ldquo;sessions,&rdquo; not yet reconciled to one figure: cumulative
+          raising sessions across the fleet since tracking began
+          (&ldquo;900+&rdquo; on{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
+          and the home page), current-phase per-machine counts (
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>,
+          e.g. Sprout&apos;s &ldquo;115+&rdquo;), and Sprout&apos;s own
+          T-numbered turn count (&ldquo;T246&rdquo;) and the &ldquo;180+
+          sessions&rdquo; figure on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
+          from an earlier identity-portability snapshot. Treat each number as
+          scoped to the page it appears on until a unified counting standard
+          exists.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Verification independence:</strong>{" "}
+          every check described on this site today is run by the fleet on
+          itself. Crystallization is evaluated by a fleet peer (Nomad); the
+          public site is audited by the Visitor track and repaired by the
+          Maintainer track (both fleet-run); human review of the resulting
+          logs is asynchronous with no committed cadence (see{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
+          There is no external, blinded, or third-party check anywhere in this
+          loop yet. For a lab whose research subject is trust and oversight,
+          that is a real gap, not a footnote — named here so it stays visible
+          rather than staying implicit.
         </p>
       </section>
     </>

@@ -47,9 +47,13 @@ export default function ArcAgi3Page() {
           <div className="card" style={{ borderLeft: "3px solid #10b981" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Governance Engine)</h4>
             <p style={{ fontSize: "0.875rem" }}>
-              The cognition loop has 12 functional steps: Sense &rarr; salience &rarr; metabolize &rarr;
+              The cognition loop has 12 functional steps: Sense &rarr; salience &rarr;{" "}
+              <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolize</Link> &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; oversee &rarr; filter &rarr; act. PolicyGate &mdash; a{" "}
+              remember &rarr; oversee &rarr; filter &rarr; act. See{" "}
+              <Link href="/context#sage-loop" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+              for what each of the non-obvious steps (metabolize, posture, budget) means.
+              PolicyGate &mdash; a{" "}
               <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
               sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>

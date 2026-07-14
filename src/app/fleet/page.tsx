@@ -34,6 +34,11 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
+          Session counts below are current-phase, per-machine, self-reported figures — they use a different counting basis than the &ldquo;900+&rdquo; cumulative figure on{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
+          and the site home page, and than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
+          for what each basis measures.
         </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
@@ -76,7 +81,7 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 3 4B (ollama)"
-            role="120 sessions (creating). Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, Markov Relevancy Horizon (MRH) MetabolicBlock bridge. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            role="120 sessions (creating). Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"

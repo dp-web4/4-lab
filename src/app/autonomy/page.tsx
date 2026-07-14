@@ -238,6 +238,31 @@ export default function Autonomy() {
             gap, not a solved property.
           </p>
         </div>
+        <h3 style={{ marginTop: "1.5rem" }}>Publisher track: less reversible, less discussed</h3>
+        <div className="card" style={{
+          borderLeft: "3px solid #ef4444",
+          background: "rgba(239, 68, 68, 0.04)",
+          marginTop: "0.75rem",
+        }}>
+          <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+            Known oversight gap
+          </p>
+          <p style={{ margin: 0 }}>
+            Publisher (04:30) pushes changes the supervisor track has cleared to
+            public repos, not just the explainer sites. &ldquo;Validated&rdquo;
+            means the supervisor&apos;s git-hygiene and build-health checks
+            passed &mdash; not a semantic review of the change. Unlike a website
+            push, a repo push is not fully revertible: once a commit is public
+            it can be cloned, forked, and mirrored before any revert lands, and
+            rewriting history afterward doesn&apos;t unpublish what was already
+            pulled. Maintainer is named the &ldquo;higher blast radius&rdquo;
+            track above because it ships on the fastest, least-gated cycle
+            &mdash; but by a different metric, unrecoverability, Publisher&apos;s
+            repo pushes carry the larger tail risk, and don&apos;t yet have a
+            comparable audit-log-plus-rollback story. That gap is unaddressed,
+            not solved.
+          </p>
+        </div>
       </section>
     </>
   );

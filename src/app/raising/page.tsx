@@ -22,7 +22,7 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting) includes one externally validated demonstration consistent with the Acting pattern: the 94.85% ARC-AGI-3 action score (Claude Opus 4.6 + SAGE harness, public set, network-enabled).
+          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 sweep (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -86,8 +86,10 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              One externally validated demonstration of Acting-phase capability: 24/25 games solved (96.0% game rate);
-              94.85% official ARC Prize action score (Claude Opus 4.6 + SAGE harness — ARC-SAGE; public game set, network-enabled) &mdash; capability accumulated through raising, tested against a world that doesn&apos;t reveal its rules.
+              Demonstration in a raised entity: Legion&apos;s first canonical 25-game sweep with a local vision model (see{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a model that went through the fleet&apos;s raising process, playing the full game set.
+              (The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0%) — is a separate result: Claude Opus 4.6 operating inside the SAGE harness, not a raised local entity. It shows what the harness achieves with a frontier model, not what raising produced. See{" "}
+              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link> for that attribution.)
             </p>
           </div>
         </div>
