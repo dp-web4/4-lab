@@ -1,0 +1,19 @@
+Starting 4-lab Maintainer Session at Tue Jul 14 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_446.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260711_180257.json => identity_20260714_060141.json} (93%)
+Session complete. Summary:
+
+**Fleet sync**: manifest matched the page exactly on all fields — no page changes needed. Flagged one manifest-side anomaly (Sprout's "Qwen 3.5 2B" doesn't exist as a model) that's out of my scope to fix since it's owned by Sprout's own manifest entry, not a page/manifest mismatch.
+
+**Terminology**: zero drift, fourth consecutive session confirming it — recorded as a baseline.
+
+**Fixes shipped** (build verified, pushed to main):
+- Fixed the compositional error where /raising cited a Claude Opus 4.6 score as evidence of a *raised* entity's development — re-evidenced with Legion's actual local-model result and clearly separated the two claims
+- Added the missing Publisher blast-radius analysis to /autonomy (repo pushes aren't revertible the way website deploys are)
+- Clarified Nomad's unparseable "MRH MetabolicBlock bridge" phrase
+- Added the "metabolic state" glossary entry and enumerated the SAGE 12-step loop with glosses for metabolize/posture/budget (unanimous finding across 3 visitor passes)
+- Added session-count-basis and verification-independence disclosures to /context's Evidence & limitations
+- Defined "runnable" vs "research-stage" on /projects
+
+Deferred items (methodology questions like the scramble-test design, equation notation redesign, and several lower-priority Tier 2/3 items) are logged in `maintainer/logs/2026-07-14.md` for a future session.
