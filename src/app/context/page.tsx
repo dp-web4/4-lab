@@ -49,6 +49,7 @@ export default function Context() {
             <tbody>
               {[
                 ["web4", "Web4", "—", "A trust-native ontology for AI agents, devices, and people — not architecture or infrastructure."],
+                ["trust-native", "Trust-native", "—", "Trust as a primitive of the ontology, not a feature bolted on: every relationship carries T3/V3 tensors bound to LCTs and scoped by MRH. The term names an ontological commitment — the verifiable substrate (witnessed history) and the earned record (tensors updated by interaction) both follow from it; it is not, by itself, a cryptographic guarantee."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],

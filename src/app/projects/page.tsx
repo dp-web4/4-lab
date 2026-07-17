@@ -104,7 +104,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SNARC"
-            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles. Captures what matters, forgets what doesn't, consolidates patterns while sleeping. Code lives in the dp-web4/engram repo — that's where the link below lands."
+            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles (offline consolidation passes between sessions). Captures what matters, forgets what doesn't, consolidates patterns while sleeping. SNARC ships packaged as the engram plugin — the dp-web4/engram repo is where the code lives, and where the link below lands."
             accentColor="#10b981"
             isPublic={true}
             maturity="runnable"
@@ -112,7 +112,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Membot"
-            description="Brain cartridge server for AI agents. Embedding-based semantic memory — 768-dim Nomic embeddings + binary Hamming codes + keyword reranking. Swappable cartridges per knowledge domain. Currently integrated with SNARC in a dual-write experiment testing whether embeddings find connections keywords miss (7/7 semantic reach, 30% divergent tail)."
+            description="Brain cartridge server for AI agents — a cartridge is a swappable, mountable memory store for one knowledge domain. Embedding-based semantic memory — 768-dim Nomic embeddings + binary Hamming codes (compact binary fingerprints matched by bit-distance for fast candidate search) + keyword reranking. Currently integrated with SNARC in a dual-write experiment testing whether embeddings find connections keywords miss (7/7 semantic reach, 30% divergent tail)."
             accentColor="#f97316"
             isPublic={true}
             maturity="runnable"

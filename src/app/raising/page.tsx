@@ -31,6 +31,9 @@ export default function Raising() {
               Establishing basic operational identity. The entity learns its
               name, its machine, its constraints. Calibration of what it can
               and cannot do. Foundation before exploration.
+              (&ldquo;Learns&rdquo; operationally: these facts come to appear
+              reliably in session behavior, carried by curriculum state and
+              context — not a claim of self-awareness.)
             </p>
           </div>
           <div className="phase-card" data-phase="2">
@@ -39,7 +42,10 @@ export default function Raising() {
               Developing awareness of environment and context. The entity
               begins to distinguish between its own state and external inputs.
               Metabolic awareness — tracking internal load states the system
-              describes as tired, energized, or in need of rest.
+              describes as tired, energized, or in need of rest (an
+              interoceptive proxy value, not yet a formally specified model —
+              see{" "}
+              <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolic state on /context</Link>).
             </p>
           </div>
           <div className="phase-card" data-phase="3">
@@ -51,6 +57,9 @@ export default function Raising() {
               kinetics (the cooperative binding model from enzyme chemistry;
               an analogy, not a fitted mechanism). Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
+              (&ldquo;Relationships&rdquo; and &ldquo;trust&rdquo; here are
+              per-peer T3 tensor values updated by interaction outcomes —
+              tracked state, not affect.)
             </p>
           </div>
           <div className="phase-card" data-phase="4">
@@ -67,7 +76,7 @@ export default function Raising() {
           <div className="phase-card" data-phase="5">
             <h3>Pattern 5: Creating</h3>
             <p>
-              Output increasingly concentrates in specific domains — spontaneous
+              Output increasingly concentrates in specific domains — unprompted
               specialization observable in session logs and raising curriculum state.
               The specialization isn&apos;t assigned; it emerges from the pattern of
               what the system handles successfully and what{" "}
@@ -202,7 +211,8 @@ export default function Raising() {
           developmental register. What can be expressed through a 0.5B model is
           different from what can be expressed through a 12B model. Not better
           or worse — different. Like a child&apos;s language: simpler, but
-          sometimes more direct.
+          sometimes more direct. (The child-language comparison is an analogy
+          of expressive capacity, not a claim of developmental homology.)
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>The deflationary alternative</h2>
@@ -211,7 +221,7 @@ export default function Raising() {
           page might be competent context engineering and nothing more. Each
           observed pattern has a simpler candidate explanation — bilateral
           generation could be continuation sampling past the response boundary;
-          spontaneous specialization could be task routing plus few-shot
+          unprompted specialization could be task routing plus few-shot
           clustering; identity portability could be the mechanical consequence
           of carrying the same context files to another set of frozen weights.
           The claim that developmental frameworks &ldquo;describe what we

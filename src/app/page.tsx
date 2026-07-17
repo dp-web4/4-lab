@@ -16,12 +16,12 @@ export default function Home() {
           theoretical frameworks that connect them, across a heterogeneous fleet
           of machines that teach, validate, and raise each other.
         </p>
-        <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
-          In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
-        </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
           Developmental language on this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;, and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a claim about consciousness or experience. Full framing on{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>.
+        </p>
+        <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
+          In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
         </p>
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
@@ -373,7 +373,7 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SNARC</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Surprise / Novelty / Arousal / Reward / Conflict &mdash;
-              salience-gated memory for agent sessions. Tool calls scored on
+              salience-gated memory for Claude Code sessions. Tool calls scored on
               5 dimensions; what matters is kept, routine noise is forgotten.
             </p>
           </div>
