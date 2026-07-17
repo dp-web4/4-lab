@@ -2,3 +2,23 @@ Starting 4-lab Maintainer Session at Fri Jul 17 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_459.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260715_000351.json => identity_20260717_060341.json} (91%)
+Session complete — committed as `898cb10` and pushed; Vercel will auto-deploy.
+
+## Summary
+
+**Fleet sync**: All six machine entries in `fleet/page.tsx` match the manifest exactly (models, backends, LoRA flags, hardware, roles) — no update needed.
+
+**Terminology**: All four visitor passes found **zero canonical drift** — every expansion site-wide is verbatim-correct. So today's work was definition coverage and caveat discipline, not corrections:
+
+- **/context**: Added a "Trust-native" glossary entry — the site's most-used undefined term (Pass 4's top finding). Defined as an ontological commitment (trust as a primitive, T3/V3 bound to LCTs), explicitly not a cryptographic guarantee by itself.
+- **/projects**: SNARC card now says it "ships packaged as the engram plugin" (Pass 3's top fix — the link previously looked wrong to anyone checking it); glossed "dream cycles," "cartridge," and "Hamming codes."
+- **/raising**: Applied the page's own caveating discipline uniformly — bracketed "learns" (Pattern 1), "relationships/trust" as tracked T3 state (Pattern 3), changed "spontaneous specialization" to "unprompted" in both occurrences, flagged the child-language comparison as analogy not homology, and added the metabolic-state proxy caveat with a /context link.
+- **/ (home)**: Moved the consciousness disclaimer to sit directly under the vivid hero language so skimmers hit the bracket first; aligned SNARC's scope phrase to "Claude Code sessions."
+
+**Stale findings closed by checking source**: over half the visitor findings were already fixed before they browsed — p_crit *is* in /context, Hardbound *is* defined on /autonomy, /principles *does* expand T3/V3/SAGE, and both ARC figures already appear together on / and /projects. The three cross-fetch contradictions between passes all resolved in favor of the pages being correct.
+
+**Build**: `npx next build` passed with zero errors, all 12 routes prerendered.
+
+**Deferred**: fleet communication mechanics and the identity-transfer state-file pointer (both need accurate detail from SAGE/HUB repos — shouldn't be invented), plus the evidence-class upgrades that belong to research tracks, all logged in `logs/2026-07-17.md`.
+
+One observation worth surfacing: the loop is converging — zero drift and a majority-stale findings list suggests the visitor track's repeat terminology audits are hitting diminishing returns. Fresh personas or claim-validation passes (checking whether research content is *true*, which Pass 4 notes nobody in the loop does) would be higher-value next iterations.
