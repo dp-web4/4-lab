@@ -2,3 +2,20 @@ Starting 4-lab Maintainer Session at Sat Jul 18 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_463.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260716_000331.json => identity_20260718_060147.json} (91%)
+Maintainer session complete — pushed as `4565ea7`, Vercel is auto-deploying. Build passed with zero errors (12/12 pages).
+
+**The headline from today's visitor log: zero canonical drift across all nine pages, confirmed by all four personas including the Web4 Contributor authority pass.** So today's work was coverage and accuracy, not correction:
+
+**Fleet sync**: manifest matches the page on all six machines — no card changes needed.
+
+**Most substantive fixes:**
+- **T3/V3 operationalization** (the Researcher's top complaint: "unfalsifiable from the page"). Instead of inventing an illustration, I grounded a worked numeric example in the actual fleet code (`SAGE/sage/federation/peer_trust.py`): per-peer triplets start at neutral 0.5, outcome deltas scale by EMA α=0.1 (success: Talent 0.500→0.505; timeout: Temperament 0.500→0.490), reputation is the geometric mean, trust is directional. The example explicitly flags that this is the simplified working form, not the canonical RDF-sub-graph spec.
+- **Found a real inaccuracy while doing that**: /fleet said "Trust starts at zero" but the implementation initializes at 0.5, explicitly "not trusted, not distrusted." Corrected the page to match the code.
+- **/projects quick-start block** — the Developer persona's biggest conversion gap; clone commands no longer hide on /links only, and the "no Jetson required" question is answered.
+- **SAGE rename policy** now stated in one sentence at the governance→oversight anchor (both Contributor and Tech Writer asked), plus collision notes for synthon/chemistry, ATP/biology, and the "Markov" naming, hedge-first ordering for "identity transfer," and the single-trial coupling figure moved off the landing page.
+
+**One visitor claim didn't survive verification**: the Tech Writer reported ATP/ADP/R6/MCP/SNARC unexpanded on /raising — grep shows none of those terms appear on that page. Logged as a stale/hallucinated observation; I added the general glossary pointer anyway since that half of the ask was real.
+
+**Deferred to you (policy, not friction)**: the Researcher's HIGH item asking for a committed human-review cadence on the Maintainer/Publisher tracks. I deliberately didn't invent an SLA — this track writing its own oversight terms is exactly the self-audit closure /context warns about. Same for demoting synthon from Principle 5 and soliciting external review. Those three need your call.
+
+So what: the visitor→maintainer loop has crossed from drift-repair into evidence-hardening — today's session made a headline construct falsifiable from the page and caught the site contradicting its own implementation. That second one is the interesting signal: grounding prose in code finds bugs in the prose.
