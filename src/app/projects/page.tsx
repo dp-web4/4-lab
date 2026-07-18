@@ -31,6 +31,14 @@ export default function Projects() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Status labels: <strong style={{ color: "var(--color-text-primary)" }}>runnable</strong> = clone it and it executes end to end today (a demo, a script, a server) — not a claim about polish or completeness. <strong style={{ color: "var(--color-text-primary)" }}>research-stage</strong> = design docs, specs, and experiments; may not run end to end without additional setup or missing pieces.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          This is the most acronym-dense page on the site. Every Web4 term the
+          cards use (LCT, T3/V3, MRH, ATP/ADP, R6, MCP, RDF, SNARC) is defined
+          in the{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>
+          {" "}— the cards expand each on first use, but the glossary is the
+          one-stop reference.
+        </p>
         <div className="grid-2">
           <ProjectCard
             name="Web4"
@@ -61,7 +69,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (WebAuthn + CTAP2), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued; private as the fleet's oversight/security layer. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2 — the WebAuthn browser API plus CTAP2, the Client to Authenticator Protocol), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued; private as the fleet's oversight/security layer. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -162,6 +170,22 @@ export default function Projects() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
+        <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
+        <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel (recommended first clone)
+git clone https://github.com/dp-web4/SAGE
+cd SAGE
+# See README for Python/conda setup and first session instructions
+
+# ACT — Agentic Context Tool (Cosmos SDK)
+git clone https://github.com/dp-web4/ACT
+cd ACT
+# See README for Go/Cosmos SDK setup`}</pre>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          SAGE runs on a single machine — no Jetson required. Each runnable
+          repo&apos;s README carries its dependency list and first-run steps;
+          licenses and the full repo list are on{" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
+        </p>
         <p>
           If you want to contribute or experiment:{" "}
           <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>SAGE</a>{" "}

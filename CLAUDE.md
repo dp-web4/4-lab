@@ -90,7 +90,7 @@ src/app/
 <!-- gitnexus:keep -->
 # GitNexus — Code Knowledge Graph
 
-Indexed as **4-lab** (64 nodes, 77 edges). MCP tools available via `mcp__gitnexus__*`.
+Indexed as **4-lab** (168 symbols, 183 relationships, 0 execution flows). MCP tools available via `mcp__gitnexus__*`.
 
 Re-index: `node /mnt/c/exe/projects/ai-agents/GitNexus/gitnexus/dist/cli/index.js analyze`
 

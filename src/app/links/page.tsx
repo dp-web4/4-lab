@@ -39,7 +39,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 verified by V3, contextualized by MRH (Markov Relevancy Horizon), resources tracked via ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), augmented with MCP and RDF"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources tracked via ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"

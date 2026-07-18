@@ -19,6 +19,12 @@ export default function Raising() {
           response diversity and phase-appropriate task success rates —
           measurable observables, not phenomenal claims.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
+          Web4 vocabulary on this page (T3, V3, MRH, LCT, LoRA) is expanded
+          inline on first use; the full reference for every term on the site is
+          the{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>

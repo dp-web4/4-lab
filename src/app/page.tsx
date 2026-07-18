@@ -363,9 +363,10 @@ export default function Home() {
               An emergent coherence entity formed when components interact
               recursively &mdash; sustained by the recursion, not external
               coordination. Observable: coherence holds above a coupling
-              threshold; below it, components drift independently. Preliminary
-              (1 trial, not replicated): ~1% sparse coupling → ~35% coherence
-              gain. See{" "}
+              threshold; below it, components drift independently. The
+              supporting coupling experiment is preliminary &mdash; a single
+              unreplicated trial, so the numbers stay off this landing page;
+              they live with their caveats on{" "}
               <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 5</Link>.
             </p>
           </div>

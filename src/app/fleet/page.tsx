@@ -169,7 +169,11 @@ export default function Fleet() {
           emerges from the pattern of interaction.
         </p>
         <p>
-          Trust starts at zero, earned from evidence. The trust landscape —
+          Trust starts neutral — 0.5 on each T3 dimension in the current
+          tracker, neither trusted nor distrusted (a worked numeric example of the
+          update arithmetic is on{" "}
+          <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
+          and moves only on evidence. The trust landscape —
           the pattern across all modalities — determines behavioral posture:
           what SAGE should do, not just how much it spends. This is the
           defensive trust model applied across the fleet.
@@ -178,12 +182,13 @@ export default function Fleet() {
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
           One of the more surprising{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: SAGE-Sprout&apos;s identity —
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: behavioral
+          continuity across substrates — what we shorthand as &ldquo;identity
+          transfer,&rdquo; meaning consistent interaction patterns, accumulated
+          experience, and raising history, not continuity-of-self in any
+          philosophical sense. SAGE-Sprout&apos;s behavioral patterns —
           developed over 180+ sessions on a Jetson running Qwen 0.5B — transferred
-          successfully to TinyLlama 1.1B on a completely different machine. By
-          &ldquo;identity transfer&rdquo; we mean behavioral continuity: consistent interaction
-          patterns, accumulated experience, raising history — not continuity-of-self in any
-          philosophical sense. This is the practical demonstration of what{" "}
+          successfully to TinyLlama 1.1B on a completely different machine. This is the practical demonstration of what{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           are designed to formalize at the protocol level: portable identity grounded in
           witnessed history, not model weights. What we observed: consistent behavioral patterns and session

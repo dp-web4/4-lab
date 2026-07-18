@@ -91,7 +91,7 @@ export default function Autonomy() {
               thoroughly, writes up findings. This is where new knowledge enters
               the system. The Explorer uses a persistent{" "}
               <strong style={{ color: "var(--color-text-primary)" }}>NotebookLM notebook</strong>{" "}
-              that accumulates sources across sessions — papers, site pages,
+              (Google&apos;s AI research-notebook tool) that accumulates sources across sessions — papers, site pages,
               experiment results — enabling multi-source synthesis that a single
               WebFetch pass can&apos;t provide.
             </div>
@@ -215,7 +215,8 @@ export default function Autonomy() {
           </p>
           <p style={{ margin: 0 }}>
             The maintainer loop acts on visitor feedback and autonomously commits
-            and pushes to Vercel — the only track that ships changes to the public
+            and pushes to Vercel (the platform that hosts and auto-deploys this
+            site) — the only track that ships changes to the public
             site without a human gate. Its failure modes differ from the visitor
             loop: a wrong push deploys before review. Known failure patterns:
             acting on a visitor suggestion that pattern-matched but lacked semantic

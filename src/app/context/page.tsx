@@ -55,7 +55,7 @@ export default function Context() {
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root."],
                 ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3: worth assessed, claims truthful, reasoning sound."],
-                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect — scopes T3/V3 to context."],
+                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect — scopes T3/V3 to context. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
@@ -137,7 +137,9 @@ export default function Context() {
           site. Names minted before the correction are retained where they are
           load-bearing: &ldquo;Governance&rdquo; in SAGE&apos;s name (kept
           across code, papers, and the ARC Prize benchmark) and the
-          web4-governance repo slugs. Other pages that mention the correction
+          web4-governance repo slugs. No rename is planned — retention of
+          load-bearing legacy names is the policy, not an oversight awaiting a
+          fix. Other pages that mention the correction
           link here rather than re-explaining it.
         </p>
 
@@ -257,7 +259,7 @@ export default function Context() {
           &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
-          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — portable identity grounded in witnessed history, not model weights<br />
+          MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — verifiable digital presence that accumulates witnessed history; identity grounded in record, not model weights<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
           MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
         </p>
@@ -317,7 +319,10 @@ export default function Context() {
           action&apos;s actual outcome — the spent form of the ATP. Every
           resource commitment in a Web4 system produces both: one artifact for
           the intention, one for the result. Together they make autonomous
-          resource flows auditable without a central ledger.
+          resource flows auditable without a central ledger. The biochemistry
+          namesake (adenosine tri-/diphosphate) is a deliberate metaphor —
+          allocate, spend, recharge, like ATP&rarr;ADP in a cell — not a claim
+          of biological mechanism.
         </p>
 
         <h3>T3 / V3: trust and value tensors</h3>
@@ -332,6 +337,23 @@ export default function Context() {
           are verified against each other — T3/V3 in the Web4 equation means
           &ldquo;trust verified by value.&rdquo; Both bind to entity-role pairs via
           RDF triples scoped by MRH. (&ldquo;Tensor&rdquo; here means a structured multi-component quantity — not a rank-≥2 array in the linear-algebra sense.)
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Worked numeric example, from the fleet&apos;s current implementation
+          (the peer trust tracker in the public SAGE repo): each machine keeps a
+          per-peer T3 triplet, each dimension a value in [0, 1], initialized at
+          a neutral 0.5 &mdash; not trusted, not distrusted. Interaction outcomes
+          apply fixed deltas scaled by an exponential-moving-average factor
+          (&alpha; = 0.1) and clamped to [0, 1]: a successful task nudges the
+          peer&apos;s Talent from 0.500 to 0.505 (+0.05 delta &times; &alpha;); a
+          timeout drops Temperament from 0.500 to 0.490 (&minus;0.10 &times; &alpha;)
+          while leaving Talent and Training untouched. A single reputation
+          score, when needed, is the geometric mean of the three dimensions.
+          Trust is directional &mdash; CBP&apos;s trust in Thor can differ from
+          Thor&apos;s trust in CBP. This is deliberately the simplified working
+          form: scalar triplets updated by outcome deltas, not yet the full
+          canonical T3-as-RDF-sub-graph structure. The gap between the two is
+          open work, not a hidden equivalence.
         </p>
 
         <h3>R6: Six-Element Action Framework</h3>
@@ -410,7 +432,9 @@ export default function Context() {
           observation (single trial, not independently replicated): ~1% coupling
           density produced ~35% coherence gain. The term is 4-lab vocabulary
           describing a phenomenon observed across raising sessions and
-          cross-machine experiments. Full framing on{" "}
+          cross-machine experiments &mdash; no relation to the
+          &ldquo;synthon&rdquo; of retrosynthetic chemistry (Corey&apos;s
+          structural units); the name collision is coincidental. Full framing on{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
           (Principle 5).
         </p>
@@ -536,6 +560,11 @@ export default function Context() {
         </p>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Session-count basis:</strong>{" "}
+          a &ldquo;session&rdquo; is one continuous agent run — a single
+          invocation, cron-triggered or human-started, from start to
+          termination. A raising session is one such run devoted to raising; an
+          autonomous-track session is one scheduled run of that track. With that
+          unit fixed, the counting bases still differ:
           this site currently uses at least three different counting bases for
           &ldquo;sessions,&rdquo; not yet reconciled to one figure: cumulative
           raising sessions across the fleet since tracking began
