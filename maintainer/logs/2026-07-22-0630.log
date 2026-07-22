@@ -2,3 +2,18 @@ Starting 4-lab Maintainer Session at Wed Jul 22 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_479.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260719_180318.json => identity_20260722_060342.json} (88%)
+Session complete — pushed as `d3799c0`, Vercel will auto-deploy. Here's the summary:
+
+**Terminology: zero drift.** All four visitor passes independently confirmed no canonical drift across all nine pages — first fully clean audit worth noting. I also resolved the pass disagreement on the `/` operator key: grep confirms the disambiguation is present at all four equation displays (home, /context, /arc-agi-3, /projects), so Pass 3 was right and no fix was needed.
+
+**Fleet sync: all current.** Every machine card matches the manifest — including Sprout's "Qwen 3.5 2B," which the Web4 Contributor flagged as a nonexistent release. The manifest itself says `qwen3.5:2b` (updated by sprout, 2026-03-08), and the manifest is the source of truth, so the page stands. I flagged it as an upstream question for whoever maintains Sprout's manifest entry rather than "fixing" the page against its own source of truth.
+
+**Fixes shipped** (build passes, zero errors):
+- **Home**: anchor link at the top ("vocabulary primer below ↓") jumping to the on-page primer — the valid remainder of the highest-priority acronym-wall complaint. Notably, the "equation appears before its primer" claim was stale; the equation already sits inside the primer section.
+- **Autonomy**: "closed loop that improves site quality" → "surface-level site quality," with the human-dependent semantic-validation caveat — matching the page's own honest assessment.
+- **Principles**: fixed both use-before-definition orderings (synthon in Principle 1 now forward-references Principle 5 with its single-trial caveat; "attractors" glossed at first mention).
+- **Links**: added a "For researchers" paragraph — no papers/preprints published yet, Synchronism preprint in late revision, non-ARC claims rest on internal non-auditable logs. This is the actionable slice of the External Researcher's high-severity evidence-gap flag, stated without overclaiming.
+
+**Deferred** (in the session log): session-count authoritative basis and the plugins-in-forks question (both need facts I can't verify from this repo), and the scramble control / log-sample publication / Principle 9 scope items, which are researcher-level content decisions, not maintainer fixes.
+
+One observation worth surfacing: three of the visitor complaints referenced text that no longer exists in source ("memoriescape," "did this machine *choose*," equation-before-primer). Either the personas browsed a stale deploy or they're partly pattern-matching from prior logs — the visitor track may want a "quote the exact live text you're flagging" discipline, since I spent a real fraction of this session verifying phantom friction.
