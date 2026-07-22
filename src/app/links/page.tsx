@@ -11,7 +11,7 @@ export default function Links() {
           <ExternalLink
             href="https://synchronism-site.vercel.app"
             title="Synchronism"
-            description="75 pages covering the coherence equation, predictions, interactive tools, and honest assessments"
+            description="75 pages covering the coherence equation (Synchronism's central formalism — a research conjecture, not established physics), predictions, interactive tools, and honest assessments"
           />
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
@@ -133,6 +133,15 @@ cd ACT
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
           has 11 of 14 public repos (3 internal) — clone what interests you, experiment, and open a discussion if you want to engage.
+        </p>
+
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
+          For researchers: no papers or preprints are published yet — the
+          Synchronism preprint is in late revision, and the claims on this site
+          (other than the externally scored ARC-AGI-3 result) cite internal
+          session logs that are not yet externally auditable. Redacted log
+          samples and coding criteria are not published at this time; email
+          below to inquire.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>

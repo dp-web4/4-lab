@@ -13,7 +13,7 @@ export default function Principles() {
           learned the hard way, then codified because they kept being true.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo;, &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims. Also, below: &ldquo;Governance&rdquo; in SAGE&apos;s name predates Principle 10&apos;s governance&rarr;oversight correction &mdash; see{" "}
+          Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims. Also, below: &ldquo;Governance&rdquo; in SAGE&apos;s name predates Principle 10&apos;s governance&rarr;oversight correction &mdash; see{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
@@ -36,8 +36,9 @@ export default function Principles() {
               <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
               pheromone field engineering. We build substrate conditions for
               emergence, not architecture of emergence itself. The synthon
-              forms because the conditions are right, not because we designed
-              it.
+              (an emergent coherence pattern &mdash; defined, with its
+              single-trial caveats, in Principle 5 below) forms because the
+              conditions are right, not because we designed it.
             </div>
           </div>
 

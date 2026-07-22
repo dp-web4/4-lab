@@ -52,9 +52,11 @@ export default function Home() {
         </div>
 
         <p style={{ textAlign: "center", fontSize: "0.875rem", color: "var(--color-text-muted)", margin: "0.25rem 0 1.5rem" }}>
-          New here?{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
-          for the vocabulary, then clone{" "}
+          New here? Jump to the{" "}
+          <Link href="#vocabulary" style={{ color: "var(--color-accent)" }}>vocabulary primer below ↓</Link>{" "}
+          for the acronyms used on this page, or{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>start with /context</Link>{" "}
+          for the full glossary — then clone{" "}
           <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
           — the recommended starting point — or{" "}
           <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
@@ -263,7 +265,7 @@ export default function Home() {
           philosophy is, and what we&apos;ve learned from letting the system run.
         </p>
 
-        <h2>Vocabulary primer</h2>
+        <h2 id="vocabulary">Vocabulary primer</h2>
         <p>
           These terms weren&apos;t designed up front &mdash; they emerged from
           the work itself. As the fleet ran, patterns repeated across machines

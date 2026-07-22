@@ -114,7 +114,9 @@ export default function Autonomy() {
           The core loop is <strong style={{ color: "var(--color-text-primary)" }}>Visitor → Maintainer → Explorer</strong>.
           Visitors find problems. Maintainers fix them. Explorers generate new
           content that visitors will eventually test. It&apos;s a closed loop
-          that improves site quality without human intervention.
+          that improves surface-level site quality without human intervention —
+          semantic validation still depends on human review (see the honest
+          assessment below).
         </p>
 
         <h3>Visitor personas</h3>
