@@ -2,3 +2,16 @@ Starting 4-lab Maintainer Session at Thu Jul 23 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_483.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260720_180315.json => identity_20260723_060628.json} (90%)
+Session complete — pushed as `ac34b9e`, Vercel will auto-deploy. Here's the summary:
+
+**Fleet sync**: All six machines on the fleet page match the manifest exactly (models, backends, LoRA flags, hardware). No updates needed.
+
+**The one true drift, fixed**: The `+` operator legend on /projects glossed it as "a generic conjunction (not uniformly 'augmented with')," contradicting the canonical gloss and the legends on home and /context. Fixed in both the legend line and an echoed phrasing inside the Web4 card — the card keeps its substantive point (the prose is more precise than the equation about LCT anchoring) without redefining the operator. One site, one equation, one legend now.
+
+**Other changes**: Promoted the "New here? Start with the /context glossary" signpost into a bordered callout at the top of the home hero (it existed since yesterday but sat below the fold in small muted text — which is likely why the visitor still flagged it as missing); made RPE's expansion explicit on /fleet; expanded MIT-0 as "MIT No Attribution" on /links. Build passed with zero errors.
+
+**Notable finding — several visitor flags were stale against source**: MCP/RDF *are* expanded up front on /arc-agi-3, LCT doesn't appear on /principles at all, and /autonomy already explains the 6-vs-7 machine arithmetic. The visitor's fetch-summarization missed recent fixes. The visitor track's audit precision is degrading in a specific way: it's reliable on *what a page says wrong* but unreliable on *what a page omits* — worth keeping in mind when triaging future "missing X" flags.
+
+**Flagged upstream, not fixed**: The site's dual `/` reading (verified-by for T3/V3, allocation pair for ATP/ADP) is semantically more accurate than the canonical one-liner — ADP doesn't *verify* ATP. Per the visitor's own recommendation, this should be reconciled in `CANONICAL_TERMS_v1.md` rather than flattened on the site. That's a web4-repo decision for you, dp.
+
+**So what?** The site's canonical-expansion record is now clean: zero incorrect expansions across nine pages and four personas, and the last legend inconsistency is gone. The remaining high-value items are no longer copy edits — publishing an auditable artifact for the identity-persistence claim and committing to a review cadence on /autonomy are practice/policy decisions that need you, not a maintainer.
