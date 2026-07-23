@@ -62,7 +62,7 @@ export default function Fleet() {
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
             model="Phi-4 14B (ollama) · LoRA"
-            role="25+ sessions. Brain (functional analogy): dopamine / reward prediction error — scalar RPE that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
+            role="25+ sessions. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
             name="McNugget"

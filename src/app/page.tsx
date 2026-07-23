@@ -23,6 +23,12 @@ export default function Home() {
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
           In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
         </p>
+        <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem", padding: "0.6rem 0.9rem", border: "1px solid var(--color-accent)", borderRadius: "8px", display: "inline-block" }}>
+          <strong>New here?</strong> This site is acronym-dense. Start with the{" "}
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>{" "}
+          — every term on every page is defined there — or the{" "}
+          <Link href="#vocabulary" style={{ color: "var(--color-accent)" }}>vocabulary primer below ↓</Link>.
+        </p>
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
             src="/lab-hero.png"

@@ -21,7 +21,7 @@ export default function Projects() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = a generic conjunction (not uniformly &ldquo;augmented with&rdquo; — see the Web4 card below for where the prose is more precise than the equation)
+          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
@@ -42,7 +42,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (In the home-page equation, every one of these joins is the same + — a generic conjunction; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
+            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — with resources tracked via Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP), augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"

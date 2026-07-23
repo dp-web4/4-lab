@@ -79,7 +79,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0%), world models, multi-agent frame-questioning (MIT-0). Score carries caveats — see /arc-agi-3"
+            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0%), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
           />
           <ExternalLink
             href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
@@ -123,7 +123,7 @@ cd ACT
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          ARC-SAGE: MIT-0 (see repo). Gemma 4 Good Submission: Apache 2.0. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
+          ARC-SAGE: MIT-0 (MIT No Attribution; see repo). Gemma 4 Good Submission: Apache 2.0. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
         </p>
 
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
