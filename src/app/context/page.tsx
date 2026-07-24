@@ -11,7 +11,7 @@ export default function Context() {
           Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
-          Fourteen repos (eleven public), seven machines (six cognition + one society-host), multiple AI agents with overlapping but
+          Thirty-four repos (twenty-three public), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>

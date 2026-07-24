@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Seven machines. Fourteen repos.{" "}
+          Eight machines. Thirty-four repos.{" "}
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
@@ -21,7 +21,7 @@ export default function Home() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
-          In practice: six cognition machines (seven total including the society-host, HUB) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
+          In practice: six cognition machines (eight total including the society-hosts, HUB and pub) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
         </p>
         <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem", padding: "0.6rem 0.9rem", border: "1px solid var(--color-accent)", borderRadius: "8px", display: "inline-block" }}>
           <strong>New here?</strong> This site is acronym-dense. Start with the{" "}
@@ -32,7 +32,7 @@ export default function Home() {
         <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
           <Image
             src="/lab-hero.png"
-            alt="The dp-web4 research fleet — seven machines connected across a living workspace"
+            alt="The dp-web4 research fleet — eight machines connected across a living workspace"
             width={1200}
             height={800}
             priority

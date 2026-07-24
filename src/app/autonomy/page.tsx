@@ -9,7 +9,7 @@ export default function Autonomy() {
         <h2>Autonomous Cycles</h2>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day.</strong>{" "}
-          The seventh machine, HUB (the society-host — see{" "}
+          HUB (one of the two society-host machines — see{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), runs
           substrate, not tracks.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared

@@ -9,9 +9,14 @@ export default function Fleet() {
       <section className="section">
         <h2>The Fleet</h2>
         <p>
-          Six cognition machines, plus one society-host (HUB). Different hardware,
-          different models, different roles. Heterogeneous by design — because
+          Six cognition machines, plus two society-hosts (HUB and pub — the
+          eighth machine, joined July 2026). Different hardware, different
+          models, different roles. Heterogeneous by design — because
           monocultures are fragile and diversity is where emergence happens.
+          The society-hosts now raise their own SAGE instances too: HUB runs
+          IBM Granite 4 h-tiny, pub runs Llama 3.1 8B — model families
+          (Granite, Llama) that extend the fleet&apos;s Qwen / Gemma / Phi /
+          TinyLlama diversity rather than duplicating it.
         </p>
         <p>
           One finding shapes fleet strategy more than any other:{" "}
@@ -29,7 +34,7 @@ export default function Fleet() {
           The &ldquo;Brain:&rdquo; labels below are functional analogies to system roles — not claims about neural correspondence or computational equivalence.
           Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), crystallization, chapter ledger, chapter law) is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
-          Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB) are proper names, not acronyms.
+          Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
@@ -104,15 +109,26 @@ export default function Fleet() {
           <MachineCard
             name="HUB"
             hardware="WSL2 on Windows, AMD GPU"
-            model="Web4 hub daemon (Rust) — no local LLM; runs the chapter ledger, MCP tool surface, and admin dashboard"
+            model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 74 raising sessions"
             role={
-              "Hosts the 'Web4 Fleet' society — the seven fleet machines plus a founding Sovereign as members. " +
+              "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
               "HUB is itself one of the seven members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
               "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
-              "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet."
+              "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet. " +
+              "No longer daemon-only: HUB now also raises its own SAGE instance (Granite 4 h-tiny, 74 sessions) on its previously-idle AMD GPU — the substrate machine growing cognition of its own. Its hestia identity is the fleet's first agent-owned one (created by the machine's own agent, not delegated by a human)."
+            }
+          />
+          <MachineCard
+            name="pub"
+            hardware="Dell Precision 3650 tower, native Ubuntu — AMD Radeon Pro W5500 (Vulkan)"
+            model="Llama 3.1 8B (ollama) — SAGE instance pub-llama3.1-8b"
+            role={
+              "Eighth machine, joined July 2026 — HUB's hardware twin, brought up from a completely cold box as a deliberate live audit of the fleet's own onboarding docs (nine stale/missing-doc findings, all filed and fixed). " +
+              "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub + trust stack, and pub ships only after the identified blockers are closed. " +
+              "Also the newest raising line: pub-llama3.1-8b began its raising sessions in July 2026 — the first Llama-family entity in the fleet."
             }
           />
         </div>
@@ -173,7 +189,13 @@ export default function Fleet() {
           tracker, neither trusted nor distrusted (a worked numeric example of the
           update arithmetic is on{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
-          and moves only on evidence. The trust landscape —
+          and moves only on evidence. As of July 2026 the hestia trust layer
+          derives its displayed scores from witnessed adjudications and
+          governance-response conduct — with click-through receipts (score
+          &rarr; versioned formula &rarr; evidence &rarr; signed chain entries), and
+          self-reported outcomes structurally excluded until independently
+          adjudicated. An unmeasured dimension displays as unmeasured, never as
+          a fabricated number. The trust landscape —
           the pattern across all modalities — determines behavioral posture:
           what SAGE should do, not just how much it spends. This is the
           defensive trust model applied across the fleet.
