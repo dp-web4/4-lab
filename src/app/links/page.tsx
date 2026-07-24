@@ -118,7 +118,7 @@ git clone https://github.com/dp-web4/ACT
 cd ACT
 # See README for Go/Cosmos SDK setup`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          SAGE is the recommended starting point — it runs on a single machine, has 900+ internally logged raising sessions as context, and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-layer / Cosmos SDK side.
+          SAGE is the recommended starting point — it runs on a single machine, has 1,200+ internally logged raising sessions as context, and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-layer / Cosmos SDK side.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>

@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "4-lab | Eight Machines, One Recursive Learning Loop",
   description:
-    "The dp-web4 research collective: 8 machines (6 cognition + 2 society-hosts), 34 repos (23 public), autonomous AI agents that maintain sites, run research, raise other AI entities, and validate their own work.",
+    "The dp-web4 research collective: 8 machines (6 cognition + 2 society-hosts), 39 original repos (20 public) plus 32 forks of external work, autonomous AI agents that maintain sites, run research, raise other AI entities, and validate their own work.",
 };
 
 export default function RootLayout({

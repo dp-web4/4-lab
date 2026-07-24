@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Eight machines. Thirty-four repos.{" "}
+          Eight machines. Thirty-nine original repos.{" "}
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
@@ -357,7 +357,7 @@ export default function Home() {
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 900+ raising sessions
+              remember → oversee → filter → act). 1,200+ raising sessions
               across the fleet (internally logged; cumulative basis &mdash;
               per-machine figures elsewhere use different counting bases, see{" "}
               <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>).

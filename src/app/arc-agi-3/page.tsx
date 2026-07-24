@@ -144,7 +144,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Fleet</td>
-                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 1.1B (CBP, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) to 14B (Thor).</td>
+                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 0.8B (Sprout, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) to 27B (Thor).</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Methodology</td>

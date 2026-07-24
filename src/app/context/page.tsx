@@ -11,7 +11,7 @@ export default function Context() {
           Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
-          Thirty-four repos (twenty-three public), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
+          Thirty-nine original repos (twenty public — the org also carries 32 forks of external work we build on), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
@@ -569,7 +569,7 @@ export default function Context() {
           this site currently uses at least three different counting bases for
           &ldquo;sessions,&rdquo; not yet reconciled to one figure: cumulative
           raising sessions across the fleet since tracking began
-          (&ldquo;900+&rdquo; on{" "}
+          (&ldquo;1,200+&rdquo; on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and the home page), current-phase per-machine counts (
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>,
