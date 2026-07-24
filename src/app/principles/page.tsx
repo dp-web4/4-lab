@@ -49,7 +49,7 @@ export default function Principles() {
             </div>
             <div className="principle-text">
               When a pattern works at one scale, apply it at every scale. Not
-              unification for its own sake — pragmatic reuse.
+              unification, and not scope inflation — pragmatic reuse.
               Self-similar patterns at different scales. The Web4 equation
               describes the cell, not the system. Each entity instantiates
               the full stack at its own scale.

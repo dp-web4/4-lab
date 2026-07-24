@@ -65,8 +65,10 @@ export default function ArcAgi3Page() {
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#f97316" }}>Membot</h4>
             <p style={{ fontSize: "0.875rem" }}>
-              Retrievable experience cartridges. 768-dim Nomic embeddings +
-              binary Hamming codes + keyword reranking. A 4B model with a
+              Retrievable experience cartridges. 768-dim Nomic embeddings
+              (vector representations from the open Nomic embedding model) +
+              binary Hamming codes (compact binary fingerprints matched by
+              bit-distance for fast candidate search) + keyword reranking. A 4B model with a
               cartridge understands game mechanics correctly; the same model
               without one thinks it&apos;s placing black squares.
             </p>
@@ -89,8 +91,9 @@ export default function ArcAgi3Page() {
           with Claude Opus 4.6 as the model inside the SAGE cognition loop, on the public game set.
           The game-solve rate is 96.0% (24/25 games). These are two distinct metrics;
           the action score reflects action efficiency, not just whether a game was solved.
-          This demonstrates the ceiling &mdash; what the SAGE cognition loop can achieve
-          with a frontier model and network access.
+          This suggests the ceiling &mdash; what the SAGE cognition loop can achieve
+          with a frontier model and network access &mdash; though with the
+          harness-vs-model ablation unrun, &ldquo;suggests&rdquo; is the honest verb.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
           Attribution note: the result is Claude Opus 4.6 operating within the SAGE harness. The harness contributes the structured world-model building, R6 action framing, and multi-agent frame-questioning; the base model contributes inference. Phase 2 (local models) isolates the harness&apos;s independent contribution directly.
@@ -161,7 +164,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Cost</td>
-                <td style={{ padding: "0.375rem 0" }}>~$250 total API spend for 94.85%</td>
+                <td style={{ padding: "0.375rem 0" }}>~$250 total API spend for 94.85%. In ATP/ADP terms: the SAGE loop&apos;s budget step declares an allocation (ATP) before acting, and recorded spend (ADP) is what aggregates to this number — accounting, not enforcement.</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Human leaderboard</td>

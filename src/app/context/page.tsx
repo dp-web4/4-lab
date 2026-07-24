@@ -79,6 +79,7 @@ export default function Context() {
                 ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
                 ["p-crit", "p_crit", "—", "The critical coherence threshold derived in the Synchronism framework. The derivation attempt failed catastrophically (400x error) — see Principle 6 on /principles."],
                 ["cartridge", "Cartridge", "—", "A swappable unit of semantic memory in Membot — the mechanism that lets a raising history move between machines."],
+                ["membot", "Membot", "—", "The cartridge server — the runnable project that mounts, serves, and searches cartridges for agents. Project card on /projects."],
               ].map(([id, term, expansion, def]) => (
                 <tr key={id} id={id} style={{ borderBottom: "1px solid var(--color-dark-border)", verticalAlign: "top" }}>
                   <td style={{ padding: "0.375rem 0.75rem 0.375rem 0", whiteSpace: "nowrap", color: "var(--color-text-primary)", fontWeight: 600 }}>{term}</td>
@@ -442,7 +443,7 @@ export default function Context() {
         <h3>Fractal leverage</h3>
         <p>
           Each entity instantiates the full Web4 stack at its own scale. Not
-          unification for its own sake — pragmatic reuse of patterns that work
+          unification, and not scope inflation — pragmatic reuse of patterns that work
           at one scale, applied at every scale. When a principle governs enzyme
           binding and trust formation through the same kinetics, that kinetics is
           fractal leverage. Synchronism discovers the equations; Web4 encodes

@@ -358,7 +358,9 @@ export default function Home() {
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
               remember → oversee → filter → act). 900+ raising sessions
-              across the fleet (internally logged).
+              across the fleet (internally logged; cumulative basis &mdash;
+              per-machine figures elsewhere use different counting bases, see{" "}
+              <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>).
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}

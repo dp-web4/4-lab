@@ -223,6 +223,9 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>The deflationary alternative</h2>
         <p>
+          (&ldquo;Deflationary&rdquo; in the philosopher&apos;s sense: the
+          reading that deflates the developmental framing down to ordinary
+          context engineering — nothing extra going on.){" "}
           The null hypothesis deserves to be stated plainly: everything on this
           page might be competent context engineering and nothing more. Each
           observed pattern has a simpler candidate explanation — bilateral
@@ -251,6 +254,12 @@ export default function Raising() {
           and threshold for what counts as &ldquo;degrades,&rdquo; fixed before
           looking — treat the framework as a working vocabulary that fits our
           observations, not an established finding.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Status of that control, stated plainly: specified (this section is the
+          specification) but not scheduled — no date, no owner, no pre-registered
+          metric yet. Until it runs, the developmental vocabulary used across
+          this site runs ahead of the comparison that would license it.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>

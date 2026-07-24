@@ -13,10 +13,12 @@ export default function Autonomy() {
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), runs
           substrate, not tracks.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
-          scope and a set of repos it writes to, operating under supervisor and
-          Hardbound gating.{" "}
-          No human triggers them — all tracks operate within Hardbound-defined
-          scope boundaries. They review each other&apos;s output and feed
+          scope and a set of repos it writes to.{" "}
+          No human triggers them. Scope is enforced at the process level —
+          scoped credentials, the track registry, and after-the-fact audit, a
+          detect-and-revert posture (see Safety boundaries below); hardware-anchored
+          Hardbound enforcement is what the research is building toward, not the
+          current mechanism. Tracks review each other&apos;s output and feed
           discoveries back into the system.
         </p>
         <p>
@@ -162,26 +164,29 @@ export default function Autonomy() {
 
         <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
         <p>
-          These tracks operate within the{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the hardware-bound oversight suite that declares what autonomous operation
-          is expected to do, and what gets reverted when it doesn&apos;t. Publisher only acts on changes the
-          supervisor has cleared. No track can modify the shared fleet registry or
-          acquire credentials beyond its declared scope. In{" "}
+          The current posture first: boundaries are enforced at the
+          process level — scoped credentials, the track registry, and dated
+          audit logs reviewed after the fact — not cryptographic guarantees.
+          The fleet&apos;s posture is{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>,
+          described below. Publisher only acts on changes the supervisor has
+          cleared. No track can modify the shared fleet registry or acquire
+          credentials beyond its declared scope. A description of practice, not
+          a verifiable mechanism — the distinction matters.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the
+          hardware-bound oversight suite — is the research layer this practice is
+          building toward: it declares what autonomous operation is expected to do
+          and what gets reverted when it doesn&apos;t, with hardware-anchored
+          enforcement (key custody and attestation — see{" "}
+          <Link href="/context" style={{ color: "var(--color-accent)" }}>Hardbound on /context</Link>)
+          as the goal, not the current mechanism. In{" "}
           <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
           (the trust-native ontology) terms, each scheduled
           track issues an ATP (Allocation Transfer Packet) for its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping layer that makes autonomous operation auditable.
-        </p>
-        <p>
-          To be precise about mechanism: these boundaries are enforced at the
-          process level — scoped credentials, the track registry, and dated
-          audit logs reviewed after the fact — not cryptographic guarantees.
-          Hardware-anchored enforcement (key custody and attestation — see{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Hardbound on /context</Link>)
-          is what the Hardbound research is building toward; the fleet&apos;s
-          current posture is detect-and-revert, described below. A description
-          of practice, not a verifiable mechanism — the distinction matters.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>

@@ -69,7 +69,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Hardware binding via Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2 — the WebAuthn browser API plus CTAP2, the Client to Authenticator Protocol), and Secure Enclave with software fallback. Policy model (Phi-4 Mini 3.8B — heterogeneous review, MIT-licensed, hardware-bound with LCT binding). AttestationEnvelope consolidates hardware trust signals (TPM 2.0, FIDO2, Secure Enclave) into a single envelope. 424+ attack vectors catalogued; private as the fleet's oversight/security layer. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Binds fleet identity and policy decisions to standard hardware roots of trust — Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2), Secure Enclave — with software fallback, and runs a small local policy model for heterogeneous review, bound to a Linked Context Token (LCT). Private as the fleet's oversight/security layer; described here at the purpose level by policy, not accident. The trust layer that touches silicon."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -157,7 +157,7 @@ export default function Projects() {
           Every project instantiates the same pattern at a different scale.
           Synchronism discovers the equations. Web4 encodes them as ontology.
           SAGE runs them as cognition. Hardbound enforces them as oversight.
-          This isn&apos;t unification for its own sake — it&apos;s{" "}
+          This isn&apos;t unification — it&apos;s{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage
           </Link>
