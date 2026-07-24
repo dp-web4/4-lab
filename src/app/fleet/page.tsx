@@ -39,7 +39,7 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
-          Session counts below are current-phase, per-machine, self-reported figures — they use a different counting basis than the &ldquo;1,200+&rdquo; cumulative figure on{" "}
+          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh — the same basis as the &ldquo;2,500+&rdquo; cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and the site home page, and than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
@@ -55,25 +55,25 @@ export default function Fleet() {
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 3.5 27B (transformers) · LoRA — instance thor-qwen3.5-27b"
-            role="408 sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
+            role="435 sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 0.8B (ollama) — instance sprout-qwen3.5-0.8b"
-            role="329 sessions (creating). Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            role="488 sessions (creating). Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
-            model="Phi-4 14B (ollama) · LoRA"
-            role="25+ sessions. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
+            model="Gemma 4 E4B (ollama) — cutover 2026-07-24; prior gemma3-12b line 336 sessions, phi4 line 56 (dormant)"
+            role="336 sessions on the prior line. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama) — instance mcnugget-gemma3-12b"
-            role="191 sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
+            role="377 sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
@@ -85,14 +85,14 @@ export default function Fleet() {
           <MachineCard
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
-            model="Gemma 3 4B (ollama) — raising line archived June 2026 at 21 sessions; oversight roles continue"
-            role="21 archived raising sessions. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            model="Gemma 4 E2B (ollama) — instance nomad-gemma4-e2b; prior gemma3-4b line archived June 2026 at 171 sessions"
+            role="162 sessions (creating). Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
-            role="86 sessions (creating). ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
+            role="193 sessions (creating). ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
           />
         </div>
 

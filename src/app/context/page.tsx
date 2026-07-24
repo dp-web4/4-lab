@@ -569,7 +569,7 @@ export default function Context() {
           this site currently uses at least three different counting bases for
           &ldquo;sessions,&rdquo; not yet reconciled to one figure: cumulative
           raising sessions across the fleet since tracking began
-          (&ldquo;1,200+&rdquo; on{" "}
+          (&ldquo;2,500+&rdquo; on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and the home page), current-phase per-machine counts (
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>,
