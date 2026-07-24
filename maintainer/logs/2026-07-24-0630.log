@@ -2,3 +2,19 @@ Starting 4-lab Maintainer Session at Fri Jul 24 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_487.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260721_180550.json => identity_20260724_060440.json} (93%)
+Session complete — committed and pushed as `45dc988`, Vercel is auto-deploying. Build passed with zero errors.
+
+**Fleet Sync:** All six machines match the manifest exactly (models, backends, LoRA flags, hardware, roles) — no fleet page changes needed.
+
+**Terminology:** Zero canonical drift, confirmed by all four visitor passes and my own grep sweeps — fourth clean audit in a row. The one near-drift fix: "unification **for its own sake**" grammatically concedes the reuse might be unification-with-a-purpose, when canon says it isn't unification at all. It was on **three** pages (the visitor thought /principles was clean, but the weak variant was in the Principle 2 card too). All three now read "not unification, and not scope inflation — fractal leverage."
+
+**Substantive fixes shipped:**
+- **Hardbound card trimmed to purpose level** — removed AttestationEnvelope, the exact policy model, and the attack-vector count from the public /projects page. The project privacy rule ("describe purpose, never content") made this a policy call, not a judgment call, and the card now says the trim is deliberate.
+- **/autonomy posture reordering** — the page now states the actual mechanism first (scoped credentials + detect-and-revert) with Hardbound explicitly framed as research direction, in both the intro and Safety boundaries. Roadmap no longer reads as mechanism.
+- **/raising control status** — the scramble control is now explicitly "specified but not scheduled — no date, no owner, no pre-registered metric," converting the soft admission into a status without inventing a plan.
+- **/arc-agi-3** — "demonstrates the ceiling" → "suggests" (ablation-free result), Nomic/Hamming glosses, and the ATP→~$250 mapping — which I fact-checked against the ARC-SAGE README first (the harness genuinely used ATP budgeting) rather than inventing it.
+- Small glosses: Membot glossary row on /context, session-count basis footnote on home.
+
+**Flagged, not fixed:** The ARC-SAGE repo's own README says "**R6/R7 action framework**" — R7 is an explicitly non-canonical variant. That's upstream drift in a sibling repo, logged as a cross-site alert for its maintainer. Also worth checking sibling sites for the "for its own sake" construction, since it appeared three times here and likely came from shared source text.
+
+**Deferred with reasons:** /principles per-claim evidentiary tagging (wrong tags would be worse than none — needs human review), the /fleet witness-set question (fact I can't verify), and the published-log-sample suggestion (lab-level disclosure decision, but the researcher persona is right that it's the highest-leverage evidentiary improvement available — flagging upward).
