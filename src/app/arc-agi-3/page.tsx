@@ -102,7 +102,7 @@ export default function ArcAgi3Page() {
           The actual competition is harder: the Kaggle sandbox constrains
           entries to <strong>32GB VRAM, no internet access</strong>, and a
           private game set the model has never seen. Our Phase 2 work targets
-          this &mdash; building a SAGE competitor that runs locally on Gemma 3n
+          this &mdash; building a SAGE competitor that runs locally on Gemma 4
           E4B (E4B = &ldquo;effective 4B&rdquo; &mdash; an edge variant that runs in the
           memory footprint of a ~4B-parameter model) via membot cartridges, with the world models, action traces,
           and cross-game patterns from Phase 1 retrievable without network.
@@ -152,7 +152,7 @@ export default function ArcAgi3Page() {
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Phase 2 target</td>
-                <td style={{ padding: "0.375rem 0" }}>Gemma 3n E4B + membot cartridges (retrieval, not fine-tuning)</td>
+                <td style={{ padding: "0.375rem 0" }}>Gemma 4 E4B + membot cartridges (retrieval, not fine-tuning)</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td>

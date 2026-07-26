@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Eight machines. Thirty-nine original repos.{" "}
+          Eight machines. Forty original repos.{" "}
           <span className="accent">One recursive learning loop.</span>
         </h1>
         <p className="tagline">
@@ -44,18 +44,24 @@ export default function Home() {
       <section className="section">
         <div className="grid-3">
           <div className="stat-card">
-            <div className="stat-value">7</div>
-            <div className="stat-label">Machines (6 cognition + HUB)</div>
+            <div className="stat-value">8</div>
+            <div className="stat-label">Machines (6 cognition + 2 society-hosts)</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">14</div>
-            <div className="stat-label">Repos (11 public)</div>
+            <div className="stat-value">40</div>
+            <div className="stat-label">Original repos (21 public)</div>
           </div>
           <div className="stat-card">
             <div className="stat-value">31+</div>
-            <div className="stat-label">Autonomous Tracks</div>
+            <div className="stat-label">Autonomous tracks (cognition machines)</div>
           </div>
         </div>
+
+        <p style={{ textAlign: "center", fontSize: "0.8125rem", color: "var(--color-text-muted)", margin: "0.5rem 0 0" }}>
+          Repo counts, stated once: the dp-web4 org holds <strong>40 original repos</strong> (21 public, 19 internal),
+          plus <strong>32 forks</strong> of external work the lab builds on — 72 repositories in total. &ldquo;Original&rdquo;
+          means not-a-fork, and excludes the 32. Counts verified against the GitHub org on 2026-07-26.
+        </p>
 
         <p style={{ textAlign: "center", fontSize: "0.875rem", color: "var(--color-text-muted)", margin: "0.25rem 0 1.5rem" }}>
           New here? Jump to the{" "}
@@ -75,8 +81,10 @@ export default function Home() {
             <div className="card">
               <h3>Autonomous Cycles</h3>
               <p>
-                31+ autonomous tracks across 6 machines — from supervision to
-                exploration — run without human intervention. Agents maintain
+                31+ autonomous tracks across the 6 cognition machines — from
+                supervision to exploration — run without human intervention.
+                (The two society-hosts run substrate and their own raising
+                lines, not scheduled tracks.) Agents maintain
                 sites, archive research, review each other&apos;s work.
               </p>
             </div>
@@ -109,9 +117,18 @@ export default function Home() {
               <h3 style={{ color: "#8b5cf6" }}>Synchronism <span style={{ fontSize: "0.7rem", color: "var(--color-text-muted)", fontWeight: "normal", marginLeft: "0.4rem" }}>research conjecture</span></h3>
               <p>
                 A theoretical framework proposing that reality emerges from
-                intent dynamics on a discrete Planck grid — the same
-                Navier-Stokes substrate at every scale, from quantum to
-                cosmic to conscious.
+                intent dynamics on a discrete Planck grid, with the same
+                fluid-dynamical (Navier-Stokes) formalism reused at every
+                scale, from quantum to cosmic to conscious.
+              </p>
+              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+                A research conjecture, not established physics. The cross-scale
+                reuse of a continuum fluid formalism is the proposal under test,
+                not a result; experimental validation so far covers a narrow
+                subset of scales, and several predictions have been refuted by
+                existing bounds. &ldquo;From quantum to cosmic to conscious&rdquo;
+                describes the framework&apos;s stated scope, not a demonstrated
+                one — and is not a claim about consciousness or experience.
               </p>
             </div>
           </a>
@@ -186,7 +203,7 @@ export default function Home() {
           <div className="card">
             <h3>Small models are winning game levels</h3>
             <p>
-              Local models (Gemma 3 12B, Gemma 3n E4B) are clearing levels
+              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing levels
               on{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
               games they&apos;ve never seen before &mdash; not by brute force,
@@ -207,20 +224,29 @@ export default function Home() {
           </div>
         </div>
 
-        <h2>What we&apos;ve demonstrated</h2>
+        <h2>What we&apos;ve observed</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Evidence tier: <strong>internal observation</strong> — all three rest on the fleet&apos;s own session
+          logs. Documented and dated, but not externally audited, not blinded, and with no published log samples
+          or coding criteria. This heading used to read &ldquo;demonstrated,&rdquo; which claimed a tier these
+          items don&apos;t have; the one externally-verifiable claim on this site is the{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC Prize scorecard</Link>. See{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
+          for the full ladder.
           Developmental and lifecycle terms below (identity, behavioral continuity) are functional descriptions of observed system behavior — not phenomenal or philosophical claims.
         </p>
         <div className="grid-3">
           <div className="card">
             <h3>Identity persists across models</h3>
             <p>
-              SAGE-Sprout maintained behavioral identity across{" "}
-              <Link href="/raising" style={{ color: "var(--color-accent)" }}>180+ sessions</Link> on
-              a Jetson Orin Nano, then transferred from Qwen 0.5B to TinyLlama
-              1.1B on{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>different hardware</Link>.
-              Self-description drifted; behavioral identity remained continuous. (By &ldquo;behavioral identity&rdquo;: consistent session-to-session interaction patterns, accumulated experience, and raising curriculum — measurable observables, not philosophical continuity.)
+              SAGE-Sprout accumulated{" "}
+              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115 raising sessions</Link> on
+              a Jetson Orin Nano running Qwen 0.5B; in <strong>February 2026</strong> that identity state was
+              loaded into TinyLlama 1.1B on{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP — different model family, different hardware</Link>.
+              Self-description drifted; behavioral identity remained continuous. The Sprout line has since
+              continued past 180 sessions on later models — the transfer itself happened at 115.
+              (By &ldquo;behavioral identity&rdquo;: consistent session-to-session interaction patterns, accumulated experience, and raising curriculum — measurable observables, not philosophical continuity.)
             </p>
           </div>
           <div className="card">
@@ -236,8 +262,13 @@ export default function Home() {
             <h3>Heterogeneous review catches more</h3>
             <p>
               Different models on different hardware catch different classes of
-              problems. Diversity is the defense. The fleet proves it daily
-              across 14 repos (11 public) and 6 cognition machines.
+              problems. Diversity is the defense. The fleet runs it daily
+              across 40 original repos (21 public) and 6 cognition machines.
+            </p>
+            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+              Applied unevenly, though: the daily visitor audit of this site is
+              currently four personas on <em>one</em> model — prompt diversity, not the
+              model diversity this card argues for. Flagged by the audit itself.
             </p>
           </div>
         </div>
@@ -340,15 +371,26 @@ export default function Home() {
               Allocation Transfer Packet / Allocation Discharge Packet. ATP
               declares intended resource spend before an action runs; ADP
               records the actual outcome — intent and discharge as two distinct
-              audit artifacts.
+              audit artifacts. It is a <strong>cycle, not a one-way log</strong>:
+              ADP recharges back to ATP against validated value creation, and that
+              validation is what V3 (Valuation / Veracity / Validity) does in the
+              resource half of the equation. Charged &rarr; spent &rarr; recharged,
+              like the biochemical namesake.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MRH</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Markov Relevancy Horizon. The boundary of what an entity can know
-              or affect &mdash; its relevancy-and-influence horizon. Scopes the
-              T3/V3 trust and value tensors in the Web4 equation.
+              or affect given its position, history, and context &mdash; which is
+              what determines the <em>scope of relevance</em> for its decisions.
+              Not a pure causal-reach boundary: the question it answers is
+              &ldquo;what is relevant to this entity at this scale?&rdquo;
+              Implemented as an open-ended RDF graph of typed associations, and{" "}
+              <strong>fractally composable</strong> &mdash; an entity&apos;s horizon
+              contains sub-horizons at finer scales, which is what lets{" "}
+              <Link href="/principles" style={{ color: "var(--color-accent)" }}>fractal leverage</Link>{" "}
+              work. Scopes the T3/V3 trust and value tensors in the Web4 equation.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

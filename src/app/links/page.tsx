@@ -21,7 +21,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), karma, Web4 in miniature"
+            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), and karma (the simulation's accumulated-standing score for an agent, derived from its past contributions — 4-Life's local stand-in for a T3/V3 reputation record, not a Web4 canonical term). Web4 in miniature."
           />
         </ul>
 
@@ -132,7 +132,7 @@ cd ACT
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
-          has 11 of 14 public repos (3 internal) — clone what interests you, experiment, and open a discussion if you want to engage.
+          holds 40 original repos — 21 public, 19 internal — plus 32 forks of external work the lab builds on, 72 repositories in all. (&ldquo;Original&rdquo; means not-a-fork; the same denominator is used for the &ldquo;40&rdquo; on the home page. Verified against the org on 2026-07-26.) Clone what interests you, experiment, and open a discussion if you want to engage. There is no CONTRIBUTING guide yet and no stated policy on outside pull requests — ask in an issue first.
         </p>
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>

@@ -11,7 +11,7 @@ export default function Context() {
           Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
-          Thirty-nine original repos (twenty public — the org also carries 32 forks of external work we build on), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
+          Forty original repos (twenty-one public, nineteen internal — the org also carries 32 forks of external work we build on, which the &ldquo;original&rdquo; count excludes; 72 repositories in total, verified against the GitHub org 2026-07-26), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>
@@ -55,9 +55,9 @@ export default function Context() {
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root."],
                 ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3: worth assessed, claims truthful, reasoning sound."],
-                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect — scopes T3/V3 to context. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
-                ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs."],
-                ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome."],
+                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
+                ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
+                ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop."],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept."],
@@ -66,8 +66,10 @@ export default function Context() {
                 ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) layered over MCP transport."],
                 ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
                 ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
-                ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination."],
+                ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.)"],
+                ["attractor", "Attractor / attractor basin", "—", "Used on this site as a METAPHOR, not a formal dynamical-systems object: a region of response-space a model reliably returns to under a given context. No state space and no update rule are specified, and none is implied — we have not defined the dynamics that would make 'attractor' a technical claim. Flagged explicitly because the word borrows the connotation of mathematical precision from a formalism this site does not cash out. Read it as 'stable behavioral tendency'."],
                 ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
+                ["experience-buffer", "Experience buffer", "—", "The per-instance store of prior sessions an agent carries forward — session records, distilled observations, and the state files the prompt builder reads at start-up. It is the durable half of what raising shapes: on disk, portable between machines, and independent of which model is loaded. Named here because the glossary's own definition of Raising rests on it."],
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
                 ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing one coherence equation across scales. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
@@ -262,7 +264,7 @@ export default function Context() {
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — verifiable digital presence that accumulates witnessed history; identity grounded in record, not model weights<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
-          MRH = Markov Relevancy Horizon — boundary of what an entity can know or affect &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet
+          MRH = Markov Relevancy Horizon — the scope of what is relevant to an entity&apos;s decisions, fractally nested &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet (recharges back to ATP against V3-validated value)
         </p>
         <p>
           What the two borrowed standards contribute: MCP is the interaction
@@ -298,9 +300,12 @@ export default function Context() {
           (Valuation / Veracity / Validity — is this specific proposed change
           accurate and well-reasoned?) — that&apos;s the <code>T3/V3</code>{" "}
           &ldquo;verified by&rdquo; relationship. That check is scoped by{" "}
-          <strong>MRH</strong> (Markov Relevancy Horizon) to what this agent can
-          actually know and affect — a maintainer session shouldn&apos;t reason
-          about, or touch, repos outside its declared scope. The action itself
+          <strong>MRH</strong> (Markov Relevancy Horizon) to what is relevant at
+          this agent&apos;s scale — a maintainer session shouldn&apos;t reason
+          about, or touch, repos outside its declared scope, even though the
+          credentials it holds could physically reach some of them. That gap is
+          the point: MRH bounds relevance, and relevance is narrower than reach.
+          The action itself
           is shaped as an <strong>R6</strong> record: Rules (the terminology
           conventions in CLAUDE.md), Role (maintainer), Request (fix this
           friction item), Reference (the visitor log that flagged it), Resource
@@ -324,6 +329,30 @@ export default function Context() {
           namesake (adenosine tri-/diphosphate) is a deliberate metaphor —
           allocate, spend, recharge, like ATP&rarr;ADP in a cell — not a claim
           of biological mechanism.
+        </p>
+        <p>
+          The <strong>recharge</strong> step is the half most descriptions drop,
+          including earlier versions of this page. ADP is not where the
+          accounting ends: discharged packets are charged back to ATP against{" "}
+          <em>validated value creation</em> — a producer submits a proof of the
+          value its spend produced, the society validates that proof against its
+          own rules, and the resulting recharge also updates the producer&apos;s
+          T3/V3. That is what <strong>V3</strong> (Valuation / Veracity /
+          Validity) does in the resource half of the equation: it is the
+          certification that turns spent allocation back into spendable
+          allocation. Read as a one-way declare-and-log trail,{" "}
+          <code>ATP/ADP</code> looks like an accounting appendix bolted onto the
+          end of the equation; read as a closed loop, it is the mechanism by
+          which value creation — not accumulation — is what earns an entity more
+          resource. Stagnant ATP decays; value has to flow to hold worth.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Scope note, so the two don&apos;t get conflated: the closed loop is what
+          the Web4 specification defines. What the fleet implements today is the
+          declare-and-record half — each autonomous track issues an ATP for its
+          declared budget and an ADP for actual spend, with no V3-certified
+          recharge in the live tracks yet. The cycle is the ontology; the audit
+          trail is the current mechanism.
         </p>
 
         <h3>T3 / V3: trust and value tensors</h3>

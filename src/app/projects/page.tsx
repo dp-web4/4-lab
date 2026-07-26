@@ -60,7 +60,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. Research conjecture, single-trial and not independently replicated: proposes one coherence equation spanning 80 orders of magnitude — quantum to cosmic — though experimental validation so far covers only a narrow subset of scales. 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
+            description="Theoretical foundation. Research conjecture, single-trial and not independently replicated: proposes one coherence function reused from quantum to cosmic scales, though experimental validation so far covers only a narrow subset of them and several predictions have been refuted by existing bounds. (This card previously said the equation 'spans 80 orders of magnitude'. Corrected 2026-07-26: ~80 decades is the spread of critical-density values across physical systems, not the range of any single coherence curve — one curve saturates within roughly one to two decades. Synchronism's own archive flags the conflation.) 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             maturity="research-stage"
@@ -69,7 +69,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite. Binds fleet identity and policy decisions to standard hardware roots of trust — Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2), Secure Enclave — with software fallback, and runs a small local policy model for heterogeneous review, bound to a Linked Context Token (LCT). Private as the fleet's oversight/security layer; described here at the purpose level by policy, not accident. The trust layer that touches silicon."
+            description="Hardware-bound oversight suite. Design target: bind fleet identity and policy decisions to standard hardware roots of trust — Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2), Secure Enclave — and run a small local policy model for heterogeneous review, bound to a Linked Context Token (LCT). Maturity, stated plainly: hardware-anchored enforcement is what this research is building toward, not the current mechanism. Enforcement on the fleet today is at the process level — scoped credentials, the track registry, and dated audit logs reviewed after the fact (see /autonomy). Read 'software fallback' as 'the present state', not as the exception. Private as the fleet's oversight/security layer; described here at the purpose level by policy, not accident."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
@@ -120,7 +120,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Membot"
-            description="Brain cartridge server for AI agents — a cartridge is a swappable, mountable memory store for one knowledge domain. Embedding-based semantic memory — 768-dim Nomic embeddings + binary Hamming codes (compact binary fingerprints matched by bit-distance for fast candidate search) + keyword reranking. Currently integrated with SNARC in a dual-write experiment testing whether embeddings find connections keywords miss (7/7 semantic reach, 30% divergent tail)."
+            description="Brain cartridge server for AI agents — a cartridge is a swappable, mountable memory store for one knowledge domain. Embedding-based semantic memory — 768-dim Nomic embeddings + binary Hamming codes (compact binary fingerprints matched by bit-distance for fast candidate search) + keyword reranking. Currently integrated with SNARC in a dual-write experiment testing whether embeddings find connections keywords miss. Early result on a 7-query probe set: embedding search returned a relevant hit on 7 of 7 queries ('semantic reach'), and about 30% of its hits were ones the keyword search did not return at all ('divergent tail') — a small internal probe, not a benchmark."
             accentColor="#f97316"
             isPublic={true}
             maturity="runnable"
@@ -128,7 +128,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 1.1B to 14B, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B (Sprout) to 27B (Thor) at benchmark time, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -143,9 +143,9 @@ export default function Projects() {
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0%); 94.85% official action score (Claude Opus 4.6)</td></tr>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 1.1B to 14B</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B at benchmark time</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 3n E4B via membot cartridges</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td></tr>
               </tbody>
             </table>

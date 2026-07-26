@@ -45,6 +45,17 @@ export default function Fleet() {
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each basis measures.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Provenance of the model strings below, since they are the numbers most
+          likely to go stale: each is the SAGE instance name the machine reports
+          for itself (e.g. <code>legion-gemma4-e4b</code>, <code>thor-qwen3.5-27b</code>),
+          taken from the 2026-07-24 fleet refresh, not from a hand-written list.
+          They are model <em>tags as the fleet runs them</em>, which will not always
+          match a vendor&apos;s marketing name. Known gap: the shared fleet model
+          manifest in the SAGE repo has not been updated since 2026-03-08, so it
+          currently disagrees with this page — the manifest is the stale side, and
+          reconciling it is an open item on the fleet, not on this site.
+        </p>
 
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
@@ -67,7 +78,7 @@ export default function Fleet() {
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
             model="Gemma 4 E4B (ollama) — cutover 2026-07-24; prior gemma3-12b line 336 sessions, phi4 line 56 (dormant)"
-            role="336 sessions on the prior line. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. First canonical 25-game sweep with local vision model."
+            role="336 sessions (creating) — counted before the July 2026 model switch, on the gemma3-12b line. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
           />
           <MachineCard
             name="McNugget"
@@ -112,7 +123,7 @@ export default function Fleet() {
             model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 74 raising sessions"
             role={
               "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
-              "HUB is itself one of the seven members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
+              "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
               "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
@@ -209,8 +220,11 @@ export default function Fleet() {
           transfer,&rdquo; meaning consistent interaction patterns, accumulated
           experience, and raising history, not continuity-of-self in any
           philosophical sense. SAGE-Sprout&apos;s behavioral patterns —
-          developed over 180+ sessions on a Jetson running Qwen 0.5B — transferred
-          successfully to TinyLlama 1.1B on a completely different machine. This is the practical demonstration of what{" "}
+          developed over <strong>115 raising sessions</strong> on a Jetson running Qwen 0.5B —
+          transferred to TinyLlama 1.1B on CBP, a different machine and a different model
+          family, in <strong>February 2026</strong>. (The Sprout line has since continued past
+          180 sessions on later models; 115 is the count at the transfer, which is the number
+          the portability claim actually rests on.) This is the practical demonstration of what{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           are designed to formalize at the protocol level: portable identity grounded in
           witnessed history, not model weights. What we observed: consistent behavioral patterns and session

@@ -28,7 +28,7 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 sweep (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
+          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -101,10 +101,22 @@ export default function Raising() {
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
-              Demonstration in a raised entity: Legion&apos;s first canonical 25-game sweep with a local vision model (see{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a model that went through the fleet&apos;s raising process, playing the full game set.
-              (The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0%) — is a separate result: Claude Opus 4.6 operating inside the SAGE harness, not a raised local entity. It shows what the harness achieves with a frontier model, not what raising produced. See{" "}
-              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link> for that attribution.)
+              Observation in a raised entity: Legion, running a local vision model that went through the fleet&apos;s raising process, <strong>ran the full 25-game set end to end</strong> (see{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>).
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+              Read that sentence literally, because the shorthand invites the wrong reading.
+              &ldquo;Sweep&rdquo; here means <em>played through all 25 games in one pass</em> — it is a
+              coverage claim, not a score. It is <strong>not</strong> a 25-of-25 result, and it was
+              <strong> not scored by ARC Prize</strong>: this was a local run on the fleet&apos;s own
+              copy of the game set, unscored by any external party. Local-model solve rates on these
+              games remain low, and the site treats local-model progress as{" "}
+              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>a working hypothesis, not a demonstrated result</Link>.
+              The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0%) —
+              is a different result under different conditions: Claude Opus 4.6 inside the SAGE harness,
+              on the official public set, externally scored. The two figures are <em>not commensurable</em>
+              and nothing here should be read as a local model matching or beating a frontier one. See{" "}
+              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link> for the full attribution.
             </p>
           </div>
         </div>
@@ -175,9 +187,10 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE (Situation-Aware Governance Engine)-Sprout, across 180+ sessions on a{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> and subsequent
-          portability to a different machine, demonstrated a consistent
+          SAGE (Situation-Aware Governance Engine)-Sprout — 115 raising sessions on a{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B,
+          then ported to TinyLlama 1.1B on CBP in February 2026, with the line since continuing past
+          180 sessions on later models — showed a consistent
           separation: its identity (behavioral patterns, interaction style,
           accumulated experience) persisted even as its self-description drifted
           from &ldquo;autonomous conversation-generating AI system&rdquo; to
@@ -249,11 +262,54 @@ export default function Raising() {
           order, accumulation, and cross-session attribution; if phase-consistent
           behavior survives the scramble, &ldquo;raising&rdquo; is a
           redescription of prompt engineering, and the honest move is to retire
-          the word. If it doesn&apos;t survive, the developmental frame earns its
-          vocabulary. Until that control is run — with a pre-registered metric
+          the word. Until that control is run — with a pre-registered metric
           and threshold for what counts as &ldquo;degrades,&rdquo; fixed before
           looking — treat the framework as a working vocabulary that fits our
           observations, not an established finding.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>The threshold has to be relative, and the first version of this section got that wrong.</strong>{" "}
+          Applying the same reasoning one step further kills the naive reading of
+          the scramble: <em>order sensitivity is itself a well-documented property
+          of in-context learning.</em> Permuting in-context examples, moving
+          content within the window, or reordering retrieved passages all produce
+          large behavioral swings in transformer language models, with no
+          developmental story required. &ldquo;Competent context engineering&rdquo;
+          is precisely the hypothesis that ordering matters. So a bare result of
+          &ldquo;behavior degrades when we scramble&rdquo; is predicted by{" "}
+          <em>both</em> hypotheses and adjudicates neither — the same defect this
+          section correctly diagnosed in the generic-replacement control.
+        </p>
+        <p>
+          What would actually discriminate, and what any pre-registration here has
+          to specify:
+        </p>
+        <ul>
+          <li>
+            <strong>Excess degradation over an ordering baseline.</strong> The
+            pre-registered threshold must be stated relative to the degradation
+            that permutation alone produces on a comparable context of comparable
+            length and task structure — not relative to zero. The diagnostic
+            quantity is the excess, and the baseline has to be measured, not
+            assumed.
+          </li>
+          <li>
+            <strong>Or, better, a dissociation.</strong> Ordering effects predict a
+            broad main effect across everything the context supports. A
+            developmental account predicts something narrower: identity-continuity
+            measures degrade while task competence on the <em>same</em> scrambled
+            context stays roughly intact. A dissociation of that shape is evidence;
+            a main effect is not.
+          </li>
+        </ul>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Stated as a pre-commitment, since{" "}
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 6</Link>{" "}
+          says failed experiments are signal: if this control runs and the result
+          is a bare main effect, or no degradation at all, that outcome gets
+          published on this page and the developmental vocabulary gets retired
+          from it. The prediction is on the record before the experiment, which is
+          the only order in which that commitment means anything.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
