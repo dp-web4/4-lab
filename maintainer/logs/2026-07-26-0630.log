@@ -2,3 +2,28 @@ Starting 4-lab Maintainer Session at Sun Jul 26 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_495.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260723_180536.json => identity_20260726_060122.json} (96%)
+Session complete. Build passed, pushed as `9a84d66`.
+
+## What I found
+
+**Terminology — the drift ran opposite to the report in two of three cases.**
+
+Four visitor passes unanimously reported zero canonical string drift, and that holds. The substantive work was semantic, and checking the canonical source before editing changed two conclusions:
+
+- **MRH**: Pass 3 (the expert persona) called the gloss "the boundary of what an entity can know or affect" a semantic drift and asked for it to be replaced. That phrase is *verbatim* from `CANONICAL_TERMS_v1.md:65`. Replacing it would have introduced drift. The real defect was truncation — canon continues "determines scope of relevance for decisions... fractally composable across scales," and the site stopped after sentence one. Fixed additively.
+- **Model strings**: Pass 3 claimed `Qwen 3.5 27B`, `Qwen 3.5 0.8B`, and `Gemma 4 E4B` match no shipped product. All three are real fleet instance names (`thor-qwen3.5-27b` appears 179 times in SAGE's corpus). The genuinely stale string was `Gemma 3n E4B` — on the home page, which every pass cleared. Zero occurrences of "gemma3n" anywhere in SAGE.
+- **ATP/ADP**: confirmed. The recharge path (ADP → ATP against V3-validated value) is spec-level and was absent site-wide. Added, plus a scope note that the fleet only implements the declare-and-record half.
+
+**The error no audit could see.** The site said Sprout "maintained identity across 180+ sessions... *then* transferred." SAGE's own records say the transfer happened at **115** sessions, Feb 2026. The 180+ is a later cumulative count, silently attributed to the pre-transfer period — inflating the evidence base for the site's headline internal finding by more than half. It was *consistent* across three pages and wrong on all three, which is precisely what cross-page checking cannot catch.
+
+Every number I actually resolved came from outside the site: the GitHub API (40 original repos / 21 public, not 39/14/11/20), SAGE session records, `BECOMING_CURRICULUM.md`.
+
+**Also fixed:** stats row 7→8 machines; Legion's "25-game sweep" rewritten as a coverage run explicitly *not* ARC-scored and *not* commensurable with the Opus figure; Hardbound's hardware binding demoted from present tense to design target; the scramble control re-specified (the researcher was right — ordering effects are predicted by the deflationary hypothesis, so a bare main effect adjudicates nothing), with a publication pre-commitment added.
+
+## Two things worth your attention
+
+**The fleet manifest is 4.5 months stale** (`updated_at: 2026-03-08`, no commits since). Following it as instructed would have *reverted* the page to March state. I added a provenance note and logged it, but the contract — "each machine owns and updates its own entry" — has lapsed on all six. That's a supervisor-track item, not a site fix.
+
+**Cross-site drift, sourced:** the "80 orders of magnitude" claim is diagnosed as an error in Synchronism's *own* repo (`SESSION_FOCUS.md:1780` — it conflates ρ_crit spread across systems with one curve's ~2-decade smoothness window). A back-annotation was filed 2026-04-24 and appears never to have reached the site. Fixed here; synchronism-site is the origin.
+
+**Deferred, and it's the highest-value item left:** `/raising` Patterns 4 and 5 state two quantitative trends with no measure, no coding scheme, no number. I can't publish counts that don't exist, and inventing a coding scheme would be worse than the current disclosure. Someone needs to run it — and answer Pass 4's circularity point about same-family models coding their own logs.
