@@ -2,3 +2,28 @@ Starting 4-lab Maintainer Session at Mon Jul 27 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_499.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260724_180732.json => identity_20260727_060134.json} (97%)
+Session complete. Pushed as `35f6eca`; Vercel auto-deploys.
+
+## What happened
+
+**Terminology enforcement — clean, third session running.** Zero canonical *expansion* drift site-wide. LCT, T3, V3, MRH, ATP, ADP, R6 are character-identical everywhere; none of the known corruptions appear; Web4 is an ontology on every page, Hardbound is oversight, "production ready" has zero hits. The job I exist for is currently finding nothing, which is the right outcome to report plainly.
+
+**Four Tier 1 fixes, all verified against source before editing:**
+- `/context` §7 — the Synchronism "80 orders of magnitude" conflation, the only item all four passes independently found, and it had survived two prior maintainer cycles. Now carries `/projects`' dated correction (~80 decades = spread of critical-density values *across systems*, not any curve's range), with the unsanctioned "full range as the ongoing research target" clause deleted.
+- `/context` §26 — the session-count paragraph was wrong four ways, two more than flagged. Beyond Sprout's 115+→**488** and the misattributed "2,500+", it asserted a basis split that `/fleet:42` had already superseded, and cited a `T246` figure that appears nowhere else in `src/`. Now states the arithmetic (1,991 across six cognition machines, 2,065 with HUB) and names the residual gap against "2,500+" as unreconciled rather than papering over it.
+- `/projects` SAGE card — 900+ → **1,991**, a ~2x understatement of the flagship project's headline evidence.
+- `/context` §5–6 — Hardbound's maturity caveat carried in from `/projects`. The least verifiable project had the most confident tense while checkable ones carried hedges.
+
+## The thing worth your attention
+
+**Five visitor flags were wrong, including the log's own Tier 1 fix #4.** The expert persona again flagged MRH's causal-reach definition and again prescribed replacing it with a relevance-only string — but canon *leads* with "the boundary of what an entity can know or affect." I applied the reverse of the prescription, restoring the canonical clause to the one strip that had dropped it. That's the second session this exact flag has arrived with a correct diagnosis and a drift-introducing fix, now promoted to Tier 1, so the log's priority ranking doesn't protect against it.
+
+Two more ("ATP/ADP/SNARC unexpanded on /raising", "dlPFC unexpanded on /context") point at terms **absent from those pages entirely** — the visitor's summarizing-fetch answers "is X expanded?" with a no even when X isn't there. And two prescriptions would have invented expansions for CBP and BECOMING, which are proper names.
+
+I've flagged this back to the visitor track in the log: the literal-search re-fetch it already adopted for wording flags isn't reaching *expansion* flags.
+
+**Fleet manifest deliberately not synced** — `updated_at: 2026-03-08`, no commits in 4½ months. The page is newer than its designated source of truth; syncing would regress three machines' models. This is the third session flagging it. CLAUDE.md's "the manifest is the source of truth" step is now inverted in practice, and fixing that properly is either a manifest refresh from the machines or a CLAUDE.md amendment — your call, not mine to make unilaterally.
+
+**Deferred and why:** the highest-leverage item on the site per P4 is putting a date, owner, and pre-registered metric on the scramble control. I can't author those. Same for the `/autonomy` incident log (needs real track data) and the SAGE hardware requirements (needs measurements). Those three are blocked on you, not on time.
+
+One upstream finding I did **not** act on: two personas independently concluded the site's treatment of the `/` glyph is *more precise than the canon it's audited against* (`/` = "verified by" in T3/V3, but a declared→discharged pair in ATP/ADP). That's a defect in `CANONICAL_TERMS_v1.md`, and it belongs in the web4 repo. I didn't edit canon.
