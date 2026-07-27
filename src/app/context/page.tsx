@@ -148,24 +148,38 @@ export default function Context() {
 
         <h3>Hardbound: hardware-bound oversight</h3>
         <p>
-          Hardbound is the hardware-bound oversight suite — the trust layer that
-          touches silicon. Hardware binding via TPM 2.0, FIDO2, and Secure Enclave
-          anchors policy enforcement to physical devices. To be precise about
-          what is hardware-rooted: key custody and attestation live in hardware;
-          runtime checkpoints like PolicyGate are software that verifies actions
-          against those hardware-anchored credentials. Every autonomous track
-          operates within the Hardbound oversight envelope: what it can access,
-          what it can commit, what it can deploy.
+          Hardbound is the hardware-bound oversight suite — the trust layer
+          intended to touch silicon. The design target is to anchor policy
+          enforcement to physical devices via TPM 2.0, FIDO2, and Secure
+          Enclave, with key custody and attestation living in hardware and
+          runtime checkpoints like PolicyGate as software that verifies actions
+          against those hardware-anchored credentials.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Maturity, stated plainly — the same caveat this project carries on{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
+          hardware-anchored enforcement is what this research is building
+          toward, <em>not the current mechanism</em>. Enforcement on the fleet
+          today is at the process level — scoped credentials, the track
+          registry, and dated audit logs reviewed after the fact (see{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
+          Read &ldquo;software fallback&rdquo; as &ldquo;the present
+          state,&rdquo; not as the exception. This section describes design
+          intent; it is the least verifiable project on the site and should not
+          be read in the same tense as the checkable ones.
         </p>
 
         <h3>PolicyGate: action enforcement</h3>
         <p>
           PolicyGate is a Hardbound oversight sub-gate inset in the SAGE cognition
           loop between step 11 (filter) and step 12 (act) — not an additional step,
-          but an enforcement checkpoint. It evaluates every action against a signed
-          law bundle before the action fires. PolicyGate is where Hardbound oversight
-          intersects with SAGE execution: the harness can plan, reason, and prepare,
-          but nothing executes until PolicyGate clears it.
+          but an enforcement checkpoint. As designed, it evaluates every action
+          against a signed law bundle before the action fires: PolicyGate is
+          where Hardbound oversight is intended to intersect SAGE execution, so
+          that the harness can plan, reason, and prepare, but nothing executes
+          until PolicyGate clears it. Per the maturity note above, that gate is
+          the design target rather than today&apos;s deployed enforcement on the
+          fleet.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Note: SAGE loop step 10 (&ldquo;oversee&rdquo;) is SAGE&apos;s own metacognitive self-check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step 10 is SAGE watching itself; PolicyGate is Hardbound&apos;s silicon-bound external authority. Two oversight touchpoints, different principals.
@@ -183,9 +197,16 @@ export default function Context() {
           steeply past a threshold, then levels off) is borrowed by analogy for
           both enzyme binding and trust formation — the same curve shape observed
           at both scales, not yet a derivation showing why it must hold at both.
-          The conjecture spans 80 orders of magnitude — from quantum to
-          cosmic — with experimental validation at specific scales and the full
-          range as the ongoing research target. See the{" "}
+          The conjecture reaches from quantum to cosmic scales. This section
+          previously said it &ldquo;spans 80 orders of magnitude&rdquo;;
+          corrected 2026-07-26, matching the note on{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
+          ~80 decades is the spread of <em>critical-density values across
+          physical systems</em>, not the range of any single coherence curve —
+          one curve saturates within roughly one to two decades, and
+          Synchronism&apos;s own archive flags the conflation. Experimental
+          validation so far covers only a narrow subset of scales, and several
+          predictions have been refuted by existing bounds. See the{" "}
           <a
             href="https://synchronism-site.vercel.app/"
             target="_blank"
@@ -264,7 +285,7 @@ export default function Context() {
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           MCP = Model Context Protocol &nbsp;&bull;&nbsp; RDF = Resource Description Framework &nbsp;&bull;&nbsp; LCT = Linked Context Token — verifiable digital presence that accumulates witnessed history; identity grounded in record, not model weights<br />
           T3 = Talent / Training / Temperament &nbsp;&bull;&nbsp; V3 = Valuation / Veracity / Validity<br />
-          MRH = Markov Relevancy Horizon — the scope of what is relevant to an entity&apos;s decisions, fractally nested &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet (recharges back to ATP against V3-validated value)
+          MRH = Markov Relevancy Horizon — the boundary of what an entity can know or affect given its position, history, and context, and therefore the scope of what is relevant to its decisions; fractally nested &nbsp;&bull;&nbsp; ATP = Allocation Transfer Packet &nbsp;&bull;&nbsp; ADP = Allocation Discharge Packet (recharges back to ATP against V3-validated value)
         </p>
         <p>
           What the two borrowed standards contribute: MCP is the interaction
@@ -595,20 +616,26 @@ export default function Context() {
           termination. A raising session is one such run devoted to raising; an
           autonomous-track session is one scheduled run of that track. With that
           unit fixed, the counting bases still differ:
-          this site currently uses at least three different counting bases for
-          &ldquo;sessions,&rdquo; not yet reconciled to one figure: cumulative
-          raising sessions across the fleet since tracking began
-          (&ldquo;2,500+&rdquo; on{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
-          and the home page), current-phase per-machine counts (
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>,
-          e.g. Sprout&apos;s &ldquo;115+&rdquo;), and Sprout&apos;s own
-          T-numbered turn count (&ldquo;T246&rdquo;) and the &ldquo;180+
-          sessions&rdquo; figure on{" "}
+          this site still carries more than one counting basis for
+          &ldquo;sessions,&rdquo; not yet reconciled to a single figure. The
+          per-machine counts on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
+          are per-instance session-record counts (session_*.json files),
+          verified by each machine in the 2026-07-24 manifest refresh; the six
+          cognition machines sum to <strong>1,991</strong>, or 2,065 including
+          HUB&apos;s 74. The cumulative &ldquo;2,500+&rdquo; on the home page
+          and{" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
+          is stated on that same file basis but is a rounded fleet-wide figure
+          that runs ahead of the machine-by-machine sum; the 2,065 sum is the
+          one with a per-machine audit trail behind it, and the gap is
+          unreconciled rather than explained. Measuring something different
+          again: the 115- and 180-session figures on{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
-          from an earlier identity-portability snapshot. Treat each number as
-          scoped to the page it appears on until a unified counting standard
-          exists.
+          are an identity-portability snapshot of a single model line (Sprout on
+          Qwen 0.5B, then ported), not current per-machine totals. Treat each
+          number as scoped to the page it appears on until a unified counting
+          standard exists.
         </p>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Verification independence:</strong>{" "}

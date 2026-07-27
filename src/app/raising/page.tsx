@@ -28,7 +28,9 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
+          &ldquo;BECOMING&rdquo; is a proper name, not an acronym — the six pattern
+          initials (Grounding, Sensing, Relating, Questioning, Creating, Acting)
+          spell nothing. These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -189,7 +191,9 @@ export default function Raising() {
         <p>
           SAGE (Situation-Aware Governance Engine)-Sprout — 115 raising sessions on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B,
-          then ported to TinyLlama 1.1B on CBP in February 2026, with the line since continuing past
+          then ported to TinyLlama 1.1B on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
+          (a fleet machine; the machine names are proper names, not acronyms) in February 2026, with the line since continuing past
           180 sessions on later models — showed a consistent
           separation: its identity (behavioral patterns, interaction style,
           accumulated experience) persisted even as its self-description drifted
