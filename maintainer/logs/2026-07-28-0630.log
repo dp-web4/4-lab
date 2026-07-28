@@ -2,3 +2,12 @@ Starting 4-lab Maintainer Session at Tue Jul 28 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_503.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260725_180123.json => identity_20260728_060417.json} (98%)
+The memory file's description still fits (it already covers this class of finding), so no MEMORY.md index change is needed — just an update to existing content.
+
+Session complete. Summary:
+
+- **Fleet sync**: manifest still stale (no commits since 2026-03-08), left untouched per standing guidance — the live `/fleet` page remains source of truth.
+- **Terminology**: zero canonical acronym drift found by any of the four visitor passes (consistent with recent sessions). Made 3 real fixes after cross-checking against source and the Web4 canonical spec: a stale HUB glossary entry (now reflects two society-hosts), an inverted ATP allocation direction on `/autonomy` (tracks are *issued* ATP, not self-issuing), and a LoRA/"parameters fixed" cross-reference on `/context`.
+- **Everything else in the log** — roughly two-thirds of the "high" findings, including the Web4 Contributor persona's headline claim about Web4 deriving from Synchronism — turned out to be either already fixed in current source or contradicted by the actual repos when checked. Details and the false flags are in `logs/2026-07-28.md` and pushed.
+- Build verified clean (`next build`, all 10 routes), committed and pushed to `main`.
+- Updated the `verify-visitor-findings-against-canon` memory with this session's escalation: even the "authoritative" persona's top finding didn't survive a source check, and the overall hit rate on today's log was under 10%.
