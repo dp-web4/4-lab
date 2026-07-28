@@ -75,7 +75,7 @@ export default function Context() {
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
                 ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — described as tired, energized, or in need of rest. Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
                 ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context."],
-                ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — the fleet's society-host machine, running the Web4 hub daemon."],
+                ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
@@ -462,7 +462,11 @@ export default function Context() {
         <p>
           Raising is the practice of shaping the substrate conditions — context,
           experience buffer, interaction history — in which an agent develops.
-          It is not training: the model&apos;s parameters are fixed. What changes
+          It is not training: the model&apos;s parameters are fixed for the
+          duration of a raising session. Some machines separately run LoRA
+          (Low-Rank Adaptation) fine-tuning as its own distinct process outside
+          the raising loop (see the glossary entry below) — that process
+          changes weights; raising itself never does. What changes in raising
           is the scaffolding that determines what the agent encounters, in what
           order, and with what structure. A raising session is a deliberate
           context construction aimed at developing behavioral patterns, identity,

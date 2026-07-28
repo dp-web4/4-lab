@@ -184,7 +184,7 @@ export default function Autonomy() {
           as the goal, not the current mechanism. In{" "}
           <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
           (the trust-native ontology) terms, each scheduled
-          track issues an ATP (Allocation Transfer Packet) for its declared resource budget;
+          track is issued an ATP (Allocation Transfer Packet) against its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping layer that makes autonomous operation auditable.
         </p>
