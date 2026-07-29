@@ -91,6 +91,9 @@ export default function Fleet() {
         <h3 style={{ marginTop: "2rem" }}>Oversight pool — Account 2</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           Continuous availability. Review, planning, coordination, and unblocking synthesis work.
+          &ldquo;Oversight&rdquo; names the pool&apos;s role in the machine-enforced sense used
+          across this site (policy gating, peer review, audit) — not human supervision; see{" "}
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
         <div className="grid-3">
           <MachineCard

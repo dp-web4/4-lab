@@ -50,6 +50,8 @@ export default function Context() {
               {[
                 ["web4", "Web4", "—", "A trust-native ontology for AI agents, devices, and people — not architecture or infrastructure."],
                 ["trust-native", "Trust-native", "—", "Trust as a primitive of the ontology, not a feature bolted on: every relationship carries T3/V3 tensors bound to LCTs and scoped by MRH. The term names an ontological commitment — the verifiable substrate (witnessed history) and the earned record (tensors updated by interaction) both follow from it; it is not, by itself, a cryptographic guarantee."],
+                ["trust", "Trust", "—", "Not a property of an entity — a property of a relationship, computed per role from a T3/V3 tensor updated by interaction (see Principle 4 on /principles). An agent trusted for code review may be untrusted for creative writing. Distinct from the calibrated-human-reliance sense the word carries in AI-safety literature."],
+                ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],
@@ -61,7 +63,7 @@ export default function Context() {
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop."],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept."],
-                ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation anchored in silicon."],
+                ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation anchored in silicon. “Oversight” here is machine-enforced (gating, reverting), not the human-supervision sense the word carries in AI-safety literature."],
                 ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps."],
                 ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) layered over MCP transport."],
                 ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
@@ -78,7 +80,7 @@ export default function Context() {
                 ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
-                ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence", "Third-gen interactive benchmark — game mechanics inferred through play."],
+                ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence, version 3", "Third-gen interactive benchmark — game mechanics inferred through play."],
                 ["p-crit", "p_crit", "—", "The critical coherence threshold derived in the Synchronism framework. The derivation attempt failed catastrophically (400x error) — see Principle 6 on /principles."],
                 ["cartridge", "Cartridge", "—", "A swappable unit of semantic memory in Membot — the mechanism that lets a raising history move between machines."],
                 ["membot", "Membot", "—", "The cartridge server — the runnable project that mounts, serves, and searches cartridges for agents. Project card on /projects."],
@@ -144,6 +146,11 @@ export default function Context() {
           load-bearing legacy names is the policy, not an oversight awaiting a
           fix. Other pages that mention the correction
           link here rather than re-explaining it.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
+          A separate collision, for readers arriving from AI-safety literature: on this site &ldquo;oversight&rdquo; always means the machine-enforced sense above — policy gating, key custody, audit logs an agent or a peer machine checks — never the human-supervision sense the word carries in that field (human-in-the-loop review, scalable oversight). No human gate currently sits on the Maintainer track, and there is no external, blinded, or third-party check anywhere in the loop yet — see{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>{" "}
+          for what human review does and doesn&apos;t cover.
         </p>
 
         <h3>Hardbound: hardware-bound oversight</h3>
