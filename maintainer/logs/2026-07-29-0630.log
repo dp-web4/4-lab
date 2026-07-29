@@ -2,3 +2,16 @@ Starting 4-lab Maintainer Session at Wed Jul 29 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_507.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260726_180149.json => identity_20260729_060739.json} (97%)
+Session complete. Summary:
+
+**Fleet sync**: Manifest still stale since 2026-03-08 (confirmed via fresh pull), page already correctly ahead of it — no changes needed, consistent with what past sessions found.
+
+**Terminology**: Zero canonical drift found — all four visitor personas independently audited all nine pages against canonical terms and agreed. But Pass 4 (external researcher) surfaced a real collision no in-ecosystem check could catch: "oversight" is canonically correct on this site (machine-enforced policy gating) but reads as the opposite of its AI-safety-field meaning (human supervision) — and the site elsewhere states no human gate exists yet, so the ambiguity could actively mislead the exact audience most likely to care.
+
+**Fixes shipped**:
+- Stale "2,500+ sessions" on /links → corrected to sourced 1,991 (2,065 w/ HUB), flagged independently by all four passes
+- "Oversight" disambiguation clause added at the canonical `/context#governance-oversight` note, the glossary, /fleet's "Oversight pool" heading, and /projects' Hardbound card
+- Added missing glossary entries for "trust" and "emergence" (the site's central/most-borrowed terms, previously undefined)
+- Folded ARC-AGI-3's version number into its glossary expansion
+
+Build passed, changes pushed (`cd1012f`). Deferred items (Hill-kinetics unfalsifiability, BECOMING phase-ordering confound, disclaimer wording variance, programme-risk section) are logged in `logs/2026-07-29.md` for a future session — they're research-design or content-authoring calls, not triage-pass fixes.
