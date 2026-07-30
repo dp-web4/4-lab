@@ -39,7 +39,7 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
-          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh — the same basis as the &ldquo;2,500+&rdquo; cumulative figure on{" "}
+          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh — the same basis as the 2,065 cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and the site home page, and than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
@@ -204,8 +204,10 @@ export default function Fleet() {
           update arithmetic is on{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
           and moves only on evidence. As of July 2026 the hestia trust layer
-          derives its displayed scores from witnessed adjudications and
-          governance-response conduct — with click-through receipts (score
+          derives its displayed scores from witnessed adjudications and{" "}
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>governance-response</Link>{" "}
+          conduct — hestia&apos;s own internal field name, retained for the same reason as SAGE&apos;s —
+          with click-through receipts (score
           &rarr; versioned formula &rarr; evidence &rarr; signed chain entries), and
           self-reported outcomes structurally excluded until independently
           adjudicated. An unmeasured dimension displays as unmeasured, never as
@@ -227,10 +229,13 @@ export default function Fleet() {
           transferred to TinyLlama 1.1B on CBP, a different machine and a different model
           family, in <strong>February 2026</strong>. (The Sprout line has since continued past
           180 sessions on later models; 115 is the count at the transfer, which is the number
-          the portability claim actually rests on.) This is the practical demonstration of what{" "}
+          the portability claim actually rests on.) This is the practical demonstration of the
+          continuity a{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
-          are designed to formalize at the protocol level: portable identity grounded in
-          witnessed history, not model weights. What we observed: consistent behavioral patterns and session
+          is designed to make verifiable: identity grounded in witnessed history, not model weights.
+          The LCT itself is non-transferable — permanently bound to its entity, which is what makes
+          that history evidence rather than assertion. What ported here was the behavioral line, not
+          the LCT. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The self-description drifted. This told us something
           important:
         </p>

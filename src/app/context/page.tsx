@@ -54,7 +54,7 @@ export default function Context() {
                 ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
-                ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights."],
+                ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root."],
                 ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3: worth assessed, claims truthful, reasoning sound."],
                 ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
@@ -634,13 +634,10 @@ export default function Context() {
           are per-instance session-record counts (session_*.json files),
           verified by each machine in the 2026-07-24 manifest refresh; the six
           cognition machines sum to <strong>1,991</strong>, or 2,065 including
-          HUB&apos;s 74. The cumulative &ldquo;2,500+&rdquo; on the home page
-          and{" "}
+          HUB&apos;s 74. The home page and{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
-          is stated on that same file basis but is a rounded fleet-wide figure
-          that runs ahead of the machine-by-machine sum; the 2,065 sum is the
-          one with a per-machine audit trail behind it, and the gap is
-          unreconciled rather than explained. Measuring something different
+          both now lead with the 2,065 figure, since that is the one with a
+          per-machine audit trail behind it. Measuring something different
           again: the 115- and 180-session figures on{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
           are an identity-portability snapshot of a single model line (Sprout on

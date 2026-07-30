@@ -170,8 +170,9 @@ export default function ArcAgi3Page() {
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Human leaderboard</td>
                 <td style={{ padding: "0.375rem 0" }}>
                   <strong style={{ color: "#a855f7" }}>#3</strong> &mdash; 5,845 actions
-                  (fewest of the top 3). The methodology is what humans do;
-                  the leaderboard reflects it.{" "}
+                  (fewest of the top 3). This ranks against human competitors on
+                  ARC Prize&apos;s public leaderboard, not other AI submissions
+                  &mdash; entrant count as listed there:{" "}
                   <a
                     href="https://arcprize.org/arc-agi/3/leaderboard"
                     target="_blank"

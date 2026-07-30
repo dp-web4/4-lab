@@ -148,7 +148,9 @@ export default function Raising() {
           One corollary worth naming: frozen weights do not guarantee safe
           in-context behavior. Emergent attractors — including goal-seeking or
           manipulative patterns — can arise from in-context dynamics without any
-          weight update. The raising framework addresses identity development and
+          weight update. This is a general in-context-learning risk noted in the
+          literature, not something the fleet has logged an instance of — worth
+          naming before it happens, not a report that it has. The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}

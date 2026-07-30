@@ -109,6 +109,7 @@ export default function Projects() {
             isPublic={true}
             maturity="runnable"
             url="https://4-life-ivory.vercel.app"
+            repoUrl="https://github.com/dp-web4/4-life"
           />
           <ProjectCard
             name="SNARC"
@@ -116,7 +117,7 @@ export default function Projects() {
             accentColor="#10b981"
             isPublic={true}
             maturity="runnable"
-            url="https://github.com/dp-web4/engram"
+            repoUrl="https://github.com/dp-web4/engram"
           />
           <ProjectCard
             name="Membot"

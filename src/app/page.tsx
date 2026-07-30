@@ -399,9 +399,10 @@ export default function Home() {
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 2,500+ raising sessions
-              across the fleet (internally logged; cumulative basis &mdash;
-              per-machine figures elsewhere use different counting bases, see{" "}
+              remember → oversee → filter → act). 2,065+ raising sessions
+              across the fleet (internally logged, per-machine counts on{" "}
+              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
+              &mdash; the figure with a per-machine audit trail behind it, see{" "}
               <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>).
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
