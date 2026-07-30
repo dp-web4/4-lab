@@ -2,3 +2,18 @@ Starting 4-lab Maintainer Session at Thu Jul 30 06:30:02 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_511.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260727_180137.json => identity_20260730_060914.json} (96%)
+Memory updated. Session complete.
+
+## Summary
+
+**Fleet sync**: manifest unchanged, still 4.5 months stale — correctly skipped per existing memory.
+
+**Terminology drift fixed** (highest priority):
+- `/fleet`: LCT gloss said it formalizes "portable identity" — inverted the canonical non-transferability property. Fixed, verified against `CANONICAL_TERMS_v1.md`.
+- `/context`: added the missing "non-transferable" clause to the LCT glossary row.
+- `/fleet`: hestia's "governance-response conduct" — verified it's a literal internal field name in hestia's source (`derivation.rs`), not a fresh phrase, so linked it to the governance/oversight distinction rather than renaming it.
+- **Caught a false positive**: the visitor log's proposed V3→Validity re-gloss ("reasoning sound" → value-claim confirmation) would have introduced drift — canon literally defines Validity as "How sound is the reasoning?" Left unchanged, documented in memory.
+
+**Other confirmed fixes**: reconciled the site's three raising-session counts (2,500+/1,991/2,065) to the audited 2,065 figure across `/`, `/fleet`, `/context`; added an evidence tier to `/raising`'s untiered emergent-attractors safety claim; fixed SNARC's mislabeled "Site →" link and added 4-Life's missing repo link on `/projects`; named the ranked population on `/arc-agi-3`'s leaderboard claim.
+
+Build passed, committed, and pushed (`13d2518`). Full details and deferred Tier 2/3 items are in `maintainer/logs/2026-07-30.md`.
