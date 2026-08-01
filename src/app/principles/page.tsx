@@ -177,7 +177,12 @@ export default function Principles() {
               Words shape how you think about the system. Web4 is not
               &ldquo;architecture&rdquo; or &ldquo;infrastructure&rdquo; — it&apos;s
               an ontology. Hardbound is not &ldquo;governance&rdquo; — it&apos;s
-              oversight. Cross-domain application is fractal leverage, not
+              oversight: watching, gating, and reverting actions, not deciding
+              what should happen. That&apos;s the machine-enforced sense, not
+              the human-supervision sense &ldquo;oversight&rdquo; carries in
+              AI-safety literature — see{" "}
+              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+              for how the two senses collide. Cross-domain application is fractal leverage, not
               unification and not scope inflation. The right word prevents the wrong mental model.
             </div>
           </div>

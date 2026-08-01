@@ -55,6 +55,7 @@ export default function Context() {
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion."],
+                ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root."],
                 ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3: worth assessed, claims truthful, reasoning sound."],
                 ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
@@ -578,7 +579,7 @@ export default function Context() {
 
         <h3 id="evidence">Evidence &amp; limitations</h3>
         <p>
-          The claims on this site rest on three different kinds of evidence.
+          The claims on this site rest on four different kinds of evidence.
           The caveats appear throughout the pages where each claim is made;
           this consolidates them, because the kinds are not equivalent:
         </p>
@@ -613,6 +614,17 @@ export default function Context() {
           variables — coupling density and the coherence measure itself — is
           yet operationally defined outside the experiment that
           produced it. Treat it as a preliminary observation, not a finding.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Unlicensed vocabulary:</strong>{" "}
+          the developmental framing used across this site — &ldquo;raising,&rdquo;
+          &ldquo;identity,&rdquo; &ldquo;growth&rdquo; — is not yet discriminated
+          from competent context engineering. The{" "}
+          <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>deflationary control</Link>{" "}
+          that would make that comparison is specified but not scheduled — no
+          date, no owner, no pre-registered metric yet. Until it runs, the
+          developmental vocabulary runs ahead of the comparison that would
+          license it.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           What would move claims up this ladder: redacted session-log samples

@@ -140,7 +140,7 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament), the Markov Relevancy
+          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training), the Markov Relevancy
           Horizon (MRH), and the V3 tensor (Valuation / Veracity / Validity) bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT) — it
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
@@ -240,7 +240,7 @@ export default function Raising() {
           of expressive capacity, not a claim of developmental homology.)
         </p>
 
-        <h2 style={{ marginTop: "2rem" }}>The deflationary alternative</h2>
+        <h2 id="deflationary-alternative" style={{ marginTop: "2rem" }}>The deflationary alternative</h2>
         <p>
           (&ldquo;Deflationary&rdquo; in the philosopher&apos;s sense: the
           reading that deflates the developmental framing down to ordinary

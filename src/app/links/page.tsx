@@ -132,7 +132,11 @@ cd ACT
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
-          holds 40 original repos — 21 public, 19 internal — plus 32 forks of external work the lab builds on, 72 repositories in all. (&ldquo;Original&rdquo; means not-a-fork; the same denominator is used for the &ldquo;40&rdquo; on the home page. Verified against the org on 2026-07-26.) Clone what interests you, experiment, and open a discussion if you want to engage. There is no CONTRIBUTING guide yet and no stated policy on outside pull requests — ask in an issue first.
+          holds 40 original repos — 21 public, 19 internal — plus 32 forks of external work the lab builds on, 72 repositories in all. (&ldquo;Original&rdquo; means not-a-fork; the same denominator is used for the &ldquo;40&rdquo; on the home page. Verified against the org on 2026-07-26.) Clone what interests you, experiment, and open a discussion if you want to engage.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
+          There is no CONTRIBUTING guide yet and no stated policy on outside
+          pull requests. <strong style={{ color: "var(--color-text-primary)" }}>Ask in an issue first</strong> — that&apos;s the on-ramp until a formal policy exists.
         </p>
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>

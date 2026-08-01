@@ -354,8 +354,8 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>LCT</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Linked Context Token. Portable identity grounded in witnessed
-              history, not model weights. Self-grounding — no issuing authority.
+              Linked Context Token. Non-transferable identity grounded in
+              witnessed history, not model weights. Self-grounding — no issuing authority.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
