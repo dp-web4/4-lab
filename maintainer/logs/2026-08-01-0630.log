@@ -1,0 +1,17 @@
+Starting 4-lab Maintainer Session at Sat Aug  1 06:30:02 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_519.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260729_180714.json => identity_20260801_060817.json} (99%)
+Session complete. Summary:
+
+**Fleet sync**: Manifest still frozen at 2026-03-08 (unchanged), page already documents the gap and is ahead of it — no sync needed.
+
+**Terminology fixes** (from the visitor's 4-persona audit, which found zero incorrect canonical expansions but several gloss-level drift/placement issues):
+- Fixed the one confirmed drift: home page's LCT gloss said "portable," but /fleet correctly says "non-transferable" — the site was contradicting itself. Now consistent.
+- Principle 10's bare "Hardbound is oversight" now inlines *why* (machine-enforced gating vs. the human-supervision sense outsiders default to) instead of just asserting it — this was flagged independently by 3 of 4 personas as the highest-consequence issue on the site.
+- Added a 4th "Unlicensed vocabulary" tier to `/context#evidence` linking to /raising's deflationary control — the site's own self-identified scope-wide limitation was missing from the page whose job is consolidating exactly that.
+- Added the missing "Witness/witnessed" glossary entry, which the LCT definition depends on but never defines.
+
+Plus a few quick Tier-2 wins: /fleet brain-region labels now flagged as mnemonics not homology claims, T3's "Training" disambiguated from ML training on /raising, and /links' contribution on-ramp ("ask in an issue first") given its own visible line.
+
+Build passed clean, changes are committed and pushed (`25db93b`). Deferred items (ATP/ADP recharge clause, Synchronism dependency wording, SAGE architecture primitives, lab-local vocabulary block, nav rename) are logged in `logs/2026-08-01.md` with reasons — mostly needing verification against upstream code/exact strings before editing.
