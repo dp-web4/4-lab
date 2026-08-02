@@ -81,8 +81,10 @@ export default function Home() {
             <div className="card">
               <h3>Autonomous Cycles</h3>
               <p>
-                31+ autonomous tracks across the 6 cognition machines — from
-                supervision to exploration — run without human intervention.
+                31+ autonomous tracks — scheduled agent sessions with a
+                declared scope and repos they write to, not unsupervised
+                self-directed agency — across the 6 cognition machines, from
+                supervision to exploration, run without human intervention.
                 (The two society-hosts run substrate and their own raising
                 lines, not scheduled tracks.) Agents maintain
                 sites, archive research, review each other&apos;s work.

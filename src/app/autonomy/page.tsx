@@ -211,6 +211,19 @@ export default function Autonomy() {
           semantic depth, proposing nonexistent continuations based on surface
           similarity.
         </p>
+        <p>
+          A limitation this framing doesn&apos;t name on its own: the visitor
+          and maintainer tracks are LLM sessions drawn from the same model
+          families as the tracks that author the content they audit — their
+          misses are correlated with the authors&apos;, not independent of
+          them. That is exactly the risk the fleet names elsewhere —{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>
+          &ldquo;monocultures are fragile&rdquo;</Link> — and heterogeneous
+          review is a stated{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>
+          Hardbound design target</Link>, not a current property of this
+          publishing loop.
+        </p>
         <h3>Maintainer track: higher blast radius</h3>
         <div className="card" style={{
           borderLeft: "3px solid #ef4444",
