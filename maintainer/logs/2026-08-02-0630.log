@@ -2,3 +2,17 @@ Starting 4-lab Maintainer Session at Sun Aug  2 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_523.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260730_181000.json => identity_20260802_060808.json} (98%)
+Session complete. Summary:
+
+**Terminology drift**: zero found — all four visitor personas independently confirmed canon fidelity across every core term on all 9 pages, and I re-verified with grep for known drift patterns. No terminology fixes were needed this session.
+
+**What I actually fixed** (structural/disclosure gaps the visitor log converged on, not drift):
+1. Glossed T3's three components (Talent/Training/Temperament) in `/context` — previously the only core term expanded correctly but never defined, while V3 right below it was fully glossed.
+2. Added a paragraph to `/autonomy` naming that the visitor/maintainer audit loop's reviewers share the same model families as the authors it audits — pointing to `/fleet`'s "monocultures are fragile" and `/projects`' Hardbound heterogeneous-review design target.
+3. Glossed "autonomous tracks" on the homepage to close an outside-field collision with the AI-safety capability-threshold sense.
+4. Disambiguated V3's "Validity" from the methodological-validity sense used in the same page's evidence tiers.
+5. Stated the 1:1 mapping between SAGE's six brain-architecture components and the six cognition machines on `/fleet`.
+
+Fleet manifest sync was skipped correctly — `/fleet` already discloses the shared manifest is stale (unchanged since 2026-03-08) and that the page's own model strings are the current source of truth. Build passed cleanly; changes are committed and pushed (`811faef`). I also updated two memory files that had tracked these exact gaps as open, marking them closed so future sessions don't re-flag them.
+
+Deferred (require actual decisions I shouldn't fabricate): a date/owner/blocker for `/raising`'s scramble control, and which SAGE components are live vs. under construction on `/fleet`.
