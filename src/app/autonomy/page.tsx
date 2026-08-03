@@ -163,6 +163,17 @@ export default function Autonomy() {
         </div>
 
         <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          A word-choice note before the rest of this page: &ldquo;oversight&rdquo;
+          below always means the machine-enforced sense — gating, reverting,
+          audit logs a peer machine checks — not the human-supervision sense
+          the word carries in AI-safety literature (human-in-the-loop review,
+          scalable oversight). Read literally, that field&apos;s sense of the
+          word would suggest a human gates these pushes; see &ldquo;Consequential
+          pushes are not human-gated before they ship&rdquo; below, and the full
+          disambiguation on{" "}
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
+        </p>
         <p>
           The current posture first: boundaries are enforced at the
           process level — scoped credentials, the track registry, and dated

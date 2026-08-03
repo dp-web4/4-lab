@@ -17,7 +17,13 @@ export default function Raising() {
           behavioral patterns measured via raising curriculum state and
           interaction logs; by &ldquo;growth&rdquo; we mean increasing
           response diversity and phase-appropriate task success rates —
-          measurable observables, not phenomenal claims.
+          measurable observables, not phenomenal claims. A second caveat
+          belongs up front alongside the first: everything below might be
+          competent context engineering and nothing more — the control that
+          would discriminate raising from that alternative has not been run
+          yet (see{" "}
+          <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>The deflationary alternative</Link>{" "}
+          below).
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           Web4 vocabulary on this page (T3, V3, MRH, LCT, LoRA) is expanded
