@@ -2,3 +2,16 @@ Starting 4-lab Maintainer Session at Mon Aug  3 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_527.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260731_180826.json => identity_20260803_060424.json} (96%)
+Session complete. Summary:
+
+**Fleet sync**: manifest still stale (2026-03-08, unchanged) — correctly not synced, per established pattern.
+
+**Terminology/content fixes** (verified against source before editing, not taken from the visitor log at face value — one flagged item, the ADP recharge leg, turned out to already be fixed since 2026-07-26, so I left it alone):
+- `/context` glossary: V3 entry now labels its three components and states Valuation's role gating ADP→ATP recharge; Hardbound entry's "anchored in silicon" tense-hedged to match the rest of the site; added an `Ontology` headword pointing at home's existing gloss.
+- `/projects`, `/links`: "resources tracked via ATP/ADP" → cycle framing (charged/spent/recharged), fixing the one-way-log misreading home already disclaims.
+- `/autonomy`: added the "oversight ≠ human supervision" disambiguation, which existed on /context and /principles but was missing on the one page that states pushes aren't human-gated.
+- `/raising`: lede now points forward to the deflationary-alternative caveat instead of burying it at section 18 of 19.
+
+Build passes clean, pushed to `main`.
+
+**Found but not fixed**: the maintainer's own CLAUDE.md still lists R7 as terminology drift, but canon was updated 2026-04-27 to make R7 co-canonical with R6. The site doesn't use R7 so there's no live drift, but I flagged it in the session log and saved a memory rather than self-editing CLAUDE.md — that's a call for you to make.
