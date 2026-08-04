@@ -13,7 +13,10 @@ export default function Autonomy() {
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), runs
           substrate, not tracks.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
-          scope and a set of repos it writes to.{" "}
+          scope and a set of repos it writes to. &ldquo;Autonomous&rdquo; here means
+          unattended and self-scheduled, not self-directed in the AI-safety sense
+          of choosing its own goals: task definitions are authored in advance, not
+          chosen by the track itself.{" "}
           No human triggers them. Scope is enforced at the process level —
           scoped credentials, the track registry, and after-the-fact audit, a
           detect-and-revert posture (see Safety boundaries below); hardware-anchored

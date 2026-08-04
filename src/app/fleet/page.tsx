@@ -130,7 +130,7 @@ export default function Fleet() {
             role={
               "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
               "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
-              "The Sovereign is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
+              "The Sovereign (society-layer vocabulary; not yet in CANONICAL_TERMS_v1, like chapter ledger and chapter law) is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +

@@ -131,7 +131,7 @@ export default function ArcAgi3Page() {
               <tr>
                 <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)", width: "40%" }}>Public set</td>
                 <td style={{ padding: "0.375rem 0" }}>
-                  24/25 games solved (96.0%); 94.85% official action score (Claude Opus 4.6, network access) &mdash;{" "}
+                  24/25 games solved (96.0% game-solve rate); 94.85% official action score (efficiency-weighted; Claude Opus 4.6, network access) &mdash;{" "}
                   <a
                     href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
                     target="_blank"

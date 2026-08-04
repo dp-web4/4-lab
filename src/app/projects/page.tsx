@@ -129,7 +129,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B (Sprout) to 27B (Thor) at benchmark time, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game rate); 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost. The games are the test; the capability is the product."
+            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B (Sprout) to 27B (Thor) at benchmark time, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game-solve rate); 94.85% official ARC Prize action score (efficiency-weighted; Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost — harness-vs-model ablation not yet run. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -143,7 +143,7 @@ export default function Projects() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0%); 94.85% official action score (Claude Opus 4.6)</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0% game-solve rate); 94.85% official action score (efficiency-weighted; Claude Opus 4.6)</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B at benchmark time</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>

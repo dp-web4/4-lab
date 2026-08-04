@@ -8,7 +8,7 @@ export default function Context() {
       <section className="section">
         <h2>How Knowledge Flows</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem", marginBottom: "1rem" }}>
-          Also serves as the canonical glossary for Web4 vocabulary. New here? Start here.
+          Also serves as the lab&apos;s working glossary for Web4 vocabulary. New here? Start here.
         </p>
         <p>
           Forty original repos (twenty-one public, nineteen internal — the org also carries 32 forks of external work we build on, which the &ldquo;original&rdquo; count excludes; 72 repositories in total, verified against the GitHub org 2026-07-26), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
@@ -79,6 +79,7 @@ export default function Context() {
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
                 ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — described as tired, energized, or in need of rest. Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
                 ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context."],
+                ["society", "Society / Web4 society", "—", "The fleet itself, modeled as a Web4 society: every cognition machine is a member, identity keyed to its LCT, membership witnessed in the chapter ledger. Parent term for HUB, Chapter ledger, and Chapter law below — those entries define themselves using this word. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],

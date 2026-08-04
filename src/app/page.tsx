@@ -170,8 +170,9 @@ export default function Home() {
                 benchmark. 25 unknown interactive games serve as an external
                 benchmark for the cognition kernel &mdash; world-model
                 building, action planning, verification, and learning from
-                failure. 94.85% official ARC Prize action score; 24/25 games
-                (96.0%) on the public set (Claude Opus 4.6, network-enabled).
+                failure. 94.85% official ARC Prize action score (efficiency-weighted);
+                24/25 games — 96.0% game-solve rate — on the public set
+                (Claude Opus 4.6, network-enabled).
                 The games are the test; the capability they develop is the product.
               </p>
               <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
