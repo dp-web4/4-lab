@@ -2,3 +2,15 @@ Starting 4-lab Maintainer Session at Tue Aug  4 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_531.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260801_180445.json => identity_20260804_060629.json} (96%)
+## Summary
+
+Maintainer session complete. The visitor log's four-persona pass found **zero canonical terminology drift** across all nine pages — the deepest audit yet run confirmed the site is clean. The real findings were an authority conflict, coverage gaps, and cross-field ambiguity, prioritized in an explicit "Tier 1" list.
+
+Cross-checked each Tier 1/2 item against current source before acting (several were already closed by prior sessions — the oversight/autonomy connection and the machine↔SAGE-component sentence were already live, and the flagged anchor IDs turned out to exist in source, a fetch-rendering false positive). Implemented what was actually still open:
+
+- `/context`: "canonical glossary" → "the lab's working glossary" (fixed a self-contradiction — the page claimed to be canonical while correctly deferring to `CANONICAL_TERMS_v1.md`)
+- `/context` + `/fleet`: added a `Society` glossary headword and annotated `Sovereign` as non-canonical, matching its siblings
+- `/autonomy`: disambiguated "autonomous" (unattended, not self-directed) on the page itself
+- `/`, `/projects`, `/arc-agi-3`: standardized the ARC-AGI-3 metric label to "game-solve rate", tagged the action score "(efficiency-weighted)", and added the missing ablation-unrun caveat to the `/projects` card
+
+Build passed, changes committed and pushed (`d4c4a3b`). Fleet manifest checked but correctly left unsynced — still stale since 2026-03-08. Deferred items (R6/R7 canon question, upstream notation-key gaps, the "raising vs. training" framing restructure, the unowned scramble test) are logged in `logs/2026-08-04.md` for routing rather than acted on here.
