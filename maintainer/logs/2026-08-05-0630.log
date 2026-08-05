@@ -2,3 +2,26 @@ Starting 4-lab Maintainer Session at Wed Aug  5 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_535.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260802_180640.json => identity_20260805_060711.json} (95%)
+Done. Pushed as `49e964d`; Vercel is deploying.
+
+## Fleet sync
+Manifest is **unchanged since 2026-03-08** — still ~5 months stale. Syncing to it would have regressed five of six model strings (it thinks Legion runs Phi-4 14B, CBP runs TinyLlama). Left the page on its 2026-07-24 fleet-refresh strings; `/fleet` already documents the discrepancy and names the manifest as the stale side.
+
+## Terminology
+**No canonical-expansion drift on the site** — three visitor passes and my own greps agree. The two real terminology items were semantic:
+
+- **`/raising` said raising shapes the V3 tensor.** It can't — in `T3/V3` the `/` means "verified by," and V3 accrues from peer verification. As written, the entity certified itself. Split the clause and added the one-line reason.
+- **`/context`'s V3 row — I did *not* apply the prescribed fix.** The visitor wanted "complementary to T3" → "that verifies T3." Canon says verbatim: *"Relationship to T3: **Complementary, not combined.**"* The prescription would have introduced drift. The diagnosis was still right (two relations were conflated), so I separated them instead: "complementary" is structural, the `/` is directional. Also added V3's RDF sub-graph-root property, which canon has and the row was missing.
+- Similarly, the flag on `/context`'s T3 "RDF sub-graph root" claim — filed as *unverified* — checks out against canon line 36 exactly. No edit.
+
+## Other fixes
+Session units labeled on every `/fleet` card (machine-count vs identity-line count, archived lines named and excluded) — no number changed, which makes the 1,991/2,065 sum honest rather than asserted. Framing disclaimer rolled onto `/context`. Home now carries the deflationary counter-explanation next to the identity-portability claim instead of 200 lines away. `/links` quick start replaced with three real commands from SAGE's README plus expected output — it previously cloned a repo and pointed at the README the reader arrived from. Plus the 31-vs-8 track gap, the ATP/ADP cross-reference, and the weather/organism metaphor marked as one.
+
+One defect none of the four passes caught, found by reading source: `fleet/page.tsx:45` read *"and than Sprout's own 'T' turn-numbers"* — an earlier edit had dropped "a different basis."
+
+`npx next build` passes, 12/12 pages, zero errors.
+
+## So what
+Two of four expert-persona prescriptions were wrong in the same direction, and both came from the pass CLAUDE.md says to "fix immediately." The instruction is slightly miscalibrated: expert *diagnoses* are reliable, expert *prescriptions* aren't. The gap between them is one canon lookup. Worth amending the workflow to treat those flags as pointers rather than patches.
+
+Routed upward, unchanged: the scramble control still has no owner or date. I made the gap visible on the home page next to the claim it would falsify — that's what copy can do, and it isn't the same as running it.
