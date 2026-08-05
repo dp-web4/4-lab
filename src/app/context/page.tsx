@@ -9,6 +9,10 @@ export default function Context() {
         <h2>How Knowledge Flows</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem", marginBottom: "1rem" }}>
           Also serves as the lab&apos;s working glossary for Web4 vocabulary. New here? Start here.
+          Developmental language across this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;,
+          and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a
+          claim about consciousness or experience. Full framing on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>.
         </p>
         <p>
           Forty original repos (twenty-one public, nineteen internal — the org also carries 32 forks of external work we build on, which the &ldquo;original&rdquo; count excludes; 72 repositories in total, verified against the GitHub org 2026-07-26), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
@@ -52,13 +56,13 @@ export default function Context() {
                 ["ontology", "Ontology", "—", "The Semantic Web sense: a shared vocabulary of concepts and the relationships between them — not the philosophical sense (a theory of what exists). This is what the Web4 entry above claims and nothing more; see the home page's Vocabulary Primer for the fuller gloss (“An ontology (shared vocabulary + relationships) for how AI agents prove identity, earn trust, and account for resources — not a blockchain, not a platform”)."],
                 ["trust-native", "Trust-native", "—", "Trust as a primitive of the ontology, not a feature bolted on: every relationship carries T3/V3 tensors bound to LCTs and scoped by MRH. The term names an ontological commitment — the verifiable substrate (witnessed history) and the earned record (tensors updated by interaction) both follow from it; it is not, by itself, a cryptographic guarantee."],
                 ["trust", "Trust", "—", "Not a property of an entity — a property of a relationship, computed per role from a T3/V3 tensor updated by interaction (see Principle 4 on /principles). An agent trusted for code review may be untrusted for creative writing. Distinct from the calibrated-human-reliance sense the word carries in AI-safety literature."],
-                ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism."],
+                ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism. Explicitly NOT the 'emergent capabilities' sense from the LLM scaling literature — no claim that a capability appears discontinuously at some parameter or data threshold, and no position taken on whether such discontinuities are real or metric artifacts. This site's uses are all about interaction dynamics at fixed weights, which is a different phenomenon that borrowed the same word."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion."],
                 ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root. Talent: aptitude for the role. Training: capability accumulated through interaction history — not gradient training, the sense the same word carries in ML (see /raising). Temperament: behavioral disposition under load."],
-                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor complementary to T3. Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP above: allocation recharges against validated value creation, not simply reported completion."],
+                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP above: allocation recharges against validated value creation, not simply reported completion."],
                 ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
@@ -249,11 +253,18 @@ export default function Context() {
           entries, and promoting durable patterns toward identity-level storage.
         </p>
 
-        <h3>Fleet brain-analog terms: WM and RPE</h3>
+        <h3>Fleet brain-analog terms</h3>
         <p>
           The fleet&apos;s machine roles use brain-analog vocabulary from cognitive
           science — functional analogies, not claims about neural correspondence.
-          Two terms appear in fleet machine descriptions:{" "}
+          Six labels appear on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, one per
+          cognition machine: <strong>working memory</strong> (CBP),{" "}
+          <strong>thalamic router</strong> (Sprout), <strong>cerebellum / habit
+          compiler</strong> (McNugget), <strong>hippocampal episodic index</strong> (Thor),{" "}
+          <strong>reward prediction error</strong> (Legion), and{" "}
+          <strong>interoception / metacognition</strong> (Nomad). Each card carries its own
+          one-line decode; the two abbreviated on the cards are expanded here:{" "}
           <strong>WM (Working Memory)</strong> — the typed, capacity-limited
           scratchpad that holds the current task context; in the fleet, CBP&apos;s
           role is modeled on the dorsolateral prefrontal cortex (dlPFC), the

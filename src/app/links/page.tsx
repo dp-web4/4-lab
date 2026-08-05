@@ -89,7 +89,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"
             title="Gemma 4 Good Submission"
-            description="Hackathon submission — self-supervising AI with embedded oversight for constrained environments (Apache 2.0)"
+            description="Parse it as 'Gemma 4 Good' + 'submission', not as a self-rating: the lab's entry (titled Attested Resilience) in the Gemma 4 Good Hackathon, run by Kaggle and Google DeepMind in May 2026. Self-supervising AI with embedded oversight for constrained environments — persistent cryptographic identity per device, R6-auditable actions, policy as signed artifact (Apache 2.0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/membot"
@@ -109,14 +109,32 @@ export default function Links() {
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
         <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel
+# Needs: Rust (stable), Ollama, Python 3.10+
 git clone https://github.com/dp-web4/SAGE
 cd SAGE
-# See README for Python/conda setup and first session instructions
+
+# 1. Create your own instance — this is the first real command.
+#    It writes sage/instances/mybox/ : identity, state files, experience buffer.
+python3 -m sage.instances.init --machine mybox --model gemma3:4b --operator-name yourname
+
+# 2. Build the daemon that runs the 12-step loop.
+cd sage-rs && cargo build --release && cd ..
+
+# 3. Start it. Dashboard comes up at http://localhost:8760/
+SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
 cd ACT
 # See README for Go/Cosmos SDK setup`}</pre>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          What you should see after step 3: the daemon logs its instance name and model, then
+          the dashboard at <code>localhost:8760</code> shows the loop stepping and a metabolic
+          state. If step 1 is the only thing you run, the payoff is the generated instance
+          directory — that directory <em>is</em> the entity; everything raising does, it does
+          to those files. Commands transcribed from the SAGE README&apos;s Getting Started
+          section, which is the maintained version if these drift.
+        </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           SAGE is the recommended starting point — it runs on a single machine, has 1,991 internally logged raising sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-layer / Cosmos SDK side.
         </p>

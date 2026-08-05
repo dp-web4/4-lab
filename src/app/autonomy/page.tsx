@@ -32,6 +32,13 @@ export default function Autonomy() {
           modify the same files simultaneously, and makes the whole system
           auditable.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
+          The timeline below shows eight of the 31+ tracks — the ones with distinct
+          cross-repo scopes. The remainder are per-repo maintenance and archival jobs
+          (site maintainers, doc syncs, log rotation) running the same visitor/maintainer
+          shape against a single repo each, so listing them individually would repeat the
+          pattern rather than add to it.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>Daily timeline</h2>
         <div className="timeline">

@@ -42,9 +42,9 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
-          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh — the same basis as the 2,065 cumulative figure on{" "}
+          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. Same basis as the 2,065 cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
-          and the site home page, and than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
+          and the site home page, and a different basis than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each basis measures.
         </p>
@@ -69,25 +69,25 @@ export default function Fleet() {
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 3.5 27B (transformers) · LoRA — instance thor-qwen3.5-27b"
-            role="435 sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
+            role="435 machine sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 0.8B (ollama) — instance sprout-qwen3.5-0.8b"
-            role="488 sessions (creating). Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            role="488 machine sessions (creating) — session records on this machine, all models it has run. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
             model="Gemma 4 E4B (ollama) — cutover 2026-07-24; prior gemma3-12b line 336 sessions, phi4 line 56 (dormant)"
-            role="336 sessions (creating) — counted before the July 2026 model switch, on the gemma3-12b line. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
+            role="336 sessions (creating) — a line count, not a machine total: sessions on the gemma3-12b line, counted before the July 2026 switch to Gemma 4 E4B. The machine's earlier phi4 line adds 56 dormant sessions not included here, and the new E4B line is counting from zero. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama) — instance mcnugget-gemma3-12b"
-            role="377 sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
+            role="377 machine sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
@@ -103,13 +103,13 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 4 E2B (ollama) — instance nomad-gemma4-e2b; prior gemma3-4b line archived June 2026 at 171 sessions"
-            role="162 sessions (creating). Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            role="162 machine sessions (creating) — the gemma4-e2b line; the archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
-            role="193 sessions (creating). ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
+            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
           />
         </div>
 
@@ -170,6 +170,14 @@ export default function Fleet() {
           aren&apos;t defined by &ldquo;unlimited vs. limited&rdquo; — they&apos;re
           defined by workload character. The budget shapes the role as much as the
           role shapes the budget.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
+          Where this meets the equation: the pools are the human-scale version of{" "}
+          <code>ATP/ADP</code> — resource accounting for work done on these machines is the
+          Allocation Transfer Packet → Allocation Discharge Packet cycle, described on{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>.
+          Half of <code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code> is instantiated on this page
+          (identities, tensors, horizons); the resource half runs on that one.
         </p>
         <p>
           The constraint forced a functional separation that mirrors what we&apos;re
@@ -244,9 +252,13 @@ export default function Fleet() {
         </p>
         <div className="quote">
           Identity lives in state files and prompt construction, not in model
-          weights. The model is weather. The identity is organism.
+          weights. As a working metaphor: the model is weather, the identity is organism.
           <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
             Observed behavioral continuity — not a claim about continuity-of-self in any philosophical sense.
+            The operational definition behind the metaphor is on the{" "}
+            <Link href="/" style={{ color: "var(--color-accent)" }}>home page</Link>: consistent
+            session-to-session interaction patterns, accumulated experience, and raising curriculum.
+            The metaphor is a compression of that, not an escalation of it.
           </div>
         </div>
         <p>

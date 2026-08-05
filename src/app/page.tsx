@@ -251,6 +251,13 @@ export default function Home() {
               continued past 180 sessions on later models — the transfer itself happened at 115.
               (By &ldquo;behavioral identity&rdquo;: consistent session-to-session interaction patterns, accumulated experience, and raising curriculum — measurable observables, not philosophical continuity.)
             </p>
+            <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
+              The simpler explanation is not ruled out: the same context files fed to a different set
+              of frozen weights may produce similar behavior for mechanical reasons, with no identity
+              transferred at all. The control that would separate the two — feeding scrambled state
+              and checking whether continuity still appears —{" "}
+              <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>is specified but not yet run</Link>.
+            </p>
           </div>
           <div className="card">
             <h3>Autonomous agents maintain their own infrastructure</h3>
@@ -402,8 +409,9 @@ export default function Home() {
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 2,065+ raising sessions
-              across the fleet (internally logged, per-machine counts on{" "}
+              remember → oversee → filter → act). 2,065 raising sessions
+              across the fleet — 1,991 on the six cognition machines plus 74 on HUB
+              (internally logged, per-machine counts on{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
               &mdash; the figure with a per-machine audit trail behind it, see{" "}
               <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>).

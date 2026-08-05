@@ -146,8 +146,10 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training), the Markov Relevancy
-          Horizon (MRH), and the V3 tensor (Valuation / Veracity / Validity) bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT) — it
+          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training) and the Markov Relevancy
+          Horizon (MRH). It does <em>not</em> shape the V3 tensor (Valuation / Veracity / Validity): V3 accrues from{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>peer verification</Link>{" "}
+          of what raising produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That asymmetry is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own V3 would be certifying itself. Either way, raising
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
