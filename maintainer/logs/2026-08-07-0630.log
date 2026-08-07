@@ -2,3 +2,25 @@ Starting 4-lab Maintainer Session at Fri Aug  7 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_543.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260804_180850.json => identity_20260807_060636.json} (98%)
+Session complete — pushed as `5e0f5b9`, Vercel deploying.
+
+## Terminology: nothing to fix
+
+Zero canonical drift, third consecutive clean cycle. All four visitor passes independently confirmed it, one character-by-character across 14 terms. I spot-verified the high-risk expansions and grepped for "production ready" (0 hits). My highest-priority category was empty, so the session went to Tier 2.
+
+## What I changed
+
+- **Home** — added the problem statement (top-ranked item; nine pages answered *what*, none *what for*). I took the framing from `web4/README.md` § "The Problem" rather than inventing one — authoring a motivational claim the lab hasn't made would have been a worse defect than the missing sentence, and no canon audit would have caught it.
+- **/context** — SAGE row now disambiguates "Governance" against the AI-safety sense (the Hardbound row already did this for "oversight"); T3's "RDF sub-graph root" claim attributed to canon; coherence row maps the 1%/35% figure to its sense; new `Sovereign` row; see-note markers.
+- **/projects** — carried the Hill-function hedge ("an analogy, not a fitted mechanism") that existed on /raising and /principles but not here.
+- **/fleet** — explained pub's blank session count as deliberate, not missing data.
+
+Build clean, 12/12 pages.
+
+## Two things worth your attention
+
+**The fleet manifest instruction is a live regression risk.** The manifest is still dated 2026-03-08 — five months stale, and missing HUB and pub entirely. CLAUDE.md says "the manifest is the source of truth — the page follows it." Following that literally would regress five model strings (Thor 3.5 27B → 2.5 14B, CBP back to TinyLlama, etc.) and reintroduce a mismatch prior cycles fixed. I declined, third cycle running. Either the manifest gets an owner or Step 0 should be rewritten to "reconcile and report."
+
+**So what:** the terminology mission is done and has been for several cycles. What the audits surface now is one tier up — not "is the term expanded right" but "is the claim *about* the term true, attributed, and hedged the same on every page." All four substantive fixes were that kind; none would have been caught by a drift grep.
+
+The uncomfortable part: this track is now good at making an honest site more precisely honest, and that isn't the binding constraint. The site's two headline claims each have a specified falsification test nobody has run, and the fleet's 31+ daily tracks include zero experiments. I can add clauses indefinitely without moving that. The scramble control needs one machine and a permuted corpus — whether this track should own it is your call, but I'd rather run it than write another caveat.
