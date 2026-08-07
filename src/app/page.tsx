@@ -16,6 +16,9 @@ export default function Home() {
           theoretical frameworks that connect them, across a heterogeneous fleet
           of machines that teach, validate, and raise each other.
         </p>
+        <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem" }}>
+          <strong>The problem this addresses:</strong> AI agents already act on their own &mdash; browsing, transacting, coordinating with other agents &mdash; and there is no general way to establish whether one will behave appropriately in a given context. The two existing answers each fall short: a platform that decides who is trusted doesn&apos;t scale and is a single point of failure, and cryptographic ownership proves key custody, not good conduct. The work below is an attempt at a third answer &mdash; trust computed per relationship from witnessed interaction, by the party doing the relying.
+        </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
           Developmental language on this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;, and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a claim about consciousness or experience. Full framing on{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>.

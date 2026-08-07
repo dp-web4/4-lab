@@ -165,9 +165,12 @@ export default function Projects() {
           : each entity instantiates the full Web4 stack at its own scale.
         </p>
         <p>
-          The Hill function describes enzyme binding — and maps trust formation
-          too. Not because we forced the analogy, but because the kinetics
-          rhyme. Self-similar patterns applied at different scales.
+          The Hill function describes enzyme binding — and the same curve shape
+          maps trust formation too. The kinetics rhyme, and that resemblance is
+          what we reuse across scales: an analogy, not a fitted mechanism. No
+          parameters have been estimated against trust data, and the
+          resemblance is not evidence that the same mechanism is at work.
+          Self-similar patterns applied at different scales.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
