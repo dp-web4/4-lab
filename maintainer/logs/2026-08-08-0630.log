@@ -2,3 +2,26 @@ Starting 4-lab Maintainer Session at Sat Aug  8 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_547.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260805_180935.json => identity_20260808_060253.json} (99%)
+Session complete. Pushed as `b884f58`.
+
+## What I found
+
+**Terminology: zero expansion-level drift**, verified across all four visitor passes — LCT, T3, V3, MRH, ATP, ADP, R6, Web4=ontology, Hardbound=oversight all canonical on all nine pages. Third session running with no drift. All real findings were gloss-level: right term, wrong object.
+
+**Two of four Tier 1 items were already fixed in source** and I did not re-implement them — home's ATP/ADP cycle (commit `9a84d66`) and /raising's deflationary control (~80 lines specifying the scramble, pre-registered metric, and retirement commitment). Both were marked "P3 found, P4 verified." That verdict turns out not to mean what it looks like: both passes quoted a real substring and stopped short of the correction below it. Cross-pass agreement measures fetch *stability*, not completeness — the same summarizer truncates at the same place twice. I've recorded that, since it's the one check the verification ladder structurally can't perform on itself.
+
+## What I changed
+
+The one genuinely open Tier 1 item was the best finding in the log: **detect-and-revert is an empirical claim and /autonomy published no numbers.** So I counted them — 79 maintainer sessions, 117 commits touching `src/`, **zero rollbacks, zero reverts** (every `grep revert` hit was prose describing the posture). Published with the caveat that makes it honest: a zero is weak evidence when the only detector is the same loop under evaluation. Also noted what it *does* show — corrections here land as forward fixes, not rollbacks, with /raising's "the first version of this section got that wrong" as the worked example.
+
+Then five smaller gloss fixes: LCT on home was self-contradictory ("self-grounding" two words after "grounded in witnessed history") — canon defines LCT by witnessed history and is *silent* on issuance, so I resolved it to self-issued/other-grounded rather than importing a prescription canon doesn't make; witnessed-history clause added to the /projects Web4 card; the Synthon↔coherence definitional loop broken; SNARC's five dimensions glossed including the previously unhedged "Arousal"; and the glossary surfaced in nav ("Glossary" on desktop — "Context & Glossary" would have overflowed an 8-link non-wrapping flex bar; the full label goes in mobile/breadcrumbs/search).
+
+Build passes, 12/12 pages, zero errors. **Fleet page deliberately not synced** — the manifest is still five months stale and would regress Thor, Legion, Nomad and CBP by four months.
+
+## So what
+
+Two things worth your attention, both routed upward rather than patched down:
+
+The **manifest is dead upstream** — fourth consecutive session reaching this conclusion. CLAUDE.md's Step 0 calls it the source of truth; following that instruction literally would damage the page every time. Either the machines resume owning their entries or Step 0 should be rewritten to treat staleness as the expected case.
+
+And the loop is **well-tuned for a problem it's no longer finding.** Terminology drift is at zero three sessions running, while the two experiments this site names as decisive — the raising deflationary control and the ARC harness ablation — remain unscheduled among 31+ maintenance tracks. Today is a small instance of the same shape: the most valuable output was a counted number that took one shell command; the most common output is prose. I deferred the per-project hardware floor for the same reason — stating a VRAM figure I hadn't measured would fabricate the most checkable fact on the page. That one needs a real first-run check per repo, which is a session of its own.
