@@ -68,13 +68,13 @@ export default function Context() {
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
-                ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept."],
+                ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept. The dimensions, since the names are borrowed from affective psychology and one of them reads oddly out of context: Surprise = prediction error, the outcome did not match what was expected; Novelty = not seen before, independent of whether it was predicted; Arousal = activation intensity, a magnitude-of-engagement signal and nothing to do with the colloquial sense of the word; Reward = a goal was advanced; Conflict = signals disagree or a constraint was violated."],
                 ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation intended to anchor in silicon; enforcement today runs at the process level, not yet hardware-anchored (see /projects). “Oversight” here is machine-enforced (gating, reverting), not the human-supervision sense the word carries in AI-safety literature. See note below ↓"],
                 ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps."],
                 ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) layered over MCP transport."],
                 ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
                 ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
-                ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.)"],
+                ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.) Note the dependency: this term is defined through 'coherence', and coherence is in turn partly defined through the synthon marker — so it inherits that entry's open status. See the coherence entry; there is no single operational definition of coherence yet, and this row does not supply one."],
                 ["attractor", "Attractor / attractor basin", "—", "Used on this site as a METAPHOR, not a formal dynamical-systems object: a region of response-space a model reliably returns to under a given context. No state space and no update rule are specified, and none is implied — we have not defined the dynamics that would make 'attractor' a technical claim. Flagged explicitly because the word borrows the connotation of mathematical precision from a formalism this site does not cash out. Read it as 'stable behavioral tendency'."],
                 ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
                 ["experience-buffer", "Experience buffer", "—", "The per-instance store of prior sessions an agent carries forward — session records, distilled observations, and the state files the prompt builder reads at start-up. It is the durable half of what raising shapes: on disk, portable between machines, and independent of which model is loaded. Named here because the glossary's own definition of Raising rests on it."],
@@ -242,8 +242,10 @@ export default function Context() {
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
         <p>
           SNARC provides salience-gated memory for agent sessions. Every
-          tool call is scored on 5 dimensions — Surprise, Novelty, Arousal,
-          Reward, Conflict — and stored in a 4-tier hierarchy: buffer (raw
+          tool call is scored on 5 dimensions — Surprise (prediction error),
+          Novelty (not seen before), Arousal (activation intensity, not the
+          colloquial sense), Reward (a goal advanced), and Conflict (signals
+          disagree) — and stored in a 4-tier hierarchy: buffer (raw
           events) → observations (scored) → patterns (consolidated) → identity
           (stable). Confidence decays over time so memories aren&apos;t permanent.
         </p>

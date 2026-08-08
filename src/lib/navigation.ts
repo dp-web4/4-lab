@@ -19,7 +19,7 @@ export const pages: NavItem[] = [
     keywords: ["web4", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
   },
   {
-    title: "Context",
+    title: "Context & Glossary",
     href: "/context",
     description: "Canonical Web4 glossary: all terms, acronyms, and the knowledge flow model. Start here if the vocabulary is new.",
     keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "knowledge", "memory", "web4", "terms", "definitions"],

@@ -368,7 +368,10 @@ export default function Home() {
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>LCT</h3>
             <p style={{ fontSize: "0.9rem" }}>
               Linked Context Token. Non-transferable identity grounded in
-              witnessed history, not model weights. Self-grounding — no issuing authority.
+              witnessed history, not model weights. Self-<em>issued</em> — there is no
+              certificate authority — but other-<em>grounded</em>: what makes it
+              evidence rather than assertion is the witnessing, which comes from
+              outside the entity.
             </p>
           </div>
           <div className="card" style={{ padding: "1rem 1.2rem" }}>

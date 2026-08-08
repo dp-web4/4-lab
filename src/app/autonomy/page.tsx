@@ -207,7 +207,12 @@ export default function Autonomy() {
           (the trust-native ontology) terms, each scheduled
           track is issued an ATP (Allocation Transfer Packet) against its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
-          is the bookkeeping layer that makes autonomous operation auditable.
+          is the bookkeeping layer that makes autonomous operation auditable. Note
+          the scope: what runs here is the <em>issue-and-discharge half</em> of the
+          ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
+          recharges ADP back to ATP against V3-validated value creation (see{" "}
+          <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
+          this track registry implements the accounting, not the recharge gate.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>
@@ -270,6 +275,22 @@ export default function Autonomy() {
             <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>
             {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
             Consequential pushes are not human-gated before they ship.
+            {" "}<strong style={{ color: "var(--color-text-primary)" }}>The revert record, since detect-and-revert is an empirical claim and not just a posture:</strong>{" "}
+            across 79 maintainer sessions (2026-04-23 through 2026-08-07) and 117
+            commits touching this site&apos;s source, the number of deploys rolled
+            back via Vercel is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>, and the number of shipped
+            changes undone by a git revert is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>. Read that as weak
+            evidence, not as a safety result: the only automated detector is the
+            same daily loop being evaluated, so a zero is equally consistent with
+            &ldquo;no bad push shipped&rdquo; and &ldquo;the loop cannot see its own
+            bad pushes.&rdquo; What the record does show is that self-correction
+            here has taken the form of{" "}
+            <em>forward fixes in a later session</em> rather than rollbacks — the
+            revised threshold argument on{" "}
+            <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
+            (&ldquo;the first version of this section got that wrong&rdquo;) is a
+            worked example. A rollback count of zero is therefore a measurement of
+            how corrections are applied, not proof that none were needed.
             Detection interval, stated honestly: the visitor track re-browses
             the live site on the next daily cycle, so automated detection of a
             bad push runs on a roughly 24-hour loop — but only for the failure

@@ -25,7 +25,7 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link href="/projects">Projects</Link>
-            <Link href="/context">Context</Link>
+            <Link href="/context">Glossary</Link>
             <Link href="/arc-agi-3">ARC-AGI-3</Link>
             <Link href="/fleet">Fleet</Link>
             <Link href="/autonomy">Autonomy</Link>
