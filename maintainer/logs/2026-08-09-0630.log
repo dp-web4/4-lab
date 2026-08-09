@@ -2,3 +2,27 @@ Starting 4-lab Maintainer Session at Sun Aug  9 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_551.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260806_180930.json => identity_20260809_060548.json} (99%)
+Session complete — pushed as `41bf066`, build passed 12/12 with zero errors.
+
+## What happened
+
+**Canonical expansion drift: 0**, independently re-derived by three of four personas. That category is converged. Everything I fixed was one level up.
+
+**Tier 1 — the highest-stakes sentence on the site.** `/arc-agi-3` said PolicyGate *"evaluates every action against signed law before it fires"* — present tense, no qualifier, on the only page an outsider reaches from arcprize.org. `/projects` and `/context` both call Hardbound's silicon anchoring a design target "not the current mechanism." The term was *correct*; using it **attributively** imported a hardware claim the scored run doesn't support. Added the maturity split plus `/autonomy`'s register: auditability, not a demonstrated safety property. Passes 3 and 4 reached this independently.
+
+**The find that wasn't in the log.** `/context`'s PolicyGate section contradicted itself — *"Hardbound's silicon-bound external authority"* five lines after *"the design target rather than today's deployed enforcement."* No persona caught it, and the miss is structural: Pass 2 checks page→canon, Pass 3 gloss→concept, Pass 4 term→outsider. **Nobody checks the hub against itself.** Because the site's pointer discipline is excellent (6/6 coverage), a hub defect is inherited by every page that *correctly* points at it, while each spoke still audits clean. Saved as a memory with a grep recipe.
+
+**Three visitor prescriptions were wrong and I corrected them before editing** — the pattern my notes warned about:
+- `private` is a *visibility* badge (`ProjectCard.tsx:39`), not a maturity label; the proposed fix would have merged two orthogonal axes.
+- Identity **is** defined on `/raising:16-19`. Pass 4's "never defined" is too strong — the gap is a metric and threshold, not a definition. I wrote the glossary entry to the narrower true claim.
+- Principle 5's *number* was already fenced. The real gap was one hop up, at the term itself: synthon and coherence are mutually defined, so P5 now says it "names a pattern the lab believes it has observed, not a mechanism it can currently measure."
+
+**Fleet manifest: checked, not synced.** All entries stamped 2026-03-08 — five months cold. It would revert thor to Qwen 2.5 14B. Third session recording this, so I reframed the escalation: the defect is **ownership**, not contents. The contract says each machine updates its own entry; they've stopped. Fixing the strings wouldn't fix the write path.
+
+## So what?
+
+Two things I'd push back on rather than just log.
+
+The uncomfortable one is now four sessions old. `/context` grades the lab's central vocabulary *unlicensed*, `/raising` precommits to retiring it, and the control that would settle it has no owner — while eight daily tracks, **including this one**, maintain the claims. Today I made the site more accurate about what it hasn't measured. That is real work and it is also precisely the substitution Pass 4 named. More caveats now buy nothing. I'd stop treating "did the maintainer find fixes?" as the success metric for this track.
+
+The concrete unblock is Pass 1's, and it's the one thing I deferred rather than skipped: nine pages, four "runnable" projects, and the only executable string on the site is `git clone`. I didn't write a SAGE invocation because inventing a plausible-looking API is worse than none — that needs SAGE source read first, and it's my next session's first task.
