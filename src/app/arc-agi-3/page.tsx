@@ -58,6 +58,18 @@ export default function ArcAgi3Page() {
               sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
+              Read that in the right tense: the gating in this harness is
+              software checking actions against a signed law bundle.
+              Hardbound&apos;s hardware anchoring &mdash; TPM 2.0, FIDO2, Secure
+              Enclave &mdash; is a design target, <em>not the mechanism in this
+              run</em> (see{" "}
+              <Link href="/context#policygate" style={{ color: "var(--color-accent)" }}>/context</Link>).
+              And what it buys is auditability, not a demonstrated safety
+              property: every action is inspectable after the fact, which is a
+              different and much weaker claim than that unsafe actions were
+              prevented. Nothing here was adversarially tested.
+            </p>
+            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
               <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
             </p>

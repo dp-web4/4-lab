@@ -210,7 +210,9 @@ export default function Autonomy() {
           is the bookkeeping layer that makes autonomous operation auditable. Note
           the scope: what runs here is the <em>issue-and-discharge half</em> of the
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
-          recharges ADP back to ATP against V3-validated value creation (see{" "}
+          recharges ADP back to ATP against{" "}
+          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
+          (Valuation / Veracity / Validity)-validated value creation (see{" "}
           <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
           this track registry implements the accounting, not the recharge gate.
         </p>

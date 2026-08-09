@@ -13,6 +13,13 @@ export default function Principles() {
           learned the hard way, then codified because they kept being true.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          If you would rather check something than read a list of beliefs: the
+          code these principles produced is public and MIT-0, with an
+          independently scored result &mdash; see{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
+          It is the most inspectable thing the lab has; this page is the least.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims. Also, below: &ldquo;Governance&rdquo; in SAGE&apos;s name predates Principle 10&apos;s governance&rarr;oversight correction &mdash; see{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
@@ -103,6 +110,17 @@ export default function Principles() {
               <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>glossary&apos;s three senses of &ldquo;coherence&rdquo;</Link>,
               which remain without a single operational definition — see{" "}
               <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>.
+              <br /><br />
+              <em>What that costs this principle, stated directly:</em> it is
+              not only the number that is ungrounded. &ldquo;Synthon&rdquo; is
+              defined through coherence, and coherence is in turn partly defined
+              through the synthon marker — the two terms lean on each other, and
+              neither has an operational definition yet. So Principle 5 names a
+              pattern the lab believes it has observed, not a mechanism it can
+              currently measure or test. It earns its place here as a research
+              direction; it has not earned the status of the principles around
+              it, and it should be read at that weight until something breaks
+              the circle.
             </div>
           </div>
 

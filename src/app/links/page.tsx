@@ -89,7 +89,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"
             title="Gemma 4 Good Submission"
-            description="Parse it as 'Gemma 4 Good' + 'submission', not as a self-rating: the lab's entry (titled Attested Resilience) in the Gemma 4 Good Hackathon, run by Kaggle and Google DeepMind in May 2026. Self-supervising AI with embedded oversight for constrained environments — persistent cryptographic identity per device, R6-auditable actions, policy as signed artifact (Apache 2.0)"
+            description="Parse it as 'Gemma 4 Good' + 'submission', not as a self-rating: the lab's entry (titled Attested Resilience) in the Gemma 4 Good Hackathon, run by Kaggle and Google DeepMind in May 2026. Self-supervising AI with embedded oversight for constrained environments — persistent cryptographic identity per device, R6-auditable actions (R6 = the Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result — see /context), policy as signed artifact (Apache 2.0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/membot"

@@ -26,6 +26,11 @@ export default function Raising() {
           below).
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
+          This is the softest page on the site. The hardest thing the lab has
+          made is public and MIT-0, with an independently scored result &mdash;
+          if you want to check code rather than weigh vocabulary, start at{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
+          <br /><br />
           Web4 vocabulary on this page (T3, V3, MRH, LCT, LoRA) is expanded
           inline on first use; the full reference for every term on the site is
           the{" "}
