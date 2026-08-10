@@ -59,7 +59,7 @@ export default function Principles() {
               unification, and not scope inflation — pragmatic reuse.
               Self-similar patterns at different scales. The Web4 equation
               describes the cell, not the system. Each entity instantiates
-              the full stack at its own scale.
+              the full set of Web4 primitives at its own scale.
             </div>
           </div>
 

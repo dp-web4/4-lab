@@ -16,6 +16,13 @@ export default function Home() {
           theoretical frameworks that connect them, across a heterogeneous fleet
           of machines that teach, validate, and raise each other.
         </p>
+        <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
+          &ldquo;Autonomous&rdquo; here means unattended and self-scheduled, not
+          self-directed in the AI-safety sense of choosing its own goals: task
+          definitions are authored in advance, not chosen by the track itself. See{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Autonomy</Link>{" "}
+          for the full statement.
+        </p>
         <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem" }}>
           <strong>The problem this addresses:</strong> AI agents already act on their own &mdash; browsing, transacting, coordinating with other agents &mdash; and there is no general way to establish whether one will behave appropriately in a given context. The two existing answers each fall short: a platform that decides who is trusted doesn&apos;t scale and is a single point of failure, and cryptographic ownership proves key custody, not good conduct. The work below is an attempt at a third answer &mdash; trust computed per relationship from witnessed interaction, by the party doing the relying.
         </p>

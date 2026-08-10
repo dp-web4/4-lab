@@ -26,7 +26,7 @@ Fix ANY deviation from these immediately. Terminology violations are **always HI
 | **ATP** | **Allocation Transfer Packet** — energy resource unit | ~~Attention Token Pool~~, ~~Adaptive Trust Points~~ |
 | **ADP** | **Allocation Discharge Packet** — spent form of ATP | ~~Adaptive Development Points~~ |
 | **R6** | **Six-Element Action Framework** (Rules/Role/Request/Reference/Resource/Result) | ~~R7, R5~~ |
-| **Web4** | An **ontology** | ~~architecture~~, ~~infrastructure~~, ~~framework~~ |
+| **Web4** | An **ontology** | ~~architecture~~, ~~infrastructure~~, ~~framework~~, ~~stack~~ |
 | **Hardbound** | **Oversight** | ~~governance~~ |
 
 Also enforce:

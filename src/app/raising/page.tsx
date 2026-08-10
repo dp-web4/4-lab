@@ -205,7 +205,10 @@ export default function Raising() {
         <h3>Identity is not self-concept</h3>
         <p>
           SAGE (Situation-Aware Governance Engine)-Sprout — 115 raising sessions on a{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B,
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
+          (2025; a model-line count, not a machine total — the Sprout box now runs Qwen 3.5 0.8B and its own
+          session record stands at 488, see{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
           then ported to TinyLlama 1.1B on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
           (a fleet machine; the machine names are proper names, not acronyms) in February 2026, with the line since continuing past

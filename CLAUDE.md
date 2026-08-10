@@ -43,7 +43,7 @@ Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
 | MRH | Markov Relevancy Horizon | |
 | ATP | Allocation Transfer Packet | |
 | ADP | Allocation Discharge Packet | |
-| Web4 | "ontology" | "architecture", "infrastructure" |
+| Web4 | "ontology" | "architecture", "infrastructure", "stack" |
 | Hardbound | "oversight" | "governance" |
 | Cross-domain reuse | "fractal leverage" | "unification", "scope inflation" |
 

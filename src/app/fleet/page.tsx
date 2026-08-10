@@ -44,7 +44,9 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
           Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. Same basis as the 2,065 cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
-          and the site home page, and a different basis than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
+          and the site home page — those pages call this same quantity &ldquo;raising sessions&rdquo; where the cards below call it &ldquo;machine sessions&rdquo;: one quantity, two nouns, and this page is the source of record. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>not yet made</Link>).
+          A different basis than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each basis measures.
         </p>

@@ -193,6 +193,12 @@ export default function ArcAgi3Page() {
                   >
                     leaderboard
                   </a>
+                  . The conditions are not comparable: this entrant is a frontier
+                  model with network access and no wall-clock limit, placed against
+                  unaided human entrants. Read the rank as &ldquo;placed on that
+                  board,&rdquo; not as a like-for-like result &mdash; it is the
+                  number on this page most likely to be quoted without its
+                  conditions.
                 </td>
               </tr>
             </tbody>

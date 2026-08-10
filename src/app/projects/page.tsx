@@ -96,7 +96,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="AI DNA Discovery"
-            description="Explorations in biological-computational analogy. The fractal DNA blueprint — each entity instantiates the full Web4 stack at its own scale. Operational recursion, not structural. Concretely, the repo holds dated experiment scripts, reports, and papers: cross-model pattern probing, memory experiments, and Jetson sensor-integration work."
+            description="Explorations in biological-computational analogy. The fractal DNA blueprint — each entity instantiates the full Web4 pattern at its own scale. Operational recursion, not structural. Concretely, the repo holds dated experiment scripts, reports, and papers: cross-model pattern probing, memory experiments, and Jetson sensor-integration work."
             accentColor="var(--color-ai-dna)"
             isPublic={true}
             maturity="research-stage"
@@ -162,7 +162,7 @@ export default function Projects() {
           <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage
           </Link>
-          : each entity instantiates the full Web4 stack at its own scale.
+          : each entity instantiates the full Web4 pattern at its own scale.
         </p>
         <p>
           The Hill function describes enzyme binding — and the same curve shape
