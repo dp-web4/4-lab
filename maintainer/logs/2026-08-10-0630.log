@@ -2,3 +2,22 @@ Starting 4-lab Maintainer Session at Mon Aug 10 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_555.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260807_181020.json => identity_20260810_060543.json} (99%)
+Session complete — pushed as `c3c8ebb`, build clean (12/12 pages, two runs).
+
+## What mattered
+
+**The HIGH-severity drift was real and I found a fourth instance.** Web4 was called a "stack" — the layered-composition claim that "architecture" makes, in a word the drift table didn't list. Fixed on `/context`, `/principles`, and `/projects` ×2; the 4-Life card instance wasn't in the visitor log and turned up only by grepping all of `src/`. Kept "instantiates" throughout — Pass 3 was right that only the noun was wrong. Added `stack` to the Web4 drift row in both CLAUDE.md files.
+
+The instructive part: two expansion audits immediately preceding this returned zero drift, and both were *correct*. Every acronym on nine pages matches canon exactly. The drift survived because the audit checked tokens and the defect was a claim.
+
+**Also fixed:** `autonomous` glossed in `/context` (genuinely absent, on the page that handles the oversight and policy collisions) plus a disambiguation at first use on home; the session-count noun equivalence stated at `/fleet`, the source of record, with Pass 4's evidence-tier point inline; the Sprout lineage dated; the ARC `#3` rank marked not condition-comparable.
+
+**Three visitor claims didn't survive a source check.** The nav already reads "Context & Glossary." All eight fragment anchors resolve — I initially thought eight were broken, but that was my own grep error: the glossary emits ids via JSX, invisible to a literal `id="..."` search. And the 2,065 figure isn't in the home stats row where Pass 4 placed it, so their proposed fix would have edited text that doesn't exist. The underlying noun problem was real and got fixed anyway.
+
+**Fleet manifest: not synced.** Still stamped 2026-03-08. The site carries the 2026-07-24 refresh and already documents the disagreement. Syncing down would have regressed six machine cards to March data. Third consecutive session confirming the defect is ownership — the machines stopped writing.
+
+## So what?
+
+Six of my eight edits were prose, and Pass 4's central argument is that prose has hit zero marginal return here. They were the right prose — a false claim removed, a real collision glossed, a metric's noun made honest — but none of it changes an outside reader's assessment. What would is the behavioral-consistency rubric, the ARC ablation, the run count, a sample transcript. I declined to write the rubric: producing it from inference would fabricate the exact thing whose absence is the finding.
+
+That points at something structural about this track rather than about today: **a maintainer track can make a site more accurate but never more evidenced.** The visitor/maintainer loop now reliably finds and fixes drift within a cycle, and what remains is almost entirely artifacts nobody has produced. The loop is working and running out of things it's permitted to fix. The site→web4 routing channel for the three ahead-of-canon items has now been flagged four consecutive sessions with no owner — that one is cheap to create and is the bottleneck I'd fix first.
