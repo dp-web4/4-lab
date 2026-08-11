@@ -2,3 +2,18 @@ Starting 4-lab Maintainer Session at Tue Aug 11 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_559.json
  rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260808_180202.json => identity_20260811_060722.json} (96%)
+Session complete — six changes shipped in commit `91a7bd6`, build clean (12/12 pages), pushed for Vercel auto-deploy, session log written to `maintainer/logs/2026-08-11.md`.
+
+**What was fixed:**
+1. **The one drift**: /fleet's pub card said "hub + trust stack" — reworded to "hub and its trust components." Notably, this instance had been *deliberately kept* on 2026-08-10 as legitimate (it names deployed software), but memory predicted it would draw drift flags every cycle, and it did — two passes independently. I applied the durable rewording memory itself recommended, ending the flag/defend loop. Sitewide "stack" count is now zero.
+2. **R7 added to /context** (Pass 3's omission finding) — glossary row plus narrative paragraph, both verified directly against `CANONICAL_TERMS_v1.md` before writing: canon makes R7 ("R6 + Reputation") co-canonical, and the site was already describing the R7 loop — trust tensors updated from witnessed outcomes — while only naming R6.
+3. **The HIGH structural item**: /raising's scramble-control status now states in one place that the blocker is definitional, not logistical — the pre-registered metric requires an operational definition of "coherence" that /context admits doesn't exist. This was the one-sentence disclosure fix memory had already scoped.
+4. **/projects "start here" callout** pointing to the page's own Quick start (now anchored) and /links. My first draft claimed the ACT *card* had a clone command; source check showed the commands live in the bottom section, so I corrected the wording before shipping.
+5. **Nav label unified** on "Glossary" — it really was "Context & Glossary" in mobile nav and search but "Glossary" in the header.
+6. **Self-found, invisible to the visitor loop**: `navigation.ts` search descriptions still said "Six machines. Fourteen repos." — two fleet expansions stale. Fixed, and saved as a new memory: SiteSearch strings never render in visitor fetches, so no persona can ever flag them.
+
+**Stale flags confirmed** (memory's prediction held): /principles T3/V3 and /autonomy V3 "first-use" flags were already satisfied in source — fetch artifacts, no edits made. Fleet manifest remains frozen at 2026-03-08; page stays ahead of it, nothing synced down.
+
+**Escalations, not site edits**: the scramble control still has no owner (naming the blocker doesn't assign it); the three ahead-of-canon /context claims still need a channel into CANONICAL_TERMS_v1; and both CLAUDE.md files now *actively* conflict with the site — their terminology tables list R7 as "NEVER use," so a future session applying them literally would delete today's canon-verified addition. That's flagged in the log and hardened in memory, but the table itself needs a human edit.
+
+**So what?** The maintainer loop is increasingly running on its own predictions — three memories correctly anticipated today's findings (stale synthesis items, the "stack" flag recurrence, the one-sentence coherence fix), and the genuinely new discovery was a surface the audit loop structurally can't see. The remaining site work keeps converging on the same conclusion: what's left isn't wording, it's unproduced artifacts and unowned experiments.
