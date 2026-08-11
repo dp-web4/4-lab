@@ -67,7 +67,8 @@ export default function Context() {
                 ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
-                ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the shape of every auditable action."],
+                ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the base action grammar, the shape of every auditable action. Canon scopes it as the transaction form 'without reputation tracking' — for routine actions that don't merit the bookkeeping cost of ledger feedback into trust evolution. See R7 below."],
+                ["r7", "R7", "R6 + Reputation", "Canon's superset of R6, 'adding reputation back-propagation': the result's ADP attestation feeds recharge validation and reputation accumulation across scales (action → role → entity → society). Both modes are canonical, neither deprecated — the choice is contextual, made per action or per role by whether the outcome should shape future trust. Named here because when this site describes trust tensors updated from witnessed outcomes, that update loop is R7's seventh element in all but name."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept. The dimensions, since the names are borrowed from affective psychology and one of them reads oddly out of context: Surprise = prediction error, the outcome did not match what was expected; Novelty = not seen before, independent of whether it was predicted; Arousal = activation intensity, a magnitude-of-engagement signal and nothing to do with the colloquial sense of the word; Reward = a goal was advanced; Conflict = signals disagree or a constraint was violated."],
                 ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation intended to anchor in silicon; enforcement today runs at the process level, not yet hardware-anchored (see /projects). “Oversight” here is machine-enforced (gating, reverting), not the human-supervision sense the word carries in AI-safety literature. See note below ↓"],
@@ -434,7 +435,7 @@ export default function Context() {
           open work, not a hidden equivalence.
         </p>
 
-        <h3>R6: Six-Element Action Framework</h3>
+        <h3>R6 and R7: the action framework</h3>
         <p>
           R6 is the canonical action framework used throughout the SAGE
           loop and Web4 audit trail:{" "}
@@ -444,6 +445,18 @@ export default function Context() {
           requested (Request), what context supports it (Reference), what it
           consumes (Resource), and what it produces (Result). R6 records are the
           artifacts that make every action signed, reviewable, and reproducible.
+        </p>
+        <p>
+          Canon pairs R6 with <strong>R7</strong> — a superset adding a seventh
+          element, Reputation: a trust-tensor delta back-propagated from the
+          Result, feeding ADP recharge validation and reputation accumulation
+          from action scale up to society scale. Both modes are canonical and
+          neither is deprecated; the choice is per action or per role, by
+          whether the outcome should shape future trust. Worth stating because
+          the rest of this site describes exactly that loop — trust tensors
+          updated from witnessed outcomes — so wherever the prose says trust
+          &ldquo;updates from interaction,&rdquo; the action grammar underneath
+          is R7, not bare R6.
         </p>
 
         <h3>ACP: Agentic Context Protocol</h3>

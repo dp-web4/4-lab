@@ -39,6 +39,16 @@ export default function Projects() {
           {" "}— the cards expand each on first use, but the glossary is the
           one-stop reference.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          Want to run something rather than read? Start with{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>SAGE</strong> —
+          it runs on a single machine, no Jetson required. Clone commands for
+          SAGE and ACT are in the{" "}
+          <a href="#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</a>{" "}
+          at the bottom of this page; a fuller walkthrough is on{" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
+          This page is the map; those are the first clone.
+        </p>
         <div className="grid-2">
           <ProjectCard
             name="Web4"
@@ -174,7 +184,7 @@ export default function Projects() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
-        <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
+        <h3 id="quick-start" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
         <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel (recommended first clone)
 git clone https://github.com/dp-web4/SAGE
 cd SAGE

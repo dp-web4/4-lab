@@ -8,7 +8,7 @@ import SiteSearch from "./SiteSearch";
 
 const links = [
   { href: "/projects", label: "Projects" },
-  { href: "/context", label: "Context & Glossary" },
+  { href: "/context", label: "Glossary" },
   { href: "/arc-agi-3", label: "ARC-AGI-3" },
   { href: "/fleet", label: "Fleet" },
   { href: "/autonomy", label: "Autonomy" },

@@ -336,8 +336,14 @@ export default function Raising() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
           specification) but not scheduled — no date, no owner, no pre-registered
-          metric yet. Until it runs, the developmental vocabulary used across
-          this site runs ahead of the comparison that would license it.
+          metric yet. And the missing metric is not a scheduling detail: pre-registering
+          one requires an operational definition of identity continuity, and the{" "}
+          <Link href="/context#coherence" style={{ color: "var(--color-accent)" }}>glossary</Link>{" "}
+          concedes that &ldquo;coherence&rdquo; — the term such a metric would be
+          built on — has no single operational definition yet. The blocker is
+          definitional before it is logistical. Until it runs, the developmental
+          vocabulary used across this site runs ahead of the comparison that
+          would license it.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>

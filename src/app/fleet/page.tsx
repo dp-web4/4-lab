@@ -146,7 +146,7 @@ export default function Fleet() {
             model="Llama 3.1 8B (ollama) — SAGE instance pub-llama3.1-8b"
             role={
               "Eighth machine, joined July 2026 — HUB's hardware twin, brought up from a completely cold box as a deliberate live audit of the fleet's own onboarding docs (nine stale/missing-doc findings, all filed and fixed). " +
-              "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub + trust stack, and pub ships only after the identified blockers are closed. " +
+              "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub and its trust components, and pub ships only after the identified blockers are closed. " +
               "Also the newest raising line: pub-llama3.1-8b began its raising sessions in July 2026 — the first Llama-family entity in the fleet. " +
               "Session count: deliberately blank, not zero. Every other card on this page carries a logged total; pub's line is weeks old and no count for it has been published to the fleet manifest yet, so none is stated here rather than estimated. Either way pub sits outside the site's 1,991 / 2,065 totals, which cover the six cognition machines plus HUB."
             }

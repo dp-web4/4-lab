@@ -9,7 +9,7 @@ export const pages: NavItem[] = [
   {
     title: "Home",
     href: "/",
-    description: "Six machines. Fourteen repos. One recursive learning loop.",
+    description: "Eight machines. Forty original repos. One recursive learning loop.",
     keywords: ["home", "overview", "lab", "4-lab"],
   },
   {
@@ -19,10 +19,10 @@ export const pages: NavItem[] = [
     keywords: ["web4", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
   },
   {
-    title: "Context & Glossary",
+    title: "Glossary",
     href: "/context",
     description: "Canonical Web4 glossary: all terms, acronyms, and the knowledge flow model. Start here if the vocabulary is new.",
-    keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "knowledge", "memory", "web4", "terms", "definitions"],
+    keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "r6", "r7", "knowledge", "memory", "web4", "terms", "definitions"],
   },
   {
     title: "ARC-AGI-3",
@@ -33,8 +33,8 @@ export const pages: NavItem[] = [
   {
     title: "Fleet",
     href: "/fleet",
-    description: "Six machines, heterogeneous by design. Peer-to-peer, no central coordinator.",
-    keywords: ["machines", "fleet", "thor", "sprout", "legion", "mcnugget", "nomad", "cbp", "hardware"],
+    description: "Eight machines, heterogeneous by design. Peer-to-peer, no central coordinator.",
+    keywords: ["machines", "fleet", "thor", "sprout", "legion", "mcnugget", "nomad", "cbp", "hub", "pub", "hardware"],
   },
   {
     title: "Autonomy",
