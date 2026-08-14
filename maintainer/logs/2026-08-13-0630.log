@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Thu Aug 13 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260810_000402.json => identity_20260813_000835.json} (96%)
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260810_060543.json => identity_20260813_060500.json} (96%)
+You're out of usage credits. Run /usage-credits to keep using Fable 5 or /model to switch models.
