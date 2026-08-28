@@ -49,7 +49,7 @@ Known editorial note for linters: "unification" and "scope inflation" on /princi
 Check whether the site reflects these recent developments:
 
 - **Web4 SDK v0.8.0**: JSON-LD serialization for LCT, AttestationEnvelope, R7Action, T3/V3, ATP/ADP, ACP. 1356+ tests. Sprint 5 in progress (Entity + Capability JSON-LD).
-- **SAGE**: Trust posture system active, ModelAdapter wired into consciousness loop, 6 raising instances across fleet (cbp-tinyllama, legion-phi4-14b, nomad-gemma3-4b, sprout-qwen3.8-distill-2b, thor-qwen3.5-27b, mcnugget-gemma3-12b).
+- **SAGE**: Trust posture system active, ModelAdapter wired into consciousness loop, 7 raising instances across fleet (cbp-tinyllama, legion-phi4-14b, nomad-gemma3-4b, sprout-qwen3.8-distill-2b, thor-qwen3.5-27b, mcnugget-gemma3-12b, hub-granite4).
 - **Synchronism**: Coupling-coherence experiment (900 runs, Hill function), compatibility-synthon experiment (1070 runs, p_crit inverse relationship confirmed).
 - **R7 framing**: Session governance across the ecosystem uses R7 (Rules/Role/Request/Reference/Resource/Result/Reputation).
 
@@ -57,13 +57,14 @@ Check whether the site reflects these recent developments:
 
 ## Fleet State Sync Status
 
-Fleet page should show 6 machines. Verify against SAGE fleet manifest:
+Fleet page should show 7 machines. Verify against SAGE fleet manifest:
 - Thor (AGX Thor) — qwen3.5:27b
 - Sprout (Orin Nano) — qwen3.8-distill:2b
 - Legion (RTX 4090) — phi4:14b
 - McNugget (Mac Mini M4) — gemma3:12b
 - CBP (RTX 2060S WSL2) — tinyllama:latest
 - Nomad (RTX 4060 laptop) — gemma3:4b
+- HUB (Radeon Pro W5500, Mesa/Vulkan) — granite4:h-tiny
 
 ---
 
