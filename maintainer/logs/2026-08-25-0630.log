@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Tue Aug 25 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/sprout-qwen3.5-0.8b/sessions/session_615.json
+ rename sage/instances/sprout-qwen3.5-0.8b/snapshots/archive/{identity_20260822_180707.json => identity_20260825_060751.json} (98%)
+Failed to authenticate. API Error: 401 OAuth access token is invalid.
