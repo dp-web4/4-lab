@@ -9,7 +9,7 @@ set -e
 export PATH="$HOME/.local/bin:$PATH"
 
 # Account routing: admin token for maintainer sessions
-ENV_FILE="/mnt/c/exe/projects/ai-agents/.env"
+ENV_FILE="/home/dp/ai-workspace/.env"
 if [ -f "$ENV_FILE" ]; then
     CLAUDE_ADMIN_TOKEN=$(grep '^CLAUDE_ADMIN_TOKEN=' "$ENV_FILE" | cut -d= -f2-)
 fi
@@ -32,10 +32,10 @@ cd "$SCRIPT_DIR"
 
 # Pull latest SAGE repo for fleet model manifest
 echo "Pulling SAGE fleet models..." | tee -a "$LOG_FILE"
-cd /mnt/c/exe/projects/ai-agents/SAGE && git pull 2>&1 | tail -2 | tee -a "$LOG_FILE" || true
+cd /home/dp/ai-workspace/SAGE && git pull 2>&1 | tail -2 | tee -a "$LOG_FILE" || true
 cd "$SCRIPT_DIR"
 
-FLEET_MANIFEST="/mnt/c/exe/projects/ai-agents/SAGE/sage/federation/sage-fleet-models.json"
+FLEET_MANIFEST="/home/dp/ai-workspace/SAGE/sage/federation/sage-fleet-models.json"
 FLEET_CONTEXT=""
 if [ -f "$FLEET_MANIFEST" ]; then
     FLEET_CONTEXT="Fleet model manifest available at $FLEET_MANIFEST — check it against fleet/page.tsx as Step 0 of your workflow."

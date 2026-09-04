@@ -9,7 +9,7 @@ set -e
 export PATH="$HOME/.local/bin:$PATH"
 
 # Account routing: synth token for working sessions
-ENV_FILE="/mnt/c/exe/projects/ai-agents/.env"
+ENV_FILE="/home/dp/ai-workspace/.env"
 if [ -f "$ENV_FILE" ]; then
     CLAUDE_SYNTH_TOKEN=$(grep '^CLAUDE_SYNTH_TOKEN=' "$ENV_FILE" | cut -d= -f2-)
 fi
