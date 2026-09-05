@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Principles" };
 
 export default function Principles() {
   return (

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Raising — Interactive Selection" };
 
 export default function Raising() {
   return (
@@ -8,9 +11,15 @@ export default function Raising() {
       <section className="section">
         <h2>Raising</h2>
         <p>
-          Raising is not training. Training optimizes for a loss function.
-          Raising creates conditions for development — then watches what
-          happens. In raising sessions, we shape context — we do not update weights. We use
+          Raising is not training; it is also not nothing. Training optimizes a
+          loss function and updates weights; raising does neither. Stated
+          positively: raising is longitudinal, entity-specific context shaping
+          — conditions for development, then watching what happens, across
+          hundreds of sessions of one identity. The real comparator is not
+          training but task-specific context engineering, the lever{" "}
+          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>{" "}
+          reports as its headline finding; whether raising differs from it in
+          kind is this page&apos;s open question, not its premise. We use
           developmental language because it fits, not because we&apos;re
           making consciousness claims. Operational definitions: by
           &ldquo;identity&rdquo; we mean consistent session-to-session
@@ -90,6 +99,10 @@ export default function Raising() {
               producing thinking-through-dialogue rather than just response.
               (Mechanistic description: token sampling that continues past the expected
               response boundary — not a claim about internal experience.)
+              Whether the rising Questioning proportion was counted only in
+              stop-token-enforced turns has not been checked; until it is, read
+              this pattern and the bilateral-generation observation below as one
+              observation, not two independent ones.
             </p>
           </div>
           <div className="phase-card" data-phase="5">

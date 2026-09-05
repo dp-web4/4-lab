@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Glossary" };
 
 export default function Context() {
   return (
@@ -68,13 +71,13 @@ export default function Context() {
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the base action grammar, the shape of every auditable action. Canon scopes it as the transaction form 'without reputation tracking' — for routine actions that don't merit the bookkeeping cost of ledger feedback into trust evolution. See R7 below."],
-                ["r7", "R7", "R6 + Reputation", "Canon's superset of R6, 'adding reputation back-propagation': the result's ADP attestation feeds recharge validation and reputation accumulation across scales (action → role → entity → society). Both modes are canonical, neither deprecated — the choice is contextual, made per action or per role by whether the outcome should shape future trust. Named here because when this site describes trust tensors updated from witnessed outcomes, that update loop is R7's seventh element in all but name."],
+                ["r7", "R7", "R6 + Reputation", "Canon's superset of R6, 'adding reputation back-propagation': the result's ADP attestation feeds recharge validation and reputation accumulation across scales (action → role → entity → society). Both modes are canonical, neither deprecated — the choice is contextual, made per action or per role by whether the outcome should shape future trust. Named here because when this site describes trust tensors updated from witnessed outcomes, that update loop — the T3/V3 tensor delta /raising describes — is R7's seventh element in all but name: one mechanism, in tensor vocabulary there and action-grammar vocabulary here."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept. The dimensions, since the names are borrowed from affective psychology and one of them reads oddly out of context: Surprise = prediction error, the outcome did not match what was expected; Novelty = not seen before, independent of whether it was predicted; Arousal = activation intensity, a magnitude-of-engagement signal and nothing to do with the colloquial sense of the word; Reward = a goal was advanced; Conflict = signals disagree or a constraint was violated."],
                 ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation intended to anchor in silicon; enforcement today runs at the process level, not yet hardware-anchored (see /projects). “Oversight” here is machine-enforced (gating, reverting), not the human-supervision sense the word carries in AI-safety literature. See note below ↓"],
                 ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps. Software checking actions against a signed law bundle; the hardware anchoring that would make it tamper-resistant is a design target, not the current mechanism. What it delivers today is auditability — actions are inspectable after the fact — not a demonstrated safety property. See the PolicyGate section below."],
                 ["policy", "Policy / policy model", "—", "The compliance rule set a gate evaluates an action against — a signed law bundle — NOT the action-selecting policy of reinforcement learning. This collision is worth flagging because it runs in the most confusing possible direction: PolicyGate sits inside an action-selection loop, exactly where an RL reader expects to find a policy network, and it is the opposite kind of object — it vetoes actions, it does not choose them. Likewise Hardbound's “small local policy model” (see /projects) is a model that reviews actions against rules, not a π(a|s) trained to emit them."],
-                ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) layered over MCP transport."],
+                ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) bound to MCP tool calls. MCP is a term in the Web4 equation, not a layer beneath it."],
                 ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
                 ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
                 ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.) Note the dependency: this term is defined through 'coherence', and coherence is in turn partly defined through the synthon marker — so it inherits that entry's open status. See the coherence entry; there is no single operational definition of coherence yet, and this row does not supply one."],
@@ -167,8 +170,10 @@ export default function Context() {
 
         <h3>Hardbound: hardware-bound oversight</h3>
         <p>
-          Hardbound is the hardware-bound oversight suite — the trust layer
-          intended to touch silicon. The design target is to anchor policy
+          Hardbound is the hardware-bound oversight suite — the oversight
+          component intended to anchor policy gating in silicon. It gates and
+          reverts; trust itself is produced by the T3/V3 tensors, not by
+          Hardbound. The design target is to anchor policy
           enforcement to physical devices via TPM 2.0, FIDO2, and Secure
           Enclave, with key custody and attestation living in hardware and
           runtime checkpoints like PolicyGate as software that verifies actions
@@ -461,9 +466,9 @@ export default function Context() {
 
         <h3>ACP: Agentic Context Protocol</h3>
         <p>
-          ACP (Agentic Context Protocol) is the protocol layer that adds Web4
-          trust primitives — LCT binding and T3/V3 attestation — over MCP
-          (Model Context Protocol) transport. ACP and MCP are complementary:
+          ACP (Agentic Context Protocol) is the protocol that binds Web4
+          trust primitives — LCT binding and T3/V3 attestation — to MCP
+          (Model Context Protocol) tool calls. ACP and MCP are complementary:
           MCP handles tool-call transport between agents and external systems;
           ACP handles identity and trust, ensuring that every tool invocation
           carries a verifiable identity anchor. ACT (Agentic Context Tool) is

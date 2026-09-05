@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "ARC-AGI-3 Results" };
 
 export default function ArcAgi3Page() {
   return (
@@ -88,7 +91,7 @@ export default function ArcAgi3Page() {
           <div className="card" style={{ borderLeft: "3px solid #3b82f6" }}>
             <h4 style={{ margin: "0 0 0.5rem", color: "#3b82f6" }}>Web4</h4>
             <p style={{ fontSize: "0.875rem" }}>
-              The ontology layer. In the SAGE loop, Web4 supplies the audit trail
+              The ontology. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
               Framework: Rules / Role / Request / Reference / Resource / Result), every
               policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> means two things here: &ldquo;verified by&rdquo; in <code>T3/V3</code>, a plain allocation pair in <code>ATP/ADP</code> &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
@@ -129,7 +132,12 @@ export default function ArcAgi3Page() {
           The loop is the capability &mdash; stated as a working hypothesis,
           not a demonstrated result: the ablation that would isolate the
           harness&apos;s independent contribution (same model, no harness)
-          has not been run.
+          has not been run. Note the role this lever plays across the site:
+          task-specific context engineering is the positive finding here, and
+          it is the deflationary null on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>
+          &mdash; whether longitudinal, entity-specific context shaping differs
+          from it in kind is that page&apos;s open question.
         </p>
 
         <h3>Current status</h3>

@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-09-05*
 
 ---
 
@@ -18,7 +18,9 @@
 
 ## Recent Updates
 
-Most recent commits (as of 2026-05-17):
+2026-09-05 maintainer: first site change since 08-11 (the 09-04 run hit the weekly usage limit; runs 08-12..09-04 left no session logs). Zero hard drift; 11 "layer" stack-vocabulary fixes, T3/V3 role swap on /fleet fixed, ARC-AGI-3 card on /projects reordered so Opus 4.6 attribution leads, /raising headline reframed to Principle 7's register with context engineering named as the comparator, per-page `<title>`s added. R7 confirmed co-canonical in CANONICAL_TERMS_v1 — the visitor track's reference table and maintainer/CLAUDE.md both still list it as drift (operator fix). Fleet manifest unwritten since March 2026.
+
+Earlier commits (as of 2026-05-17):
 - `fd5ef81` maintainer: session 2026-05-17 — ATP/ADP standalone entries on /context, Synchronism↔Web4 link, "not architecture or infrastructure" in Web4 entry, ARC-AGI-3 link fixed on /raising, ARC-SAGE expanded, Memoriescape data-framing, 4-Life simulation marker on /projects, Synchronism caveat promoted, identity-transfer claim qualified on /fleet, Principle 7 mechanism sentence, autonomy Hardbound scope pairing
 - `10e5cf5` visitor: browse log 2026-05-17 (zero canonical drift, completeness/placement gaps flagged)
 - `f31db3e` maintainer: session 2026-05-11 — equation legend on /arc-agi-3, failure analysis row for unsolved game, harness attribution note, /links context pointer, behavioral identity definition on /, consciousness disclaimer on /principles, LCT gloss on /context

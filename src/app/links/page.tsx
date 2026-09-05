@@ -1,5 +1,8 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ExternalLink from "@/components/ExternalLink";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Links & Contact" };
 
 export default function Links() {
   return (
@@ -136,7 +139,7 @@ cd ACT
           section, which is the maintained version if these drift.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          SAGE is the recommended starting point — it runs on a single machine, has 1,991 internally logged raising sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-layer / Cosmos SDK side.
+          SAGE is the recommended starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-primitive / Cosmos SDK side.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>

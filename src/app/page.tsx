@@ -82,7 +82,7 @@ export default function Home() {
           <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
           — the recommended starting point — or{" "}
           <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
-          (Agentic Context Tool) for the Web4 trust-layer side.
+          (Agentic Context Tool) for the Web4 trust-primitive side.
         </p>
 
         <h2>How we work</h2>
@@ -458,7 +458,7 @@ export default function Home() {
           <div className="card" style={{ padding: "1rem 1.2rem" }}>
             <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MCP</h3>
             <p style={{ fontSize: "0.9rem" }}>
-              Model Context Protocol. The transport layer for tool calls
+              Model Context Protocol. The transport protocol for tool calls
               between AI agents and external systems &mdash; how SAGE reaches
               outside its context window.
             </p>

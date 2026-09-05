@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MachineCard from "@/components/MachineCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Fleet — Eight Machines" };
 
 export default function Fleet() {
   return (
@@ -207,9 +210,10 @@ export default function Fleet() {
           A background peer monitor polls health endpoints. A trust tracker
           maintains per-peer{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
-          from real interactions: success raises trust, timeouts lower it. V3 attestations
-          (Valuation / Veracity / Validity) emerge alongside — trust earned through
-          peer verification. No central authority decides who is trustworthy — trust
+          from real interactions: success raises trust, timeouts lower it. V3 tensors
+          (Valuation / Veracity / Validity) — the value tensor, symmetric with T3 —
+          accumulate alongside; T3 (trust) is verified by V3 (value) through peer
+          attestation, which is what the equation&apos;s T3/V3 means. No central authority decides who is trustworthy — trust
           emerges from the pattern of interaction.
         </p>
         <p>
@@ -217,7 +221,7 @@ export default function Fleet() {
           tracker, neither trusted nor distrusted (a worked numeric example of the
           update arithmetic is on{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
-          and moves only on evidence. As of July 2026 the hestia trust layer
+          and moves only on evidence. As of July 2026 the hestia trust tracker
           derives its displayed scores from witnessed adjudications and{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>governance-response</Link>{" "}
           conduct — hestia&apos;s own internal field name, retained for the same reason as SAGE&apos;s —

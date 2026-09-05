@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Autonomy — The Daily Cycle" };
 
 export default function Autonomy() {
   return (
@@ -197,7 +200,7 @@ export default function Autonomy() {
         </p>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the
-          hardware-bound oversight suite — is the research layer this practice is
+          hardware-bound oversight suite — is the research direction this practice is
           building toward: it declares what autonomous operation is expected to do
           and what gets reverted when it doesn&apos;t, with hardware-anchored
           enforcement (key custody and attestation — see{" "}
@@ -207,7 +210,7 @@ export default function Autonomy() {
           (the trust-native ontology) terms, each scheduled
           track is issued an ATP (Allocation Transfer Packet) against its declared resource budget;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
-          is the bookkeeping layer that makes autonomous operation auditable. Note
+          is the bookkeeping record that makes autonomous operation auditable. Note
           the scope: what runs here is the <em>issue-and-discharge half</em> of the
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
           recharges ADP back to ATP against{" "}

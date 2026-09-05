@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProjectCard from "@/components/ProjectCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Projects — The Ecosystem" };
 
 export default function Projects() {
   return (
@@ -60,7 +63,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 raising sessions across the 6 cognition machines (internally logged; per-machine counts on /fleet, 2,065 including HUB — this card previously said '900+', corrected 2026-07-27 against the 2026-07-24 fleet manifest refresh). The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role — this card previously said '900+', corrected 2026-07-27 against the 2026-07-24 fleet manifest refresh). The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"
@@ -79,13 +82,13 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hardbound"
-            description="Hardware-bound oversight suite (&ldquo;oversight&rdquo; = machine-enforced policy gating here, not human supervision — see /context). Design target: bind fleet identity and policy decisions to standard hardware roots of trust — Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2), Secure Enclave — and run a small local policy model for heterogeneous review, bound to a Linked Context Token (LCT). Maturity, stated plainly: hardware-anchored enforcement is what this research is building toward, not the current mechanism. Enforcement on the fleet today is at the process level — scoped credentials, the track registry, and dated audit logs reviewed after the fact (see /autonomy). Read 'software fallback' as 'the present state', not as the exception. Private as the fleet's oversight/security layer; described here at the purpose level by policy, not accident."
+            description="Hardware-bound oversight suite (&ldquo;oversight&rdquo; = machine-enforced policy gating here, not human supervision — see /context). Design target: bind fleet identity and policy decisions to standard hardware roots of trust — Trusted Platform Module (TPM) 2.0, FIDO2 (Fast Identity Online 2), Secure Enclave — and run a small local policy model for heterogeneous review, bound to a Linked Context Token (LCT). Maturity, stated plainly: hardware-anchored enforcement is what this research is building toward, not the current mechanism. Enforcement on the fleet today is at the process level — scoped credentials, the track registry, and dated audit logs reviewed after the fact (see /autonomy). Read 'software fallback' as 'the present state', not as the exception. Private as the fleet's oversight/security component; described here at the purpose level by policy, not accident."
             accentColor="var(--color-hardbound)"
             isPublic={false}
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP layers Web4 trust primitives — LCT binding and attestation — over MCP transport; they are complementary, not alternatives."
+            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (the home page's Web4 framing): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate."
             accentColor="var(--color-act)"
             isPublic={true}
             maturity="research-stage"
@@ -114,7 +117,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="4-Life"
-            description="Research prototype exploring trust-native societies for humans and AI. 4-Life is a simulation framework — the lifecycle vocabulary (earn ATP, build trust, die, be reborn with T3/V3 carried forward) describes simulated agent state, not claims about agent moral patienthood or value persistence. A Web4 society in miniature."
+            description="Research prototype exploring trust-native societies for humans and AI. 4-Life is a simulation framework — the lifecycle vocabulary (spend ATP, earn recharge against validated value, build trust, die, be reborn with T3/V3 carried forward) describes simulated agent state, not claims about agent moral patienthood or value persistence. A Web4 society in miniature."
             accentColor="var(--color-4life)"
             isPublic={true}
             maturity="runnable"
@@ -139,7 +142,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="SAGE instances tested against the ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) benchmark. 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Six machines, 0.8B (Sprout) to 27B (Thor) at benchmark time, coordinating through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. 24/25 games solved (96.0% game-solve rate); 94.85% official ARC Prize action score (efficiency-weighted; Claude Opus 4.6, public set, network-enabled) for ~$250 in API cost — harness-vs-model ablation not yet run. The games are the test; the capability is the product."
+            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 24/25 games solved (96.0% game-solve rate) — for ~$250 in API cost. The harness-vs-model ablation has not been run, so how much of that score is the harness is an open question. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -188,7 +191,7 @@ export default function Projects() {
         <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel (recommended first clone)
 git clone https://github.com/dp-web4/SAGE
 cd SAGE
-# See README for Python/conda setup and first session instructions
+# Needs: Rust (stable), Ollama, Python 3.10+ — step-by-step first session on /links
 
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
