@@ -2,3 +2,20 @@ Starting 4-lab Maintainer Session at Sun Sep  6 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/memory/consolidation.py
  create mode 100644 sage/memory/tests/test_consolidation.py
+Pushed as commit `3d0703d`; Vercel will auto-deploy. Build passed with 12 static pages and zero errors.
+
+**Fleet sync:** manifest unchanged since 2026-03-08. The page stays ahead of it; nothing synced.
+
+**Terminology fixes (no hard drift, but real interpretive drift):**
+- **Equation `/` legend** on four pages taught a two-meaning glyph that canon never had. The web4 README gives `/` one meaning, "verified by", so ATP is verified by its ADP discharge record. CANONICAL_TERMS_v1 does not carry the legend at all.
+- **/raising** said raising "shapes T3". T3 is peer-attested, so it now says raising shapes conduct and MRH, and peers derive T3 from that conduct.
+- **hestia** now has a glossary row on /context and a first-use gloss on /fleet. Three personas flagged it as undefined.
+- **T3/V3, MRH, SNARC** expanded at the top of /fleet, and T3 expanded at /raising Pattern 3, so that page's "expanded on first use" claim is now true.
+- **Oversight scoping** clause added at Hardbound's first mention on the four pages that lacked it.
+- Smaller items: V3 row "above" to "below", the unlicensed-vocabulary list now covers dream and metabolic terms, one "brain-analog components" phrase sitewide, TPM/FIDO2 expanded, 96.0% labeled everywhere.
+
+**Friction fixes:** /autonomy gained the one-sentence SAGE-versus-tracks relationship. The /raising control-blocker paragraph now says growth is pre-registrable today and locates the only definitional blocker in "coherence". The home page explains six cognition machines within eight. The /context heading is now "Glossary", matching nav and title.
+
+**Stale visitor flags, verified correct in source and live HTML:** the /fleet glossary link and anchor exist, and karma, Hill function, SNARC-to-engram, and attractor were already glossed.
+
+**Deferred:** the R7 reference tables in both track configs remain wrong against canon and need an operator edit. The Contributor's question about how per-relationship T3 and the ATP/ADP account analogy ever connect is a real gap that needs a lab answer, not a maintainer sentence. Session log is at `maintainer/logs/2026-09-06.md`.
