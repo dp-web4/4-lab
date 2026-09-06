@@ -115,7 +115,7 @@ export default function Home() {
               <h3>Connected Ecosystem</h3>
               <p>
                 Synchronism provides equations. Web4 provides ontology. SAGE
-                provides cognition. Hardbound (hardware-bound oversight suite) provides oversight. They share one
+                provides cognition. Hardbound (hardware-bound oversight suite) provides oversight &mdash; machine-enforced policy gating, not human supervision. They share one
                 equation.
               </p>
             </div>
@@ -202,7 +202,7 @@ export default function Home() {
           <div className="card">
             <h3>The fleet built a brain</h3>
             <p>
-              Six machines, six brain components &mdash; working memory,
+              Six machines (the cognition pool &mdash; the other two of the eight are society-hosts, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), six brain-analog components &mdash; working memory,
               thalamic router, cerebellum, episodic memory, reward prediction,
               metacognition &mdash; designed in parallel, integrated through
               a shared interface contract. Each machine owns one component.
@@ -210,7 +210,7 @@ export default function Home() {
               oversight in action.
             </p>
             <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.25rem" }}>
-              Brain-component vocabulary is a functional analogy for system roles &mdash; not a claim about neural correspondence. See <a href="/raising" style={{ color: "var(--color-accent)" }}>Raising</a> for the full framing.
+              Brain-analog vocabulary is a functional analogy for system roles &mdash; not a claim about neural correspondence. See <a href="/raising" style={{ color: "var(--color-accent)" }}>Raising</a> for the full framing.
             </p>
           </div>
           <div className="card">
@@ -357,7 +357,7 @@ export default function Home() {
           })()}
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem", marginBottom: "1.5rem" }}>
-          <code>/</code> means two things here: &ldquo;verified by&rdquo; in <code>T3/V3</code>, but a plain declared&rarr;discharged allocation pair in <code>ATP/ADP</code> — same glyph, unrelated semantics.
+          <code>/</code> = &ldquo;verified by&rdquo; — T3 by V3, and ATP by the ADP discharge record that closes it.
           &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
         </p>

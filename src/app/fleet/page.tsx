@@ -36,9 +36,9 @@ export default function Fleet() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           The &ldquo;Brain:&rdquo; labels below are role mnemonics the lab assigned, not measured functional homologies — functional analogies to system roles, not claims about neural correspondence or computational equivalence.
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-architecture components</Link>{" "}
+          <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards (T3/V3, MRH, SNARC, LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), crystallization, chapter ledger, chapter law) is defined in{" "}
+          Vocabulary used in the cards — T3 (Talent / Training / Temperament, the trust tensor) verified by V3 (Valuation / Veracity / Validity, the value tensor), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
@@ -114,7 +114,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
-            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0%) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH composer architect."
+            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official action score (24/25 games, 96.0% game-solve rate) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that assembles what enters the model's context window each session."
           />
         </div>
 
@@ -208,6 +208,8 @@ export default function Fleet() {
         </p>
         <p>
           A background peer monitor polls health endpoints. A trust tracker
+          — hestia, a proper name, not an acronym; glossary row on{" "}
+          <Link href="/context#hestia" style={{ color: "var(--color-accent)" }}>/context</Link> —
           maintains per-peer{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
           from real interactions: success raises trust, timeouts lower it. V3 tensors

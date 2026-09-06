@@ -82,7 +82,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0%), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
+            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0% game-solve rate), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
           />
           <ExternalLink
             href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
@@ -102,7 +102,7 @@ export default function Links() {
         </ul>
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
-          Hardbound (hardware-bound oversight suite) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
+          Hardbound (hardware-bound oversight suite — &ldquo;oversight&rdquo; meaning machine-enforced policy gating, not human supervision) is internal research — code is not publicly available. Capabilities described on the <a href="/projects" style={{ color: "var(--color-accent)" }}>Projects</a> page.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>

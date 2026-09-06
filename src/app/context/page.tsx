@@ -9,9 +9,9 @@ export default function Context() {
     <>
       <Breadcrumbs currentPath="/context" />
       <section className="section">
-        <h2>How Knowledge Flows</h2>
+        <h2>Glossary</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem", marginBottom: "1rem" }}>
-          Also serves as the lab&apos;s working glossary for Web4 vocabulary. New here? Start here.
+          The lab&apos;s working glossary for Web4 vocabulary, followed by how knowledge flows across the collective. New here? Start here.
           Developmental language across this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;,
           and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a
           claim about consciousness or experience. Full framing on{" "}
@@ -59,6 +59,7 @@ export default function Context() {
                 ["ontology", "Ontology", "—", "The Semantic Web sense: a shared vocabulary of concepts and the relationships between them — not the philosophical sense (a theory of what exists). This is what the Web4 entry above claims and nothing more; see the home page's Vocabulary Primer for the fuller gloss (“An ontology (shared vocabulary + relationships) for how AI agents prove identity, earn trust, and account for resources — not a blockchain, not a platform”)."],
                 ["trust-native", "Trust-native", "—", "Trust as a primitive of the ontology, not a feature bolted on: every relationship carries T3/V3 tensors bound to LCTs and scoped by MRH. The term names an ontological commitment — the verifiable substrate (witnessed history) and the earned record (tensors updated by interaction) both follow from it; it is not, by itself, a cryptographic guarantee."],
                 ["trust", "Trust", "—", "Not a property of an entity — a property of a relationship, computed per role from a T3/V3 tensor updated by interaction (see Principle 4 on /principles). An agent trusted for code review may be untrusted for creative writing. Distinct from the calibrated-human-reliance sense the word carries in AI-safety literature."],
+                ["hestia", "hestia", "—", "The fleet's trust tracker — the component that holds the per-relationship T3 scores shown on /fleet and updates them only on witnessed adjudication, never on self-report; each displayed score links through to its versioned formula and signed evidence. A proper name, not an acronym. The numbers it displays are per-dimension root scalars (canon: the aggregate at each T3 sub-graph root); whether anything beneath the root is populated in the current tracker is an implementation question this site does not answer. Its internal field name 'governance-response' predates the site's oversight vocabulary and is retained, as SAGE's name is."],
                 ["autonomous", "Autonomous / autonomy", "—", "Unattended and self-scheduled — NOT self-directed in the AI-safety sense of choosing its own goals: task definitions are authored in advance, not chosen by the track itself (see /autonomy). This is the site's highest-risk collision for a reader from AI safety, because the word is doing much weaker work here than that field's usage implies: a track picks when it runs and what it writes within a declared scope, it does not pick what it is for. No claim is made about goal formation, self-modification, or operating outside an authored scope."],
                 ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism. Explicitly NOT the 'emergent capabilities' sense from the LLM scaling literature — no claim that a capability appears discontinuously at some parameter or data threshold, and no position taken on whether such discontinuities are real or metric artifacts. This site's uses are all about interaction dynamics at fixed weights, which is a different phenomenon that borrowed the same word."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
@@ -66,7 +67,7 @@ export default function Context() {
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion."],
                 ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society."],
                 ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root — canon's words are that each dimension is 'a root node in an open-ended RDF sub-graph, not a scalar' (CANONICAL_TERMS_v1), which is what makes T3 part of an ontology rather than a fixed data structure. Talent: aptitude for the role. Training: capability accumulated through interaction history — not gradient training, the sense the same word carries in ML (see /raising). Temperament: behavioral disposition under load."],
-                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP above: allocation recharges against validated value creation, not simply reported completion."],
+                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP below: allocation recharges against validated value creation, not simply reported completion."],
                 ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
@@ -95,7 +96,7 @@ export default function Context() {
                 ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
-                ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence, version 3", "Third-gen interactive benchmark — game mechanics inferred through play."],
+                ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation", "Third-gen interactive benchmark — game mechanics inferred through play."],
                 ["p-crit", "p_crit", "—", "The critical coherence threshold derived in the Synchronism framework. The derivation attempt failed catastrophically (400x error) — see Principle 6 on /principles."],
                 ["cartridge", "Cartridge", "—", "A swappable unit of semantic memory in Membot — the mechanism that lets a raising history move between machines."],
                 ["membot", "Membot", "—", "The cartridge server — the runnable project that mounts, serves, and searches cartridges for agents. Project card on /projects."],
@@ -174,8 +175,9 @@ export default function Context() {
           component intended to anchor policy gating in silicon. It gates and
           reverts; trust itself is produced by the T3/V3 tensors, not by
           Hardbound. The design target is to anchor policy
-          enforcement to physical devices via TPM 2.0, FIDO2, and Secure
-          Enclave, with key custody and attestation living in hardware and
+          enforcement to physical devices via TPM 2.0 (Trusted Platform Module, a
+          hardware security chip), FIDO2 (Fast Identity Online 2, a
+          hardware-authenticator standard), and Secure Enclave, with key custody and attestation living in hardware and
           runtime checkpoints like PolicyGate as software that verifies actions
           against those hardware-anchored credentials.
         </p>
@@ -312,7 +314,7 @@ export default function Context() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> means two different things on this line: &ldquo;verified by&rdquo; in <code>T3/V3</code>, but a plain declared&rarr;discharged allocation pair in <code>ATP/ADP</code> — same glyph, unrelated semantics.
+          <code>/</code> = &ldquo;verified by&rdquo; on both sides of the line: T3 verified by V3, ATP verified by the ADP discharge record that closes it. One glyph, one meaning &mdash; canon&apos;s legend, not an operator gloss. &ldquo;Equation&rdquo; is the lab&apos;s word for this symbolic composition; nothing is solved for.
           &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
@@ -656,7 +658,11 @@ export default function Context() {
           <strong style={{ color: "var(--color-text-primary)" }}>Unlicensed vocabulary:</strong>{" "}
           the developmental framing used across this site — &ldquo;raising,&rdquo;
           &ldquo;identity,&rdquo; &ldquo;growth&rdquo; — is not yet discriminated
-          from competent context engineering. The{" "}
+          from competent context engineering. The same holds for the loop&apos;s
+          biological vocabulary — &ldquo;dream consolidation&rdquo; (an offline
+          consolidation pass), &ldquo;metabolic state&rdquo; and &ldquo;tired /
+          energized / in need of rest&rdquo; (resource-load signals): mechanism
+          names by analogy, not physiology. The{" "}
           <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>deflationary control</Link>{" "}
           that would make that comparison is specified but not scheduled — no
           date, no owner, no pre-registered metric yet. Until it runs, the

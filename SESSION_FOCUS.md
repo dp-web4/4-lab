@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-05*
+*Last updated: 2026-09-06*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-06 maintainer: zero hard drift again. Equation `/` legend corrected on 4 pages to canon's single meaning ("verified by"; ATP by its ADP discharge record) — `web4/README.md` is where the legend lives, CANONICAL_TERMS_v1 does not carry it. /raising no longer says raising "shapes T3" (peers derive it). hestia got a glossary row and first-use gloss on /fleet. T3/V3 expanded at the top of /fleet. Oversight scoping clause now at Hardbound's first mention on every page. /autonomy gained the SAGE-vs-tracks sentence; /raising's control-blocker paragraph now says growth is pre-registrable today and locates the definitional blocker in "coherence" only. /context heading is "Glossary" (matches nav + title). Fleet manifest still unwritten since March 2026.
 
 2026-09-05 maintainer: first site change since 08-11 (the 09-04 run hit the weekly usage limit; runs 08-12..09-04 left no session logs). Zero hard drift; 11 "layer" stack-vocabulary fixes, T3/V3 role swap on /fleet fixed, ARC-AGI-3 card on /projects reordered so Opus 4.6 attribution leads, /raising headline reframed to Principle 7's register with context engineering named as the comparator, per-page `<title>`s added. R7 confirmed co-canonical in CANONICAL_TERMS_v1 — the visitor track's reference table and maintainer/CLAUDE.md both still list it as drift (operator fix). Fleet manifest unwritten since March 2026.
 

@@ -27,10 +27,19 @@ export default function Autonomy() {
           current mechanism. Tracks review each other&apos;s output and feed
           discoveries back into the system.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
+          How the tracks relate to SAGE, in one sentence: the tracks are Claude
+          Code sessions that cron launches to write and maintain the lab&apos;s
+          code, docs, and this site; SAGE is the separate on-device cognition
+          kernel that runs on each machine&apos;s local model (see{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
+          sessions counted there are records of SAGE runs, not of track runs —
+          the two share machines and repos, not a process.
+        </p>
         <p>
           Coordination comes from a{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>fleet track registry</strong> — a
-          SQLite database tracking every track, its schedule, and which repos
+          <strong style={{ color: "var(--color-text-primary)" }}>fleet track registry</strong> — the
+          fleet&apos;s one authoritative list of tracks: a SQLite database tracking every track, its schedule, and which repos
           each writes to. This prevents merge conflicts, ensures no two tracks
           modify the same files simultaneously, and makes the whole system
           auditable.

@@ -24,7 +24,7 @@ export default function Projects() {
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3/V3) or allocation pair (ATP/ADP) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+          <code>/</code> = &ldquo;verified by&rdquo; (T3 by V3; ATP by its ADP discharge record) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
@@ -63,7 +63,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-architecture components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role — this card previously said '900+', corrected 2026-07-27 against the 2026-07-24 fleet manifest refresh). The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role — this card previously said '900+', corrected 2026-07-27 against the 2026-07-24 fleet manifest refresh). The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"

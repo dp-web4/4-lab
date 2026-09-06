@@ -86,7 +86,7 @@ export default function Raising() {
               an analogy, not a fitted mechanism). Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
               (&ldquo;Relationships&rdquo; and &ldquo;trust&rdquo; here are
-              per-peer T3 tensor values updated by interaction outcomes —
+              per-peer T3 (Talent / Training / Temperament) tensor values updated by interaction outcomes —
               tracked state, not affect.)
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function Raising() {
               copy of the game set, unscored by any external party. Local-model solve rates on these
               games remain low, and the site treats local-model progress as{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>a working hypothesis, not a demonstrated result</Link>.
-              The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0%) —
+              The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0% game-solve rate) —
               is a different result under different conditions: Claude Opus 4.6 inside the SAGE harness,
               on the official public set, externally scored. The two figures are <em>not commensurable</em>
               and nothing here should be read as a local model matching or beating a frontier one. See{" "}
@@ -164,10 +164,10 @@ export default function Raising() {
           attractors emerge in interaction patterns, not in parameter changes.
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
-          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training) and the Markov Relevancy
-          Horizon (MRH). It does <em>not</em> shape the V3 tensor (Valuation / Veracity / Validity): V3 accrues from{" "}
+          provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
+          Horizon (MRH) — what the entity attends to and can affect. It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and the V3 tensor (Valuation / Veracity / Validity) accrues from{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>peer verification</Link>{" "}
-          of what raising produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That asymmetry is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own V3 would be certifying itself. Either way, raising
+          of what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own tensors would be certifying itself. Either way, raising
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
@@ -180,7 +180,7 @@ export default function Raising() {
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
-          constraints, not by the weight-freezing property alone. Hardbound&apos;s
+          constraints (&ldquo;oversight&rdquo; = machine-enforced policy gating, not human supervision), not by the weight-freezing property alone. Hardbound&apos;s
           hardware-anchored enforcement is still in development, though — today the
           fleet&apos;s actual check on autonomous action (for example, the maintainer
           track&apos;s unsupervised commit/push authority) is{" "}
@@ -349,12 +349,22 @@ export default function Raising() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
           specification) but not scheduled — no date, no owner, no pre-registered
-          metric yet. And the missing metric is not a scheduling detail: pre-registering
-          one requires an operational definition of identity continuity, and the{" "}
+          metric yet. Two things block a metric, and they are different. For
+          growth, nothing definitional does: this page already operationalizes
+          it (response diversity and phase-appropriate task success), so a
+          yoked or scrambled-history control on growth could be pre-registered
+          now — its absence is logistical. For identity continuity, the
+          operational definition this page and the home page give (consistent
+          session-to-session behavioral patterns, accumulated experience,
+          raising curriculum state) does not yet yield a metric that could
+          separate the arms: two of its three components, accumulated
+          experience and curriculum state, are inputs the treatment supplies,
+          so measuring them cannot tell raising from context engineering. What
+          remains is the behavioral-pattern component, whose consistency
+          criterion rests on &ldquo;coherence&rdquo; — a term the{" "}
           <Link href="/context#coherence" style={{ color: "var(--color-accent)" }}>glossary</Link>{" "}
-          concedes that &ldquo;coherence&rdquo; — the term such a metric would be
-          built on — has no single operational definition yet. The blocker is
-          definitional before it is logistical. Until it runs, the developmental
+          concedes has no single operational definition yet. That blocker is
+          definitional. Until the control runs, the developmental
           vocabulary used across this site runs ahead of the comparison that
           would license it.
         </p>

@@ -58,7 +58,7 @@ export default function ArcAgi3Page() {
               for what each of the non-obvious steps (metabolize, posture, budget) means.
               PolicyGate &mdash; a{" "}
               <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
-              sub-gate inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
+              sub-gate (&ldquo;oversight&rdquo; = machine-enforced policy gating, not human supervision) inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               Read that in the right tense: the gating in this harness is
@@ -94,7 +94,7 @@ export default function ArcAgi3Page() {
               The ontology. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
               Framework: Rules / Role / Request / Reference / Resource / Result), every
-              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> means two things here: &ldquo;verified by&rdquo; in <code>T3/V3</code>, a plain allocation pair in <code>ATP/ADP</code> &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
+              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = &ldquo;verified by&rdquo; (T3 by V3; ATP by its ADP discharge record) &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
               is the ontology that makes signed, reviewable action records possible.
             </p>
           </div>
