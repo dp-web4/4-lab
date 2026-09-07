@@ -6,9 +6,13 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>
-          Eight machines. Forty original repos.{" "}
-          <span className="accent">One recursive learning loop.</span>
+          AI agents already act on their own.{" "}
+          <span className="accent">Nothing establishes whether one should be trusted.</span>
         </h1>
+        <p style={{ fontSize: "1rem", color: "var(--color-text-secondary)", marginTop: "0.5rem" }}>
+          Eight machines, forty original repos, and one recursive learning loop
+          are what we are attempting an answer with.
+        </p>
         <p className="tagline">
           The dp-web4 research collective builds a trust-native ontology — a
           shared vocabulary and trust model for AI agents, in the
@@ -24,7 +28,7 @@ export default function Home() {
           for the full statement.
         </p>
         <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem" }}>
-          <strong>The problem this addresses:</strong> AI agents already act on their own &mdash; browsing, transacting, coordinating with other agents &mdash; and there is no general way to establish whether one will behave appropriately in a given context. The two existing answers each fall short: a platform that decides who is trusted doesn&apos;t scale and is a single point of failure, and cryptographic ownership proves key custody, not good conduct. The work below is an attempt at a third answer &mdash; trust computed per relationship from witnessed interaction, by the party doing the relying.
+          <strong>The problem, stated fully:</strong> agents browse, transact, and coordinate with other agents, and there is no general way to establish whether one will behave appropriately in a given context. The two existing answers each fall short: a platform that decides who is trusted doesn&apos;t scale and is a single point of failure, and cryptographic ownership proves key custody, not good conduct. The work below is an attempt at a third answer &mdash; trust computed per relationship from witnessed interaction, by the party doing the relying.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
           Developmental language on this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;, and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a claim about consciousness or experience. Full framing on{" "}
@@ -129,18 +133,31 @@ export default function Home() {
               <h3 style={{ color: "#8b5cf6" }}>Synchronism <span style={{ fontSize: "0.7rem", color: "var(--color-text-muted)", fontWeight: "normal", marginLeft: "0.4rem" }}>research conjecture</span></h3>
               <p>
                 A theoretical framework proposing that reality emerges from
-                intent dynamics on a discrete Planck grid, with the same
-                fluid-dynamical (Navier-Stokes) formalism reused at every
-                scale, from quantum to cosmic to conscious.
+                intent dynamics on a discrete Planck grid, with one saturating
+                coherence dynamics reused at every scale, from quantum to cosmic
+                to conscious. <em>Which</em> mathematical object gets reused is
+                itself unsettled — see the status note below.
               </p>
               <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-                A research conjecture, not established physics. The cross-scale
-                reuse of a continuum fluid formalism is the proposal under test,
-                not a result; experimental validation so far covers a narrow
-                subset of scales, and several predictions have been refuted by
-                existing bounds. &ldquo;From quantum to cosmic to conscious&rdquo;
-                describes the framework&apos;s stated scope, not a demonstrated
-                one — and is not a claim about consciousness or experience.
+                A research conjecture, not established physics — and its own
+                project has retracted the sharpest version of it. Earlier framings,
+                including earlier versions of this page, named the cross-scale
+                object a fluid-dynamical <strong>Navier-Stokes</strong> formalism.
+                Synchronism&apos;s own audits refuted that identification in 2026
+                — the transfer rule is 1-DOF scalar diffusion, irrotational and
+                dissipative, so it admits no vortices and no turbulent cascade —
+                and the claim is tagged superseded upstream. Substrate reformulation
+                is active, and the project&apos;s status file records that the
+                replacement rule is a <em>different</em> equation joined to the first
+                by narrative rather than derivation, which weakens the &ldquo;one
+                equation&rdquo; framing itself. The substrate-physics arc has been at
+                rest since 2026-06-24 with <strong>zero confirmed novel
+                predictions</strong> across ~3,360 sessions; its own capstone verdict
+                calls the framework a productive-metaphor generator — generative
+                and pedagogical, not predictive or foundational.
+                &ldquo;From quantum to cosmic to conscious&rdquo; describes the
+                framework&apos;s stated scope, not a demonstrated one — and is
+                not a claim about consciousness or experience.
               </p>
             </div>
           </a>
@@ -422,7 +439,7 @@ export default function Home() {
               Situation-Aware Governance Engine. The cognition kernel that runs
               on each machine &mdash; a 12-step loop (sense → salience →
               metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 2,065 raising sessions
+              remember → oversee → filter → act). 2,065 machine sessions
               across the fleet — 1,991 on the six cognition machines plus 74 on HUB
               (internally logged, per-machine counts on{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}

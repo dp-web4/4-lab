@@ -41,7 +41,10 @@ export default function Principles() {
               the mound emerges. All of this &mdash; Web4 (the trust-native
               ontology &mdash; see{" "}
               <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>/context</Link>),
-              SAGE (Situation-Aware Governance Engine),{" "}
+              SAGE (Situation-Aware Governance Engine &mdash; the &ldquo;Governance&rdquo;
+              in the name predates this lab&apos;s governance&rarr;oversight correction below
+              in Principle 10, and is retained as a project name; see{" "}
+              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>),{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
               <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
               pheromone field engineering. We build substrate conditions for

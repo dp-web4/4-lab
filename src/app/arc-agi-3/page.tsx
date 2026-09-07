@@ -24,7 +24,7 @@ export default function ArcAgi3Page() {
           T3 = Talent / Training / Temperament &middot; V3 = Valuation / Veracity / Validity &middot;{" "}
           MRH = Markov Relevancy Horizon &middot; ATP = Allocation Transfer Packet &middot; ADP = Allocation Discharge Packet &middot;{" "}
           MCP = Model Context Protocol &middot; RDF = Resource Description Framework. See{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link> for full definitions.
+          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</Link> for full definitions.
         </p>
 
         <h3>Why we&apos;re doing this</h3>
@@ -54,7 +54,7 @@ export default function ArcAgi3Page() {
               <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolize</Link> &rarr;
               posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
               remember &rarr; oversee &rarr; filter &rarr; act. See{" "}
-              <Link href="/context#sage-loop" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+              <Link href="/context#sage-loop" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>{" "}
               for what each of the non-obvious steps (metabolize, posture, budget) means.
               PolicyGate &mdash; a{" "}
               <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
@@ -66,7 +66,7 @@ export default function ArcAgi3Page() {
               Hardbound&apos;s hardware anchoring &mdash; TPM 2.0, FIDO2, Secure
               Enclave &mdash; is a design target, <em>not the mechanism in this
               run</em> (see{" "}
-              <Link href="/context#policygate" style={{ color: "var(--color-accent)" }}>/context</Link>).
+              <Link href="/context#policygate" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>).
               And what it buys is auditability, not a demonstrated safety
               property: every action is inspectable after the fact, which is a
               different and much weaker claim than that unsafe actions were
@@ -74,7 +74,7 @@ export default function ArcAgi3Page() {
             </p>
             <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
               &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
+              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>.
             </p>
           </div>
           <div className="card" style={{ borderLeft: "3px solid #f97316" }}>

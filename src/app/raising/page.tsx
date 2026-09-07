@@ -368,6 +368,23 @@ export default function Raising() {
           vocabulary used across this site runs ahead of the comparison that
           would license it.
         </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>And that makes
+          the pre-commitment above unreachable as written, which is worth saying
+          out loud.</strong> It fires on the result of a control whose dependent
+          variable the preceding paragraph says does not exist. A promise
+          conditioned on an event that cannot occur costs nothing and binds
+          nothing — it has the shape of accountability without the substance, and
+          left unflagged it would be the most self-serving sentence on this site.
+          So a second commitment, on the one step that <em>is</em> reachable
+          today: the attempt to operationalize identity continuity — to define a
+          behavioral-consistency metric that could separate the arms — gets
+          published as its own artifact, <em>including if it fails</em>. A
+          written-up failure to define the metric is the honest outcome and
+          eliminates a possibility; silence is not. If that attempt is never
+          published, read the pre-commitment above as unbacked, and read this
+          paragraph as the standard we asked to be held to.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>
         <p>

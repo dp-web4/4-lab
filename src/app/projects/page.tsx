@@ -73,7 +73,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. Research conjecture, single-trial and not independently replicated: proposes one coherence function reused from quantum to cosmic scales, though experimental validation so far covers only a narrow subset of those scales and several predictions have been refuted by existing bounds. (This card previously said the equation 'spans 80 orders of magnitude'. Corrected 2026-07-26: ~80 decades is the spread of critical-density values across physical systems, not the range of any single coherence curve — one curve saturates within roughly one to two decades. Synchronism's own archive flags the conflation.) 628+ research sessions. Coupling-coherence experiments, Hill function kinetics, Fokker-Planck validation. Preprint in late revision."
+            description="Theoretical foundation. Research conjecture: proposes that one saturating coherence dynamics recurs from quantum to cosmic scales. WHICH object recurs is unsettled — the Navier-Stokes identification earlier framings used was refuted by Synchronism's own audits (the transfer rule is 1-DOF scalar diffusion: irrotational, dissipative) and is tagged superseded upstream; the replacement substrate rule is a different equation joined to the old one by narrative, not derivation. Experimental validation covers only a narrow subset of scales and several predictions have been refuted by existing bounds; the substrate-physics arc has been at rest since 2026-06-24 with zero confirmed novel predictions across ~3,360 sessions (~678 core + ~2,671 chemistry), and its own capstone verdict calls the framework a productive-metaphor generator — generative and pedagogical, not predictive or foundational. (This card previously said the equation 'spans 80 orders of magnitude'. Corrected 2026-07-26: ~80 decades is the spread of critical-density values across physical systems, not the range of any single coherence curve — one curve saturates within roughly one to two decades. Synchronism's own archive flags the conflation.) Coupling-coherence experiments — whose 1% coupling → 35% coherence gain result is the single-trial, not-independently-replicated claim; the caveat scopes to that result, not to the whole framework — plus Hill function kinetics and Fokker-Planck validation."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             maturity="research-stage"
@@ -189,14 +189,36 @@ export default function Projects() {
         <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
         <h3 id="quick-start" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
         <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel (recommended first clone)
+# Needs: Rust (stable), Ollama, Python 3.10+
 git clone https://github.com/dp-web4/SAGE
 cd SAGE
-# Needs: Rust (stable), Ollama, Python 3.10+ — step-by-step first session on /links
+
+# 1. Create an instance — this mints the machine's identity
+python3 -m sage.instances.init --machine mybox --model gemma3:4b --operator-name you
+
+# 2. Build the daemon
+cd sage-rs && cargo build --release && cd ..
+
+# 3. Run the loop
+SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
+
+# Dashboard: http://localhost:8760/
 
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
 cd ACT
 # See README for Go/Cosmos SDK setup`}</pre>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>What success looks like:</strong>{" "}
+          step 1 writes an instance directory holding the machine&apos;s LCT and an
+          empty experience buffer; step 3 starts the 12-step sense-to-act loop and
+          the dashboard shows it cycling — a metabolic state (tired / energized /
+          resting), the current posture, and SNARC scores on whatever it just took
+          in. An idle machine with nothing to attend to is the correct first
+          result, not a failure: the loop runs, the buffer is empty, and raising is
+          what fills it. Commands mirror the SAGE README, which is authoritative if
+          the two ever disagree.
+        </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           SAGE runs on a single machine — no Jetson required. Each runnable
           repo&apos;s README carries its dependency list and first-run steps;

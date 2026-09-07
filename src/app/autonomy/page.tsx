@@ -22,7 +22,7 @@ export default function Autonomy() {
           chosen by the track itself.{" "}
           No human triggers them. Scope is enforced at the process level —
           scoped credentials, the track registry, and after-the-fact audit, a
-          detect-and-revert posture (see Safety boundaries below); hardware-anchored
+          detect-and-revert posture (see Operational boundaries below); hardware-anchored
           Hardbound enforcement is what the research is building toward, not the
           current mechanism. Tracks review each other&apos;s output and feed
           discoveries back into the system.
@@ -30,7 +30,10 @@ export default function Autonomy() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
           How the tracks relate to SAGE, in one sentence: the tracks are Claude
           Code sessions that cron launches to write and maintain the lab&apos;s
-          code, docs, and this site; SAGE is the separate on-device cognition
+          code, docs, and this site; SAGE (Situation-Aware Governance Engine &mdash;
+          a legacy name; see the{" "}
+          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context glossary</Link>)
+          is the separate on-device cognition
           kernel that runs on each machine&apos;s local model (see{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
           sessions counted there are records of SAGE runs, not of track runs —
@@ -184,7 +187,7 @@ export default function Autonomy() {
           </div>
         </div>
 
-        <h2 style={{ marginTop: "2rem" }}>Safety boundaries</h2>
+        <h2 style={{ marginTop: "2rem" }}>Operational boundaries and what they do not guarantee</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           A word-choice note before the rest of this page: &ldquo;oversight&rdquo;
           below always means the machine-enforced sense — gating, reverting,
@@ -197,7 +200,11 @@ export default function Autonomy() {
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
         <p>
-          The current posture first: boundaries are enforced at the
+          What this section delivers, stated before the detail: <strong style={{ color: "var(--color-text-primary)" }}>auditability,
+          not a demonstrated safety property</strong>. The boundaries below are
+          access control and after-the-fact review; none of them has been tested
+          against an adversary, and calling them &ldquo;safety&rdquo; would overclaim
+          what they have shown. The current posture: boundaries are enforced at the
           process level — scoped credentials, the track registry, and dated
           audit logs reviewed after the fact — not cryptographic guarantees.
           The fleet&apos;s posture is{" "}
@@ -217,7 +224,19 @@ export default function Autonomy() {
           as the goal, not the current mechanism. In{" "}
           <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
           (the trust-native ontology) terms, each scheduled
-          track is issued an ATP (Allocation Transfer Packet) against its declared resource budget;
+          track is issued an ATP (Allocation Transfer Packet) against its declared resource budget.
+          An allocation has to be issued <em>to</em> someone, and this page has been
+          quiet about who: the holder is the machine&apos;s{" "}
+          <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>LCT</Link>{" "}
+          (Linked Context Token) &mdash; the identity the registry entry, the audit
+          log, and the resulting commit all attribute to &mdash; scoped by that
+          machine&apos;s{" "}
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>MRH</Link>{" "}
+          (Markov Relevancy Horizon) to the repos it declares, with the outcome
+          feeding its{" "}
+          <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
+          (Talent / Training / Temperament). The identity half of the equation is
+          what makes the resource half attributable;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping record that makes autonomous operation auditable. Note
           the scope: what runs here is the <em>issue-and-discharge half</em> of the
@@ -263,6 +282,20 @@ export default function Autonomy() {
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>
           Hardbound design target</Link>, not a current property of this
           publishing loop.
+        </p>
+        <p>
+          Three statements this site makes separately, joined here because
+          together they name a cheap fix: (1) the fleet&apos;s stated defense
+          against correlated failure is model diversity; (2) the daily audit of
+          this site is four personas on <em>one</em> model, which is prompt
+          diversity, not model diversity; (3) the zero-rollback figure below is
+          uninformative precisely <em>because</em> the auditor&apos;s blind spots
+          are the author&apos;s. The third follows from the second, and the
+          second contradicts the first. Running even one visitor persona on a
+          different model family would be a scheduling change, not a research
+          program, and it would convert the rollback count from an
+          uninterpretable number into a weak but real one. It has not been done;
+          the audit that keeps flagging it cannot change its own schedule.
         </p>
         <h3>Maintainer track: higher blast radius</h3>
         <div className="card" style={{

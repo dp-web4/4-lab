@@ -14,7 +14,7 @@ export default function Links() {
           <ExternalLink
             href="https://synchronism-site.vercel.app"
             title="Synchronism"
-            description="75 pages covering the coherence equation (Synchronism's central formalism — a research conjecture, not established physics), predictions, interactive tools, and honest assessments"
+            description="75 pages covering the coherence equation (Synchronism's central formalism — a research conjecture, not established physics; which mathematical object the equation is remains unsettled upstream, see /projects), predictions, interactive tools, and honest assessments"
           />
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
@@ -31,7 +31,7 @@ export default function Links() {
         <h2 style={{ marginTop: "2rem" }}>GitHub</h2>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           New here? Repo descriptions use Web4 vocabulary (LCT, T3/V3, MRH, MCP, RDF, ATP/ADP). See{" "}
-          <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</a> for full definitions.
+          <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for full definitions.
         </p>
         <ul className="link-list">
           <ExternalLink
@@ -107,7 +107,7 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
+          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
@@ -161,8 +161,11 @@ cd ACT
         </p>
 
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
-          For researchers: no papers or preprints are published yet — the
-          Synchronism preprint is in late revision, and the claims on this site
+          For researchers: no papers or preprints are published yet. A
+          Synchronism preprint strategy exists upstream but is unscheduled —
+          it gates on the researcher, with no submission target; this page
+          previously said &ldquo;in late revision,&rdquo; which the repo does not
+          support. The claims on this site
           (other than the externally scored ARC-AGI-3 result) cite internal
           session logs that are not yet externally auditable. Redacted log
           samples and coding criteria are not published at this time; email

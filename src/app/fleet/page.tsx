@@ -65,6 +65,19 @@ export default function Fleet() {
           reconciling it is an open item on the fleet, not on this site.
         </p>
 
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          The three headings below are the fleet&apos;s pools &mdash; how machines
+          are grouped by budget and role, stated here before the headings use the
+          words. <strong style={{ color: "var(--color-text-primary)" }}>Synthesis</strong>:
+          high compute budget, generative work. <strong style={{ color: "var(--color-text-primary)" }}>Oversight</strong>:
+          continuous availability, review and gating &mdash; machine-enforced, not
+          human supervision. <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
+          runs the society substrate rather than autonomous tracks. The first two
+          hold the six{" "}
+          <Link href="/context#cognition-machine" style={{ color: "var(--color-accent)" }}>cognition machines</Link>;
+          the third holds the two{" "}
+          <Link href="/context#society-host" style={{ color: "var(--color-accent)" }}>society-hosts</Link>.
+        </p>
         <h3 style={{ marginTop: "1rem" }}>Synthesis pool — Account 1</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           High compute budget. Primary generative work: code, implementations, large agent tasks.
@@ -200,7 +213,7 @@ export default function Fleet() {
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>
-          There is no master node. Each machine runs its own SAGE (Situation-Aware Governance Engine) instance, holds
+          There is no master node. Each machine runs its own SAGE (Situation-Aware Governance Engine — legacy name, see the note above) instance, holds
           its own identity, manages its own experience buffer and{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>raising curriculum</Link>.
           Machines discover each other through a fleet manifest — a phone book,

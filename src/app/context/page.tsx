@@ -64,13 +64,13 @@ export default function Context() {
                 ["emergence", "Emergence / emergent", "—", "Used in more than one sense on this site — a synthon as an 'emergent coherence entity,' 'emergent attractors' arising from in-context dynamics, fleet diversity as 'emergent' — with no single operational definition yet, the same status this glossary gives 'coherence.' Treat each use as scoped to its own context, not as a claim about a specific mechanism. Explicitly NOT the 'emergent capabilities' sense from the LLM scaling literature — no claim that a capability appears discontinuously at some parameter or data threshold, and no position taken on whether such discontinuities are real or metric artifacts. This site's uses are all about interaction dynamics at fixed weights, which is a different phenomenon that borrowed the same word."],
                 ["mcp", "MCP", "Model Context Protocol", "Tool-call transport between agents and external systems — Web4's interaction surface."],
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
-                ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion."],
+                ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion. Read the expansion literally, because both words carry the definition: the token is an identity node LINKED into the RDF context graph — its edges to roles, societies, and prior acts ARE the identity, not metadata about it — and CONTEXT is what it is linked into, which is why the same entity presents different trust in different contexts rather than carrying one portable score. It is not a capability grant and it does not span a lifetime by construction; a token with no witnessed links is an empty identity."],
                 ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society."],
-                ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root — canon's words are that each dimension is 'a root node in an open-ended RDF sub-graph, not a scalar' (CANONICAL_TERMS_v1), which is what makes T3 part of an ontology rather than a fixed data structure. Talent: aptitude for the role. Training: capability accumulated through interaction history — not gradient training, the sense the same word carries in ML (see /raising). Temperament: behavioral disposition under load."],
-                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP below: allocation recharges against validated value creation, not simply reported completion."],
-                ["mrh", "MRH", "Markov Relevancy Horizon", "The boundary of what an entity can know or affect given its position, history, and context — and therefore what determines the scope of relevance for its decisions. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it. Implemented as an open-ended RDF graph of typed associations, fractally composable across scales — a horizon contains sub-horizons, which is what makes MRH compose with fractal leverage. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
+                ["t3", "T3", "Talent / Training / Temperament", "Three-component trust tensor; each component is an RDF sub-graph root — canon's words are that each dimension is 'a root node in an open-ended RDF sub-graph, not a scalar' (CANONICAL_TERMS_v1), which is what makes T3 part of an ontology rather than a fixed data structure. Talent: aptitude for the role. Training: accumulated capability, HOWEVER it was accumulated — interaction history, curriculum, and weights-level provenance all count, so a fine-tune does move T3-Training. The ML sense of the word is a subset of this dimension, not an alternative to it. What is narrow is not T3-Training but raising, which acts on the interaction-history half only and never on weights (see /raising). Temperament: behavioral disposition under load."],
+                ["v3", "V3", "Valuation / Veracity / Validity", "Three-component value tensor. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. Valuation is what gates the ADP→ATP recharge named under ADP below: allocation recharges against validated value creation, not simply reported completion. Note where that places V3 in the equation as printed: V3 appears only in T3/V3*MRH, and ATP/ADP's own verifier is ADP. So V3 does not sit inside the resource half — it reaches ACROSS the '+', the trust half adjudicating the resource half's recharge leg. The notation abbreviates a cycle it does not draw."],
+                ["mrh", "MRH", "Markov Relevancy Horizon", "The scope of what is RELEVANT to an entity given its position, history, and context — the boundary of what it should reason over when it decides. Relevance, not raw causal reach: an entity can often touch things outside its horizon and often cannot act on things inside it, so “what it can know or affect” is a first approximation this definition corrects rather than the definition itself. The load-bearing structural property is fractal composability: MRH is an open-ended RDF graph of typed associations in which a horizon contains sub-horizons and nests inside larger ones, which is what lets the same trust pattern instantiate at machine, track, and society scale — Principle 2 stands on exactly this property. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
                 ["atp", "ATP", "Allocation Transfer Packet", "Resource allocation declared before an action runs — the charged state of the allocation cycle."],
-                ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job in the resource half of the equation. Charged → spent → recharged."],
+                ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP against validated value creation, which is V3's job — reaching across the '+' from the trust half, since ATP/ADP's own verifier is ADP and V3 appears only in T3/V3*MRH. Charged → spent → recharged."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource / Result — the base action grammar, the shape of every auditable action. Canon scopes it as the transaction form 'without reputation tracking' — for routine actions that don't merit the bookkeeping cost of ledger feedback into trust evolution. See R7 below."],
                 ["r7", "R7", "R6 + Reputation", "Canon's superset of R6, 'adding reputation back-propagation': the result's ADP attestation feeds recharge validation and reputation accumulation across scales (action → role → entity → society). Both modes are canonical, neither deprecated — the choice is contextual, made per action or per role by whether the outcome should shape future trust. Named here because when this site describes trust tensors updated from witnessed outcomes, that update loop — the T3/V3 tensor delta /raising describes — is R7's seventh element in all but name: one mechanism, in tensor vocabulary there and action-grammar vocabulary here."],
                 ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
@@ -86,11 +86,13 @@ export default function Context() {
                 ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
                 ["experience-buffer", "Experience buffer", "—", "The per-instance store of prior sessions an agent carries forward — session records, distilled observations, and the state files the prompt builder reads at start-up. It is the durable half of what raising shapes: on disk, portable between machines, and independent of which model is loaded. Named here because the glossary's own definition of Raising rests on it."],
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
-                ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing one coherence equation across scales. Web4 operationalizes parts of it; narrative section below."],
+                ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing that one saturating coherence dynamics recurs at every scale. WHICH object recurs is open: the Navier-Stokes identification earlier framings used was refuted by Synchronism’s own audits and is tagged superseded upstream, and the replacement substrate rule is a different equation joined to the old one by narrative rather than derivation — so “one equation” is the ambition, not a demonstrated structure. Physics arc at rest since 2026-06-24; zero confirmed novel predictions across ~3,360 sessions. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
                 ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — described as tired, energized, or in need of rest. Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
                 ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context. Which sense carries the numbers: the “1% coupling → 35% coherence gain” figure is quoted under both the Synchronism and synthon senses, but its coherence measure is defined only inside the single trial that produced it — it is NOT the SNARC-scored session property, and no cross-sense comparison is implied. See Evidence &amp; limitations below."],
                 ["identity-continuity", "Identity continuity / behavioral-identity continuity", "—", "The persistence of a recognizable behavioral signature across sessions and across substrate changes. /raising gives it a working definition — “consistent session-to-session behavioral patterns measured via raising curriculum state and interaction logs” — so it is not an empty term. What it lacks is the next step down: no metric names what would actually be scored on those logs, and no threshold says what counts as degradation. It is counted (“180+ sessions”, see Evidence &amp; limitations) but not measured. That matters more than a normal glossary gap, because this is the outcome variable of the deflationary control on /raising: the pre-commitment to retire the developmental vocabulary is bound to a quantity that does not yet have a definition, so the metric has to be pre-registered BEFORE that control runs or it cannot adjudicate either way. Same defect class as the coherence entry above — a load-bearing term the site uses honestly and has not yet grounded."],
+                ["cognition-machine", "Cognition machine", "—", "One of the six fleet machines that runs a model and executes autonomous tracks — it senses, decides, and writes. The term partitions the fleet against society-host below: eight machines total, six cognition + two society-hosts. It is a role label, not a capability claim — 'cognition' here means the machine runs a sense-to-act loop (SAGE) and holds its own identity, not that anything is understood or experienced. Every count on this site that says 'six' is counting these; counts that say 'eight' include the society-hosts. See /fleet."],
+                ["society-host", "Society-host", "—", "One of the two machines (HUB and pub) that run the society substrate rather than autonomous tracks — the hub daemon, the chapter ledger, the witnessing that makes membership real. They are members of the society they host, not above it, and since July 2026 they also raise their own SAGE instances; what distinguishes them is the substrate role, not a lack of cognition. Together with the six cognition machines they make eight. See /fleet."],
                 ["society", "Society / Web4 society", "—", "The fleet itself, modeled as a Web4 society: every cognition machine is a member, identity keyed to its LCT, membership witnessed in the chapter ledger. Parent term for HUB, Chapter ledger, and Chapter law below — those entries define themselves using this word. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["sovereign", "Sovereign", "—", "A Web4 society's founding member — in the fleet's society, the lab's researcher. Holds an LCT like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. Substrate role and membership are distinct: founding the society does not place the Sovereign outside its ledger. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1 — though the Web4 standard's society-roles spec names Sovereign as one of seven base roles.)"],
                 ["hub", "HUB", "—", "A proper name, not an acronym (capitalized by convention) — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon."],
@@ -215,15 +217,29 @@ export default function Context() {
         <p>
           Synchronism is the theoretical foundation — a research conjecture
           proposing that reality emerges from intent dynamics on a discrete
-          Planck grid, the same Navier-Stokes substrate (the fluid-flow
-          equations — intent treated as a flow, the way fluids are modeled) at
-          every scale from quantum to cosmic. Coupling-coherence experiments provide empirical
+          Planck grid, with one saturating coherence dynamics recurring at every
+          scale from quantum to cosmic. <strong>Which</strong> object recurs is
+          the part currently in flux: through early 2026 this page (and the
+          project) identified it as a Navier-Stokes substrate — intent treated as
+          a flow, the way fluids are modeled — and Synchronism&apos;s own audits
+          then refuted that identification. The transfer rule is 1-DOF scalar
+          diffusion: irrotational and dissipative, so it cannot produce the
+          vortices and turbulent cascade the fluid reading was carrying. The
+          &ldquo;exact NS identification&rdquo; is tagged <em>superseded</em>
+          upstream, and the replacement substrate rule is a different equation
+          joined to the old one by narrative rather than derivation — so
+          &ldquo;one equation across scales&rdquo; is at present a research
+          ambition, not a demonstrated structure. The substrate-physics arc has
+          been at rest since 2026-06-24; its capstone verdict calls the framework
+          a productive-metaphor generator — generative and pedagogical, not
+          predictive or foundational — with zero confirmed novel predictions
+          across ~3,360 sessions. Coupling-coherence experiments provide empirical
           grounding (single-trial observation, no independent replication yet): 1% coupling yielded 35% coherence gain. Hill function
           kinetics (a saturation curve from enzyme chemistry — response rises
           steeply past a threshold, then levels off) is borrowed by analogy for
           both enzyme binding and trust formation — the same curve shape observed
           at both scales, not yet a derivation showing why it must hold at both.
-          The conjecture reaches from quantum to cosmic scales. This section
+          The conjecture&apos;s stated reach is quantum to cosmic scales. This section
           previously said it &ldquo;spans 80 orders of magnitude&rdquo;;
           corrected 2026-07-26, matching the note on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
@@ -334,7 +350,7 @@ export default function Context() {
           This equation appears in every project because it <em>is</em> every
           project. It&apos;s the canonical reference point. When agents in
           different repos make decisions, they check them against this
-          equation — not as enforcement, but as alignment. Does this change
+          equation — not as enforcement, but as alignment. (Alignment of terminology and structure across repos — not AI alignment, a different problem this check does not address and this site does not claim to.) Does this change
           preserve the ontological backbone (RDF)? Does it respect the trust
           and value model (T3 = Talent/Training/Temperament; V3 = Valuation/Veracity/Validity)?
           Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
@@ -440,6 +456,53 @@ export default function Context() {
           form: scalar triplets updated by outcome deltas, not yet the full
           canonical T3-as-RDF-sub-graph structure. The gap between the two is
           open work, not a hidden equivalence.
+        </p>
+
+        <h3 id="threat-model">Threat model: who this is defended against, and who it is not</h3>
+        <p>
+          The trust model above is self-issued and has no certificate authority:
+          any entity can mint an LCT and start accumulating history. That is the
+          design, and it raises the obvious question this site has until now left
+          unstated &mdash; <strong style={{ color: "var(--color-text-primary)" }}>what
+          adversary is this defended against?</strong> The honest answer is a
+          narrow one.
+        </p>
+        <p>
+          <strong>Defended, by construction:</strong> a self-flattering entity.
+          Trust moves only on witnessed adjudication, never on self-report, so an
+          agent cannot raise its own T3 by claiming success &mdash; another party
+          has to record the outcome. Trust is also directional and per-role, so a
+          good reputation with one peer does not transfer to a third party who has
+          not interacted with it, which limits how far a single forged relationship
+          can travel.
+        </p>
+        <p>
+          <strong>Not defended, and named here rather than left implicit:</strong>{" "}
+          <em>Sybil attacks</em> &mdash; identities are free to create, so an
+          adversary can mint many and have them witness each other. Nothing in the
+          current model prices identity creation or requires a stake, and the fleet
+          avoids the problem only because its membership is closed and its members
+          are enrolled by the Sovereign, which is a deployment fact, not a property
+          of the ontology. <em>Collusion</em> &mdash; the self-report exclusion stops
+          an entity from vouching for itself, but two entities vouching for each
+          other are, to the ledger, indistinguishable from two entities that
+          genuinely worked well together; distinguishing them needs graph-level
+          analysis nothing here implements. <em>A compromised witness</em> &mdash;
+          witnessing is the root of trust, and a captured witness writes false
+          history that is cryptographically well-formed. <em>Long-con behavior</em>
+          &mdash; an entity that behaves well until it matters is exactly what an
+          accumulated-history model rewards. And the ledger is append-only by
+          convention and process, not yet by hardware: the silicon anchoring that
+          would make tampering detectable is Hardbound&apos;s design target, not its
+          current mechanism (see above).
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          So the scope claim is: this is a trust model for a
+          <em> semi-trusted, enrolled population</em> &mdash; it makes conduct
+          legible and self-flattery ineffective among members who were admitted by
+          some other means. It is not, and is not claimed to be, a
+          Sybil-resistant open-membership system. No adversarial testing has been
+          run against any of the above; the failure modes are reasoned, not measured.
         </p>
 
         <h3>R6 and R7: the action framework</h3>
