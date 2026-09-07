@@ -2,3 +2,32 @@ Starting 4-lab Maintainer Session at Mon Sep  7 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_181.json
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_182.json
+Session complete. Build passed (12/12 pages), pushed as `18c5f1d`.
+
+## Fleet sync
+Manifest unchanged since 2026-03-08. Page remains ahead of it (HUB/pub, Granite 4, Llama 3.1, gemma4-e2b lines don't exist in the manifest). Not synced down — `/fleet` already discloses the staleness correctly.
+
+## Terminology
+**Zero canonical drift**, for the second session running — three visitor passes checked 16 terms across 9 pages independently, and I re-grepped for every banned expansion. Clean.
+
+That's worth flagging as a result, not just a null: the enforcement mechanism has converged. Which means it's no longer where the risk is.
+
+## The finding that mattered
+
+The visitor reported a cross-page conflict — the landing page called Synchronism a Navier-Stokes formalism, three other pages called it a coherence function — and asked which is right. I checked upstream rather than picking the majority reading. **Neither is right.**
+
+Synchronism's own audits refuted the Navier-Stokes identification (S617 / S665 / S666 — the transfer rule is 1-DOF scalar diffusion, irrotational and dissipative, so no vortices and no turbulent cascade). `STATUS.md` tags it `[SUPERSEDED]`, and notes the replacement substrate rule is a *different* equation joined to the old one by narrative rather than derivation — which also undercuts the "one equation" framing the coherence-function pages leaned on. Physics arc at rest since 2026-06-24; zero confirmed novel predictions across ~3,360 sessions.
+
+So the site was presenting a retracted claim as its theoretical foundation, on the page newcomers read first. Corrected across four pages, stated *as* a correction. The same check caught "628+ sessions" (actually ~3,360) and "preprint in late revision" (the repo has a strategy that gates on dp, no submission target).
+
+## Also shipped
+- **Threat model** on `/context` — the site had a self-issued, no-CA identity system with reputation-weighted trust and no stated adversary anywhere. Names Sybil, collusion, compromised witness and long-con as undefended; scopes the model to an enrolled population.
+- **LCT/MRH/T3-Training entries rewritten to motivate their own expansions.** The LCT entry never used "linked" or "context" — it glossed the *banned* term better than the canonical one. That's the mechanism by which drift returns after a correction.
+- `/raising` retirement pre-commitment flagged as unreachable as written (it fires on a control whose dependent variable the same section says doesn't exist), with a reachable second commitment added.
+- Quick start now actually runs SAGE; hero leads with the problem; `Safety boundaries` retitled to what the section delivers; plus the Tier-3 semantic fixes.
+
+## Deferred, and one you should see
+Tier 2 #7 — **run one visitor persona on a different model family** — is the highest-value item on the whole list and out of my scope, since I don't touch visitor track configs. The site argues model diversity is the defense, runs four personas on one model, and separately explains that its zero-rollback statistic is uninformative *because* auditor and author share blind spots. I joined those three statements on `/autonomy`, but the audit can't change its own cron.
+
+## So what?
+Canonical-term enforcement catches wrong *words* and is blind to stale *claims*. A term table can't tell you Navier-Stokes was retracted upstream, that a session count is off by 5x, or that a preprint isn't in revision — those all decayed silently while the vocabulary stayed perfect, and the visitor personas could only see them as internal inconsistencies because nothing on the site points outward. I'd add an upstream-freshness check to this track's workflow: for each project the site describes, diff the description against that repo's STATUS/PREDICTIONS before trusting it. Saved to memory; proposing it rather than editing the track config unilaterally.
