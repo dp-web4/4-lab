@@ -140,24 +140,19 @@ export default function Home() {
               </p>
               <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
                 A research conjecture, not established physics — and its own
-                project has retracted the sharpest version of it. Earlier framings,
-                including earlier versions of this page, named the cross-scale
-                object a fluid-dynamical <strong>Navier-Stokes</strong> formalism.
-                Synchronism&apos;s own audits refuted that identification in 2026
-                — the transfer rule is 1-DOF scalar diffusion, irrotational and
-                dissipative, so it admits no vortices and no turbulent cascade —
-                and the claim is tagged superseded upstream. Substrate reformulation
-                is active, and the project&apos;s status file records that the
-                replacement rule is a <em>different</em> equation joined to the first
-                by narrative rather than derivation, which weakens the &ldquo;one
-                equation&rdquo; framing itself. The substrate-physics arc has been at
-                rest since 2026-06-24 with <strong>zero confirmed novel
-                predictions</strong> across ~3,360 sessions; its own capstone verdict
-                calls the framework a productive-metaphor generator — generative
-                and pedagogical, not predictive or foundational.
-                &ldquo;From quantum to cosmic to conscious&rdquo; describes the
-                framework&apos;s stated scope, not a demonstrated one — and is
-                not a claim about consciousness or experience.
+                project has retracted the sharpest version of it. Earlier versions
+                of this page named the cross-scale object a <strong>Navier-Stokes</strong>{" "}
+                fluid formalism; Synchronism&apos;s own audits refuted that in 2026
+                (the transfer rule is scalar diffusion, which admits no turbulence)
+                and the claim is tagged superseded upstream. The substrate arc has
+                been at rest since 2026-06-24 with <strong>zero confirmed novel
+                predictions</strong> across ~3,360 sessions; the project&apos;s own
+                verdict is &ldquo;productive-metaphor generator,&rdquo; not predictive
+                physics. The full status — including why the replacement rule
+                weakens the &ldquo;one equation&rdquo; framing — is on the
+                Synchronism card on /projects. &ldquo;From quantum to cosmic to
+                conscious&rdquo; is stated scope, not demonstrated scope, and not a
+                claim about consciousness.
               </p>
             </div>
           </a>
@@ -233,12 +228,17 @@ export default function Home() {
           <div className="card">
             <h3>Small models are winning game levels</h3>
             <p>
-              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing levels
-              on{" "}
+              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing{" "}
+              <Link href="/context#arc-agi-3" style={{ color: "var(--color-accent)" }}>levels</Link>{" "}
+              &mdash; individual stages, not whole games &mdash; on{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
               games they&apos;ve never seen before &mdash; not by brute force,
-              but by reasoning from retrieved world models and computed
-              predictions. Context engineering dominates model size.
+              but by reasoning from retrieved{" "}
+              <Link href="/context#world-model" style={{ color: "var(--color-accent)" }}>world models</Link>{" "}
+              and computed predictions. Whole-game solves by local models remain
+              rare. The working hypothesis is that context engineering dominates
+              model size &mdash; a hypothesis, not a result: the ablation that
+              would isolate the harness&apos;s contribution has not been run.
             </p>
           </div>
           <div className="card">

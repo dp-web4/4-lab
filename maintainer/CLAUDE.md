@@ -25,7 +25,7 @@ Fix ANY deviation from these immediately. Terminology violations are **always HI
 | **MRH** | **Markov Relevancy Horizon** — boundary of what entity can know/affect | ~~Minimum Response Horizon~~, ~~Memory Retention Heuristic~~ |
 | **ATP** | **Allocation Transfer Packet** — energy resource unit | ~~Attention Token Pool~~, ~~Adaptive Trust Points~~ |
 | **ADP** | **Allocation Discharge Packet** — spent form of ATP | ~~Adaptive Development Points~~ |
-| **R6** | **Six-Element Action Framework** (Rules/Role/Request/Reference/Resource/Result) | ~~R7, R5~~ |
+| **R6** | **Six-Element Action Framework** (Rules/Role/Request/Reference/Resource/Result) | ~~R5~~ — note: **R7** (R6 + Reputation) is canonical in CANONICAL_TERMS_v1, NOT drift; do not "fix" the site's R7 entry |
 | **Web4** | An **ontology** | ~~architecture~~, ~~infrastructure~~, ~~framework~~, ~~stack~~ |
 | **Hardbound** | **Oversight** | ~~governance~~ |
 

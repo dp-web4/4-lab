@@ -215,6 +215,21 @@ export default function Autonomy() {
           a verifiable mechanism — the distinction matters.
         </p>
         <p>
+          Two things this page had not stated: what stops a track, and how often a
+          human reads the result. <strong style={{ color: "var(--color-text-primary)" }}>Stop
+          criterion:</strong> there is no defined success or failure condition that
+          ends a track. A track stops when its scheduled session ends, when the API
+          usage limit is exhausted (this happened &mdash; the 2026-09-04 maintainer run
+          hit the weekly limit, and no maintainer session logs exist from 2026-08-12
+          through 2026-09-04), when hestia&apos;s policy layer denies a command, or
+          when the researcher disables the schedule.{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Human review
+          cadence:</strong> unscheduled. The dated session logs are the review
+          surface, and they are read when the researcher reads them &mdash; no fixed
+          interval, no sign-off step, and no record of which logs have been reviewed.
+          Both are gaps, stated rather than dressed up.
+        </p>
+        <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the
           hardware-bound oversight suite — is the research direction this practice is
           building toward: it declares what autonomous operation is expected to do

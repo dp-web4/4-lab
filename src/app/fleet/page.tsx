@@ -38,14 +38,14 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — T3 (Talent / Training / Temperament, the trust tensor) verified by V3 (Valuation / Veracity / Validity, the value tensor), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — T3 (Talent / Training / Temperament, the trust tensor) verified by V3 (Valuation / Veracity / Validity, the value tensor), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
           The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
-          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. Same basis as the 2,065 cumulative figure on{" "}
+          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. The two totals the site quotes are sums of these cards: 1,991 is the six cognition machines, 2,065 is that plus HUB&apos;s 74; pub sits outside both. Same basis as the 2,065 cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and the site home page — those pages call this same quantity &ldquo;raising sessions&rdquo; where the cards below call it &ldquo;machine sessions&rdquo;: one quantity, two nouns, and this page is the source of record. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>not yet made</Link>).
@@ -59,7 +59,9 @@ export default function Fleet() {
           for itself (e.g. <code>legion-gemma4-e4b</code>, <code>thor-qwen3.5-27b</code>),
           taken from the 2026-07-24 fleet refresh, not from a hand-written list.
           They are model <em>tags as the fleet runs them</em>, which will not always
-          match a vendor&apos;s marketing name. Known gap: the shared fleet model
+          match a vendor&apos;s marketing name. E4B and E2B are Gemma 4&apos;s
+          &ldquo;effective 4B&rdquo; and &ldquo;effective 2B&rdquo; edge variants &mdash;
+          named for the memory footprint they run in, not their raw parameter count. Known gap: the shared fleet model
           manifest in the SAGE repo has not been updated since 2026-03-08, so it
           currently disagrees with this page — the manifest is the stale side, and
           reconciling it is an open item on the fleet, not on this site.
@@ -195,8 +197,12 @@ export default function Fleet() {
           <code>ATP/ADP</code> — resource accounting for work done on these machines is the
           Allocation Transfer Packet → Allocation Discharge Packet cycle, described on{" "}
           <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>.
-          Half of <code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code> is instantiated on this page
-          (identities, tensors, horizons); the resource half runs on that one.
+          Of <code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>, what actually runs today is
+          narrower than this page&apos;s vocabulary suggests: LCT identities and hestia&apos;s
+          per-peer T3/V3 scores are live; the MRH composer is a design role (CBP&apos;s card),
+          not a running component; and /autonomy&apos;s ATP/ADP is the issue-and-discharge half
+          used one-way as a spend ledger, with no recharge gate. An earlier version of this
+          paragraph said half the equation was instantiated here, which overstated it.
         </p>
         <p>
           The constraint forced a functional separation that mirrors what we&apos;re
@@ -236,7 +242,12 @@ export default function Fleet() {
           tracker, neither trusted nor distrusted (a worked numeric example of the
           update arithmetic is on{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
-          and moves only on evidence. As of July 2026 the hestia trust tracker
+          and moves only on evidence. One representational gap, stated: canon&apos;s T3
+          makes each dimension the root of an RDF (Resource Description Framework) sub-graph,
+          not a scalar; hestia&apos;s current tracker holds three numbers per peer under the
+          three-axis label, so it is a scalar approximation of a non-scalar canon object. Which
+          axis moves is defined &mdash; a success nudges Talent, a timeout drops Temperament
+          (the worked arithmetic is on /context). As of July 2026 the hestia trust tracker
           derives its displayed scores from witnessed adjudications and{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>governance-response</Link>{" "}
           conduct — hestia&apos;s own internal field name, retained for the same reason as SAGE&apos;s —
@@ -281,6 +292,11 @@ export default function Fleet() {
             <Link href="/" style={{ color: "var(--color-accent)" }}>home page</Link>: consistent
             session-to-session interaction patterns, accumulated experience, and raising curriculum.
             The metaphor is a compression of that, not an escalation of it.
+            The simpler explanation is not ruled out: the same context files fed to a different set
+            of frozen weights may produce similar behavior for mechanical reasons, with no identity
+            transferred at all &mdash; the null the{" "}
+            <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>scramble control</Link>{" "}
+            is specified to test and has not yet tested.
           </div>
         </div>
         <p>

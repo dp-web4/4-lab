@@ -63,7 +63,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role — this card previously said '900+', corrected 2026-07-27 against the 2026-07-24 fleet manifest refresh). The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role; corrected 2026-07-27 from an earlier '900+'). The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"
@@ -192,6 +192,10 @@ export default function Projects() {
 # Needs: Rust (stable), Ollama, Python 3.10+
 git clone https://github.com/dp-web4/SAGE
 cd SAGE
+
+# 0. Dependencies — the SAGE README's Requirements section is authoritative
+#    (Rust toolchain, Ollama, Python 3.10+); then pull the model step 1 names:
+ollama pull gemma3:4b
 
 # 1. Create an instance — this mints the machine's identity
 python3 -m sage.instances.init --machine mybox --model gemma3:4b --operator-name you

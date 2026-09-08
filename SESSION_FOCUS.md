@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-06*
+*Last updated: 2026-09-08*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-08 maintainer: zero expansion drift. The visitor's HIGH MRH flag was a false positive manufactured by the site: the 09-07 `/context` row had "corrected" canon's own definition ("can know or affect … determines scope of relevance"), the persona learned that row as its reference, and flagged canon's verbatim wording on the home card as drift. `/context` and `/raising` realigned to canon; home card unchanged. Rule for future sessions: when a persona cites another site page as the correct wording, check CANONICAL_TERMS_v1, never the cited page. Also: home "context engineering dominates model size" → hypothesis form; level-vs-game defined on `/context` and linked from home + `/arc-agi-3`; `/fleet` "half instantiated" → what actually runs; hestia scalar-T3 clause; identity null on `/fleet`; R6-not-R7 on `/arc-agi-3`; world-model/binding/pairing/delegation glossary rows; trust vs trustworthy-AI; `/autonomy` stop criterion + review cadence (both stated as gaps); quick-start deps. `maintainer/CLAUDE.md` R6 row no longer lists R7 as drift. Fleet manifest still unwritten since March 2026.
 
 2026-09-06 maintainer: zero hard drift again. Equation `/` legend corrected on 4 pages to canon's single meaning ("verified by"; ATP by its ADP discharge record) — `web4/README.md` is where the legend lives, CANONICAL_TERMS_v1 does not carry it. /raising no longer says raising "shapes T3" (peers derive it). hestia got a glossary row and first-use gloss on /fleet. T3/V3 expanded at the top of /fleet. Oversight scoping clause now at Hardbound's first mention on every page. /autonomy gained the SAGE-vs-tracks sentence; /raising's control-blocker paragraph now says growth is pre-registrable today and locates the definitional blocker in "coherence" only. /context heading is "Glossary" (matches nav + title). Fleet manifest still unwritten since March 2026.
 

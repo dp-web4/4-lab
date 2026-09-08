@@ -165,7 +165,8 @@ export default function Raising() {
           This is a real mechanistic distinction from training — the model&apos;s
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
-          Horizon (MRH) — what the entity attends to and can affect. It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and the V3 tensor (Valuation / Veracity / Validity) accrues from{" "}
+          Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and the V3 tensor (Valuation / Veracity / Validity) accrues from{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>peer verification</Link>{" "}
           of what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own tensors would be certifying itself. Either way, raising
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)

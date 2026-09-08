@@ -93,7 +93,11 @@ export default function ArcAgi3Page() {
             <p style={{ fontSize: "0.875rem" }}>
               The ontology. In the SAGE loop, Web4 supplies the audit trail
               &mdash; every action shaped as an R6 record (Six-Element Action
-              Framework: Rules / Role / Request / Reference / Resource / Result), every
+              Framework: Rules / Role / Request / Reference / Resource / Result) &mdash; R6
+              rather than R7: the harness repo names the R6/R7 framework, but nothing
+              published documents result attestations feeding reputation
+              back-propagation, which is what would make the records R7, so this page
+              claims only R6 &mdash; every
               policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = &ldquo;verified by&rdquo; (T3 by V3; ATP by its ADP discharge record) &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
               is the ontology that makes signed, reviewable action records possible.
             </p>
@@ -124,7 +128,10 @@ export default function ArcAgi3Page() {
           That work is producing results.
         </p>
         <p>
-          Local models are already clearing game levels &mdash; not by
+          Local models are already clearing game{" "}
+          <Link href="/context#arc-agi-3" style={{ color: "var(--color-accent)" }}>levels</Link>{" "}
+          (individual stages; whole-game solves by local models remain rare &mdash;
+          the distinction is defined on /context) &mdash; not by
           memorizing solutions, but by reasoning from retrieved world models
           and computed predictions. The early finding: context engineering
           dominates model size. A well-structured prompt with the right
