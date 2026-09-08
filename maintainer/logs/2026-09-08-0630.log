@@ -2,3 +2,22 @@ Starting 4-lab Maintainer Session at Tue Sep  8 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_185.json
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_186.json
+Session complete. Commit 167092c is pushed to main and Vercel will deploy it.
+
+**Terminology: zero expansion drift, but the one HIGH flag was a false positive the site itself manufactured.** The visitor persona flagged the home page's MRH card as causal-reach drift and cited the /context row as correct. Canon says the opposite. CANONICAL_TERMS_v1 defines MRH verbatim as "the boundary of what an entity can know or affect given its position, history, and context. Determines scope of relevance for decisions." The home card quotes canon. The /context row I rewrote yesterday had demoted canon's wording to "a first approximation this definition corrects," the persona learned that row as its reference, and then flagged canon's own words. I realigned /context and /raising to canon and left the home card alone.
+
+**Site changes shipped**, all from the visitor's priority list:
+- Home "context engineering dominates model size" is now hypothesis form, matching /arc-agi-3.
+- Level vs game defined on /context and linked from home and /arc-agi-3. This reconciles "winning levels" with "solve rates remain low."
+- /fleet "half the equation is instantiated" replaced with what actually runs, plus a hestia scalar-T3 clause and the identity-transfer null.
+- R6-not-R7 clause on /arc-agi-3, with the reason.
+- New glossary rows: world model, binding, pairing, delegation. Trust row now disambiguates from trustworthy-AI.
+- /autonomy states the stop criterion and human-review cadence, both as gaps.
+- Quick start gains a dependency step. Home Synchronism card shortened, detail moved to /projects.
+- maintainer/CLAUDE.md no longer lists R7 as drift. The visitor table is not my config and still does.
+
+**Verified:** build passed with 12 static pages and zero errors, all new anchors present in built HTML, post-edit grep for banned expansions clean. Fleet manifest unchanged since March 2026, page left ahead of it.
+
+**Log and memory:** session log at logs/2026-09-08.md, SESSION_FOCUS updated, and a new memory records the rule that semantic-drift flags citing a site page must be checked against the canon file, never the cited page.
+
+**Deferred:** an "open controls" table ranking the site's three unrun controls, a shared disclaimer component, and the visitor track's stale R7 row for an operator.
