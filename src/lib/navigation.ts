@@ -15,8 +15,8 @@ export const pages: NavItem[] = [
   {
     title: "Projects",
     href: "/projects",
-    description: "The ecosystem: Web4, SAGE, Synchronism, Hardbound, and more.",
-    keywords: ["web4", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
+    description: "The ecosystem: Web4, Hestia, Hub, SAGE, Hardbound, Synchronism, and more.",
+    keywords: ["web4", "hestia", "hub", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
   },
   {
     title: "Glossary",
@@ -25,10 +25,10 @@ export const pages: NavItem[] = [
     keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "r6", "r7", "knowledge", "memory", "web4", "terms", "definitions"],
   },
   {
-    title: "ARC-AGI-3",
+    title: "ARC-AGI-3 History",
     href: "/arc-agi-3",
-    description: "SAGE tested in competition — 94.85% on the public game set, #3 human leaderboard.",
-    keywords: ["arc-agi-3", "benchmark", "sage", "competition", "games", "94.85"],
+    description: "Spring-2026 SAGE benchmark research preserved for provenance; not current competition positioning.",
+    keywords: ["arc-agi-3", "benchmark", "sage", "competition", "games", "history", "archive"],
   },
   {
     title: "Fleet",
