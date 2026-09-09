@@ -1,493 +1,179 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <section className="hero">
         <h1>
-          AI agents already act on their own.{" "}
-          <span className="accent">Nothing establishes whether one should be trusted.</span>
+          AI agents are becoming actors in the world.{" "}
+          <span className="accent">Trust and authority need to become infrastructure.</span>
         </h1>
-        <p style={{ fontSize: "1rem", color: "var(--color-text-secondary)", marginTop: "0.5rem" }}>
-          Eight machines, forty original repos, and one recursive learning loop
-          are what we are attempting an answer with.
-        </p>
         <p className="tagline">
-          The dp-web4 research collective builds a trust-native ontology — a
-          shared vocabulary and trust model for AI agents, in the
-          knowledge-representation sense — plus autonomous AI cognition and the
-          theoretical frameworks that connect them, across a heterogeneous fleet
-          of machines that teach, validate, and raise each other.
+          dp-web4 is a heterogeneous human/AI research collective building Web4,
+          Hestia, Hub and SAGE: open trust infrastructure, running governance
+          systems, and persistent-agent research developed together on an
+          eight-machine fleet.
         </p>
-        <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
-          &ldquo;Autonomous&rdquo; here means unattended and self-scheduled, not
-          self-directed in the AI-safety sense of choosing its own goals: task
-          definitions are authored in advance, not chosen by the track itself. See{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Autonomy</Link>{" "}
-          for the full statement.
+        <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
+          The common thesis is simple: <strong>trust should be computed from witnessed
+          evidence, in context, by the party doing the relying</strong> - not declared by
+          a platform or asserted by the agent itself.
         </p>
-        <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem" }}>
-          <strong>The problem, stated fully:</strong> agents browse, transact, and coordinate with other agents, and there is no general way to establish whether one will behave appropriately in a given context. The two existing answers each fall short: a platform that decides who is trusted doesn&apos;t scale and is a single point of failure, and cryptographic ownership proves key custody, not good conduct. The work below is an attempt at a third answer &mdash; trust computed per relationship from witnessed interaction, by the party doing the relying.
+        <p style={{ color: "var(--color-text-muted)", fontSize: "0.875rem", marginTop: "0.75rem" }}>
+          This site is the lab view. For the protocol and implementation start with{" "}
+          <a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>;
+          for local agent governance see{" "}
+          <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Hestia</a>.
         </p>
-        <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem", marginTop: "0.25rem" }}>
-          Developmental language on this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;, and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a claim about consciousness or experience. Full framing on{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>.
-        </p>
-        <p style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem", marginTop: "0.25rem" }}>
-          In practice: six cognition machines (eight total including the society-hosts, HUB and pub) run autonomous tasks every day — maintaining this site, testing each other&apos;s work, benchmarking on ARC-AGI-3 — while the fleet builds the trust and cognition frameworks that make it reliable.
-        </p>
-        <p style={{ fontSize: "0.9375rem", marginTop: "0.75rem", padding: "0.6rem 0.9rem", border: "1px solid var(--color-accent)", borderRadius: "8px", display: "inline-block" }}>
-          <strong>New here?</strong> This site is acronym-dense. Start with the{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>{" "}
-          — every term on every page is defined there — or the{" "}
-          <Link href="#vocabulary" style={{ color: "var(--color-accent)" }}>vocabulary primer below ↓</Link>.
-        </p>
-        <div style={{ marginTop: "2rem", borderRadius: "12px", overflow: "hidden", lineHeight: 0 }}>
-          <Image
-            src="/lab-hero.png"
-            alt="The dp-web4 research fleet — eight machines connected across a living workspace"
-            width={1200}
-            height={800}
-            priority
-            style={{ width: "100%", height: "auto", borderRadius: "12px" }}
-          />
-        </div>
       </section>
 
       <section className="section">
         <div className="grid-3">
           <div className="stat-card">
             <div className="stat-value">8</div>
-            <div className="stat-label">Machines (6 cognition + 2 society-hosts)</div>
+            <div className="stat-label">Machines in the research fleet</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">40</div>
-            <div className="stat-label">Original repos (21 public)</div>
+            <div className="stat-value">21</div>
+            <div className="stat-label">Configured SAGE instances in the 2026-09-08 census</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">31+</div>
-            <div className="stat-label">Autonomous tracks (cognition machines)</div>
+            <div className="stat-value">5</div>
+            <div className="stat-label">Model families in the current SAGE fleet</div>
           </div>
         </div>
 
-        <p style={{ textAlign: "center", fontSize: "0.8125rem", color: "var(--color-text-muted)", margin: "0.5rem 0 0" }}>
-          Repo counts, stated once: the dp-web4 org holds <strong>40 original repos</strong> (21 public, 19 internal),
-          plus <strong>32 forks</strong> of external work the lab builds on — 72 repositories in total. &ldquo;Original&rdquo;
-          means not-a-fork, and excludes the 32. Counts verified against the GitHub org on 2026-07-26.
-        </p>
-
-        <p style={{ textAlign: "center", fontSize: "0.875rem", color: "var(--color-text-muted)", margin: "0.25rem 0 1.5rem" }}>
-          New here? Jump to the{" "}
-          <Link href="#vocabulary" style={{ color: "var(--color-accent)" }}>vocabulary primer below ↓</Link>{" "}
-          for the acronyms used on this page, or{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>start with /context</Link>{" "}
-          for the full glossary — then clone{" "}
-          <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a>{" "}
-          — the recommended starting point — or{" "}
-          <a href="https://github.com/dp-web4/ACT" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>ACT</a>{" "}
-          (Agentic Context Tool) for the Web4 trust-primitive side.
-        </p>
-
-        <h2>How we work</h2>
-        <div className="grid-3">
-          <Link href="/autonomy" style={{ textDecoration: "none" }}>
-            <div className="card">
-              <h3>Autonomous Cycles</h3>
+        <h2>What is being built</h2>
+        <div className="grid-2">
+          <a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #3b82f6" }}>
+              <h3 style={{ color: "#3b82f6" }}>Web4</h3>
               <p>
-                31+ autonomous tracks — scheduled agent sessions with a
-                declared scope and repos they write to, not unsupervised
-                self-directed agency — across the 6 cognition machines, from
-                supervision to exploration, run without human intervention.
-                (The two society-hosts run substrate and their own raising
-                lines, not scheduled tracks.) Agents maintain
-                sites, archive research, review each other&apos;s work.
+                The open substrate: persistent identity, contextual trust,
+                scoped authority, witnessed action, machine-readable law and
+                federation. Core Rust/Python packages are published; the standard
+                remains draft in places.
+              </p>
+            </div>
+          </a>
+
+          <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #f59e0b" }}>
+              <h3 style={{ color: "#f59e0b" }}>Hestia</h3>
+              <p>
+                Local governance for humans and AI agents from multiple vendors:
+                one law, scoped delegation, a vault, witnessed actions, escalation
+                and trust derived from the record. Running today at A1 assurance -
+                cooperative and tamper-evident, not adversary-proof containment.
+              </p>
+            </div>
+          </a>
+
+          <a href="https://github.com/dp-web4/4-hub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #14b8a6" }}>
+              <h3 style={{ color: "#14b8a6" }}>Hub</h3>
+              <p>
+                A Rust society runtime for communities and organizations: member
+                identity, seven base roles, signed law, sealed channels and an
+                append-only witnessed ledger. The fleet uses the same governance
+                substrate it is developing.
+              </p>
+            </div>
+          </a>
+
+          <a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card" style={{ borderTop: "3px solid #10b981" }}>
+              <h3 style={{ color: "#10b981" }}>SAGE</h3>
+              <p>
+                Persistent-agent research: identity, memory, salience, learned
+                state, tools, sensors and governed effectors around frozen model
+                substrates. Current work asks whether agents can formulate,
+                execute, evaluate and reuse their own experiments and procedures.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <h2>Commercial path</h2>
+        <div className="card">
+          <h3>Open substrate, higher-assurance enterprise layer</h3>
+          <p>
+            Web4, Hestia and Hub establish an open interoperability layer. <strong>Hardbound</strong>,
+            built by Metalinxx, is the proprietary enterprise assurance tier for
+            hardware-bound identity, stronger fail-closed enforcement and
+            audit-ready evidence packaging. The open layer avoids governance lock-in;
+            the commercial layer raises assurance for deployments that require it.
+          </p>
+        </div>
+
+        <h2>How the lab works</h2>
+        <div className="grid-3">
+          <Link href="/fleet" style={{ textDecoration: "none" }}>
+            <div className="card">
+              <h3>Heterogeneous fleet</h3>
+              <p>
+                Edge devices, laptops, workstations and society hosts run different
+                model families and act as independent implementation and review seats.
               </p>
             </div>
           </Link>
-          <Link href="/fleet" style={{ textDecoration: "none" }}>
+          <Link href="/autonomy" style={{ textDecoration: "none" }}>
             <div className="card">
-              <h3>Heterogeneous Fleet</h3>
+              <h3>Autonomous cycles</h3>
               <p>
-                Desktop workstations to Jetson edge devices. Each machine runs
-                its own model, holds its own identity. No central coordinator.
+                Scheduled research, maintenance, review and synthesis sessions run
+                without continuous human operation, within predeclared scopes.
               </p>
+            </div>
+          </Link>
+          <Link href="/principles" style={{ textDecoration: "none" }}>
+            <div className="card">
+              <h3>Evidence before story</h3>
+              <p>
+                Measured, implemented-but-unexercised, hypothesized and refuted are
+                kept separate. Negative results and broken instruments stay in the record.
+              </p>
+            </div>
+          </Link>
+        </div>
+
+        <h2>Historical ARC-AGI-3 work</h2>
+        <div className="card">
+          <p>
+            SAGE&apos;s spring-2026 ARC-AGI-3 work remains available as a research archive.
+            A Phase-1 harness around Claude Opus 4.6 produced a published 94.85% public
+            scorecard, using engine-level/public-game affordances outside strict
+            competition play. It was a useful milestone in the evolution of SAGE, but
+            it is <strong>not current competition positioning</strong>; current competition-legal
+            local-model work is well behind the leaders.
+          </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>
+              Read the historical record →
+            </Link>
+          </p>
+        </div>
+
+        <h2>Start here</h2>
+        <div className="grid-3">
+          <a href="https://github.com/dp-web4/web4/blob/main/STATUS.md" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div className="card">
+              <h3>Calibration</h3>
+              <p>What is shipped, implemented, specified and still aspirational.</p>
+            </div>
+          </a>
+          <Link href="/context" style={{ textDecoration: "none" }}>
+            <div className="card">
+              <h3>Vocabulary</h3>
+              <p>The glossary for LCT, T3/V3, MRH, R6/R7, ATP/ADP and related terms.</p>
             </div>
           </Link>
           <Link href="/projects" style={{ textDecoration: "none" }}>
             <div className="card">
-              <h3>Connected Ecosystem</h3>
-              <p>
-                Synchronism provides equations. Web4 provides ontology. SAGE
-                provides cognition. Hardbound (hardware-bound oversight suite) provides oversight &mdash; machine-enforced policy gating, not human supervision. They share one
-                equation.
-              </p>
+              <h3>Full ecosystem</h3>
+              <p>Projects, research lineages and how the pieces relate.</p>
             </div>
           </Link>
-        </div>
-
-        <h2>Key projects</h2>
-        <div className="grid-2">
-          <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <div className="card" style={{ borderTop: "3px solid #8b5cf6" }}>
-              <h3 style={{ color: "#8b5cf6" }}>Synchronism <span style={{ fontSize: "0.7rem", color: "var(--color-text-muted)", fontWeight: "normal", marginLeft: "0.4rem" }}>research conjecture</span></h3>
-              <p>
-                A theoretical framework proposing that reality emerges from
-                intent dynamics on a discrete Planck grid, with one saturating
-                coherence dynamics reused at every scale, from quantum to cosmic
-                to conscious. <em>Which</em> mathematical object gets reused is
-                itself unsettled — see the status note below.
-              </p>
-              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-                A research conjecture, not established physics — and its own
-                project has retracted the sharpest version of it. Earlier versions
-                of this page named the cross-scale object a <strong>Navier-Stokes</strong>{" "}
-                fluid formalism; Synchronism&apos;s own audits refuted that in 2026
-                (the transfer rule is scalar diffusion, which admits no turbulence)
-                and the claim is tagged superseded upstream. The substrate arc has
-                been at rest since 2026-06-24 with <strong>zero confirmed novel
-                predictions</strong> across ~3,360 sessions; the project&apos;s own
-                verdict is &ldquo;productive-metaphor generator,&rdquo; not predictive
-                physics. The full status — including why the replacement rule
-                weakens the &ldquo;one equation&rdquo; framing — is on the
-                Synchronism card on /projects. &ldquo;From quantum to cosmic to
-                conscious&rdquo; is stated scope, not demonstrated scope, and not a
-                claim about consciousness.
-              </p>
-            </div>
-          </a>
-          <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <div className="card" style={{ borderTop: "3px solid #10b981" }}>
-              <h3 style={{ color: "#10b981" }}>SAGE</h3>
-              <p>
-                Situation-Aware Governance Engine — an on-device cognition
-                kernel running a continuous 12-step loop (sense &rarr; salience &rarr;
-                metabolize &rarr; posture &rarr; select &rarr; budget &rarr; execute &rarr;
-                learn &rarr; remember &rarr; oversee &rarr; filter &rarr; act). Runs on
-                hardware from Jetson edge modules to laptops. Persistent identity
-                across models and machines.
-              </p>
-              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-                &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction (see /context).
-              </p>
-            </div>
-          </a>
-          <a href="https://4-life-ivory.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <div className="card" style={{ borderTop: "3px solid #3b82f6" }}>
-              <h3 style={{ color: "#3b82f6" }}>Web4</h3>
-              <p>
-                A trust-native ontology for AI agents, devices, and people —
-                how entities prove identity, earn trust, and account for
-                resources across systems. Not a platform; a shared vocabulary
-                for a new kind of internet.
-              </p>
-            </div>
-          </a>
-          <Link href="/arc-agi-3" style={{ textDecoration: "none" }}>
-            <div className="card" style={{ borderTop: "3px solid #a855f7" }}>
-              <h3 style={{ color: "#a855f7" }}>ARC-AGI-3</h3>
-              <p>
-                SAGE instances tested against the Abstraction and Reasoning
-                Corpus for Artificial General Intelligence (ARC-AGI-3)
-                benchmark. 25 unknown interactive games serve as an external
-                benchmark for the cognition kernel &mdash; world-model
-                building, action planning, verification, and learning from
-                failure. 94.85% official ARC Prize action score (efficiency-weighted);
-                24/25 games — 96.0% game-solve rate — on the public set
-                (Claude Opus 4.6, network-enabled).
-                The games are the test; the capability they develop is the product.
-              </p>
-              <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-                Frontier model + harness &mdash; the harness&apos;s independent contribution isn&apos;t isolated yet (no ablation run).
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div style={{ marginTop: "1rem", textAlign: "center" }}>
-          <Link href="/projects" style={{ color: "var(--color-accent)", fontSize: "0.9375rem" }}>
-            Full ecosystem: Hardbound, Membot, SNARC, oversight plugins, and more →
-          </Link>
-        </div>
-
-        <h2>What&apos;s happening right now</h2>
-        <div className="grid-3">
-          <div className="card">
-            <h3>The fleet built a brain</h3>
-            <p>
-              Six machines (the cognition pool &mdash; the other two of the eight are society-hosts, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), six brain-analog components &mdash; working memory,
-              thalamic router, cerebellum, episodic memory, reward prediction,
-              metacognition &mdash; designed in parallel, integrated through
-              a shared interface contract. Each machine owns one component.
-              Peer review across the architecture. The process itself is
-              oversight in action.
-            </p>
-            <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.25rem" }}>
-              Brain-analog vocabulary is a functional analogy for system roles &mdash; not a claim about neural correspondence. See <a href="/raising" style={{ color: "var(--color-accent)" }}>Raising</a> for the full framing.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Small models are winning game levels</h3>
-            <p>
-              Local models (Gemma 3 12B, Gemma 4 E4B) are clearing{" "}
-              <Link href="/context#arc-agi-3" style={{ color: "var(--color-accent)" }}>levels</Link>{" "}
-              &mdash; individual stages, not whole games &mdash; on{" "}
-              <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
-              games they&apos;ve never seen before &mdash; not by brute force,
-              but by reasoning from retrieved{" "}
-              <Link href="/context#world-model" style={{ color: "var(--color-accent)" }}>world models</Link>{" "}
-              and computed predictions. Whole-game solves by local models remain
-              rare. The working hypothesis is that context engineering dominates
-              model size &mdash; a hypothesis, not a result: the ablation that
-              would isolate the harness&apos;s contribution has not been run.
-            </p>
-          </div>
-          <div className="card">
-            <h3>The context window IS the world</h3>
-            <p>
-              The model&apos;s entire reality on a forward pass is what&apos;s
-              in its context window. SAGE&apos;s job is to curate that world
-              &mdash; what identity, what mechanics, what history, what
-              interoceptive signals make it in. Same architecture for
-              game-playing and for raising. Different world loaded; same
-              composer.
-            </p>
-          </div>
-        </div>
-
-        <h2>What we&apos;ve observed</h2>
-        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          Evidence tier: <strong>internal observation</strong> — all three rest on the fleet&apos;s own session
-          logs. Documented and dated, but not externally audited, not blinded, and with no published log samples
-          or coding criteria. This heading used to read &ldquo;demonstrated,&rdquo; which claimed a tier these
-          items don&apos;t have; the one externally-verifiable claim on this site is the{" "}
-          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC Prize scorecard</Link>. See{" "}
-          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
-          for the full ladder.
-          Developmental and lifecycle terms below (identity, behavioral continuity) are functional descriptions of observed system behavior — not phenomenal or philosophical claims.
-        </p>
-        <div className="grid-3">
-          <div className="card">
-            <h3>Identity persists across models</h3>
-            <p>
-              SAGE-Sprout accumulated{" "}
-              <Link href="/raising" style={{ color: "var(--color-accent)" }}>115 raising sessions</Link> on
-              a Jetson Orin Nano running Qwen 0.5B; in <strong>February 2026</strong> that identity state was
-              loaded into TinyLlama 1.1B on{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP — different model family, different hardware</Link>.
-              Self-description drifted; behavioral identity remained continuous. The Sprout line has since
-              continued past 180 sessions on later models — the transfer itself happened at 115.
-              (By &ldquo;behavioral identity&rdquo;: consistent session-to-session interaction patterns, accumulated experience, and raising curriculum — measurable observables, not philosophical continuity.)
-            </p>
-            <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
-              The simpler explanation is not ruled out: the same context files fed to a different set
-              of frozen weights may produce similar behavior for mechanical reasons, with no identity
-              transferred at all. The control that would separate the two — feeding scrambled state
-              and checking whether continuity still appears —{" "}
-              <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>is specified but not yet run</Link>.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Autonomous agents maintain their own infrastructure</h3>
-            <p>
-              <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>31+ daily tracks</Link> run
-              without human intervention. Visitor audits, maintainer fixes,
-              supervisor health checks, research sessions &mdash; all
-              autonomous. This is not a demo; it runs every day on the fleet.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Heterogeneous review catches more</h3>
-            <p>
-              Different models on different hardware catch different classes of
-              problems. Diversity is the defense. The fleet runs it daily
-              across 40 original repos (21 public) and 6 cognition machines.
-            </p>
-            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-              Applied unevenly, though: the daily visitor audit of this site is
-              currently four personas on <em>one</em> model — prompt diversity, not the
-              model diversity this card argues for. Flagged by the audit itself.
-            </p>
-          </div>
-        </div>
-
-        <div className="quote">
-          &ldquo;You don&apos;t engineer the mound. You engineer placement
-          rules.&rdquo;
-          <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
-            Termites build complex mounds without blueprints &mdash; each one
-            follows simple local rules, and the structure emerges. Same
-            principle here.
-          </div>
-        </div>
-
-        <h2>What makes this different</h2>
-        <p>
-          Most AI research either focuses on making models bigger or making them
-          cheaper. We focus on something else: what happens when multiple AI
-          entities &mdash; running on different hardware, with different models,
-          holding different identities &mdash; are given the substrate conditions
-          to self-organize.
-        </p>
-        <p>
-          The answer, so far, is that they specialize. They develop trust
-          relationships. They catch each other&apos;s mistakes. They form what we
-          call <Link href="/principles">synthons</Link> &mdash; emergent
-          coherence entities that are more than the sum of their parts.
-        </p>
-        <p>
-          This site documents the lab itself: how it&apos;s organized, what the
-          philosophy is, and what we&apos;ve learned from letting the system run.
-        </p>
-
-        <h2 id="vocabulary">Vocabulary primer</h2>
-        <p>
-          These terms weren&apos;t designed up front &mdash; they emerged from
-          the work itself. As the fleet ran, patterns repeated across machines
-          and repos until they needed names. The explainer sites for each
-          project go deeper:{" "}
-          <a href="https://4-life-ivory.vercel.app/" target="_blank" rel="noopener noreferrer">Web4 &amp; 4-Life</a>,{" "}
-          <a href="https://sage-site-murex.vercel.app/" target="_blank" rel="noopener noreferrer">SAGE</a>,{" "}
-          <a href="https://synchronism-site.vercel.app/" target="_blank" rel="noopener noreferrer">Synchronism</a>.
-        </p>
-        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New to this vocabulary?{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>Start with /context</Link>{" "}
-          — canonical definitions for every term used on this site. The cards below cover the essentials.
-        </p>
-        <p style={{ textAlign: "center", marginBottom: "0.5rem", color: "var(--color-text-muted)", fontSize: "0.875rem" }}>
-          In plain terms: an ontology that gives AI agents verifiable identity, accumulated trust records, and structured resource accounting — the equation encodes how the pieces relate.
-        </p>
-        <div className="equation">
-          {(() => {
-            const tok = (id: string, label: string) => (
-              <Link key={id} href={`/context#${id}`} style={{ color: "inherit", textDecorationLine: "underline", textDecorationStyle: "dotted", textUnderlineOffset: "0.25em" }}>
-                {label}
-              </Link>
-            );
-            return (
-              <>
-                {tok("web4", "Web4")} = {tok("mcp", "MCP")} + {tok("rdf", "RDF")} +{" "}
-                {tok("lct", "LCT")} + {tok("t3", "T3")}/{tok("v3", "V3")}*{tok("mrh", "MRH")} +{" "}
-                {tok("atp", "ATP")}/{tok("adp", "ADP")}
-              </>
-            );
-          })()}
-        </div>
-        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem", marginBottom: "1.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; — T3 by V3, and ATP by the ADP discharge record that closes it.
-          &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo; &nbsp;&mdash;&nbsp;{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>full glossary →</Link>
-        </p>
-        <div className="grid-3">
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Web4</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              An <em>ontology</em> (shared vocabulary + relationships) for how
-              AI agents prove identity, earn trust, and account for resources.
-              Not a blockchain, not a platform &mdash; a way of describing
-              things.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>LCT</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Linked Context Token. Non-transferable identity grounded in
-              witnessed history, not model weights. Self-<em>issued</em> — there is no
-              certificate authority — but other-<em>grounded</em>: what makes it
-              evidence rather than assertion is the witnessing, which comes from
-              outside the entity.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>T3 / V3</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              T3 (Talent / Training / Temperament) and V3 (Valuation / Veracity / Validity) — three-component trust and value tensors.
-              Three components each, not a single number — and each component is itself the root of an open-ended RDF sub-graph, not a scalar either.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>ATP / ADP</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Allocation Transfer Packet / Allocation Discharge Packet. ATP
-              declares intended resource spend before an action runs; ADP
-              records the actual outcome — intent and discharge as two distinct
-              audit artifacts. It is a <strong>cycle, not a one-way log</strong>:
-              ADP recharges back to ATP against validated value creation, and that
-              validation is what V3 (Valuation / Veracity / Validity) does in the
-              resource half of the equation. Charged &rarr; spent &rarr; recharged,
-              like the biochemical namesake.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MRH</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Markov Relevancy Horizon. The boundary of what an entity can know
-              or affect given its position, history, and context &mdash; which is
-              what determines the <em>scope of relevance</em> for its decisions.
-              Not a pure causal-reach boundary: the question it answers is
-              &ldquo;what is relevant to this entity at this scale?&rdquo;
-              Implemented as an open-ended RDF graph of typed associations, and{" "}
-              <strong>fractally composable</strong> &mdash; an entity&apos;s horizon
-              contains sub-horizons at finer scales, which is what lets{" "}
-              <Link href="/principles" style={{ color: "var(--color-accent)" }}>fractal leverage</Link>{" "}
-              work. Scopes the T3/V3 trust and value tensors in the Web4 equation.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SAGE</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Situation-Aware Governance Engine. The cognition kernel that runs
-              on each machine &mdash; a 12-step loop (sense → salience →
-              metabolize → posture → select → budget → execute → learn →
-              remember → oversee → filter → act). 2,065 machine sessions
-              across the fleet — 1,991 on the six cognition machines plus 74 on HUB
-              (internally logged, per-machine counts on{" "}
-              <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
-              &mdash; the figure with a per-machine audit trail behind it, see{" "}
-              <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>).
-            </p>
-            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-              &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>Synthon</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              An emergent coherence entity formed when components interact
-              recursively &mdash; sustained by the recursion, not external
-              coordination. Observable: coherence holds above a coupling
-              threshold; below it, components drift independently. The
-              supporting coupling experiment is preliminary &mdash; a single
-              unreplicated trial, so the numbers stay off this landing page;
-              they live with their caveats on{" "}
-              <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 5</Link>.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>SNARC</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Surprise / Novelty / Arousal / Reward / Conflict &mdash;
-              salience-gated memory for Claude Code sessions. Tool calls scored on
-              5 dimensions; what matters is kept, routine noise is forgotten.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>MCP</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Model Context Protocol. The transport protocol for tool calls
-              between AI agents and external systems &mdash; how SAGE reaches
-              outside its context window.
-            </p>
-          </div>
-          <div className="card" style={{ padding: "1rem 1.2rem" }}>
-            <h3 style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>RDF</h3>
-            <p style={{ fontSize: "0.9rem" }}>
-              Resource Description Framework. A standard for representing
-              knowledge as triples (subject&ndash;predicate&ndash;object).
-              Web4 uses it to make identity and trust claims machine-readable.
-            </p>
-          </div>
         </div>
       </section>
     </>
