@@ -8,6 +8,14 @@ export default function ArcAgi3History() {
       </p>
 
       <h1>ARC-AGI-3 - spring 2026 research record</h1>
+      <p style={{ color: "var(--color-text-muted)", fontSize: "0.875rem", marginTop: "-0.5rem" }}>
+        <strong>ARC-AGI-3</strong> = Abstraction and Reasoning Corpus for Artificial General
+        Intelligence, third generation — an external interactive benchmark from ARC Prize in
+        which an agent must infer each game&apos;s mechanics through play; no rules are given.{" "}
+        <strong>SAGE</strong> = Situation-Aware Governance Engine, this lab&apos;s on-device
+        cognition kernel. Both terms, and every other one on this page, are defined in the{" "}
+        <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
+      </p>
 
       <div className="card" style={{ borderTop: "3px solid #a855f7", marginBottom: "1.5rem" }}>
         <h2>Status in September 2026</h2>
@@ -21,8 +29,12 @@ export default function ArcAgi3History() {
       <h2>What happened</h2>
       <p>
         In April 2026, a Phase-1 SAGE/ARC harness around Claude Opus 4.6 produced a published
-        <strong> 94.85%</strong> scorecard on the public interactive environments. The run completed
-        175 of 183 levels across 23 of 25 environments.
+        <strong> 94.85% official ARC Prize action score</strong> on the public interactive
+        environments. The action score is efficiency-weighted — it credits solving a level in
+        fewer actions — so it is not a solve rate, and ARC Prize publishes no baseline to compare
+        it against. The run completed 175 of 183 levels across <strong>23 of 25</strong>
+        environments: a 92.0% environment-completion rate. Two environments were left unfinished
+        (5 of 9 levels, and 6 of 10).
       </p>
       <p>
         The score is real and publicly verifiable. The affordances matter just as much as the number:
@@ -35,11 +47,11 @@ export default function ArcAgi3History() {
       <div className="grid-3" style={{ marginTop: "1rem" }}>
         <div className="stat-card">
           <div className="stat-value">94.85%</div>
-          <div className="stat-label">Historical public scorecard</div>
+          <div className="stat-label">Official ARC Prize action score (efficiency-weighted)</div>
         </div>
         <div className="stat-card">
           <div className="stat-value">23/25</div>
-          <div className="stat-label">Environments completed</div>
+          <div className="stat-label">Environments completed (92.0%) — 175/183 levels</div>
         </div>
         <div className="stat-card">
           <div className="stat-value">2026-04-17</div>
@@ -76,7 +88,7 @@ export default function ArcAgi3History() {
         <li><a href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" target="_blank" rel="noopener noreferrer">Published ARC Prize scorecard</a></li>
         <li><a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer">Frozen ARC-SAGE Phase-1 repository</a></li>
         <li><a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer">Current public SAGE architecture</a></li>
-        <li><a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer">Current Web4 stack</a></li>
+        <li><a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer">Current Web4 ontology and packages</a></li>
       </ul>
 
       <p style={{ marginTop: "2rem", color: "var(--color-text-muted)", fontSize: "0.875rem" }}>

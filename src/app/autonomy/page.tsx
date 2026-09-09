@@ -230,6 +230,23 @@ export default function Autonomy() {
           Both are gaps, stated rather than dressed up.
         </p>
         <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>One content-triggered
+          stop, added 2026-09-09.</strong> Every criterion above is exogenous &mdash; a clock,
+          a quota, a policy denial, a human switch. Nothing in what a track <em>finds</em>
+          could stop it. As of this date one endogenous condition binds the maintainer
+          track: a HIGH-severity finding in a visitor log that a maintainer session does not
+          resolve must be carried forward in that session&apos;s log under an explicit
+          unresolved heading, and the next maintainer session opens no new work until it is
+          either fixed or deferred by name. The rule lives in the maintainer track&apos;s own
+          configuration, so it is checkable against the session logs.{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Its weakness is the
+          point:</strong> it is self-enforced by the same track it constrains, which is
+          exactly the structure this page says is not a verifiable mechanism. It converts one
+          disclosure into one obligation. It does not make the posture adversary-resistant,
+          and a track that ignored it would leave no trace beyond a session log nobody is
+          scheduled to read.
+        </p>
+        <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the
           hardware-bound oversight suite — is the research direction this practice is
           building toward: it declares what autonomous operation is expected to do

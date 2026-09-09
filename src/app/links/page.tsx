@@ -82,7 +82,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score (Claude Opus 4.6, public set, network-enabled; 24/25 games, 96.0% game-solve rate), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
+            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score, efficiency-weighted (Claude Opus 4.6, public set, network-enabled; 23 of 25 environments completed, 92.0%; 175 of 183 levels), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
           />
           <ExternalLink
             href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"

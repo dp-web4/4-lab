@@ -121,6 +121,23 @@ If you find terminology drift patterns that might exist in sibling sites, note t
 
 The maintainers of those sites should check. Don't modify other repos — just flag.
 
+### 5b. Carry-Forward Rule (content-triggered stop)
+
+**Binding as of 2026-09-09.** This is the maintainer track's only endogenous stop condition,
+and `/autonomy` states it publicly — so it has to be true.
+
+- Any **HIGH-severity** finding in a visitor log that this session does **not** resolve must
+  be carried forward in the session log under a heading spelled exactly:
+  `## Unresolved HIGH — requires sign-off`
+  with one line per item: the finding, why it was not resolved, and what would resolve it.
+- The **next** maintainer session opens no new work until every item under that heading is
+  either fixed or explicitly deferred by the researcher (record the deferral by name).
+- If there are none, write `## Unresolved HIGH — requires sign-off` followed by `None.`
+  The heading is always present, so its absence is itself a defect.
+
+Known weakness, stated on the site too: this is self-enforced by the track it constrains.
+It converts a disclosure into an obligation; it is not an external control.
+
 ### 6. Commit and Push
 
 ```bash

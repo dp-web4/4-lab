@@ -12,19 +12,20 @@ export default function Projects() {
       <section className="section">
         <h2>The Ecosystem</h2>
         <p>
-          Each project serves a distinct role, but they share a common substrate:
+          Each project serves a distinct role, but they share common ground:
           the Web4 equation, RDF-backed identity, and{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>recursive learning through
           both success and failure</Link>. Synchronism provides the equations. Web4
-          provides the ontology. SAGE provides the cognition. Hardbound provides
-          the oversight.
+          provides the ontology. Hestia governs the machine. Hub is the society that
+          checks the record Hestia makes. SAGE provides the cognition. Hardbound
+          provides the oversight.
         </p>
 
         <div className="equation">
           Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
-          <code>/</code> = &ldquo;verified by&rdquo; (T3 by V3; ATP by its ADP discharge record) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
+          <code>/</code> = &ldquo;verified by&rdquo; on both sides of the equation (T3 by V3; ATP by its ADP discharge record) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
@@ -55,7 +56,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged against V3-validated value, not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
+            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged against V3-validated value, not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
@@ -70,6 +71,22 @@ export default function Projects() {
             url="https://sage-site-murex.vercel.app"
             repoUrl="https://github.com/dp-web4/SAGE"
             footnote="'Governance' in SAGE's name predates the lab's governance→oversight terminology correction; the name is retained upstream across code, papers, and the ARC Prize benchmark — the same reason the web4-governance repo slugs are retained."
+          />
+          <ProjectCard
+            name="Hestia"
+            description="Open local-first governance daemon: AI agents from different vendors (Claude Code, Codex, Kimi, Gemini, Cursor) share one machine under one signed law, with a hash-chained record of what each did, human escalation when an agent reaches for something it should not have, and a T3/V3 posture derived from that record rather than asserted. No cloud required. That record is also what makes an agent admissible to a Web4 hub — a hub cannot verify an agent it has no history of. Assurance ceiling, stated by the repo itself: profile A1 on its own published A0–A4 ladder (A0 observed → A4 hardware-attested) — a cooperative in-process gate that reliably stops accidents and produces an accountability record, but does not stop a sophisticated agent from routing around it; two environment variables suffice today, and a third-party reputation-poisoning class has been demonstrated. A2 (external enforcement by the relying service) is the next target and is not shipped. The human-presence half of the roadmap is plumbed but thinly exercised; federation is not started."
+            accentColor="#f59e0b"
+            isPublic={true}
+            maturity="runnable"
+            repoUrl="https://github.com/dp-web4/hestia"
+          />
+          <ProjectCard
+            name="Hub"
+            description="Rust society runtime — a single ~6 MB binary that turns a community or organization into a sovereign Web4 society: member identity, seven base roles, a signed founding charter, an append-only hash-chained witnessed ledger, an MCP (Model Context Protocol) HTTP server and an admin CLI. Where Hestia governs one machine, Hub is the society the governed members join; Hestia makes the record, Hub is what checks it. MVP complete through sprint 6 and buildable, but pilot-stage rather than deployed: the Docker package is untested outside the development machine and no chapter has run it in production use. The fleet runs on the same society runtime it is developing — the eight machines are members of a society with a chapter ledger, which is why /fleet can say the society-hosts are members of what they host."
+            accentColor="#14b8a6"
+            isPublic={true}
+            maturity="runnable"
+            repoUrl="https://github.com/dp-web4/4-hub"
           />
           <ProjectCard
             name="Synchronism"
@@ -142,7 +159,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 24/25 games solved (96.0% game-solve rate) — for ~$250 in API cost. The harness-vs-model ablation has not been run, so how much of that score is the harness is an open question. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. The games are the test; the capability is the product."
+            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -156,7 +173,7 @@ export default function Projects() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>24/25 games solved (96.0% game-solve rate); 94.85% official action score (efficiency-weighted; Claude Opus 4.6)</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>23 of 25 environments completed (92.0%); 175 of 183 levels; 94.85% official ARC Prize action score (efficiency-weighted — not a solve rate; no published baseline). Claude Opus 4.6, 2026-04-17.</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B at benchmark time</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
@@ -170,7 +187,8 @@ export default function Projects() {
         <p>
           Every project instantiates the same pattern at a different scale.
           Synchronism discovers the equations. Web4 encodes them as ontology.
-          SAGE runs them as cognition. Hardbound enforces them as oversight.
+          Hestia adjudicates them on one machine; Hub witnesses them across a
+          society. SAGE runs them as cognition. Hardbound enforces them as oversight.
           This isn&apos;t unification — it&apos;s{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage

@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-08*
+*Last updated: 2026-09-09*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-09 maintainer: the 09-08 home/ARC rewrite reintroduced the site's most-guarded violation — Web4 as "open trust infrastructure" and "the open substrate" on the highest-traffic page. Fixed, plus a "Current Web4 stack" link label on /arc-agi-3 that all four visitor passes missed. **Bigger finding: "24/25 games, 96.0%" was factually wrong on five pages.** Resolved against the published scorecard JSON (`total_environments_completed: 23`, 175/183 levels, score 94.8504525777253) — correct figures are 23 of 25 environments (92.0%) and 175 of 183 levels; the metric is the ARC Prize *action score*, efficiency-weighted, no published baseline. Named the metric inline everywhere. Second time in three sessions the majority reading across pages lost to the upstream artifact. Also: Hestia + Hub cards added to /projects (home headlined four projects, index documented two); ARC source-reading caveat + 2026-04-17 date now travel to /projects; A1 defined at point of use with the TCSEC inversion named (A1 is correct on Hestia's own A0–A4 ladder — not drift); four glossary rows (substrate ×4 senses, Hestia/hestia, Hub/HUB, A0–A4); "5 model families" → 4, named; the "21 configured instances" census labelled unpublished. **/autonomy gained its first content-triggered stop condition** — an unresolved HIGH visitor finding blocks the next session's new work — written into `maintainer/CLAUDE.md` in the same commit so the site claim is checkable. Reverted my own propagation of P3's misread "mutual `/`" item, and corrected /context's claim that the `/` legend is canon's (upstream README no longer states one — it is the site's gloss). Two rendering bugs found: glossary array-strings and ProjectCard descriptions render HTML literally, unlike JSX attribute strings; one pre-existing `&amp;` was live. Verify against built HTML, not source. Fleet manifest still unwritten since March 2026 (fourth report).
 
 2026-09-08 maintainer: zero expansion drift. The visitor's HIGH MRH flag was a false positive manufactured by the site: the 09-07 `/context` row had "corrected" canon's own definition ("can know or affect … determines scope of relevance"), the persona learned that row as its reference, and flagged canon's verbatim wording on the home card as drift. `/context` and `/raising` realigned to canon; home card unchanged. Rule for future sessions: when a persona cites another site page as the correct wording, check CANONICAL_TERMS_v1, never the cited page. Also: home "context engineering dominates model size" → hypothesis form; level-vs-game defined on `/context` and linked from home + `/arc-agi-3`; `/fleet` "half instantiated" → what actually runs; hestia scalar-T3 clause; identity null on `/fleet`; R6-not-R7 on `/arc-agi-3`; world-model/binding/pairing/delegation glossary rows; trust vs trustworthy-AI; `/autonomy` stop criterion + review cadence (both stated as gaps); quick-start deps. `maintainer/CLAUDE.md` R6 row no longer lists R7 as drift. Fleet manifest still unwritten since March 2026.
 

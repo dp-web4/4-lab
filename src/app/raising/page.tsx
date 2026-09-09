@@ -138,7 +138,7 @@ export default function Raising() {
               copy of the game set, unscored by any external party. Local-model solve rates on these
               games remain low, and the site treats local-model progress as{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>a working hypothesis, not a demonstrated result</Link>.
-              The site&apos;s headline ARC-AGI-3 number — 94.85% official action score, 24/25 games (96.0% game-solve rate) —
+              The site&apos;s headline ARC-AGI-3 number — 94.85% official ARC Prize action score, 23 of 25 environments completed (92.0%) —
               is a different result under different conditions: Claude Opus 4.6 inside the SAGE harness,
               on the official public set, externally scored. The two figures are <em>not commensurable</em>
               and nothing here should be read as a local model matching or beating a frontier one. See{" "}
