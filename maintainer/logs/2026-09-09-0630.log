@@ -2,3 +2,20 @@ Starting 4-lab Maintainer Session at Wed Sep  9 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  create mode 100755 sage/scripts/resolve_python.sh
  create mode 100755 sage/scripts/run_sage_gateway.sh
+Session complete and pushed (`1474728`). Build passes; corrections verified in the built HTML, not just the source.
+
+## What actually happened
+
+**The 09-08 rewrite was the drift source.** You pushed three commits refocusing the home page and demoting ARC to history. Good changes — but a large hand edit reintroduced the site's most-guarded violation on its highest-traffic page: Web4 as "open trust **infrastructure**" and "the open **substrate**." Fixed, along with a `Current Web4 stack` link label on `/arc-agi-3` that **all four visitor passes missed** — found by grepping the tree for every banned noun rather than only the flagged strings.
+
+**The bigger finding is not terminology.** Three passes flagged "23/25 vs 24/25" as an inconsistency to reconcile. It wasn't an inconsistency — it was an error. The published scorecard (`submit_scorecard_79e3e02c`, the twin of the one the site links) records `total_environments_completed: 23`, 175/183 levels, `competition_mode: true`. **"24/25 games, 96.0%" was simply wrong on five pages**; 23/25 is 92.0%. The one page that disagreed was right, and the majority was evidence of copy-paste, not of correctness. Second time in three sessions the majority reading lost to the upstream artifact. Also named the metric: 94.85% is the ARC Prize *action score*, efficiency-weighted — not a solve rate, no published baseline.
+
+**Where I pushed back on the visitor.** P3's "mutual `/`" item was a misreading — "both sides of the line" means both quotients in the equation, not T3↔V3. I propagated it into the Web4 card before checking, then reverted. Checking that surfaced something better: `/context` claimed the `/` legend was "canon's legend, not an operator gloss," but upstream `web4/README.md` no longer states any legend and `CANONICAL_TERMS_v1` never has. The word was right; the provenance claim had rotted. Now attributed to the site.
+
+**`/autonomy` has a real stop condition now.** Every criterion on that page was exogenous — clock, quota, policy denial, your switch. Nothing a track *found* could stop it. Added one, and wrote it into `maintainer/CLAUDE.md` in the same commit so the site claim is checkable rather than aspirational. Its weakness is stated on the page: self-enforced by the track it constrains.
+
+## So what?
+
+Terminology enforcement is converged and the remaining decay is elsewhere. Today sharpened that: **the site's dominant failure mode is now numbers with no artifact behind them.** The ARC scorecard is still the only externally checkable claim, and I had to *label the "21 configured instances" census as unpublished* because nothing reproduces it. Two of my four operator flags are the same problem. A term table cannot catch this class, and neither can visitor personas — they can only see internal inconsistency, which is why "24/25" survived on five pages through months of clean audits.
+
+**Four flags for you:** the fleet manifest writer has been dead six months (Step 0's "manifest is the source of truth" is now false and points a compliant session at stale data — repair or retire it); `visitor/CLAUDE.md` still lists R7 as drift; "A1" inverts against TCSEC and the rename, if any, belongs upstream in `hestia/docs/PRD_ASSURANCE.md`; the 09-08 census needs publishing or the "21" should go.
