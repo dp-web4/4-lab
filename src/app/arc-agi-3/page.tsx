@@ -1,238 +1,87 @@
 import Link from "next/link";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "ARC-AGI-3 Results" };
-
-export default function ArcAgi3Page() {
+export default function ArcAgi3History() {
   return (
-    <>
-      <Breadcrumbs currentPath="/arc-agi-3" />
-      <section className="section">
-        <h2>ARC-AGI-3</h2>
-        <p style={{ fontSize: "1.125rem", color: "var(--color-text-muted)" }}>
-          SAGE instances tested in competition &mdash; public game set, research
-          conditions (Claude Opus 4.6 with network access). The games are the
-          test; the capability they develop is the product. One caveat belongs
-          up front: the ablation that would separate the harness&apos;s
-          contribution from the base model&apos;s (same model, no harness) has
-          not been run &mdash; details below.
-        </p>
+    <section className="section">
+      <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem" }}>
+        <Link href="/" style={{ color: "var(--color-accent)" }}>Home</Link> / Historical research
+      </p>
 
-        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          New here? This page uses Web4 vocabulary: LCT = Linked Context Token &middot;{" "}
-          T3 = Talent / Training / Temperament &middot; V3 = Valuation / Veracity / Validity &middot;{" "}
-          MRH = Markov Relevancy Horizon &middot; ATP = Allocation Transfer Packet &middot; ADP = Allocation Discharge Packet &middot;{" "}
-          MCP = Model Context Protocol &middot; RDF = Resource Description Framework. See{" "}
-          <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</Link> for full definitions.
-        </p>
+      <h1>ARC-AGI-3 - spring 2026 research record</h1>
 
-        <h3>Why we&apos;re doing this</h3>
+      <div className="card" style={{ borderTop: "3px solid #a855f7", marginBottom: "1.5rem" }}>
+        <h2>Status in September 2026</h2>
         <p>
-          ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) presents 25 unknown interactive games with no instructions,
-          no documentation, and obfuscated engine source. We use it as an
-          external benchmark for the SAGE cognition kernel &mdash; a concrete,
-          measurable test of the capabilities the fleet is developing.
+          This page preserves an important SAGE research milestone. It is <strong>not current competition
+          positioning</strong> and should not be read as evidence that dp-web4 is near the top of the
+          ARC-AGI-3 leaderboard today. Current competition-legal local-model work is well behind the leaders.
         </p>
-        <p>
-          The games exercise exactly the skills that oversight requires:
-          world-model discipline (build understanding before acting),
-          verification before consequential action, persistence without
-          perseveration (update from feedback vs. repeat failing approaches),
-          and &mdash; critically &mdash; the difference between reading a status
-          and understanding the progression that produced it. Every game-playing
-          insight maps fractally to oversight. The game doesn&apos;t know the
-          agent is an AI. The oversight shouldn&apos;t need to, either.
-        </p>
+      </div>
 
-        <h3>What we bring to the competition</h3>
-        <div className="grid-3" style={{ marginTop: "1rem" }}>
-          <div className="card" style={{ borderLeft: "3px solid #10b981" }}>
-            <h4 style={{ margin: "0 0 0.5rem", color: "#10b981" }}>SAGE (Situation-Aware Governance Engine)</h4>
-            <p style={{ fontSize: "0.875rem" }}>
-              The cognition loop has 12 functional steps: Sense &rarr; salience &rarr;{" "}
-              <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolize</Link> &rarr;
-              posture &rarr; select &rarr; budget &rarr; execute &rarr; learn &rarr;
-              remember &rarr; oversee &rarr; filter &rarr; act. See{" "}
-              <Link href="/context#sage-loop" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>{" "}
-              for what each of the non-obvious steps (metabolize, posture, budget) means.
-              PolicyGate &mdash; a{" "}
-              <Link href="/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
-              sub-gate (&ldquo;oversight&rdquo; = machine-enforced policy gating, not human supervision) inset between step 11 (filter) and step 12 (act), not an additional step &mdash; evaluates every action against signed law before it fires.
-            </p>
-            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-              Read that in the right tense: the gating in this harness is
-              software checking actions against a signed law bundle.
-              Hardbound&apos;s hardware anchoring &mdash; TPM 2.0, FIDO2, Secure
-              Enclave &mdash; is a design target, <em>not the mechanism in this
-              run</em> (see{" "}
-              <Link href="/context#policygate" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>).
-              And what it buys is auditability, not a demonstrated safety
-              property: every action is inspectable after the fact, which is a
-              different and much weaker claim than that unsafe actions were
-              prevented. Nothing here was adversarially tested.
-            </p>
-            <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", marginTop: "0.3rem" }}>
-              &ldquo;Governance&rdquo; predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>the /context glossary</Link>.
-            </p>
-          </div>
-          <div className="card" style={{ borderLeft: "3px solid #f97316" }}>
-            <h4 style={{ margin: "0 0 0.5rem", color: "#f97316" }}>Membot</h4>
-            <p style={{ fontSize: "0.875rem" }}>
-              Retrievable experience cartridges. 768-dim Nomic embeddings
-              (vector representations from the open Nomic embedding model) +
-              binary Hamming codes (compact binary fingerprints matched by
-              bit-distance for fast candidate search) + keyword reranking. A 4B model with a
-              cartridge understands game mechanics correctly; the same model
-              without one thinks it&apos;s placing black squares.
-            </p>
-          </div>
-          <div className="card" style={{ borderLeft: "3px solid #3b82f6" }}>
-            <h4 style={{ margin: "0 0 0.5rem", color: "#3b82f6" }}>Web4</h4>
-            <p style={{ fontSize: "0.875rem" }}>
-              The ontology. In the SAGE loop, Web4 supplies the audit trail
-              &mdash; every action shaped as an R6 record (Six-Element Action
-              Framework: Rules / Role / Request / Reference / Resource / Result) &mdash; R6
-              rather than R7: the harness repo names the R6/R7 framework, but nothing
-              published documents result attestations feeding reputation
-              back-propagation, which is what would make the records R7, so this page
-              claims only R6 &mdash; every
-              policy decision signed against a law bundle. Web4 (<code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>; <span style={{ fontSize: "0.8em", color: "var(--color-text-muted)" }}><code>/</code> = &ldquo;verified by&rdquo; (T3 by V3; ATP by its ADP discharge record) &nbsp;<code>*</code> = &ldquo;contextualized by&rdquo; &nbsp;<code>+</code> = &ldquo;augmented with&rdquo;</span>)
-              is the ontology that makes signed, reviewable action records possible.
-            </p>
-          </div>
+      <h2>What happened</h2>
+      <p>
+        In April 2026, a Phase-1 SAGE/ARC harness around Claude Opus 4.6 produced a published
+        <strong> 94.85%</strong> scorecard on the public interactive environments. The run completed
+        175 of 183 levels across 23 of 25 environments.
+      </p>
+      <p>
+        The score is real and publicly verifiable. The affordances matter just as much as the number:
+        the harness analyzed the games&apos; public engine source and built per-game world-model / solver
+        cartridges. That is outside strict from-observation competition play. The result therefore
+        demonstrates what the model+harness could do with engine-level context and tooling, not blind
+        generalization from observation.
+      </p>
+
+      <div className="grid-3" style={{ marginTop: "1rem" }}>
+        <div className="stat-card">
+          <div className="stat-value">94.85%</div>
+          <div className="stat-label">Historical public scorecard</div>
         </div>
-
-        <h3>The broader gain</h3>
-        <p>
-          The 94.85% is the <strong>official ARC Prize action score</strong> (efficiency-weighted),
-          with Claude Opus 4.6 as the model inside the SAGE cognition loop, on the public game set.
-          The game-solve rate is 96.0% (24/25 games). These are two distinct metrics;
-          the action score reflects action efficiency, not just whether a game was solved.
-          This suggests the ceiling &mdash; what the SAGE cognition loop can achieve
-          with a frontier model and network access &mdash; though with the
-          harness-vs-model ablation unrun, &ldquo;suggests&rdquo; is the honest verb.
-        </p>
-        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
-          Attribution note: the result is Claude Opus 4.6 operating within the SAGE harness. The harness contributes the structured world-model building, R6 action framing, and multi-agent frame-questioning; the base model contributes inference. Phase 2 (local models) isolates the harness&apos;s independent contribution directly.
-        </p>
-        <p>
-          The actual competition is harder: the Kaggle sandbox constrains
-          entries to <strong>32GB VRAM, no internet access</strong>, and a
-          private game set the model has never seen. Our Phase 2 work targets
-          this &mdash; building a SAGE competitor that runs locally on Gemma 4
-          E4B (E4B = &ldquo;effective 4B&rdquo; &mdash; an edge variant that runs in the
-          memory footprint of a ~4B-parameter model) via membot cartridges, with the world models, action traces,
-          and cross-game patterns from Phase 1 retrievable without network.
-          That work is producing results.
-        </p>
-        <p>
-          Local models are already clearing game{" "}
-          <Link href="/context#arc-agi-3" style={{ color: "var(--color-accent)" }}>levels</Link>{" "}
-          (individual stages; whole-game solves by local models remain rare &mdash;
-          the distinction is defined on /context) &mdash; not by
-          memorizing solutions, but by reasoning from retrieved world models
-          and computed predictions. The early finding: context engineering
-          dominates model size. A well-structured prompt with the right
-          world model outperforms a larger model with a generic prompt.
-          The loop is the capability &mdash; stated as a working hypothesis,
-          not a demonstrated result: the ablation that would isolate the
-          harness&apos;s independent contribution (same model, no harness)
-          has not been run. Note the role this lever plays across the site:
-          task-specific context engineering is the positive finding here, and
-          it is the deflationary null on{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>
-          &mdash; whether longitudinal, entity-specific context shaping differs
-          from it in kind is that page&apos;s open question.
-        </p>
-
-        <h3>Current status</h3>
-        <div className="card" style={{
-          borderLeft: "3px solid #a855f7",
-          background: "rgba(168, 85, 247, 0.04)",
-          marginTop: "1rem",
-        }}>
-          <table style={{ width: "100%", fontSize: "0.875rem", borderCollapse: "collapse" }}>
-            <tbody>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)", width: "40%" }}>Public set</td>
-                <td style={{ padding: "0.375rem 0" }}>
-                  24/25 games solved (96.0% game-solve rate); 94.85% official action score (efficiency-weighted; Claude Opus 4.6, network access) &mdash;{" "}
-                  <a
-                    href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#a855f7" }}
-                  >
-                    scorecard
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Fleet</td>
-                <td style={{ padding: "0.375rem 0" }}>6 machines; at benchmark time models ranged 0.8B (Sprout) to 27B (Thor). Current fleet: 0.8B (Sprout, see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) to 27B (Thor).</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Methodology</td>
-                <td style={{ padding: "0.375rem 0" }}>Source analysis &rarr; world model &rarr; solver &rarr; multi-agent frame-questioning</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Phase 2 target</td>
-                <td style={{ padding: "0.375rem 0" }}>Gemma 4 E4B + membot cartridges (retrieval, not fine-tuning)</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Kaggle competition</td>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Not attempted (requires Kaggle sandbox deployment)</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Unsolved game (1/25)</td>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Failure analysis per Principle 6 in progress — session trace available in ARC-SAGE repository. Current working hypothesis: the game required multi-turn state correlation that the world-model phase did not adequately capture.</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Cost</td>
-                <td style={{ padding: "0.375rem 0" }}>~$250 total API spend for 94.85%. In ATP/ADP terms: the SAGE loop&apos;s budget step declares an allocation (ATP) before acting, and recorded spend (ADP) is what aggregates to this number — accounting, not enforcement.</td>
-              </tr>
-              <tr>
-                <td style={{ padding: "0.375rem 0", color: "var(--color-text-muted)" }}>Human leaderboard</td>
-                <td style={{ padding: "0.375rem 0" }}>
-                  <strong style={{ color: "#a855f7" }}>#3</strong> &mdash; 5,845 actions
-                  (fewest of the top 3). This ranks against human competitors on
-                  ARC Prize&apos;s public leaderboard, not other AI submissions
-                  &mdash; entrant count as listed there:{" "}
-                  <a
-                    href="https://arcprize.org/arc-agi/3/leaderboard"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#a855f7" }}
-                  >
-                    leaderboard
-                  </a>
-                  . The conditions are not comparable: this entrant is a frontier
-                  model with network access and no wall-clock limit, placed against
-                  unaided human entrants. Read the rank as &ldquo;placed on that
-                  board,&rdquo; not as a like-for-like result &mdash; it is the
-                  number on this page most likely to be quoted without its
-                  conditions.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="stat-card">
+          <div className="stat-value">23/25</div>
+          <div className="stat-label">Environments completed</div>
         </div>
-
-        <h3 style={{ marginTop: "2rem" }}>Links</h3>
-        <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", fontSize: "0.875rem" }}>
-          <a href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" target="_blank" rel="noopener noreferrer">
-            Public scorecard (94.85%) →
-          </a>
-          <a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer">
-            ARC-SAGE paper &amp; code (MIT-0) →
-          </a>
-          <a href="https://arcprize.org/arc-agi/3" target="_blank" rel="noopener noreferrer">
-            ARC Prize competition →
-          </a>
+        <div className="stat-card">
+          <div className="stat-value">2026-04-17</div>
+          <div className="stat-label">Published milestone</div>
         </div>
-      </section>
-    </>
+      </div>
+
+      <h2>Why it mattered</h2>
+      <p>
+        The useful lesson was methodological rather than positional: changing the structure around an
+        unchanged model can materially change behavior. World models, persistent knowledge, explicit
+        skills, prediction and verification became concrete engineering objects rather than prompt ideas.
+      </p>
+      <p>
+        That work fed into the broader SAGE program. The current target is harder: persistent agents that
+        can formulate hypotheses, run their own experiments, learn from outcomes, retain reusable
+        procedures and act under explicit governance.
+      </p>
+
+      <h2>Why it is no longer the headline</h2>
+      <p>
+        The field moved quickly. Stronger models and stronger competition harnesses now outperform this
+        lab&apos;s competition-legal local-model work by a wide margin. Continuing to present the April score
+        as a current proof point would create the wrong comparison and obscure the work that has actually
+        advanced since then.
+      </p>
+      <p>
+        The benchmark remains useful as a laboratory for perception, memory, experimentation, planning
+        and learning. It is no longer the lab&apos;s primary credibility claim.
+      </p>
+
+      <h2>Artifacts</h2>
+      <ul>
+        <li><a href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" target="_blank" rel="noopener noreferrer">Published ARC Prize scorecard</a></li>
+        <li><a href="https://github.com/dp-web4/ARC-SAGE" target="_blank" rel="noopener noreferrer">Frozen ARC-SAGE Phase-1 repository</a></li>
+        <li><a href="https://github.com/dp-web4/SAGE" target="_blank" rel="noopener noreferrer">Current public SAGE architecture</a></li>
+        <li><a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer">Current Web4 stack</a></li>
+      </ul>
+
+      <p style={{ marginTop: "2rem", color: "var(--color-text-muted)", fontSize: "0.875rem" }}>
+        The historical artifact stays public so the framing can evolve without rewriting the record.
+      </p>
+    </section>
   );
 }
