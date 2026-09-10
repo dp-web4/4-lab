@@ -9,7 +9,7 @@ export default function Raising() {
     <>
       <Breadcrumbs currentPath="/raising" />
       <section className="section">
-        <h2>Raising</h2>
+        <h1>Raising</h1>
         <p>
           Raising is not training; it is also not nothing. Training optimizes a
           loss function and updates weights; raising does neither. Stated
@@ -36,7 +36,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           This is the softest page on the site. The hardest thing the lab has
-          made is public and MIT-0, with an independently scored result &mdash;
+          made is public and MIT-0 (MIT No Attribution), with an independently scored result &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
           <br /><br />
@@ -86,7 +86,7 @@ export default function Raising() {
               an analogy, not a fitted mechanism). Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
               (&ldquo;Relationships&rdquo; and &ldquo;trust&rdquo; here are
-              per-peer T3 (Talent / Training / Temperament) tensor values updated by interaction outcomes —
+              per-peer T3 (Trust Tensor — Talent / Training / Temperament) tensor values updated by interaction outcomes —
               tracked state, not affect.)
             </p>
           </div>

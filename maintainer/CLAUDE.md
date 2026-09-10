@@ -20,12 +20,13 @@ Fix ANY deviation from these immediately. Terminology violations are **always HI
 | Term | Canonical | Common Drift (WRONG) |
 |------|-----------|---------------------|
 | **LCT** | **Linked Context Token** — verifiable digital presence accumulating witnessed history | ~~Lifelong Capability Token~~, ~~Lifecycle-Continuous Trust~~ |
-| **T3** | **Talent / Training / Temperament** — 3D trust tensor, each dimension is RDF sub-graph root | ~~Trust-Tracing-Tensor~~ |
-| **V3** | **Valuation / Veracity / Validity** — 3D value tensor, complementary to T3 | |
+| **T3** | **Trust Tensor** — 3D, root dimensions Talent / Training / Temperament; each dimension is an RDF sub-graph root, not a scalar | ~~Trust-Tracing-Tensor~~, ~~Trust-Transfer-Token~~; also do not expand T3 *as* "Talent/Training/Temperament" — those are its dimensions, not its name |
+| **V3** | **Value Tensor** — 3D, root dimensions Valuation / Veracity / Validity; complementary to T3, not combined | same shape: the three dimensions are not the expansion |
 | **MRH** | **Markov Relevancy Horizon** — boundary of what entity can know/affect | ~~Minimum Response Horizon~~, ~~Memory Retention Heuristic~~ |
 | **ATP** | **Allocation Transfer Packet** — energy resource unit | ~~Attention Token Pool~~, ~~Adaptive Trust Points~~ |
 | **ADP** | **Allocation Discharge Packet** — spent form of ATP | ~~Adaptive Development Points~~ |
-| **R6** | **Six-Element Action Framework** (Rules/Role/Request/Reference/Resource/Result) | ~~R5~~ — note: **R7** (R6 + Reputation) is canonical in CANONICAL_TERMS_v1, NOT drift; do not "fix" the site's R7 entry |
+| **R6** | **Rules / Role / Request / Reference / Resource → Result** — five inputs producing one outcome. Note the arrow: `Resource → Result`, never a flat six-way slash rail | ~~R5~~; ~~Resource/Result~~ (flattens the production step) |
+| **R7** | **R6 + Reputation** — a canonical **superset**, not a successor. Adds reputation back-propagation; chosen per action by consequence tier. Both are first-class | Treating R7 as drift. It is canonical in CANONICAL_TERMS_v1 — never "fix" an R7 reference off the site |
 | **Web4** | An **ontology** | ~~architecture~~, ~~infrastructure~~, ~~framework~~, ~~stack~~ |
 | **Hardbound** | **Oversight** | ~~governance~~ |
 
@@ -56,7 +57,19 @@ Then read `sage-fleet-models.json` and compare each machine's entry against what
 - `hardware` — does it match the `hardware` field?
 - `role` — does the card role description still fit?
 
-**If anything has changed**: update `../src/app/fleet/page.tsx` MachineCard props to match the manifest. The manifest is the source of truth — the page follows it.
+**Polarity correction, 2026-09-10 — read before acting on this step.** The manifest is
+**no longer the source of truth** and this step must not be executed as originally written.
+Its last write is `2026-03-08` on every machine; it lists **six** machines and pre-cutover
+models (Thor Qwen 2.5 14B, CBP TinyLlama, Nomad Gemma 3 4B). The page carries **eight**
+machines and the July 2026 cutovers. Copying the manifest onto the page would silently
+revert six months of verified fleet state.
+
+**Therefore**: treat the manifest as a *stale downstream reader*, not an authority. Compare
+the two, log the divergence, and **change nothing on the page** on the manifest's say-so
+alone. The fleet page is the source of record until the manifest writer is repaired and
+starts producing fresh `updated_at` values; at that point restore the original polarity.
+Only update `../src/app/fleet/page.tsx` when a *newer* manifest entry (post-dating the
+page's own figures) or a direct researcher instruction says so.
 
 Fields to map from manifest → MachineCard:
 - `hardware` → `hardware` prop

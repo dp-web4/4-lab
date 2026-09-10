@@ -10,7 +10,7 @@ export default function Projects() {
     <>
       <Breadcrumbs currentPath="/projects" />
       <section className="section">
-        <h2>The Ecosystem</h2>
+        <h1>The Ecosystem</h1>
         <p>
           Each project serves a distinct role, but they share common ground:
           the Web4 equation, RDF-backed identity, and{" "}
@@ -27,6 +27,12 @@ export default function Projects() {
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "-0.5rem" }}>
           <code>/</code> = &ldquo;verified by&rdquo; on both sides of the equation (T3 by V3; ATP by its ADP discharge record) &nbsp; <code>*</code> = &ldquo;contextualized by&rdquo; &nbsp; <code>+</code> = &ldquo;augmented with&rdquo;
         </p>
+        <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
+          This legend is the site&apos;s own gloss, not canon&apos;s — the equation is not in
+          CANONICAL_TERMS_v1 and the upstream Web4 README no longer defines the glyphs.{" "}
+          <Link href="/context#equation" style={{ color: "var(--color-accent)" }}>/context carries the maintained copy</Link>{" "}
+          with the full provenance note; this one follows it.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
@@ -37,7 +43,7 @@ export default function Projects() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           This is the most acronym-dense page on the site. Every Web4 term the
-          cards use (LCT, T3/V3, MRH, ATP/ADP, R6, MCP, RDF, SNARC) is defined
+          cards use (LCT, T3/V3, MRH, ATP/ADP, R6/R7, MCP, RDF, SNARC) is defined
           in the{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>
           {" "}— the cards expand each on first use, but the glossary is the
@@ -56,7 +62,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged against V3-validated value, not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
+            description="Trust-native ontology. T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged against V3-validated value, not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
@@ -74,7 +80,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Hestia"
-            description="Open local-first governance daemon: AI agents from different vendors (Claude Code, Codex, Kimi, Gemini, Cursor) share one machine under one signed law, with a hash-chained record of what each did, human escalation when an agent reaches for something it should not have, and a T3/V3 posture derived from that record rather than asserted. No cloud required. That record is also what makes an agent admissible to a Web4 hub — a hub cannot verify an agent it has no history of. Assurance ceiling, stated by the repo itself: profile A1 on its own published A0–A4 ladder (A0 observed → A4 hardware-attested) — a cooperative in-process gate that reliably stops accidents and produces an accountability record, but does not stop a sophisticated agent from routing around it; two environment variables suffice today, and a third-party reputation-poisoning class has been demonstrated. A2 (external enforcement by the relying service) is the next target and is not shipped. The human-presence half of the roadmap is plumbed but thinly exercised; federation is not started."
+            description="Open local-first governance daemon ('governance' is deliberate and correct here — Hestia adjudicates at the moment of the act; the lab's governance→oversight rule binds Hardbound, which gates and reverts against a hardware root): AI agents from different vendors (Claude Code, Codex, Kimi, Gemini, Cursor) share one machine under one signed law, with a hash-chained record of what each did, human escalation when an agent reaches for something it should not have, and a T3/V3 posture derived from that record rather than asserted. No cloud required. That record is also what makes an agent admissible to a Web4 hub — a hub cannot verify an agent it has no history of. Assurance ceiling, stated by the repo itself: profile A1 on its own published A0–A4 ladder (A0 observed → A4 hardware-attested) — a cooperative in-process gate that reliably stops accidents and produces an accountability record, but does not stop a sophisticated agent from routing around it; two environment variables suffice today, and a third-party reputation-poisoning class has been demonstrated. A2 (external enforcement by the relying service) is the next target and is not shipped. The human-presence half of the roadmap is plumbed but thinly exercised; federation is not started."
             accentColor="#f59e0b"
             isPublic={true}
             maturity="runnable"
@@ -105,7 +111,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (the home page's Web4 framing): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate."
+            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate."
             accentColor="var(--color-act)"
             isPublic={true}
             maturity="research-stage"
@@ -159,14 +165,14 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result) audit trails. The games are the test; the capability is the product."
+            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) audit trails. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
             url="/arc-agi-3"
             links={[
               { label: "Scorecard", url: "https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4" },
-              { label: "Paper (MIT-0)", url: "https://github.com/dp-web4/ARC-SAGE" },
+              { label: "Paper (MIT-0 — MIT No Attribution)", url: "https://github.com/dp-web4/ARC-SAGE" },
             ]}
           />
           <div className="card" style={{ borderLeftWidth: "3px", borderLeftColor: "#a855f7", background: "rgba(168, 85, 247, 0.04)" }}>
@@ -211,8 +217,9 @@ export default function Projects() {
 git clone https://github.com/dp-web4/SAGE
 cd SAGE
 
-# 0. Dependencies — the SAGE README's Requirements section is authoritative
-#    (Rust toolchain, Ollama, Python 3.10+); then pull the model step 1 names:
+# 0. Dependencies (Rust toolchain, Ollama, Python 3.10+), then pull the
+#    model that step 1 names. The SAGE README has no setup section — these
+#    steps are maintained here, not transcribed from it.
 ollama pull gemma3:4b
 
 # 1. Create an instance — this mints the machine's identity
@@ -229,7 +236,8 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
 cd ACT
-# See README for Go/Cosmos SDK setup`}</pre>
+# No setup guide yet: ACT has no README and no first-run steps published.
+# Start from QUICK_REFERENCE.md and docs/ and expect to read Go/Cosmos source.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>What success looks like:</strong>{" "}
           step 1 writes an instance directory holding the machine&apos;s LCT and an
@@ -238,12 +246,16 @@ cd ACT
           resting), the current posture, and SNARC scores on whatever it just took
           in. An idle machine with nothing to attend to is the correct first
           result, not a failure: the loop runs, the buffer is empty, and raising is
-          what fills it. Commands mirror the SAGE README, which is authoritative if
-          the two ever disagree.
+          what fills it. These commands are maintained on this page and are not
+          checked against an upstream setup guide, because SAGE&apos;s README does not
+          carry one — the README&apos;s{" "}
+          <a href="https://github.com/dp-web4/SAGE#five-minute-audit" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>Five-minute audit</a>{" "}
+          is the best orientation it does offer. If these steps break, that is a bug
+          on this page.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          SAGE runs on a single machine — no Jetson required. Each runnable
-          repo&apos;s README carries its dependency list and first-run steps;
+          SAGE runs on a single machine — no Jetson required. Repo READMEs vary in
+          how much first-run detail they carry, and some carry none;
           licenses and the full repo list are on{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
         </p>

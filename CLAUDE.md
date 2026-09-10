@@ -38,8 +38,8 @@ Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP
 | Term | Canonical | NEVER use |
 |------|-----------|-----------|
 | LCT | Linked Context Token | Lifelong Capability Token |
-| T3 | Talent / Training / Temperament | |
-| V3 | Valuation / Veracity / Validity | |
+| T3 | Trust Tensor (root dimensions Talent / Training / Temperament) | the three dimensions as T3's expansion |
+| V3 | Value Tensor (root dimensions Valuation / Veracity / Validity) | the three dimensions as V3's expansion |
 | MRH | Markov Relevancy Horizon | |
 | ATP | Allocation Transfer Packet | |
 | ADP | Allocation Discharge Packet | |

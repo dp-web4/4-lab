@@ -132,6 +132,7 @@ a:hover {
   padding: 2rem 1.5rem;
 }
 
+.section h1,
 .section h2 {
   font-size: 1.375rem;
   font-weight: 700;

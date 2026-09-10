@@ -9,7 +9,8 @@ export default function Links() {
     <>
       <Breadcrumbs currentPath="/links" />
       <section className="section">
-        <h2>Explainer Sites</h2>
+        <h1>Links &amp; Contact</h1>
+        <h2 style={{ marginTop: "1.5rem" }}>Explainer Sites</h2>
         <ul className="link-list">
           <ExternalLink
             href="https://synchronism-site.vercel.app"
@@ -36,13 +37,13 @@ export default function Links() {
         <ul className="link-list">
           <ExternalLink
             href="https://github.com/dp-web4"
-            title="dp-web4 (GitHub org)"
+            title="dp-web4 (GitHub account)"
             description="All public repositories"
           />
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Talent / Training / Temperament) verified by V3 (Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework)"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
@@ -92,7 +93,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"
             title="Gemma 4 Good Submission"
-            description="Parse it as 'Gemma 4 Good' + 'submission', not as a self-rating: the lab's entry (titled Attested Resilience) in the Gemma 4 Good Hackathon, run by Kaggle and Google DeepMind in May 2026. Self-supervising AI with embedded oversight for constrained environments — persistent cryptographic identity per device, R6-auditable actions (R6 = the Six-Element Action Framework: Rules / Role / Request / Reference / Resource / Result — see /context), policy as signed artifact (Apache 2.0)"
+            description="Parse it as 'Gemma 4 Good' + 'submission', not as a self-rating: the lab's entry (titled Attested Resilience) in the Gemma 4 Good Hackathon, run by Kaggle and Google DeepMind in May 2026. Self-supervising AI with embedded oversight for constrained environments — persistent cryptographic identity per device, R6-auditable actions (R6 = the Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result — see /context), policy as signed artifact (Apache 2.0)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/membot"
@@ -129,14 +130,16 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
 cd ACT
-# See README for Go/Cosmos SDK setup`}</pre>
+# No setup guide yet: ACT has no README and no published first-run steps.
+# Start from QUICK_REFERENCE.md and docs/.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           What you should see after step 3: the daemon logs its instance name and model, then
           the dashboard at <code>localhost:8760</code> shows the loop stepping and a metabolic
           state. If step 1 is the only thing you run, the payoff is the generated instance
           directory — that directory <em>is</em> the entity; everything raising does, it does
-          to those files. Commands transcribed from the SAGE README&apos;s Getting Started
-          section, which is the maintained version if these drift.
+          to those files. These commands are maintained on this page — SAGE&apos;s README carries no
+          Getting Started section to transcribe from, so if a step breaks, the bug
+          is here rather than upstream.
         </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           SAGE is the recommended starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-primitive / Cosmos SDK side.

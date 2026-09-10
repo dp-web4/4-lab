@@ -10,7 +10,7 @@ export default function Fleet() {
     <>
       <Breadcrumbs currentPath="/fleet" />
       <section className="section">
-        <h2>The Fleet</h2>
+        <h1>The Fleet</h1>
         <p>
           Six cognition machines, plus two society-hosts (HUB and pub — the
           eighth machine, joined July 2026). Different hardware, different
@@ -38,7 +38,7 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — T3 (Talent / Training / Temperament, the trust tensor) verified by V3 (Valuation / Veracity / Validity, the value tensor), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}

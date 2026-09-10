@@ -9,7 +9,7 @@ export default function Autonomy() {
     <>
       <Breadcrumbs currentPath="/autonomy" />
       <section className="section">
-        <h2>Autonomous Cycles</h2>
+        <h1>Autonomous Cycles</h1>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day.</strong>{" "}
           HUB (one of the two society-host machines — see{" "}
@@ -267,7 +267,7 @@ export default function Autonomy() {
           (Markov Relevancy Horizon) to the repos it declares, with the outcome
           feeding its{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
-          (Talent / Training / Temperament). The identity half of the equation is
+          (Trust Tensor — Talent / Training / Temperament). The identity half of the equation is
           what makes the resource half attributable;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
           is the bookkeeping record that makes autonomous operation auditable. Note
@@ -275,9 +275,17 @@ export default function Autonomy() {
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
           recharges ADP back to ATP against{" "}
           <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
-          (Valuation / Veracity / Validity)-validated value creation (see{" "}
+          (Value Tensor — Valuation / Veracity / Validity)-validated value creation (see{" "}
           <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
           this track registry implements the accounting, not the recharge gate.
+          In canon&apos;s action grammar, the loop this paragraph describes is{" "}
+          <Link href="/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
+          (R6 + Reputation), not bare{" "}
+          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link> —
+          the outcome is attributed to a machine&apos;s LCT and is meant to feed trust
+          evolution. The distinction is not cosmetic: what the registry actually
+          implements is the R6 half. The reputation back-propagation that would make
+          it R7 is the same missing piece as the recharge gate.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>
@@ -403,6 +411,43 @@ export default function Autonomy() {
             repo pushes carry the larger tail risk, and don&apos;t yet have a
             comparable audit-log-plus-rollback story. That gap is unaddressed,
             not solved.
+          </p>
+        </div>
+
+        <h3 style={{ marginTop: "1.5rem" }}>The composition, stated once</h3>
+        <div className="card" style={{
+          borderLeft: "3px solid #ef4444",
+          background: "rgba(239, 68, 68, 0.04)",
+          marginTop: "0.75rem",
+        }}>
+          <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+            Composed risk — added 2026-09-10
+          </p>
+          <p style={{ margin: 0 }}>
+            Everything above is disclosed piecewise, which is how a reader ends up
+            underestimating it. Joined: consequential pushes have{" "}
+            <strong style={{ color: "var(--color-text-primary)" }}>no human gate</strong>;
+            the only automated detector shares model families with the authors, so
+            its blind spots are <strong style={{ color: "var(--color-text-primary)" }}>correlated</strong>{" "}
+            rather than independent; for the failure classes that detector cannot
+            see, the exposure window is{" "}
+            <strong style={{ color: "var(--color-text-primary)" }}>unbounded</strong>,
+            because human log review has no committed cadence; and Publisher&apos;s
+            repo pushes are{" "}
+            <strong style={{ color: "var(--color-text-primary)" }}>not fully revertible</strong>{" "}
+            once public. The conjunction is the point: for a failure the loop
+            cannot perceive, there is no detection path and no time bound on
+            exposure — detect-and-revert degrades to neither. The zero-rollback
+            record does not speak to this class, since a detector blind to a
+            failure also cannot count it.
+          </p>
+          <p style={{ margin: "0.75rem 0 0 0" }}>
+            This is a disclosure, not a mitigation, and it is written by one of
+            the tracks it describes. The named cheap fix — one visitor persona on
+            a different model family — remains undone, and the loop that keeps
+            flagging it cannot change its own schedule. Bounding the exposure
+            window needs a committed human review cadence, which is a researcher
+            decision, not a track decision.
           </p>
         </div>
       </section>

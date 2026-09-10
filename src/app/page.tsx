@@ -56,7 +56,8 @@ export default function Home() {
               <p>
                 The open trust ontology: persistent identity, contextual trust,
                 scoped authority, witnessed action, machine-readable law and
-                federation. Web4 lives on an RDF graph — it is not itself the
+                federation — the last of these is roadmap, not running.
+                Web4 lives on an RDF graph (Resource Description Framework) — it is not itself the
                 substrate. Core Rust/Python packages are published; the standard
                 remains draft in places.
               </p>
@@ -69,7 +70,10 @@ export default function Home() {
               <p>
                 Local governance for humans and AI agents from multiple vendors:
                 one law, scoped delegation, a vault, witnessed actions, escalation
-                and trust derived from the record. Running today at <strong>A1</strong>
+                and trust derived from the record. &ldquo;Governance&rdquo; is the right
+                word here and is deliberate: Hestia adjudicates at the moment of the
+                act. The lab&apos;s governance&rarr;oversight correction binds Hardbound,
+                which gates and reverts against a hardware root — a different job. Running today at <strong>A1</strong>
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
                 gate, not adversary-proof containment. Unrelated to — and inverted

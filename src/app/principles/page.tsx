@@ -9,7 +9,7 @@ export default function Principles() {
     <>
       <Breadcrumbs currentPath="/principles" />
       <section className="section">
-        <h2>Principles</h2>
+        <h1>Principles</h1>
         <p>
           These aren&apos;t aspirational values posted on a wall. They&apos;re
           operational patterns that emerged from building the system — things we
@@ -17,7 +17,7 @@ export default function Principles() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           If you would rather check something than read a list of beliefs: the
-          code these principles produced is public and MIT-0, with an
+          code these principles produced is public and MIT-0 (MIT No Attribution), with an
           independently scored result &mdash; see{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
           It is the most inspectable thing the lab has; this page is the least.
@@ -87,7 +87,7 @@ export default function Principles() {
           <div className="principle-card">
             <div className="principle-title">4. Trust is a relationship</div>
             <div className="principle-quote">
-              T3 (Talent / Training / Temperament) / V3 (Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF triples.
+              T3 (Trust Tensor — Talent / Training / Temperament) / V3 (Value Tensor — Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF triples.
             </div>
             <div className="principle-text">
               Trust is not a property of an entity. It&apos;s a property of
