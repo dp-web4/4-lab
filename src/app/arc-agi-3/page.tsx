@@ -71,7 +71,8 @@ export default function ArcAgi3History() {
       <p>
         That work fed into the broader SAGE program. The current target is harder: persistent agents that
         can formulate hypotheses, run their own experiments, learn from outcomes, retain reusable
-        procedures and act under explicit governance.
+        procedures and act under explicit governance (the SAGE README&apos;s phrase; that README
+        names Hestia as the layer that governs local agent authority).
       </p>
 
       <h2>Why it is no longer the headline</h2>

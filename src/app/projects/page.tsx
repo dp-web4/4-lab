@@ -52,25 +52,30 @@ export default function Projects() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Want to run something rather than read? Start with{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>SAGE</strong> —
-          it runs on a single machine, no Jetson required. Clone commands for
+          it runs on a single machine, no Jetson required. Want the protocol
+          instead? Web4&apos;s core packages install directly. Commands for Web4,
           SAGE and ACT are in the{" "}
           <a href="#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</a>{" "}
-          at the bottom of this page; a fuller walkthrough is on{" "}
-          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
-          This page is the map; those are the first clone.
+          at the bottom of this page — the only copy on the site, so there is one
+          place to fix when a step breaks. This page is the map; that is the first
+          install.
         </p>
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged against V3-validated value, not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. The repo itself is a specification — documents and schemas, no runnable demo; reference implementations live in SAGE and ACT."
+            description="Trust-native ontology. T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged when the society validates a proof of the value the spend created (the recharge then updates the producer's T3/V3: V3 records the outcome, it does not gate it), not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the prose here is more precise than the equation about LCT anchoring the trust tensor rather than sitting beside it.) The shared language everything else speaks. Research-stage, but no longer only a specification — the repo's own status line: core packages are published (web4-core 0.3.0 on crates.io and PyPI, checked against both registries 2026-09-11; plus web4-trust-core on crates.io and web4-trust on PyPI), and the Hub reference daemon lives in the repo, with the Hub card below linking its standalone mirror. Install lines are in the Quick start. The registry descriptions call it 'infrastructure'; that is upstream package metadata, not a second meaning — on this site Web4 is an ontology."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
             repoUrl="https://github.com/dp-web4/web4"
+            links={[
+              { label: "crates.io", url: "https://crates.io/crates/web4-core" },
+              { label: "PyPI", url: "https://pypi.org/project/web4-core/" },
+            ]}
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role; corrected 2026-07-27 from an earlier '900+'). The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition — role mnemonics the lab assigned, not measured functional homologies; 'cognition' is likewise a role label, not a capability claim, see /fleet) built by the fleet in parallel. 1,991 machine sessions across the 6 cognition machines (internally logged; a mixed-basis sum — three addends are whole-machine totals, three are current-model-line counts; per-machine counts and the noun's definition on /fleet; 2,065 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role; corrected 2026-07-27 from an earlier '900+'). The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"
@@ -140,7 +145,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="4-Life"
-            description="Research prototype exploring trust-native societies for humans and AI. 4-Life is a simulation framework — the lifecycle vocabulary (spend ATP, earn recharge against validated value, build trust, die, be reborn with T3/V3 carried forward) describes simulated agent state, not claims about agent moral patienthood or value persistence. A Web4 society in miniature."
+            description="Research prototype exploring trust-native societies for humans and AI — that is the repo's own description. The live site titles itself 'The Web4 Onramp' and opens as an educational explainer, so expect an introduction to Web4 first and the simulation behind it. 4-Life is a simulation framework — the lifecycle vocabulary (spend ATP, earn recharge against validated value, build trust, die, be reborn with T3/V3 carried forward) describes simulated agent state, not claims about agent moral patienthood or value persistence. A Web4 society in miniature."
             accentColor="var(--color-4life)"
             isPublic={true}
             maturity="runnable"
@@ -149,11 +154,11 @@ export default function Projects() {
           />
           <ProjectCard
             name="SNARC"
-            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles (offline consolidation passes between sessions). Captures what matters, forgets what doesn't, consolidates patterns while sleeping. SNARC ships packaged as the engram plugin — the dp-web4/engram repo is where the code lives, and where the link below lands."
+            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory for Claude Code. A plugin that observes tool use, scores on 5 salience dimensions, and builds structured memory with dream cycles (offline consolidation passes between sessions). Captures what matters, forgets what doesn't, consolidates patterns while sleeping. Install with /plugin install snarc; the code lives at dp-web4/snarc, where the link below lands (the repo was renamed from engram, and old engram links still redirect)."
             accentColor="#10b981"
             isPublic={true}
             maturity="runnable"
-            repoUrl="https://github.com/dp-web4/engram"
+            repoUrl="https://github.com/dp-web4/snarc"
           />
           <ProjectCard
             name="Membot"
@@ -165,7 +170,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) audit trails. The games are the test; the capability is the product."
+            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation — an interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) audit trails. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -233,11 +238,18 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 
 # Dashboard: http://localhost:8760/
 
+# Web4 — published core packages (no clone needed)
+# Unlike the SAGE steps above, these lines ARE transcribed: from the web4
+# README's "Published core" section, which is authoritative for them.
+pip install web4-core
+# Rust: add  web4-core = "0.3"  under [dependencies] in Cargo.toml
+
 # ACT — Agentic Context Tool (Cosmos SDK)
 git clone https://github.com/dp-web4/ACT
 cd ACT
 # No setup guide yet: ACT has no README and no first-run steps published.
-# Start from QUICK_REFERENCE.md and docs/ and expect to read Go/Cosmos source.`}</pre>
+# QUICK_REFERENCE.md is a map of the repo's structure, not a setup guide;
+# start there and in docs/, and expect to read Go/Cosmos source.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>What success looks like:</strong>{" "}
           step 1 writes an instance directory holding the machine&apos;s LCT and an

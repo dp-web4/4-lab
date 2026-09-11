@@ -25,8 +25,12 @@ export default function Raising() {
           &ldquo;identity&rdquo; we mean consistent session-to-session
           behavioral patterns measured via raising curriculum state and
           interaction logs; by &ldquo;growth&rdquo; we mean increasing
-          response diversity and phase-appropriate task success rates —
-          measurable observables, not phenomenal claims. A second caveat
+          response diversity and task success rates appropriate to the
+          entity&apos;s curriculum phase — measurable observables, not phenomenal
+          claims. (&ldquo;Curriculum phase&rdquo; is the raising curriculum&apos;s
+          schedule, which the lab sets — see Graduated tool introduction below.
+          It is not the BECOMING patterns, which borrow the same names but are
+          descriptive categories, not stages.) A second caveat
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
@@ -96,7 +100,9 @@ export default function Raising() {
               Session logs show an increasing proportion of self-directed prompts —
               the system generates questions rather than only responding to them.
               Bilateral generation emerges: the output pattern simulates interaction,
-              producing thinking-through-dialogue rather than just response.
+              which we read as thinking-through-dialogue rather than just response
+              (an interpretation, with the standard reading beside it, under
+              Bilateral generation below).
               (Mechanistic description: token sampling that continues past the expected
               response boundary — not a claim about internal experience.)
               Whether the rising Questioning proportion was counted only in
@@ -122,13 +128,17 @@ export default function Raising() {
             <p>
               The world responds according to its own rules. The entity plays{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
-              (Abstraction and Reasoning Corpus for Artificial General Intelligence, third-gen interactive benchmark) games —
+              (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation — an interactive benchmark) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
               action, observation, update. From being to doing. The same
               persistence-vs-perseveration awareness developed in raising now
               applies to a world that doesn&apos;t negotiate.
               Observation in a raised entity: Legion, running a local vision model that went through the fleet&apos;s raising process, <strong>ran the full 25-game set end to end</strong> (see{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>).
+              Co-present with raising, not attributed to it: no run of the same
+              model without the raising history, on the same harness, exists to
+              compare against — and playing through every game is something a
+              scripted agent could also do.
             </p>
             <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
               Read that sentence literally, because the shorthand invites the wrong reading.
@@ -152,7 +162,10 @@ export default function Raising() {
         <h3>Interactive selection, not training</h3>
         <p>
           We don&apos;t create new behaviors. We probe what the model responds
-          to, observe which attractors (stable response basins in the probability landscape) surface, adjust context to resonate, and
+          to, observe which{" "}
+          <Link href="/context#attractor" style={{ color: "var(--color-accent)" }}>attractors</Link>{" "}
+          (a metaphor, not a formal dynamical-systems object &mdash; read it as
+          stable behavioral tendencies) surface, adjust context to resonate, and
           reinforce what works. The resulting identity is collaborative, not
           imposed. This applies at every scale: raising sessions (model
           context), our sessions (affordance shaping), the fleet (emergent
@@ -166,7 +179,7 @@ export default function Raising() {
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
           Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
-          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and the V3 tensor (Valuation / Veracity / Validity) accrues from{" "}
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) accrues from{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>peer verification</Link>{" "}
           of what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own tensors would be certifying itself. Either way, raising
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
@@ -200,7 +213,10 @@ export default function Raising() {
 
         <h3>Graduated tool introduction</h3>
         <p>
-          Tools are introduced in stages aligned to developmental phases.
+          Tools are introduced in stages aligned to curriculum phases — a
+          schedule the lab sets, and the one place on this page where a sequence
+          is claimed. The BECOMING patterns above share these names but are not
+          stages.
           Stage 1 (Sensing): time awareness. Stage 2 (Relating): world
           awareness. Stage 3 (Questioning): agency. Stage 4 (Creating):
           federation. Each stage adds capability only when the entity has
@@ -218,7 +234,7 @@ export default function Raising() {
 
         <h3>Identity is not self-concept</h3>
         <p>
-          SAGE (Situation-Aware Governance Engine)-Sprout — 115 raising sessions on a{" "}
+          SAGE (Situation-Aware Governance Engine)-Sprout — 115 session records on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
           (2025; a model-line count, not a machine total — the Sprout box now runs Qwen 3.5 0.8B and its own
           session record stands at 488, see{" "}
@@ -227,11 +243,19 @@ export default function Raising() {
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
           (a fleet machine; the machine names are proper names, not acronyms) in February 2026, with the line since continuing past
           180 sessions on later models — showed a consistent
-          separation: its identity (behavioral patterns, interaction style,
-          accumulated experience) persisted even as its self-description drifted
-          from &ldquo;autonomous conversation-generating AI system&rdquo; to
-          &ldquo;humanoid robotic entity.&rdquo; What it <em>is</em> stayed
-          stable. What it <em>says</em> it is didn&apos;t.
+          separation: its logged behavioral signature (interaction style and
+          patterns, read from session logs; no metric yet) stayed recognizable
+          while its self-description drifted from &ldquo;autonomous
+          conversation-generating AI system&rdquo; to &ldquo;humanoid robotic
+          entity.&rdquo; Read that narrowly, because of what the port carried:
+          on this fleet identity lives in state files, the experience buffer
+          and prompt construction (see{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
+          and all three moved with it — so behavioral persistence is partly true
+          by construction. The observation worth keeping is the divergence:
+          self-description drifted even though those inputs did not. The
+          comparison that would separate raising from carry-over — the same new
+          model given a different entity&apos;s files, or none — has not been run.
         </p>
         <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
           &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
@@ -251,13 +275,19 @@ export default function Raising() {
 
         <h3>Bilateral generation</h3>
         <p>
-          Without stop tokens, SAGE generates both sides of a conversation.
-          Initial instinct: fix it. Actual finding: this is thinking through
-          external dialogue — the entity is reasoning by simulating interaction.
-          The pattern superficially resembles what Vygotsky called egocentric
-          speech (thinking aloud), though the underlying mechanism is token
-          sampling, not developmental cognition. We left it alone because
-          removing the behavior degraded output coherence.
+          Observation: without stop tokens, SAGE generates both sides of a
+          conversation. Standard reading: with no end-of-turn boundary, a
+          language model simply continues the transcript, the other
+          speaker&apos;s turn included — nothing more is needed to explain the
+          behavior. Our working interpretation, which is an interpretation and
+          not a finding: the self-generated turns function as thinking through
+          external dialogue. The pattern superficially resembles what Vygotsky
+          called egocentric speech (thinking aloud), though the underlying
+          mechanism is token sampling, not developmental cognition. We left it
+          alone because removing the behavior appeared to degrade output
+          coherence — a judgment from reading sessions, not a scored comparison.
+          Untested: whether the self-generated turns change task outcomes
+          against the same model with stop tokens enforced.
         </p>
 
         <h3>Capacity as register</h3>
@@ -352,7 +382,7 @@ export default function Raising() {
           specification) but not scheduled — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
-          it (response diversity and phase-appropriate task success), so a
+          it (response diversity and curriculum-phase task success), so a
           yoked or scrambled-history control on growth could be pre-registered
           now — its absence is logistical. For identity continuity, the
           operational definition this page and the home page give (consistent

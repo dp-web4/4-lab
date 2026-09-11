@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <div className="stat-value">21</div>
-            <div className="stat-label">SAGE instances configured across the fleet (internal 2026-09-08 census — more than the 8 currently running, and not yet published anywhere a reader can check)</div>
+            <div className="stat-label">SAGE instances configured across the fleet (2026-09-08 census; 8 of them carry raising history, one per machine — both figures are published on the <a href="https://sage-site-murex.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE site</a>)</div>
           </div>
           <div className="stat-card">
             <div className="stat-value">4</div>
@@ -77,7 +77,7 @@ export default function Home() {
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
                 gate, not adversary-proof containment. Unrelated to — and inverted
-                against — the Orange Book&apos;s TCSEC class A1, where A1 is the highest
+                against — the Orange Book&apos;s TCSEC (Trusted Computer System Evaluation Criteria) class A1, where A1 is the highest
                 class.
               </p>
             </div>

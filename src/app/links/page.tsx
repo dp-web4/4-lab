@@ -25,7 +25,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
-            description="Trust-native society research prototype — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), and karma (the simulation's accumulated-standing score for an agent, derived from its past contributions — 4-Life's local stand-in for a T3/V3 reputation record, not a Web4 canonical term). Web4 in miniature."
+            description="Trust-native society research prototype (the repo's own description; the live site titles itself 'The Web4 Onramp' and opens as an educational explainer, with the simulation behind it) — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), and karma (the simulation's accumulated-standing score for an agent, derived from its past contributions — 4-Life's local stand-in for a T3/V3 reputation record, not a Web4 canonical term). Web4 in miniature."
           />
         </ul>
 
@@ -43,7 +43,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework)"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /projects Quick start)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
@@ -83,12 +83,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
             title="ARC-SAGE"
-            description="ARC-AGI-3 harness — 94.85% official ARC Prize action score, efficiency-weighted (Claude Opus 4.6, public set, network-enabled; 23 of 25 environments completed, 92.0%; 175 of 183 levels), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
+            description="ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation) harness — 94.85% official ARC Prize action score, efficiency-weighted (Claude Opus 4.6, public set, network-enabled; 23 of 25 environments completed, 92.0%; 175 of 183 levels), world models, multi-agent frame-questioning (MIT-0 — MIT No Attribution). Score carries caveats — see /arc-agi-3"
           />
           <ExternalLink
             href="https://arcprize.org/scorecards/c7dfb4f1-8642-4c9e-ab4d-152f5f8e33b4"
             title="ARC Prize official scorecard"
-            description="Independent verification of the 94.85% action score — the external source of record for the ARC-SAGE result"
+            description="Official, externally scored record of the 94.85% action score — the external source of record for the ARC-SAGE result. It verifies the score, not the method: the engine-source affordances and the missing harness ablation are on /arc-agi-3"
           />
           <ExternalLink
             href="https://github.com/dp-web4/gemma4-good-submission"
@@ -100,6 +100,21 @@ export default function Links() {
             title="Membot"
             description="Brain cartridge server — embedding-based semantic memory with swappable cartridges"
           />
+          <ExternalLink
+            href="https://github.com/dp-web4/hestia"
+            title="Hestia"
+            description="Open local-first governance daemon — agents from different vendors under one signed law on one machine, with a hash-chained action record. ('Governance' is deliberate here; see /projects.)"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/4-hub"
+            title="Hub (4-hub)"
+            description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/snarc"
+            title="SNARC"
+            description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory plugin for Claude Code (formerly engram)"
+          />
         </ul>
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
@@ -108,41 +123,17 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary, then start with SAGE or ACT — the most accessible entry points for hands-on experimentation.
+          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. Protocol: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
-        <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel
-# Needs: Rust (stable), Ollama, Python 3.10+
-git clone https://github.com/dp-web4/SAGE
-cd SAGE
-
-# 1. Create your own instance — this is the first real command.
-#    It writes sage/instances/mybox/ : identity, state files, experience buffer.
-python3 -m sage.instances.init --machine mybox --model gemma3:4b --operator-name yourname
-
-# 2. Build the daemon that runs the 12-step loop.
-cd sage-rs && cargo build --release && cd ..
-
-# 3. Start it. Dashboard comes up at http://localhost:8760/
-SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
-
-# ACT — Agentic Context Tool (Cosmos SDK)
-git clone https://github.com/dp-web4/ACT
-cd ACT
-# No setup guide yet: ACT has no README and no published first-run steps.
-# Start from QUICK_REFERENCE.md and docs/.`}</pre>
-        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          What you should see after step 3: the daemon logs its instance name and model, then
-          the dashboard at <code>localhost:8760</code> shows the loop stepping and a metabolic
-          state. If step 1 is the only thing you run, the payoff is the generated instance
-          directory — that directory <em>is</em> the entity; everything raising does, it does
-          to those files. These commands are maintained on this page — SAGE&apos;s README carries no
-          Getting Started section to transcribe from, so if a step breaks, the bug
-          is here rather than upstream.
-        </p>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          SAGE is the recommended starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. ACT is the right entry if you want the Web4 trust-primitive / Cosmos SDK side.
+          The commands live in one place: the{" "}
+          <a href="/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</a>{" "}
+          — Web4&apos;s published packages, a SAGE instance from clone to running daemon
+          (including the <code>ollama pull</code> step), and where to begin in ACT. This page
+          used to carry a second copy; the two drifted apart, so it now links instead.
+          SAGE is the hands-on starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the right entry if you want the Web4 trust-primitive / Cosmos SDK side.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
@@ -155,7 +146,7 @@ cd ACT
           <a href="https://github.com/dp-web4/SAGE/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE</a> and{" "}
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
-          <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 org</a>{" "}
+          <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 account</a>{" "}
           holds 40 original repos — 21 public, 19 internal — plus 32 forks of external work the lab builds on, 72 repositories in all. (&ldquo;Original&rdquo; means not-a-fork; the same denominator is used for the &ldquo;40&rdquo; on the home page. Verified against the org on 2026-07-26.) Clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>

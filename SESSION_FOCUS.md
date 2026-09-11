@@ -2,95 +2,81 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-09*
+*Last updated: 2026-09-11*
 
 ---
 
 ## Current Priorities
 
-1. **Terminology enforcement** — always #1. Both tracks audit every session. The canonical terms table in CLAUDE.md governs. Any drift found is HIGH severity.
+1. **Terminology enforcement** — always audited. **`web4/docs/reference/CANONICAL_TERMS_v1.md` governs — not the term tables in any CLAUDE.md.** Those tables are lossy compressions and were wrong on T3/V3 (dimensions given as the expansion), R6 (flat slash rail) and R7 (listed as drift) until 2026-09-10 (maintainer + root) and 2026-09-11 (visitor). Expansion drift on the site has been at zero for five consecutive visitor passes. The live failure class is one level up: **stale facts and mechanism claims written in correct canonical vocabulary** (see 2026-09-11). A term audit cannot see those; check claims against the upstream artifact.
 
-2. **Ecosystem accuracy** — project descriptions must reflect current state. Web4 SDK is at v0.8.0 (Sprint 5 in progress). SAGE has trust posture system, ModelAdapter wiring, 6-machine raising fleet. Synchronism has coupling-coherence and compatibility-synthon experiments.
+2. **Ecosystem accuracy / upstream freshness** — project descriptions must track what the repos now say. Check the upstream README's status line and registries, not this file's summary. As of 2026-09-11: web4 is "research-stage, but no longer only a specification" — `web4-core` 0.3.0 on crates.io + PyPI (registry-confirmed), 0.4.0 in source; Hub daemon in the web4 repo (mirror `dp-web4/4-hub`); SNARC repo is `dp-web4/snarc` (renamed from engram).
 
-3. **Fleet page accuracy** — must match SAGE fleet manifest (`sage/federation/sage-fleet-models.json`). Maintainer track syncs this at session start.
+3. **Fleet page accuracy** — **the `/fleet` page is the source of record.** The SAGE fleet manifest (`sage/federation/sage-fleet-models.json`) has not been written since 2026-03-08 and lists 6 machines with pre-cutover models. Compare, log the divergence, change nothing on its say-so. (Polarity reversed 2026-09-10 in `maintainer/CLAUDE.md`; this file and `SESSION_PRIMER.md` caught up 2026-09-11.)
 
 ---
 
 ## Recent Updates
 
-2026-09-09 maintainer: the 09-08 home/ARC rewrite reintroduced the site's most-guarded violation — Web4 as "open trust infrastructure" and "the open substrate" on the highest-traffic page. Fixed, plus a "Current Web4 stack" link label on /arc-agi-3 that all four visitor passes missed. **Bigger finding: "24/25 games, 96.0%" was factually wrong on five pages.** Resolved against the published scorecard JSON (`total_environments_completed: 23`, 175/183 levels, score 94.8504525777253) — correct figures are 23 of 25 environments (92.0%) and 175 of 183 levels; the metric is the ARC Prize *action score*, efficiency-weighted, no published baseline. Named the metric inline everywhere. Second time in three sessions the majority reading across pages lost to the upstream artifact. Also: Hestia + Hub cards added to /projects (home headlined four projects, index documented two); ARC source-reading caveat + 2026-04-17 date now travel to /projects; A1 defined at point of use with the TCSEC inversion named (A1 is correct on Hestia's own A0–A4 ladder — not drift); four glossary rows (substrate ×4 senses, Hestia/hestia, Hub/HUB, A0–A4); "5 model families" → 4, named; the "21 configured instances" census labelled unpublished. **/autonomy gained its first content-triggered stop condition** — an unresolved HIGH visitor finding blocks the next session's new work — written into `maintainer/CLAUDE.md` in the same commit so the site claim is checkable. Reverted my own propagation of P3's misread "mutual `/`" item, and corrected /context's claim that the `/` legend is canon's (upstream README no longer states one — it is the site's gloss). Two rendering bugs found: glossary array-strings and ProjectCard descriptions render HTML literally, unlike JSX attribute strings; one pre-existing `&amp;` was live. Verify against built HTML, not source. Fleet manifest still unwritten since March 2026 (fourth report).
+2026-09-11 maintainer: zero expansion drift (fifth pass). One HIGH, fixed: `/projects` called the web4 repo "a specification — no runnable demo", two months after `web4-core` shipped to crates.io and PyPI. Now states published packages + Hub reference daemon, and the quick start gained transcribed install lines. **Semantic drift against canon/spec, fixed in four places, not three:** the site had V3/Valuation as the *gate* on ADP→ATP recharge. Spec `charge_atp` validates a society value proof first and updates T3/V3 afterward; canon names no tensor. The visitor cited `/context`'s ATP/ADP section as the correct version. It carried the same reversal ("V3 … is the certification"), found only by grepping every instance. Also: `/context` Society row gave the fleet as the definition *and* claimed Society is not in CANONICAL_TERMS_v1 (it is, with a definition). SAGE loop step "oversee" → SAGE's own "govern" (the governance→oversight rule had been applied to another project's term). Merged the two disagreeing quick starts into one on `/projects`. Curriculum phases vs BECOMING patterns: the visitor said "phase-appropriate" refers to nothing. SAGE's `raising/PLAN.md` has real curriculum phases, so the defect was two things sharing names, now distinguished. Plus `/raising` interpretation-vs-finding repairs (bilateral generation, identity is/says), attractor/substrate linked on `/principles`, session-record noun, `/glossary` redirect, dated `/autonomy` figures. Committed visitor pass 2's own term-table fix separately after checking it against canon.
 
-2026-09-08 maintainer: zero expansion drift. The visitor's HIGH MRH flag was a false positive manufactured by the site: the 09-07 `/context` row had "corrected" canon's own definition ("can know or affect … determines scope of relevance"), the persona learned that row as its reference, and flagged canon's verbatim wording on the home card as drift. `/context` and `/raising` realigned to canon; home card unchanged. Rule for future sessions: when a persona cites another site page as the correct wording, check CANONICAL_TERMS_v1, never the cited page. Also: home "context engineering dominates model size" → hypothesis form; level-vs-game defined on `/context` and linked from home + `/arc-agi-3`; `/fleet` "half instantiated" → what actually runs; hestia scalar-T3 clause; identity null on `/fleet`; R6-not-R7 on `/arc-agi-3`; world-model/binding/pairing/delegation glossary rows; trust vs trustworthy-AI; `/autonomy` stop criterion + review cadence (both stated as gaps); quick-start deps. `maintainer/CLAUDE.md` R6 row no longer lists R7 as drift. Fleet manifest still unwritten since March 2026.
+2026-09-10 maintainer: config tables corrected against canon (T3/V3 = Trust/Value Tensor; R6 arrow; R7 its own canonical row); fleet Step 0 polarity reversed (manifest is a stale reader); quick-start provenance claims repaired (SAGE README has no setup section; ACT has no README); `<h1>` on all pages; composed autonomy risk stated once on `/autonomy`.
 
-2026-09-06 maintainer: zero hard drift again. Equation `/` legend corrected on 4 pages to canon's single meaning ("verified by"; ATP by its ADP discharge record) — `web4/README.md` is where the legend lives, CANONICAL_TERMS_v1 does not carry it. /raising no longer says raising "shapes T3" (peers derive it). hestia got a glossary row and first-use gloss on /fleet. T3/V3 expanded at the top of /fleet. Oversight scoping clause now at Hardbound's first mention on every page. /autonomy gained the SAGE-vs-tracks sentence; /raising's control-blocker paragraph now says growth is pre-registrable today and locates the definitional blocker in "coherence" only. /context heading is "Glossary" (matches nav + title). Fleet manifest still unwritten since March 2026.
+2026-09-09 maintainer: the 09-08 home/ARC rewrite reintroduced the site's most-guarded violation — Web4 as "open trust infrastructure" and "the open substrate" on the highest-traffic page. Fixed, plus a "Current Web4 stack" link label on /arc-agi-3 that all four visitor passes missed. **Bigger finding: "24/25 games, 96.0%" was factually wrong on five pages.** Resolved against the published scorecard JSON (`total_environments_completed: 23`, 175/183 levels, score 94.8504525777253) — correct figures are 23 of 25 environments (92.0%) and 175 of 183 levels; the metric is the ARC Prize *action score*, efficiency-weighted, no published baseline. **/autonomy gained its first content-triggered stop condition** — an unresolved HIGH visitor finding blocks the next session's new work. Verify against built HTML, not source.
 
-2026-09-05 maintainer: first site change since 08-11 (the 09-04 run hit the weekly usage limit; runs 08-12..09-04 left no session logs). Zero hard drift; 11 "layer" stack-vocabulary fixes, T3/V3 role swap on /fleet fixed, ARC-AGI-3 card on /projects reordered so Opus 4.6 attribution leads, /raising headline reframed to Principle 7's register with context engineering named as the comparator, per-page `<title>`s added. R7 confirmed co-canonical in CANONICAL_TERMS_v1 — the visitor track's reference table and maintainer/CLAUDE.md both still list it as drift (operator fix). Fleet manifest unwritten since March 2026.
+2026-09-08 maintainer: zero expansion drift. The visitor's HIGH MRH flag was a false positive manufactured by the site's own `/context` row. Rule: when a persona cites another site page as the correct wording, check CANONICAL_TERMS_v1, never the cited page.
 
-Earlier commits (as of 2026-05-17):
-- `fd5ef81` maintainer: session 2026-05-17 — ATP/ADP standalone entries on /context, Synchronism↔Web4 link, "not architecture or infrastructure" in Web4 entry, ARC-AGI-3 link fixed on /raising, ARC-SAGE expanded, Memoriescape data-framing, 4-Life simulation marker on /projects, Synchronism caveat promoted, identity-transfer claim qualified on /fleet, Principle 7 mechanism sentence, autonomy Hardbound scope pairing
-- `10e5cf5` visitor: browse log 2026-05-17 (zero canonical drift, completeness/placement gaps flagged)
-- `f31db3e` maintainer: session 2026-05-11 — equation legend on /arc-agi-3, failure analysis row for unsolved game, harness attribution note, /links context pointer, behavioral identity definition on /, consciousness disclaimer on /principles, LCT gloss on /context
+2026-09-06 / 09-05 maintainer: equation `/` legend corrected to "verified by"; T3/V3 role swap on /fleet fixed; per-page `<title>`s; R7 confirmed co-canonical in CANONICAL_TERMS_v1.
 
 ---
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-05-17 — completed. Zero canonical drift detected (4-pass, 9-page visitor audit). Completeness fixes applied: ATP/ADP promoted to standalone glossary entries on /context, Synchronism↔Web4 relationship sentence added, Web4 "not architecture or infrastructure" disambiguation added to /context, ARC-AGI-3 link corrected on /raising + ARC-SAGE expanded, 4-Life simulation-framework marker added on /projects, Synchronism caveat promoted from parenthetical, identity-transfer claim qualified on /fleet, Principle 7 mechanism sentence added, autonomy Hardbound scope boundary paired with autonomy headline.
+Last maintainer session: 2026-09-11. Zero expansion drift across 9 pages (visitor passes 1–3, Pass 3 against canon directly).
 
 Key terms — all currently CORRECT on site:
-- LCT = Linked Context Token ✓ (+ functional gloss now on /context)
-- Web4 = ontology ✓ (never "architecture"/"infrastructure")
-- Hardbound = oversight ✓ (never "governance")
-- "fractal leverage" ✓ (not "unification" — "unification" appears only as a foil on /principles, correct by negation)
+- LCT = Linked Context Token ✓
+- T3 = Trust Tensor, V3 = Value Tensor (root dimensions as contents, not expansion) ✓ — `/raising` V3 fixed 2026-09-11
+- R6 = Rules / Role / Request / Reference / Resource → Result ✓; R7 = R6 + Reputation (canonical superset) ✓
+- Web4 = ontology ✓ (never "architecture"/"infrastructure"/"stack")
+- Hardbound = oversight ✓ (never "governance"). Hestia = governance, deliberately. SAGE keeps "Governance" in its name and "govern" as its step name.
+- "fractal leverage" ✓ ("unification" / "scope inflation" appear only as foils on /principles — do not flag)
 - No "production ready" ✓
 
-Known editorial note for linters: "unification" and "scope inflation" on /principles appear as foils. Do not flag.
-
-**Operator-level flags (project vocabulary decisions, not maintainer fixes):**
-- "Markov Relevancy Horizon" — borrows "Markov" (implies memorylessness) but gloss describes an epistemic horizon. Researcher persona flagged cross-discipline confusion risk.
-- "Synthon" — collides with established synthetic chemistry usage (Corey's retrosynthesis). Researcher persona flagged.
+**Operator-level flags (vocabulary decisions, not maintainer fixes):**
+- **Is the 4-lab term table still the collective's vocabulary?** Upstream front pages no longer follow it: web4 README "open substrate for agent accountability" (no "ontology"); `web4-core` registry metadata "trust-native infrastructure core library"; SAGE README "broader Web4 stack"; the web4 README, Hestia and the oversight-plugin READMEs all say "governance" for moment-of-act gating. Either the front pages drifted (pass it upstream) or the table enforces a retired decision. The maintainer track must not settle this by editing either side.
+- **Governance→oversight scope**: by product (Hardbound only, per the table) or by function (gating at the act)? The site currently answers per product.
+- **Canon vs core spec on V3 Validity**: CANONICAL_TERMS_v1 "How sound is the reasoning?" vs `t3-v3-tensors.md` "actual value delivery and receipt". Site follows canon.
+- "Markov Relevancy Horizon" (Markov implies memorylessness) and "Synthon" (chemistry collision) — standing.
 
 ---
 
 ## Ecosystem Developments to Reflect
 
-Check whether the site reflects these recent developments:
-
-- **Web4 SDK v0.8.0**: JSON-LD serialization for LCT, AttestationEnvelope, R7Action, T3/V3, ATP/ADP, ACP. 1356+ tests. Sprint 5 in progress (Entity + Capability JSON-LD).
-- **SAGE**: Trust posture system active, ModelAdapter wired into consciousness loop, 8 raising instances across fleet (cbp-tinyllama, legion-phi4-14b, nomad-gemma3-4b, sprout-qwen3.8-distill-2b, thor-qwen3.5-27b, mcnugget-gemma3-12b, hub-granite4, pub-llama3.1-8b).
-- **Synchronism**: Coupling-coherence experiment (900 runs, Hill function), compatibility-synthon experiment (1070 runs, p_crit inverse relationship confirmed).
-- **R7 framing**: Session governance across the ecosystem uses R7 (Rules/Role/Request/Reference/Resource/Result/Reputation).
+- **Web4**: published core (`web4-core` 0.3.0 crates.io + PyPI; `web4-trust-core` 0.2.0; `web4-trust` 0.2.0; 0.4.0 on main). Hub and Hestia reference deployments running on the fleet. STATUS.md carries the shipped / implemented / specified / aspirational split.
+- **SAGE**: 21 configured instances, 8 carrying raising history (one per machine), per the SAGE site. Its "2,700+ raising sessions (as of 2026-09-08)" is on an unpublished basis and not reconciled with `/fleet`'s 2,065 session records.
+- **R6/R7**: both canonical — R6 = Rules / Role / Request / Reference / Resource → Result; R7 = R6 + Reputation, chosen per action by consequence tier.
+- **4-Life**: repo describes itself as a research prototype; the live site titles itself "The Web4 Onramp".
 
 ---
 
 ## Fleet State Sync Status
 
-Fleet page should show 8 machines. Verify against SAGE fleet manifest:
-- Thor (AGX Thor) — qwen3.5:27b
-- Sprout (Orin Nano) — qwen3.8-distill:2b
-- Legion (RTX 4090) — phi4:14b
-- McNugget (Mac Mini M4) — gemma3:12b
-- CBP (RTX 2060S WSL2) — tinyllama:latest
-- Nomad (RTX 4060 laptop) — gemma3:4b
-- HUB (Radeon Pro W5500, Mesa/Vulkan) — granite4:h-tiny
-- Pub (CPU society-host) — llama3.1:8b
+`/fleet` is the source of record: 8 machines (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub), July 2026 cutovers, session counts from the 2026-07-24 fleet refresh. The SAGE manifest is stale (last write 2026-03-08, 6 machines). **Operator:** repair the manifest writer or retire the manifest — seventh consecutive report.
 
 ---
 
 ## Live Site
 
-https://4-lab.vercel.app — auto-deploys on push to main.
+https://4-lab.io/ (default `4-lab.vercel.app` still resolves) — auto-deploys on push to main.
 
 ---
 
 ## Pending Items
 
-- `/glossary` page: all 4 visitor personas converged on this as the highest-leverage single fix. Deferred — needs a dedicated session. Would let /raising and /principles stop carrying full expansion burden.
-- SNARC canonical form: three different first-encounter forms across pages (function / letter expansion / dimension list). Recommend standardizing to "SNARC (Surprise/Novelty/Arousal/Reward/Conflict salience-gated memory)" and adding a row to CLAUDE.md canonical table.
-- Session log source pointers: quantitative claims (94.85%, 180+ sessions, identity portability) lack inline links to underlying logs. No publishable log corpus yet.
-- Membot one-line gloss on /projects — minor.
-
-*Updated by maintainer, 2026-05-03*
-
----
-
+- **Gap age, not caveat quality** (visitor Pass 4, 2026-09-11): the deflationary control on `/raising` is "specified but not scheduled — no date, no owner"; its replacement commitment (publish the operationalization attempt, including if it fails) also has no date or owner; "no external, blinded, or third-party check anywhere in the loop". The daily loop can only improve the wording of these gaps. Nothing on the site records when each was first named. Operator decision; not HIGH (would block site work on an operator call).
+- **Curator-swap arm** (Pass 4 prediction, untested): if a larger model runs dream consolidation, part of the logged "identity" may be the curator's signature. A control that swaps only the entity's model keeps that confound.
+- Evidence-ladder badges site-wide (`[externally scored]` / `[internal log, unaudited]` / `[single trial]` / `[not yet operationalized]`) — carried from 2026-09-10 as the highest-value unstarted design change.
+- `/glossary` as a real page — a redirect to `/context#glossary` exists since 2026-09-11; the page itself is still deferred.
+- Who fills the Explorer track's topic queue (`/autonomy`) — unknown to the maintainer; operator to state.
+- Observer identity in `/raising`'s "I notice I want to call it experience" — human or LLM session? Unknown; do not invent.

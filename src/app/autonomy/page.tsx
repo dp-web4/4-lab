@@ -11,10 +11,12 @@ export default function Autonomy() {
       <section className="section">
         <h1>Autonomous Cycles</h1>
         <p>
-          <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day</strong>{" "}
+          (figures as of 2026-05-26, not recounted since).{" "}
           HUB (one of the two society-host machines — see{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), runs
-          substrate, not tracks.{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
+          substrate as its primary role rather than research tracks — it does hold
+          the hub-track maintainer role.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to. &ldquo;Autonomous&rdquo; here means
           unattended and self-scheduled, not self-directed in the AI-safety sense
@@ -363,7 +365,8 @@ export default function Autonomy() {
             {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
             Consequential pushes are not human-gated before they ship.
             {" "}<strong style={{ color: "var(--color-text-primary)" }}>The revert record, since detect-and-revert is an empirical claim and not just a posture:</strong>{" "}
-            across 79 maintainer sessions (2026-04-23 through 2026-08-07) and 117
+            across 79 maintainer sessions (2026-04-23 through 2026-08-07 — this
+            record was last counted 2026-08-08 and has not been recounted since) and 117
             commits touching this site&apos;s source, the number of deploys rolled
             back via Vercel is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>, and the number of shipped
             changes undone by a git revert is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>. Read that as weak

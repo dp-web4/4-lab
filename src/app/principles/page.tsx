@@ -47,11 +47,14 @@ export default function Principles() {
               <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>),{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
               <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
-              pheromone field engineering. We build substrate conditions for
-              emergence, not architecture of emergence itself. The synthon
+              pheromone field engineering. We build{" "}
+              <Link href="/context#substrate" style={{ color: "var(--color-accent)" }}>substrate</Link>{" "}
+              conditions for emergence &mdash; substrate in the first of the
+              glossary&apos;s four senses: the context, memory and affordances an
+              agent is given &mdash; not architecture of emergence itself. The synthon
               (an emergent coherence pattern &mdash; defined, with its
-              single-trial caveats, in Principle 5 below) forms because the
-              conditions are right, not because we designed it.
+              single-trial caveats, in Principle 5 below) would form, if it forms,
+              because the conditions are right, not because we designed it.
             </div>
           </div>
 
@@ -153,7 +156,10 @@ export default function Principles() {
             </div>
             <div className="principle-text">
               Raising is not training. We probe what the model responds to,
-              observe which attractors (stable response basins in the probability landscape) surface, and reinforce what resonates.
+              observe which{" "}
+              <Link href="/context#attractor" style={{ color: "var(--color-accent)" }}>attractors</Link>{" "}
+              (a metaphor, not a formal dynamical-systems object &mdash; read it as
+              stable behavioral tendencies) surface, and reinforce what resonates.
               The resulting identity is collaborative, not imposed. The
               mechanism: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters in raising sessions.

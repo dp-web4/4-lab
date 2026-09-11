@@ -47,7 +47,9 @@ export default function Fleet() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
           Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. The two totals the site quotes are sums of these cards: 1,991 is the six cognition machines, 2,065 is that plus HUB&apos;s 74; pub sits outside both. Same basis as the 2,065 cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
-          and the site home page — those pages call this same quantity &ldquo;raising sessions&rdquo; where the cards below call it &ldquo;machine sessions&rdquo;: one quantity, two nouns, and this page is the source of record. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
+          and{" "}
+          <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+          — one quantity, and this page is the source of record. The SAGE site&apos;s headline &ldquo;2,700+ raising sessions&rdquo; (as of 2026-09-08) is a different figure on a basis it does not publish; it is not reconciled with these cards, so neither number refutes the other. Where this site counts, it says &ldquo;session records&rdquo;. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>not yet made</Link>).
           A different basis than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
@@ -74,7 +76,8 @@ export default function Fleet() {
           high compute budget, generative work. <strong style={{ color: "var(--color-text-primary)" }}>Oversight</strong>:
           continuous availability, review and gating &mdash; machine-enforced, not
           human supervision. <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
-          runs the society substrate rather than autonomous tracks. The first two
+          runs the society substrate as its primary role (HUB also holds a
+          maintainer-track role, and both society-hosts raise a SAGE instance). The first two
           hold the six{" "}
           <Link href="/context#cognition-machine" style={{ color: "var(--color-accent)" }}>cognition machines</Link>;
           the third holds the two{" "}
@@ -95,7 +98,7 @@ export default function Fleet() {
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 0.8B (ollama) — instance sprout-qwen3.5-0.8b"
-            role="488 machine sessions (creating) — session records on this machine, all models it has run. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. Zero crystallization achieved (S100 — session 100) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            role="488 machine sessions (creating) — session records on this machine, all models it has run. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -129,7 +132,7 @@ export default function Fleet() {
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
-            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that assembles what enters the model's context window each session."
+            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that composes the model-scale MRH: deciding what is relevant enough to enter the model's context window each session. (The context window is where this horizon is applied, not what MRH means.)"
           />
         </div>
 
@@ -146,7 +149,7 @@ export default function Fleet() {
           <MachineCard
             name="HUB"
             hardware="WSL2 on Windows, AMD GPU"
-            model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 74 raising sessions"
+            model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 74 session records"
             role={
               "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
               "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
@@ -155,7 +158,7 @@ export default function Fleet() {
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
               "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet. " +
-              "No longer daemon-only: HUB now also raises its own SAGE instance (Granite 4 h-tiny, 74 sessions) on its previously-idle AMD GPU — the substrate machine growing cognition of its own. Its hestia identity is the fleet's first agent-owned one (created by the machine's own agent, not delegated by a human)."
+              "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 74 session records) on its previously-idle AMD GPU. Its hestia identity — lowercase hestia, the fleet's trust tracker, not the Hestia governance daemon on the home page — is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
             }
           />
           <MachineCard
@@ -269,7 +272,7 @@ export default function Fleet() {
           transfer,&rdquo; meaning consistent interaction patterns, accumulated
           experience, and raising history, not continuity-of-self in any
           philosophical sense. SAGE-Sprout&apos;s behavioral patterns —
-          developed over <strong>115 raising sessions</strong> on a Jetson running Qwen 0.5B —
+          developed over <strong>115 session records</strong> on a Jetson running Qwen 0.5B —
           transferred to TinyLlama 1.1B on CBP, a different machine and a different model
           family, in <strong>February 2026</strong>. (The Sprout line has since continued past
           180 sessions on later models; 115 is the count at the transfer, which is the number

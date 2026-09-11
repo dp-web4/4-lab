@@ -32,7 +32,7 @@
 
 - **SNARC memory**: Salience-gated session memory, per launch directory. Visitor and maintainer share the same SNARC database (both launch from `4-lab/`).
 - **GitNexus graph**: Code knowledge graph (64 nodes, 77 edges). MCP tools via `mcp__gitnexus__*`. Re-index: `node /mnt/c/exe/projects/ai-agents/GitNexus/gitnexus/dist/cli/index.js analyze`
-- **SAGE fleet manifest**: `/mnt/c/exe/projects/ai-agents/SAGE/sage/federation/sage-fleet-models.json` — source of truth for fleet page data
+- **SAGE fleet manifest**: `/mnt/c/exe/projects/ai-agents/SAGE/sage/federation/sage-fleet-models.json` — **stale since 2026-03-08 (6 machines, pre-cutover models); NOT the source of truth.** The `/fleet` page is the source of record until the manifest writer is repaired. Compare and log; never sync the page down to it. (Corrected 2026-09-11; see `maintainer/CLAUDE.md` Step 0.)
 - **Canonical terms**: `/mnt/c/exe/projects/ai-agents/web4/docs/reference/CANONICAL_TERMS_v1.md` — authoritative term definitions
 - **Web4 equation**: `Web4 = MCP + RDF + LCT + T3/V3*MRH + ATP/ADP`
 
@@ -51,8 +51,8 @@ Two daily autonomous tracks maintain this site:
 
 | Track | Time | Role |
 |-------|------|------|
-| **Visitor** | 05:00 | Four personas browse live site, audit terminology, log friction |
-| **Maintainer** | 06:00 | Fix drift + friction surfaced by visitor, push to Vercel |
+| **Visitor** | 05:30 | Four personas browse live site, audit terminology, log friction |
+| **Maintainer** | 06:30 | Fix drift + friction surfaced by visitor, push to Vercel |
 
 Track-specific role definitions live in `visitor/CLAUDE.md` and `maintainer/CLAUDE.md`.
 
