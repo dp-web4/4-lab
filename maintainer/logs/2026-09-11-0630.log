@@ -1,0 +1,12 @@
+Starting 4-lab Maintainer Session at Fri Sep 11 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_197.json
+ create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_198.json
+The site is live with today's changes; Vercel deployed about 40 seconds after the push. I checked https://4-lab.io directly:
+
+- **`/projects`:** the Web4 card now says "no longer only a specification".
+- **`/glossary`:** redirects (307) to `/context#glossary` instead of returning a 404.
+- **`/context`:** shows the corrected V3 entry ("V3 is NOT the gate") and SAGE's own loop step name ("remember → govern").
+- **Old wording:** the "V3-validated value" legend text no longer appears on `/context`.
+
+Nothing else is pending. The four decisions listed at the end of the session summary still need you.
