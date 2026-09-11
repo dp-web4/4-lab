@@ -15,14 +15,17 @@ These are the ONLY correct expansions. Flag ANY deviation:
 | Term | Canonical Expansion | Common Drift |
 |------|-------------------|--------------|
 | **LCT** | Linked Context Token | ~~Lifelong Capability Token~~, ~~Lifecycle-Continuous Trust~~ |
-| **T3** | Talent / Training / Temperament | ~~Trust-Tracing-Tensor~~ |
-| **V3** | Valuation / Veracity / Validity | |
+| **T3** | Trust Tensor (root dimensions Talent / Training / Temperament) | ~~Trust-Tracing-Tensor~~; the three dimensions given *as* the expansion |
+| **V3** | Value Tensor (root dimensions Valuation / Veracity / Validity) | the three dimensions given *as* the expansion |
 | **MRH** | Markov Relevancy Horizon | ~~Minimum Response Horizon~~, ~~Memory Retention Heuristic~~ |
 | **ATP** | Allocation Transfer Packet | ~~Attention Token Pool~~, ~~Adaptive Trust Points~~ |
 | **ADP** | Allocation Discharge Packet | ~~Adaptive Development Points~~ |
-| **R6** | Six-Element Action Framework (Rules/Role/Request/Reference/Resource/Result) | ~~R7, R5~~ |
+| **R6** | Six-Element Action Framework (Rules / Role / Request / Reference / Resource → Result) | ~~R5~~ |
+| **R7** | R6 + Reputation (a canonical superset of R6, not a misnaming of it) | Do NOT flag correct R7 usage as drift |
 | **Web4** | An ontology (not architecture, not infrastructure) | |
 | **Hardbound** | Oversight (not governance) | |
+
+*Table corrected 2026-09-11 (visitor pass 2) to match the root `4-lab/CLAUDE.md` table and `CANONICAL_TERMS_v1` (web4/docs/reference). The earlier rows gave T3/V3's dimensions as their expansions, used an all-slash R6 and listed R7 as drift. That meant a pass following them would report canon as drift. If canon changes, update these rows from canon, never from the site.*
 
 Also watch for:
 - "production ready" (we are in R&D)
