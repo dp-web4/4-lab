@@ -1,0 +1,71 @@
+{
+  "_comment": [
+    "Protected assertions: caveats and hedges that must not vanish from this site without an editorial act.",
+    "Origin: the 2026-09-08 home/ARC rewrite (d20b390, 51bfc14) removed ~8 hedges in one pass and no maintainer",
+    "session named the loss for four days. A caveat going missing should be a failing check, not a discovery.",
+    "",
+    "status=present : pattern MUST match on the named page. If it stops matching, check-caveats.sh fails.",
+    "status=absent  : known-missing. Reported as outstanding debt; flip to present once restored.",
+    "status=retired : the CLAIM this caveat qualified is gone, so the caveat correctly went with it. Not debt.",
+    "",
+    "Adding an entry is cheap. Changing present -> absent is an editorial act and needs a forum post",
+    "(4-lab/CLAUDE.md: 'preserve honest assessments, never weaken caveats')."
+  ],
+  "caveats": [
+    { "id": "autonomy-not-self-directed", "page": "src/app/autonomy/page.tsx", "status": "present",
+      "pattern": "self-directed",
+      "why": "'autonomous' here means unattended and self-scheduled, not self-directed in the AI-safety sense." },
+
+    { "id": "consciousness-functional-only", "page": "src/app/context/page.tsx", "status": "present",
+      "pattern": "consciousness or experience",
+      "why": "Functional description of observed behavior, not a claim about consciousness." },
+
+    { "id": "evidence-tier-internal", "page": "src/app/raising/page.tsx", "status": "present",
+      "pattern": "not externally audited",
+      "why": "Observations are internal, not externally audited." },
+
+    { "id": "deflationary-alternative", "page": "src/app/autonomy/page.tsx", "status": "present",
+      "pattern": "deflationary",
+      "why": "The deflationary reading of identity transfer is stated alongside the strong one." },
+
+    { "id": "visitor-audit-self-criticism", "page": "src/app/autonomy/page.tsx", "status": "present",
+      "pattern": "four personas",
+      "why": "The visitor audit is four personas on one model — correlated blind spots." },
+
+    { "id": "hardbound-not-hardware-anchored", "page": "src/app/projects/page.tsx", "status": "present",
+      "pattern": "hardware-anchor",
+      "why": "Hardbound enforcement runs at process level today, not anchored in silicon." },
+
+    { "id": "navier-stokes-retraction", "page": "src/app/projects/page.tsx", "status": "present",
+      "pattern": "Navier-Stokes",
+      "why": "Synchronism's own audits refuted the fluid formalism in 2026; the claim is tagged superseded." },
+
+    { "id": "arc-harness-ablation-unrun", "page": "src/app/projects/page.tsx", "status": "present",
+      "pattern": "ablation has not been run",
+      "why": "How much of 94.85% is the harness is an open question. Hypothesis, not result." },
+
+    { "id": "arc-engine-source-affordance", "page": "src/app/arc-agi-3/page.tsx", "status": "present",
+      "pattern": "not blind",
+      "why": "The harness read the games' engine source and built per-game cartridges — outside strict from-observation play." },
+
+    { "id": "arc-action-score-not-solve-rate", "page": "src/app/context/page.tsx", "status": "present",
+      "pattern": "efficiency-weighted",
+      "why": "94.85% is an action score with no published baseline, not 23/25 and not 175/183." },
+
+    { "id": "arc-level-vs-environment", "page": "src/app/context/page.tsx", "status": "present",
+      "pattern": "whole-environment completions by local models remain rare",
+      "why": "Local models clear levels; whole-environment solves remain rare. Added 167092c, restored on /context." },
+
+    { "id": "home-page-carries-a-hedge", "page": "src/app/page.tsx", "status": "absent",
+      "pattern": "self-directed|not a claim about|hypothesis, not a result|not externally audited",
+      "why": "DEBT. The highest-traffic page carries five sections, one of them a commercial pitch, and zero caveats since d20b390. Every hedge above lives two clicks deep. Placement, not deletion — but the bouncing reader never reaches them." },
+
+    { "id": "r6-not-r7-claim-strength", "page": "src/app/page.tsx", "status": "absent",
+      "pattern": "R6 rather than R7",
+      "why": "DEBT. 167092c hedged that nothing published documents result attestations feeding reputation back-propagation, so the records are R6 not R7. Deleted 17:22 the same day; never restored anywhere." },
+
+    { "id": "arc-leaderboard-not-comparable", "page": "src/app/arc-agi-3/page.tsx", "status": "retired",
+      "pattern": "conditions are not comparable",
+      "why": "RETIRED, not debt: the #3-human-leaderboard claim this qualified was removed in the same commit (51bfc14) and appears nowhere in src/. A caveat outliving its claim would be the defect." }
+  ]
+}

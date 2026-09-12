@@ -18,7 +18,7 @@ export default function Context() {
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>.
         </p>
         <p>
-          Forty original repos (twenty-one public, nineteen internal — the account also carries 32 forks of external work we build on, which the &ldquo;original&rdquo; count excludes; 72 repositories in total, verified against the GitHub org 2026-07-26), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
+          Forty original repos (twenty-one public, nineteen internal — the account also carries 33 forks of external work we build on — 32 public, one internal — which the &ldquo;original&rdquo; count excludes; 73 repositories in total, verified against the GitHub account 2026-09-12), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
           distinct contexts. The challenge isn&apos;t storing knowledge — it&apos;s
           making it findable, consistent, and useful across the entire system.
         </p>

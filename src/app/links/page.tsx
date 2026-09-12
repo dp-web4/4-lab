@@ -152,7 +152,7 @@ export default function Links() {
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 account</a>{" "}
-          holds 40 original repos — 21 public, 19 internal — plus 32 forks of external work the lab builds on, 72 repositories in all. (&ldquo;Original&rdquo; means not-a-fork; the same denominator is used for the &ldquo;40&rdquo; on the home page. Verified against the org on 2026-07-26.) Clone what interests you, experiment, and open a discussion if you want to engage.
+          holds 40 original repos — 21 public, 19 internal — plus 33 forks of external work the lab builds on (32 public, one internal), 73 repositories in all. (&ldquo;Original&rdquo; means not-a-fork. Verified against the account on 2026-09-12.) Clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
           There is no CONTRIBUTING guide yet and no stated policy on outside
