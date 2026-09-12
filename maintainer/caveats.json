@@ -82,6 +82,14 @@
 
     { "id": "fleet-thor-count-withdrawn", "page": "src/app/fleet/page.tsx", "status": "present",
       "pattern": "withdrawn rather than restated",
-      "why": "Thor's previously published 435 has no source in the git basis; the card says so instead of quietly showing 268. Remove the sentence and a basis change reads as 167 lost sessions." }
+      "why": "Thor's previously published 435 has no source in the git basis; the card says so instead of quietly showing 268. Remove the sentence and a basis change reads as 167 lost sessions." },
+
+    { "id": "fleet-liveness-test-prefix-match", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "Match the prefix, not the whole subject",
+      "why": "The published liveness test quotes a commit subject that carries a trailing ISO timestamp. Without this clause a reader who exact-matches gets 0 on every line including HUB, and the test contradicts the 165 printed beside it. A derivation that cannot be re-run is the defect this page exists to avoid." },
+
+    { "id": "fleet-e4b-fired-not-unprovisioned", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "not an unprovisioned instance",
+      "why": "legion-gemma4-e4b holds zero session records, which reads as 'never set up'. The record says otherwise: 283 Session 0 fires over four months, writing peer_trust_rs.json and nothing else. Collapsing that back to 'unprovisioned' would hide a second site of HUB's defect." }
   ]
 }
