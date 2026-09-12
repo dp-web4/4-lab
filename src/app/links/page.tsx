@@ -23,6 +23,11 @@ export default function Links() {
             description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
           />
           <ExternalLink
+            href="https://4-gov.org"
+            title="4-gov"
+            description="Governance explainer site. Note the vocabulary gap: this lab says &ldquo;oversight&rdquo; where this site says &ldquo;governance&rdquo; (see /context) — the domain name predates, and sits outside, that correction."
+          />
+          <ExternalLink
             href="https://4-life-ivory.vercel.app"
             title="4-Life"
             description="Trust-native society research prototype (the repo's own description; the live site titles itself 'The Web4 Onramp' and opens as an educational explainer, with the simulation behind it) — agents, ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet), and karma (the simulation's accumulated-standing score for an agent, derived from its past contributions — 4-Life's local stand-in for a T3/V3 reputation record, not a Web4 canonical term). Web4 in miniature."
@@ -63,7 +68,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4"
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-10 (which removed its README), no running chain, no first-run steps published. Not a working entry point today."
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
@@ -123,7 +128,7 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. Protocol: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side.
+          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. Protocol: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side, but it is stalled — don&apos;t start there.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
@@ -131,9 +136,9 @@ export default function Links() {
           The commands live in one place: the{" "}
           <a href="/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</a>{" "}
           — Web4&apos;s published packages, a SAGE instance from clone to running daemon
-          (including the <code>ollama pull</code> step), and where to begin in ACT. This page
+          (including the <code>ollama pull</code> step). This page
           used to carry a second copy; the two drifted apart, so it now links instead.
-          SAGE is the hands-on starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the right entry if you want the Web4 trust-primitive / Cosmos SDK side.
+          SAGE is the hands-on starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>

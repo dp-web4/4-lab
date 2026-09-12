@@ -53,8 +53,8 @@ export default function Projects() {
           Want to run something rather than read? Start with{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>SAGE</strong> —
           it runs on a single machine, no Jetson required. Want the protocol
-          instead? Web4&apos;s core packages install directly. Commands for Web4,
-          SAGE and ACT are in the{" "}
+          instead? Web4&apos;s core packages install directly. Commands for Web4
+          and SAGE are in the{" "}
           <a href="#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</a>{" "}
           at the bottom of this page — the only copy on the site, so there is one
           place to fix when a step breaks. This page is the map; that is the first
@@ -116,7 +116,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate."
+            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate. Status, plainly: stalled, and reserved rather than superseded. The chain last built in September 2025 and is blocked mid-rename; the last substantive commit was 2026-04-10, which removed the repo's README; there is no running chain and no first-run steps published. Reviving it is a real intent with no date on it, not work in progress — and the repo's own metadata still claims active development, which is wrong. Nothing here should be read as a live chain or live anchoring."
             accentColor="var(--color-act)"
             isPublic={true}
             maturity="research-stage"
@@ -244,10 +244,11 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 pip install web4-core
 # Rust: add  web4-core = "0.3"  under [dependencies] in Cargo.toml
 
-# ACT — Agentic Context Tool (Cosmos SDK)
+# ACT — Agentic Context Tool (Cosmos SDK) — STALLED, read-only visit
 git clone https://github.com/dp-web4/ACT
 cd ACT
-# No setup guide yet: ACT has no README and no first-run steps published.
+# Not a working quick start. ACT is stalled: no running chain, and the last
+# substantive commit (2026-04-10) removed the README. Clone it to read, not to run.
 # QUICK_REFERENCE.md is a map of the repo's structure, not a setup guide;
 # start there and in docs/, and expect to read Go/Cosmos source.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
