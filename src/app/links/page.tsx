@@ -138,7 +138,7 @@ export default function Links() {
           — Web4&apos;s published packages, a SAGE instance from clone to running daemon
           (including the <code>ollama pull</code> step). This page
           used to carry a second copy; the two drifted apart, so it now links instead.
-          SAGE is the hands-on starting point — it runs on a single machine, has 1,991 internally logged machine sessions as context (2,065 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
+          SAGE is the hands-on starting point — it runs on a single machine, has 2,442 internally logged session records as context (2,563 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>

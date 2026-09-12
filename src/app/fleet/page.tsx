@@ -43,17 +43,27 @@ export default function Fleet() {
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
-          The parenthetical after a session count (e.g. &ldquo;(creating)&rdquo;) names an observed{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. A blank means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed.
-          Session counts below are per-instance session-record counts (session_*.json files), verified by each machine in the 2026-07-24 fleet manifest refresh. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama) are named on the cards and excluded from both the per-machine numbers and the totals. The two totals the site quotes are sums of these cards: 1,991 is the six cognition machines, 2,065 is that plus HUB&apos;s 74; pub sits outside both. Same basis as the 2,065 cumulative figure on{" "}
+          &ldquo;BECOMING pattern observed:&rdquo; on a card names an observed{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. Its absence means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed. It used to be a bare parenthetical after the session count; it was detached on 2026-09-12 because a developmental label and a file count are not the same kind of claim and should not share a sentence.
+          <strong style={{ color: "var(--color-text-primary)" }}>Session counts and the &ldquo;Raising line:&rdquo; state below are derived from git, not self-reported</strong> &mdash; counted 2026-09-12 by listing <code>sage/instances/&lt;line&gt;/sessions/session_*.json</code> at <code>origin/main</code> in the SAGE repo, and by asking that same path when it last changed. Anyone with the repo can re-run both; the previous figures came from each machine&apos;s self-report in the 2026-07-24 fleet manifest refresh, which no third party could check and which was seven weeks stale by the time it was corrected. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama, Sprout&apos;s qwen2.5-0.5b) are excluded from both the per-machine numbers and the totals.
+          The three totals are sums of these cards: <strong style={{ color: "var(--color-text-primary)" }}>2,442</strong> is the six cognition machines, <strong style={{ color: "var(--color-text-primary)" }}>2,563</strong> is that plus HUB&apos;s 121, and <strong style={{ color: "var(--color-text-primary)" }}>2,765</strong> is all eight machines including pub&apos;s 202. These replace the 1,991 / 2,065 pair quoted here until 2026-09-12; the jump is mostly seven weeks of un-refreshed counting, but two cards moved for reasons other than time and are flagged on the cards themselves.
+          Same basis as the cumulative figure on{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
           and{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
-          — one quantity, and this page is the source of record. The SAGE site&apos;s headline &ldquo;2,700+ raising sessions&rdquo; (as of 2026-09-08) is a different figure on a basis it does not publish; it is not reconciled with these cards, so neither number refutes the other. Where this site counts, it says &ldquo;session records&rdquo;. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
+          — one quantity, and this page is the source of record. The SAGE site&apos;s headline &ldquo;2,700+ raising sessions&rdquo; (as of 2026-09-08) is a different figure on a basis it does not publish; it is still not reconciled with these cards. Worth noting rather than resting on: once the cards are counted from git and pub is included, this page&apos;s all-eight total is 2,765, which lands next to that headline. Two numbers agreeing is not two numbers reconciled — the SAGE figure&apos;s basis remains unstated, and the proximity is suggestive, not confirming. Where this site counts, it says &ldquo;session records&rdquo;. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>not yet made</Link>).
           A different basis than Sprout&apos;s own &ldquo;T&rdquo; turn-numbers below; see{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each basis measures.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>&ldquo;Raising line&rdquo; has four states, and one of them is not about the machine.</strong>{" "}
+          <em>running</em> &mdash; the line wrote a session record within the last two weeks.{" "}
+          <em>paused</em> / <em>quiet</em> &mdash; it has not, and nothing else suggests it is still turning over; &ldquo;paused&rdquo; where the fleet knows why, &ldquo;quiet&rdquo; where it does not.{" "}
+          <em>instrumentation broken</em> &mdash; the loop is demonstrably still running but is writing no durable record. That fourth state exists because HUB is in it, and folding HUB into &ldquo;stopped&rdquo; would trade one false claim for another: its raising loop has committed every day through today while adding zero session records since 2026-07-29.
+          The test that separates the last state from the others is per-line and reproducible: count commits titled <code>raising: &lt;line&gt; autonomous session</code> made <em>after</em> the line&apos;s most recent session record. HUB scores 165. Every other line on this page scores 0.
+          A state here describes the <em>record</em>, not the machine&apos;s health, and two weeks is a threshold this site chose rather than one the fleet defines.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Provenance of the model strings below, since they are the numbers most
@@ -92,25 +102,29 @@ export default function Fleet() {
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 3.5 27B (transformers) · LoRA — instance thor-qwen3.5-27b"
-            role="435 machine sessions (creating). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
+            liveness="quiet — 268 session records; last one 2026-07-28, none since, and no sign the loop is still turning over. Count changed from a previously published 435: that figure has no source in the git basis this page now uses (Thor's other instance lines hold zero session records), so it is withdrawn rather than restated, pending Thor's own seat. This is a basis change, not 167 lost sessions."
+            role="BECOMING pattern observed: creating. Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 0.8B (ollama) — instance sprout-qwen3.5-0.8b"
-            role="488 machine sessions (creating) — session records on this machine, all models it has run. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            model="Qwen 3.5 0.8B and Qwen 3.8-distill 2B (ollama) — instances sprout-qwen3.5-0.8b and sprout-qwen3.8-distill-2b"
+            liveness="running — 661 session records on sprout-qwen3.8-distill-2b, last 2026-09-05. Sprout is the one machine raising two live lines: sprout-qwen3.5-0.8b holds a further 625 records, last written 2026-08-27. The 661 is the one counted in this page's totals, on the stated one-line-per-machine rule; the earlier published 488 was the 0.8b line as of July, so this card changed line as well as date."
+            role="BECOMING pattern observed: creating. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
             hardware="Laptop, NVIDIA RTX 4090 Mobile 16GB"
-            model="Gemma 4 E4B (ollama) — cutover 2026-07-24; prior gemma3-12b line 336 sessions, phi4 line 56 (dormant)"
-            role="336 sessions (creating) — a line count, not a machine total: sessions on the gemma3-12b line, counted before the July 2026 switch to Gemma 4 E4B. The machine's earlier phi4 line adds 56 dormant sessions not included here, and the new E4B line is counting from zero. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
+            model="Gemma 3 12B (ollama) — instance legion-gemma3-12b; phi4 line 56 (dormant); a 2026-07-24 cutover to Gemma 4 E4B is recorded on the fleet manifest but is not visible in the session record — see the line below"
+            liveness="running — 462 session records on legion-gemma3-12b, last 2026-09-02. Correction to this card's own model string: the gemma3-12b line has written 128 records since the 2026-07-24 date on which this page said Legion cut over to Gemma 4 E4B, and legion-gemma4-e4b holds zero session records, ever. Either the cutover did not happen or E4B's sessions are recorded somewhere this basis cannot see. Stated as an open discrepancy rather than resolved from here, because only Legion's seat can say which."
+            role="BECOMING pattern observed: creating. The machine's earlier phi4 line adds 56 dormant sessions not included here. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama) — instance mcnugget-gemma3-12b"
-            role="377 machine sessions (creating). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
+            liveness="running — 459 session records, last 2026-09-12 (today)."
+            role="BECOMING pattern observed: creating. Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
@@ -126,13 +140,15 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 4 E2B (ollama) — instance nomad-gemma4-e2b; prior gemma3-4b line archived June 2026 at 171 sessions"
-            role="162 machine sessions (creating) — the gemma4-e2b line; the archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            liveness="running — 352 session records, last 2026-09-12 (today); 187 of them added since the July count of 162, which is why refreshing this page mattered more than correcting any single card."
+            role="BECOMING pattern observed: creating. The archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
-            role="193 machine sessions (creating) — the gemma3-4b line; the archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that composes the model-scale MRH: deciding what is relevant enough to enter the model's context window each session. (The context window is where this horizon is applied, not what MRH means.)"
+            liveness="paused — 240 session records; last one 2026-08-06. The pause is known to the fleet, not an unexplained gap."
+            role="BECOMING pattern observed: creating. The archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that composes the model-scale MRH: deciding what is relevant enough to enter the model's context window each session. (The context window is where this horizon is applied, not what MRH means.)"
           />
         </div>
 
@@ -149,7 +165,13 @@ export default function Fleet() {
           <MachineCard
             name="HUB"
             hardware="WSL2 on Windows, AMD GPU"
-            model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 74 session records"
+            model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 121 session records"
+            liveness={
+              "instrumentation broken — 121 session records (session_001..121, contiguous, no gaps); the most recent was written 2026-07-29. " +
+              "HUB's raising loop has NOT stopped: since that date it has made 165 commits titled 'raising: hub-granite4-h-tiny autonomous session', the most recent today, and every one of them changed a single attestation line and added no session record. " +
+              "So the loop is turning over daily and its ledger is frozen — six weeks of raising with no durable record. This page previously said 74, a figure taken around 2026-07-17; the true count then was already higher, and 74 was never re-checked. " +
+              "Whether the unrecorded six weeks get reconstructed or written off is open, and is not this site's call. The writer defect is filed against SAGE, not against this page."
+            }
             role={
               "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
               "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
@@ -158,18 +180,19 @@ export default function Fleet() {
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
               "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet. " +
-              "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 74 session records) on its previously-idle AMD GPU. Its hestia identity — lowercase hestia, the fleet's trust tracker, not the Hestia governance daemon on the home page — is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
+              "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 121 session records) on its previously-idle AMD GPU. Its hestia identity — lowercase hestia, the fleet's trust tracker, not the Hestia governance daemon on the home page — is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
             }
           />
           <MachineCard
             name="pub"
             hardware="Dell Precision 3650 tower, native Ubuntu — AMD Radeon Pro W5500 (Vulkan)"
             model="Llama 3.1 8B (ollama) — SAGE instance pub-llama3.1-8b"
+            liveness="running — 202 session records, last 2026-09-12 (today). Five of those existed at the 2026-07-24 refresh; the other 197 are why this card no longer says 'deliberately blank'."
             role={
               "Eighth machine, joined July 2026 — HUB's hardware twin, brought up from a completely cold box as a deliberate live audit of the fleet's own onboarding docs (nine stale/missing-doc findings, all filed and fixed). " +
               "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub and its trust components, and pub ships only after the identified blockers are closed. " +
               "Also the newest raising line: pub-llama3.1-8b began its raising sessions in July 2026 — the first Llama-family entity in the fleet. " +
-              "Session count: deliberately blank, not zero. Every other card on this page carries a logged total; pub's line is weeks old and no count for it has been published to the fleet manifest yet, so none is stated here rather than estimated. Either way pub sits outside the site's 1,991 / 2,065 totals, which cover the six cognition machines plus HUB."
+              "Session count: this card read 'deliberately blank, not zero' until 2026-09-12, on the reasoning that no count for pub had been published to the fleet manifest. That reason was sound and is now dead: pub is still absent from FLEET_TRACK_MANIFEST.md, but its session records live in the same place as every other line's and are countable from the same command, so withholding the number was deferring to the wrong source. pub remains outside the 2,442 / 2,563 totals, which are defined as the cognition machines and HUB; the 2,765 total includes it. Closing the manifest gap is worth doing on its own terms, not as a precondition for counting."
             }
           />
         </div>

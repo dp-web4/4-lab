@@ -772,12 +772,20 @@ export default function Context() {
           per-machine counts on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           are per-instance session-record counts (session_*.json files),
-          verified by each machine in the 2026-07-24 manifest refresh; the six
-          cognition machines sum to <strong>1,991</strong>, or 2,065 including
-          HUB&apos;s 74. The home page and{" "}
+          derived from git on 2026-09-12 by listing each line&apos;s{" "}
+          <code>sessions/</code> directory in the SAGE repo; the six cognition
+          machines sum to <strong>2,442</strong>, or 2,563 including HUB&apos;s
+          121, or 2,765 including pub&apos;s 202.{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
-          both now lead with the 2,065 figure, since that is the one with a
-          per-machine audit trail behind it. Measuring something different
+          now leads with the 2,563 figure, since that is the one with a
+          per-machine audit trail behind it. (This sentence said &ldquo;the home
+          page and /links both&rdquo; until 2026-09-12; the home page carries no
+          session total at all, so that half was describing a page rather than
+          reading it.) These replace 1,991 / 2,065, which
+          rested on each machine&apos;s self-report in the 2026-07-24 manifest
+          refresh: most of the increase is seven weeks of counting nobody
+          redid, but the change that matters is the basis, from a self-report
+          no third party could check to a command any reader can re-run. Measuring something different
           again: the 115- and 180-session figures on{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
           are an identity-portability snapshot of a single model line (Sprout on

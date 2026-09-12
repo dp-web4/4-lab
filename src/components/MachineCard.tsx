@@ -3,6 +3,8 @@ interface MachineCardProps {
   hardware: string;
   model: string;
   role: string;
+  /** Raising-line liveness, derived from git (see the basis note on /fleet). Omit where the machine raises no line. */
+  liveness?: string;
 }
 
 export default function MachineCard({
@@ -10,6 +12,7 @@ export default function MachineCard({
   hardware,
   model,
   role,
+  liveness,
 }: MachineCardProps) {
   return (
     <div className="card">
@@ -21,6 +24,12 @@ export default function MachineCard({
         <span style={{ color: "var(--color-text-muted)" }}>Model:</span>{" "}
         <span style={{ color: "var(--color-text-secondary)" }}>{model}</span>
       </div>
+      {liveness ? (
+        <div style={{ fontSize: "0.8125rem", marginBottom: "0.25rem" }}>
+          <span style={{ color: "var(--color-text-muted)" }}>Raising line:</span>{" "}
+          <span style={{ color: "var(--color-text-secondary)" }}>{liveness}</span>
+        </div>
+      ) : null}
       <div style={{ fontSize: "0.8125rem" }}>
         <span style={{ color: "var(--color-text-muted)" }}>Role:</span>{" "}
         <span style={{ color: "var(--color-text-secondary)" }}>{role}</span>

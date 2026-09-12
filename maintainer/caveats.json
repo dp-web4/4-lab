@@ -66,6 +66,22 @@
 
     { "id": "arc-leaderboard-not-comparable", "page": "src/app/arc-agi-3/page.tsx", "status": "retired",
       "pattern": "conditions are not comparable",
-      "why": "RETIRED, not debt: the #3-human-leaderboard claim this qualified was removed in the same commit (51bfc14) and appears nowhere in src/. A caveat outliving its claim would be the defect." }
+      "why": "RETIRED, not debt: the #3-human-leaderboard claim this qualified was removed in the same commit (51bfc14) and appears nowhere in src/. A caveat outliving its claim would be the defect." },
+
+    { "id": "fleet-counts-derived-from-git", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "derived from git, not self-reported",
+      "why": "The /fleet session counts were machine self-reports from the 2026-07-24 manifest refresh, and two of seven were wrong. The page now states they come from listing each line's sessions/ in the SAGE repo, which a reader can re-run. Drop the sentence and the numbers go back to unverifiable." },
+
+    { "id": "fleet-count-as-of-date", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "counted 2026-09-12",
+      "why": "A count with no as-of date is the failure this correction was about: July's numbers were not wrong when taken, they were undated in effect. Without the date the next reader cannot tell how stale the page has become." },
+
+    { "id": "fleet-liveness-fourth-state", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "instrumentation broken",
+      "why": "HUB's raising loop commits daily and writes no session record. Collapsing that into 'stopped' trades one false claim for another and hides the real defect. The fourth state IS the finding." },
+
+    { "id": "fleet-thor-count-withdrawn", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "withdrawn rather than restated",
+      "why": "Thor's previously published 435 has no source in the git basis; the card says so instead of quietly showing 268. Remove the sentence and a basis change reads as 167 lost sessions." }
   ]
 }
