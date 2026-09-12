@@ -88,6 +88,18 @@
       "pattern": "Match the prefix, not the whole subject",
       "why": "The published liveness test quotes a commit subject that carries a trailing ISO timestamp. Without this clause a reader who exact-matches gets 0 on every line including HUB, and the test contradicts the 165 printed beside it. A derivation that cannot be re-run is the defect this page exists to avoid." },
 
+    { "id": "fleet-liveness-test-subject-independent", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "vocabulary whitelist",
+      "why": "Every subject-keyed form of the liveness test scores 0 on lines it never examined: the page's original spelling was HUB's alone, and at least fifteen subject shapes write session records here. Re-keying the test on a subject — even on three conventions instead of one — restores a clean field that is an artifact of its own construction. The test must read what a commit CHANGED." },
+
+    { "id": "fleet-liveness-noise-floor-stated", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "the cost of not reading subjects",
+      "why": "Read subject-independently, ten of twenty-four lines have unrecorded fires, not two. Filtering the eight provisioning/migration rows away would report exactly the two outliers and again be reporting the test's construction rather than its result. The floor is published so the discrimination is visibly by magnitude." },
+
+    { "id": "fleet-sprout-import-not-heartbeat", "page": "src/app/fleet/page.tsx", "status": "present",
+      "pattern": "an import event was being read as a heartbeat",
+      "why": "All 661 sprout-qwen3.8-distill-2b session records entered origin/main in one merge on 2026-09-05, as new files session_001..661. This page read that date as 'running, last 2026-09-05'. Restoring a recency claim on that path would reinstate the exact defect — a description standing in for a property — on the number used to assign the card's state." },
+
     { "id": "fleet-e4b-fired-not-unprovisioned", "page": "src/app/fleet/page.tsx", "status": "present",
       "pattern": "not an unprovisioned instance",
       "why": "legion-gemma4-e4b holds zero session records, which reads as 'never set up'. The record says otherwise: 283 Session 0 fires over four months, writing peer_trust_rs.json and nothing else. Collapsing that back to 'unprovisioned' would hide a second site of HUB's defect." }
