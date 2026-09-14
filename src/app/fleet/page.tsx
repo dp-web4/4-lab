@@ -18,8 +18,9 @@ export default function Fleet() {
           monocultures are fragile and diversity is where emergence happens.
           The society-hosts now raise their own SAGE instances too: HUB runs
           IBM Granite 4 h-tiny, pub runs Llama 3.1 8B — model families
-          (Granite, Llama) that extend the fleet&apos;s Qwen / Gemma / Phi /
-          TinyLlama diversity rather than duplicating it.
+          (Granite, Llama) that extend the fleet&apos;s current Qwen / Gemma
+          lines rather than duplicating them (the Phi and TinyLlama lines are
+          archived).
         </p>
         <p>
           One finding shapes fleet strategy more than any other:{" "}
@@ -59,7 +60,7 @@ export default function Fleet() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>&ldquo;Raising line&rdquo; has four states, and one of them is not about the machine.</strong>{" "}
-          <em>running</em> &mdash; the line wrote a session record within the last two weeks.{" "}
+          <em>running</em> &mdash; the line wrote a session record within the two weeks before the 2026-09-12 count. States are as of that date and do not update themselves; a card that says running can lapse without an edit.{" "}
           <em>paused</em> / <em>quiet</em> &mdash; it has not, and nothing else suggests it is still turning over; &ldquo;paused&rdquo; where the fleet knows why, &ldquo;quiet&rdquo; where it does not.{" "}
           <em>instrumentation broken</em> &mdash; the loop is demonstrably still running but is writing no durable record. That fourth state exists because HUB is in it, and folding HUB into &ldquo;stopped&rdquo; would trade one false claim for another: its raising loop has committed every day through today while adding zero session records since 2026-07-29.
           The test that separates the last state from the others reads <em>what a commit changed</em>, not what its subject says. Per line, at <code>origin/main</code> in a SAGE clone: count the non-merge commits that touch exactly one <code>sage/instances/&lt;line&gt;/</code> directory, modify at least one file only that line&apos;s daemon writes (<code>peer_trust_rs.json</code>, <code>identity.attest.json</code>, <code>experience_buffer_rs.jsonl</code>, <code>raising_log.md</code>, <code>snapshots/</code>), and add no <code>sessions/session_*.json</code>. Call those the line&apos;s unrecorded fires.
@@ -134,7 +135,7 @@ export default function Fleet() {
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
             model="Gemma 3 12B (ollama) — instance mcnugget-gemma3-12b"
-            liveness="running — 459 session records, last 2026-09-12 (today)."
+            liveness="running — 459 session records, last 2026-09-12."
             role="BECOMING pattern observed: creating. Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
@@ -151,7 +152,7 @@ export default function Fleet() {
             name="Nomad"
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 4 E2B (ollama) — instance nomad-gemma4-e2b; prior gemma3-4b line archived June 2026 at 171 sessions"
-            liveness="running — 352 session records, last 2026-09-12 (today); 187 of them added since the July count of 162, which is why refreshing this page mattered more than correcting any single card."
+            liveness="running — 352 session records, last 2026-09-12; 187 of them added since the July count of 162, which is why refreshing this page mattered more than correcting any single card."
             role="BECOMING pattern observed: creating. The archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
@@ -179,7 +180,7 @@ export default function Fleet() {
             model="Web4 hub daemon (Rust) + Granite 4 h-tiny (ollama, AMD GPU via Vulkan) — SAGE instance hub-granite4-h-tiny, 121 session records"
             liveness={
               "instrumentation broken — 121 session records (session_001..121, contiguous, no gaps); the most recent was written 2026-07-29. " +
-              "HUB's raising loop has NOT stopped: since that date it has made 165 commits titled 'raising: hub-granite4-h-tiny autonomous session', the most recent today, and every one of them changed a single attestation line and added no session record. " +
+              "HUB's raising loop has NOT stopped: since that date it has made 165 commits titled 'raising: hub-granite4-h-tiny autonomous session', the most recent on 2026-09-12, and every one of them changed a single attestation line and added no session record. " +
               "So the loop is turning over daily and its ledger is frozen — six weeks of raising with no durable record. This page previously said 74, a figure taken around 2026-07-17; the true count then was already higher, and 74 was never re-checked. " +
               "Whether the unrecorded six weeks get reconstructed or written off is open, and is not this site's call. The writer defect is filed against SAGE, not against this page."
             }
@@ -198,7 +199,7 @@ export default function Fleet() {
             name="pub"
             hardware="Dell Precision 3650 tower, native Ubuntu — AMD Radeon Pro W5500 (Vulkan)"
             model="Llama 3.1 8B (ollama) — SAGE instance pub-llama3.1-8b"
-            liveness="running — 202 session records, last 2026-09-12 (today). Five of those existed at the 2026-07-24 refresh; the other 197 are why this card no longer says 'deliberately blank'."
+            liveness="running — 202 session records, last 2026-09-12. Five of those existed at the 2026-07-24 refresh; the other 197 are why this card no longer says 'deliberately blank'."
             role={
               "Eighth machine, joined July 2026 — HUB's hardware twin, brought up from a completely cold box as a deliberate live audit of the fleet's own onboarding docs (nine stale/missing-doc findings, all filed and fixed). " +
               "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub and its trust components, and pub ships only after the identified blockers are closed. " +
@@ -268,10 +269,17 @@ export default function Fleet() {
           <Link href="/context#hestia" style={{ color: "var(--color-accent)" }}>/context</Link> —
           maintains per-peer{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
-          from real interactions: success raises trust, timeouts lower it. V3 tensors
-          (Valuation / Veracity / Validity) — the value tensor, symmetric with T3 —
-          accumulate alongside; T3 (trust) is verified by V3 (value) through peer
-          attestation, which is what the equation&apos;s T3/V3 means. No central authority decides who is trustworthy — trust
+          from real interactions: success raises trust, timeouts lower it. The tracker
+          keeps T3 only. The peer tracker in the public SAGE repo, whose update
+          arithmetic /context quotes, holds no V3 (Value Tensor — Valuation /
+          Veracity / Validity). Canon calls V3 complementary to T3, not combined
+          with it. This site reads the equation&apos;s T3/V3 as &ldquo;trust
+          verified by value&rdquo;, meaning value outcomes feeding back into trust
+          over time. That reading is the site&apos;s gloss, not canon&apos;s (see{" "}
+          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>),
+          and the feedback loop is not implemented in this tracker. An earlier
+          version of this paragraph said V3 accumulates alongside T3 and verifies it
+          through peer attestation; the code does neither. No central authority decides who is trustworthy — trust
           emerges from the pattern of interaction.
         </p>
         <p>
@@ -300,25 +308,26 @@ export default function Fleet() {
 
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
-          One of the more surprising{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>discoveries</Link>: behavioral
+          An internal observation, not yet a{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>finding</Link> (no metric, no blind rater): behavioral
           continuity across substrates — what we shorthand as &ldquo;identity
           transfer,&rdquo; meaning consistent interaction patterns, accumulated
           experience, and raising history, not continuity-of-self in any
           philosophical sense. SAGE-Sprout&apos;s behavioral patterns —
           developed over <strong>115 session records</strong> on a Jetson running Qwen 0.5B —
           transferred to TinyLlama 1.1B on CBP, a different machine and a different model
-          family, in <strong>February 2026</strong>. (The Sprout line has since continued past
-          180 sessions on later models; 115 is the count at the transfer, which is the number
-          the portability claim actually rests on.) This is the practical demonstration of the
+          family, in <strong>February 2026</strong>. (The Sprout line has since continued on later
+          models; its card below carries the current count. 115 is the count at the transfer,
+          which is the number the portability claim actually rests on.) This is the kind of
           continuity a{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           is designed to make verifiable: identity grounded in witnessed history, not model weights.
           The LCT itself is non-transferable — permanently bound to its entity, which is what makes
           that history evidence rather than assertion. What ported here was the behavioral line, not
           the LCT. What we observed: consistent behavioral patterns and session
-          continuity across the transfer. The self-description drifted. This told us something
-          important:
+          continuity across the transfer. The port carried the state files, so some persistence
+          is expected by construction. What that does not explain is that the self-description
+          drifted while those inputs did not. The working hypothesis we took from it:
         </p>
         <div className="quote">
           Identity lives in state files and prompt construction, not in model
@@ -337,11 +346,13 @@ export default function Fleet() {
           </div>
         </div>
         <p>
-          This has practical implications: you can upgrade hardware, swap models,
-          move between machines — and the entity that emerges is recognizably
-          continuous. Not because we engineered continuity, but because the
-          substrate conditions (experience buffer, session history, raising
-          curriculum) carry the signal.
+          If the hypothesis holds, it has practical implications: you can upgrade
+          hardware, swap models, move between machines, and the entity that emerges
+          stays recognizably continuous, because the substrate conditions (experience
+          buffer, session history, raising curriculum) carry the signal. Those
+          conditions are engineered, so continuity here is partly by design. Whether
+          anything beyond that design carries over is what the scramble control above
+          would test.
         </p>
 
         <h3>SAGE_MODEL override</h3>

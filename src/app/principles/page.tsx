@@ -141,8 +141,10 @@ export default function Principles() {
             <div className="principle-text">
               <em style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>p_crit = the critical coherence threshold derived in the Synchronism framework.</em>{" "}
               Failed experiments are signal. The coupling-coherence experiment
-              showed that trust thresholds are empirical, not derivable from
-              first principles. That&apos;s a finding, not a failure. We
+              showed that <em>this</em> derivation of a trust threshold failed, by
+              400x. It did not show that no derivation can work. We now treat
+              trust thresholds as empirical until a derivation survives contact
+              with data. That is a result, not a failure. We
               document what didn&apos;t work alongside what did. Honest
               assessment pages ship with every{" "}
               <Link href="/links" style={{ color: "var(--color-accent)" }}>explainer site</Link>.

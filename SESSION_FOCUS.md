@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-11*
+*Last updated: 2026-09-14*
 
 ---
 
@@ -18,6 +18,8 @@
 
 ## Recent Updates
 
+2026-09-14 maintainer: zero expansion drift (sixth pass). The single HIGH was a **recurrence**: V3-as-recharge-gate / "T3 and V3 verify each other", withdrawn on /context 09-11, was still live on /autonomy, twice on /context, on /fleet and on /raising. /fleet also claimed V3 "accumulates alongside" T3 in the peer tracker, but `SAGE/sage/federation/peer_trust.py` is T3-only, so that was a false mechanism, not a gloss. **New failing check:** `maintainer/check-withdrawn.py` runs every retracted reading (13, in `caveats.json` `withdrawn`) against rendered HTML (source grep missed a JSX-split instance). It found 7 live on the pre-fix build and 0 after, and is now wired into `check-caveats.sh`, the run script and maintainer CLAUDE.md. The 09-12 caveat check had been invoked by nothing. MEDIUMs fixed: witness stake + slashing, Delegation → Hestia, oversight-note carve-out, Home "running"/"independent", /fleet "(today)" and identity-portability-as-discovery, /raising comparator, /arc-agi-3 un-ablated lesson, Principle 6 universal, "discovers the equations", /autonomy "fixed within one cycle". The 09-13 run died on usage credits with no log.
+
 2026-09-11 maintainer: zero expansion drift (fifth pass). One HIGH, fixed: `/projects` called the web4 repo "a specification — no runnable demo", two months after `web4-core` shipped to crates.io and PyPI. Now states published packages + Hub reference daemon, and the quick start gained transcribed install lines. **Semantic drift against canon/spec, fixed in four places, not three:** the site had V3/Valuation as the *gate* on ADP→ATP recharge. Spec `charge_atp` validates a society value proof first and updates T3/V3 afterward; canon names no tensor. The visitor cited `/context`'s ATP/ADP section as the correct version. It carried the same reversal ("V3 … is the certification"), found only by grepping every instance. Also: `/context` Society row gave the fleet as the definition *and* claimed Society is not in CANONICAL_TERMS_v1 (it is, with a definition). SAGE loop step "oversee" → SAGE's own "govern" (the governance→oversight rule had been applied to another project's term). Merged the two disagreeing quick starts into one on `/projects`. Curriculum phases vs BECOMING patterns: the visitor said "phase-appropriate" refers to nothing. SAGE's `raising/PLAN.md` has real curriculum phases, so the defect was two things sharing names, now distinguished. Plus `/raising` interpretation-vs-finding repairs (bilateral generation, identity is/says), attractor/substrate linked on `/principles`, session-record noun, `/glossary` redirect, dated `/autonomy` figures. Committed visitor pass 2's own term-table fix separately after checking it against canon.
 
 2026-09-10 maintainer: config tables corrected against canon (T3/V3 = Trust/Value Tensor; R6 arrow; R7 its own canonical row); fleet Step 0 polarity reversed (manifest is a stale reader); quick-start provenance claims repaired (SAGE README has no setup section; ACT has no README); `<h1>` on all pages; composed autonomy risk stated once on `/autonomy`.
@@ -32,7 +34,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-11. Zero expansion drift across 9 pages (visitor passes 1–3, Pass 3 against canon directly).
+Last maintainer session: 2026-09-14. Zero expansion drift across 9 pages (visitor passes 1–3, Pass 3 against canon directly).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
@@ -62,7 +64,7 @@ Key terms — all currently CORRECT on site:
 
 ## Fleet State Sync Status
 
-`/fleet` is the source of record: 8 machines (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub), July 2026 cutovers, session counts from the 2026-07-24 fleet refresh. The SAGE manifest is stale (last write 2026-03-08, 6 machines). **Operator:** repair the manifest writer or retire the manifest — seventh consecutive report.
+`/fleet` is the source of record: 8 machines (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub), July 2026 cutovers, session counts from the 2026-07-24 fleet refresh. The SAGE manifest is stale (last write 2026-03-08, 6 machines). **Operator:** repair the manifest writer or retire the manifest — eighth consecutive report.
 
 ---
 

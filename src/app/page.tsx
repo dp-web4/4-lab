@@ -43,9 +43,10 @@ export default function Home() {
           </div>
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginTop: "0.75rem" }}>
-          Of these, the eight running instances are enumerated per machine on{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> — that page
-          is the checkable version of these numbers. The configured-instance census is not.
+          Of these, the eight instances with raising history are enumerated per machine on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>. Not all eight
+          are currently running: that page assigns each line a dated state (running, quiet,
+          paused, instrumentation broken) and is the checkable version of these numbers. The configured-instance census is not.
         </p>
 
         <h2>What is being built</h2>
@@ -127,7 +128,9 @@ export default function Home() {
               <h3>Heterogeneous fleet</h3>
               <p>
                 Edge devices, laptops, workstations and society hosts run different
-                model families and act as independent implementation and review seats.
+                model families for SAGE research. The tracks that write and audit
+                this site share model families with each other, so review here is
+                not yet independent (/autonomy names that limit).
               </p>
             </div>
           </Link>

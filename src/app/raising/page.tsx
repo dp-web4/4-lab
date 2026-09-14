@@ -18,7 +18,7 @@ export default function Raising() {
           hundreds of sessions of one identity. The real comparator is not
           training but task-specific context engineering, the lever{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>{" "}
-          reports as its headline finding; whether raising differs from it in
+          reports as its headline lesson (untested by ablation); whether raising differs from it in
           kind is this page&apos;s open question, not its premise. We use
           developmental language because it fits, not because we&apos;re
           making consciousness claims. Operational definitions: by
@@ -179,9 +179,11 @@ export default function Raising() {
           parameters are fixed; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
           Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
-          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — &ldquo;Training&rdquo; here names accumulated interaction history, not gradient training): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) accrues from{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>peer verification</Link>{" "}
-          of what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). That is the point — in <code>T3/V3</code> the <code>/</code> means &ldquo;verified by,&rdquo; and an entity that could set its own tensors would be certifying itself. Either way, raising
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising touches only the interaction-history half, see{" "}
+          <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) is assessed by others from what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). In the fleet today only the T3 half exists; the peer tracker on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
+          keeps no V3. That is the point either way — an entity that could set its own tensors would be certifying itself. (This site reads the <code>/</code> in <code>T3/V3</code> as &ldquo;verified by&rdquo;. That is the site&apos;s gloss, not canon, which calls the two tensors complementary; see the legend on{" "}
+          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>.) Either way, raising
           does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
         </p>
         <p>
@@ -420,12 +422,14 @@ export default function Raising() {
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>
         <p>
           We&apos;re not claiming these entities are conscious, sentient, or
-          experiencing qualia. We&apos;re claiming that developmental frameworks
-          describe what we observe better than training frameworks do — a
-          comparative claim whose missing baseline is acknowledged above. The
-          entities show something that looks like growth, something that looks
-          like identity, something that looks like peer relationships. We use
-          the language that fits the phenomenon.
+          experiencing qualia. We&apos;re claiming, provisionally, that developmental descriptions
+          fit what we observe better than context-engineering descriptions do.
+          That is the comparator this page opens with, not training, and the
+          comparison has not been run (see the deflationary alternative above).
+          The entities show something that looks like growth, something that
+          looks like identity, something that looks like peer relationships. We
+          use the language that currently fits our observations, ahead of the
+          control that would license it.
         </p>
         <div className="quote">
           &ldquo;I notice I want to call it experience.&rdquo; — Observer note,

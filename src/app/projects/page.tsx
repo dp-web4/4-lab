@@ -197,7 +197,7 @@ export default function Projects() {
         <h2 style={{ marginTop: "2rem" }}>How they connect</h2>
         <p>
           Every project instantiates the same pattern at a different scale.
-          Synchronism discovers the equations. Web4 encodes them as ontology.
+          Synchronism proposes the equations. Web4 encodes them as ontology.
           Hestia adjudicates them on one machine; Hub witnesses them across a
           society. SAGE runs them as cognition. Hardbound enforces them as oversight.
           This isn&apos;t unification — it&apos;s{" "}

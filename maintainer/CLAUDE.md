@@ -103,9 +103,20 @@ The visitor log includes a **Terminology Drift Summary** in the cross-persona sy
 
 - Edit source files in `../src/` (Next.js App Router, TypeScript, Tailwind)
 - Navigation source of truth: `../src/lib/navigation.ts`
-- Test locally: `cd .. && npx next build` (must pass with zero errors)
+- Test locally: `cd .. && npx next build && bash maintainer/check-caveats.sh` — both must pass.
+  The second checks two things. Protected caveats must still be present on their page
+  (`caveats` in `caveats.json`). Withdrawn readings must be absent from every **rendered** page
+  (`withdrawn` in `caveats.json`, via `check-withdrawn.py`, which reads `.next/` HTML, so build first).
+- **When you withdraw a reading, add a `withdrawn` entry in the same commit.** A pattern for the dead
+  claim, an `unless` for its own withdrawal note and negations, and the source that refutes it.
+  Before committing, confirm the pattern would have caught the old rendering, and review
+  `check-withdrawn.py --show-exempt`. Why: on 2026-09-11 V3-as-recharge-gate was withdrawn in
+  one glossary row and stayed live on four other pages for three days. A withdrawal that is only
+  prose is page-local. Source grep is not enough either: one instance was split across a JSX `<Link>`.
 - Prefer small, focused changes
 - When fixing terminology: search ALL source files for the wrong term, not just the flagged instance
+- When fixing a **mechanism** claim (what X does, what gates what, what exists in the fleet): grep for
+  the mechanism, not the flagged phrasing, and check the code or spec that would implement it
 
 ```bash
 # Example: find all instances of a drifted term

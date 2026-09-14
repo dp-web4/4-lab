@@ -103,5 +103,32 @@
     { "id": "fleet-e4b-fired-not-unprovisioned", "page": "src/app/fleet/page.tsx", "status": "present",
       "pattern": "not an unprovisioned instance",
       "why": "legion-gemma4-e4b holds zero session records, which reads as 'never set up'. The record says otherwise: 283 Session 0 fires over four months, writing peer_trust_rs.json and nothing else. Collapsing that back to 'unprovisioned' would hide a second site of HUB's defect." }
+  ],
+  "withdrawn": [
+    {"id": "v3-gates-recharge", "withdrawn": "2026-09-11", "pattern": "against V3\\b|V3\\b[^.]{0,60}-validated|Valuation gates|V3 (is|as) (the )?(gate|certifier)|V3[^.]{0,20}reaches across", "unless": "NOT the gate|does not gate|not its certifier|earlier version|withdrawn|does not certify|never before", "why": "Spec charge_atp: the society validates a value proof, converts ADP to ATP, THEN updates T3/V3. Canon names no tensor. V3 records the outcome; it does not gate recharge. Found live in 4 places on 09-14 after the 09-11 withdrawal."},
+
+    {"id": "t3-v3-verify-each-other", "withdrawn": "2026-09-14", "pattern": "T3 and V3 (are )?(verified|checked) against each other|T3 and V3 verify each other|T3[^.]{0,160}checked against its V3", "unless": "not a claim that|neither tensor", "why": "Canon: complementary, not combined. Spec t3-v3-tensors.md s.4 couples them both ways (T3 predicts V3; V3 outcomes feed T3). Neither is a verification of one against the other, and there is no pre-action T3-vs-V3 check."},
+
+    {"id": "v3-verifies-t3-via-peer-attestation", "withdrawn": "2026-09-14", "pattern": "verified by V3 \\(value\\) through peer attestation|V3 tensors[^.]{0,80}accumulate alongside|V3[^.]{0,80}accrues from peer verification", "unless": "earlier version", "why": "The SAGE peer trust tracker (sage/federation/peer_trust.py) holds T3 only. No V3 exists in the fleet tracker, and no attestation step verifies T3 by V3."},
+
+    {"id": "lct-portable-identity", "withdrawn": "2026-09-14", "pattern": "portable identity", "unless": "earlier version|not a portable|rather than", "why": "Canon binds an LCT permanently to one entity; /context's LCT row says non-transferable. 'Portable identity' in the worked example contradicted both."},
+
+    {"id": "arc-24-of-25", "withdrawn": "2026-09-09", "pattern": "\\b24 ?(/|of) ?25\\b|96\\.0 ?%", "unless": "earlier|previously|was wrong|corrected", "why": "Published ARC scorecard: total_environments_completed 23 of 25 (92.0%), 175 of 183 levels. 24/25 (96.0%) was wrong on five pages."},
+
+    {"id": "web4-no-runnable-demo", "withdrawn": "2026-09-11", "pattern": "no runnable demo", "unless": "earlier|previously|no longer", "why": "web4-core 0.3.0 is published on crates.io and PyPI and the Hub reference daemon lives in the repo."},
+
+    {"id": "delegation-instance-is-atp", "withdrawn": "2026-09-14", "pattern": "closest thing on this site is the budget", "unless": "earlier version", "why": "ATP allocates resource, not authority. Canon's Delegation grants authority; Hestia's delegate grant/revoke is the instance."},
+
+    {"id": "fleet-independent-review-seats", "withdrawn": "2026-09-14", "pattern": "independent implementation and review seats", "unless": "not yet independent", "why": "The tracks that write and audit the site share model families (/autonomy's correlated-auditor limit); /context says no external or blinded check exists."},
+
+    {"id": "synchronism-discovers-equations", "withdrawn": "2026-09-14", "pattern": "Synchronism discovers the equations", "unless": "", "why": "Stated flat beside a 400x failed derivation. Synchronism proposes; nothing here has been validated."},
+
+    {"id": "loop-fixes-within-one-cycle", "withdrawn": "2026-09-14", "pattern": "fixed reliably within one cycle", "unless": "not reliably within one cycle", "why": "Unmeasured, and contradicted by the 08-12..09-04 gap and by V3-as-gate living 3 days on 4 pages after withdrawal."},
+
+    {"id": "identity-portability-as-discovery", "withdrawn": "2026-09-14", "pattern": "surprising discover|Not because we engineered continuity", "unless": "", "why": "/raising calls persistence across a port that carries the state files partly true by construction and untested; the scramble control has not run."},
+
+    {"id": "thresholds-not-derivable-universal", "withdrawn": "2026-09-14", "pattern": "trust thresholds are empirical, not derivable", "unless": "", "why": "One failed derivation shows that derivation failed, not that none can succeed."},
+
+    {"id": "fleet-dated-today", "withdrawn": "2026-09-14", "pattern": "2026-\\d\\d-\\d\\d \\(today\\)|the most recent today", "unless": "", "why": "A page can't know when it is read. '(today)' on a 2026-09-12 count was two days stale when the visitor read it on 09-14."}
   ]
 }

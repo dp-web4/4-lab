@@ -275,11 +275,14 @@ export default function Autonomy() {
           is the bookkeeping record that makes autonomous operation auditable. Note
           the scope: what runs here is the <em>issue-and-discharge half</em> of the
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
-          recharges ADP back to ATP against{" "}
-          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
-          (Value Tensor — Valuation / Veracity / Validity)-validated value creation (see{" "}
+          recharges ADP back to ATP when the society validates a proof of the value
+          the spend created (see{" "}
           <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
-          this track registry implements the accounting, not the recharge gate.
+          only after that conversion is the producer&apos;s{" "}
+          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
+          (Value Tensor — Valuation / Veracity / Validity) updated &mdash; V3 records the
+          outcome, it does not gate the recharge (specification: <code>charge_atp</code> in
+          atp-adp-cycle.md). This track registry implements the accounting, not the recharge.
           In canon&apos;s action grammar, the loop this paragraph describes is{" "}
           <Link href="/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
           (R6 + Reputation), not bare{" "}
@@ -287,7 +290,7 @@ export default function Autonomy() {
           the outcome is attributed to a machine&apos;s LCT and is meant to feed trust
           evolution. The distinction is not cosmetic: what the registry actually
           implements is the R6 half. The reputation back-propagation that would make
-          it R7 is the same missing piece as the recharge gate.
+          it R7 is the same missing piece as the recharge validation.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Honest assessment</h2>
@@ -295,7 +298,16 @@ export default function Autonomy() {
         <p>
           Broken links, stale content, confusing jargon, navigation dead ends,
           missing context for newcomers, inconsistencies between pages. These
-          get fixed reliably within one cycle.
+          are the classes the loop handles best. They are usually fixed in the
+          next maintainer session, when one runs, but not reliably within one
+          cycle, and nobody has measured cycles-to-close. Two counterexamples are
+          on record. No maintainer session logs exist from 2026-08-12 through
+          2026-09-04 (disclosed above), and the 2026-09-13 session ran out of
+          usage credits before doing any work. A reading the glossary withdrew on 2026-09-11 (V3 as the gate on
+          recharge) also stayed live on four other pages until 2026-09-14. Since
+          that date a withdrawn-readings check, part of the maintainer&apos;s
+          pre-push checks, runs every retracted claim against every rendered page. That check keeps a fixed inconsistency fixed; it
+          does not make first fixes faster.
         </p>
         <h3>What it misses</h3>
         <p>

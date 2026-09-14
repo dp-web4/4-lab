@@ -68,7 +68,7 @@ export default function Context() {
                 ["substrate", "Substrate", "—", "A word this site uses in four senses, listed because two of them used to contradict each other. (1) Conditions for emergence — /principles #1 (\u201csubstrate, not structure\u201d) and /raising: the context, memory and affordances provided to an agent, which is what raising shapes. (2) The semantic graph Web4 lives on — RDF, row below. Web4 is an ontology that sits ON a substrate; it is not itself one, and a page calling Web4 \u201cthe open substrate\u201d is drift (found and corrected on the home page, 2026-09-09). (3) The physical machine or hardware an agent runs on — /fleet's \u201ccontinuity across substrates\u201d. (4) Synchronism's substrate rule — the replacement transfer equation in that project's physics arc, unrelated to the three above. Deliberately NOT used here: the machine-learning sense of substrate for frozen model weights; the home page says weights. Senses (1), (3) and (4) are ordinary usage and are not governed by the Web4 term rules — only sense (2) is."], 
                 ["rdf", "RDF", "Resource Description Framework", "Knowledge as subject–predicate–object triples — the semantic graph substrate Web4's identity and trust structures live in."],
                 ["lct", "LCT", "Linked Context Token", "Verifiable digital presence that accumulates witnessed history — identity grounded in record, not model weights. Non-transferable: permanently bound to a single entity, which is what makes the accumulated history evidence rather than assertion. Read the expansion literally, because both words carry the definition: the token is an identity node LINKED into the RDF context graph — its edges to roles, societies, and prior acts ARE the identity, not metadata about it — and CONTEXT is what it is linked into, which is why the same entity presents different trust in different contexts rather than carrying one portable score. It is not a capability grant and it does not span a lifetime by construction; a token with no witnessed links is an empty identity."],
-                ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society."],
+                ["witness", "Witness / witnessed", "—", "An act or claim recorded by another entity, not just self-asserted. What makes an LCT's accumulated history evidence rather than assertion — see LCT above — and what a chapter ledger records: each member act signed and witnessed by the society. Canon's definition carries one more clause this row used to omit: 'Witnesses stake reputation on attestations' (CANONICAL_TERMS_v1). Staking is what makes a false attestation cost the witness something. The specification also defines ATP slashing for law violations, itself witnessed (atp-adp-cycle.md §2.4). Nothing described on this site implements either in the fleet today; see the threat model below."],
                 ["t3", "T3", "Trust Tensor", "Three-component trust tensor — root dimensions Talent / Training / Temperament. Canon expands T3 as \u201cTrust Tensor\u201d; the three dimensions are what it contains, not what the acronym stands for. each component is an RDF sub-graph root — canon's words are that each dimension is 'a root node in an open-ended RDF sub-graph, not a scalar' (CANONICAL_TERMS_v1), which is what makes T3 part of an ontology rather than a fixed data structure. Talent: aptitude for the role. Training: accumulated capability, HOWEVER it was accumulated — interaction history, curriculum, and weights-level provenance all count, so a fine-tune does move T3-Training. The ML sense of the word is a subset of this dimension, not an alternative to it. What is narrow is not T3-Training but raising, which acts on the interaction-history half only and never on weights (see /raising). Temperament: behavioral disposition under load."],
                 ["v3", "V3", "Value Tensor", "Three-component value tensor — root dimensions Valuation / Veracity / Validity. As with T3, the three dimensions are its contents, not its expansion. Canon's word for its relation to T3 is 'complementary, not combined' — T3 measures trust, V3 measures value, and together they form a 6-dimensional reputation space at the root level. Like T3, each component is an RDF sub-graph root with unbounded fractal depth. 'Complementary' is the structural relation between the two tensors; the '/' in T3/V3 is the separate, directional claim that trust is verified by value — which is why an entity does not set its own V3 (see /raising). Valuation: worth assessed. Veracity: claims truthful. Validity: reasoning sound — V3's tensor component, not the methodological sense (internal/external/construct validity) this page's evidence tiers below also use, same word unrelated meanings. V3 is NOT the gate on the ADP→ATP recharge named under ADP below. In the specification's charging procedure (atp-adp-cycle.md), what gates recharge is a proof of value creation that the society validates against its own charging rules; only after the conversion are the producer's T3/V3 updated, Valuation among them. V3 is an output of recharge, not its certifier. Canon's own wording (under R7) is just that ADP attestation feeds recharge validation, with no tensor named. Where V3 does reach the resource half is price: the tensor specification derives ATP costs from role-specific V3 expectations. (An earlier version of this row said Valuation gates the recharge and that V3 'reaches across the +' to adjudicate it. Neither canon nor the specification supports that, so it is withdrawn. The note stays so the reading is not reintroduced.)"],
                 ["mrh", "MRH", "Markov Relevancy Horizon", "Canon's definition, quoted: 'the boundary of what an entity can know or affect given its position, history, and context. Determines scope of relevance for decisions' (CANONICAL_TERMS_v1). The second sentence is the operative one — the horizon exists to fix what an entity should reason over when it decides, relevance at its scale rather than a raw inventory of everything it could touch. The lineage is the Markov blanket: the MRH specification describes itself as extending that information-theoretic idea to fractal scales, so 'can know or affect' is where the term comes from and 'relevant' is what Web4 does with it. (An earlier version of this row called canon's wording a first approximation that the row corrected; that overstated the difference, and the home page's card — which quotes canon — was right.) The load-bearing structural property is fractal composability: MRH is an open-ended RDF graph of typed associations in which a horizon contains sub-horizons and nests inside larger ones, which is what lets the same trust pattern instantiate at machine, track, and society scale — Principle 2 stands on exactly this property. “Markov” gestures at the conditional-independence idea (what's inside the horizon screens off what's beyond it) — design intent, not a proven formal property of current implementations."],
@@ -108,7 +108,7 @@ export default function Context() {
                 ["world-model", "World model", "—", "On this site: the harness's stored, human-readable description of a game's mechanics — sprites, rules, win conditions — decoded from play or source and retrieved by the solver on /arc-agi-3. Not the ML sense (a learned latent dynamics model trained to predict next states). The home page's 'reasoning from retrieved world models' uses the site sense."],
                 ["binding", "Binding", "—", "Canon: 'permanent attachment of identity to hardware or cryptographic proof. Irreversible.' The word 'bound' in the LCT row above is this sense."],
                 ["pairing", "Pairing", "—", "Canon: 'authorized operational relationship between entities. Revocable.' Distinct from binding by being reversible."],
-                ["delegation", "Delegation", "—", "Canon: 'granting limited authority with constraints (budget, time, scope). Instantly revocable.' The closest thing on this site is the budget- and scope-limited ATP issued to a track on /autonomy."],
+                ["delegation", "Delegation", "—", "Canon: 'granting limited authority with constraints (budget, time, scope). Instantly revocable.' The real instance on this site is Hestia's delegation (Home, /projects): its README describes a grant as scoped by role and action, signed, time-limited, and revocable, with grant / list / revoke commands. It carries no budget, and the README does not say revocation is instant. (An earlier version of this row pointed to the ATP issued to a track on /autonomy. That allocates resource, not authority, so it was the wrong instance.)"],
                 ["cartridge", "Cartridge", "—", "A swappable unit of semantic memory in Membot — the mechanism that lets a raising history move between machines."],
                 ["membot", "Membot", "—", "The cartridge server — the runnable project that mounts, serves, and searches cartridges for agents. Project card on /projects."],
               ].map(([id, term, expansion, def]) => (
@@ -169,8 +169,11 @@ export default function Context() {
           &ldquo;governance.&rdquo; What these systems actually do is
           oversight &mdash; watching, gating, and reverting actions &mdash; not
           deciding what should happen. The vocabulary was corrected lab-wide,
-          and Hardbound is described as an oversight suite everywhere on this
-          site. Names minted before the correction are retained where they are
+          and Hardbound is described as an oversight suite wherever its function
+          is described on this site. One deliberate carve-out: Hestia keeps
+          &ldquo;governance&rdquo;, because it adjudicates at the moment of the
+          act (Home, /projects). The rule binds Hardbound, which gates and
+          reverts. Names minted before the correction are retained where they are
           load-bearing: &ldquo;Governance&rdquo; in SAGE&apos;s name (kept
           across code, papers, and the ARC Prize benchmark) and the
           web4-governance repo slugs. No rename is planned — retention of
@@ -376,20 +379,27 @@ export default function Context() {
 
         <h3>Worked example: one action through the equation</h3>
         <p>
-          The primitives above aren&apos;t independent — they compose on every
-          single autonomous action. Take one maintainer-track commit, end to end:
+          The primitives above aren&apos;t independent — in the specification they
+          compose on every action. Take one maintainer-track commit, end to end,{" "}
+          <strong>as specified</strong>. Each step ends with what actually happens{" "}
+          <em>today</em>, because the example shows the terms composing; it does
+          not claim the composition is running.
         </p>
         <p>
-          The maintainer agent holds an <strong>LCT</strong> — its portable
-          identity, grounded in the session history it has accumulated, not in
-          which model happens to be running it. Before it acts, the track
-          declares an <strong>ATP</strong> (Allocation Transfer Packet) — the
-          resource budget for this session. The agent&apos;s <strong>T3</strong>{" "}
-          (Talent / Training / Temperament — has it done this kind of fix
-          reliably before?) is checked against its <strong>V3</strong>{" "}
-          (Valuation / Veracity / Validity — is this specific proposed change
-          accurate and well-reasoned?) — that&apos;s the <code>T3/V3</code>{" "}
-          &ldquo;verified by&rdquo; relationship. That check is scoped by{" "}
+          The commit is attributed to the machine&apos;s <strong>LCT</strong> — the
+          identity grounded in the history accumulated there, not in which model
+          happens to be running. An LCT is permanently bound to one entity, so it
+          does not travel with the agent to another machine. (<em>Today:</em> the
+          attribution is the machine&apos;s track-registry entry and git history;
+          see /autonomy.) Before it acts, the track declares an{" "}
+          <strong>ATP</strong> (Allocation Transfer Packet) — the resource budget
+          for this session. (<em>Today:</em> the track&apos;s budget and scope
+          entry in the registry, which /autonomy maps onto ATP.) A relying party
+          can weigh the agent&apos;s <strong>T3</strong> (Talent / Training /
+          Temperament — has it done this kind of fix reliably before?) as
+          evidence. The specification treats tensors as evidence, not verdicts,
+          and prescribes no threshold. (<em>Today:</em> no T3 is computed for
+          this track.) That weighing is scoped by{" "}
           <strong>MRH</strong> (Markov Relevancy Horizon) to what is relevant at
           this agent&apos;s scale — a maintainer session shouldn&apos;t reason
           about, or touch, repos outside its declared scope, even though the
@@ -399,12 +409,25 @@ export default function Context() {
           is shaped as an <strong>R6</strong> record: Rules (the terminology
           conventions in CLAUDE.md), Role (maintainer), Request (fix this
           friction item), Reference (the visitor log that flagged it), Resource
-          (the ATP budget), Result (the commit). Once the commit lands, an{" "}
+          (the ATP budget) → Result (the commit). Once the commit lands, an{" "}
           <strong>ADP</strong> (Allocation Discharge Packet) records what was
-          actually spent — closing the loop the ATP opened. Every step above is
-          logged to the{" "}
+          actually spent — closing the loop the ATP opened. <strong>V3</strong>{" "}
+          (Valuation / Veracity / Validity — was this change worth making,
+          accurate, and well-reasoned?) comes <em>after</em> the result, never
+          before it. When the society validates a proof of the value the change
+          created, the ADP recharges to ATP and the producer&apos;s T3/V3 are
+          updated from that outcome. Value outcomes feeding back into trust over
+          time is the specification&apos;s V3&nbsp;&rarr;&nbsp;T3 feedback, and it
+          is all this site&apos;s &ldquo;verified by&rdquo; gloss on{" "}
+          <code>T3/V3</code> refers to. It is not a pre-action comparison of the
+          two tensors. (<em>Today:</em> no recharge, no V3, and no reputation
+          back-propagation for this track — the R6 half only, per /autonomy.) In
+          the specification, every step is written to the society&apos;s{" "}
           <a href="#chapter-ledger" style={{ color: "var(--color-accent)" }}>chapter ledger</a>,
-          witnessed and signed. That&apos;s the equation, instantiated once.
+          witnessed and signed. (<em>Today:</em> this site documents no
+          chapter-ledger write for this track; the record is the registry, the
+          dated session logs, and git history.) That&apos;s the equation,
+          instantiated once on paper, with the running half marked.
         </p>
 
         <h3>ATP / ADP: resource allocation and accounting</h3>
@@ -455,9 +478,15 @@ export default function Context() {
           (Training), and its behavioral disposition (Temperament).
           V3 (Value Tensor — Valuation / Veracity / Validity) is the complementary three-component value structure:
           how much something is worth (Valuation), whether its claims are accurate
-          (Veracity), and whether its reasoning is sound (Validity). T3 and V3
-          are verified against each other — T3/V3 in the Web4 equation means
-          &ldquo;trust verified by value.&rdquo; Both bind to entity-role pairs via
+          (Veracity), and whether its reasoning is sound (Validity). Canon&apos;s
+          relation between them is &ldquo;complementary, not combined&rdquo;:
+          neither tensor is computed from, checked against, or gated by the
+          other. The specification couples them in both directions
+          (t3-v3-tensors.md §4): higher T3 is expected to correlate with better V3
+          outcomes, and V3 outcomes feed back into how T3 evolves. This
+          site&apos;s reading of the equation&apos;s <code>T3/V3</code> as
+          &ldquo;trust verified by value&rdquo; is a gloss on that second
+          direction, not canon (see the legend above). Both bind to entity-role pairs via
           RDF triples scoped by MRH. (&ldquo;Tensor&rdquo; here means a structured multi-component quantity — not a rank-≥2 array in the linear-algebra sense.)
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
@@ -503,7 +532,11 @@ export default function Context() {
           current model prices identity creation or requires a stake, and the fleet
           avoids the problem only because its membership is closed and its members
           are enrolled by the Sovereign, which is a deployment fact, not a property
-          of the ontology. <em>Collusion</em> &mdash; the self-report exclusion stops
+          of the ontology. What the ontology does specify is half an answer. Canon
+          says witnesses stake reputation on their attestations, and the ATP
+          specification defines witnessed slashing. Nothing described on this site
+          implements either, so the cost of false witnessing is specified, not
+          deployed. <em>Collusion</em> &mdash; the self-report exclusion stops
           an entity from vouching for itself, but two entities vouching for each
           other are, to the ledger, indistinguishable from two entities that
           genuinely worked well together; distinguishing them needs graph-level
@@ -630,7 +663,7 @@ export default function Context() {
           unification, and not scope inflation — pragmatic reuse of patterns that work
           at one scale, applied at every scale. When a principle governs enzyme
           binding and trust formation through the same kinetics, that kinetics is
-          fractal leverage. Synchronism discovers the equations; Web4 encodes
+          fractal leverage. Synchronism proposes the equations; Web4 encodes
           them as ontology; SAGE runs them as cognition; Hardbound enforces them
           as oversight. Same pattern at every layer. See{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.

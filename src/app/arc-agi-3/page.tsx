@@ -64,8 +64,11 @@ export default function ArcAgi3History() {
 
       <h2>Why it mattered</h2>
       <p>
-        The useful lesson was methodological rather than positional: changing the structure around an
-        unchanged model can materially change behavior. World models, persistent knowledge, explicit
+        The lesson we took was methodological rather than positional: changing the structure around an
+        unchanged model can materially change behavior. It is a lesson taken, not yet a result tested.
+        No ablation has run the same model without the harness, so the harness&apos;s independent
+        contribution is unknown (see{" "}
+        <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>). World models, persistent knowledge, explicit
         skills, prediction and verification became concrete engineering objects rather than prompt ideas.
       </p>
       <p>

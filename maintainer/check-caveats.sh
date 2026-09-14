@@ -42,4 +42,11 @@ printf '\n%d protected assertions hold, %d outstanding debt, %d retired' "$ok" "
 [ "$stale" -gt 0 ] && printf ', %d manifest entries stale' "$stale"
 echo
 [ "$fail" -eq 0 ] || echo $'\nA caveat this site committed to is gone. Restore it, or remove the manifest entry\nWITH a forum post — 4-lab/CLAUDE.md: "preserve honest assessments, never weaken caveats".'
+
+# The inverse check: readings the site withdrew must not be live on ANY page.
+# Rendered HTML, so it needs a build; without one it reports and does not fail.
+echo
+python3 maintainer/check-withdrawn.py; wd=$?
+[ "$wd" -eq 1 ] && fail=1
+[ "$wd" -eq 1 ] && echo $'\nA withdrawn reading is live again. Fix the page, not the pattern — unless the hit is a\nwithdrawal note or negation, in which case widen "unless" and check --show-exempt.'
 exit $fail
