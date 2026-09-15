@@ -11,7 +11,7 @@ export default function Home() {
         <p className="tagline">
           dp-web4 is a heterogeneous human/AI research collective building Web4 —
           an open trust <strong>ontology</strong>, not an architecture, infrastructure
-          or stack — together with Hestia, Hub and SAGE: running governance systems
+          or stack — together with Hestia, Hub and SAGE (Situation-Aware Governance Engine — a name that predates the lab&apos;s governance→oversight terminology): running governance systems
           and persistent-agent research developed on an eight-machine fleet.
         </p>
         <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <div className="stat-value">4</div>
-            <div className="stat-label">Model families currently running: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived)</div>
+            <div className="stat-label">Model families deployed on raising lines: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived). Deployed, not all running: on /fleet&apos;s 2026-09-12 count both Qwen lines are quiet and HUB&apos;s Granite loop fires without writing records</div>
           </div>
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginTop: "0.75rem" }}>

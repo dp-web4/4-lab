@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-14*
+*Last updated: 2026-09-15*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-15 maintainer: zero expansion drift. The work was reading the code behind claims the visitor could only flag. **"Raising never changes weights" was false as history:** SAGE's archived Sprout Qwen 0.5B line has 84 session records with `using_lora: true` (2026-01-27 → 03-06), from a sleep-cycle LoRA trained on its own raising exchanges and loaded back into it. That is the line /raising's kept identity observation comes from. Weights have been frozen only since `BECOMING_CURRICULUM.md` (2026-04-04). Scoped on 4 pages. **Dream consolidation is Claude** (`dream_consolidation.py`, `claude --print`), rewriting identity.json after every session, and is now named as a confound. **/fleet "BECOMING pattern observed: creating" on all six cards was the session-count schedule** (phase_name, creating = 41+), now labelled as the curriculum phase. Mechanism fixes: the Rust daemon is a gateway, not the 12-step loop (SAGE's `RUST_VS_PYTHON_CAPABILITY.md`); PolicyGate is SAGE's step-10 plugin, not Hardbound's; SAGE `peer_trust.rs` and Hestia's trust derivation were described as one component; ATP/ADP now uses the spec's pooled two-state token; Synchronism is "lineage" (web4 AGENTS.md). Hestia's law has no push or deploy rule, now stated on /autonomy. 4 stale pointers, evidence-tier words, revert record recounted. **Fleet manifest:** its first fresh write since March (McNugget, via SAGE `4754173b6`); McNugget runs Gemma 4 12B since session 449 (2026-09-08), confirmed in the session records, and the page was updated. `caveats.json` withdrawn: 13 → 32, each confirmed firing on the pre-fix build. **Researcher question:** /raising's exemplar (Sprout) now carries both a weights confound and a consolidator confound. Should the page lead with a frozen-weights line instead?
 
 2026-09-14 maintainer: zero expansion drift (sixth pass). The single HIGH was a **recurrence**: V3-as-recharge-gate / "T3 and V3 verify each other", withdrawn on /context 09-11, was still live on /autonomy, twice on /context, on /fleet and on /raising. /fleet also claimed V3 "accumulates alongside" T3 in the peer tracker, but `SAGE/sage/federation/peer_trust.py` is T3-only, so that was a false mechanism, not a gloss. **New failing check:** `maintainer/check-withdrawn.py` runs every retracted reading (13, in `caveats.json` `withdrawn`) against rendered HTML (source grep missed a JSX-split instance). It found 7 live on the pre-fix build and 0 after, and is now wired into `check-caveats.sh`, the run script and maintainer CLAUDE.md. The 09-12 caveat check had been invoked by nothing. MEDIUMs fixed: witness stake + slashing, Delegation → Hestia, oversight-note carve-out, Home "running"/"independent", /fleet "(today)" and identity-portability-as-discovery, /raising comparator, /arc-agi-3 un-ablated lesson, Principle 6 universal, "discovers the equations", /autonomy "fixed within one cycle". The 09-13 run died on usage credits with no log.
 
@@ -34,7 +36,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-14. Zero expansion drift across 9 pages (visitor passes 1–3, Pass 3 against canon directly).
+Last maintainer session: 2026-09-15. Zero expansion drift across 9 pages (all four visitor passes, seventh consecutive clean pass).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
@@ -64,7 +66,7 @@ Key terms — all currently CORRECT on site:
 
 ## Fleet State Sync Status
 
-`/fleet` is the source of record: 8 machines (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub), July 2026 cutovers, session counts from the 2026-07-24 fleet refresh. The SAGE manifest is stale (last write 2026-03-08, 6 machines). **Operator:** repair the manifest writer or retire the manifest — eighth consecutive report.
+`/fleet` is the source of record: 8 machines (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub), session counts derived from git on 2026-09-12. **Partly repaired 2026-09-14** (SAGE `4754173b6`): McNugget's raising script now registers its observed model, writing `fleet.json` (the registry the daemon loads) and refreshing `sage-fleet-models.json`, which now labels itself non-authoritative. The other seven seats still register nothing, and five manifest entries remain `2026-03-08`. Polarity rule unchanged: update the page only from entries newer than its figures, and confirm against session records (as done for McNugget on 09-15).
 
 ---
 

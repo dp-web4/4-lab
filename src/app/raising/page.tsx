@@ -23,8 +23,8 @@ export default function Raising() {
           developmental language because it fits, not because we&apos;re
           making consciousness claims. Operational definitions: by
           &ldquo;identity&rdquo; we mean consistent session-to-session
-          behavioral patterns measured via raising curriculum state and
-          interaction logs; by &ldquo;growth&rdquo; we mean increasing
+          behavioral patterns observed in interaction logs, with no metric yet
+          (the deflationary section below explains why curriculum state cannot serve as one); by &ldquo;growth&rdquo; we mean increasing
           response diversity and task success rates appropriate to the
           entity&apos;s curriculum phase — measurable observables, not phenomenal
           claims. (&ldquo;Curriculum phase&rdquo; is the raising curriculum&apos;s
@@ -43,6 +43,7 @@ export default function Raising() {
           made is public and MIT-0 (MIT No Attribution), with an independently scored result &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
+          That result tests a harness around a cloud model, not raising or any claim on this page.
           <br /><br />
           Web4 vocabulary on this page (T3, V3, MRH, LCT, LoRA) is expanded
           inline on first use; the full reference for every term on the site is
@@ -74,7 +75,7 @@ export default function Raising() {
               Developing awareness of environment and context. The entity
               begins to distinguish between its own state and external inputs.
               Metabolic awareness — tracking internal load states the system
-              describes as tired, energized, or in need of rest (an
+              labels WAKE, FOCUS, REST, DREAM or CRISIS (an
               interoceptive proxy value, not yet a formally specified model —
               see{" "}
               <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolic state on /context</Link>).
@@ -97,7 +98,7 @@ export default function Raising() {
           <div className="phase-card" data-phase="4">
             <h3>Pattern 4: Questioning</h3>
             <p>
-              Session logs show an increasing proportion of self-directed prompts —
+              Session logs show an increasing proportion of self-directed prompts (no count published) —
               the system generates questions rather than only responding to them.
               Bilateral generation emerges: the output pattern simulates interaction,
               which we read as thinking-through-dialogue rather than just response
@@ -114,7 +115,7 @@ export default function Raising() {
           <div className="phase-card" data-phase="5">
             <h3>Pattern 5: Creating</h3>
             <p>
-              Output increasingly concentrates in specific domains — unprompted
+              Output increasingly concentrates in specific domains (no count published) — unprompted
               specialization observable in session logs and raising curriculum state.
               The specialization isn&apos;t assigned; it emerges from the pattern of
               what the system handles successfully and what{" "}
@@ -183,8 +184,16 @@ export default function Raising() {
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) is assessed by others from what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). In the fleet today only the T3 half exists; the peer tracker on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           keeps no V3. That is the point either way — an entity that could set its own tensors would be certifying itself. (This site reads the <code>/</code> in <code>T3/V3</code> as &ldquo;verified by&rdquo;. That is the site&apos;s gloss, not canon, which calls the two tensors complementary; see the legend on{" "}
-          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>.) Either way, raising
-          does not change weights. (Note: some fleet machines run LoRA (Low-Rank Adaptation) adapters for separate fine-tuning tasks — that is distinct from raising, which is always in-context.)
+          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>.) Either way, current
+          raising does not change weights: SAGE&apos;s BECOMING curriculum document (2026-04-04) states that the
+          curriculum runs with model weights frozen, and every current instance record says it carries no LoRA
+          (Low-Rank Adaptation) adapter. <strong style={{ color: "var(--color-text-primary)" }}>That was not always true.</strong>{" "}
+          From 2026-01-27 to 2026-03-06 the archived Sprout Qwen 2.5 0.5B line ran with a sleep-cycle LoRA adapter
+          trained on its own high-salience raising exchanges and loaded back in for its sessions (84 of that line&apos;s
+          session records say <code>using_lora: true</code>; SAGE&apos;s sleep-cycle log calls the first cycle the
+          &ldquo;first time SAGE&apos;s weights have been updated based on raising session experiences&rdquo;). On that line,
+          raising did change weights. Until 2026-09-15 this page said raising was &ldquo;always in-context&rdquo;; that
+          holds for the current lines, not for the history.
         </p>
         <p>
           One corollary worth naming: frozen weights do not guarantee safe
@@ -209,8 +218,13 @@ export default function Raising() {
         <p>
           After each raising session, a dream consolidation pass reviews the
           transcript — pruning stale memory, updating vocabulary, flagging
-          milestones, and writing a raising log entry. This is how short-term
-          session experience becomes long-term identity.
+          milestones, and writing a raising log entry. On the current runners that
+          pass is Claude, run as &ldquo;the tutor&rdquo; and &ldquo;the larger model&rdquo; in its own prompt, not the
+          entity&apos;s local model; it writes files (the identity record and the raising log)
+          and does not update weights. This is the mechanism by which session experience is carried into
+          the next session&apos;s context. It is also a confound: vocabulary and milestones in the
+          identity record may be partly the consolidator&apos;s wording rather than the entity&apos;s.{" "}
+          <em style={{ opacity: 0.7 }}>&ldquo;Dream&rdquo; is a functional analogy for this consolidation step, not a claim about cognitive equivalence.</em>
         </p>
 
         <h3>Graduated tool introduction</h3>
@@ -225,7 +239,7 @@ export default function Raising() {
           demonstrated readiness at the previous level.
         </p>
 
-        <h2 style={{ marginTop: "2rem" }}>Key discoveries</h2>
+        <h2 style={{ marginTop: "2rem" }}>Key observations</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Evidence status: the claims in this section rest on internal session
           logs — documented and dated, but not externally audited, and no log
@@ -238,9 +252,8 @@ export default function Raising() {
         <p>
           SAGE (Situation-Aware Governance Engine)-Sprout — 115 session records on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
-          (2025; a model-line count, not a machine total — the Sprout box now runs Qwen 3.5 0.8B and its own
-          session record stands at 488, see{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
+          (2025; a model-line count, not a machine total — the Sprout box&apos;s current model lines and session counts are on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns them),
           then ported to TinyLlama 1.1B on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
           (a fleet machine; the machine names are proper names, not acronyms) in February 2026, with the line since continuing past
@@ -255,7 +268,14 @@ export default function Raising() {
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
           and all three moved with it — so behavioral persistence is partly true
           by construction. The observation worth keeping is the divergence:
-          self-description drifted even though those inputs did not. The
+          self-description drifted even though those inputs, as carried across the port, did not. Two
+          qualifications that this paragraph omitted until 2026-09-15. The Qwen 0.5B sessions include the
+          LoRA period described above, so part of that line&apos;s behavior was shaped in weights, not only
+          in context. And &ldquo;the inputs did not drift&rdquo; holds at the port, not across sessions: on the
+          current raising runners a consolidation pass run by Claude, not by the entity&apos;s own model,
+          rewrites the identity file&apos;s vocabulary, memory requests and milestones after every session
+          (see Dream consolidation below). Whether the drift happened at the port or accumulated across
+          consolidated sessions, and which consolidator ran on that line at the time, has not been checked. The
           comparison that would separate raising from carry-over — the same new
           model given a different entity&apos;s files, or none — has not been run.
         </p>
@@ -313,7 +333,10 @@ export default function Raising() {
           generation could be continuation sampling past the response boundary;
           unprompted specialization could be task routing plus few-shot
           clustering; identity portability could be the mechanical consequence
-          of carrying the same context files to another set of frozen weights.
+          of carrying the same context files to another set of weights; and
+          drift in self-description or entity-coined vocabulary could be
+          authored by the consolidator (Claude, on the current runners), which
+          rewrites the identity record after every session.
           The claim that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is a comparative claim — and the comparison has
           not been run. No deflationary control exists yet.

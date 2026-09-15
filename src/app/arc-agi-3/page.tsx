@@ -31,7 +31,7 @@ export default function ArcAgi3History() {
 
       <h2>What happened</h2>
       <p>
-        In April 2026, a Phase-1 SAGE/ARC harness around Claude Opus 4.6 produced a published
+        In April 2026, a Phase-1 SAGE/ARC harness (Phase 1: the cloud-model run, frozen in the ARC-SAGE repository linked below; Phase 2 is the local-model follow-on) around Claude Opus 4.6 produced a published
         <strong> 94.85% official ARC Prize action score</strong> on the public interactive
         environments. The action score is efficiency-weighted — it credits solving a level in
         fewer actions — so it is not a solve rate, and ARC Prize publishes no baseline to compare
@@ -42,7 +42,7 @@ export default function ArcAgi3History() {
       <p>
         The score is real and publicly verifiable. The affordances matter just as much as the number:
         the harness analyzed the games&apos; public engine source and built per-game world-model / solver
-        cartridges. That is outside strict from-observation competition play. The result therefore
+        cartridges. That is outside strict from-observation competition play, which is what &ldquo;competition-legal&rdquo; means on this page: an agent that learns each game only by playing it, without the engine source, as the ARC Prize competition requires, rather than a cloud model given engine-level context. The result therefore
         demonstrates what the model+harness could do with engine-level context and tooling, not blind
         generalization from observation.
       </p>

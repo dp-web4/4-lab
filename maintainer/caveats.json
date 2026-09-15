@@ -129,6 +129,44 @@
 
     {"id": "thresholds-not-derivable-universal", "withdrawn": "2026-09-14", "pattern": "trust thresholds are empirical, not derivable", "unless": "", "why": "One failed derivation shows that derivation failed, not that none can succeed."},
 
-    {"id": "fleet-dated-today", "withdrawn": "2026-09-14", "pattern": "2026-\\d\\d-\\d\\d \\(today\\)|the most recent today", "unless": "", "why": "A page can't know when it is read. '(today)' on a 2026-09-12 count was two days stale when the visitor read it on 09-14."}
+    {"id": "fleet-dated-today", "withdrawn": "2026-09-14", "pattern": "2026-\\d\\d-\\d\\d \\(today\\)|the most recent today", "unless": "", "why": "A page can't know when it is read. '(today)' on a 2026-09-12 count was two days stale when the visitor read it on 09-14."},
+
+    {"id": "fleet-t3v3-scores-live", "withdrawn": "2026-09-15", "pattern": "per-peer T3/V3 scores (are|is) live", "unless": "", "why": "The fleet peer tracker keeps T3 only and holds no V3 (sage/federation/peer_trust.py; /fleet said both in one paragraph and 'T3 only' three paragraphs later)."},
+
+    {"id": "sprout-488-restated", "withdrawn": "2026-09-15", "pattern": "stands at 488", "unless": "", "why": "/fleet retracted 488 (the 0.8b line as of July); /raising kept restating it with 'see /fleet'. Point at the owning page, don't restate its number."},
+
+    {"id": "quick-start-on-links", "withdrawn": "2026-09-15", "pattern": "Quick-start commands are on ?/links", "unless": "", "why": "The only quick start is on /projects#quick-start; /links links to it. Pointer outlived the single-sourcing."},
+
+    {"id": "links-leads-with-2563", "withdrawn": "2026-09-15", "pattern": "leads with the 2,563", "unless": "Until 2026-09-15 this sentence said", "why": "/links leads with 2,442 and gives 2,563 in parentheses. A sentence describing another page's figure, not reading it."},
+
+    {"id": "community-channels-on-links", "withdrawn": "2026-09-15", "pattern": "and community channels", "unless": "", "why": "/links lists repos, issue trackers and one email. No forum, chat or mailing list exists."},
+
+    {"id": "fleet-capacity-as-finding", "withdrawn": "2026-09-15", "pattern": "One finding shapes fleet strategy|fleet capacity findings|outperforms Phi-4", "unless": "", "why": "Evidence ladder files model-capacity as an internal observation with no metric; /fleet and /context called it a finding and an empirical result."},
+
+    {"id": "harness-ablation-in-progress", "withdrawn": "2026-09-15", "pattern": "Phase 2 work is isolating", "unless": "", "why": "No harness ablation has run or is scheduled; Phase 2 is local-model transfer (Gemma 4 E4B), which swaps the model rather than removing the harness."},
+
+    {"id": "coupling-empirical-grounding", "withdrawn": "2026-09-15", "pattern": "provide empirical grounding", "unless": "", "why": "Single-trial result on a coherence measure defined only inside the experiment; Principle 5 calls it ungrounded."},
+
+    {"id": "independent-security-reviews", "withdrawn": "2026-09-15", "pattern": "independent security reviews", "unless": "not independent in the external", "why": "Fleet-run, cross-model-family reviews; /context states there is no external, blinded or third-party check anywhere in the loop."},
+
+    {"id": "mcnugget-gemma3-current", "withdrawn": "2026-09-15", "pattern": "Gemma 3 12B \\(ollama\\) — instance mcnugget", "unless": "", "why": "Every McNugget session record from 449 (2026-09-08 UTC) names gemma4:12b; the instance directory name predates the switch."},
+
+    {"id": "raising-always-in-context", "withdrawn": "2026-09-15", "pattern": "always in-context|never weights|raising itself never does", "unless": "Until 2026-09-15 this page said|not true of the history", "why": "SAGE sprout-qwen2.5-0.5b: 84 session records with using_lora: true (2026-01-27..03-06), adapter trained on its own raising exchanges by sage/raising/training/sleep_training.py and loaded by autonomous_conversation.py. Frozen weights hold only since BECOMING_CURRICULUM.md (2026-04-04)."},
+
+    {"id": "becoming-label-as-observation", "withdrawn": "2026-09-15", "pattern": "BECOMING pattern observed: \\w", "unless": "", "why": "The card label is identity.json phase_name, set by session number in run_session_identity_anchored_fluid.py / ollama_raising_session.py (creating = 41+). A schedule, not an observation."},
+
+    {"id": "dream-becomes-identity-uncaveated", "withdrawn": "2026-09-15", "pattern": "session experience becomes long-term identity", "unless": "", "why": "The consolidator is Claude (dream_consolidation.py, claude --print), writing identity.json; uncaveated, the sentence hides that the identity record is partly the consolidator's wording."},
+
+    {"id": "rust-daemon-runs-12-step-loop", "withdrawn": "2026-09-15", "pattern": "starts the 12-step|dashboard shows it cycling|the current posture, and SNARC", "unless": "", "why": "SAGE sage/docs/RUST_VS_PYTHON_CAPABILITY.md: sage-daemon is an inference-and-metabolism gateway, posture/select/govern/filter ABSENT; dashboard.html has no posture and updateSnarc() is never called."},
+
+    {"id": "policygate-is-hardbounds", "withdrawn": "2026-09-15", "pattern": "Hardbound's enforcement checkpoint|Hardbound oversight sub-gate|PolicyGate is Hardbound", "unless": "until 2026-09-15|Until 2026-09-15|used to separate", "why": "sage/irp/plugins/policy_gate.py is SAGE's 'conscience checkpoint', mapped to step 10 Govern by the capability matrix; no Hardbound reference in the public code."},
+
+    {"id": "tired-energized-states", "withdrawn": "2026-09-15", "pattern": "tired ?/? energized|tired, energized", "unless": "", "why": "SAGE's metabolic controller names five states, WAKE/FOCUS/REST/DREAM/CRISIS, in both the Python kernel and the Rust daemon."},
+
+    {"id": "success-nudges-talent-only", "withdrawn": "2026-09-15", "pattern": "a success nudges Talent|successful task nudges the peer's Talent from 0.500 to 0.505 \\(", "unless": "", "why": "peer_trust.rs success deltas are talent +0.05, training +0.02, temperament +0.05: all three move."},
+
+    {"id": "hestia-is-sage-peer-tracker", "withdrawn": "2026-09-15", "pattern": "A trust tracker — hestia|hestia's current tracker holds three numbers per peer", "unless": "", "why": "Hestia's trust store (hestia repo core/src/derivation.rs, per member/role, adjudicated V3) and SAGE's peer_trust.rs (per peer machine, T3 only, own observations) are separate components."},
+
+    {"id": "atp-adp-two-artifacts", "withdrawn": "2026-09-15", "pattern": "one artifact for (the )?intention, one for the result", "unless": "Until 2026-09-15 this", "why": "atp-adp-cycle.md §1.2/§2: one semifungible token in two states, society-managed pools, minted as ADP, returned to pool on discharge. Two records is the fleet registry's approximation."}
   ]
 }

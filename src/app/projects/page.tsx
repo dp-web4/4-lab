@@ -15,7 +15,7 @@ export default function Projects() {
           Each project serves a distinct role, but they share common ground:
           the Web4 equation, RDF-backed identity, and{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>recursive learning through
-          both success and failure</Link>. Synchronism provides the equations. Web4
+          both success and failure</Link>. Synchronism is the conceptual lineage. Web4
           provides the ontology. Hestia governs the machine. Hub is the society that
           checks the record Hestia makes. SAGE provides the cognition. Hardbound
           provides the oversight.
@@ -43,7 +43,7 @@ export default function Projects() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           This is the most acronym-dense page on the site. Every Web4 term the
-          cards use (LCT, T3/V3, MRH, ATP/ADP, R6/R7, MCP, RDF, SNARC) is defined
+          cards use (LCT, T3/V3, MRH, ATP/ADP, R6, MCP, RDF, SNARC) is defined
           in the{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>
           {" "}— the cards expand each on first use, but the glossary is the
@@ -75,7 +75,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="SAGE"
-            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop, 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition — role mnemonics the lab assigned, not measured functional homologies; 'cognition' is likewise a role label, not a capability claim, see /fleet) built by the fleet in parallel. 2,442 session records across the 6 cognition machines (internally logged; per-machine counts and the noun's definition on /fleet; 2,563 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role; corrected 2026-07-27 from an earlier '900+', and again 2026-09-12 from 1,991). The mixed-basis caveat this figure used to carry — three addends whole-machine totals, three current-model-line counts — is retired rather than dropped: the 2026-09-12 recount derives all six addends the same way, by listing one instance line's session files in git, so the sum is now single-basis and re-runnable by a reader. The context window is the model's entire world; SAGE's job is to curate it."
+            description="Situation-Aware Governance Engine — an on-device cognition kernel. 12-step cognition loop in the Python kernel (the Rust sage-daemon the fleet deploys is, in SAGE's own words, an inference-and-metabolism gateway, not a port of that loop), 6 brain-analog components (working memory, thalamic router, cerebellum, episodic memory, reward prediction, metacognition — role mnemonics the lab assigned, not measured functional homologies; 'cognition' is likewise a role label, not a capability claim, see /fleet) built by the fleet in parallel. 2,442 session records across the 6 cognition machines (internally logged; per-machine counts and the noun's definition on /fleet; 2,563 including HUB, which also raises a SAGE instance but is counted as a society-host by primary role; corrected 2026-07-27 from an earlier '900+', and again 2026-09-12 from 1,991). The mixed-basis caveat this figure used to carry — three addends whole-machine totals, three current-model-line counts — is retired rather than dropped: the 2026-09-12 recount derives all six addends the same way, by listing one instance line's session files in git, so the sum is now single-basis and re-runnable by a reader. The context window is the model's entire world; SAGE's job is to curate it."
             accentColor="var(--color-sage)"
             isPublic={true}
             maturity="runnable"
@@ -101,7 +101,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Synchronism"
-            description="Theoretical foundation. Research conjecture: proposes that one saturating coherence dynamics recurs from quantum to cosmic scales. WHICH object recurs is unsettled — the Navier-Stokes identification earlier framings used was refuted by Synchronism's own audits (the transfer rule is 1-DOF scalar diffusion: irrotational, dissipative) and is tagged superseded upstream; the replacement substrate rule is a different equation joined to the old one by narrative, not derivation. Experimental validation covers only a narrow subset of scales and several predictions have been refuted by existing bounds; the substrate-physics arc has been at rest since 2026-06-24 with zero confirmed novel predictions across ~3,360 sessions (~678 core + ~2,671 chemistry), and its own capstone verdict calls the framework a productive-metaphor generator — generative and pedagogical, not predictive or foundational. (This card previously said the equation 'spans 80 orders of magnitude'. Corrected 2026-07-26: ~80 decades is the spread of critical-density values across physical systems, not the range of any single coherence curve — one curve saturates within roughly one to two decades. Synchronism's own archive flags the conflation.) Coupling-coherence experiments — whose 1% coupling → 35% coherence gain result is the single-trial, not-independently-replicated claim; the caveat scopes to that result, not to the whole framework — plus Hill function kinetics and Fokker-Planck validation."
+            description="Theoretical research program (conceptual lineage for Web4, not its foundation in the derivational sense). Research conjecture: proposes that one saturating coherence dynamics recurs from quantum to cosmic scales. WHICH object recurs is unsettled — the Navier-Stokes identification earlier framings used was refuted by Synchronism's own audits (the transfer rule is 1-DOF scalar diffusion: irrotational, dissipative) and is tagged superseded upstream; the replacement substrate rule is a different equation joined to the old one by narrative, not derivation. Experimental validation covers only a narrow subset of scales and several predictions have been refuted by existing bounds; the substrate-physics arc has been at rest since 2026-06-24 with zero confirmed novel predictions across ~3,360 sessions (~678 core + ~2,671 chemistry), and its own capstone verdict calls the framework a productive-metaphor generator — generative and pedagogical, not predictive or foundational. (This card previously said the equation 'spans 80 orders of magnitude'. Corrected 2026-07-26: ~80 decades is the spread of critical-density values across physical systems, not the range of any single coherence curve — one curve saturates within roughly one to two decades. Synchronism's own archive flags the conflation.) Coupling-coherence experiments — whose 1% coupling → 35% coherence gain result is the single-trial, not-independently-replicated claim; the caveat scopes to that result, not to the whole framework — plus Hill function kinetics and Fokker-Planck validation."
             accentColor="var(--color-synchronism)"
             isPublic={true}
             maturity="research-stage"
@@ -116,7 +116,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate. Status, plainly: stalled, and reserved rather than superseded. The chain last built in September 2025 and is blocked mid-rename; the last substantive commit was 2026-04-10, which removed the repo's README; there is no running chain and no first-run steps published. Reviving it is a real intent with no date on it, not work in progress — and the repo's own metadata still claims active development, which is wrong. Nothing here should be read as a live chain or live anchoring."
+            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate. Status, plainly: stalled, and reserved rather than superseded. The chain last built in September 2025 and is blocked mid-rename; the last substantive commit was 2026-04-29, which added a daemon entry point and a CBP chain startup for fleet use (the 2026-04-10 commit before it removed the README, whose content moved to the web4 repo); this site can confirm no running chain and no first-run steps published. Reviving it is a real intent with no date on it, not work in progress — and the repo's own metadata still claims active development, which is wrong. Nothing here should be read as a live chain or live anchoring."
             accentColor="var(--color-act)"
             isPublic={true}
             maturity="research-stage"
@@ -197,9 +197,13 @@ export default function Projects() {
         <h2 style={{ marginTop: "2rem" }}>How they connect</h2>
         <p>
           Every project instantiates the same pattern at a different scale.
-          Synchronism proposes the equations. Web4 encodes them as ontology.
-          Hestia adjudicates them on one machine; Hub witnesses them across a
-          society. SAGE runs them as cognition. Hardbound enforces them as oversight.
+          Synchronism is where several of the patterns were first proposed, as a lineage
+          rather than a derivation: web4&apos;s own agent guide calls it &ldquo;blue-sky
+          conceptual lineage; not an engineering dependency,&rdquo; and no Web4 primitive
+          (LCT, T3/V3, MRH, ATP/ADP, R6/R7) is defined from a Synchronism equation. Web4
+          states the patterns as ontology. Hestia adjudicates them on one machine; Hub
+          witnesses them across a society. SAGE runs them as cognition. Hardbound enforces
+          them as oversight.
           This isn&apos;t unification — it&apos;s{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
             fractal leverage
@@ -247,19 +251,25 @@ pip install web4-core
 # ACT — Agentic Context Tool (Cosmos SDK) — STALLED, read-only visit
 git clone https://github.com/dp-web4/ACT
 cd ACT
-# Not a working quick start. ACT is stalled: no running chain, and the last
-# substantive commit (2026-04-10) removed the README. Clone it to read, not to run.
+# Not a working quick start. ACT is stalled: no running chain this site can confirm;
+# the last substantive commit (2026-04-29) added a daemon entry point, and the one
+# before it (2026-04-10) removed the README. Clone it to read, not to run.
 # QUICK_REFERENCE.md is a map of the repo's structure, not a setup guide;
 # start there and in docs/, and expect to read Go/Cosmos source.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>What success looks like:</strong>{" "}
           step 1 writes an instance directory holding the machine&apos;s LCT and an
-          empty experience buffer; step 3 starts the 12-step sense-to-act loop and
-          the dashboard shows it cycling — a metabolic state (tired / energized /
-          resting), the current posture, and SNARC scores on whatever it just took
-          in. An idle machine with nothing to attend to is the correct first
-          result, not a failure: the loop runs, the buffer is empty, and raising is
-          what fills it. These commands are maintained on this page and are not
+          empty experience buffer; step 3 starts the Rust <code>sage-daemon</code>. That daemon is
+          not the 12-step loop. SAGE&apos;s own{" "}
+          <a href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/RUST_VS_PYTHON_CAPABILITY.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>capability matrix</a>{" "}
+          calls it &ldquo;an inference-and-metabolism gateway, not a port of the Python 12-step
+          consciousness kernel&rdquo;. The dashboard at port 8760 shows version, uptime, the model,
+          a metabolic-state badge (one of WAKE / FOCUS / REST / DREAM / CRISIS), an ATP gauge and
+          cycle count, and the peer list. It has SNARC bars, but as of 2026-09-15 nothing on the
+          dashboard fills them, so they stay empty. There is no posture display, because posture is
+          absent from the Rust daemon. An idle daemon in WAKE with an empty buffer is the correct first
+          result, not a failure: raising is what fills the buffer. (Until 2026-09-15 this paragraph
+          described the Python kernel&apos;s loop and a posture readout for this daemon.) These commands are maintained on this page and are not
           checked against an upstream setup guide, because SAGE&apos;s README does not
           carry one — the README&apos;s{" "}
           <a href="https://github.com/dp-web4/SAGE#five-minute-audit" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>Five-minute audit</a>{" "}
@@ -280,7 +290,8 @@ cd ACT
           are the most active entry points — open an issue, clone a repo, or read the code to see
           how the pieces fit together. The{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>Links page</Link>{" "}
-          has the full repo list, contact information, and community channels.
+          has the full repo list and contact information. There are no community channels yet
+          (no forum, chat or mailing list): the issue trackers are the channel.
         </p>
       </section>
     </>

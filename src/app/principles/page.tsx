@@ -13,14 +13,17 @@ export default function Principles() {
         <p>
           These aren&apos;t aspirational values posted on a wall. They&apos;re
           operational patterns that emerged from building the system — things we
-          learned the hard way, then codified because they kept being true.
+          learned the hard way and now work by. Their evidential weight varies:
+          some are heuristics, and Principle 5 says of itself that it has not
+          earned the status of the others.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           If you would rather check something than read a list of beliefs: the
           code these principles produced is public and MIT-0 (MIT No Attribution), with an
           independently scored result &mdash; see{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
-          It is the most inspectable thing the lab has; this page is the least.
+          It is the most inspectable thing the lab has; this page is the least. It
+          tests the harness and the model, though, not any principle on this page.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims. Also, below: &ldquo;Governance&rdquo; in SAGE&apos;s name predates Principle 10&apos;s governance&rarr;oversight correction &mdash; see{" "}
@@ -142,7 +145,8 @@ export default function Principles() {
               <em style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>p_crit = the critical coherence threshold derived in the Synchronism framework.</em>{" "}
               Failed experiments are signal. The coupling-coherence experiment
               showed that <em>this</em> derivation of a trust threshold failed, by
-              400x. It did not show that no derivation can work. We now treat
+              400x, measured on that experiment&apos;s own coherence measure, which Principle 5
+              treats as ungrounded. So the failure is as provisional as the measure. It did not show that no derivation can work. We now treat
               trust thresholds as empirical until a derivation survives contact
               with data. That is a result, not a failure. We
               document what didn&apos;t work alongside what did. Honest
@@ -165,7 +169,7 @@ export default function Principles() {
               The resulting identity is collaborative, not imposed. The
               mechanism: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters in raising sessions.
-              (Some fleet machines run LoRA (Low-Rank Adaptation) for separate fine-tuning tasks; raising is always in-context.)
+              (Current raising lines run with frozen weights. One archived line, Sprout&apos;s Qwen 0.5B from 2026-01-27 to 2026-03-06, loaded a LoRA (Low-Rank Adaptation) adapter trained on its own raising sessions, so &ldquo;always in-context&rdquo; is not true of the history; see /raising.)
               It is not training; it is also not nothing. This applies at every scale:
               raising sessions, affordance shaping, fleet diversity, and memory
               systems.

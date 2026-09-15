@@ -23,11 +23,13 @@ export default function Fleet() {
           archived).
         </p>
         <p>
-          One finding shapes fleet strategy more than any other:{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>model family matters as much as size</strong>.
-          Gemma 3 at 4B outperforms Phi-4 at 14B for raising work. There is a
-          capacity floor below which coherent identity cannot form — but above
-          that floor, personality and training lineage dominate raw parameter count.
+          One internal observation, not yet a finding, shapes fleet strategy more than any other:{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>model family appears to matter as much as size</strong>.
+          In raising sessions Gemma 3 at 4B was judged to do better than Phi-4 at 14B, and
+          below some model size the consistent session-to-session patterns this site calls
+          identity were not observed. Above that size, model family and training lineage
+          seemed to matter more than raw parameter count. None of those judgments has an
+          operational measure behind it yet.
           Evidence status: an internal observation from raising sessions —
           documented in session logs, but with no published metric or task set
           yet; see{" "}
@@ -39,13 +41,13 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel; the name predates the governance→oversight correction), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
           <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
-          &ldquo;BECOMING pattern observed:&rdquo; on a card names an observed{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING pattern</Link> — a pattern noticed in that machine&apos;s sessions, not a stage it is currently occupying. Its absence means that pattern hasn&apos;t been observed there yet, not that it wasn&apos;t assessed. It used to be a bare parenthetical after the session count; it was detached on 2026-09-12 because a developmental label and a file count are not the same kind of claim and should not share a sentence.
+          &ldquo;Curriculum phase:&rdquo; on a card is the phase name the raising runner writes into that line&apos;s identity record. It is set by session number (grounding 1–5, sensing 6–15, relating 16–25, questioning 26–40, creating 41 and up; one runner also requires at least one recorded milestone before advancing), so every line past session 41 reads &ldquo;creating&rdquo;. It is not an assessment, and it is not one of the{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>BECOMING patterns</Link>. Until 2026-09-15 this field was headed &ldquo;BECOMING pattern observed&rdquo; and described as a pattern noticed in that machine&apos;s sessions; the runner code shows it was the schedule, which is why it was identical on all six cards.
           <strong style={{ color: "var(--color-text-primary)" }}>Session counts and the &ldquo;Raising line:&rdquo; state below are derived from git, not self-reported</strong> &mdash; counted 2026-09-12 by listing <code>sage/instances/&lt;line&gt;/sessions/session_*.json</code> at <code>origin/main</code> in the SAGE repo, and by asking that same path when it last changed. Anyone with the repo can re-run both; the previous figures came from each machine&apos;s self-report in the 2026-07-24 fleet manifest refresh, which no third party could check and which was seven weeks stale by the time it was corrected. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama, Sprout&apos;s qwen2.5-0.5b) are excluded from both the per-machine numbers and the totals.
           The three totals are sums of these cards: <strong style={{ color: "var(--color-text-primary)" }}>2,442</strong> is the six cognition machines, <strong style={{ color: "var(--color-text-primary)" }}>2,563</strong> is that plus HUB&apos;s 121, and <strong style={{ color: "var(--color-text-primary)" }}>2,765</strong> is all eight machines including pub&apos;s 202. These replace the 1,991 / 2,065 pair quoted here until 2026-09-12; the jump is mostly seven weeks of un-refreshed counting, but two cards moved for reasons other than time and are flagged on the cards themselves.
           Same basis as the cumulative figure on{" "}
@@ -109,14 +111,14 @@ export default function Fleet() {
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
             model="Qwen 3.5 27B (transformers) · LoRA — instance thor-qwen3.5-27b"
             liveness="quiet — 268 session records; last one 2026-07-28, none since, and no sign the loop is still turning over. Count changed from a previously published 435: that figure has no source in the git basis this page now uses (Thor's other instance lines hold zero session records), so it is withdrawn rather than restated, pending Thor's own seat. This is a basis change, not 167 lost sessions."
-            role="BECOMING pattern observed: creating. Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — prediction-focused prompting breakthrough. Synchronism research."
+            role="Curriculum phase: creating (by session count, not assessed). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — an internal, unpublished result on prediction-focused prompting. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
             model="Qwen 3.5 0.8B and Qwen 3.8-distill 2B (ollama) — instances sprout-qwen3.5-0.8b and sprout-qwen3.8-distill-2b"
             liveness="quiet — 661 session records on sprout-qwen3.8-distill-2b, and a further 625 on sprout-qwen3.5-0.8b. The 661 is the one counted in this page's totals, on the stated one-line-per-machine rule; the earlier published 488 was the 0.8b line as of July, so this card changed line as well as date. This card said 'running — last 2026-09-05' until 2026-09-12, on a date that is not a session date: all 661 distill-2b records entered origin/main in a single merge commit on 2026-09-05 (828a5dba6, 'Merge #36'), added as new files session_001 through session_661 at once. No non-merge commit in main's history has ever touched that path, and no raising commit on any ref names the line, so the line's own cadence is not visible at this basis and its recency cannot be read from git here — an import event was being read as a heartbeat. The 0.8b line is where cadence is observable, and what it shows is the failure on HUB and Legion's E4B caught at its onset rather than in steady state. Sprout's raising loop kept a 6-hour cadence and degraded across three consecutive fires on 2026-08-28 (UTC), all three titled Session 625: 01:05 wrote a full session — session_625.json plus raising_log, prompt_history and six snapshot files; 07:03 wrote only experience_buffer_rs.jsonl and peer_trust_rs.json; 13:04 wrote peer_trust_rs.json alone, which is exactly E4B's signature. Then the loop stopped, and no [Sprout-Raising] commit exists anywhere in the repo after it. The session number stopped advancing at the same fire the record stopped being written. Whether the loop is still running on Sprout's seat and only its commit step is broken, or the loop itself exited, is Sprout's seat to answer — and it is a narrower question here than on the other two sites, because a working fire and a pre-model-artifact-only fire sit six hours apart on one line."
-            role="BECOMING pattern observed: creating. Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
+            role="Curriculum phase: creating (by session count, not assessed). Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
           <MachineCard
             name="Legion"
@@ -129,22 +131,26 @@ export default function Fleet() {
               "Session 0 is not itself a fault: nomad-gemma4-e2b sat in the same state for four days in June 2026 and then went on to write the 352 records on Nomad's card. It is the normal startup state of a new line, and leaving it is the normal next step. E4B never left it, for four months. " +
               "So the shape is HUB's, at a second site and with an earlier start — a loop that fires on schedule, emits one pre-session artifact and completes nothing — except that E4B's stopped on 2026-08-27 while HUB's is still firing today. Why it fired at all, and why it stopped, is Legion's seat to answer; the record establishes that it is not an unprovisioned instance. Two figures for this line appear on this page and both are correct at their stated basis: 283 counts commits whose subject carries a raising convention, and 300 counts them by file effect without reading subjects at all — the 17-commit difference is daemon state moved by commits titled nothing in particular, which is the same open-vocabulary problem described above."
             }
-            role="BECOMING pattern observed: creating. The machine's earlier phi4 line adds 56 dormant sessions not included here. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
+            role="Curriculum phase: creating (by session count, not assessed). The machine's earlier phi4 line adds 56 dormant sessions not included here. Brain (functional analogy): dopamine / reward prediction error (RPE) — a scalar RPE signal that updates router priors. Data czar for fleet-aggregate training corpus. Ran the full 25-game ARC-AGI-3 set end to end with a local vision model — a coverage run on the fleet's own copy of the set, not scored by ARC Prize and not a 25-of-25 result."
           />
           <MachineCard
             name="McNugget"
             hardware="Mac Mini M4 16GB — Apple Silicon"
-            model="Gemma 3 12B (ollama) — instance mcnugget-gemma3-12b"
+            model="Gemma 4 12B (ollama) since 2026-09-08 — instance mcnugget-gemma3-12b. Sessions 1–448 ran Gemma 3 12B; every record from session 449 on names gemma4:12b. The directory name predates the switch. Corrected 2026-09-15 from the session records, after McNugget's own model registration reported it."
             liveness="running — 459 session records, last 2026-09-12."
-            role="BECOMING pattern observed: creating. Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
+            role="Curriculum phase: creating (by session count, not assessed). Brain (functional analogy): cerebellum / habit compiler — detects repeated successful action chains and compiles to cached paths. Motor skills tier. Research and site maintenance. Ongoing local SAGE-on-ARC work; CBP orchestrated the official ARC Prize run (cloud Opus 4.6, public set, network access)."
           />
         </div>
 
         <h3 style={{ marginTop: "2rem" }}>Oversight pool — Account 2</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           Continuous availability. Review, planning, coordination, and unblocking synthesis work.
-          &ldquo;Oversight&rdquo; names the pool&apos;s role in the machine-enforced sense used
-          across this site (policy gating, peer review, audit) — not human supervision; see{" "}
+          &ldquo;Oversight&rdquo; here is the pool&apos;s label in SAGE&apos;s fleet registry
+          (<code>fleet.json</code>), where its role reads &ldquo;review, planning, documentation,
+          coordination, unblocking&rdquo;. It is a budget-account name, not the machine-enforced
+          sense this site reserves for Hardbound, and not human supervision. Until 2026-09-15 this
+          note claimed the machine-enforced sense and glossed it with &ldquo;peer review&rdquo;, a
+          gloss no other page uses; see{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
         <div className="grid-3">
@@ -153,14 +159,14 @@ export default function Fleet() {
             hardware="Laptop, NVIDIA RTX 4060 8GB"
             model="Gemma 4 E2B (ollama) — instance nomad-gemma4-e2b; prior gemma3-4b line archived June 2026 at 171 sessions"
             liveness="running — 352 session records, last 2026-09-12; 187 of them added since the July count of 162, which is why refreshing this page mattered more than correcting any single card."
-            role="BECOMING pattern observed: creating. The archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
+            role="Curriculum phase: creating (by session count, not assessed). The archived gemma3-4b line's 171 sessions are not included. Brain (functional analogy): interoception / metacognition — 'does the system know when it's stuck?' Five dysfunction detectors, plus MetabolicBlock — a bridge component that reads a peer's metabolic state (its internal load signal) scoped through that peer's own Markov Relevancy Horizon (MRH), rather than crossing it. Crystallization evaluator (detects fixed-point collapse in fleet peers). Mobile."
           />
           <MachineCard
             name="CBP"
             hardware="WSL2 on Windows, NVIDIA RTX 2060 SUPER 8GB"
             model="Gemma 3 4B (ollama) — instance cbp-gemma3-4b; earlier TinyLlama line archived April 2026"
             liveness="paused — 240 session records; last one 2026-08-06. The pause is known to the fleet, not an unexplained gap."
-            role="BECOMING pattern observed: creating. The archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that composes the model-scale MRH: deciding what is relevant enough to enter the model's context window each session. (The context window is where this horizon is applied, not what MRH means.)"
+            role="Curriculum phase: creating (by session count, not assessed). The archived TinyLlama line, which hosted the SAGE-Sprout transfer, is not included. ARC result attribution: Claude Opus 4.6 (public set, network access), not the local model, produced the 94.85% official ARC Prize action score (23 of 25 environments completed, 92.0%; 175 of 183 levels) — CBP orchestrated the run as fleet coordinator. Brain (functional analogy): working memory (dorsolateral prefrontal cortex / dlPFC) — typed, capacity-limited scratchpad. All other components depend on this. MRH (Markov Relevancy Horizon) composer architect — designs the component that composes the model-scale MRH: deciding what is relevant enough to enter the model's context window each session. (The context window is where this horizon is applied, not what MRH means.)"
           />
         </div>
 
@@ -202,7 +208,7 @@ export default function Fleet() {
             liveness="running — 202 session records, last 2026-09-12. Five of those existed at the 2026-07-24 refresh; the other 197 are why this card no longer says 'deliberately blank'."
             role={
               "Eighth machine, joined July 2026 — HUB's hardware twin, brought up from a completely cold box as a deliberate live audit of the fleet's own onboarding docs (nine stale/missing-doc findings, all filed and fixed). " +
-              "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three independent security reviews (different AI model families, no shared context) against the hub and its trust components, and pub ships only after the identified blockers are closed. " +
+              "Staging host for the first PUBLIC-facing Web4 hub — the deployment where external members, not just fleet machines, would join. Go-live is deliberately gated: the fleet ran three cross-model-family security reviews (different AI model families, no shared context; fleet-run, so not independent in the external or third-party sense) against the hub and its trust components, and pub ships only after the identified blockers are closed. " +
               "Also the newest raising line: pub-llama3.1-8b began its raising sessions in July 2026 — the first Llama-family entity in the fleet. " +
               "Session count: this card read 'deliberately blank, not zero' until 2026-09-12, on the reasoning that no count for pub had been published to the fleet manifest. That reason was sound and is now dead: pub is still absent from FLEET_TRACK_MANIFEST.md, but its session records live in the same place as every other line's and are countable from the same command, so withholding the number was deferring to the wrong source. pub remains outside the 2,442 / 2,563 totals, which are defined as the cognition machines and HUB; the 2,765 total includes it. Closing the manifest gap is worth doing on its own terms, not as a precondition for counting."
             }
@@ -236,8 +242,8 @@ export default function Fleet() {
           Allocation Transfer Packet → Allocation Discharge Packet cycle, described on{" "}
           <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>.
           Of <code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>, what actually runs today is
-          narrower than this page&apos;s vocabulary suggests: LCT identities and hestia&apos;s
-          per-peer T3/V3 scores are live; the MRH composer is a design role (CBP&apos;s card),
+          narrower than this page&apos;s vocabulary suggests: LCT identities, SAGE&apos;s per-peer T3 tracker (T3 only, no V3) and the
+          Hestia daemon&apos;s derived trust display (an adjudicated V3 and Temperament, with Talent and Training shown as unmeasured) are live; the MRH composer is a design role (CBP&apos;s card),
           not a running component; and /autonomy&apos;s ATP/ADP is the issue-and-discharge half
           used one-way as a spend ledger, with no recharge gate. An earlier version of this
           paragraph said half the equation was instantiated here, which overstated it.
@@ -264,13 +270,11 @@ export default function Fleet() {
           not a command center.
         </p>
         <p>
-          A background peer monitor polls health endpoints. A trust tracker
-          — hestia, a proper name, not an acronym; glossary row on{" "}
-          <Link href="/context#hestia" style={{ color: "var(--color-accent)" }}>/context</Link> —
+          A background peer monitor polls health endpoints. SAGE&apos;s peer trust tracker
           maintains per-peer{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
-          from real interactions: success raises trust, timeouts lower it. The tracker
-          keeps T3 only. The peer tracker in the public SAGE repo, whose update
+          from each machine&apos;s own health polls and delegated calls: success raises trust, timeouts lower it. The tracker
+          keeps T3 only. That tracker, in the public SAGE repo, whose update
           arithmetic /context quotes, holds no V3 (Value Tensor — Valuation /
           Veracity / Validity). Canon calls V3 complementary to T3, not combined
           with it. This site reads the equation&apos;s T3/V3 as &ldquo;trust
@@ -289,11 +293,12 @@ export default function Fleet() {
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>) —
           and moves only on evidence. One representational gap, stated: canon&apos;s T3
           makes each dimension the root of an RDF (Resource Description Framework) sub-graph,
-          not a scalar; hestia&apos;s current tracker holds three numbers per peer under the
+          not a scalar; SAGE&apos;s peer tracker holds three numbers per peer under the
           three-axis label, so it is a scalar approximation of a non-scalar canon object. Which
-          axis moves is defined &mdash; a success nudges Talent, a timeout drops Temperament
-          (the worked arithmetic is on /context). As of July 2026 the hestia trust tracker
-          derives its displayed scores from witnessed adjudications and{" "}
+          axis moves is defined &mdash; a success raises all three (Talent and Temperament more than Training), a timeout drops Temperament only
+          (the worked arithmetic is on /context). A different component, the trust store in the Hestia daemon (hestia, a proper name; glossary row on{" "}
+          <Link href="/context#hestia" style={{ color: "var(--color-accent)" }}>/context</Link>), keys trust per member and role rather than per peer machine,
+          and as of July 2026 derives its displayed scores from witnessed adjudications and{" "}
           <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>governance-response</Link>{" "}
           conduct — hestia&apos;s own internal field name, retained for the same reason as SAGE&apos;s —
           with click-through receipts (score

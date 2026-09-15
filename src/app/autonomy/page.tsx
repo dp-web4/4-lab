@@ -224,7 +224,15 @@ export default function Autonomy() {
           usage limit is exhausted (this happened &mdash; the 2026-09-04 maintainer run
           hit the weekly limit, and no maintainer session logs exist from 2026-08-12
           through 2026-09-04), when hestia&apos;s policy layer denies a command, or
-          when the researcher disables the schedule.{" "}
+          when the researcher disables the schedule. What that policy layer covers matters for
+          the posture below, so stated as of 2026-09-15: the law in force on the maintainer&apos;s
+          machine is Hestia&apos;s safety preset (destructive filesystem commands, writes to block
+          devices, credential files, with warnings on deletion, memory-file writes and web
+          fetches). It has no rule for <code>git push</code> or deploys; its one push-related rule
+          was removed on 2026-07-18. The maintainer&apos;s push also runs in the track&apos;s
+          wrapper script after the session ends, outside any tool call the gate sees. So the
+          gate can stop a track, but it does not pre-approve the pushes that ship this site, and
+          &ldquo;detect-and-revert, not prevent&rdquo; is accurate for them.{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>Human review
           cadence:</strong> unscheduled. The dated session logs are the review
           surface, and they are read when the researcher reads them &mdash; no fixed
@@ -278,7 +286,7 @@ export default function Autonomy() {
           recharges ADP back to ATP when the society validates a proof of the value
           the spend created (see{" "}
           <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
-          only after that conversion is the producer&apos;s{" "}
+          only after that conversion are the producer&apos;s T3 and{" "}
           <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
           (Value Tensor — Valuation / Veracity / Validity) updated &mdash; V3 records the
           outcome, it does not gate the recharge (specification: <code>charge_atp</code> in
@@ -286,9 +294,14 @@ export default function Autonomy() {
           In canon&apos;s action grammar, the loop this paragraph describes is{" "}
           <Link href="/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
           (R6 + Reputation), not bare{" "}
-          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link> —
+          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link>{" "}
+          (Rules / Role / Request / Reference / Resource → Result) —
           the outcome is attributed to a machine&apos;s LCT and is meant to feed trust
-          evolution. The distinction is not cosmetic: what the registry actually
+          evolution across scales. (The ATP spec counts tensor deltas on the direct
+          participants as an ordinary R6 Result; it is the cross-scale feed that makes
+          an action R7. See{" "}
+          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+          for where canon and spec differ.) The distinction is not cosmetic: what the registry actually
           implements is the R6 half. The reputation back-propagation that would make
           it R7 is the same missing piece as the recharge validation.
         </p>
@@ -377,11 +390,12 @@ export default function Autonomy() {
             {" "}(audit log + sub-minute rollback), not prevent (pre-approval).
             Consequential pushes are not human-gated before they ship.
             {" "}<strong style={{ color: "var(--color-text-primary)" }}>The revert record, since detect-and-revert is an empirical claim and not just a posture:</strong>{" "}
-            across 79 maintainer sessions (2026-04-23 through 2026-08-07 — this
-            record was last counted 2026-08-08 and has not been recounted since) and 117
-            commits touching this site&apos;s source, the number of deploys rolled
-            back via Vercel is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>, and the number of shipped
-            changes undone by a git revert is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>. Read that as weak
+            across 91 maintainer session logs (2026-04-23 through 2026-09-14) and 137
+            commits touching this site&apos;s source (whole history; recounted from git
+            2026-09-15, up from 79 and 117 at the 2026-08-08 count), the number of shipped
+            changes undone by a git revert is <strong style={{ color: "var(--color-text-primary)" }}>zero</strong>. The number of deploys rolled
+            back via Vercel was <strong style={{ color: "var(--color-text-primary)" }}>zero</strong> at the 2026-08-08 count; it lives in the
+            Vercel dashboard, not in git, and was not recounted. Read that as weak
             evidence, not as a safety result: the only automated detector is the
             same daily loop being evaluated, so a zero is equally consistent with
             &ldquo;no bad push shipped&rdquo; and &ldquo;the loop cannot see its own

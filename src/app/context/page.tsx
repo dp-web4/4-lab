@@ -24,9 +24,9 @@ export default function Context() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Developers: SAGE is the recommended starting point — it runs on a
-          single machine. Quick-start commands are on{" "}
-          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>.
-          This page covers the vocabulary; that one covers the first clone.
+          single machine. Quick-start commands are in the{" "}
+          <Link href="/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</Link>,
+          the only copy on the site. This page covers the vocabulary; that one covers the first clone.
         </p>
 
         <h3 id="glossary">Glossary at a glance</h3>
@@ -59,7 +59,7 @@ export default function Context() {
                 ["ontology", "Ontology", "—", "The Semantic Web sense: a shared vocabulary of concepts and the relationships between them — not the philosophical sense (a theory of what exists). This is what the Web4 entry above claims and nothing more. The fuller gloss: a shared vocabulary — concepts plus relationships — for how AI agents prove identity, earn trust, and account for resources. Not a blockchain and not a platform: Web4 requires no chain, and implementations that use ledger machinery (ACT does) use it as a witnessing substrate, not as the ontology itself."],
                 ["trust-native", "Trust-native", "—", "Trust as a primitive of the ontology, not a feature bolted on: every relationship carries T3/V3 tensors bound to LCTs and scoped by MRH. The term names an ontological commitment — the verifiable substrate (witnessed history) and the earned record (tensors updated by interaction) both follow from it; it is not, by itself, a cryptographic guarantee."],
                 ["trust", "Trust", "—", "Not a property of an entity — a property of a relationship, computed per role from a T3/V3 tensor updated by interaction (see Principle 4 on /principles). An agent trusted for code review may be untrusted for creative writing. Distinct from the calibrated-human-reliance sense the word carries in AI-safety literature, and distinct from 'trustworthy AI' as a reliability or alignment property of a system: here trust is a relational, per-role reputation record between two entities, and 'trust-native' means the ontology carries that record as a primitive — not that the agents have been certified safe."],
-                ["hestia", "hestia", "lowercase — the fleet trust tracker", "Capitalization is load-bearing on this site: lowercase hestia is this component; capitalized Hestia is the governance daemon in the row below. The fleet's trust tracker — the component that holds the per-relationship T3 scores shown on /fleet and updates them only on witnessed adjudication, never on self-report; each displayed score links through to its versioned formula and signed evidence. A proper name, not an acronym. The numbers it displays are per-dimension root scalars (canon: the aggregate at each T3 sub-graph root); whether anything beneath the root is populated in the current tracker is an implementation question this site does not answer. Its internal field name 'governance-response' predates the site's oversight vocabulary and is retained, as SAGE's name is."],
+                ["hestia", "hestia", "lowercase — the Hestia daemon's trust component", "Capitalization is load-bearing on this site: lowercase hestia is this component; capitalized Hestia is the governance daemon in the row below. The trust store and derivation inside the Hestia daemon (public hestia repo), keyed per member at the instance-and-role grain. Its displayed scores are derived at read time only from witnessed, not-the-actor adjudications (an adjudicated V3) and from how an actor responds to denials (Temperament); Talent and Training display as unmeasured. Each displayed score links through to its versioned formula and signed evidence. The stored tensor underneath also moves on caller-reported tool outcomes and gate denials, so 'never on self-report' is a property of the displayed score, not of storage. It is NOT the SAGE peer trust tracker whose arithmetic the T3 section quotes: that one is separate code, per peer machine, T3 only, updated from each machine's own observations of its peers. Until 2026-09-15 this site described the two as one component. A proper name, not an acronym. The numbers it displays are per-dimension root scalars (canon: the aggregate at each T3 sub-graph root); whether anything beneath the root is populated in the current tracker is an implementation question this site does not answer. Its internal field name 'governance-response' predates the site's oversight vocabulary and is retained, as SAGE's name is."],
                 ["hestia-project", "Hestia", "capitalized — the governance daemon", "One of the four headline projects: the open local-first daemon that puts AI agents from different vendors under one signed law on one machine, with a hash-chained action record, human escalation, and a trust posture derived from that record rather than asserted. Hestia adjudicates — it decides, at the moment of the act. That is why this site calls Hestia's function governance and does not rewrite it to oversight: the governance-to-oversight terminology rule binds Hardbound, which gates and reverts against a hardware root. Two different jobs, two words, on purpose — this is a claim, not an uncorrected legacy term. Running today at assurance profile A1; see the row below. Distinct from lowercase hestia above, which is one trust component, not the daemon."],
                 ["assurance-ladder", "A0–A4", "Assurance profile", "Hestia's own published ladder for how strongly a control is enforced, ascending: A0 observed (recorded, nothing enforced) · A1 cooperative gate (an in-process hook consults policy and complies — stops accidents and a well-behaved agent) · A2 external enforcement (the relying service verifies a signed decision before acting — stops an agent that removes its own hook) · A3 OS-isolated (separate UID or container) · A4 hardware-attested. Hestia is at A1 today; A2 is the next target and is not shipped. An untested control holds at A0 regardless of intent. Naming collision, stated here because it inverts: in the US DoD Orange Book (TCSEC — Trusted Computer System Evaluation Criteria), class A1 is the HIGHEST assurance class, Verified Design. On this ladder A1 is the second-lowest rung. The two scales are unrelated, and a reader who knows TCSEC will read this site backwards without the note. The label is upstream project vocabulary, reported here rather than renamed."],
                 ["autonomous", "Autonomous / autonomy", "—", "Unattended and self-scheduled — NOT self-directed in the AI-safety sense of choosing its own goals: task definitions are authored in advance, not chosen by the track itself (see /autonomy). This is the site's highest-risk collision for a reader from AI safety, because the word is doing much weaker work here than that field's usage implies: a track picks when it runs and what it writes within a declared scope, it does not pick what it is for. No claim is made about goal formation, self-modification, or operating outside an authored scope."],
@@ -76,10 +76,10 @@ export default function Context() {
                 ["adp", "ADP", "Allocation Discharge Packet", "The spent form of ATP — the record of actual outcome. Not a terminal log line: ADP recharges back to ATP when the society validates a proof of the value the work created (canon, under R7: ADP attestation feeds recharge validation). The recharge then updates the producer's T3/V3; V3 records the outcome, it does not gate it (see V3 above). Charged → spent → recharged."],
                 ["r6", "R6", "Six-Element Action Framework", "Rules / Role / Request / Reference / Resource → Result — the base action grammar, the shape of every auditable action. Canon scopes it as the transaction form 'without reputation tracking' — for routine actions that don't merit the bookkeeping cost of ledger feedback into trust evolution. See R7 below."],
                 ["r7", "R7", "R6 + Reputation", "Canon's superset of R6, 'adding reputation back-propagation': the result's ADP attestation feeds recharge validation and reputation accumulation across scales (action → role → entity → society). Both modes are canonical, neither deprecated — the choice is contextual, made per action or per role by whether the outcome should shape future trust. Named here because when this site describes trust tensors updated from witnessed outcomes, that update loop — the T3/V3 tensor delta /raising describes — is R7's seventh element in all but name: one mechanism, in tensor vocabulary there and action-grammar vocabulary here."],
-                ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel — a continuous 12-step sense-to-act loop. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
+                ["sage", "SAGE", "Situation-Aware Governance Engine", "On-device cognition kernel. The continuous 12-step sense-to-act loop is the Python kernel; the Rust sage-daemon the fleet deploys is, per SAGE's capability matrix, an inference-and-metabolism gateway that shares two of the loop's mechanisms (metabolic states, SNARC salience) and not the rest. “Governance” in the name predates the lab's governance→oversight correction and is NOT the sense the word carries in AI-safety literature: SAGE governs one device's own sense-to-act loop — what it attends to, when it acts, when it rests — not policy over AI systems, and it is not a safety or alignment mechanism. See note below ↓"],
                 ["snarc", "SNARC", "Surprise / Novelty / Arousal / Reward / Conflict", "Salience-gated memory — five dimensions decide what is kept. The dimensions, since the names are borrowed from affective psychology and one of them reads oddly out of context: Surprise = prediction error, the outcome did not match what was expected; Novelty = not seen before, independent of whether it was predicted; Arousal = activation intensity, a magnitude-of-engagement signal and nothing to do with the colloquial sense of the word; Reward = a goal was advanced; Conflict = signals disagree or a constraint was violated."],
                 ["hardbound", "Hardbound", "—", "The hardware-bound oversight suite — key custody and attestation intended to anchor in silicon; enforcement today runs at the process level, not yet hardware-anchored (see /projects). “Oversight” here is machine-enforced (gating, reverting), not the human-supervision sense the word carries in AI-safety literature. See note below ↓"],
-                ["policygate", "PolicyGate", "—", "Hardbound's enforcement checkpoint between SAGE's filter and act steps. Software checking actions against a signed law bundle; the hardware anchoring that would make it tamper-resistant is a design target, not the current mechanism. What it delivers today is auditability — actions are inspectable after the fact — not a demonstrated safety property. See the PolicyGate section below."],
+                ["policygate", "PolicyGate", "—", "SAGE's own conscience checkpoint: a plugin in the public SAGE repo (sage/irp/plugins/policy_gate.py) that evaluates the loop's proposed effects against policy rules before dispatch. SAGE's capability matrix maps it to loop step 10, Govern. It is config-gated, ships with no rules and a default of allow, and is absent from the Rust daemon the fleet deploys. SAGE's documentation also records a port of the same plugin inside Hardbound; this row was titled \"Hardbound's enforcement checkpoint\" until 2026-09-15, which attributed SAGE code to the proprietary tier. See the PolicyGate section below."],
                 ["policy", "Policy / policy model", "—", "The compliance rule set a gate evaluates an action against — a signed law bundle — NOT the action-selecting policy of reinforcement learning. This collision is worth flagging because it runs in the most confusing possible direction: PolicyGate sits inside an action-selection loop, exactly where an RL reader expects to find a policy network, and it is the opposite kind of object — it vetoes actions, it does not choose them. Likewise Hardbound's “small local policy model” (see /projects) is a model that reviews actions against rules, not a π(a|s) trained to emit them."],
                 ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) bound to MCP tool calls. MCP is a term in the Web4 equation, not a layer beneath it."],
                 ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
@@ -87,12 +87,12 @@ export default function Context() {
                 ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
                 ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.) Note the dependency: this term is defined through 'coherence', and coherence is in turn partly defined through the synthon marker — so it inherits that entry's open status. See the coherence entry; there is no single operational definition of coherence yet, and this row does not supply one."],
                 ["attractor", "Attractor / attractor basin", "—", "Used on this site as a METAPHOR, not a formal dynamical-systems object: a region of response-space a model reliably returns to under a given context. No state space and no update rule are specified, and none is implied — we have not defined the dynamics that would make 'attractor' a technical claim. Flagged explicitly because the word borrows the connotation of mathematical precision from a formalism this site does not cash out. Read it as 'stable behavioral tendency'."],
-                ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history — never weights."],
+                ["raising", "Raising", "—", "Shaping context, experience buffer, and interaction history. Current raising lines run with frozen weights; one archived line (Sprout Qwen 0.5B, 2026-01-27 to 2026-03-06) loaded a sleep-cycle LoRA adapter trained on its own sessions, so 'never weights' is not true of the history."],
                 ["experience-buffer", "Experience buffer", "—", "The per-instance store of prior sessions an agent carries forward — session records, distilled observations, and the state files the prompt builder reads at start-up. It is the durable half of what raising shapes: on disk, portable between machines, and independent of which model is loaded. Named here because the glossary's own definition of Raising rests on it."],
                 ["fractal-leverage", "Fractal leverage", "—", "The same pattern instantiated at every scale — reuse, not unification."],
-                ["synchronism", "Synchronism", "—", "The theoretical foundation — a research conjecture proposing that one saturating coherence dynamics recurs at every scale. WHICH object recurs is open: the Navier-Stokes identification earlier framings used was refuted by Synchronism’s own audits and is tagged superseded upstream, and the replacement substrate rule is a different equation joined to the old one by narrative rather than derivation — so “one equation” is the ambition, not a demonstrated structure. Physics arc at rest since 2026-06-24; zero confirmed novel predictions across ~3,360 sessions. Web4 operationalizes parts of it; narrative section below."],
+                ["synchronism", "Synchronism", "—", "The theoretical research program Web4 draws on as lineage (not a derivation) — a research conjecture proposing that one saturating coherence dynamics recurs at every scale. WHICH object recurs is open: the Navier-Stokes identification earlier framings used was refuted by Synchronism’s own audits and is tagged superseded upstream, and the replacement substrate rule is a different equation joined to the old one by narrative rather than derivation — so “one equation” is the ambition, not a demonstrated structure. Physics arc at rest since 2026-06-24; zero confirmed novel predictions across ~3,360 sessions. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
-                ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — described as tired, energized, or in need of rest. Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
+                ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — one of five named states: WAKE, FOCUS, REST, DREAM, CRISIS (the same five in the Python kernel and the Rust daemon). Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
                 ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context. Which sense carries the numbers: the “1% coupling → 35% coherence gain” figure is quoted under both the Synchronism and synthon senses, but its coherence measure is defined only inside the single trial that produced it — it is NOT the SNARC-scored session property, and no cross-sense comparison is implied. See Evidence and limitations below."],
                 ["identity-continuity", "Identity continuity / behavioral-identity continuity", "—", "The persistence of a recognizable behavioral signature across sessions and across substrate changes. /raising gives it a working definition — “consistent session-to-session behavioral patterns measured via raising curriculum state and interaction logs” — so it is not an empty term. What it lacks is the next step down: no metric names what would actually be scored on those logs, and no threshold says what counts as degradation. It is counted (“180+ sessions”, see Evidence and limitations) but not measured. That matters more than a normal glossary gap, because this is the outcome variable of the deflationary control on /raising: the pre-commitment to retire the developmental vocabulary is bound to a quantity that does not yet have a definition, so the metric has to be pre-registered BEFORE that control runs or it cannot adjudicate either way. Same defect class as the coherence entry above — a load-bearing term the site uses honestly and has not yet grounded."],
                 ["cognition-machine", "Cognition machine", "—", "One of the six fleet machines that runs a model and executes autonomous tracks — it senses, decides, and writes. The term partitions the fleet against society-host below: eight machines total, six cognition + two society-hosts. It is a role label, not a capability claim — 'cognition' here means the machine runs a sense-to-act loop (SAGE) and holds its own identity, not that anything is understood or experienced. Every count on this site that says 'six' is counting these; counts that say 'eight' include the society-hosts. See /fleet."],
@@ -141,7 +141,13 @@ export default function Context() {
         <h3>SAGE: Situation-Aware Governance Engine</h3>
         <p>
           SAGE (Situation-Aware Governance Engine) is the on-device AI cognition
-          kernel — a continuous 12-step loop that senses context, deliberates, and acts.
+          kernel — a continuous 12-step loop that senses context, deliberates, and acts. That loop is the
+          Python kernel. The Rust <code>sage-daemon</code> that the fleet deploys and the /projects quick start
+          runs is, in SAGE&apos;s own{" "}
+          <a href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/RUST_VS_PYTHON_CAPABILITY.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>capability matrix</a>,
+          &ldquo;an inference-and-metabolism gateway, not a port of the Python 12-step consciousness
+          kernel&rdquo;: it re-implements the metabolic states and SNARC salience and adds peer
+          federation, and the posture, select, govern and filter steps are absent from it.
           Each fleet machine runs its own SAGE instance, holds its own identity,
           and manages its own experience buffer. SAGE is what makes knowledge
           actionable: it decides what enters the context window, when to act,
@@ -151,13 +157,13 @@ export default function Context() {
           The 12 steps, in order: sense &rarr; salience &rarr;{" "}
           <strong>metabolize</strong> (compute{" "}
           <Link href="#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolic state</Link>{" "}
-          — internal load: tired, energized, needs rest) &rarr;{" "}
+          — internal load, one of WAKE / FOCUS / REST / DREAM / CRISIS) &rarr;{" "}
           <strong>posture</strong> (translate the trust landscape into a
           behavioral stance — cautious, exploratory, and so on — not just a
           spend limit) &rarr; select &rarr; <strong>budget</strong> (commit an
           ATP for the chosen action) &rarr; execute &rarr; learn &rarr;
-          remember &rarr; govern &rarr; filter &rarr; act. The last two,
-          filter and act, are where PolicyGate (below) sits. &ldquo;Govern&rdquo;
+          remember &rarr; govern &rarr; filter &rarr; act. PolicyGate (below)
+          is SAGE&apos;s implementation of step 10, govern. &ldquo;Govern&rdquo;
           is SAGE&apos;s own step name, as its site prints it; the
           governance&rarr;oversight rule below does not rename another
           project&apos;s terms. (An earlier version of this list said
@@ -215,28 +221,26 @@ export default function Context() {
 
         <h3>PolicyGate: action enforcement</h3>
         <p>
-          PolicyGate is a Hardbound oversight sub-gate inset in the SAGE cognition
-          loop between step 11 (filter) and step 12 (act) — not an additional step,
-          but an enforcement checkpoint. (Numbering caveat: those are the 12-step
-          names SAGE&apos;s site prints. SAGE&apos;s own loop document numbers the
-          PolicyGate checkpoint &ldquo;step 8.6&rdquo;, placed between memory
-          update and effector execution, in a different numbering. This site has
-          not reconciled the two schemes; the placement before action is common to
-          both.) As designed, it evaluates every action
-          against a signed law bundle before the action fires: PolicyGate is
-          where Hardbound oversight is intended to intersect SAGE execution, so
-          that the harness can plan, reason, and prepare, but nothing executes
-          until PolicyGate clears it. Per the maturity note above, that gate is
-          the design target rather than today&apos;s deployed enforcement on the
-          fleet.
+          PolicyGate is SAGE&apos;s own code: a plugin in the public SAGE repo whose header
+          calls it a &ldquo;conscience checkpoint for SAGE consciousness loop&rdquo;, whose header
+          gives its origin as &ldquo;SOIA-SAGE convergence&rdquo;. SAGE&apos;s capability matrix maps it to loop step 10,
+          govern. In the Python kernel it runs at the loop&apos;s internal &ldquo;8.6&rdquo; position,
+          evaluating proposed effects against policy rules before the posture filter and dispatch.
+          Three facts bound what it does today. It is config-gated, and its defaults are no rules and
+          allow. It is absent from the Rust daemon the fleet actually runs. And it is software only.
+          SAGE&apos;s documentation also records that Hardbound carries a port of the same plugin, so
+          the design intent that Hardbound&apos;s oversight gates SAGE&apos;s actions through a
+          PolicyGate is real. The component in the SAGE loop is SAGE&apos;s, though, not
+          Hardbound&apos;s. Until 2026-09-15 this section called it &ldquo;a Hardbound oversight
+          sub-gate&rdquo;.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
-          Note: SAGE loop step 10 (&ldquo;govern&rdquo;) is SAGE&apos;s own metacognitive self-check (&ldquo;does the system know when it&apos;s stuck?&rdquo;). That is distinct from PolicyGate: step 10 is SAGE governing its own loop; PolicyGate is Hardbound&apos;s external oversight &mdash; intended to be silicon-bound, software-checked today. Two checkpoints, different principals, and the two words mark the difference.
+          Note: this section used to separate SAGE loop step 10 (&ldquo;govern&rdquo;, described as a metacognitive self-check) from PolicyGate (&ldquo;Hardbound&apos;s external oversight&rdquo;) as two checkpoints with different principals. SAGE&apos;s capability matrix puts PolicyGate <em>in</em> step 10, so that distinction was not in the code. It also means the governance/oversight split on this page cannot be sorted by timing alone: PolicyGate decides before an action fires, as Hestia does. That split is lab vocabulary, not Web4 canon (CANONICAL_TERMS_v1 does not use &ldquo;oversight&rdquo;), and a cleaner criterion is an open question for the researcher.
         </p>
 
         <h3>Synchronism: coherence equations</h3>
         <p>
-          Synchronism is the theoretical foundation — a research conjecture
+          Synchronism is the lab&apos;s theoretical research program — a research conjecture
           proposing that reality emerges from intent dynamics on a discrete
           Planck grid, with one saturating coherence dynamics recurring at every
           scale from quantum to cosmic. <strong>Which</strong> object recurs is
@@ -254,8 +258,9 @@ export default function Context() {
           been at rest since 2026-06-24; its capstone verdict calls the framework
           a productive-metaphor generator — generative and pedagogical, not
           predictive or foundational — with zero confirmed novel predictions
-          across ~3,360 sessions. Coupling-coherence experiments provide empirical
-          grounding (single-trial observation, no independent replication yet): 1% coupling yielded 35% coherence gain. Hill function
+          across ~3,360 sessions. One coupling-coherence experiment reported that 1% coupling yielded a 35% coherence gain: a
+          preliminary single-trial observation, on a coherence measure defined only inside that
+          experiment, with no replication. It is not empirical grounding (see Principle 5 on /principles). Hill function
           kinetics (a saturation curve from enzyme chemistry — response rises
           steeply past a threshold, then levels off) is borrowed by analogy for
           both enzyme binding and trust formation — the same curve shape observed
@@ -279,12 +284,13 @@ export default function Context() {
             Synchronism site
           </a>{" "}
           for the full treatment. Synchronism is the theory; Web4 is the
-          working vocabulary that operationalizes parts of it as a trust-native
-          ontology — Synchronism provides the coherence equations, Web4 encodes
-          them as identity and trust primitives. The empirical results on this
-          site (ARC-AGI-3 scores, fleet capacity findings) stand independently
-          of Synchronism — accepting those results does not require accepting
-          the theoretical framework.
+          working vocabulary, a trust-native ontology that draws on it as lineage.
+          No Web4 primitive is derived from a Synchronism equation, and the web4
+          repository names Synchronism as &ldquo;conceptual lineage; not an
+          engineering dependency.&rdquo; The externally scored result on this
+          site (ARC-AGI-3) and the internal fleet observations (model capacity,
+          identity continuity) stand independently of Synchronism — accepting
+          them does not require accepting the theoretical framework.
         </p>
 
         <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
@@ -432,13 +438,18 @@ export default function Context() {
 
         <h3>ATP / ADP: resource allocation and accounting</h3>
         <p>
-          ATP (Allocation Transfer Packet) is the resource allocation for an
-          intended action — it declares what will be spent before the action
-          runs. ADP (Allocation Discharge Packet) is the record of the
-          action&apos;s actual outcome — the spent form of the ATP. Every
-          resource commitment in a Web4 system produces both: one artifact for
-          the intention, one for the result. Together they make autonomous
-          resource flows auditable without a central ledger. The biochemistry
+          In the specification (<code>atp-adp-cycle.md</code> §1–2), ATP and ADP are not two
+          separate artifacts but two states of one semifungible token that a society
+          manages in its own pools. Societies mint tokens in the discharged state, ADP
+          (Allocation Discharge Packet); a validated contribution charges them to ATP
+          (Allocation Transfer Packet); spending on an action discharges them back to
+          ADP, returned to the society&apos;s pool; and witnessed misconduct can slash
+          them. The tokens cannot be hoarded, and stagnant ATP decays. What the fleet
+          runs today is narrower: its track registry keeps one record for the
+          declared budget and one for the actual spend, which is the declare-and-record
+          approximation described below, not the pooled token. (Until 2026-09-15 this
+          paragraph described that registry shape, &ldquo;one artifact for the intention, one for the
+          result&rdquo;, as the primitive itself.) The biochemistry
           namesake (adenosine tri-/diphosphate) is a deliberate metaphor —
           allocate, spend, recharge, like ATP&rarr;ADP in a cell — not a claim
           of biological mechanism.
@@ -490,13 +501,16 @@ export default function Context() {
           RDF triples scoped by MRH. (&ldquo;Tensor&rdquo; here means a structured multi-component quantity — not a rank-≥2 array in the linear-algebra sense.)
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
-          Worked numeric example, from the fleet&apos;s current implementation
-          (the peer trust tracker in the public SAGE repo): each machine keeps a
+          Worked numeric example, from SAGE&apos;s peer trust tracker in the public SAGE repo
+          (<code>peer_trust.rs</code> / <code>peer_trust.py</code>; not the Hestia daemon&apos;s trust
+          component, see the hestia row): each machine keeps a
           per-peer T3 triplet, each dimension a value in [0, 1], initialized at
-          a neutral 0.5 &mdash; not trusted, not distrusted. Interaction outcomes
-          apply fixed deltas scaled by an exponential-moving-average factor
-          (&alpha; = 0.1) and clamped to [0, 1]: a successful task nudges the
-          peer&apos;s Talent from 0.500 to 0.505 (+0.05 delta &times; &alpha;); a
+          a neutral 0.5 &mdash; not trusted, not distrusted. The outcomes are the observing
+          machine&apos;s own health polls and delegated calls to that peer (success, timeout, error),
+          not witnessed attestations. Each outcome adds a fixed delta scaled by
+          &alpha; = 0.1 and clamps to [0, 1] (the code calls &alpha; a moving-average factor; the update
+          is additive): a success moves all three dimensions, Talent 0.500 &rarr; 0.505 (+0.05 &times; &alpha;),
+          Training 0.500 &rarr; 0.502 (+0.02 &times; &alpha;), Temperament 0.500 &rarr; 0.505 (+0.05 &times; &alpha;); a
           timeout drops Temperament from 0.500 to 0.490 (&minus;0.10 &times; &alpha;)
           while leaving Talent and Training untouched. A single reputation
           score, when needed, is the geometric mean of the three dimensions.
@@ -518,9 +532,14 @@ export default function Context() {
         </p>
         <p>
           <strong>Defended, by construction:</strong> a self-flattering entity.
-          Trust moves only on witnessed adjudication, never on self-report, so an
-          agent cannot raise its own T3 by claiming success &mdash; another party
-          has to record the outcome. Trust is also directional and per-role, so a
+          In the Hestia daemon&apos;s displayed trust, scores are derived only from
+          witnessed, not-the-actor adjudications and denial-response conduct, so an
+          agent cannot raise its displayed score by claiming success &mdash; another party
+          has to record the outcome. (The stored tensor beneath the display does take
+          caller-reported outcomes; the exclusion is enforced at derivation. SAGE&apos;s
+          peer tracker is different again: each machine scores peers from its own
+          observations, which a peer cannot self-report into but could game by
+          answering health checks.) Trust is also directional and per-role, so a
           good reputation with one peer does not transfer to a third party who has
           not interacted with it, which limits how far a single forged relationship
           can travel.
@@ -577,9 +596,15 @@ export default function Context() {
           neither is deprecated; the choice is per action or per role, by
           whether the outcome should shape future trust. Worth stating because
           the rest of this site describes exactly that loop — trust tensors
-          updated from witnessed outcomes — so wherever the prose says trust
-          &ldquo;updates from interaction,&rdquo; the action grammar underneath
-          is R7, not bare R6.
+          updated from witnessed outcomes — so where the prose says trust
+          &ldquo;updates from interaction&rdquo; in a way meant to accumulate
+          across scales, the action grammar underneath is R7. Upstream is not
+          fully consistent on the boundary: canon describes R6 as working without
+          reputation tracking, while the core spec&apos;s ATP/ADP document
+          (<code>atp-adp-cycle.md</code>, its R6/R7 note) counts T3/V3 deltas on
+          the direct participants as an ordinary R6 Result and reserves R7 for
+          outcomes that feed fractal trust evolution. This page follows the spec&apos;s
+          narrower reading where the two differ; the conflict is upstream&apos;s to settle.
         </p>
 
         <h3>ACP: Agentic Context Protocol</h3>
@@ -603,8 +628,9 @@ export default function Context() {
           brute-force memorization cannot succeed. The lab&apos;s result: 94.85%
           official ARC Prize action score (Claude Opus 4.6 operating within the
           SAGE harness, public set, network-enabled; 23 of 25 environments, 92.0% environment
-          rate). Phase 2 work is isolating the harness&apos;s independent
-          contribution from the model&apos;s. See{" "}
+          rate). No harness ablation (same model, no harness) has run or is scheduled, so the
+          harness&apos;s independent contribution is unknown; the Phase 2 row on /projects is a
+          separate local-model transfer track, not that ablation. See{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
           for the full result breakdown.
         </p>
@@ -626,10 +652,12 @@ export default function Context() {
           Raising is the practice of shaping the substrate conditions — context,
           experience buffer, interaction history — in which an agent develops.
           It is not training: the model&apos;s parameters are fixed for the
-          duration of a raising session. Some machines separately run LoRA
-          (Low-Rank Adaptation) fine-tuning as its own distinct process outside
-          the raising loop (see the glossary entry below) — that process
-          changes weights; raising itself never does. What changes in raising
+          duration of a raising session. Current raising lines run with frozen weights. That
+          was not always so: from 2026-01-27 to 2026-03-06 the archived Sprout
+          Qwen 0.5B line trained a sleep-cycle LoRA (Low-Rank Adaptation) adapter
+          on its own high-salience raising exchanges and loaded it back into its
+          sessions. Other LoRA work on the fleet is separate fine-tuning outside
+          the raising loop. What changes in raising
           is the scaffolding that determines what the agent encounters, in what
           order, and with what structure. A raising session is a deliberate
           context construction aimed at developing behavioral patterns, identity,
@@ -661,11 +689,11 @@ export default function Context() {
         <p>
           Each entity instantiates the full Web4 pattern at its own scale. Not
           unification, and not scope inflation — pragmatic reuse of patterns that work
-          at one scale, applied at every scale. When a principle governs enzyme
-          binding and trust formation through the same kinetics, that kinetics is
-          fractal leverage. Synchronism proposes the equations; Web4 encodes
-          them as ontology; SAGE runs them as cognition; Hardbound enforces them
-          as oversight. Same pattern at every layer. See{" "}
+          at one scale, applied at every scale. When the same saturation curve describes both enzyme
+          binding and trust formation, reusing that curve at the second scale is
+          fractal leverage, by analogy rather than by derived law. Synchronism is
+          where such patterns were first proposed; Web4 states them as ontology;
+          SAGE runs them as cognition; Hardbound enforces them as oversight. Same pattern at every layer. See{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
         </p>
 
@@ -759,7 +787,7 @@ export default function Context() {
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Internal observations:</strong>{" "}
           the BECOMING patterns, behavioral-identity continuity (180+ sessions),
-          identity portability across machines, fleet capacity findings, and
+          identity portability across machines, fleet model-capacity observations, and
           Hardbound&apos;s attack-vector catalog rest on internal session logs.
           They are documented and dated, but not externally audited — no
           published log samples, coding criteria, or third-party review yet.
@@ -778,8 +806,8 @@ export default function Context() {
           &ldquo;identity,&rdquo; &ldquo;growth&rdquo; — is not yet discriminated
           from competent context engineering. The same holds for the loop&apos;s
           biological vocabulary — &ldquo;dream consolidation&rdquo; (an offline
-          consolidation pass), &ldquo;metabolic state&rdquo; and &ldquo;tired /
-          energized / in need of rest&rdquo; (resource-load signals): mechanism
+          consolidation pass), &ldquo;metabolic state&rdquo; and its WAKE /
+          FOCUS / REST / DREAM / CRISIS labels (resource-load signals): mechanism
           names by analogy, not physiology. The{" "}
           <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>deflationary control</Link>{" "}
           that would make that comparison is specified but not scheduled — no
@@ -810,11 +838,11 @@ export default function Context() {
           machines sum to <strong>2,442</strong>, or 2,563 including HUB&apos;s
           121, or 2,765 including pub&apos;s 202.{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
-          now leads with the 2,563 figure, since that is the one with a
-          per-machine audit trail behind it. (This sentence said &ldquo;the home
-          page and /links both&rdquo; until 2026-09-12; the home page carries no
-          session total at all, so that half was describing a page rather than
-          reading it.) These replace 1,991 / 2,065, which
+          uses the same basis. (Until 2026-09-15 this sentence said /links
+          &ldquo;leads with the 2,563 figure&rdquo;; /links leads with 2,442 and
+          gives 2,563 in parentheses. Before 2026-09-12 it also said the home page
+          carried a total, which it does not. Both times the sentence described
+          a page rather than reading it, which is why it now names no figure.) These replace 1,991 / 2,065, which
           rested on each machine&apos;s self-report in the 2026-07-24 manifest
           refresh: most of the increase is seven weeks of counting nobody
           redid, but the change that matters is the basis, from a self-report

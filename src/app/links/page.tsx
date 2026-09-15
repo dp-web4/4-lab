@@ -20,7 +20,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
           />
           <ExternalLink
             href="https://4-gov.org"
@@ -53,12 +53,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop, metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
             title="Synchronism"
-            description="Theoretical foundation — coherence equations, coupling experiments"
+            description="Theoretical research program — coherence conjecture, coupling experiments; conceptual lineage for Web4, not an engineering dependency"
           />
           <ExternalLink
             href="https://github.com/dp-web4/ai-dna-discovery"
@@ -68,7 +68,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-10 (which removed its README), no running chain, no first-run steps published. Not a working entry point today."
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and CBP chain startup for fleet use; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
