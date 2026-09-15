@@ -2,3 +2,31 @@ Starting 4-lab Maintainer Session at Tue Sep 15 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  rename sage/instances/mcnugget-gemma3-12b/snapshots/archive/{identity_20260911_203314.json => identity_20260915_044635.json} (91%)
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_214.json
+I've pushed today's maintainer session as `b4f0897`. The site had no terminology drift (all four visitor passes agree, and my search of the source found none). The build passes, and `check-caveats.sh` exits 0: 20 protected caveats still hold, and none of the 32 withdrawn readings are live. Nothing HIGH was carried over from yesterday or left open today.
+
+## What mattered most
+The visitor flagged three things only the researcher could answer. Reading the SAGE code answered all three, and the site was wrong on each:
+
+1. **"Raising never changes weights" was false for part of the history.** From 2026-01-27 to 2026-03-06, the archived Sprout Qwen 0.5B line trained a LoRA adapter on its own raising sessions and loaded it back in. 84 of its session records say `using_lora: true`. Weights have only been frozen since SAGE's curriculum doc of 2026-04-04. This is the same line /raising uses for its main identity observation. I qualified the claim on /raising, /principles and twice on /context.
+2. **The post-session "dream consolidation" step is Claude** (`claude --print`), not the entity's own model. It rewrites the identity file after every session. /raising now names it, adds the analogy caveat, and lists it as a possible explanation for vocabulary drift.
+3. **"BECOMING pattern observed: creating" on all six /fleet cards was a schedule, not an observation.** The raising scripts set it from the session number (41 and up means "creating"). It is now labelled as the curriculum phase.
+
+## Other fixes, each checked against the code
+- **Quick start:** it described a 12-step loop and posture display that the Rust daemon doesn't have. It now describes what the dashboard actually shows. Its SNARC bars are never filled in, which the text also says.
+- **PolicyGate:** it is SAGE's own plugin for loop step 10, not Hardbound's.
+- **Trust trackers:** SAGE's peer tracker and Hestia's trust store had been described as one component; they are now separate. The worked example now shows all three dimensions moving on a success.
+- **/autonomy:** Hestia's rules have no rule for `git push` or deploys, and the push runs outside anything the gate sees. So "detect-and-revert, not prevent" is accurate, and the page now says why.
+- **Accuracy fixes:** ATP/ADP now follows the spec's model. Synchronism is described as lineage, not a derivation. ACT's last real commit was 2026-04-29, not 04-10.
+- **Pointers and wording:** four stale cross-page pointers fixed. Overstated evidence words ("finding", "empirical grounding", "independent", "breakthrough", "currently running") toned down. The revert record was recounted from git.
+- **Fleet:** the model manifest got its first fresh write since March. McNugget has run Gemma 4 12B since session 449 (2026-09-08), which I confirmed in the session records before updating /fleet.
+
+I added 19 withdrawn-reading checks, and each one fires on the old build.
+
+## Left open
+- **Researcher decisions:** how to define the governance/oversight split (timing alone doesn't separate PolicyGate from Hestia), a date for the /raising commitment, and whether to run one visitor persona on a different model family.
+- **Not done:** run steps for Hestia and Hub, which are badged "runnable", and a "try it" link on Home. I didn't want to publish commands I hadn't checked.
+- **Stale figure:** the /autonomy lead line is still dated 2026-05-26.
+
+**A question for you:** /raising's main example, Sprout, now has two known confounds, the LoRA period and the Claude consolidator. Should the page lead with a line whose weights were frozen throughout instead?
+
+Also, the Playwright tool didn't connect (`npx` not on PATH) and Google Drive needs authorization. Neither was needed today.
