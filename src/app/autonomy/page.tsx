@@ -145,7 +145,7 @@ export default function Autonomy() {
           content that visitors will eventually test. It&apos;s a closed loop
           that improves surface-level site quality without human intervention —
           semantic validation still depends on human review (see the honest
-          assessment below).
+          assessment).
         </p>
 
         <h3>Visitor personas</h3>
@@ -329,7 +329,9 @@ export default function Autonomy() {
           visitor personas are good at surface-level quality but not at
           validating the underlying research. That&apos;s what{" "}
           <Link href="/context" style={{ color: "var(--color-accent)" }}>adversarial
-          validation</Link> and human review are for.
+          validation</Link> and human review would be for. Neither covers this publishing loop today:
+          review is not heterogeneous, and human review has no committed cadence (both stated in this
+          assessment).
         </p>
         <p>
           The loop also has a tendency to suggest changes that aren&apos;t

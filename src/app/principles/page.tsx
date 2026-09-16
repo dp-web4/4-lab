@@ -214,7 +214,8 @@ export default function Principles() {
               &ldquo;architecture&rdquo; or &ldquo;infrastructure&rdquo; — it&apos;s
               an ontology. Hardbound is not &ldquo;governance&rdquo; — it&apos;s
               oversight: watching, gating, and reverting actions, not deciding
-              what should happen. That&apos;s the machine-enforced sense, not
+              what should happen (by design; enforcement is process-level today, not hardware-anchored).
+              Hestia keeps &ldquo;governance&rdquo; on purpose, because it adjudicates at the moment of the act. That&apos;s the machine-enforced sense, not
               the human-supervision sense &ldquo;oversight&rdquo; carries in
               AI-safety literature — see{" "}
               <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}

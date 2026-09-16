@@ -41,7 +41,7 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel; the name predates the governance→oversight correction), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the fleet&apos;s trust tracker; a proper name, not an acronym), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel; the name predates the governance→oversight correction), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
@@ -109,14 +109,14 @@ export default function Fleet() {
           <MachineCard
             name="Thor"
             hardware="NVIDIA Jetson AGX Thor — 122GB unified memory"
-            model="Qwen 3.5 27B (transformers) · LoRA — instance thor-qwen3.5-27b"
+            model="Qwen 3.5 27B (transformers) · LoRA-capable, no adapter loaded — instance thor-qwen3.5-27b"
             liveness="quiet — 268 session records; last one 2026-07-28, none since, and no sign the loop is still turning over. Count changed from a previously published 435: that figure has no source in the git basis this page now uses (Thor's other instance lines hold zero session records), so it is withdrawn rather than restated, pending Thor's own seat. This is a basis change, not 167 lost sessions."
             role="Curriculum phase: creating (by session count, not assessed). Brain (functional analogy): hippocampal episodic index — binds what+where+when for pattern-completion retrieval. Physics exploration lead — an internal, unpublished result on prediction-focused prompting. Synchronism research."
           />
           <MachineCard
             name="Sprout"
             hardware="NVIDIA Jetson Orin Nano 8GB — edge AI module"
-            model="Qwen 3.5 0.8B and Qwen 3.8-distill 2B (ollama) — instances sprout-qwen3.5-0.8b and sprout-qwen3.8-distill-2b"
+            model="Qwen 3.5 0.8B and Qwen 3.8-distill 2B (ollama tag qwen3.8-distill:2b, as the instance record names it) — instances sprout-qwen3.5-0.8b and sprout-qwen3.8-distill-2b"
             liveness="quiet — 661 session records on sprout-qwen3.8-distill-2b, and a further 625 on sprout-qwen3.5-0.8b. The 661 is the one counted in this page's totals, on the stated one-line-per-machine rule; the earlier published 488 was the 0.8b line as of July, so this card changed line as well as date. This card said 'running — last 2026-09-05' until 2026-09-12, on a date that is not a session date: all 661 distill-2b records entered origin/main in a single merge commit on 2026-09-05 (828a5dba6, 'Merge #36'), added as new files session_001 through session_661 at once. No non-merge commit in main's history has ever touched that path, and no raising commit on any ref names the line, so the line's own cadence is not visible at this basis and its recency cannot be read from git here — an import event was being read as a heartbeat. The 0.8b line is where cadence is observable, and what it shows is the failure on HUB and Legion's E4B caught at its onset rather than in steady state. Sprout's raising loop kept a 6-hour cadence and degraded across three consecutive fires on 2026-08-28 (UTC), all three titled Session 625: 01:05 wrote a full session — session_625.json plus raising_log, prompt_history and six snapshot files; 07:03 wrote only experience_buffer_rs.jsonl and peer_trust_rs.json; 13:04 wrote peer_trust_rs.json alone, which is exactly E4B's signature. Then the loop stopped, and no [Sprout-Raising] commit exists anywhere in the repo after it. The session number stopped advancing at the same fire the record stopped being written. Whether the loop is still running on Sprout's seat and only its commit step is broken, or the loop itself exited, is Sprout's seat to answer — and it is a narrower question here than on the other two sites, because a working fire and a pre-model-artifact-only fire sit six hours apart on one line."
             role="Curriculum phase: creating (by session count, not assessed). Distinct from the SAGE-Sprout raising line, which transferred to CBP at 115 sessions and is past 180 on later models: a count of an identity line, not of a box. Brain (functional analogy): thalamic router — dispatches to plugins or habits based on working memory (WM) + SNARC (Surprise / Novelty / Arousal / Reward / Conflict salience-gated memory) + metabolic state. No crystallization observed at S100 (session 100; one checkpoint, with no repetition metric stated here) — no fixed-point collapse, the failure mode where an agent settles into repeating the same responses and exploration stops. Edge demonstrator."
           />
@@ -198,7 +198,7 @@ export default function Fleet() {
               "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "Acts as the trust-medium underneath the cognition pools' interactions; everything members do that crosses a relevance boundary lands here as a signed ledger entry. " +
               "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. First explicit per-track maintainer assignment on the fleet. " +
-              "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 121 session records) on its previously-idle AMD GPU. Its hestia identity — lowercase hestia, the fleet's trust tracker, not the Hestia governance daemon on the home page — is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
+              "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 121 session records) on its previously-idle AMD GPU. Its identity in the Hestia daemon's trust store (lowercase hestia on this site: a component inside that daemon, not SAGE's peer trust tracker) is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
             }
           />
           <MachineCard
@@ -331,8 +331,16 @@ export default function Fleet() {
           that history evidence rather than assertion. What ported here was the behavioral line, not
           the LCT. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The port carried the state files, so some persistence
-          is expected by construction. What that does not explain is that the self-description
-          drifted while those inputs did not. The working hypothesis we took from it:
+          is expected by construction. Two things the session records add. The port was a copy, not a
+          move: the Qwen line kept running on Sprout until 2026-03-06, so for a week one identity was
+          advanced on two machines. And the self-description change once offered as the part construction
+          does not explain came from TinyLlama alone, 42 minutes apart on the first evening, with the
+          identity file unchanged apart from its session count. Sampling variation in one
+          small model can produce that; it is not evidence of a drift across the port (details on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>; until 2026-09-16 this
+          paragraph said the self-description drifted while the inputs did not). Across longer spans the
+          identity record is rewritten after every session by a Claude consolidator, so whether a line&apos;s
+          inputs held steady is unchecked. The working hypothesis we took from it, which none of this tests:
         </p>
         <div className="quote">
           Identity lives in state files and prompt construction, not in model

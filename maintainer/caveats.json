@@ -167,6 +167,18 @@
 
     {"id": "hestia-is-sage-peer-tracker", "withdrawn": "2026-09-15", "pattern": "A trust tracker — hestia|hestia's current tracker holds three numbers per peer", "unless": "", "why": "Hestia's trust store (hestia repo core/src/derivation.rs, per member/role, adjudicated V3) and SAGE's peer_trust.rs (per peer machine, T3 only, own observations) are separate components."},
 
-    {"id": "atp-adp-two-artifacts", "withdrawn": "2026-09-15", "pattern": "one artifact for (the )?intention, one for the result", "unless": "Until 2026-09-15 this", "why": "atp-adp-cycle.md §1.2/§2: one semifungible token in two states, society-managed pools, minted as ADP, returned to pool on discharge. Two records is the fleet registry's approximation."}
+    {"id": "atp-adp-two-artifacts", "withdrawn": "2026-09-15", "pattern": "one artifact for (the )?intention, one for the result", "unless": "Until 2026-09-15 this", "why": "atp-adp-cycle.md §1.2/§2: one semifungible token in two states, society-managed pools, minted as ADP, returned to pool on discharge. Two records is the fleet registry's approximation."},
+
+    {"id": "hardbound-gates-hardware-root-today", "withdrawn": "2026-09-16", "pattern": "Hardbound, which gates and reverts|Hardbound enforces them|It gates and reverts; trust itself|The rule binds Hardbound, which gates", "unless": "", "why": "/projects Hardbound card: hardware-anchored enforcement 'is what this research is building toward, not the current mechanism'; enforcement today is process-level. Present-tense gating against a hardware root was live on Home, /projects Hestia card, /context (3x) and P10."},
+
+    {"id": "raising-mechanism-unscoped", "withdrawn": "2026-09-16", "pattern": "in raising sessions, we shape context|interaction-history half", "unless": "", "why": "Sprout Qwen 0.5B line loaded a self-trained LoRA 2026-01-27..03-06 (84 session records using_lora: true). The 09-15 scoping reached P7 and /context but not /raising's mechanism paragraph; 'half' invented a two-part split of T3-Training."},
+
+    {"id": "self-description-drift-across-port", "withdrawn": "2026-09-16", "pattern": "self-description drifted (even though|while) (those|the) inputs|showed a consistent\\s+separation", "unless": "until 2026-09-16", "why": "SAGE commit 4f30be970 experience_buffer: both self-descriptions are TinyLlama output on CBP, sessions 115 (22:16) and 117 (22:58) on 2026-02-27; identity.json net diff is session_count and last_session only. Not drift across the port."},
+
+    {"id": "memoriescape-sprout-qwen-coinage", "withdrawn": "2026-09-16", "pattern": "SAGE-Sprout's own coinage", "unless": "", "why": "First occurrence (git -S) is a TinyLlama 1.1B response on CBP, session 117, 2026-02-27; the 'shape you can sense but not access' gloss was the prompt's wording."},
+
+    {"id": "thor-lora-loaded", "withdrawn": "2026-09-16", "pattern": "27B \\(transformers\\) · LoRA —", "unless": "", "why": "thor-qwen3.5-27b instance.json has_lora: false since 2026-03-14 (before its raising sessions); training/sessions empty; '· LoRA' was the manifest's lora_capable flag."},
+
+    {"id": "site-prose-above-equation", "withdrawn": "2026-09-16", "pattern": "more precise than the equation", "unless": "", "why": "Ranked site prose above canon. t3-v3-tensors.md: RDF triples in the MRH bind tensors to entity-role pairs; that is what the + does not show."}
   ]
 }

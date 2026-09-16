@@ -43,7 +43,8 @@ export default function Home() {
           </div>
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginTop: "0.75rem" }}>
-          Of these, the eight instances with raising history are enumerated per machine on{" "}
+          Of these, the eight instances with raising history are the current raising lines, one per machine (archived lines such as Sprout&apos;s Qwen 0.5B also carry history and are not in the eight; how instance, line and session record nest is on{" "}
+          <Link href="/context#instance-line" style={{ color: "var(--color-accent)" }}>/context</Link>). They are enumerated per machine on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>. Not all eight
           are currently running: that page assigns each line a dated state (running, quiet,
           paused, instrumentation broken) and is the checkable version of these numbers. The configured-instance census is not.
@@ -74,7 +75,8 @@ export default function Home() {
                 and trust derived from the record. &ldquo;Governance&rdquo; is the right
                 word here and is deliberate: Hestia adjudicates at the moment of the
                 act. The lab&apos;s governance&rarr;oversight correction binds Hardbound,
-                which gates and reverts against a hardware root — a different job. Running today at <strong>A1</strong>
+                which is designed to gate and revert against a hardware root (oversight here means machine-enforced
+                gating, not human supervision; enforcement is process-level today, see /projects) — a different job. Running today at <strong>A1</strong>
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
                 gate, not adversary-proof containment. Unrelated to — and inverted

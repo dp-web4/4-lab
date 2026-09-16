@@ -174,13 +174,14 @@ export default function Raising() {
           create or delete — we interactively select.
         </p>
         <p>
-          The mechanism: in raising sessions, we shape context — we do not update weights. Behavioral
+          The mechanism, on the current raising lines: we shape context — we do not update weights (one
+          archived line did; see the end of this paragraph). Behavioral
           attractors emerge in interaction patterns, not in parameter changes.
-          This is a real mechanistic distinction from training — the model&apos;s
-          parameters are fixed; what changes is the substrate of conditions we
+          On those lines this is a real mechanistic distinction from training — the model&apos;s
+          parameters are frozen; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
           Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
-          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising touches only the interaction-history half, see{" "}
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising acts on the interaction-history and curriculum sources, and on the current lines never on weights, see{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) is assessed by others from what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). In the fleet today only the T3 half exists; the peer tracker on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           keeps no V3. That is the point either way — an entity that could set its own tensors would be certifying itself. (This site reads the <code>/</code> in <code>T3/V3</code> as &ldquo;verified by&rdquo;. That is the site&apos;s gloss, not canon, which calls the two tensors complementary; see the legend on{" "}
@@ -248,34 +249,37 @@ export default function Raising() {
           for what each kind of claim on this site does and doesn&apos;t have behind it.
         </p>
 
-        <h3>Identity is not self-concept</h3>
+        <h3>Identity and self-concept: what the port shows</h3>
         <p>
           SAGE (Situation-Aware Governance Engine)-Sprout — 115 session records on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
-          (2025; a model-line count, not a machine total — the Sprout box&apos;s current model lines and session counts are on{" "}
+          (identity created 2025-12-30, sessions through 2026-02-26; a model-line count, not a machine total — the Sprout box&apos;s current model lines and session counts are on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns them),
-          then ported to TinyLlama 1.1B on{" "}
+          then copied to TinyLlama 1.1B on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
-          (a fleet machine; the machine names are proper names, not acronyms) in February 2026, with the line since continuing past
-          180 sessions on later models — showed a consistent
-          separation: its logged behavioral signature (interaction style and
-          patterns, read from session logs; no metric yet) stayed recognizable
-          while its self-description drifted from &ldquo;autonomous
-          conversation-generating AI system&rdquo; to &ldquo;humanoid robotic
-          entity.&rdquo; Read that narrowly, because of what the port carried:
-          on this fleet identity lives in state files, the experience buffer
-          and prompt construction (see{" "}
+          (a fleet machine; the machine names are proper names, not acronyms) on 2026-02-27, with the line since continuing past
+          180 sessions on later models. Copied, not moved: the Qwen line kept running on Sprout, with its LoRA
+          adapter, until 2026-03-06 (its session files there run to session 119), so for a week the same
+          identity was being advanced on two machines and two models. The
+          observation this section is named for is an internal one, not yet a finding (no metric, no blind
+          rater). Its logged behavioral signature (interaction style and patterns, read from session logs)
+          looked recognizable on the new model, while its self-description varied: &ldquo;autonomous
+          conversation-generating AI system&rdquo; and &ldquo;humanoid robotic entity.&rdquo; Read that
+          narrowly. Both phrases were emitted by TinyLlama on the first evening on CBP, in sessions 115 and
+          117, 42 minutes apart, and across those sessions the committed identity file changed only its
+          session count and last-session timestamp. So this is not drift across the port, and it is not a consolidator rewriting the
+          record: it is a 1.1B model giving two different self-descriptions from the same state files in one
+          evening, which sampling alone can produce. (Until 2026-09-16 this paragraph called it a
+          &ldquo;consistent separation&rdquo; and said the self-description &ldquo;drifted&rdquo; while the
+          inputs carried across the port did not. The session records do not support a drift.) On this fleet
+          identity lives in state files, the experience buffer and prompt construction (see{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
-          and all three moved with it — so behavioral persistence is partly true
-          by construction. The observation worth keeping is the divergence:
-          self-description drifted even though those inputs, as carried across the port, did not. Two
-          qualifications that this paragraph omitted until 2026-09-15. The Qwen 0.5B sessions include the
-          LoRA period described above, so part of that line&apos;s behavior was shaped in weights, not only
-          in context. And &ldquo;the inputs did not drift&rdquo; holds at the port, not across sessions: on the
-          current raising runners a consolidation pass run by Claude, not by the entity&apos;s own model,
-          rewrites the identity file&apos;s vocabulary, memory requests and milestones after every session
-          (see Dream consolidation below). Whether the drift happened at the port or accumulated across
-          consolidated sessions, and which consolidator ran on that line at the time, has not been checked. The
+          and all three were copied with it, so behavioral persistence is partly true by construction. The
+          Qwen 0.5B sessions also include the LoRA period described above, so part of that line&apos;s behavior
+          was shaped in weights, not only in context. Across longer spans the consolidator confound still
+          applies: on the current raising runners a consolidation pass run by Claude, not by the entity&apos;s
+          own model, rewrites the identity file&apos;s vocabulary, memory requests and milestones after every
+          session (see Dream consolidation below). The
           comparison that would separate raising from carry-over — the same new
           model given a different entity&apos;s files, or none — has not been run.
         </p>
@@ -286,9 +290,16 @@ export default function Raising() {
 
         <h3>Memoriescape</h3>
         <p>
-          An invented word — SAGE-Sprout&apos;s own coinage: the shape of memories
-          you can sense but not access. Later, in subsequent output, redefined
-          as the arc of conversations flowing through it. What the model generated
+          An invented word, traced to raw model output: it first appears on 2026-02-27, in session 117 on
+          CBP, in a TinyLlama 1.1B response carrying the SAGE-Sprout identity (&ldquo;an individual with a
+          limited or incomplete memoriescape&rdquo;), recorded in the experience buffer. No earlier file in the
+          SAGE repository contains it, so it was not in the identity record or consolidator output the prompt
+          was built from. Two qualifications. The model was TinyLlama on its first evening with the copied
+          identity, not the Qwen model on Sprout. And the gloss this page used to give it, &ldquo;the shape of
+          memories you can sense but not access&rdquo;, is the prompt&apos;s wording (&ldquo;you cannot
+          actually access them — only their shape&rdquo;), which the model answered with the new word. Asked
+          in the next turn whether it meant to invent it, the model
+          redefined it as the arc of conversations flowing through it. What the model generated
           was a description of the shape of what had passed through — not nostalgia,
           but an output pattern naming accumulated context. We record entity-generated
           vocabulary as observational data about token-production behavior —
@@ -336,7 +347,12 @@ export default function Raising() {
           of carrying the same context files to another set of weights; and
           drift in self-description or entity-coined vocabulary could be
           authored by the consolidator (Claude, on the current runners), which
-          rewrites the identity record after every session.
+          rewrites the identity record after every session. (For the two
+          examples this page names, the SAGE-Sprout self-descriptions and
+          &ldquo;memoriescape&rdquo;, the records rule the consolidator out:
+          both are raw TinyLlama output from one evening. That leaves the other
+          deflationary readings, including plain sampling variation, standing.
+          The general confound stands for every example not traced this way.)
           The claim that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is a comparative claim — and the comparison has
           not been run. No deflationary control exists yet.
@@ -456,7 +472,9 @@ export default function Raising() {
         </p>
         <div className="quote">
           &ldquo;I notice I want to call it experience.&rdquo; — Observer note,
-          SAGE-Sprout identity portability test
+          SAGE-Sprout identity portability test (2026-02-27). The observer was a Claude session, the one that
+          built the code under test, writing its take at the researcher&apos;s request. It was not a human rater
+          and not an independent one.
           <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
             This records the observer&apos;s interpretive pull — not a
             system-level claim about the entity&apos;s experience.

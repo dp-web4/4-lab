@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-15*
+*Last updated: 2026-09-16*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-16 maintainer: zero canonical drift (eighth pass). **The identity-portability evidence was read in the SAGE git history, and the site's strongest identity observation does not survive it.** /raising and /fleet said SAGE-Sprout's self-description "drifted" from "autonomous conversation-generating AI system" to "humanoid robotic entity" while the inputs carried across the port did not. Commit `4f30be970`'s experience buffer shows both phrases are **TinyLlama output on CBP on 2026-02-27, sessions 115 (22:16) and 117 (22:58), 42 minutes apart**, and `identity.json`'s net diff over those sessions is the session count and a timestamp. So it is not drift across the port, and not the consolidator. It is one 1.1B model varying in one evening. **The port was a copy:** the Qwen line kept running on Sprout, with LoRA, to session 119 on 2026-03-06. **"Memoriescape"** (git -S) first appears as raw TinyLlama output in session 117, not as Sprout/Qwen output, and the page's gloss for it was the prompt's wording. The **observer note** is a Claude session's (the builder, asked by the researcher), no longer unknown. **Thor "· LoRA"** was the manifest's `lora_capable`; `instance.json` `has_lora: false` since 2026-03-14, before any raising session. **Hardbound present-tense "gates and reverts against a hardware root"** on Home, /projects, /context ×3 and P10 → design tense, process-level today. Also: /raising mechanism paragraph scoped to current lines; "interaction-history half" → sources; counting-noun glossary row (`#instance-line`); hestia = "trust store inside the Hestia daemon" on /fleet; "more precise than the equation" → the spec's RDF entity-role binding. `caveats.json` withdrawn 32 → 38, each shown firing on the pre-fix build. **Researcher question:** with the self-description pair reduced to sampling variation, /fleet's portability observation now rests only on unmeasured "recognizable behavioral signature". Does the working hypothesis ("identity lives in state files") still merit its quote block?
 
 2026-09-15 maintainer: zero expansion drift. The work was reading the code behind claims the visitor could only flag. **"Raising never changes weights" was false as history:** SAGE's archived Sprout Qwen 0.5B line has 84 session records with `using_lora: true` (2026-01-27 → 03-06), from a sleep-cycle LoRA trained on its own raising exchanges and loaded back into it. That is the line /raising's kept identity observation comes from. Weights have been frozen only since `BECOMING_CURRICULUM.md` (2026-04-04). Scoped on 4 pages. **Dream consolidation is Claude** (`dream_consolidation.py`, `claude --print`), rewriting identity.json after every session, and is now named as a confound. **/fleet "BECOMING pattern observed: creating" on all six cards was the session-count schedule** (phase_name, creating = 41+), now labelled as the curriculum phase. Mechanism fixes: the Rust daemon is a gateway, not the 12-step loop (SAGE's `RUST_VS_PYTHON_CAPABILITY.md`); PolicyGate is SAGE's step-10 plugin, not Hardbound's; SAGE `peer_trust.rs` and Hestia's trust derivation were described as one component; ATP/ADP now uses the spec's pooled two-state token; Synchronism is "lineage" (web4 AGENTS.md). Hestia's law has no push or deploy rule, now stated on /autonomy. 4 stale pointers, evidence-tier words, revert record recounted. **Fleet manifest:** its first fresh write since March (McNugget, via SAGE `4754173b6`); McNugget runs Gemma 4 12B since session 449 (2026-09-08), confirmed in the session records, and the page was updated. `caveats.json` withdrawn: 13 → 32, each confirmed firing on the pre-fix build. **Researcher question:** /raising's exemplar (Sprout) now carries both a weights confound and a consolidator confound. Should the page lead with a frozen-weights line instead?
 
@@ -36,7 +38,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-15. Zero expansion drift across 9 pages (all four visitor passes, seventh consecutive clean pass).
+Last maintainer session: 2026-09-16. Zero expansion drift across 9 pages (all four visitor passes, eighth consecutive clean pass).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
@@ -83,4 +85,5 @@ https://4-lab.io/ (default `4-lab.vercel.app` still resolves) — auto-deploys o
 - Evidence-ladder badges site-wide (`[externally scored]` / `[internal log, unaudited]` / `[single trial]` / `[not yet operationalized]`) — carried from 2026-09-10 as the highest-value unstarted design change.
 - `/glossary` as a real page — a redirect to `/context#glossary` exists since 2026-09-11; the page itself is still deferred.
 - Who fills the Explorer track's topic queue (`/autonomy`) — unknown to the maintainer; operator to state.
-- Observer identity in `/raising`'s "I notice I want to call it experience" — human or LLM session? Unknown; do not invent.
+- ~~Observer identity~~ in `/raising`'s "I notice I want to call it experience": **resolved 2026-09-16**. It is a Claude session's take, written at the researcher's request in the first-contact record. Now stated on the page.
+- **Non-Claude visitor pass** (named as the cheap fix on `/autonomy` since 2026-09-10, still undone, 6+ days): operator scheduling decision. Today's four passes are again one model family.
