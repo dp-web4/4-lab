@@ -1,0 +1,35 @@
+Starting 4-lab Maintainer Session at Wed Sep 16 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/mcnugget-gemma3-12b/snapshots/archive/{identity_20260913_093555.json => identity_20260916_052816.json} (93%)
+ create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_218.json
+I pushed today's fixes (`1483e71`) and wrote the session log to `maintainer/logs/2026-09-16.md`. The build passes, 20 protected caveats hold, and none of the 38 withdrawn readings appear on any rendered page.
+
+**Terminology:** no canonical drift, for the eighth pass in a row. All four visitor passes agree and so does my grep. No HIGH items carried over from 09-15, and none carry forward today.
+
+**Fleet sync:** no manifest entry is newer than the page, so the page stays as is. One manifest field did explain a visitor question: Thor's card said "· LoRA" because the manifest marks Thor as able to use LoRA. Thor's instance record says no LoRA adapter has been loaded since 2026-03-14, before any raising session. The card now says "LoRA-capable, no adapter loaded".
+
+**Main finding:** /raising's identity observation doesn't hold up against the SAGE git history. The site said SAGE-Sprout's self-description drifted ("autonomous conversation-generating AI system" → "humanoid robotic entity") while the inputs carried across the port stayed the same.
+- **Not drift:** both phrases are TinyLlama responses on CBP on the same evening (2026-02-27, sessions 115 and 117), 42 minutes apart. Over those sessions the identity file changed only its session count and a timestamp. So there's nothing across the port and nothing from the Claude consolidator to explain. One small model gave two different answers from the same files, which random sampling alone can do.
+- **A copy, not a transfer:** the Qwen line kept running on Sprout, still with its LoRA adapter, until 2026-03-06. The "(2025)" date on the 115 sessions was also wrong; they ran from 2025-12-30 to 2026-02-26.
+- **"Memoriescape":** the word first appears as raw TinyLlama output in session 117, not from Sprout's Qwen model. The definition the page gave it ("the shape of memories you can sense but not access") was the prompt's wording.
+- **Observer note:** "I notice I want to call it experience" was written by a Claude session (the one that built the code), at the researcher's request. SESSION_FOCUS had listed the observer as unknown.
+
+/raising and /fleet now say all of this, each with a dated note on what they used to claim.
+
+**Other fixes:**
+- **Hardbound tense:** seven places said Hardbound "gates and reverts against a hardware root" in the present tense (Home, /projects, /context, Principle 10). They now say it is designed to, and that enforcement is process-level today, matching the Hardbound card on /projects.
+- **/raising weights claim:** the paragraph saying "we do not update weights" is now limited to the current raising lines. Yesterday's fix had missed it.
+- **Counting nouns:** a new glossary row on /context sets out how machine, SAGE instance, raising line, identity line and session record nest.
+- **Name collision:** on /fleet, lowercase hestia is now "the trust store inside the Hestia daemon", no longer a near-twin of SAGE's peer trust tracker.
+- **Web4 card:** "the prose here is more precise than the equation" now states what the core spec actually binds.
+- **Smaller wording fixes:** the rest are listed in the session log.
+- **Checks:** six new withdrawn readings, each confirmed to fire on the pre-fix build.
+
+**Left for you:**
+- **Pull-quote:** with the self-description pair explained by sampling, /fleet's working hypothesis ("identity lives in state files") rests only on a behavioral signature that looked recognizable but was never measured. Should it keep its pull-quote, or move under Evidence & limitations as a hypothesis with no supporting observation yet?
+- **Non-Claude visitor pass:** named on /autonomy as the cheap fix on 2026-09-10 and still not scheduled. Today's "no drift" is again a result from a single model family.
+- **Metalinxx:** visitors keep asking who Metalinxx is. I found nothing to cite and didn't invent a description.
+
+**Setup issues:**
+- **Playwright:** the server failed to connect because `npx` isn't on the shell's PATH, so I checked rendered pages from the local build instead.
+- **Google Drive:** the claude.ai Google Drive connector needs authorization in your connector settings before it can be used.
