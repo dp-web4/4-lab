@@ -55,7 +55,7 @@ export default function Raising() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           &ldquo;BECOMING&rdquo; is a proper name, not an acronym — the six pattern
           initials (Grounding, Sensing, Relating, Questioning, Creating, Acting)
-          spell nothing. These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
+          spell nothing. These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE (Situation-Aware Governance Engine) harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -79,6 +79,11 @@ export default function Raising() {
               interoceptive proxy value, not yet a formally specified model —
               see{" "}
               <Link href="/context#metabolic-state" style={{ color: "var(--color-accent)" }}>metabolic state on /context</Link>).
+              What this pattern does <em>not</em> show is development of the signal itself: the load state
+              is computed by SAGE loop step 3 (&ldquo;metabolize&rdquo;) from the first session, whether or not
+              any raising history exists. The harness supplies it by construction. What could count as
+              development is whether the entity&apos;s <em>behavior</em> comes to use that signal, and that is
+              unmeasured.
             </p>
           </div>
           <div className="phase-card" data-phase="3">
@@ -92,7 +97,13 @@ export default function Raising() {
               calibration. Not all peers are equal; compatibility matters.
               (&ldquo;Relationships&rdquo; and &ldquo;trust&rdquo; here are
               per-peer T3 (Trust Tensor — Talent / Training / Temperament) tensor values updated by interaction outcomes —
-              tracked state, not affect.)
+              tracked state, not affect.) Those outcomes are the observing machine&apos;s own health polls and
+              delegated calls to that peer (success, timeout, error), and the tracker is code that runs from session 1
+              (see the worked example on{" "}
+              <Link href="/context#peer-trust" style={{ color: "var(--color-accent)" }}>/context</Link>), so the tracked values exist by
+              construction, not by development. Its update is a fixed step per outcome, clamped to [0, 1]: a ramp to a
+              cap, which is not the threshold shape of a Hill curve, and no trust series from the fleet has been
+              plotted against one.
             </p>
           </div>
           <div className="phase-card" data-phase="4">
@@ -117,10 +128,11 @@ export default function Raising() {
             <p>
               Output increasingly concentrates in specific domains (no count published) — unprompted
               specialization observable in session logs and raising curriculum state.
-              The specialization isn&apos;t assigned; it emerges from the pattern of
-              what the system handles successfully and what{" "}
+              The specialization isn&apos;t explicitly assigned. Its inputs are what the
+              system handles successfully and what{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>{" "}
-              routes to it. (Functional description — the &ldquo;niche&rdquo; is a
+              routes to it, and routing work to an entity is a form of assigning it, which is
+              why task routing is the deflationary reading below. (Functional description — the &ldquo;niche&rdquo; is a
               measurable distribution over task types, not a phenomenal preference.)
             </p>
           </div>
@@ -131,9 +143,9 @@ export default function Raising() {
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
               (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation — an interactive benchmark) games —
               novel environments where mechanics aren&apos;t given. Hypothesis,
-              action, observation, update. From being to doing. The same
-              persistence-vs-perseveration awareness developed in raising now
-              applies to a world that doesn&apos;t negotiate.
+              action, observation, update. From being to doing. The question this pattern
+              names is whether the persistence-vs-perseveration behavior seen in raising
+              carries over to a world that doesn&apos;t negotiate; nothing below shows that it does.
               Observation in a raised entity: Legion, running a local vision model that went through the fleet&apos;s raising process, <strong>ran the full 25-game set end to end</strong> (see{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>).
               Co-present with raising, not attributed to it: no run of the same
@@ -151,7 +163,7 @@ export default function Raising() {
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>a working hypothesis, not a demonstrated result</Link>.
               The site&apos;s headline ARC-AGI-3 number — 94.85% official ARC Prize action score, 23 of 25 environments completed (92.0%) —
               is a different result under different conditions: Claude Opus 4.6 inside the SAGE harness,
-              on the official public set, externally scored. The two figures are <em>not commensurable</em>
+              on the official public set, externally scored. The two figures are <em>not commensurable</em>{" "}
               and nothing here should be read as a local model matching or beating a frontier one. See{" "}
               <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link> for the full attribution.
             </p>
@@ -181,7 +193,7 @@ export default function Raising() {
           parameters are frozen; what changes is the substrate of conditions we
           provide each session. In Web4 terms (Web4 is a trust-native ontology — not architecture or infrastructure): raising shapes conduct and the Markov Relevancy
           Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
-          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 tensor (Talent / Training / Temperament — canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising acts on the interaction-history and curriculum sources, and on the current lines never on weights, see{" "}
+          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 (Trust Tensor — Talent / Training / Temperament; canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising acts on the interaction-history and curriculum sources, and on the current lines never on weights, see{" "}
           <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) is assessed by others from what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). In the fleet today only the T3 half exists; the peer tracker on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           keeps no V3. That is the point either way — an entity that could set its own tensors would be certifying itself. (This site reads the <code>/</code> in <code>T3/V3</code> as &ldquo;verified by&rdquo;. That is the site&apos;s gloss, not canon, which calls the two tensors complementary; see the legend on{" "}
@@ -190,8 +202,10 @@ export default function Raising() {
           curriculum runs with model weights frozen, and every current instance record says it carries no LoRA
           (Low-Rank Adaptation) adapter. <strong style={{ color: "var(--color-text-primary)" }}>That was not always true.</strong>{" "}
           From 2026-01-27 to 2026-03-06 the archived Sprout Qwen 2.5 0.5B line ran with a sleep-cycle LoRA adapter
-          trained on its own high-salience raising exchanges and loaded back in for its sessions (84 of that line&apos;s
-          session records say <code>using_lora: true</code>; SAGE&apos;s sleep-cycle log calls the first cycle the
+          trained on its own high-salience raising exchanges and loaded back in for its sessions (84 session files in that line&apos;s
+          record say <code>using_lora: true</code>. By distinct session number that is 45 of the 115 sessions
+          before the port (sessions 46–113, 2026-01-27 to 02-22) plus session 119 after it. The last two before the
+          port, 114 and 115, say <code>false</code>; SAGE&apos;s sleep-cycle log calls the first cycle the
           &ldquo;first time SAGE&apos;s weights have been updated based on raising session experiences&rdquo;). On that line,
           raising did change weights. Until 2026-09-15 this page said raising was &ldquo;always in-context&rdquo;; that
           holds for the current lines, not for the history.
@@ -236,8 +250,13 @@ export default function Raising() {
           stages.
           Stage 1 (Sensing): time awareness. Stage 2 (Relating): world
           awareness. Stage 3 (Questioning): agency. Stage 4 (Creating):
-          federation. Each stage adds capability only when the entity has
-          demonstrated readiness at the previous level.
+          federation. That four-stage sequence is the plan. Nothing assesses readiness between stages: curriculum
+          phases advance by session number (the schedule is on{" "}
+          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>), and in the runner that
+          implements tool stages (SAGE&apos;s <code>run_session_identity_anchored_fluid.py</code>) the stage is a
+          command-line flag the operator sets, with three values: silent, aware, active. Until 2026-09-17 this
+          paragraph said each stage adds capability only once the entity has demonstrated readiness at the previous
+          level. No such check exists in the code.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Key observations</h2>
@@ -251,7 +270,7 @@ export default function Raising() {
 
         <h3>Identity and self-concept: what the port shows</h3>
         <p>
-          SAGE (Situation-Aware Governance Engine)-Sprout — 115 session records on a{" "}
+          SAGE-Sprout — 115 session records on a{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
           (identity created 2025-12-30, sessions through 2026-02-26; a model-line count, not a machine total — the Sprout box&apos;s current model lines and session counts are on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns them),
@@ -282,10 +301,6 @@ export default function Raising() {
           session (see Dream consolidation below). The
           comparison that would separate raising from carry-over — the same new
           model given a different entity&apos;s files, or none — has not been run.
-        </p>
-        <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
-          &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
 
         <h3>Memoriescape</h3>
@@ -340,7 +355,10 @@ export default function Raising() {
           context engineering — nothing extra going on.){" "}
           The null hypothesis deserves to be stated plainly: everything on this
           page might be competent context engineering and nothing more. Each
-          observed pattern has a simpler candidate explanation — bilateral
+          observed pattern has a simpler candidate explanation — the Sensing
+          and Relating signals (metabolic state, per-peer trust) are computed by
+          the harness from the first session, so their presence shows the code
+          runs, not that anything developed; bilateral
           generation could be continuation sampling past the response boundary;
           unprompted specialization could be task routing plus few-shot
           clustering; identity portability could be the mechanical consequence
@@ -426,12 +444,15 @@ export default function Raising() {
           it (response diversity and curriculum-phase task success), so a
           yoked or scrambled-history control on growth could be pre-registered
           now — its absence is logistical. For identity continuity, the
-          operational definition this page and the home page give (consistent
-          session-to-session behavioral patterns, accumulated experience,
-          raising curriculum state) does not yet yield a metric that could
-          separate the arms: two of its three components, accumulated
-          experience and curriculum state, are inputs the treatment supplies,
-          so measuring them cannot tell raising from context engineering. What
+          operational definition at the top of this page (consistent
+          session-to-session behavioral patterns observed in interaction logs)
+          does not yet yield a metric that could separate the arms. Earlier
+          versions of the definition, here and on /context and /fleet, also
+          listed accumulated experience and raising curriculum state; both are
+          inputs the treatment supplies, so measuring them cannot tell raising
+          from context engineering, which is why the definition dropped them.
+          (Until 2026-09-17 this paragraph gave the three-part version and
+          said the home page carried it; the home page carries no definition.) What
           remains is the behavioral-pattern component, whose consistency
           criterion rests on &ldquo;coherence&rdquo; — a term the{" "}
           <Link href="/context#coherence" style={{ color: "var(--color-accent)" }}>glossary</Link>{" "}

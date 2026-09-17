@@ -49,4 +49,11 @@ echo
 python3 maintainer/check-withdrawn.py; wd=$?
 [ "$wd" -eq 1 ] && fail=1
 [ "$wd" -eq 1 ] && echo $'\nA withdrawn reading is live again. Fix the page, not the pattern — unless the hit is a\nwithdrawal note or negation, in which case widen "unless" and check --show-exempt.'
+
+# Damaged text: entity fragments, unbalanced parens, words glued to inline tags.
+# Added 2026-09-17 after a sed `&` spliced a matched clause back into the Web4 card.
+echo
+python3 maintainer/check-render.py; rd=$?
+[ "$rd" -eq 1 ] && fail=1
+[ "$rd" -eq 1 ] && echo $'\nRendered text is damaged. Edit with literal string replacement, not sed: in a sed\nreplacement, & is the whole match, so &apos; / &ldquo; splice the matched text back in.'
 exit $fail

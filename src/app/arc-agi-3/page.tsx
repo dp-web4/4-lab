@@ -34,8 +34,12 @@ export default function ArcAgi3History() {
         In April 2026, a Phase-1 SAGE/ARC harness (Phase 1: the cloud-model run, frozen in the ARC-SAGE repository linked below; Phase 2 is the local-model follow-on) around Claude Opus 4.6 produced a published
         <strong> 94.85% official ARC Prize action score</strong> on the public interactive
         environments. The action score is efficiency-weighted — it credits solving a level in
-        fewer actions — so it is not a solve rate, and ARC Prize publishes no baseline to compare
-        it against. The run completed 175 of 183 levels across <strong>23 of 25</strong>
+        fewer actions — so it is not a solve rate. The yardstick is human: ARC Prize scores each level
+        by the agent&apos;s action count against a human baseline (since 2026-04-14, three days before this
+        run, the median first-time human player per level, with each level&apos;s credit capped at 1.15×), and
+        says a 100% score means an agent beats every game as efficiently as humans. Until 2026-09-17 this page
+        said ARC Prize publishes no baseline; its scoring methodology is one. That does not rescue the result
+        from the caveats below: the engine-source affordance is the one that matters. The run completed 175 of 183 levels across <strong>23 of 25</strong>{" "}
         environments: a 92.0% environment-completion rate. Two environments were left unfinished
         (5 of 9 levels, and 6 of 10).
       </p>

@@ -11,7 +11,7 @@ export default function Home() {
         <p className="tagline">
           dp-web4 is a heterogeneous human/AI research collective building Web4 —
           an open trust <strong>ontology</strong>, not an architecture, infrastructure
-          or stack — together with Hestia, Hub and SAGE (Situation-Aware Governance Engine — a name that predates the lab&apos;s governance→oversight terminology): running governance systems
+          or stack — together with Hestia, Hub and SAGE (Situation-Aware Governance Engine): running governance systems
           and persistent-agent research developed on an eight-machine fleet.
         </p>
         <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
@@ -72,16 +72,10 @@ export default function Home() {
               <p>
                 Local governance for humans and AI agents from multiple vendors:
                 one law, scoped delegation, a vault, witnessed actions, escalation
-                and trust derived from the record. &ldquo;Governance&rdquo; is the right
-                word here and is deliberate: Hestia adjudicates at the moment of the
-                act. The lab&apos;s governance&rarr;oversight correction binds Hardbound,
-                which is designed to gate and revert against a hardware root (oversight here means machine-enforced
-                gating, not human supervision; enforcement is process-level today, see /projects) — a different job. Running today at <strong>A1</strong>
+                and trust derived from the record. Running today at <strong>A1</strong>{" "}
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
-                gate, not adversary-proof containment. Unrelated to — and inverted
-                against — the Orange Book&apos;s TCSEC (Trusted Computer System Evaluation Criteria) class A1, where A1 is the highest
-                class.
+                gate, not adversary-proof containment. (Not TCSEC&apos;s class A1, which is the top class; the A0–A4 row on /context has both.)
               </p>
             </div>
           </a>
@@ -161,8 +155,8 @@ export default function Home() {
           <p>
             SAGE&apos;s spring-2026 ARC-AGI-3 work remains available as a research archive.
             A Phase-1 harness around Claude Opus 4.6 produced a published 94.85%
-            <strong> official ARC Prize action score</strong> (efficiency-weighted; no
-            published baseline to compare it against) on the public set — 175 of 183
+            <strong> official ARC Prize action score</strong> (efficiency-weighted against first-time human players: 100% means every
+            game beaten as efficiently as humans) on the public set — 175 of 183
             levels across 23 of 25 environments — using engine-level/public-game
             affordances outside strict competition play. It was a useful milestone in the evolution of SAGE, but
             it is <strong>not current competition positioning</strong>; current competition-legal

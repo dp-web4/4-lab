@@ -20,12 +20,12 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer."
           />
           <ExternalLink
             href="https://4-gov.org"
             title="4-gov"
-            description="Governance explainer site. Note the vocabulary gap: this lab says &ldquo;oversight&rdquo; where this site says &ldquo;governance&rdquo; (see /context) — the domain name predates, and sits outside, that correction."
+            description="Governance explainer site."
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -53,7 +53,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer. ('Governance' in the name predates the lab's governance→oversight correction — see /context.)"
+            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer."
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"

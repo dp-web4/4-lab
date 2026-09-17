@@ -107,6 +107,17 @@ The visitor log includes a **Terminology Drift Summary** in the cross-persona sy
   The second checks two things. Protected caveats must still be present on their page
   (`caveats` in `caveats.json`). Withdrawn readings must be absent from every **rendered** page
   (`withdrawn` in `caveats.json`, via `check-withdrawn.py`, which reads `.next/` HTML, so build first).
+  It also runs `check-render.py`, which catches damaged text: orphaned entity fragments (`apos;`),
+  unbalanced parentheses in a block, and words glued to a closing inline tag.
+- **Never put HTML entities in a `sed` replacement.** In sed, `&` means "the whole match", so
+  `&apos;` or `&ldquo;` splices the matched text back in. On 2026-09-16 that corrupted the Web4 card,
+  the site's own definition of the ontology, for a day. Use a Python literal `str.replace` with
+  `assert s.count(old) == 1`, or the Edit tool. In JSX, a closing `</strong>` or `</em>` at the end of a
+  line followed by text on the next line renders with no space: add `{" "}`.
+- **Explain a vocabulary rule once and link to it.** Do not append a "the name predates..." or
+  "governance is deliberate here..." note to each page. Those notes had grown to 27 across 7 pages
+  by 2026-09-17, and newcomers read them as the site talking to its auditors. The explanation lives at
+  `/context#governance-oversight`, and a `withdrawn` entry fails the check if the note is restated.
 - **When you withdraw a reading, add a `withdrawn` entry in the same commit.** A pattern for the dead
   claim, an `unless` for its own withdrawal note and negations, and the source that refutes it.
   Before committing, confirm the pattern would have caught the old rendering, and review

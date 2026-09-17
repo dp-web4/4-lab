@@ -77,7 +77,7 @@ Follow the workflow in CLAUDE.md:
 1. **FIRST**: Check the Terminology Drift Summary from the visitor log. Fix ALL terminology violations.
 2. Search all source files for the drifted terms — there may be instances the visitor missed.
 3. Review remaining friction items and implement HIGH severity fixes.
-4. Test: cd .. && npx next build && bash maintainer/check-caveats.sh (both must pass; the second checks protected caveats AND withdrawn readings against the fresh build)
+4. Test: cd .. && npx next build && bash maintainer/check-caveats.sh (both must pass; the second checks protected caveats, withdrawn readings AND damaged rendered text against the fresh build)
 5. Commit and push.
 6. Write your session log to logs/$DATE.md
 

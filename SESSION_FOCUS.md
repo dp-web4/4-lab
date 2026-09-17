@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-16*
+*Last updated: 2026-09-17*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-17 maintainer: zero expansion drift (ninth pass). **The one HIGH was self-inflicted:** 09-16's sed replacement contained `&apos;`, and sed's `&` re-inserted the matched clause into the /projects Web4 card ("equationthe … )apos;s …"). New `maintainer/check-render.py` (entity fragments, paren imbalance, words glued to inline tags) found 8 real hits on the pre-fix build, 0 after, and is wired into `check-caveats.sh`. A 7-word splice detector was tried first and missed the real splice (the clauses were paraphrases). CLAUDE.md now forbids entities in sed replacements. **Propagation fixes:** ATP/ADP glossary rows kept the 09-15 registry reading; R7 row contradicted the page's R6/R7 reading (`r6-framework.md` now agrees with the narrower one); Sovereign is a role (society-roles §2.1), not a member; 4 T3/V3 dimensions-in-expansion-slot forms; /fleet oversight pool in two senses; account budgets called "the ATP cycle". **Upstream-artifact corrections:** ARC's "no published baseline" was refuted on 4 pages (RHAE is human-relative; ARC Prize changed the baseline to median first-time human on 2026-04-14, 3 days before the run). The visitor's "≥80 of 115 pre-port sessions loaded LoRA" is 45 by distinct session number (84 is a file count across two numbering series). /raising's "demonstrated readiness" gate doesn't exist in code (tool stage is a CLI flag). Patterns 2–3 are harness-computed signals. Identity definition single-sourced on /raising (the "home page" definition didn't exist). **governance→oversight notes consolidated: 27 rendered mentions on 7 pages → 3 on /context**, guarded. Withdrawn: 38 → 53, all firing pre-fix. **Researcher question:** with Sensing and Relating reduced to harness signals, BECOMING's developmental content is two uncounted "increasing" claims (Patterns 4–5). Keep a six-pattern frame?
 
 2026-09-16 maintainer: zero canonical drift (eighth pass). **The identity-portability evidence was read in the SAGE git history, and the site's strongest identity observation does not survive it.** /raising and /fleet said SAGE-Sprout's self-description "drifted" from "autonomous conversation-generating AI system" to "humanoid robotic entity" while the inputs carried across the port did not. Commit `4f30be970`'s experience buffer shows both phrases are **TinyLlama output on CBP on 2026-02-27, sessions 115 (22:16) and 117 (22:58), 42 minutes apart**, and `identity.json`'s net diff over those sessions is the session count and a timestamp. So it is not drift across the port, and not the consolidator. It is one 1.1B model varying in one evening. **The port was a copy:** the Qwen line kept running on Sprout, with LoRA, to session 119 on 2026-03-06. **"Memoriescape"** (git -S) first appears as raw TinyLlama output in session 117, not as Sprout/Qwen output, and the page's gloss for it was the prompt's wording. The **observer note** is a Claude session's (the builder, asked by the researcher), no longer unknown. **Thor "· LoRA"** was the manifest's `lora_capable`; `instance.json` `has_lora: false` since 2026-03-14, before any raising session. **Hardbound present-tense "gates and reverts against a hardware root"** on Home, /projects, /context ×3 and P10 → design tense, process-level today. Also: /raising mechanism paragraph scoped to current lines; "interaction-history half" → sources; counting-noun glossary row (`#instance-line`); hestia = "trust store inside the Hestia daemon" on /fleet; "more precise than the equation" → the spec's RDF entity-role binding. `caveats.json` withdrawn 32 → 38, each shown firing on the pre-fix build. **Researcher question:** with the self-description pair reduced to sampling variation, /fleet's portability observation now rests only on unmeasured "recognizable behavioral signature". Does the working hypothesis ("identity lives in state files") still merit its quote block?
 
@@ -38,7 +40,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-16. Zero expansion drift across 9 pages (all four visitor passes, eighth consecutive clean pass).
+Last maintainer session: 2026-09-17. Zero expansion drift across 9 pages (ninth consecutive clean pass); 4 dimensions-in-expansion-slot forms fixed and guarded.
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓

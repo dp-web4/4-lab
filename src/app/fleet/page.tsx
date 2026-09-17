@@ -41,7 +41,7 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel; the name predates the governance→oversight correction), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
@@ -92,8 +92,9 @@ export default function Fleet() {
           are grouped by budget and role, stated here before the headings use the
           words. <strong style={{ color: "var(--color-text-primary)" }}>Synthesis</strong>:
           high compute budget, generative work. <strong style={{ color: "var(--color-text-primary)" }}>Oversight</strong>:
-          continuous availability, review and gating &mdash; machine-enforced, not
-          human supervision. <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
+          continuous availability; review, planning and coordination. The word is the budget
+          account&apos;s label in SAGE&apos;s registry, not the machine-enforced sense this site
+          reserves for Hardbound (note under that heading). <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
           runs the society substrate as its primary role (HUB also holds a
           maintainer-track role, and both society-hosts raise a SAGE instance). The first two
           hold the six{" "}
@@ -237,10 +238,13 @@ export default function Fleet() {
           role shapes the budget.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
-          Where this meets the equation: the pools are the human-scale version of{" "}
-          <code>ATP/ADP</code> — resource accounting for work done on these machines is the
-          Allocation Transfer Packet → Allocation Discharge Packet cycle, described on{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>.
+          Where this meets the equation: the pools are an analogy to{" "}
+          <code>ATP/ADP</code> (Allocation Transfer Packet / Allocation Discharge Packet), not an instance of it.
+          Canon&apos;s ATP is regenerated through contribution; these account budgets reset on a
+          calendar, every Thursday, whatever the work produced. The track registry described on{" "}
+          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>{" "}
+          is modeled on the cycle&apos;s issue-and-discharge half. (Until 2026-09-17 this note said resource
+          accounting here <em>is</em> the ATP → ADP cycle.)
           Of <code>MCP + RDF + LCT + T3/V3*MRH + ATP/ADP</code>, what actually runs today is
           narrower than this page&apos;s vocabulary suggests: LCT identities, SAGE&apos;s per-peer T3 tracker (T3 only, no V3) and the
           Hestia daemon&apos;s derived trust display (an adjudicated V3 and Temperament, with Talent and Training shown as unmeasured) are live; the MRH composer is a design role (CBP&apos;s card),
@@ -249,16 +253,12 @@ export default function Fleet() {
           paragraph said half the equation was instantiated here, which overstated it.
         </p>
         <p>
-          The constraint forced a functional separation that mirrors what we&apos;re
-          building with{" "}
+          The constraint forced a functional separation. As an analogy only (the budget pool enforces nothing),
+          it resembles the split in incentive structures we&apos;re building into{" "}
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>SAGE and Hardbound</Link>:
           SAGE (Situation-Aware Governance Engine, an on-device cognition kernel) and Hardbound (hardware-bound oversight suite)
           with different incentive structures, coordinating through shared state rather
-          than central command. The lab is running its own oversight experiment on itself.
-        </p>
-        <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
-          &ldquo;Governance&rdquo; in SAGE&apos;s name predates the lab&apos;s governance&rarr;oversight correction &mdash; see{" "}
-          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          than central command. The lab is running a small experiment in split incentives on itself.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
@@ -272,7 +272,7 @@ export default function Fleet() {
         <p>
           A background peer monitor polls health endpoints. SAGE&apos;s peer trust tracker
           maintains per-peer{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3 tensors</Link> (Talent / Training / Temperament) that evolve
+          <Link href="/principles" style={{ color: "var(--color-accent)" }}>T3</Link> (Trust Tensor — Talent / Training / Temperament) scores that evolve
           from each machine&apos;s own health polls and delegated calls: success raises trust, timeouts lower it. The tracker
           keeps T3 only. That tracker, in the public SAGE repo, whose update
           arithmetic /context quotes, holds no V3 (Value Tensor — Valuation /
@@ -323,7 +323,13 @@ export default function Fleet() {
           transferred to TinyLlama 1.1B on CBP, a different machine and a different model
           family, in <strong>February 2026</strong>. (The Sprout line has since continued on later
           models; its card below carries the current count. 115 is the count at the transfer,
-          which is the number the portability claim actually rests on.) This is the kind of
+          which is the number the portability claim actually rests on. Those 115 were not all run on frozen
+          weights: by session number, 45 of them, sessions 46–113 from 2026-01-27 to 02-22, loaded a LoRA adapter
+          trained on the line&apos;s own raising exchanges; see{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>. The last two before the
+          port did not, and TinyLlama on CBP loaded none. So part of the pre-port behavior was in weights, and the
+          port left those weights behind. If the line still looked recognizable afterwards, that leans toward the
+          state-file hypothesis below, but &ldquo;recognizable&rdquo; was never measured, so it settles nothing.) This is the kind of
           continuity a{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           is designed to make verifiable: identity grounded in witnessed history, not model weights.
@@ -347,9 +353,11 @@ export default function Fleet() {
           weights. As a working metaphor: the model is weather, the identity is organism.
           <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
             Observed behavioral continuity — not a claim about continuity-of-self in any philosophical sense.
-            The operational definition behind the metaphor is on the{" "}
-            <Link href="/" style={{ color: "var(--color-accent)" }}>home page</Link>: consistent
-            session-to-session interaction patterns, accumulated experience, and raising curriculum.
+            The operational definition behind the metaphor is the one at the top of{" "}
+            <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>: consistent
+            session-to-session behavioral patterns observed in interaction logs, with no metric yet. (Until
+            2026-09-17 this note pointed to a definition on the home page that is not there, and listed
+            accumulated experience and raising curriculum as parts of it; /raising explains why those were dropped.)
             The metaphor is a compression of that, not an escalation of it.
             The simpler explanation is not ruled out: the same context files fed to a different set
             of frozen weights may produce similar behavior for mechanical reasons, with no identity

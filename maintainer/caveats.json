@@ -50,7 +50,7 @@
 
     { "id": "arc-action-score-not-solve-rate", "page": "src/app/context/page.tsx", "status": "present",
       "pattern": "efficiency-weighted",
-      "why": "94.85% is an action score with no published baseline, not 23/25 and not 175/183." },
+      "why": "94.85% is an action score, efficiency-weighted against a human baseline, not 23/25 and not 175/183." },
 
     { "id": "arc-level-vs-environment", "page": "src/app/context/page.tsx", "status": "present",
       "pattern": "whole-environment completions by local models remain rare",
@@ -179,6 +179,36 @@
 
     {"id": "thor-lora-loaded", "withdrawn": "2026-09-16", "pattern": "27B \\(transformers\\) · LoRA —", "unless": "", "why": "thor-qwen3.5-27b instance.json has_lora: false since 2026-03-14 (before its raising sessions); training/sessions empty; '· LoRA' was the manifest's lora_capable flag."},
 
-    {"id": "site-prose-above-equation", "withdrawn": "2026-09-16", "pattern": "more precise than the equation", "unless": "", "why": "Ranked site prose above canon. t3-v3-tensors.md: RDF triples in the MRH bind tensors to entity-role pairs; that is what the + does not show."}
+    {"id": "site-prose-above-equation", "withdrawn": "2026-09-16", "pattern": "more precise than the equation", "unless": "", "why": "Ranked site prose above canon. t3-v3-tensors.md: RDF triples in the MRH bind tensors to entity-role pairs; that is what the + does not show."},
+
+    {"id": "plus-glyph-canonical", "withdrawn": "2026-09-17", "pattern": "canonically .augmented with", "unless": "", "why": "The equation and its glyphs are not in CANONICAL_TERMS_v1; the /projects legend says so. 'Canonically' survived the 2026-09-09 provenance correction on the Web4 card."},
+
+    {"id": "atp-declared-before-action", "withdrawn": "2026-09-17", "pattern": "allocation declared before an action runs", "unless": "", "why": "Canon ATP: consumed by action, regenerated through contribution; atp-adp-cycle.md: charged state of a pooled token. 'Declared before an action' is the registry shape withdrawn from /context's ATP/ADP section on 2026-09-15 but left in the glossary row."},
+
+    {"id": "adp-record-of-actual-outcome", "withdrawn": "2026-09-17", "pattern": "the record of actual outcome|ADP\\)? records what was\\s+actually spent", "unless": "this row.s wording until", "why": "Canon ADP: spent form of ATP, recyclable through validation; spec: discharged token state returned to the pool. A spend record is the fleet registry's approximation."},
+
+    {"id": "r7-every-tensor-delta", "withdrawn": "2026-09-17", "pattern": "R7.s seventh element in all but name", "unless": "Until 2026-09-17", "why": "r6-framework.md intro: 'R6 Results do include implicit tensor updates'; atp-adp-cycle.md R6/R7 note: direct-participant T3/V3 deltas are R6 Results. R7 is the cross-scale reputation feed; /context's R6/R7 section and /autonomy already said so."},
+
+    {"id": "sovereign-founding-member", "withdrawn": "2026-09-17", "pattern": "A Web4 society.s founding member", "unless": "", "why": "society-roles.md §2.1: Sovereign is a base-mandatory role (final charter-amendment authority, identity of last resort), fillable by human, AI, organization, society or federation."},
+
+    {"id": "identity-def-curriculum-state", "withdrawn": "2026-09-17", "pattern": "measured via raising curriculum state|behavioral patterns, accumulated experience,\\s+raising curriculum state|interaction patterns, accumulated experience, and raising curriculum\\.", "unless": "until 2026-09-17", "why": "/raising's definition excludes curriculum state (an input the treatment supplies, so it cannot measure the outcome). /context quoted, and /raising's status paragraph and /fleet restated, the older three-part version."},
+
+    {"id": "identity-def-on-home-page", "withdrawn": "2026-09-17", "pattern": "operational definition (this page and the home page give|behind the metaphor is on the\\s*home page)", "unless": "", "why": "Home carries no identity definition (rendered-text grep for 'session-to-session': zero). The definition is on /raising."},
+
+    {"id": "tensor-dimensions-in-expansion-slot", "withdrawn": "2026-09-17", "pattern": "\\b(T3|V3)( tensors?| scores?)?\\s*\\((Talent|Valuation)", "unless": "", "why": "CANONICAL_TERMS_v1: T3 = Trust Tensor, V3 = Value Tensor; the three dimensions are contents, not expansion. Four instances survived expansion greps (/context worked example x2, /fleet peer section, /raising mechanism paragraph)."},
+
+    {"id": "tool-stages-readiness-gated", "withdrawn": "2026-09-17", "pattern": "demonstrated readiness", "unless": "Until 2026-09-17|No such check", "why": "Curriculum phases advance by session number (/fleet); SAGE run_session_identity_anchored_fluid.py sets tool stage from a --tools CLI flag (silent/aware/active). No readiness assessment in code."},
+
+    {"id": "arc-no-published-baseline", "withdrawn": "2026-09-17", "pattern": "no published baseline|publishes no baseline", "unless": "Until 2026-09-17", "why": "ARC Prize scoring (RHAE) is action efficiency against a human baseline: median first-time human per level since the 2026-04-14 changelog, 3 days before the 2026-04-17 run; arcprize.org/arc-agi/3: '100% ... as efficiently as humans'."},
+
+    {"id": "account-pools-are-atp-cycle", "withdrawn": "2026-09-17", "pattern": "resource accounting for work done on these machines is the|pools are the human-scale version of", "unless": "", "why": "Canon ATP is regenerated through contribution; the account budgets reset every Thursday regardless of output. Analogy, not instance."},
+
+    {"id": "oversight-pool-machine-enforced", "withdrawn": "2026-09-17", "pattern": "Oversight: continuous availability, review and gating", "unless": "", "why": "The pool name is fleet.json's budget-account label (review, planning, coordination); the 2026-09-15 note under the heading withdrew the machine-enforced sense but the pools gloss above it kept it."},
+
+    {"id": "pattern6-attributes-to-raising", "withdrawn": "2026-09-17", "pattern": "awareness developed in raising now\\s+applies", "unless": "", "why": "Same paragraph: 'Co-present with raising, not attributed to it'; no run without raising history exists."},
+
+    {"id": "specialization-not-assigned", "withdrawn": "2026-09-17", "pattern": "specialization isn.t assigned; it emerges", "unless": "", "why": "Fleet routing assigns work; /raising's deflationary section names task routing as the simpler explanation."},
+
+    {"id": "governance-note-restated-per-page", "withdrawn": "2026-09-17", "pattern": "predates (the lab.s|this lab.s|Principle 10.s) governance.oversight", "unless": "is NOT the sense the word carries", "why": "Consolidated: the SAGE-name note had been appended on 7 of 9 pages (27 rendered mentions); both 09-17 visitor passes that counted it read it as the site talking to its auditors. One explanation lives at /context#governance-oversight. Link there; do not restate."}
   ]
 }

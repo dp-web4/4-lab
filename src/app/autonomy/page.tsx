@@ -45,9 +45,10 @@ export default function Autonomy() {
           Coordination comes from a{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>fleet track registry</strong> — the
           fleet&apos;s one authoritative list of tracks: a SQLite database tracking every track, its schedule, and which repos
-          each writes to. This prevents merge conflicts, ensures no two tracks
-          modify the same files simultaneously, and makes the whole system
-          auditable.
+          each writes to. It is designed to prevent merge conflicts by keeping two tracks from
+          writing the same repos at once, and it makes the whole system auditable. It does not
+          eliminate conflicts: resolving the ones that still happen is part of the supervisors&apos;
+          daily job below.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.5rem" }}>
           The timeline below shows eight of the 31+ tracks — the ones with distinct
@@ -242,7 +243,7 @@ export default function Autonomy() {
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>One content-triggered
           stop, added 2026-09-09.</strong> Every criterion above is exogenous &mdash; a clock,
-          a quota, a policy denial, a human switch. Nothing in what a track <em>finds</em>
+          a quota, a policy denial, a human switch. Nothing in what a track <em>finds</em>{" "}
           could stop it. As of this date one endogenous condition binds the maintainer
           track: a HIGH-severity finding in a visitor log that a maintainer session does not
           resolve must be carried forward in that session&apos;s log under an explicit
@@ -295,7 +296,7 @@ export default function Autonomy() {
           <Link href="/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
           (R6 + Reputation), not bare{" "}
           <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link>{" "}
-          (Rules / Role / Request / Reference / Resource → Result) —
+          (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) —
           the outcome is attributed to a machine&apos;s LCT and is meant to feed trust
           evolution across scales. (The ATP spec counts tensor deltas on the direct
           participants as an ordinary R6 Result; it is the cross-scale feed that makes

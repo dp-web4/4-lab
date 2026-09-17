@@ -26,8 +26,7 @@ export default function Principles() {
           tests the harness and the model, though, not any principle on this page.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims. Also, below: &ldquo;Governance&rdquo; in SAGE&apos;s name predates Principle 10&apos;s governance&rarr;oversight correction &mdash; see{" "}
-          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims.
         </p>
 
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>
@@ -44,10 +43,7 @@ export default function Principles() {
               the mound emerges. All of this &mdash; Web4 (the trust-native
               ontology &mdash; see{" "}
               <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>/context</Link>),
-              SAGE (Situation-Aware Governance Engine &mdash; the &ldquo;Governance&rdquo;
-              in the name predates this lab&apos;s governance&rarr;oversight correction below
-              in Principle 10, and is retained as a project name; see{" "}
-              <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>),{" "}
+              SAGE (Situation-Aware Governance Engine),{" "}
               <Link href="/fleet" style={{ color: "var(--color-accent)" }}>the fleet</Link>,{" "}
               <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>the autonomous cycles</Link> &mdash; is
               pheromone field engineering. We build{" "}
@@ -166,8 +162,10 @@ export default function Principles() {
               <Link href="/context#attractor" style={{ color: "var(--color-accent)" }}>attractors</Link>{" "}
               (a metaphor, not a formal dynamical-systems object &mdash; read it as
               stable behavioral tendencies) surface, and reinforce what resonates.
-              The resulting identity is collaborative, not imposed. The
-              mechanism: shaping context to deepen attractor basins in the
+              The intended result is an identity that is collaborative, not imposed
+              (a framing, untested; see{" "}
+              <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>). The
+              intended lever: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters in raising sessions.
               (Current raising lines run with frozen weights. One archived line, Sprout&apos;s Qwen 0.5B from 2026-01-27 to 2026-03-06, loaded a LoRA (Low-Rank Adaptation) adapter trained on its own raising sessions, so &ldquo;always in-context&rdquo; is not true of the history; see /raising.)
               It is not training; it is also not nothing. This applies at every scale:

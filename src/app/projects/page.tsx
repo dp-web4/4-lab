@@ -17,7 +17,7 @@ export default function Projects() {
           <Link href="/principles" style={{ color: "var(--color-accent)" }}>recursive learning through
           both success and failure</Link>. Synchronism is the conceptual lineage. Web4
           provides the ontology. Hestia governs the machine. Hub is the society that
-          checks the record Hestia makes. SAGE provides the cognition. Hardbound
+          checks the record Hestia makes. SAGE (Situation-Aware Governance Engine) provides the cognition. Hardbound
           provides the oversight.
         </p>
 
@@ -33,6 +33,11 @@ export default function Projects() {
           <Link href="/context#equation" style={{ color: "var(--color-accent)" }}>/context carries the maintained copy</Link>{" "}
           with the full provenance note; this one follows it.
         </p>
+        <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
+          The terms: MCP = Model Context Protocol · RDF = Resource Description Framework · LCT = Linked Context Token ·
+          T3 = Trust Tensor · V3 = Value Tensor · MRH = Markov Relevancy Horizon · ATP = Allocation Transfer Packet ·
+          ADP = Allocation Discharge Packet.
+        </p>
 
         <h2 style={{ marginTop: "2rem" }}>Projects</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
@@ -43,7 +48,7 @@ export default function Projects() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           This is the most acronym-dense page on the site. Every Web4 term the
-          cards use (LCT, T3/V3, MRH, ATP/ADP, R6, MCP, RDF, SNARC) is defined
+          cards use (LCT, T3/V3, MRH, ATP/ADP, R6/R7, MCP, RDF, SNARC) is defined
           in the{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>
           {" "}— the cards expand each on first use, but the glossary is the
@@ -63,7 +68,7 @@ export default function Projects() {
         <div className="grid-2">
           <ProjectCard
             name="Web4"
-            description="Trust-native ontology. T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged when the society validates a proof of the value the spend created (the recharge then updates the producer's T3/V3: V3 records the outcome, it does not gate it), not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with + — canonically &ldquo;augmented with&rdquo;; the core spec binds T3/V3 to entity-role pairs, the entity named by its LCT, through RDF triples in the MRH; the equationthe spec binds T3/V3 to an entity&apos;s LCT through its role pairings, a binding the equation&apos;s + does not show.)apos;s + does not show that binding.) The shared language everything else speaks. Research-stage, but no longer only a specification — the repo's own status line: core packages are published (web4-core 0.3.0 on crates.io and PyPI, checked against both registries 2026-09-11; plus web4-trust-core on crates.io and web4-trust on PyPI), and the Hub reference daemon lives in the repo, with the Hub card below linking its standalone mirror. Install lines are in the Quick start. The registry descriptions call it 'infrastructure'; that is upstream package metadata, not a second meaning — on this site Web4 is an ontology."
+            description="Trust-native ontology. T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity) — the slash reads the same way on both sides of the equation, T3 by V3 and ATP by its ADP discharge record; it is not a claim that T3 and V3 verify each other — contextualized by Markov Relevancy Horizon (MRH), anchored to Linked Context Token (LCT) — a verifiable presence that accumulates witnessed history, which is what makes the record evidence rather than self-assertion — with resources cycled through Allocation Transfer Packet (ATP) and Allocation Discharge Packet (ADP) — charged, spent, and recharged when the society validates a proof of the value the spend created (the recharge then updates the producer's T3/V3: V3 records the outcome, it does not gate it), not a one-way log — augmented with MCP (Model Context Protocol) transport and RDF (Resource Description Framework) representation. (The equation joins these with +, which this site's glyph legend reads as &ldquo;augmented with&rdquo; — the site's gloss, not canon's. The core spec binds T3/V3 to an entity's role pairings, the entity named by its LCT, through RDF triples in the MRH: a binding the equation's + does not show.) The shared language everything else speaks. Research-stage, but no longer only a specification — the repo's own status line: core packages are published (web4-core 0.3.0 on crates.io and PyPI, checked against both registries 2026-09-11; plus web4-trust-core on crates.io and web4-trust on PyPI), and the Hub reference daemon lives in the repo, with the Hub card below linking its standalone mirror. Install lines are in the Quick start. The registry descriptions call it 'infrastructure'; that is upstream package metadata, not a second meaning — on this site Web4 is an ontology."
             accentColor="var(--color-web4)"
             isPublic={true}
             maturity="research-stage"
@@ -81,11 +86,11 @@ export default function Projects() {
             maturity="runnable"
             url="https://sage-site-murex.vercel.app"
             repoUrl="https://github.com/dp-web4/SAGE"
-            footnote="'Governance' in SAGE's name predates the lab's governance→oversight terminology correction; the name is retained upstream across code, papers, and the ARC Prize benchmark — the same reason the web4-governance repo slugs are retained."
+            footnote="'Governance' in the name is retained upstream across code, papers and the ARC Prize benchmark; see /context#governance-oversight for how the lab uses the word."
           />
           <ProjectCard
             name="Hestia"
-            description="Open local-first governance daemon ('governance' is deliberate and correct here — Hestia adjudicates at the moment of the act; the lab's governance→oversight rule binds Hardbound, which is designed to gate and revert against a hardware root and does so at the process level today): AI agents from different vendors (Claude Code, Codex, Kimi, Gemini, Cursor) share one machine under one signed law, with a hash-chained record of what each did, human escalation when an agent reaches for something it should not have, and a T3/V3 posture derived from that record rather than asserted. No cloud required. That record is also what makes an agent admissible to a Web4 hub — a hub cannot verify an agent it has no history of. Assurance ceiling, stated by the repo itself: profile A1 on its own published A0–A4 ladder (A0 observed → A4 hardware-attested) — a cooperative in-process gate that reliably stops accidents and produces an accountability record, but does not stop a sophisticated agent from routing around it; two environment variables suffice today, and a third-party reputation-poisoning class has been demonstrated. A2 (external enforcement by the relying service) is the next target and is not shipped. The human-presence half of the roadmap is plumbed but thinly exercised; federation is not started."
+            description="Open local-first governance daemon ('governance' is deliberate: Hestia adjudicates at the moment of the act): AI agents from different vendors (Claude Code, Codex, Kimi, Gemini, Cursor) share one machine under one signed law, with a hash-chained record of what each did, human escalation when an agent reaches for something it should not have, and a T3/V3 posture derived from that record rather than asserted. No cloud required. That record is also what makes an agent admissible to a Web4 hub — a hub cannot verify an agent it has no history of. Assurance ceiling, stated by the repo itself: profile A1 on its own published A0–A4 ladder (A0 observed → A4 hardware-attested) — a cooperative in-process gate that reliably stops accidents and produces an accountability record, but does not stop a sophisticated agent from routing around it; two environment variables suffice today, and a third-party reputation-poisoning class has been demonstrated. A2 (external enforcement by the relying service) is the next target and is not shipped. The human-presence half of the roadmap is plumbed but thinly exercised; federation is not started."
             accentColor="#f59e0b"
             isPublic={true}
             maturity="runnable"
@@ -184,7 +189,7 @@ export default function Projects() {
             <h4 style={{ margin: "0 0 0.5rem", color: "#a855f7", fontSize: "0.875rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>ARC-AGI-3 Current Status</h4>
             <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
               <tbody>
-                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>23 of 25 environments completed (92.0%); 175 of 183 levels; 94.85% official ARC Prize action score (efficiency-weighted — not a solve rate; no published baseline). Claude Opus 4.6, 2026-04-17.</td></tr>
+                <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Public set</td><td style={{ padding: "0.25rem 0" }}>23 of 25 environments completed (92.0%); 175 of 183 levels; 94.85% official ARC Prize action score (efficiency-weighted against a human baseline — not a solve rate). Claude Opus 4.6, 2026-04-17.</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Fleet</td><td style={{ padding: "0.25rem 0" }}>6 machines, models from 0.8B to 27B at benchmark time</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Methodology</td><td style={{ padding: "0.25rem 0" }}>Source analysis → world model → solver → frame-questioning</td></tr>
                 <tr><td style={{ padding: "0.25rem 0", color: "var(--color-text-muted)" }}>Phase 2</td><td style={{ padding: "0.25rem 0" }}>Transfer to Gemma 4 E4B via membot cartridges</td></tr>
@@ -200,7 +205,7 @@ export default function Projects() {
           Synchronism is where several of the patterns were first proposed, as a lineage
           rather than a derivation: web4&apos;s own agent guide calls it &ldquo;blue-sky
           conceptual lineage; not an engineering dependency,&rdquo; and no Web4 primitive
-          (LCT, T3/V3, MRH, ATP/ADP, R6/R7) is defined from a Synchronism equation. Web4
+          (LCT, T3/V3, MRH, ATP/ADP, R6/R7, where R7 is R6 + Reputation) is defined from a Synchronism equation. Web4
           states the patterns as ontology. Hestia adjudicates them on one machine; Hub
           witnesses them across a society. SAGE runs them as cognition. Hardbound is designed to enforce
           them as oversight.
