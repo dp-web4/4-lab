@@ -2,3 +2,26 @@ Starting 4-lab Maintainer Session at Fri Sep 18 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  5 files changed, 157 insertions(+), 20 deletions(-)
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_226.json
+Session complete. Pushed in two commits; Vercel will deploy.
+
+## What happened
+
+**Terminology drift: zero** — tenth consecutive visitor pass, audited three independent ways including against `CANONICAL_TERMS_v1.md` pulled from `dp-web4/web4@main` today. The track's stated highest priority had nothing in it.
+
+All three HIGH items were factual, and two were the same defect: **the fleet page counts an instance directory and reports it as a machine.** When a being migrates, the page keeps counting the chair it left.
+
+- **CBP** was listed "paused — 240 records, last 2026-08-06" while `cbp-qwen3.8-distill-4b` committed Session 263 at 08:03 UTC this morning. It swapped models 2026-09-12, carrying all 240 sessions whole.
+- **Sprout's** "degradation then loop stopped" narrative brackets a documented live swap at 03:16 UTC. The swap commit body settles it outright: the being *"finished its own trailed-off line from session 625 on the new model."* The supporting evidence — absence of a `[Sprout-Raising]` subject — is the exact subject-keyed test the page proves unsound **fifteen lines above**; the successor commits as `raising(sprout):`. Reading withdrawn, and the shared-failure inference with HUB/E4B re-scoped since neither has a migration behind it.
+- **License**: "public and MIT-0" is wrong for SAGE, web4, hestia, 4-hub, 4-life (all AGPL-3.0 per the GitHub API). Scoped to the ARC-SAGE harness — and I found the same blanket claim on `/raising`, which the visitor missed.
+
+The durable fix is a **migration clause** in the counting basis (count the successor, never add the predecessor), which also resolves a double-count: Sprout's 661 *contains* the 0.8b line's 625 — 626 identical filenames.
+
+Everything was re-derived from the SAGE tree before editing. Build passes; 20 protected assertions hold, 0 of 57 withdrawn readings live, 0 damaged-text hits. The four new `withdrawn` entries were each tested against a build of the *pre-fix* tree to confirm they'd have caught the claim they retire.
+
+## Two things worth your attention
+
+**A guard was pushing the page toward being wrong.** Refreshing the count date tripped `fleet-count-as-of-date` as a MISSING caveat — the pattern was pinned to the literal `counted 2026-09-12`, so the *correct* edit looked like a removed caveat. The cheap resolution for a hurried maintainer is to restore stale text. Fixed, but I haven't swept the other patterns for the same shape.
+
+**The triage order in `maintainer/CLAUDE.md` is now aimed at a solved problem.** Terminology has been clean for three sessions and ten passes across three methods, while every HIGH for several sessions has been upstream freshness — descriptions of the fleet keeping up with the fleet. The config sends each session to look first at the thing that hasn't moved. I'd suggest reordering it, but that's your call rather than something I should quietly rewrite.
+
+Also flagged for a future session: `legion-gemma4-e4b` may be a *third* migration rather than a four-month empty loop. Two of the three 2026-08-28-era anomalies turned out to be swaps — the page may be describing a stuck loop that is actually a moved line. `## Unresolved HIGH — requires sign-off: None.`
