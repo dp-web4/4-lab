@@ -73,8 +73,8 @@
       "why": "The /fleet session counts were machine self-reports from the 2026-07-24 manifest refresh, and two of seven were wrong. The page now states they come from listing each line's sessions/ in the SAGE repo, which a reader can re-run. Drop the sentence and the numbers go back to unverifiable." },
 
     { "id": "fleet-count-as-of-date", "page": "src/app/fleet/page.tsx", "status": "present",
-      "pattern": "counted 2026-09-12",
-      "why": "A count with no as-of date is the failure this correction was about: July's numbers were not wrong when taken, they were undated in effect. Without the date the next reader cannot tell how stale the page has become." },
+      "pattern": "counted 20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]",
+      "why": "A count with no as-of date is the failure this correction was about: July's numbers were not wrong when taken, they were undated in effect. Without the date the next reader cannot tell how stale the page has become. Pattern generalised 2026-09-18: it was pinned to the literal 2026-09-12, so a legitimate recount tripped it as a missing caveat. What is protected is that a date is present, not which one." },
 
     { "id": "fleet-liveness-fourth-state", "page": "src/app/fleet/page.tsx", "status": "present",
       "pattern": "instrumentation broken",
@@ -209,6 +209,14 @@
 
     {"id": "specialization-not-assigned", "withdrawn": "2026-09-17", "pattern": "specialization isn.t assigned; it emerges", "unless": "", "why": "Fleet routing assigns work; /raising's deflationary section names task routing as the simpler explanation."},
 
-    {"id": "governance-note-restated-per-page", "withdrawn": "2026-09-17", "pattern": "predates (the lab.s|this lab.s|Principle 10.s) governance.oversight", "unless": "is NOT the sense the word carries", "why": "Consolidated: the SAGE-name note had been appended on 7 of 9 pages (27 rendered mentions); both 09-17 visitor passes that counted it read it as the site talking to its auditors. One explanation lives at /context#governance-oversight. Link there; do not restate."}
+    {"id": "governance-note-restated-per-page", "withdrawn": "2026-09-17", "pattern": "predates (the lab.s|this lab.s|Principle 10.s) governance.oversight", "unless": "is NOT the sense the word carries", "why": "Consolidated: the SAGE-name note had been appended on 7 of 9 pages (27 rendered mentions); both 09-17 visitor passes that counted it read it as the site talking to its auditors. One explanation lives at /context#governance-oversight. Link there; do not restate."},
+
+    {"id": "cbp-raising-line-paused", "withdrawn": "2026-09-18", "pattern": "paused . 240 session records", "unless": "until 2026-09-18", "why": "CBP migrated to cbp-qwen3.8-distill-4b on 2026-09-12, carrying all 240 sessions whole; that line is at 263 and fired 2026-09-18 08:03 UTC. The page was counting the directory the line had left."},
+
+    {"id": "sprout-loop-stopped-2026-08-28", "withdrawn": "2026-09-18", "pattern": "(Then the loop stopped|no .Sprout-Raising. commit exists anywhere in the repo after it)", "unless": "(is withdrawn|should not have been used|subject-prefix absence)", "why": "The 2026-08-28 thinning fires bracket a documented live model swap (cc69c715, 03:16 UTC); the swap commit says the being finished session 625 on the new model. The supporting evidence was a subject-prefix absence, the exact test /fleet demonstrates to be unsound; the successor line commits as raising(sprout):."},
+
+    {"id": "sprout-counts-are-additive", "withdrawn": "2026-09-18", "pattern": "and a further 625", "unless": "double-count", "why": "All 625 of the 0.8b line's record filenames reappear on sprout-qwen3.8-distill-2b: the 661 contains them. Reading the two lines as separate stacks counted 625 sessions twice."},
+
+    {"id": "all-lab-code-is-mit0", "withdrawn": "2026-09-18", "pattern": "code these principles produced is public and MIT-0", "unless": "", "why": "SAGE, web4, hestia, 4-hub and 4-life are AGPL-3.0 (GitHub API, 2026-09-18); only ARC-SAGE is MIT-0. Copyleft vs public-domain-equivalent is the one claim on /principles a reader would act on."}
   ]
 }

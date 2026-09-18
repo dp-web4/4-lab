@@ -1,0 +1,42 @@
+Starting 4-lab Maintainer Session at Thu Sep 17 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ rename sage/instances/mcnugget-gemma3-12b/snapshots/archive/{identity_20260914_101512.json => identity_20260917_060125.json} (94%)
+ create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_222.json
+The session is done and pushed as `1d28cd0`. The build passes, and `check-caveats.sh` exits 0: 20 protected caveats hold, 0 of 53 withdrawn readings are live, and there are 0 damaged-text hits.
+
+**The one HIGH was caused by my own previous session.** On 09-16 I edited the /projects Web4 card, which is the site's definition of Web4, using sed with `&apos;` in the replacement text. In sed, `&` means "the whole matched text", so the old clause was pasted back in. The card showed "…the equationthe spec binds… )apos;s…" for a day. None of the existing checks caught it, because they check what the text claims, not whether it's intact.
+- **Fix:** I rewrote the sentence. I also added `maintainer/check-render.py`, which checks the rendered pages for three things: leftover entity fragments like `apos;`, unmatched brackets, and words stuck to the end of bold or italic text.
+- **Tested:** on the old build it found 8 real problems, including 3 the visitor missed. My first attempt, a duplicate-phrase detector, flagged the nav and missed the real splice, so I dropped it. That's noted in the script.
+- **Instructions:** `maintainer/CLAUDE.md` now says not to put HTML entities in sed replacements.
+
+**Terminology:** no wrong expansions anywhere (ninth clean pass in a row). I fixed the drift the visitor found in wording and meaning:
+- **Glossary rows behind their own page:** the ATP and ADP rows on /context still had the reading withdrawn on 09-15. The R7 row contradicted the page's own R6/R7 section.
+- **Sovereign:** it was defined as a member. The spec defines it as a role with final authority over the charter.
+- **T3/V3 form:** four places gave the three dimensions as if they were the expansion.
+- **/fleet:** "oversight pool" was used in two senses, and weekly account budgets were called "the ATP cycle".
+
+**Two corrections came from checking the sources, not rewording:**
+- **The ARC caveat was false.** Four pages said ARC Prize publishes no baseline. Its score is measured against human players. ARC Prize changed the baseline to the median first-time human on 2026-04-14, three days before our run. All four pages are fixed.
+- **The visitor's LoRA figure was wrong.** It said at least 80 of the 115 sessions before the Sprout port used the self-trained adapter. The site's "84" counts files, not sessions. By distinct session number it's 45, and /fleet now says that and which way it cuts.
+
+**Other fixes on /raising:**
+- **Readiness gate:** the page said each tool stage waits until the entity shows readiness. No such check exists. The stage is a command-line flag the operator sets.
+- **BECOMING Patterns 2 and 3:** these are signals the harness computes from the first session, and the page now says so.
+- **Identity definition:** it now lives in one place, on /raising. Two pages pointed to a definition "on the home page" that doesn't exist.
+
+**Repeated notes:** the "governance→oversight" and "SAGE's name predates…" notes appeared 27 times across 7 pages. They're down to the 3 on /context, which holds the one explanation, and a check fails if the note gets repeated elsewhere again.
+
+I added 15 new entries to the withdrawn-readings check (38 → 53). The 14 for withdrawn readings fired on the old build, and the one guarding the repeated note matched all four old wordings.
+
+**Unresolved HIGH:** none.
+
+**Needs your call:**
+- **Naming:** HUB/Hub and hestia/Hestia are told apart only by capital letters.
+- **Metalinxx:** Home names it but never explains its relationship to the lab.
+- **Hub society:** whether it has a treasury, and who fills the other six required roles.
+- **Open gaps:** dates and owners for the disclosed gaps, such as the cross-model visitor persona and the deflationary control.
+- **BECOMING frame:** with Patterns 2 and 3 now marked as harness signals, only Patterns 4 and 5 remain as developmental observations, and both say "increasing" with no count. Should it stay a six-pattern frame?
+
+**Deferred:** linkable anchors for each principle and each /fleet machine, per-page meta descriptions, and some low-severity wording items. They're listed in `maintainer/logs/2026-09-17.md`.
+
+**So what:** the site's vocabulary has been clean for nine passes. What's still going wrong is corrections that don't reach every copy of a claim, and now edits that damage the text. Both kinds of defect now have a check that fails. All four visitor passes still run on one model family, and nothing inside this loop can fix that.

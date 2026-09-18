@@ -19,10 +19,19 @@ export default function Principles() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           If you would rather check something than read a list of beliefs: the
-          code these principles produced is public and MIT-0 (MIT No Attribution), with an
-          independently scored result &mdash; see{" "}
+          code these principles produced is public, and one piece of it &mdash; the ARC-SAGE
+          harness &mdash; is MIT-0 (MIT No Attribution) and carries an
+          independently scored result; see{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
-          It is the most inspectable thing the lab has; this page is the least. It
+          Until 2026-09-18 this sentence said the code was MIT-0 without qualification, which was
+          wrong in the direction that matters to anyone acting on it: the main repos
+          (SAGE, web4, hestia, 4-hub, 4-life) are AGPL-3.0 &mdash; copyleft, not
+          public-domain-equivalent &mdash; while snarc and membot are MIT and ACT&apos;s own
+          LICENSE file reads Apache-2.0 against an AGPL-3.0 entry in its index.
+          Check each repo&apos;s LICENSE file before forking; {" "}
+          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
+          carries the per-repo version.
+          The harness is the most inspectable thing the lab has; this page is the least. It
           tests the harness and the model, though, not any principle on this page.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>

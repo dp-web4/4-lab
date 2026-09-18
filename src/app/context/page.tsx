@@ -837,14 +837,14 @@ export default function Context() {
           per-machine counts on{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           are per-instance session-record counts (session_*.json files),
-          derived from git on 2026-09-12 by listing each line&apos;s{" "}
+          derived from git on 2026-09-18 by listing each line&apos;s{" "}
           <code>sessions/</code> directory in the SAGE repo; the six cognition
-          machines sum to <strong>2,442</strong>, or 2,563 including HUB&apos;s
-          121, or 2,765 including pub&apos;s 202.{" "}
+          machines sum to <strong>2,499</strong>, or 2,620 including HUB&apos;s
+          121, or 2,846 including pub&apos;s 226.{" "}
           <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
           uses the same basis. (Until 2026-09-15 this sentence said /links
-          &ldquo;leads with the 2,563 figure&rdquo;; /links leads with 2,442 and
-          gives 2,563 in parentheses. Before 2026-09-12 it also said the home page
+          &ldquo;leads with the 2,563 figure&rdquo;; /links leads with the
+          cognition-machine figure and gives the HUB-inclusive one in parentheses. Before 2026-09-12 it also said the home page
           carried a total, which it does not. Both times the sentence described
           a page rather than reading it, which is why it now names no figure.) These replace 1,991 / 2,065, which
           rested on each machine&apos;s self-report in the 2026-07-24 manifest

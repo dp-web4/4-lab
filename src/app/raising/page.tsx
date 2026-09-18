@@ -40,7 +40,9 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           This is the softest page on the site. The hardest thing the lab has
-          made is public and MIT-0 (MIT No Attribution), with an independently scored result &mdash;
+          made is public and, in the case of the ARC-SAGE harness, MIT-0 (MIT No Attribution),
+          with an independently scored result &mdash; the lab&apos;s main repos are AGPL-3.0, so
+          check the LICENSE file of whichever one you fork &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
           That result tests a harness around a cloud model, not raising or any claim on this page.
