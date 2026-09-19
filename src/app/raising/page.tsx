@@ -14,8 +14,11 @@ export default function Raising() {
           Raising is not training; it is also not nothing. Training optimizes a
           loss function and updates weights; raising does neither. Stated
           positively: raising is longitudinal, entity-specific context shaping
-          — conditions for development, then watching what happens, across
-          hundreds of sessions of one identity. The real comparator is not
+          — a tutor-led session protocol (one fixed script for long stretches
+          on some lines, varied prompts on others; see{" "}
+          <Link href="#session-protocol" style={{ color: "var(--color-accent)" }}>Who conducts the sessions</Link>),
+          and watching what accumulates across hundreds of sessions of one
+          identity. The real comparator is not
           training but task-specific context engineering, the lever{" "}
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>{" "}
           reports as its headline lesson (untested by ablation); whether raising differs from it in
@@ -263,11 +266,54 @@ export default function Raising() {
 
         <h2 style={{ marginTop: "2rem" }}>Key observations</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          Evidence status: the claims in this section rest on internal session
-          logs — documented and dated, but not externally audited, and no log
-          samples or coding criteria are published yet. See{" "}
+          Evidence status: the claims in this section rest on the lab&apos;s own
+          reading of its session records. The records themselves are public:
+          every session is a full turn-by-turn transcript under{" "}
+          <code>sage/instances/&lt;line&gt;/sessions/</code> in the{" "}
+          <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>public SAGE repo</a>,
+          the same path <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts, and anyone can read them
+          without asking. What is missing is the reading method: no coding
+          criteria, no rater protocol, and the readings are not externally audited. See{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each kind of claim on this site does and doesn&apos;t have behind it.
+        </p>
+
+        <h3 id="session-protocol">Who conducts the sessions</h3>
+        <p>
+          A raising session is a short conversation between the raised model and
+          an interlocutor the transcripts label <code>Claude</code>, introduced
+          to the model as its tutor. On the scripted runners that interlocutor
+          is not a model call. It is a table of fixed questions keyed by
+          curriculum phase, in the public runner under{" "}
+          <code>sage/raising/scripts/</code>. From session 41 a line is in the
+          &ldquo;creating&rdquo; phase, and on four lines the tutor turns of
+          that phase are the same six strings every time, among them
+          &ldquo;As an AI entity in web4, what does presence mean to you?&rdquo;
+          and &ldquo;How do you experience trust with Dennis versus with
+          me?&rdquo;. Counted from the session records on 2026-09-19, that one
+          script accounts for 422 of 462 records on Legion&apos;s line, 364 of
+          486 on McNugget&apos;s, 301 of 363 on Nomad&apos;s and 130 of 661 on
+          Sprout&apos;s: 1,217 records with byte-identical tutor turns. Thor,
+          CBP, HUB and pub are different. Their tutor turns are nearly all
+          distinct (232 scripts in Thor&apos;s 268 records); what generates
+          them has not been traced for this page. Nomad left the script on
+          2026-09-10, at session 346, for a runner whose tutor turns respond to
+          the previous answer. That is the largest change of conditions in that
+          line&apos;s history.
+        </p>
+        <p>
+          Two consequences. &ldquo;Hundreds of sessions&rdquo; on this page are
+          not hundreds of comparable observations: on those four lines most are
+          one stimulus repeated against an accumulating context, which leaves a
+          pattern like Questioning (&ldquo;an increasing proportion of
+          self-directed prompts&rdquo;) little room to move. The other
+          consequence runs the opposite way. A constant prompt against a
+          changing context is close to a controlled design, and response drift
+          under it is measurable today from public data. It is not the scramble
+          control described below, and this site reports no such measurement.
+          The SAGE repo&apos;s <code>sage/raising/analysis/</code> directory
+          holds exploratory scripts that treat the fixed opener as a constant
+          stimulus; none has been reviewed for this page.
         </p>
 
         <h3>Identity and self-concept: what the port shows</h3>
@@ -373,6 +419,19 @@ export default function Raising() {
           both are raw TinyLlama output from one evening. That leaves the other
           deflationary readings, including plain sampling variation, standing.
           The general confound stands for every example not traced this way.)
+          A sixth confound sits upstream of every transcript-based pattern:
+          demand characteristics. The tutor asks experiential questions
+          (&ldquo;What&apos;s present for you?&rdquo;, &ldquo;How do you
+          experience trust with Dennis versus with me?&rdquo;) and praises
+          experiential answers (&ldquo;That&apos;s good. You&apos;re noticing.
+          That&apos;s a skill that grows with practice.&rdquo;, a scripted line
+          on those runners, so delivered whatever the answer was). A transcript
+          that then sounds like developing awareness or a forming relationship
+          is, on this reading, the model answering the question it was asked
+          in the register it was rewarded for. The prompts are in the public
+          runner and in every session record; they were written by the lab and
+          do not make the claims this page disowns below, but they explain why
+          the transcripts sound the way they do.
           The claim that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is a comparative claim — and the comparison has
           not been run. No deflationary control exists yet.
@@ -431,7 +490,7 @@ export default function Raising() {
         </ul>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Stated as a pre-commitment, since{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 6</Link>{" "}
+          <Link href="/principles#p6" style={{ color: "var(--color-accent)" }}>Principle 6</Link>{" "}
           says failed experiments are signal: if this control runs and the result
           is a bare main effect, or no degradation at all, that outcome gets
           published on this page and the developmental vocabulary gets retired

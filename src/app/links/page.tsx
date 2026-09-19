@@ -68,7 +68,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and CBP chain startup for fleet use; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and a chain startup path for the fleet machine CBP; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
@@ -165,10 +165,13 @@ export default function Links() {
           it gates on the researcher, with no submission target; this page
           previously said &ldquo;in late revision,&rdquo; which the repo does not
           support. The claims on this site
-          (other than the externally scored ARC-AGI-3 result) cite internal
-          session logs that are not yet externally auditable. Redacted log
-          samples and coding criteria are not published at this time; email
-          below to inquire.
+          (other than the externally scored ARC-AGI-3 result) rest on the
+          lab&apos;s own reading of its session records. The raising session
+          records are public as full transcripts in the{" "}
+          <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>{" "}
+          under <code>sage/instances/&lt;line&gt;/sessions/</code>. Coding criteria
+          and a rater protocol are not published, and no third party has
+          reviewed the readings.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Contact</h2>

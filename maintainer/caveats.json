@@ -22,7 +22,7 @@
 
     { "id": "evidence-tier-internal", "page": "src/app/raising/page.tsx", "status": "present",
       "pattern": "not externally audited",
-      "why": "Observations are internal, not externally audited." },
+      "why": "The readings of the session records are the lab's own and not externally audited. (The records are public; the reading method is not. Keep this half.)" },
 
     { "id": "deflationary-alternative", "page": "src/app/autonomy/page.tsx", "status": "present",
       "pattern": "deflationary",
@@ -217,6 +217,11 @@
 
     {"id": "sprout-counts-are-additive", "withdrawn": "2026-09-18", "pattern": "and a further 625", "unless": "double-count", "why": "All 625 of the 0.8b line's record filenames reappear on sprout-qwen3.8-distill-2b: the 661 contains them. Reading the two lines as separate stacks counted 625 sessions twice."},
 
-    {"id": "all-lab-code-is-mit0", "withdrawn": "2026-09-18", "pattern": "code these principles produced is public and MIT-0", "unless": "", "why": "SAGE, web4, hestia, 4-hub and 4-life are AGPL-3.0 (GitHub API, 2026-09-18); only ARC-SAGE is MIT-0. Copyleft vs public-domain-equivalent is the one claim on /principles a reader would act on."}
+    {"id": "all-lab-code-is-mit0", "withdrawn": "2026-09-18", "pattern": "code these principles produced is public and MIT-0", "unless": "", "why": "SAGE, web4, hestia, 4-hub and 4-life are AGPL-3.0 (GitHub API, 2026-09-18); only ARC-SAGE is MIT-0. Copyleft vs public-domain-equivalent is the one claim on /principles a reader would act on."},
+
+    {"id": "session-logs-not-auditable", "withdrawn": "2026-09-19", "pattern": "not yet externally auditable|internal session logs|[Rr]edacted (session-)?log samples|email below to inquire", "unless": "", "why": "False caveat. Raising session records are full public transcripts at sage/instances/<line>/sessions/ in dp-web4/SAGE (repo public, GitHub API 2026-09-19). What is unpublished is the reading method. A caveat is a factual claim and gets verified like one; this one deterred the audit it said was missing."},
+    {"id": "home-restates-fleet-line-states", "withdrawn": "2026-09-19", "pattern": "both Qwen lines", "unless": "", "why": "Home cited a /fleet count /fleet had replaced: three Qwen lines, CBP running. Home points to /fleet and restates no line state."},
+    {"id": "fleet-two-governing-dates", "withdrawn": "2026-09-19", "pattern": "before the 2026-09-12 count", "unless": "", "why": "The Raising-line state legend said 09-12 while the method paragraph said 09-18. One date governs: 09-18. Under it Legion (last record 2026-09-02) is quiet, not running."},
+    {"id": "open-substrate-logged-as-drift", "withdrawn": "2026-09-19", "pattern": "open substrate.{0,12} is drift", "unless": "", "why": "The phrase is the upstream Web4 README's lead sentence since its September 2026 refocus. The site keeps 'ontology' and names the disagreement instead of logging upstream's headline as unattributed drift."}
   ]
 }

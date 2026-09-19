@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
           The common thesis is simple: <strong>trust should be computed from witnessed
-          evidence, in context, by the party doing the relying</strong> - not declared by
+          evidence, in context, by the party doing the relying</strong> &mdash; not declared by
           a platform or asserted by the agent itself.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.875rem", marginTop: "0.75rem" }}>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <div className="stat-value">4</div>
-            <div className="stat-label">Model families deployed on raising lines: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived). Deployed, not all running: on /fleet&apos;s 2026-09-12 count both Qwen lines are quiet and HUB&apos;s Granite loop fires without writing records</div>
+            <div className="stat-label">Model families deployed on raising lines: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived). Deployed is not the same as running: each line&apos;s current state is on <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns it</div>
           </div>
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginTop: "0.75rem" }}>
@@ -110,9 +110,11 @@ export default function Home() {
           <h3>Open layer, higher-assurance enterprise tier</h3>
           <p>
             Web4, Hestia and Hub establish an open interoperability layer. <strong>Hardbound</strong>,
-            built by Metalinxx, is the proprietary enterprise assurance tier for
+            being built by Metalinxx, is the planned proprietary enterprise assurance tier for
             hardware-bound identity, stronger fail-closed enforcement and
-            audit-ready evidence packaging. The open layer avoids governance lock-in;
+            audit-ready evidence packaging. It is private and research-stage: hardware
+            anchoring is a design target, and enforcement on the fleet today is at the
+            process level (see <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>). The open layer avoids governance lock-in;
             the commercial layer raises assurance for deployments that require it.
           </p>
         </div>
@@ -123,7 +125,7 @@ export default function Home() {
             <div className="card">
               <h3>Heterogeneous fleet</h3>
               <p>
-                Edge devices, laptops, workstations and society hosts run different
+                Edge devices, laptops, workstations and society-hosts run different
                 model families for SAGE research. The tracks that write and audit
                 this site share model families with each other, so review here is
                 not yet independent (/autonomy names that limit).

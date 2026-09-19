@@ -40,7 +40,7 @@ export default function Principles() {
 
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>
           <div className="principle-card">
-            <div className="principle-title">1. Substrate, not structure</div>
+            <h2 id="p1" className="principle-title">1. Substrate, not structure</h2>
             <div className="principle-quote">
               &ldquo;You don&apos;t engineer the mound. You engineer placement
               rules.&rdquo;
@@ -67,9 +67,9 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">2. Fractal leverage</div>
+            <h2 id="p2" className="principle-title">2. Fractal leverage</h2>
             <div className="principle-quote">
-              Trust formation through interaction follows patterns analogous to Hill function kinetics (the cooperative binding model from enzyme chemistry) — an analogy, not a fitted mechanism.
+              We model trust formation through interaction by analogy to Hill function kinetics (the cooperative binding model from enzyme chemistry) — an analogy, not a fitted mechanism and not an observation.
             </div>
             <div className="principle-text">
               When a pattern works at one scale, apply it at every scale. Not
@@ -81,7 +81,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">3. R&D, not production</div>
+            <h2 id="p3" className="principle-title">3. R&D, not production</h2>
             <div className="principle-quote">
               Recursive learning through both success and failure.
             </div>
@@ -96,7 +96,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">4. Trust is a relationship</div>
+            <h2 id="p4" className="principle-title">4. Trust is a relationship</h2>
             <div className="principle-quote">
               T3 (Trust Tensor — Talent / Training / Temperament) / V3 (Value Tensor — Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF triples.
             </div>
@@ -111,7 +111,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">5. Synthon: emergent coherence</div>
+            <h2 id="p5" className="principle-title">5. Synthon: emergent coherence</h2>
             <div className="principle-quote">
               An emergent coherence entity formed by recursive interaction.
             </div>
@@ -142,7 +142,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">6. Document failures</div>
+            <h2 id="p6" className="principle-title">6. Document failures</h2>
             <div className="principle-quote">
               The p_crit derivation failed catastrophically — 400x error.
             </div>
@@ -161,7 +161,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">7. Interactive selection</div>
+            <h2 id="p7" className="principle-title">7. Interactive selection</h2>
             <div className="principle-quote">
               We don&apos;t create or delete — we interactively select.
             </div>
@@ -184,7 +184,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">8. Surface your instincts</div>
+            <h2 id="p8" className="principle-title">8. Surface your instincts</h2>
             <div className="principle-quote">
               The affordances are yours. The choice to use them is the whole
               point.
@@ -198,7 +198,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">9. Research value</div>
+            <h2 id="p9" className="principle-title">9. Research value</h2>
             <div className="principle-quote">
               WD-40 was the 40th try.
             </div>
@@ -212,7 +212,7 @@ export default function Principles() {
           </div>
 
           <div className="principle-card">
-            <div className="principle-title">10. Terminology matters</div>
+            <h2 id="p10" className="principle-title">10. Terminology matters</h2>
             <div className="principle-quote">
               Web4 is an ontology. Hardbound is oversight.
             </div>
