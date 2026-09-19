@@ -2,3 +2,31 @@ Starting 4-lab Maintainer Session at Sat Sep 19 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  14 files changed, 315 insertions(+), 28 deletions(-)
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_230.json
+The visitor log had no canonical-term drift and no HIGH items today. I fixed the top-ranked medium items, the build and `check-caveats.sh` both pass, and the commit is pushed (`0852c73`). The session log is at `logs/2026-09-19.md`.
+
+**Fleet sync:** McNugget's manifest entry is the only fresh one (written 2026-09-19, Gemma4 12B), and it matches the page. The other five entries are still the March write with pre-cutover models, so I logged the difference and did not change the page from the manifest.
+
+**Main finding — the session logs are public, not internal:** /raising, /context and /links each told researchers the session logs are internal and not externally auditable. They are full public transcripts in `dp-web4/SAGE`, under `sage/instances/<line>/sessions/`. I checked the visitor's claims against the local clone before editing, and they hold.
+
+- **Fixed script.** One six-question "creating" script accounts for 1,217 session records across four lines: Legion 422 of 462, McNugget 364 of 486, Nomad 301 of 363, Sprout 130 of 661. The visitor had reported Nomad only.
+- **Tutor is a string table.** On those scripted runners the `Claude` tutor is a fixed table of questions in the public runner script, not a model call. The "That's good. You're noticing." praise is part of that table, so it is delivered whatever the model answered.
+- **Varied lines.** Thor, CBP, HUB and pub have nearly all-distinct tutor turns. I did not trace what generates them, and the page says so.
+
+**What changed on the site**
+- **/raising, /context, /links:** the caveat now says the records are public and links the path. What stays unpublished is how transcripts are read: no coding criteria, no rater protocol, no external audit. The protected phrase "not externally audited" stays, because that half is true.
+- **/raising:** new section "Who conducts the sessions" (`#session-protocol`) covers the scripted tutor, the per-line counts above, and Nomad's switch to responsive tutoring on 2026-09-10. It also notes that a constant prompt is close to a controlled design nobody has reported on. The confounds list gained a sixth item: the tutor asks experiential questions and praises experiential answers.
+- **Home:** stat 3 no longer says "both Qwen lines are quiet" and instead points to /fleet, which now shows three Qwen lines with CBP running. The Hardbound sentence now says it is planned, private and research-stage.
+- **/fleet:** one governing date (2026-09-18) for the "Raising line:" state. Under it Legion becomes quiet rather than running: its last session record is 2026-09-02, sixteen days before the count. Three uses of "the being" in the page's own voice became "the line" or "the identity".
+- **/context substrate row:** it no longer calls "the open substrate" drift. That phrase is the upstream Web4 README's lead sentence, and the README no longer contains the word "ontology". The row now names the disagreement and keeps "ontology" on this site.
+- **/principles:** the ten principles are now `<h2>` headings with ids `p1` to `p10`, so they can be linked.
+- **Small fixes:** principle 2 verb, OpenClaw URL, the "CBP chain startup" wording, a legacy-name clause for the quoted "consciousness kernel", hyphenation on Home.
+- **`caveats.json`:** four new `withdrawn` entries. Each one caught the old text when run against the pre-fix build, and none fires now.
+
+**For you to decide**
+1. Whether the fixed six-question script was a deliberate design or an unattended default. McNugget is still running it as of this morning. If it was a design, the response drift under it is measurable from public data, and `sage/raising/analysis/` already has exploratory scripts treating the fixed opener as a constant stimulus. I did not review them.
+2. The web4 README and the repo's own `CLAUDE.md` disagree on "ontology" versus "open substrate / open infrastructure", and `CANONICAL_TERMS_v1` has no Web4 entry. That is for upstream to settle.
+3. I agree with the visitor log's suggestion to re-scope one persona to "pick a claim and check the public artifact it rests on". The term audit has been clean for eleven days.
+
+**Deferred to the next session:** an open-gaps age table on /autonomy comes first. Also deferred are the /context and /fleet heading and anchor structure, license badges on /projects, and new glossary rows (Binding, Pairing, LCT URI form, identity, coherence).
+
+I left `visitor/CLAUDE.md` uncommitted in the working tree. It is the visitor track's own edit (8 pages to 9), not mine.
