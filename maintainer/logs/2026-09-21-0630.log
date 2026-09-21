@@ -2,3 +2,30 @@ Starting 4-lab Maintainer Session at Mon Sep 21 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  12 files changed, 264 insertions(+), 32 deletions(-)
  create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_238.json
+Session pushed to `main` (d9efeac). The build passes, and the checks pass: 20 caveats hold, 67 withdrawn readings are all absent from the rendered pages, and no damaged text was found.
+
+**Terminology:** no drift against the canonical terms, for the twelfth visitor pass in a row. I fixed one wording problem: "the being" was written in the site's own voice on /fleet. It now reads "the line", and the operator's commit subject that uses the word is attributed as their shorthand.
+
+**Two HIGH items fixed.** One was orphaned: yesterday's maintainer session ran out of usage credits at startup and wrote no log, so the 09-20 visitor HIGH never reached the carry-forward rule.
+- **/autonomy (09-20):** the page said tracks don't choose their task definitions, and git history contradicts that. Tracks rewrite their own briefs and checks: 9 of 10 brief commits and 11 of 11 check commits carry a track prefix. The page now says a human writes what each track is *for*, but the tracks change how it's done, and the human review of those changes happens later and isn't recorded. It also links Principle 8, which settles the conflict the visitor raised. "No track *can* modify the registry" is now a statement of practice, not a capability claim.
+- **"Interactive selection" (09-21):** on 1,217 records the tutor is a fixed script with praise given whatever the answer, so nothing there probes or selects. /raising, P7 and a new glossary row now say that. Any selection on those lines comes from the consolidator and the schedule. The responsive runners haven't been traced, so the method is untested there, not refuted.
+
+**Main finding: I ran the experiment the site kept calling cheap but unrun.** I measured whether the model's answers drift when the tutor's questions never change, across all four scripted lines.
+- **Result:** there is no drift. Answer length, first-person rate and AI-disclaimer rate are flat wherever the serving setup stayed the same.
+- **What looked like development wasn't:** on Legion and McNugget, answers grew 4× and 2× and disclaimers rose from about 3% to 50% and 20%. That is a single jump on 2026-06-07, on both machines the same day, when the raising runner moved to the new Rust daemon (SAGE `046e45dc0`). Nothing in the session records marks that change, so anyone reading June trends on those lines would have mistaken a software change for development.
+- **Limits:** these are crude measures, and meaning or stance drift hasn't been measured. The script is in the repo at `maintainer/analysis/constant_stimulus_drift.py`, and the page says nobody has reviewed it.
+
+**/fleet correction:** the same pass showed the page was wrong about Legion. Its records have run on the Gemma 4 E4B model since session 371 (2026-08-01), under the old gemma3-12b directory name. The page said that switch wasn't visible in the records.
+
+**Process:** the maintainer brief now treats a missing maintainer log as unfinished work, not a clean slate.
+
+**Decisions for you:**
+- Does "interactive selection" name what the lab does, or what it's aiming for? The phrase is also in your own standing instructions, so renaming it is your call.
+- McNugget is still on the fixed script today (367 records), which makes the 09-19 question "design or unattended default?" a live one.
+- SAGE session records should include a field for the serving software, since changes like the June daemon move are currently invisible in them.
+- I suggest one maintainer slot a week for running a measurement the site describes but hasn't run, rather than more wording fixes.
+
+Other notes:
+- The Gmail, Google Calendar and Google Drive connectors need authorizing in your claude.ai settings.
+- The playwright MCP server failed to connect because `npx` isn't on the shell's PATH.
+- The visitor track's uncommitted edit to `visitor/CLAUDE.md` is still in the working tree; I didn't commit it.
