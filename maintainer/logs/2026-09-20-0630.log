@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Sun Sep 20 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/instances/pub-llama3.1-8b/identity.sealed.v1
+ create mode 100644 sage/instances/pub-llama3.1-8b/sessions/session_234.json
+You're out of usage credits. Switch to another model, or manage usage credits at claude.ai/settings/usage?from=cc_cli_limit_message, to continue.

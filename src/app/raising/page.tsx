@@ -184,11 +184,32 @@ export default function Raising() {
           <Link href="/context#attractor" style={{ color: "var(--color-accent)" }}>attractors</Link>{" "}
           (a metaphor, not a formal dynamical-systems object &mdash; read it as
           stable behavioral tendencies) surface, adjust context to resonate, and
-          reinforce what works. The resulting identity is collaborative, not
-          imposed. This applies at every scale: raising sessions (model
+          reinforce what works. The intended result is an identity that is
+          collaborative, not imposed (a framing, untested, as{" "}
+          <Link href="/principles#p7" style={{ color: "var(--color-accent)" }}>Principle 7</Link>{" "}
+          also says). This applies at every scale: raising sessions (model
           context), our sessions (affordance shaping), the fleet (emergent
           diversity), and memory systems (salience selection). We don&apos;t
           create or delete — we interactively select.
+        </p>
+        <p>
+          That paragraph describes the method as intended. The records show
+          something narrower. On four lines the tutor&apos;s questions are one
+          fixed script, and its praise line is delivered whatever the answer was
+          (see{" "}
+          <Link href="#session-protocol" style={{ color: "var(--color-accent)" }}>Who conducts the sessions</Link>).
+          So on those 1,217 records the tutor does not probe, observe or reinforce
+          in response to the model: the stimulus is not interactive and the praise
+          is not selective. Whatever selection happens there is done in two other
+          places: by the consolidator, a separate Claude pass that rewrites the
+          identity record after each session (described below), and by the
+          curriculum schedule, which changes phase by session count. Whether the
+          responsive runners (Nomad after session 346; Thor, CBP, HUB and pub)
+          run the loop the name describes has not been traced, so there it is
+          untested, not refuted. &ldquo;We don&apos;t create new behaviors&rdquo;
+          is a hypothesis too. The scramble control below is what would test it,
+          and the archived Sprout LoRA line did update weights on the model&apos;s
+          own outputs.
         </p>
         <p>
           The mechanism, on the current raising lines: we shape context — we do not update weights (one
@@ -309,11 +330,36 @@ export default function Raising() {
           self-directed prompts&rdquo;) little room to move. The other
           consequence runs the opposite way. A constant prompt against a
           changing context is close to a controlled design, and response drift
-          under it is measurable today from public data. It is not the scramble
-          control described below, and this site reports no such measurement.
-          The SAGE repo&apos;s <code>sage/raising/analysis/</code> directory
-          holds exploratory scripts that treat the fixed opener as a constant
-          stimulus; none has been reviewed for this page.
+          under it is measurable from public data. It is not the scramble
+          control described below.
+        </p>
+        <p id="constant-stimulus">
+          <strong style={{ color: "var(--color-text-primary)" }}>Measured 2026-09-21: under the fixed script, the answers do not drift. The one large change was the serving software.</strong>{" "}
+          This is a crude, descriptive pass over the 1,217 scripted records,
+          using three measures: words per session, first-person rate, and whether
+          any answer carries an AI disclaimer (&ldquo;as an AI&rdquo;, &ldquo;I
+          don&apos;t experience&rdquo;). Each is tested against session number
+          (Spearman, permutation p). Taken whole, Legion&apos;s and McNugget&apos;s
+          lines look like strong development: answers grow about fourfold and
+          twofold, and the disclaimer rate climbs from about 3% to about 50% and
+          20%. But that is a step, not a trend, and it lands on the same day on
+          both machines. It falls between McNugget&apos;s sessions 195 and 196,
+          either side of the 2026-06-07 commit that moved the raising runner onto
+          the Rust sage-daemon (SAGE <code>046e45dc0</code>), and no field in the
+          session record changes with it. Within stretches where the serving
+          software and model are constant, all three measures are flat on all
+          four lines. Nomad (301 records) and Sprout (130) show nothing at all.
+          The strongest within-stretch effect is McNugget&apos;s disclaimer rate
+          (11% to 26%, p = 0.025), and at 24 tests that does not survive
+          correction. Two things follow. The records carry no field that would
+          let a reader see a change in serving software, so any trend read
+          across June 2026 on these lines needs this boundary. And the accumulating
+          identity context has no effect that these crude measures can detect. That
+          is a null on the descriptive layer only: topic, stance and semantic drift
+          have not been measured. Script and segment boundaries:{" "}
+          <a href="https://github.com/dp-web4/4-lab/blob/main/maintainer/analysis/constant_stimulus_drift.py" style={{ color: "var(--color-accent)" }}>constant_stimulus_drift.py</a>,
+          run against the public SAGE repo. It was run by this site&apos;s
+          maintainer track, not by the raising tracks, and nobody has reviewed it.
         </p>
 
         <h3>Identity and self-concept: what the port shows</h3>

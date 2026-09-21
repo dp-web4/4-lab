@@ -179,7 +179,11 @@ export default function Principles() {
               (Current raising lines run with frozen weights. One archived line, Sprout&apos;s Qwen 0.5B from 2026-01-27 to 2026-03-06, loaded a LoRA (Low-Rank Adaptation) adapter trained on its own raising sessions, so &ldquo;always in-context&rdquo; is not true of the history; see /raising.)
               It is not training; it is also not nothing. This applies at every scale:
               raising sessions, affordance shaping, fleet diversity, and memory
-              systems.
+              systems. On four raising lines the tutor is a fixed script that does
+              not respond to the model, so the loop this principle names is not what
+              those sessions record. The selection there is done by the consolidator
+              and the schedule{" "}
+              (<Link href="/raising#session-protocol" style={{ color: "var(--color-accent)" }}>/raising</Link>).
             </div>
           </div>
 

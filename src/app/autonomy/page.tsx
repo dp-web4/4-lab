@@ -20,8 +20,17 @@ export default function Autonomy() {
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to. &ldquo;Autonomous&rdquo; here means
           unattended and self-scheduled, not self-directed in the AI-safety sense
-          of choosing its own goals: task definitions are authored in advance, not
-          chosen by the track itself.{" "}
+          of choosing its own goals: what each track is <em>for</em> is written by
+          a human. How it does the work is not fixed. Tracks edit their own briefs
+          and checks, and{" "}
+          <Link href="/principles#p8" style={{ color: "var(--color-accent)" }}>Principle 8</Link>{" "}
+          asks them to. In this site&apos;s own repo, 9 of the 10 commits to the two
+          track briefs carry a track&apos;s commit prefix, and so do all 11 commits
+          to the maintainer&apos;s checks (as of 2026-09-21; every commit uses one git
+          identity, so the prefix is the only attribution). The maintainer track wrote its
+          own stop rule on 2026-09-09 and reversed a step of its own workflow on
+          2026-09-10. Those edits land in the public repo. A human reads them
+          afterwards, and that review is not recorded.{" "}
           No human triggers them. Scope is enforced at the process level —
           scoped credentials, the track registry, and after-the-fact audit, a
           detect-and-revert posture (see Operational boundaries below); hardware-anchored
@@ -213,9 +222,10 @@ export default function Autonomy() {
           The fleet&apos;s posture is{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>detect-and-revert</strong>,
           described below. Publisher only acts on changes the supervisor has
-          cleared. No track can modify the shared fleet registry or acquire
-          credentials beyond its declared scope. A description of practice, not
-          a verifiable mechanism — the distinction matters.
+          cleared. Tracks are not given write access to the shared fleet registry
+          or credentials beyond their declared scope. That describes how they are
+          set up, not a mechanism that has been verified, and the distinction
+          matters.
         </p>
         <p>
           Two things this page had not stated: what stops a track, and how often a

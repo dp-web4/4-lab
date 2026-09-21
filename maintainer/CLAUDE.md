@@ -170,6 +170,11 @@ and `/autonomy` states it publicly — so it has to be true.
 - If there are none, write `## Unresolved HIGH — requires sign-off` followed by `None.`
   The heading is always present, so its absence is itself a defect.
 
+- **A missing log is not a clear field.** If any day since the last maintainer log has a visitor
+  log but no maintainer log (the session crashed, ran out of credits, or never fired), triage that
+  visitor log's HIGH items as if they had been carried forward. On 2026-09-20 a session died at
+  startup, and that day's HIGH was only picked up because the 09-21 session read the log by hand.
+
 Known weakness, stated on the site too: this is self-enforced by the track it constrains.
 It converts a disclosure into an obligation; it is not an external control.
 
