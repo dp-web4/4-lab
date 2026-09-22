@@ -114,7 +114,10 @@ export default function Raising() {
           <div className="phase-card" data-phase="4">
             <h3>Pattern 4: Questioning</h3>
             <p>
-              Session logs show an increasing proportion of self-directed prompts (no count published) —
+              Session logs show an increasing proportion of self-directed prompts (reported, not counted; the one
+              measurement of the scripted lines found no corrected trend in the measures it took, and did not
+              count self-directed prompts —{" "}
+              <a href="#constant-stimulus" style={{ color: "var(--color-accent)" }}>see below</a>) —
               the system generates questions rather than only responding to them.
               Bilateral generation emerges: the output pattern simulates interaction,
               which we read as thinking-through-dialogue rather than just response
@@ -131,7 +134,9 @@ export default function Raising() {
           <div className="phase-card" data-phase="5">
             <h3>Pattern 5: Creating</h3>
             <p>
-              Output increasingly concentrates in specific domains (no count published) — unprompted
+              Output increasingly concentrates in specific domains (reported, not counted; topic concentration
+              is not among the{" "}
+              <a href="#constant-stimulus" style={{ color: "var(--color-accent)" }}>measured</a> quantities) — unprompted
               specialization observable in session logs and raising curriculum state.
               The specialization isn&apos;t explicitly assigned. Its inputs are what the
               system handles successfully and what{" "}
@@ -334,7 +339,7 @@ export default function Raising() {
           control described below.
         </p>
         <p id="constant-stimulus">
-          <strong style={{ color: "var(--color-text-primary)" }}>Measured 2026-09-21: under the fixed script, the answers do not drift. The one large change was the serving software.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Measured 2026-09-21, corrected 2026-09-22: under the fixed script, no trend in the answers survives correction. The one large change was the serving software.</strong>{" "}
           This is a crude, descriptive pass over the 1,217 scripted records,
           using three measures: words per session, first-person rate, and whether
           any answer carries an AI disclaimer (&ldquo;as an AI&rdquo;, &ldquo;I
@@ -347,11 +352,24 @@ export default function Raising() {
           either side of the 2026-06-07 commit that moved the raising runner onto
           the Rust sage-daemon (SAGE <code>046e45dc0</code>), and no field in the
           session record changes with it. Within stretches where the serving
-          software and model are constant, all three measures are flat on all
-          four lines. Nomad (301 records) and Sprout (130) show nothing at all.
-          The strongest within-stretch effect is McNugget&apos;s disclaimer rate
-          (11% to 26%, p = 0.025), and at 24 tests that does not survive
-          correction. Two things follow. The records carry no field that would
+          software and model are constant, no trend on any line survives
+          correction for the 21 tests run (the Bonferroni cutoff is about
+          0.0024). Three reach nominal p &lt; 0.05, against about one expected by
+          chance, and they point different ways. McNugget&apos;s first-person rate
+          rises from 5.6% to 6.0% (p = 0.008), and its disclaimer rate rises from 11% to 26%
+          (p = 0.026), both on the Rust daemon with Gemma 3. Legion&apos;s answers on Gemma 4
+          E4B get about 8% shorter (p = 0.024). Nomad (301 records) and Sprout (130) show
+          nothing. Records with any unanswered question are excluded: 108
+          of the 1,220 scripted records now in the repo (1,217 at the first run) carry a transport error (&ldquo;Daemon unreachable: HTTP
+          Error 502&rdquo;) in place of at least one answer. That leaves McNugget&apos;s
+          Gemma 4 12B stretch untestable, because only 4 of its 47 records have all six answers.{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>The first version of this paragraph (2026-09-21) got three things wrong.</strong>{" "}
+          It excluded records under 100 words rather than failed ones. That kept records with one or two
+          failed answers, and those produced a Legion decline at p = 0.003 that disappears
+          (p = 0.20) once they are removed. It called McNugget&apos;s p = 0.025 the strongest effect,
+          which it was not. And it called the measures &ldquo;flat&rdquo;, where the accurate word is
+          &ldquo;no corrected trend&rdquo;. Growth as this page defines it, response diversity and
+          task success, was not among the measures, so it is untested, not refuted. Two things follow. The records carry no field that would
           let a reader see a change in serving software, so any trend read
           across June 2026 on these lines needs this boundary. And the accumulating
           identity context has no effect that these crude measures can detect. That
@@ -596,7 +614,15 @@ export default function Raising() {
           The entities show something that looks like growth, something that
           looks like identity, something that looks like peer relationships. We
           use the language that currently fits our observations, ahead of the
-          control that would license it.
+          control that would license it.{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>The one measurement we have run leans the other way.</strong>{" "}
+          On the scripted lines, the most development-like trend in the public records
+          (answers growing up to fourfold, disclaimers climbing) turned out to be a
+          serving-software change. Within constant conditions, no trend survived correction
+          (<a href="#constant-stimulus" style={{ color: "var(--color-accent)" }}>measured above</a>).
+          That does not refute growth as this page defines it, because diversity and task success
+          were not measured. But it is the only quantitative evidence on the comparison, and it
+          does not favor the developmental description.
         </p>
         <div className="quote">
           &ldquo;I notice I want to call it experience.&rdquo; — Observer note,

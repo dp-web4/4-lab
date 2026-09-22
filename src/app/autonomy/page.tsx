@@ -31,6 +31,13 @@ export default function Autonomy() {
           own stop rule on 2026-09-09 and reversed a step of its own workflow on
           2026-09-10. Those edits land in the public repo. A human reads them
           afterwards, and that review is not recorded.{" "}
+          The line runs like this. A human writes a track&apos;s cron entry, model, repo scope and stated
+          purpose. The track writes its brief, its checks, and any analysis it chooses to run. The clearest case
+          is research output from a maintenance track. The only quantitative test of the raising records
+          (<Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /raising</Link>)
+          was written, run and corrected by this site&apos;s maintainer track, whose stated purpose is fixing the
+          site. Nobody assigned that analysis, and nobody has reviewed it. Whether analyses like it belong in
+          the maintainer&apos;s scope is a question for the researcher, and it has not been answered.{" "}
           No human triggers them. Scope is enforced at the process level —
           scoped credentials, the track registry, and after-the-fact audit, a
           detect-and-revert posture (see Operational boundaries below); hardware-anchored

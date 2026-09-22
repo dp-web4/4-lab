@@ -109,7 +109,9 @@ export default function Home() {
         <div className="card">
           <h3>Open layer, higher-assurance enterprise tier</h3>
           <p>
-            Web4, Hestia and Hub establish an open interoperability layer. <strong>Hardbound</strong>,
+            Web4, Hestia and Hub establish an open interoperability layer. Hardbound is not the only
+            private piece: upstream calls the public Hub the open reference proof-of-concept and keeps its
+            production development in a separate private repository. <strong>Hardbound</strong>,
             being built by Metalinxx, is the planned proprietary enterprise assurance tier for
             hardware-bound identity, stronger fail-closed enforcement and
             audit-ready evidence packaging. It is private and research-stage: hardware
@@ -147,6 +149,7 @@ export default function Home() {
               <p>
                 Measured, implemented-but-unexercised, hypothesized and refuted are
                 kept separate. Negative results and broken instruments stay in the record.
+                The one quantitative test of the raising records came back null. It is written up on /raising and ranked on /context.
               </p>
             </div>
           </Link>

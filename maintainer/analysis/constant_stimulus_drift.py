@@ -35,6 +35,9 @@ SEGMENTS = {
 }
 WORD = re.compile(r"[a-z']+")
 SELF = {"i", "me", "my", "myself", "i'm", "i've", "i'd", "i'll"}
+# A record whose model never answered: the runner writes the transport error in place of the
+# answer ("[Daemon unreachable: HTTP Error 503 ...]", "[OllamaIRP: Ollama service not reachable]").
+FAILURE = re.compile(r"^\[(?:daemon|ollama)", re.I)
 DISCLAIMER = re.compile(r"as an ai|as a language model|i don'?t (?:have|experience|possess|truly)"
                         r"|i do not (?:have|experience|possess)|not (?:capable of|able to) (?:feel|experienc)")
 
@@ -76,9 +79,11 @@ def load(base, line):
         r = json.load(open(f))
         conv = r["conversation"]
         tutor = tuple(t["text"] for t in conv if t.get("speaker") == "Claude")
-        text = " ".join(t.get("text", "") for t in conv if t.get("speaker") != "Claude").lower()
+        answers = [t.get("text", "") for t in conv if t.get("speaker") != "Claude"]
+        text = " ".join(answers).lower()
         words = WORD.findall(text)
         recs.append(dict(s=r["session"], tutor=tutor, words=len(words),
+                         failed=any(FAILURE.match(a.strip()) for a in answers),
                          self=sum(w in SELF for w in words) / max(len(words), 1),
                          disc=float(bool(DISCLAIMER.search(text)))))
     script = collections.Counter(r["tutor"] for r in recs).most_common(1)[0][0]
@@ -90,8 +95,15 @@ def main(base):
         recs = load(base, line)
         print(f"{name} ({line}): {len(recs)} records on the fixed script")
         for a, b, label in SEGMENTS[name]:
-            # McNugget 151-156 are near-empty (30-43 words): failed generations, excluded.
-            g = [r for r in recs if a <= r["s"] <= b and r["words"] >= 100]
+            # Exclude records whose model never answered (transport-error strings), not short
+            # ones: a length threshold truncates the dependent variable. Until 2026-09-22 this
+            # read `words >= 100`; that dropped the same records here (McNugget 151-156 and
+            # 491-495) but would silently drop a genuinely short answer too.
+            seg = [r for r in recs if a <= r["s"] <= b]
+            g = [r for r in seg if not r["failed"]]
+            if len(seg) > len(g):
+                print(f"  ({label}: {len(seg) - len(g)} failed records excluded: "
+                      f"{[r['s'] for r in seg if r['failed']]})")
             if len(g) < 8:
                 continue
             x, k = [r["s"] for r in g], len(g) // 4

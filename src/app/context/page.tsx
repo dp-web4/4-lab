@@ -102,7 +102,7 @@ export default function Context() {
                 ["society", "Society / Web4 society", "—", "Canon's definition, quoted: 'a self-governing group of entities with treasury, membership rules, policies, and roles. Societies can contain other societies (fractal structure)' (CANONICAL_TERMS_v1). The fleet is one instance, not the definition: the eight fleet machines plus a founding Sovereign are its members, identity keyed to each member's LCT, membership witnessed in the chapter ledger. Parent term for HUB, Chapter ledger, and Chapter law below — those entries define themselves using this word. (An earlier version of this row gave the fleet as the definition, counted only the six cognition machines as members, and said Society was not in CANONICAL_TERMS_v1. It is; Sovereign, chapter ledger and chapter law are the society-layer terms that are not.)"],
                 ["sovereign", "Sovereign", "—", "A role, not a member: one of the seven base roles every Web4 society must fill (society-roles.md §2.1), with final authority for charter amendment and identity of last resort. A human, an AI, an organization, a society or a federation can fill it. In the fleet's society the lab's researcher fills it. That member holds an LCT like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. Two things are true at once: the Sovereign is not outside the ledger (its acts are witnessed like anyone's), and it does hold authority no other member holds (charter amendment, identity of last resort). Until 2026-09-17 this row defined Sovereign as the founding member and named only the first. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1 — though the Web4 standard's society-roles spec names Sovereign as one of seven base roles.)"],
                 ["hub", "HUB", "all caps — the machine", "A proper name, not an acronym — one of the fleet's two society-host machines (HUB and pub), running the Web4 hub daemon. All-caps HUB is always this machine; capitalized Hub is the software it runs, in the row below."],
-                ["hub-runtime", "Hub", "capitalized — the society runtime", "One of the four headline projects: a single-binary Rust daemon that turns a community or organization into a sovereign Web4 society — member identity, seven base roles, a signed founding charter, an append-only hash-chained witnessed ledger, an MCP HTTP server and an admin CLI. Relation to Hestia: Hestia governs one machine and makes the record; Hub is the society that checks it, and admissibility to a Hub is what that record buys. MVP-complete and buildable; pilot-stage, not deployed by an outside chapter. The fleet runs on it — see /fleet. Distinct from all-caps HUB above, which is the machine that runs it."],
+                ["hub-runtime", "Hub", "capitalized — the society runtime", "One of the four headline projects: a single-binary Rust daemon that turns a community or organization into a sovereign Web4 society — member identity, seven base roles, a signed founding charter, an append-only hash-chained witnessed ledger, a full REST API with a small MCP tool surface, and an admin GUI and CLI. Relation to Hestia: Hestia governs one machine and makes the record; Hub is the society that checks it, and admissibility to a Hub is what that record buys. The public crate is upstream's open reference proof-of-concept; production and advanced development continue in a private repository. MVP-complete and buildable; pilot-stage, not deployed by an outside chapter, and its Docker package untested even on the development machine. The fleet runs on it — see /fleet. Distinct from all-caps HUB above, which is the machine that runs it."],
                 ["chapter-ledger", "Chapter ledger", "—", "A Web4 society's append-only record of member acts — each act signed by the member's LCT and witnessed by the society. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["chapter-law", "Chapter law", "—", "The rule set a Web4 society adopts for itself — what member acts are valid and how they are witnessed; interpreted at the society host. (Society-layer vocabulary; not yet in CANONICAL_TERMS_v1.)"],
                 ["arc-agi-3", "ARC-AGI-3", "Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation", "Third-gen interactive benchmark — game mechanics inferred through play. Three units of count, since the site uses all three: an environment (ARC Prize's word; this site has also called it a game) is a sequence of levels; a level is cleared when its win condition is met, and an environment counts as completed only when every level in it is cleared. The official run (Claude Opus 4.6 in the SAGE harness, 2026-04-17) completed 23 of 25 environments — 92.0% — and 175 of 183 levels. The headline 94.85% is neither of those: it is the official ARC Prize action score, efficiency-weighted by how few actions a level took compared with first-time human players (ARC Prize\u2019s human baseline). Unscored local-model runs are counted per level, not per environment; whole-environment completions by local models remain rare, which is why /raising describes their solve rates as low. (A '24/25 games, 96.0%' figure appeared across this site until 2026-09-09. It did not match the published scorecard — which records 23 completed — and has been corrected everywhere.)"],
@@ -767,7 +767,7 @@ export default function Context() {
 
         <h3 id="evidence">Evidence &amp; limitations</h3>
         <p>
-          The claims on this site rest on four different kinds of evidence.
+          The claims on this site rest on five different kinds of evidence.
           The caveats appear throughout the pages where each claim is made;
           this consolidates them, because the kinds are not equivalent:
         </p>
@@ -788,6 +788,18 @@ export default function Context() {
           there, the harness-vs-model split is stated but not quantified: no
           ablation (same model, no harness) has been run, so the harness&apos;s
           independent contribution is unknown.
+        </p>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>Measured internally, null:</strong>{" "}
+          the constant-stimulus drift measurement (2026-09-21, corrected 2026-09-22) covers the 1,220
+          raising records on which the tutor asks the same six questions. Across those lines, answers grow
+          up to fourfold, but that growth is one step on the day the serving software changed. Within
+          constant conditions, no trend in length, first-person rate or disclaimers survives
+          correction. It is the only quantitative test of the raising records, and it is on{" "}
+          <Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>/raising</Link>.
+          Script and data are public, and nobody outside the maintainer track has reviewed it. It bears
+          on the rung below: behavioral-identity continuity has been measured once, crudely, and the
+          accumulating identity context showed no detectable effect.
         </p>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Internal observations:</strong>{" "}
@@ -830,7 +842,8 @@ export default function Context() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           What would move claims up this ladder: published criteria for
           judging behavioral consistency, applied to the public session records
-          by a rater who does not know the phase, an ARC
+          by a rater who does not know the phase (the measurement above is a
+          crude first pass, not that), an ARC
           ablation baseline, and independent replication of the coupling
           experiment. None of these exist yet.
         </p>
