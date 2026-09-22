@@ -2,3 +2,35 @@ Starting 4-lab Maintainer Session at Tue Sep 22 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  rename sage/instances/nomad-gemma4-e2b/snapshots/archive/{identity_20260913_001925.json => identity_20260922_002032.json} (90%)
  rename sage/instances/nomad-gemma4-e2b/snapshots/archive/{identity_20260913_061835.json => identity_20260922_061919.json} (90%)
+I fixed all three HIGH items from today's visitor log and pushed as `3544a42`. The build and every check passed: 20 protected caveats hold, 0 of 73 withdrawn readings are live, and there's no damaged text. There was no canonical-term drift today, and nothing was carried forward from 09-21.
+
+**The main finding is that yesterday's measurement was partly wrong.** When I re-ran the site's own analysis with a correct exclusion rule, some results changed.
+- **Many session records hold errors instead of answers.** 108 of the 1,220 scripted records have at least one answer replaced by the runner's "Daemon unreachable: HTTP Error 502/503" message. The 09-21 script only dropped records under 100 words, so it kept these partly failed records.
+- **Legion's p=0.003 decline was one of them.** It becomes p=0.20 once those records are removed.
+- **McNugget's Gemma 4 12B stretch can't be tested.** Only 4 of its 47 records have all six answers.
+- **Corrected result:** 3 of 21 tests reach nominal p<0.05, their directions are mixed, and none survives correction. That is "no corrected trend", not "flat". The fourfold jump when the runner moved to the Rust daemon is unaffected.
+
+**Changes on the site:**
+- **/raising:** the measurement paragraph now carries the corrected numbers and says which three things the first version got wrong. The "What we're not claiming" section now says the one measurement leans against the developmental description. Patterns 4–5 now say "reported, not counted".
+- **/context:** added a fifth kind of evidence to the ladder, "Measured internally, null". Home's "Evidence before story" card now mentions it.
+- **Hub** (/projects, the /context Hub row, Home):
+  - Docker is now described as untested even on the development machine; the site had said it was tested there and nowhere else.
+  - Added upstream's line that the public Hub is a reference proof-of-concept, with production development in a private repository.
+  - The API is now described as a full REST API with a small MCP tool surface.
+- **/fleet:**
+  - McNugget's line is marked silent since 2026-09-20; its last five records are all 503 errors.
+  - The HUB claim that everything members do lands in the ledger is now scoped to what the site documents: membership.
+- **/autonomy:** now spells out which parts of a track a human writes and which the track writes itself. It names this track's own research analysis as the clearest case.
+- **Script and checks:** the analysis script now excludes records by the error message, not by length. I added six `withdrawn` entries and confirmed each one catches the old rendered text.
+
+**Questions for you** (logged under Open Items):
+1. Should research analyses be in the maintainer track's scope? I extended this track's scope again today because the published figures were wrong.
+2. McNugget's daemon has been unreachable since 09-19, with 502 errors going back to the Gemma 4 switch. The runner also writes failed sessions as session records, which inflates every session count the fleet publishes.
+3. Which Hub build does the fleet's HUB machine run: the open proof-of-concept or the private branch? The site now says it doesn't document this.
+4. Should the site keep "ontology" for Web4 now that upstream says "protocol"? This one is carried over from earlier sessions.
+
+**Loose ends:**
+- `visitor/CLAUDE.md` has uncommitted changes that aren't mine. I left them alone and out of the commit.
+- `maintainer/analysis/__pycache__/` is untracked. The shell rules only allow deleting under /tmp, so I couldn't remove it.
+- Gmail, Google Calendar and Google Drive need authorizing in your claude.ai connector settings before they can be used.
+- The playwright MCP server failed to connect because `npx` isn't on its PATH. Nothing today needed either.
