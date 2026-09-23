@@ -57,8 +57,8 @@ export default function Projects() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Want to run something rather than read? Start with{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>SAGE</strong> —
-          it runs on a single machine, no Jetson required. Want the protocol
-          instead? Web4&apos;s core packages install directly. Commands for Web4
+          it runs on a single machine, no Jetson required. Want the ontology&apos;s
+          code instead? Web4&apos;s core packages install directly. Commands for Web4
           and SAGE are in the{" "}
           <a href="#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</a>{" "}
           at the bottom of this page — the only copy on the site, so there is one

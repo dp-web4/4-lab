@@ -128,7 +128,7 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. Protocol: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side, but it is stalled — don&apos;t start there.
+          New here? Read <a href="/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. The ontology and its code: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side, but it is stalled — don&apos;t start there.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
@@ -138,7 +138,7 @@ export default function Links() {
           — Web4&apos;s published packages, a SAGE instance from clone to running daemon
           (including the <code>ollama pull</code> step). This page
           used to carry a second copy; the two drifted apart, so it now links instead.
-          SAGE is the hands-on starting point — it runs on a single machine, has 2,499 internally logged session records as context (2,620 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the protocol starting point. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
+          SAGE is the hands-on starting point — it runs on a single machine, has 2,499 internally logged session records as context (2,620 including HUB; per-machine counts on <a href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the starting point for the ontology and its reference implementation. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
@@ -167,9 +167,11 @@ export default function Links() {
           support. The claims on this site
           (other than the externally scored ARC-AGI-3 result) rest on the
           lab&apos;s own reading of its session records. The raising session
-          records are public as full transcripts in the{" "}
+          records through 2026-09-19 are public as full transcripts in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>{" "}
-          under <code>sage/instances/&lt;line&gt;/sessions/</code>. Coding criteria
+          under <code>sage/instances/&lt;line&gt;/sessions/</code>. Since then most lines mirror
+          their records privately under a fleet ruling; see{" "}
+          <a href="/raising" style={{ color: "var(--color-accent)" }}>/raising</a>. Coding criteria
           and a rater protocol are not published, and no third party has
           reviewed the readings.
         </p>

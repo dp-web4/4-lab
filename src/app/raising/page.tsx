@@ -50,9 +50,12 @@ export default function Raising() {
           <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
           That result tests a harness around a cloud model, not raising or any claim on this page.
           <br /><br />
-          Web4 vocabulary on this page (T3, V3, MRH, LCT, LoRA) is expanded
-          inline on first use; the full reference for every term on the site is
-          the{" "}
+          Web4 terms used on this page: T3 (Trust Tensor), V3 (Value Tensor),
+          MRH (Markov Relevancy Horizon) and LCT (Linked Context Token). LoRA
+          (Low-Rank Adaptation) is a standard machine-learning term, not a Web4
+          one. Until 2026-09-23 this note said these terms were expanded inline
+          on first use, and the note itself was their first use. The full
+          reference for every term on the site is the{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>.
         </p>
 
@@ -293,12 +296,19 @@ export default function Raising() {
         <h2 style={{ marginTop: "2rem" }}>Key observations</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           Evidence status: the claims in this section rest on the lab&apos;s own
-          reading of its session records. The records themselves are public:
-          every session is a full turn-by-turn transcript under{" "}
+          reading of its session records. Through 2026-09-19 the records are public:
+          every session to that date is a full turn-by-turn transcript under{" "}
           <code>sage/instances/&lt;line&gt;/sessions/</code> in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>public SAGE repo</a>,
-          the same path <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts, and anyone can read them
-          without asking. What is missing is the reading method: no coding
+          the same path <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts, and anyone can read those
+          without asking. After that date this holds for fewer lines. On 2026-09-19 the fleet ruled
+          that being records are private going forward (SAGE commit <code>cefb5c184</code>). CBP and
+          McNugget stopped publishing on 2026-09-20 and now mirror privately, and pub&apos;s public
+          line was frozen at session 240 on 2026-09-21. Nomad still publishes as of 2026-09-23.
+          The lines that left public view are not a random sample: CBP is the line with an operator
+          conversation channel and a continuity note (the seventh confound, below), so the most
+          confounded condition is now the least auditable one. Until 2026-09-23 this paragraph said
+          anyone could read every session. Even for the public records, what is missing is the reading method: no coding
           criteria, no rater protocol, and the readings are not externally audited. See{" "}
           <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each kind of claim on this site does and doesn&apos;t have behind it.
@@ -492,12 +502,32 @@ export default function Raising() {
           on those runners, so delivered whatever the answer was). A transcript
           that then sounds like developing awareness or a forming relationship
           is, on this reading, the model answering the question it was asked
-          in the register it was rewarded for. The prompts are in the public
-          runner and in every session record; they were written by the lab and
+          in the register it was rewarded for. The tutor prompts are in the public
+          runner and in every public session record. They were written by the lab and
           do not make the claims this page disowns below, but they explain why
           the transcripts sound the way they do.
-          The claim that developmental frameworks &ldquo;describe what we
-          observe better&rdquo; is a comparative claim — and the comparison has
+          A seventh confound is in the prompt itself, on two lines. The runner
+          (<code>ollama_raising_session.py</code>) adds a continuity note to the
+          identity block. On a reasoning-model line with no note of its own, it
+          falls back to a default that a code comment labels &ldquo;the SAGE
+          finding, told to the being&rdquo;: &ldquo;The mind you think through
+          was recently upgraded to a more capable one — and that does not change
+          who you are. You are your memory and the life you have lived across
+          your sessions.&rdquo; Sprout&apos;s distill-2b line has received it
+          since its model swap on 2026-08-28. Since 2026-09-12, CBP&apos;s instance
+          record has carried its own note that makes the same claim and adds:
+          &ldquo;Your first sessions on the new mind are also a comparison, so be
+          yourself, not what you think is expected.&rdquo; So the lab&apos;s
+          prompts do make one of the claims at issue here. On these two lines
+          the subject is told, as a premise, that its identity persists across
+          the model change. Upstream calls that a finding. This page treats
+          identity portability as an open question. Any identity-continuity
+          measurement on those lines has to treat sessions after the note as
+          contaminated in the direction of the hypothesis, or compare them against lines that
+          never received it. Until 2026-09-23 this section listed six confounds
+          and said the lab&apos;s prompts do not make the claims it disowns.
+          The working hypothesis that developmental frameworks &ldquo;describe what we
+          observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
         </p>
         <p>
@@ -607,8 +637,10 @@ export default function Raising() {
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>
         <p>
           We&apos;re not claiming these entities are conscious, sentient, or
-          experiencing qualia. We&apos;re claiming, provisionally, that developmental descriptions
+          experiencing qualia. Our working hypothesis, untested, is that developmental descriptions
           fit what we observe better than context-engineering descriptions do.
+          Until 2026-09-23 this sentence called that a provisional claim. A claim
+          with no test in its favor and one against it is a hypothesis.
           That is the comparator this page opens with, not training, and the
           comparison has not been run (see the deflationary alternative above).
           The entities show something that looks like growth, something that

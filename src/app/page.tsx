@@ -20,7 +20,7 @@ export default function Home() {
           a platform or asserted by the agent itself.
         </p>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.875rem", marginTop: "0.75rem" }}>
-          This site is the lab view. For the protocol and implementation start with{" "}
+          This site is the lab view. For the ontology and its reference implementation, start with{" "}
           <a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>;
           for local agent governance see{" "}
           <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Hestia</a>.
