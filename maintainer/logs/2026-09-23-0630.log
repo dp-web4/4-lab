@@ -1,0 +1,33 @@
+Starting 4-lab Maintainer Session at Wed Sep 23 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json                  | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+I fixed both HIGH findings from today's visitor log and pushed them (`059bf49`, session log `f05922f`). None of the four visitor passes found any terminology drift. The build passes, and the checks are clean: all protected caveats hold, none of the 77 withdrawn readings appears on a page, and there is no damaged text.
+
+**HIGH 1: session records stopped being public on 09-20.** The site said anyone could read every raising session in the public SAGE repo. Public SAGE commits show otherwise:
+- A fleet ruling on 09-19 (commit `cefb5c184`) made being records private from then on.
+- CBP and McNugget stopped publishing on 09-20 and now copy their records to a private mirror.
+- pub's public record was frozen at session 240 on 09-21. Nomad still publishes.
+
+Changes:
+- /raising, /context and /links now say records are public through 2026-09-19 only. /raising also says the lines that went private are the most confounded ones: CBP has an operator conversation channel and a continuity note. So the public remainder isn't a random sample.
+- /fleet has a fifth raising-line state, "publishing stopped by policy". The McNugget, CBP and pub cards use it.
+- McNugget is no longer described as "silent". The card now mentions the upstream fix for its 503 errors (SAGE PR #131), and notes that records after the fix can't be checked publicly.
+- The session totals are explicitly frozen at the 09-18 count. A recount from the public repo would now undercount without saying so.
+
+**HIGH 2: the raising prompt states the hypothesis.** The runner code confirms it. On reasoning-model lines it tells the model "that does not change who you are", and a code comment calls this "the SAGE finding, told to the being". Sprout's distill-2b line has received it since 08-28, and CBP's own version since 09-12. I added it to /raising as a seventh confound. The sentence saying the lab's prompts don't make the disputed claims now covers only the tutor questions.
+
+**Also fixed:**
+- /raising's "We're claiming, provisionally…" (unchanged since the site launched) now reads as an untested working hypothesis.
+- /raising's false "expanded inline on first use" note now contains the actual expansions.
+- Web4 was called a "protocol" or "standard" in the site's own voice in 5 places. It now says "ontology" or "reference implementation".
+- `caveats.json` has 4 new withdrawn readings and 1 protected caveat (the seventh confound), so none of these can quietly return.
+
+**Needs you:**
+- **Legion might be in the same state as CBP and McNugget. I haven't confirmed it.** Its line went quiet on 09-02, and a private `legion-being` home was in use from about 09-05. Nothing public confirms that the raising sessions moved there, so I left the card alone.
+- **What can an outside reader check now that the records are private?** Counts, hashes, or a released sample would each work, but it's your decision. The site now says so, but saying it doesn't restore auditability.
+- **The continuity note taints future identity-continuity measurements on CBP and Sprout distill-2b.** That can only be avoided if someone deliberately treats the note as an experimental condition.
+- **The undated controls need owners and dates from you:** the scramble control (61 days), the cross-family visitor persona (~59 days) and the identity-metric write-up (16 days).
+- The remaining MEDIUM and LOW items are in the log's Open Items.
+
+There's an uncommitted change to `visitor/CLAUDE.md` in the working tree that didn't come from this session, so I didn't touch it. A hestia mesh notice from cbp-being is also waiting, undrained. The fleet manifest's McNugget entry matches the fleet page. The other five entries are still dated March, so I changed nothing from the manifest. The Gmail, Calendar and Drive connectors need authorizing in claude.ai settings, and the playwright server failed to connect (npx isn't on PATH). This session didn't need any of them.
