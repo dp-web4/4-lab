@@ -23,7 +23,9 @@ export default function Home() {
           This site is the lab view. For the ontology and its reference implementation, start with{" "}
           <a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>;
           for local agent governance see{" "}
-          <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Hestia</a>.
+          <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Hestia</a>{" "}
+          (it runs on the lab&apos;s machines, but has no install guide for outside users yet; see the{" "}
+          <Link href="/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</Link>).
         </p>
       </section>
 

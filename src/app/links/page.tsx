@@ -48,7 +48,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) verified by V3 (Value Tensor — Valuation / Veracity / Validity), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /projects Quick start)"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) and V3 (Value Tensor — Valuation / Veracity / Validity) as complementary tensors (the site reads the equation's T3/V3 as “verified by”; that gloss is the site's, see the Glossary), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /projects Quick start)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"

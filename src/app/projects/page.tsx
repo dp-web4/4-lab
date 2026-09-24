@@ -129,7 +129,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="Oversight Plugins"
-            description="Web4 oversight model (audit trails and policy gating, plus T3 trust tracking alongside them) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM/WebAssembly plugin), and Claude Code (Python hooks). Same principles, different substrates."
+            description="Web4 oversight model (audit trails and policy gating, plus T3 trust tracking alongside them) implemented as plugins for three agent platforms: OpenClaw/MoltBot (TypeScript extension), Claude Flow (WASM/WebAssembly plugin), and Claude Code (Python hooks). Same principles, different platforms."
             accentColor="var(--color-plugins)"
             isPublic={true}
             maturity="research-stage"
@@ -252,6 +252,15 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 # README's "Published core" section, which is authoritative for them.
 pip install web4-core
 # Rust: add  web4-core = "0.3"  under [dependencies] in Cargo.toml
+
+# Hestia — local agent governance daemon — NO FIRST-RUN PATH YET
+git clone https://github.com/dp-web4/hestia
+# Not a working quick start, as of 2026-09-24. The README has no install
+# section. deploy/ is the fleet's own lab notebook of install probes; its
+# install-members.sh installs each agent's hooks on a machine that already
+# runs the daemon (a systemd/launchd template sits in deploy/templates/).
+# Nobody outside the fleet is known to have installed it. If you try, the
+# issue tracker is the place to report what broke.
 
 # ACT — Agentic Context Tool (Cosmos SDK) — STALLED, read-only visit
 git clone https://github.com/dp-web4/ACT

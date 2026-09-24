@@ -26,7 +26,7 @@ export default function Raising() {
           developmental language because it fits, not because we&apos;re
           making consciousness claims. Operational definitions: by
           &ldquo;identity&rdquo; we mean consistent session-to-session
-          behavioral patterns observed in interaction logs, with no metric yet
+          behavioral patterns observed in interaction logs, with one candidate metric (2026-09-24) and no control yet
           (the deflationary section below explains why curriculum state cannot serve as one); by &ldquo;growth&rdquo; we mean increasing
           response diversity and task success rates appropriate to the
           entity&apos;s curriculum phase — measurable observables, not phenomenal
@@ -402,7 +402,7 @@ export default function Raising() {
           180 sessions on later models. Copied, not moved: the Qwen line kept running on Sprout, with its LoRA
           adapter, until 2026-03-06 (its session files there run to session 119), so for a week the same
           identity was being advanced on two machines and two models. The
-          observation this section is named for is an internal one, not yet a finding (no metric, no blind
+          observation this section is named for is an internal one, not yet a finding (no metric applied to it, no blind
           rater). Its logged behavioral signature (interaction style and patterns, read from session logs)
           looked recognizable on the new model, while its self-description varied: &ldquo;autonomous
           conversation-generating AI system&rdquo; and &ldquo;humanoid robotic entity.&rdquo; Read that
@@ -601,7 +601,8 @@ export default function Raising() {
           now — its absence is logistical. For identity continuity, the
           operational definition at the top of this page (consistent
           session-to-session behavioral patterns observed in interaction logs)
-          does not yet yield a metric that could separate the arms. Earlier
+          was said here, until 2026-09-24, not to yield a metric that could separate the
+          arms. The attempt below found one, and moved the blocker. Earlier
           versions of the definition, here and on /context and /fleet, also
           listed accumulated experience and raising curriculum state; both are
           inputs the treatment supplies, so measuring them cannot tell raising
@@ -632,6 +633,22 @@ export default function Raising() {
           eliminates a possibility; silence is not. If that attempt is never
           published, read the pre-commitment above as unbacked, and read this
           paragraph as the standard we asked to be held to.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>The attempt, published
+          2026-09-24, 17 days after it was promised:</strong>{" "}
+          <a href="https://github.com/dp-web4/4-lab/blob/main/maintainer/analysis/identity-continuity-attempt-2026-09-24.md" style={{ color: "var(--color-accent)" }}>identity-continuity-attempt-2026-09-24.md</a>.
+          The metric is lexical similarity of answers to the fixed tutor script. It separates
+          two lines that ran the same model (Legion and McNugget, both gemma3:12b) above a
+          shuffled-label baseline. So a metric exists. What it sees is constant: Legion&apos;s
+          same-line similarity is the same at a lag of one session as at a lag of 300. It is also
+          unchanged when Legion&apos;s model was swapped to gemma4:e4b. Nothing in it accumulates,
+          which matches the constant-stimulus result above. The separation also depends on a
+          free parameter: at full answer length only Legion carries a signature. Which part of
+          each line&apos;s context produces the signature is not identified. The blocker has moved
+          from the metric to the hypothesis: this page does not yet say how an arm that is
+          handed a line&apos;s history should differ from the line that accumulated it. Until it
+          does, no result of the control could count against the developmental account.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>

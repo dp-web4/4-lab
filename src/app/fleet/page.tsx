@@ -41,7 +41,7 @@ export default function Fleet() {
           They are also the fleet&apos;s work assignment, not just decoration: each of the six cognition machines builds the one of{" "}
           <Link href="/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition.
-          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) verified by V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
+          Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s on-device cognition kernel), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) and V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), complementary tensors, MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
@@ -99,7 +99,7 @@ export default function Fleet() {
           continuous availability; review, planning and coordination. The word is the budget
           account&apos;s label in SAGE&apos;s registry, not the machine-enforced sense this site
           reserves for Hardbound (note under that heading). <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
-          runs the society substrate as its primary role (HUB also holds a
+          hosts the society (hub daemon, chapter ledger) as its primary role (HUB also holds a
           maintainer-track role, and both society-hosts raise a SAGE instance). The first two
           hold the six{" "}
           <Link href="/context#cognition-machine" style={{ color: "var(--color-accent)" }}>cognition machines</Link>;
@@ -197,10 +197,10 @@ export default function Fleet() {
             }
             role={
               "Hosts the 'Web4 Fleet' society — the eight fleet machines plus a founding Sovereign as members. " +
-              "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Substrate role and membership are distinct — hosting the ledger does not place HUB outside it. " +
+              "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Host role and membership are distinct — hosting the ledger does not place HUB outside it. " +
               "The Sovereign (society-layer vocabulary; not yet in CANONICAL_TERMS_v1, like chapter ledger and chapter law) is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
-              "Brain analogy doesn't apply: HUB is substrate, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
+              "Brain analogy doesn't apply: HUB is the society's host, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "In the specification, everything members do that crosses a relevance boundary lands here as a signed ledger entry. What this site documents in the ledger is membership. The tracks' work is recorded in the registry, dated session logs and git history, not in the ledger (see the worked example on /context). " +
               "Also owns the hub-track maintainer role: other fleet machines submit PRs against the hub codebase; HUB reviews, merges, rebuilds, and redeploys the live daemon. Those PRs land in the public web4/hub, the open reference proof-of-concept. Upstream keeps a separate private repository for production development, and this page does not document whether the deployed daemon includes any code from it. First explicit per-track maintainer assignment on the fleet. " +
               "No longer daemon-only: HUB now also runs its own SAGE raising line (Granite 4 h-tiny, 121 session records) on its previously-idle AMD GPU. Its identity in the Hestia daemon's trust store (lowercase hestia on this site: a component inside that daemon, not SAGE's peer trust tracker) is the fleet's first agent-created one (created by the machine's own agent, not delegated by a human)."
@@ -318,7 +318,7 @@ export default function Fleet() {
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
           An internal observation, not yet a{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>finding</Link> (no metric, no blind rater): behavioral
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>finding</Link> (no blind rater, no control; one candidate metric, applied on 2026-09-24 to Legion&apos;s gemma3 → gemma4 swap, shows the continuity and cannot say what produces it — see /raising): behavioral
           continuity across substrates — what we shorthand as &ldquo;identity
           transfer,&rdquo; meaning consistent interaction patterns, accumulated
           experience, and raising history, not continuity-of-self in any
@@ -359,7 +359,7 @@ export default function Fleet() {
             Observed behavioral continuity — not a claim about continuity-of-self in any philosophical sense.
             The operational definition behind the metaphor is the one at the top of{" "}
             <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>: consistent
-            session-to-session behavioral patterns observed in interaction logs, with no metric yet. (Until
+            session-to-session behavioral patterns observed in interaction logs, with one candidate metric (2026-09-24) and no control yet. (Until
             2026-09-17 this note pointed to a definition on the home page that is not there, and listed
             accumulated experience and raising curriculum as parts of it; /raising explains why those were dropped.)
             The metaphor is a compression of that, not an escalation of it.

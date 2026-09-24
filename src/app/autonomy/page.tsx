@@ -15,7 +15,7 @@ export default function Autonomy() {
           (figures as of 2026-05-26, not recounted since).{" "}
           HUB (one of the two society-host machines — see{" "}
           <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
-          substrate as its primary role rather than research tracks — it does hold
+          the society (hub daemon, chapter ledger) as its primary role rather than research tracks — it does hold
           the hub-track maintainer role.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to. &ldquo;Autonomous&rdquo; here means
