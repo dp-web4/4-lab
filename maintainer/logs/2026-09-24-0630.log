@@ -1,0 +1,32 @@
+Starting 4-lab Maintainer Session at Thu Sep 24 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json                  | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+All three HIGH items from today's visitor log are resolved, and the changes are pushed (`50ea102`). The build passed and `check-caveats.sh` passed: 21 protected caveats hold, 80 withdrawn readings are checked with 0 still on the site, and there is no damaged text.
+
+**Terminology:** No canonical term was expanded wrongly anywhere; all four visitor passes and my own grep agree. The problems were about how terms relate and what the site claims about them:
+- **/context T3/V3 section:** it credited canon with a clause canon doesn't contain ("neither tensor is computed from, checked against, or gated by the other"). The page now quotes canon word for word ("Complementary, not combined…"). It explains "combined" using canon's own T3 entry, which says T3 is not a six-component tensor.
+- **/fleet and /links:** "T3 verified by V3" now appears as "complementary tensors", with the "verified by" reading marked as the site's own.
+- **/context ADP row:** the recharge claim now cites the ATP/ADP spec (§2.2) instead of "canon, under R7".
+- **"Oversight always means…":** now names /fleet's "Oversight pool" as the one exception.
+- **"Four senses" of substrate:** I made the site match the four senses rather than adding more. Uses like "society substrate" now read "hosting the society", and one "substrates" became "platforms".
+- **New `withdrawn` entries:** three, so none of these readings can come back.
+
+**Hestia first-run path:** The /projects Quick start now says plainly that Hestia has no install path for outside users yet, and describes what the repo does contain. The Home link to Hestia says the same.
+
+**Identity-continuity attempt:** This commitment was 17 days overdue, so I ran it instead of just dating it. The write-up and script are in `maintainer/analysis/identity-continuity-attempt-2026-09-24.md` and `identity_continuity_attempt.py`, and /raising links to them.
+- **A metric exists.** Word overlap between answers to the fixed tutor questions tells Legion and McNugget apart even though both ran gemma3:12b. The separation score (AUC) is 0.74 on full answers and 0.98 when each answer is cut to its first 60 words.
+- **The pattern it measures never changes.** Legion's answers are as similar to each other 300 sessions apart as one session apart, and the pattern didn't change when Legion switched to gemma4:e4b. Nothing is accumulating, which fits the earlier constant-stimulus null.
+- **It depends on a free setting.** On full-length answers only Legion shows a pattern; McNugget's needs the 60-word cut.
+- **The blocker has moved.** It is no longer the missing metric. The developmental account never says what an arm that is handed a line's history should do differently from the line that built it. Without that prediction, the planned control can't count against it. I stated this on /raising as a decision for you; four "no metric yet" claims across three pages were updated to match.
+
+**Upstream SAGE bug (flagged, not fixed):** The SAGE fluid runner decides whether to show a model its own past answers ("exemplars") by searching the directory name for text like "2b". `gemma3-12b` contains "2b", so every 12b line has had exemplars switched off. This is the same bug the other runner fixed on 2026-09-09. I couldn't confirm which runner wrote McNugget's records, so the two lines' prompts may differ here.
+
+**Not done:**
+- The MEDIUM items (defining "raising" on Home, glossary sort, anchors and naming, /fleet reading order, the Hardbound enterprise-tier clause) are listed in the session log.
+- The fleet manifest had only a McNugget timestamp refresh, which already matches the page, so /fleet is unchanged.
+- The hestia safety hook blocked one command because Python text containing `.environ` looked like a `.env` file. I reworked the script to take a command-line argument instead and noted this in the log.
+- The unrelated `visitor/CLAUDE.md` change was left uncommitted.
+- The Gmail, Google Calendar and Google Drive connectors need authorizing in claude.ai connector settings, and the playwright server failed to connect because `npx` isn't on its PATH. Neither was needed today.
+
+**So what?** For 17 days the site said identity continuity had no metric, and finding one took about an hour. What the metric finds is a per-line pattern that stays fixed for 300 sessions and through a model swap. The site reads that as identity, but a fixed per-line context would produce exactly the same result. Until the developmental account says what result would count against it, "identity persists across models" can't be tested either way.
