@@ -241,7 +241,7 @@ export default function Autonomy() {
           ends a track. A track stops when its scheduled session ends, when the API
           usage limit is exhausted (this happened &mdash; the 2026-09-04 maintainer run
           hit the weekly limit, and no maintainer session logs exist from 2026-08-12
-          through 2026-09-04), when hestia&apos;s policy layer denies a command, or
+          through 2026-09-04), when Hestia&apos;s policy layer denies a command, or
           when the researcher disables the schedule. What that policy layer covers matters for
           the posture below, so stated as of 2026-09-15: the law in force on the maintainer&apos;s
           machine is Hestia&apos;s safety preset (destructive filesystem commands, writes to block
@@ -286,11 +286,16 @@ export default function Autonomy() {
           (the trust-native ontology) terms, each scheduled
           track is issued an ATP (Allocation Transfer Packet) against its declared resource budget.
           An allocation has to be issued <em>to</em> someone, and this page has been
-          quiet about who: the holder is the machine&apos;s{" "}
+          quiet about who: the holder is the machine&apos;s host{" "}
           <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>LCT</Link>{" "}
-          (Linked Context Token) &mdash; the identity the registry entry, the audit
-          log, and the resulting commit all attribute to &mdash; scoped by that
-          machine&apos;s{" "}
+          (Linked Context Token). Seven of the eight fleet machines have one (pub does not), each minted with its own
+          Ed25519 keypair, anchored in a local hash-chained ledger, with signed peer-witness records.
+          It is not the <code>lct://</code> name inside a SAGE instance&apos;s identity file,
+          which SAGE&apos;s own bridge calls the legacy form and which is not bound
+          (<code>web4_lct_id</code> null or a local placeholder). The registry entry, the audit log
+          and the resulting commit name the machine by hostname and git author; this site has not
+          found one that references the host LCT, so the attribution is by mapping, not yet by
+          mechanism. The holder is scoped by that machine&apos;s{" "}
           <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>MRH</Link>{" "}
           (Markov Relevancy Horizon) to the repos it declares, with the outcome
           feeding its{" "}
@@ -314,7 +319,7 @@ export default function Autonomy() {
           (R6 + Reputation), not bare{" "}
           <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link>{" "}
           (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) —
-          the outcome is attributed to a machine&apos;s LCT and is meant to feed trust
+          the outcome is meant to be attributed to the machine&apos;s host LCT and to feed trust
           evolution across scales. (The ATP spec counts tensor deltas on the direct
           participants as an ordinary R6 Result; it is the cross-scale feed that makes
           an action R7. See{" "}

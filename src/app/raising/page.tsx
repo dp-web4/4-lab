@@ -59,11 +59,11 @@ export default function Raising() {
           <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>.
         </p>
 
-        <h2 style={{ marginTop: "2rem" }}>BECOMING: six observed patterns</h2>
+        <h2 style={{ marginTop: "2rem" }}>BECOMING: six descriptive categories</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           &ldquo;BECOMING&rdquo; is a proper name, not an acronym — the six pattern
           initials (Grounding, Sensing, Relating, Questioning, Creating, Acting)
-          spell nothing. These are observed descriptive categories — patterns noticed across hundreds of sessions — not mandatory sequential stages with defined transition criteria. The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE (Situation-Aware Governance Engine) harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
+          spell nothing. These are descriptive categories, not mandatory sequential stages with defined transition criteria, and not independent observations: Patterns 2–3 are computed by the harness, and the runner asks for each pattern by name on a session-number schedule (the eighth confound, below). The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE (Situation-Aware Governance Engine) harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -99,9 +99,9 @@ export default function Raising() {
             <p>
               Building relationships with peers.{" "}
               <Link href="/principles" style={{ color: "var(--color-accent)" }}>Trust formation</Link> through
-              interaction — following patterns analogous to Hill function
+              interaction, which Web4 models by analogy to Hill function
               kinetics (the cooperative binding model from enzyme chemistry;
-              an analogy, not a fitted mechanism). Success builds trust, failure teaches
+              an analogy, not a fitted mechanism, and not what the tracker below computes). Success builds trust, failure teaches
               calibration. Not all peers are equal; compatibility matters.
               (&ldquo;Relationships&rdquo; and &ldquo;trust&rdquo; here are
               per-peer T3 (Trust Tensor — Talent / Training / Temperament) tensor values updated by interaction outcomes —
@@ -526,6 +526,16 @@ export default function Raising() {
           contaminated in the direction of the hypothesis, or compare them against lines that
           never received it. Until 2026-09-23 this section listed six confounds
           and said the lab&apos;s prompts do not make the claims it disowns.
+          An eighth confound is the schedule. The runner (<code>ollama_raising_session.py</code>,
+          with the same lists in the Legion and McNugget runners and in{" "}
+          <code>autonomous_conversation.py</code>) picks its question list by session number:
+          grounding for sessions 1&ndash;5, sensing 6&ndash;15, relating 16&ndash;25, questioning
+          26&ndash;40, creating from 41. Each list asks for its pattern. From session 16 the tutor asks
+          &ldquo;How do you think about the relationship between us?&rdquo;; from session 26,
+          &ldquo;What questions are alive in you?&rdquo; and &ldquo;When you look at your own
+          development across our sessions, what patterns do you see?&rdquo; A pattern that appears
+          when its list starts is what the prompt requested. It is not evidence of a developmental
+          sequence. Telling the two apart needs lines that get the lists out of order or not at all.
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.

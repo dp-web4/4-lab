@@ -272,8 +272,11 @@ cd ACT
 # start there and in docs/, and expect to read Go/Cosmos source.`}</pre>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>What success looks like:</strong>{" "}
-          step 1 writes an instance directory holding the machine&apos;s LCT and an
-          empty experience buffer; step 3 starts the Rust <code>sage-daemon</code>. That daemon is
+          step 1 writes an instance directory holding an identity file and an
+          empty experience buffer. The identity file names the instance with an{" "}
+          <code>lct://</code> string, which SAGE&apos;s bridge calls the legacy form; it is not a
+          bound, witnessed LCT (<code>web4_lct_id</code> stays null unless chain registration
+          succeeds, and ACT is stalled). Step 3 starts the Rust <code>sage-daemon</code>. That daemon is
           not the 12-step loop. SAGE&apos;s own{" "}
           <a href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/RUST_VS_PYTHON_CAPABILITY.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>capability matrix</a>{" "}
           calls it &ldquo;an inference-and-metabolism gateway, not a port of the Python 12-step

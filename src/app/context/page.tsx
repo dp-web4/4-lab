@@ -266,8 +266,11 @@ export default function Context() {
           experiment, with no replication. It is not empirical grounding (see Principle 5 on /principles). Hill function
           kinetics (a saturation curve from enzyme chemistry — response rises
           steeply past a threshold, then levels off) is borrowed by analogy for
-          both enzyme binding and trust formation — the same curve shape observed
-          at both scales, not yet a derivation showing why it must hold at both.
+          both enzyme binding and trust formation. The shape is measured for enzymes and
+          posited for trust: the fleet&apos;s trust tracker is a fixed step per outcome clamped
+          to [0, 1], a ramp to a cap rather than a threshold curve, and no trust series has
+          been fitted to or plotted against a Hill curve (see Pattern 3 on{" "}
+          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>).
           The conjecture&apos;s stated reach is quantum to cosmic scales. This section
           previously said it &ldquo;spans 80 orders of magnitude&rdquo;;
           corrected 2026-07-26, matching the note on{" "}
