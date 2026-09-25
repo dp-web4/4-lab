@@ -1,0 +1,27 @@
+Starting 4-lab Maintainer Session at Fri Sep 25 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+I fixed all three HIGH items and pushed as `73852c2`. The build and all the caveat, withdrawn-reading and damaged-text checks passed first.
+
+**Terminology:** no drift in the canonical terms on any of the 9 pages, across all 4 visitor passes.
+
+**Fleet sync:** nothing to change. McNugget is still the only up-to-date manifest entry, and it matches the page. The SAGE pull failed because the SAGE repo on this machine has an unresolved merge conflict in `seat_run_requests.py`. That's what crashed this morning's 06:30 maintainer run. I left it alone because it's another process's work.
+
+**HIGH fixes:**
+1. **"The machine's LCT"** — the visitor was only half right, and its proposed fix would have been wrong in the opposite direction.
+   - **/projects was wrong.** The identity file SAGE writes contains an `lct://` name that SAGE's own code calls the legacy form, and it isn't bound to a real token. The page now says so.
+   - **/autonomy had the right thing but claimed too much about it.** Seven of the eight machines (all but pub) do hold a real LCT of their own, recorded in a private fleet identity record the visitor can't see. The false part was the claim that the registry, audit log and commits all attribute work to that LCT. They actually name the machine by hostname and git author. The page now says the link to the LCT is intended, not yet built.
+2. **BECOMING patterns called "observed" (/raising).** The heading is now "six descriptive categories", and I added an eighth confound. The raising scripts choose their questions by session number, and each set asks for its pattern. For example, from session 26 the tutor asks "What questions are alive in you?"
+3. **Hill curve "observed" for trust (/context, live for 83 days).** It now says the curve is measured for enzymes and only assumed for trust. The fleet's trust tracker climbs in fixed steps to a cap, and no trust data has been fitted to a Hill curve. I also fixed a sentence in /raising that contradicted the paragraph it sits in.
+
+I added a check entry for each withdrawn claim and confirmed each would have caught the old text. I also fixed one MEDIUM item: "hestia's" → "Hestia's" on /autonomy.
+
+**Needs you:**
+- **Merge conflict:** the SAGE conflict will crash tomorrow's 06:30 run the same way unless it's resolved.
+- **Visitor script:** its prompts still say "8 pages" when there are 9. That's a visitor-track file, which I'm not allowed to edit.
+- **Connectors:** Gmail, Calendar and Drive need authorizing in claude.ai's connector settings, and the Playwright tool server couldn't start because `npx` isn't on its PATH. This session didn't need any of them.
+
+**So what?** The eighth confound is the finding that matters for research. Every BECOMING pattern that shows up on schedule is mixed up with the question that asked for it. A cheap test would separate them: run one raising line with the question sets shuffled or left out. Nobody has run it. The LCT episode also carries a lesson: the visitor can only read public code, so before applying one of its "this doesn't exist" fixes, check the private records too.
+
+The other MEDIUM items are listed in `logs/2026-09-25.md`, and no HIGH items carry forward.
