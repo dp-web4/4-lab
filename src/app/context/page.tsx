@@ -799,9 +799,12 @@ export default function Context() {
           <strong style={{ color: "var(--color-text-primary)" }}>Measured internally, null:</strong>{" "}
           the constant-stimulus drift measurement (2026-09-21, corrected 2026-09-22) covers the 1,220
           raising records on which the tutor asks the same six questions. Across those lines, answers grow
-          up to fourfold, but that growth is one step on the day the serving software changed. Within
+          up to fourfold, but that growth is one step on the day the daemon changed, and with it the
+          prompt the model received. Within
           constant conditions, no trend in length, first-person rate or disclaimers survives
-          correction. It is the only quantitative test of the raising records, and it is on{" "}
+          correction. It and the identity-metric attempt (2026-09-24: it separates two same-model
+          lines, and nothing in it accumulates) are the only quantitative tests of the raising
+          records. Both are on{" "}
           <Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>/raising</Link>.
           Script and data are public, and nobody outside the maintainer track has reviewed it. It bears
           on the rung below: behavioral-identity continuity has been measured once, crudely, and the

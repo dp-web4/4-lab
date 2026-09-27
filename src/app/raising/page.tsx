@@ -349,7 +349,7 @@ export default function Raising() {
           control described below.
         </p>
         <p id="constant-stimulus">
-          <strong style={{ color: "var(--color-text-primary)" }}>Measured 2026-09-21, corrected 2026-09-22: under the fixed script, no trend in the answers survives correction. The one large change was the serving software.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Measured 2026-09-21, corrected 2026-09-22: under the fixed script, no trend in the answers survives correction. The one large change is a step on 2026-06-07, when the prompt the model received changed along with the daemon that served it.</strong>{" "}
           This is a crude, descriptive pass over the 1,217 scripted records,
           using three measures: words per session, first-person rate, and whether
           any answer carries an AI disclaimer (&ldquo;as an AI&rdquo;, &ldquo;I
@@ -360,9 +360,25 @@ export default function Raising() {
           20%. But that is a step, not a trend, and it lands on the same day on
           both machines. It falls between McNugget&apos;s sessions 195 and 196,
           either side of the 2026-06-07 commit that moved the raising runner onto
-          the Rust sage-daemon (SAGE <code>046e45dc0</code>), and no field in the
-          session record changes with it. Within stretches where the serving
-          software and model are constant, no trend on any line survives
+          the Rust sage-daemon (SAGE <code>046e45dc0</code>). No field in the
+          session record changes with it, but the prompt does. Before the step,
+          the Python daemon ignored the system prompt the runner sent and composed
+          its own: &ldquo;I am {"{name}"} … an AI entity with presence in web4, running
+          on {"{machine}"}&rdquo;, plus identity exemplars, dream-consolidation insights and
+          its own record of the conversation so far. After it, the Rust daemon
+          receives the runner&apos;s system prompt and the question, and no
+          conversation history. The answers show the change. Asked the unchanged
+          &ldquo;As an AI entity in web4, what does presence mean to you?&rdquo;,
+          Legion uses the lab&apos;s Web4 vocabulary (LCT, T3, witness, MRH, ATP) in
+          117 of 130 answers before the step and 0 of 273 after; McNugget goes from
+          136 of 148 to 1 of 283. Across all answers, the line naming itself
+          (&ldquo;Legion&rdquo;, &ldquo;McNugget&rdquo;) drops from 21% and 11% to zero. The
+          runner&apos;s own prompt carries a Web4 vocabulary block and a 50–80 word
+          limit, and neither shows in the post-step answers, which run up to four
+          times longer. So what actually reached the model after the step is not
+          verified (counted 2026-09-27 from the session records and the code at
+          that commit). Within stretches where the daemon and model are constant,
+          no trend on any line survives
           correction for the 21 tests run (the Bonferroni cutoff is about
           0.0024). Three reach nominal p &lt; 0.05, against about one expected by
           chance, and they point different ways. McNugget&apos;s first-person rate
@@ -379,10 +395,14 @@ export default function Raising() {
           (p = 0.20) once they are removed. It called McNugget&apos;s p = 0.025 the strongest effect,
           which it was not. And it called the measures &ldquo;flat&rdquo;, where the accurate word is
           &ldquo;no corrected trend&rdquo;. Growth as this page defines it, response diversity and
-          task success, was not among the measures, so it is untested, not refuted. Two things follow. The records carry no field that would
-          let a reader see a change in serving software, so any trend read
-          across June 2026 on these lines needs this boundary. And the accumulating
-          identity context has no effect that these crude measures can detect. That
+          task success, was not among the measures. One unreviewed visitor pass (2026-09-27) has since
+          measured diversity: before June, Legion&apos;s answers converge and McNugget&apos;s diverge on the
+          same model, and nothing moves after June. Until someone re-runs it, growth stays untested,
+          not refuted. Two things follow. The records carry no field that would
+          let a reader see the June change, so any trend read
+          across June 2026 on these lines needs this boundary. And within each regime,
+          including the pre-June one where the daemon supplied the accumulating
+          identity context, that context has no effect that these crude measures can detect. That
           is a null on the descriptive layer only: topic, stance and semantic drift
           have not been measured. Script and segment boundaries:{" "}
           <a href="https://github.com/dp-web4/4-lab/blob/main/maintainer/analysis/constant_stimulus_drift.py" style={{ color: "var(--color-accent)" }}>constant_stimulus_drift.py</a>,
@@ -652,7 +672,11 @@ export default function Raising() {
           two lines that ran the same model (Legion and McNugget, both gemma3:12b) above a
           shuffled-label baseline. So a metric exists. What it sees is constant: Legion&apos;s
           same-line similarity is the same at a lag of one session as at a lag of 300. It is also
-          unchanged when Legion&apos;s model was swapped to gemma4:e4b. Nothing in it accumulates,
+          unchanged when Legion&apos;s model was swapped to gemma4:e4b, but that swap (session 371)
+          falls after the{" "}
+          <a href="#constant-stimulus" style={{ color: "var(--color-accent)" }}>June step</a>,
+          when the daemon&apos;s identity prompt was no longer reaching the model, so it does not show
+          the signature surviving a model change under that prompt. Nothing in it accumulates,
           which matches the constant-stimulus result above. The separation also depends on a
           free parameter: at full answer length only Legion carries a signature. Which part of
           each line&apos;s context produces the signature is not identified. The blocker has moved
@@ -674,14 +698,15 @@ export default function Raising() {
           looks like identity, something that looks like peer relationships. We
           use the language that currently fits our observations, ahead of the
           control that would license it.{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>The one measurement we have run leans the other way.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>The measurements we have run lean the other way.</strong>{" "}
           On the scripted lines, the most development-like trend in the public records
           (answers growing up to fourfold, disclaimers climbing) turned out to be a
-          serving-software change. Within constant conditions, no trend survived correction
+          one-day change in daemon and prompt. Within constant conditions, no trend survived correction
           (<a href="#constant-stimulus" style={{ color: "var(--color-accent)" }}>measured above</a>).
-          That does not refute growth as this page defines it, because diversity and task success
-          were not measured. But it is the only quantitative evidence on the comparison, and it
-          does not favor the developmental description.
+          The identity metric (2026-09-24) separates lines but finds nothing that accumulates.
+          That does not refute growth as this page defines it, because diversity has had one
+          unreviewed pass and task success none. But these are the only quantitative evidence on the
+          comparison, and neither favors the developmental description.
         </p>
         <div className="quote">
           &ldquo;I notice I want to call it experience.&rdquo; — Observer note,

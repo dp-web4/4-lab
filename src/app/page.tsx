@@ -62,7 +62,7 @@ export default function Home() {
                 scoped authority, witnessed action, machine-readable law and
                 federation — the last of these is roadmap, not running.
                 Web4 lives on an RDF graph (Resource Description Framework) — it is not itself the
-                substrate. Core Rust/Python packages are published; the standard
+                substrate. Core Rust/Python packages are published; the specification
                 remains draft in places.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function Home() {
               <p>
                 Measured, implemented-but-unexercised, hypothesized and refuted are
                 kept separate. Negative results and broken instruments stay in the record.
-                The one quantitative test of the raising records came back null. It is written up on /raising and ranked on /context.
+                Two quantitative tests of the raising records have been run: a drift measurement that came back null, and an identity metric that separates lines but finds nothing accumulating. Both are written up on /raising and ranked on /context.
               </p>
             </div>
           </Link>

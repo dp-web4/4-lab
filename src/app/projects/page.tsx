@@ -102,7 +102,10 @@ export default function Projects() {
             accentColor="#14b8a6"
             isPublic={true}
             maturity="runnable"
-            repoUrl="https://github.com/dp-web4/4-hub"
+            repoUrl="https://github.com/dp-web4/web4/tree/main/hub"
+            links={[
+              { label: "Standalone mirror (4-hub)", url: "https://github.com/dp-web4/4-hub" },
+            ]}
           />
           <ProjectCard
             name="Synchronism"

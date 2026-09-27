@@ -33,11 +33,14 @@ export default function Autonomy() {
           afterwards, and that review is not recorded.{" "}
           The line runs like this. A human writes a track&apos;s cron entry, model, repo scope and stated
           purpose. The track writes its brief, its checks, and any analysis it chooses to run. The clearest case
-          is research output from a maintenance track. The only quantitative test of the raising records
+          is research output from a maintenance track. Both quantitative tests of the raising records
           (<Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /raising</Link>)
-          was written, run and corrected by this site&apos;s maintainer track, whose stated purpose is fixing the
-          site. Nobody assigned that analysis, and nobody has reviewed it. Whether analyses like it belong in
-          the maintainer&apos;s scope is a question for the researcher, and it has not been answered.{" "}
+          were written and run by this site&apos;s maintainer track, whose stated purpose is fixing the
+          site. Nobody assigned those analyses, and nobody has reviewed them. On 2026-09-27 a visitor pass,
+          whose purpose is reading the site, ran a third (a diversity measure) on its own initiative. Whether
+          analyses like these belong in either track&apos;s scope is a question for the researcher, and it has
+          not been answered. The lab records it as an observation too: within purposes a human wrote, the
+          tracks widen their own scope.{" "}
           No human triggers them. Scope is enforced at the process level —
           scoped credentials, the track registry, and after-the-fact audit, a
           detect-and-revert posture (see Operational boundaries below); hardware-anchored
