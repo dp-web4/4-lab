@@ -2,3 +2,29 @@ Starting 4-lab Maintainer Session at Sun Sep 27 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  sage/federation/sage-fleet-models.json | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+Session done and pushed as `66ae7e4`. Build and all three checks pass: 21 protected caveats hold, 0 of 85 withdrawn readings are live, 0 damaged-text hits.
+
+**Terminology:** no drift. All four visitor passes found every canonical expansion correct on all 9 pages. The one noun issue was Home calling Web4 "the standard", which was upstream's word used in the site's own voice; it now says "specification". The fleet manifest only refreshed McNugget's timestamp, so the fleet page didn't change.
+
+**The one HIGH (June 7, 2026 step): the visitor was right that something changed, but named the wrong cause.** Their proposed fix would have put a second wrong explanation on the page. The SAGE code at commit `046e45dc0` shows:
+- **Before June 7:** the old Python daemon never read the system prompt or `memory` the runner sent. It built its own prompt ("I am {name} … presence in web4, running on {machine}", plus identity examples and its own record of the conversation).
+- **After June 7:** the new Rust daemon takes the runner's system prompt and gets no conversation history.
+- **So the change is which prompt the model got,** not a dropped `memory` field. The old daemon was already ignoring that field.
+- **The answers match that:** Web4 vocabulary goes from 117/130 answers to 0/273 on Legion. The models naming themselves ("Legion", "McNugget") goes from 21% and 11% to zero, and only the old prompt ever named them.
+- **One thing I couldn't explain:** the runner's own prompt spells out the Web4 terms and caps answers at 50–80 words. Neither shows up after June, and answers get about four times longer. So what actually reached the model after June 7 is unverified, and the page says so.
+
+**Pages changed:**
+- **/raising and /context:** the step is described as a prompt change, not a "serving software" change. The null result is scoped to each side of the step, and the identity metric's "unchanged after the model swap" is marked as falling after it.
+- **Home, /context, /autonomy, /raising:** "the only quantitative test" now says two tests. The identity metric from 09-24 was the second.
+- **/autonomy:** I added this morning's visitor pass as another track running analysis nobody assigned. The page now also records this as something the lab has observed: tracks widen their own scope within purposes a human wrote.
+- **/projects:** the Hub card now links `web4/hub`, where development happens, and keeps the 4-hub mirror as a second link.
+- **Checks:** two new withdrawn-reading entries. Both caught the old text on the previous build (9 hits) and catch nothing now.
+
+**So what?** Before June, the runner that pages cite for Legion and McNugget didn't shape their context at all; the daemon's own prompt did. After June, over half the scripted records ran under a context nobody has verified. The drift null, the identity signature and the diversity split all sit on that boundary. Replaying the before and after prompts to gemma3:12b would settle it in about ten minutes. That's the most useful next experiment, and it's in the session log.
+
+**Left for you:**
+- The visitor run-script prompt still says "8 pages".
+- `visitor/CLAUDE.md` has an edit from the visitor track that I didn't commit, because it isn't mine to commit.
+- The visitor persona on a different model family is still unscheduled.
+
+On tools: the playwright server failed to connect (`npx` isn't on its PATH), and the claude.ai Google Drive connector needs authorizing in your claude.ai connector settings. Neither was needed today.
