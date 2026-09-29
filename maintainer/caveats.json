@@ -12,241 +12,798 @@
     "(4-lab/CLAUDE.md: 'preserve honest assessments, never weaken caveats')."
   ],
   "caveats": [
-    { "id": "autonomy-not-self-directed", "page": "src/app/autonomy/page.tsx", "status": "present",
+    {
+      "id": "autonomy-not-self-directed",
+      "page": "src/app/autonomy/page.tsx",
+      "status": "present",
       "pattern": "self-directed",
-      "why": "'autonomous' here means unattended and self-scheduled, not self-directed in the AI-safety sense." },
-
-    { "id": "consciousness-functional-only", "page": "src/app/context/page.tsx", "status": "present",
+      "why": "'autonomous' here means unattended on a human-written schedule, not self-directed at the level of purpose (2026-09-29 wording; 'self-scheduled' withdrawn)."
+    },
+    {
+      "id": "consciousness-functional-only",
+      "page": "src/app/context/page.tsx",
+      "status": "present",
       "pattern": "consciousness or experience",
-      "why": "Functional description of observed behavior, not a claim about consciousness." },
-
-    { "id": "evidence-tier-internal", "page": "src/app/raising/page.tsx", "status": "present",
+      "why": "Functional description of observed behavior, not a claim about consciousness."
+    },
+    {
+      "id": "evidence-tier-internal",
+      "page": "src/app/raising/page.tsx",
+      "status": "present",
       "pattern": "not externally audited",
-      "why": "The readings of the session records are the lab's own and not externally audited. (The records are public; the reading method is not. Keep this half.)" },
-
-    { "id": "deflationary-alternative", "page": "src/app/autonomy/page.tsx", "status": "present",
+      "why": "The readings of the session records are the lab's own and not externally audited. (The records are public; the reading method is not. Keep this half.)"
+    },
+    {
+      "id": "deflationary-alternative",
+      "page": "src/app/autonomy/page.tsx",
+      "status": "present",
       "pattern": "deflationary",
-      "why": "The deflationary reading of identity transfer is stated alongside the strong one." },
-
-    { "id": "visitor-audit-self-criticism", "page": "src/app/autonomy/page.tsx", "status": "present",
+      "why": "The deflationary reading of identity transfer is stated alongside the strong one."
+    },
+    {
+      "id": "visitor-audit-self-criticism",
+      "page": "src/app/autonomy/page.tsx",
+      "status": "present",
       "pattern": "four personas",
-      "why": "The visitor audit is four personas on one model — correlated blind spots." },
-
-    { "id": "hardbound-not-hardware-anchored", "page": "src/app/projects/page.tsx", "status": "present",
+      "why": "The visitor audit is four personas on one model — correlated blind spots."
+    },
+    {
+      "id": "hardbound-not-hardware-anchored",
+      "page": "src/app/projects/page.tsx",
+      "status": "present",
       "pattern": "hardware-anchor",
-      "why": "Hardbound enforcement runs at process level today, not anchored in silicon." },
-
-    { "id": "navier-stokes-retraction", "page": "src/app/projects/page.tsx", "status": "present",
+      "why": "Hardbound enforcement runs at process level today, not anchored in silicon."
+    },
+    {
+      "id": "navier-stokes-retraction",
+      "page": "src/app/projects/page.tsx",
+      "status": "present",
       "pattern": "Navier-Stokes",
-      "why": "Synchronism's own audits refuted the fluid formalism in 2026; the claim is tagged superseded." },
-
-    { "id": "arc-harness-ablation-unrun", "page": "src/app/projects/page.tsx", "status": "present",
+      "why": "Synchronism's own audits refuted the fluid formalism in 2026; the claim is tagged superseded."
+    },
+    {
+      "id": "arc-harness-ablation-unrun",
+      "page": "src/app/projects/page.tsx",
+      "status": "present",
       "pattern": "ablation has not been run",
-      "why": "How much of 94.85% is the harness is an open question. Hypothesis, not result." },
-
-    { "id": "arc-engine-source-affordance", "page": "src/app/arc-agi-3/page.tsx", "status": "present",
+      "why": "How much of 94.85% is the harness is an open question. Hypothesis, not result."
+    },
+    {
+      "id": "arc-engine-source-affordance",
+      "page": "src/app/arc-agi-3/page.tsx",
+      "status": "present",
       "pattern": "not blind",
-      "why": "The harness read the games' engine source and built per-game cartridges — outside strict from-observation play." },
-
-    { "id": "arc-action-score-not-solve-rate", "page": "src/app/context/page.tsx", "status": "present",
+      "why": "The harness read the games' engine source and built per-game cartridges — outside strict from-observation play."
+    },
+    {
+      "id": "arc-action-score-not-solve-rate",
+      "page": "src/app/context/page.tsx",
+      "status": "present",
       "pattern": "efficiency-weighted",
-      "why": "94.85% is an action score, efficiency-weighted against a human baseline, not 23/25 and not 175/183." },
-
-    { "id": "arc-level-vs-environment", "page": "src/app/context/page.tsx", "status": "present",
+      "why": "94.85% is an action score, efficiency-weighted against a human baseline, not 23/25 and not 175/183."
+    },
+    {
+      "id": "arc-level-vs-environment",
+      "page": "src/app/context/page.tsx",
+      "status": "present",
       "pattern": "whole-environment completions by local models remain rare",
-      "why": "Local models clear levels; whole-environment solves remain rare. Added 167092c, restored on /context." },
-
-    { "id": "home-page-carries-a-hedge", "page": "src/app/page.tsx", "status": "absent",
+      "why": "Local models clear levels; whole-environment solves remain rare. Added 167092c, restored on /context."
+    },
+    {
+      "id": "home-page-carries-a-hedge",
+      "page": "src/app/page.tsx",
+      "status": "absent",
       "pattern": "self-directed|not a claim about|hypothesis, not a result|not externally audited",
-      "why": "DEBT. The highest-traffic page carries five sections, one of them a commercial pitch, and zero caveats since d20b390. Every hedge above lives two clicks deep. Placement, not deletion — but the bouncing reader never reaches them." },
-
-    { "id": "r6-not-r7-claim-strength", "page": "src/app/page.tsx", "status": "absent",
+      "why": "DEBT. The highest-traffic page carries five sections, one of them a commercial pitch, and zero caveats since d20b390. Every hedge above lives two clicks deep. Placement, not deletion — but the bouncing reader never reaches them."
+    },
+    {
+      "id": "r6-not-r7-claim-strength",
+      "page": "src/app/page.tsx",
+      "status": "absent",
       "pattern": "R6 rather than R7",
-      "why": "DEBT. 167092c hedged that nothing published documents result attestations feeding reputation back-propagation, so the records are R6 not R7. Deleted 17:22 the same day; never restored anywhere." },
-
-    { "id": "arc-leaderboard-not-comparable", "page": "src/app/arc-agi-3/page.tsx", "status": "retired",
+      "why": "DEBT. 167092c hedged that nothing published documents result attestations feeding reputation back-propagation, so the records are R6 not R7. Deleted 17:22 the same day; never restored anywhere."
+    },
+    {
+      "id": "arc-leaderboard-not-comparable",
+      "page": "src/app/arc-agi-3/page.tsx",
+      "status": "retired",
       "pattern": "conditions are not comparable",
-      "why": "RETIRED, not debt: the #3-human-leaderboard claim this qualified was removed in the same commit (51bfc14) and appears nowhere in src/. A caveat outliving its claim would be the defect." },
-
-    { "id": "fleet-counts-derived-from-git", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "RETIRED, not debt: the #3-human-leaderboard claim this qualified was removed in the same commit (51bfc14) and appears nowhere in src/. A caveat outliving its claim would be the defect."
+    },
+    {
+      "id": "fleet-counts-derived-from-git",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "derived from git, not self-reported",
-      "why": "The /fleet session counts were machine self-reports from the 2026-07-24 manifest refresh, and two of seven were wrong. The page now states they come from listing each line's sessions/ in the SAGE repo, which a reader can re-run. Drop the sentence and the numbers go back to unverifiable." },
-
-    { "id": "fleet-count-as-of-date", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "The /fleet session counts were machine self-reports from the 2026-07-24 manifest refresh, and two of seven were wrong. The page now states they come from listing each line's sessions/ in the SAGE repo, which a reader can re-run. Drop the sentence and the numbers go back to unverifiable."
+    },
+    {
+      "id": "fleet-count-as-of-date",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "counted 20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]",
-      "why": "A count with no as-of date is the failure this correction was about: July's numbers were not wrong when taken, they were undated in effect. Without the date the next reader cannot tell how stale the page has become. Pattern generalised 2026-09-18: it was pinned to the literal 2026-09-12, so a legitimate recount tripped it as a missing caveat. What is protected is that a date is present, not which one." },
-
-    { "id": "fleet-liveness-fourth-state", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "A count with no as-of date is the failure this correction was about: July's numbers were not wrong when taken, they were undated in effect. Without the date the next reader cannot tell how stale the page has become. Pattern generalised 2026-09-18: it was pinned to the literal 2026-09-12, so a legitimate recount tripped it as a missing caveat. What is protected is that a date is present, not which one."
+    },
+    {
+      "id": "fleet-liveness-fourth-state",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "instrumentation broken",
-      "why": "HUB's raising loop commits daily and writes no session record. Collapsing that into 'stopped' trades one false claim for another and hides the real defect. The fourth state IS the finding." },
-
-    { "id": "fleet-thor-count-withdrawn", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "HUB's raising loop commits daily and writes no session record. Collapsing that into 'stopped' trades one false claim for another and hides the real defect. The fourth state IS the finding."
+    },
+    {
+      "id": "fleet-thor-count-withdrawn",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "withdrawn rather than restated",
-      "why": "Thor's previously published 435 has no source in the git basis; the card says so instead of quietly showing 268. Remove the sentence and a basis change reads as 167 lost sessions." },
-
-    { "id": "fleet-liveness-test-prefix-match", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "Thor's previously published 435 has no source in the git basis; the card says so instead of quietly showing 268. Remove the sentence and a basis change reads as 167 lost sessions."
+    },
+    {
+      "id": "fleet-liveness-test-prefix-match",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "Match the prefix, not the whole subject",
-      "why": "The published liveness test quotes a commit subject that carries a trailing ISO timestamp. Without this clause a reader who exact-matches gets 0 on every line including HUB, and the test contradicts the 165 printed beside it. A derivation that cannot be re-run is the defect this page exists to avoid." },
-
-    { "id": "fleet-liveness-test-subject-independent", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "The published liveness test quotes a commit subject that carries a trailing ISO timestamp. Without this clause a reader who exact-matches gets 0 on every line including HUB, and the test contradicts the 165 printed beside it. A derivation that cannot be re-run is the defect this page exists to avoid."
+    },
+    {
+      "id": "fleet-liveness-test-subject-independent",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "vocabulary whitelist",
-      "why": "Every subject-keyed form of the liveness test scores 0 on lines it never examined: the page's original spelling was HUB's alone, and at least fifteen subject shapes write session records here. Re-keying the test on a subject — even on three conventions instead of one — restores a clean field that is an artifact of its own construction. The test must read what a commit CHANGED." },
-
-    { "id": "fleet-liveness-noise-floor-stated", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "Every subject-keyed form of the liveness test scores 0 on lines it never examined: the page's original spelling was HUB's alone, and at least fifteen subject shapes write session records here. Re-keying the test on a subject — even on three conventions instead of one — restores a clean field that is an artifact of its own construction. The test must read what a commit CHANGED."
+    },
+    {
+      "id": "fleet-liveness-noise-floor-stated",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "the cost of not reading subjects",
-      "why": "Read subject-independently, ten of twenty-four lines have unrecorded fires, not two. Filtering the eight provisioning/migration rows away would report exactly the two outliers and again be reporting the test's construction rather than its result. The floor is published so the discrimination is visibly by magnitude." },
-
-    { "id": "fleet-sprout-import-not-heartbeat", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "Read subject-independently, ten of twenty-four lines have unrecorded fires, not two. Filtering the eight provisioning/migration rows away would report exactly the two outliers and again be reporting the test's construction rather than its result. The floor is published so the discrimination is visibly by magnitude."
+    },
+    {
+      "id": "fleet-sprout-import-not-heartbeat",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "an import event was being read as a heartbeat",
-      "why": "All 661 sprout-qwen3.8-distill-2b session records entered origin/main in one merge on 2026-09-05, as new files session_001..661. This page read that date as 'running, last 2026-09-05'. Restoring a recency claim on that path would reinstate the exact defect — a description standing in for a property — on the number used to assign the card's state." },
-
-    { "id": "fleet-e4b-fired-not-unprovisioned", "page": "src/app/fleet/page.tsx", "status": "present",
+      "why": "All 661 sprout-qwen3.8-distill-2b session records entered origin/main in one merge on 2026-09-05, as new files session_001..661. This page read that date as 'running, last 2026-09-05'. Restoring a recency claim on that path would reinstate the exact defect — a description standing in for a property — on the number used to assign the card's state."
+    },
+    {
+      "id": "fleet-e4b-fired-not-unprovisioned",
+      "page": "src/app/fleet/page.tsx",
+      "status": "present",
       "pattern": "not an unprovisioned instance",
-      "why": "legion-gemma4-e4b holds zero session records, which reads as 'never set up'. The record says otherwise: 283 Session 0 fires over four months, writing peer_trust_rs.json and nothing else. Collapsing that back to 'unprovisioned' would hide a second site of HUB's defect." },
-    {"id": "raising-seventh-confound-continuity-note", "page": "src/app/raising/page.tsx", "status": "present", "pattern": "seventh confound", "why": "The runner tells reasoning-model lines 'that does not change who you are' (code comment: 'the SAGE finding, told to the being'); CBP's note adds 'be yourself'. The subject is given the hypothesis as a premise. ollama_raising_session.py ~l.924; CBP instance.json since 4711bdcf1 (2026-09-12)."}
+      "why": "legion-gemma4-e4b holds zero session records, which reads as 'never set up'. The record says otherwise: 283 Session 0 fires over four months, writing peer_trust_rs.json and nothing else. Collapsing that back to 'unprovisioned' would hide a second site of HUB's defect."
+    },
+    {
+      "id": "raising-seventh-confound-continuity-note",
+      "page": "src/app/raising/page.tsx",
+      "status": "present",
+      "pattern": "seventh confound",
+      "why": "The runner tells reasoning-model lines 'that does not change who you are' (code comment: 'the SAGE finding, told to the being'); CBP's note adds 'be yourself'. The subject is given the hypothesis as a premise. ollama_raising_session.py ~l.924; CBP instance.json since 4711bdcf1 (2026-09-12)."
+    }
   ],
   "withdrawn": [
-    {"id": "v3-gates-recharge", "withdrawn": "2026-09-11", "pattern": "against V3\\b|V3\\b[^.]{0,60}-validated|Valuation gates|V3 (is|as) (the )?(gate|certifier)|V3[^.]{0,20}reaches across", "unless": "NOT the gate|does not gate|not its certifier|earlier version|withdrawn|does not certify|never before", "why": "Spec charge_atp: the society validates a value proof, converts ADP to ATP, THEN updates T3/V3. Canon names no tensor. V3 records the outcome; it does not gate recharge. Found live in 4 places on 09-14 after the 09-11 withdrawal."},
-
-    {"id": "t3-v3-verify-each-other", "withdrawn": "2026-09-14", "pattern": "T3 and V3 (are )?(verified|checked) against each other|T3 and V3 verify each other|T3[^.]{0,160}checked against its V3", "unless": "not a claim that|neither tensor", "why": "Canon: complementary, not combined. Spec t3-v3-tensors.md s.4 couples them both ways (T3 predicts V3; V3 outcomes feed T3). Neither is a verification of one against the other, and there is no pre-action T3-vs-V3 check."},
-
-    {"id": "v3-verifies-t3-via-peer-attestation", "withdrawn": "2026-09-14", "pattern": "verified by V3 \\(value\\) through peer attestation|V3 tensors[^.]{0,80}accumulate alongside|V3[^.]{0,80}accrues from peer verification", "unless": "earlier version", "why": "The SAGE peer trust tracker (sage/federation/peer_trust.py) holds T3 only. No V3 exists in the fleet tracker, and no attestation step verifies T3 by V3."},
-
-    {"id": "lct-portable-identity", "withdrawn": "2026-09-14", "pattern": "portable identity", "unless": "earlier version|not a portable|rather than", "why": "Canon binds an LCT permanently to one entity; /context's LCT row says non-transferable. 'Portable identity' in the worked example contradicted both."},
-
-    {"id": "arc-24-of-25", "withdrawn": "2026-09-09", "pattern": "\\b24 ?(/|of) ?25\\b|96\\.0 ?%", "unless": "earlier|previously|was wrong|corrected", "why": "Published ARC scorecard: total_environments_completed 23 of 25 (92.0%), 175 of 183 levels. 24/25 (96.0%) was wrong on five pages."},
-
-    {"id": "web4-no-runnable-demo", "withdrawn": "2026-09-11", "pattern": "no runnable demo", "unless": "earlier|previously|no longer", "why": "web4-core 0.3.0 is published on crates.io and PyPI and the Hub reference daemon lives in the repo."},
-
-    {"id": "delegation-instance-is-atp", "withdrawn": "2026-09-14", "pattern": "closest thing on this site is the budget", "unless": "earlier version", "why": "ATP allocates resource, not authority. Canon's Delegation grants authority; Hestia's delegate grant/revoke is the instance."},
-
-    {"id": "fleet-independent-review-seats", "withdrawn": "2026-09-14", "pattern": "independent implementation and review seats", "unless": "not yet independent", "why": "The tracks that write and audit the site share model families (/autonomy's correlated-auditor limit); /context says no external or blinded check exists."},
-
-    {"id": "synchronism-discovers-equations", "withdrawn": "2026-09-14", "pattern": "Synchronism discovers the equations", "unless": "", "why": "Stated flat beside a 400x failed derivation. Synchronism proposes; nothing here has been validated."},
-
-    {"id": "loop-fixes-within-one-cycle", "withdrawn": "2026-09-14", "pattern": "fixed reliably within one cycle", "unless": "not reliably within one cycle", "why": "Unmeasured, and contradicted by the 08-12..09-04 gap and by V3-as-gate living 3 days on 4 pages after withdrawal."},
-
-    {"id": "identity-portability-as-discovery", "withdrawn": "2026-09-14", "pattern": "surprising discover|Not because we engineered continuity", "unless": "", "why": "/raising calls persistence across a port that carries the state files partly true by construction and untested; the scramble control has not run."},
-
-    {"id": "thresholds-not-derivable-universal", "withdrawn": "2026-09-14", "pattern": "trust thresholds are empirical, not derivable", "unless": "", "why": "One failed derivation shows that derivation failed, not that none can succeed."},
-
-    {"id": "fleet-dated-today", "withdrawn": "2026-09-14", "pattern": "2026-\\d\\d-\\d\\d \\(today\\)|the most recent today", "unless": "", "why": "A page can't know when it is read. '(today)' on a 2026-09-12 count was two days stale when the visitor read it on 09-14."},
-
-    {"id": "fleet-t3v3-scores-live", "withdrawn": "2026-09-15", "pattern": "per-peer T3/V3 scores (are|is) live", "unless": "", "why": "The fleet peer tracker keeps T3 only and holds no V3 (sage/federation/peer_trust.py; /fleet said both in one paragraph and 'T3 only' three paragraphs later)."},
-
-    {"id": "sprout-488-restated", "withdrawn": "2026-09-15", "pattern": "stands at 488", "unless": "", "why": "/fleet retracted 488 (the 0.8b line as of July); /raising kept restating it with 'see /fleet'. Point at the owning page, don't restate its number."},
-
-    {"id": "quick-start-on-links", "withdrawn": "2026-09-15", "pattern": "Quick-start commands are on ?/links", "unless": "", "why": "The only quick start is on /projects#quick-start; /links links to it. Pointer outlived the single-sourcing."},
-
-    {"id": "links-leads-with-2563", "withdrawn": "2026-09-15", "pattern": "leads with the 2,563", "unless": "Until 2026-09-15 this sentence said", "why": "/links leads with 2,442 and gives 2,563 in parentheses. A sentence describing another page's figure, not reading it."},
-
-    {"id": "community-channels-on-links", "withdrawn": "2026-09-15", "pattern": "and community channels", "unless": "", "why": "/links lists repos, issue trackers and one email. No forum, chat or mailing list exists."},
-
-    {"id": "fleet-capacity-as-finding", "withdrawn": "2026-09-15", "pattern": "One finding shapes fleet strategy|fleet capacity findings|outperforms Phi-4", "unless": "", "why": "Evidence ladder files model-capacity as an internal observation with no metric; /fleet and /context called it a finding and an empirical result."},
-
-    {"id": "harness-ablation-in-progress", "withdrawn": "2026-09-15", "pattern": "Phase 2 work is isolating", "unless": "", "why": "No harness ablation has run or is scheduled; Phase 2 is local-model transfer (Gemma 4 E4B), which swaps the model rather than removing the harness."},
-
-    {"id": "coupling-empirical-grounding", "withdrawn": "2026-09-15", "pattern": "provide empirical grounding", "unless": "", "why": "Single-trial result on a coherence measure defined only inside the experiment; Principle 5 calls it ungrounded."},
-
-    {"id": "independent-security-reviews", "withdrawn": "2026-09-15", "pattern": "independent security reviews", "unless": "not independent in the external", "why": "Fleet-run, cross-model-family reviews; /context states there is no external, blinded or third-party check anywhere in the loop."},
-
-    {"id": "mcnugget-gemma3-current", "withdrawn": "2026-09-15", "pattern": "Gemma 3 12B \\(ollama\\) — instance mcnugget", "unless": "", "why": "Every McNugget session record from 449 (2026-09-08 UTC) names gemma4:12b; the instance directory name predates the switch."},
-
-    {"id": "raising-always-in-context", "withdrawn": "2026-09-15", "pattern": "always in-context|never weights|raising itself never does", "unless": "Until 2026-09-15 this page said|not true of the history", "why": "SAGE sprout-qwen2.5-0.5b: 84 session records with using_lora: true (2026-01-27..03-06), adapter trained on its own raising exchanges by sage/raising/training/sleep_training.py and loaded by autonomous_conversation.py. Frozen weights hold only since BECOMING_CURRICULUM.md (2026-04-04)."},
-
-    {"id": "becoming-label-as-observation", "withdrawn": "2026-09-15", "pattern": "BECOMING pattern observed: \\w", "unless": "", "why": "The card label is identity.json phase_name, set by session number in run_session_identity_anchored_fluid.py / ollama_raising_session.py (creating = 41+). A schedule, not an observation."},
-
-    {"id": "dream-becomes-identity-uncaveated", "withdrawn": "2026-09-15", "pattern": "session experience becomes long-term identity", "unless": "", "why": "The consolidator is Claude (dream_consolidation.py, claude --print), writing identity.json; uncaveated, the sentence hides that the identity record is partly the consolidator's wording."},
-
-    {"id": "rust-daemon-runs-12-step-loop", "withdrawn": "2026-09-15", "pattern": "starts the 12-step|dashboard shows it cycling|the current posture, and SNARC", "unless": "", "why": "SAGE sage/docs/RUST_VS_PYTHON_CAPABILITY.md: sage-daemon is an inference-and-metabolism gateway, posture/select/govern/filter ABSENT; dashboard.html has no posture and updateSnarc() is never called."},
-
-    {"id": "policygate-is-hardbounds", "withdrawn": "2026-09-15", "pattern": "Hardbound's enforcement checkpoint|Hardbound oversight sub-gate|PolicyGate is Hardbound", "unless": "until 2026-09-15|Until 2026-09-15|used to separate", "why": "sage/irp/plugins/policy_gate.py is SAGE's 'conscience checkpoint', mapped to step 10 Govern by the capability matrix; no Hardbound reference in the public code."},
-
-    {"id": "tired-energized-states", "withdrawn": "2026-09-15", "pattern": "tired ?/? energized|tired, energized", "unless": "", "why": "SAGE's metabolic controller names five states, WAKE/FOCUS/REST/DREAM/CRISIS, in both the Python kernel and the Rust daemon."},
-
-    {"id": "success-nudges-talent-only", "withdrawn": "2026-09-15", "pattern": "a success nudges Talent|successful task nudges the peer's Talent from 0.500 to 0.505 \\(", "unless": "", "why": "peer_trust.rs success deltas are talent +0.05, training +0.02, temperament +0.05: all three move."},
-
-    {"id": "hestia-is-sage-peer-tracker", "withdrawn": "2026-09-15", "pattern": "A trust tracker — hestia|hestia's current tracker holds three numbers per peer", "unless": "", "why": "Hestia's trust store (hestia repo core/src/derivation.rs, per member/role, adjudicated V3) and SAGE's peer_trust.rs (per peer machine, T3 only, own observations) are separate components."},
-
-    {"id": "atp-adp-two-artifacts", "withdrawn": "2026-09-15", "pattern": "one artifact for (the )?intention, one for the result", "unless": "Until 2026-09-15 this", "why": "atp-adp-cycle.md §1.2/§2: one semifungible token in two states, society-managed pools, minted as ADP, returned to pool on discharge. Two records is the fleet registry's approximation."},
-
-    {"id": "hardbound-gates-hardware-root-today", "withdrawn": "2026-09-16", "pattern": "Hardbound, which gates and reverts|Hardbound enforces them|It gates and reverts; trust itself|The rule binds Hardbound, which gates", "unless": "", "why": "/projects Hardbound card: hardware-anchored enforcement 'is what this research is building toward, not the current mechanism'; enforcement today is process-level. Present-tense gating against a hardware root was live on Home, /projects Hestia card, /context (3x) and P10."},
-
-    {"id": "raising-mechanism-unscoped", "withdrawn": "2026-09-16", "pattern": "in raising sessions, we shape context|interaction-history half", "unless": "", "why": "Sprout Qwen 0.5B line loaded a self-trained LoRA 2026-01-27..03-06 (84 session records using_lora: true). The 09-15 scoping reached P7 and /context but not /raising's mechanism paragraph; 'half' invented a two-part split of T3-Training."},
-
-    {"id": "self-description-drift-across-port", "withdrawn": "2026-09-16", "pattern": "self-description drifted (even though|while) (those|the) inputs|showed a consistent\\s+separation", "unless": "until 2026-09-16", "why": "SAGE commit 4f30be970 experience_buffer: both self-descriptions are TinyLlama output on CBP, sessions 115 (22:16) and 117 (22:58) on 2026-02-27; identity.json net diff is session_count and last_session only. Not drift across the port."},
-
-    {"id": "memoriescape-sprout-qwen-coinage", "withdrawn": "2026-09-16", "pattern": "SAGE-Sprout's own coinage", "unless": "", "why": "First occurrence (git -S) is a TinyLlama 1.1B response on CBP, session 117, 2026-02-27; the 'shape you can sense but not access' gloss was the prompt's wording."},
-
-    {"id": "thor-lora-loaded", "withdrawn": "2026-09-16", "pattern": "27B \\(transformers\\) · LoRA —", "unless": "", "why": "thor-qwen3.5-27b instance.json has_lora: false since 2026-03-14 (before its raising sessions); training/sessions empty; '· LoRA' was the manifest's lora_capable flag."},
-
-    {"id": "site-prose-above-equation", "withdrawn": "2026-09-16", "pattern": "more precise than the equation", "unless": "", "why": "Ranked site prose above canon. t3-v3-tensors.md: RDF triples in the MRH bind tensors to entity-role pairs; that is what the + does not show."},
-
-    {"id": "plus-glyph-canonical", "withdrawn": "2026-09-17", "pattern": "canonically .augmented with", "unless": "", "why": "The equation and its glyphs are not in CANONICAL_TERMS_v1; the /projects legend says so. 'Canonically' survived the 2026-09-09 provenance correction on the Web4 card."},
-
-    {"id": "atp-declared-before-action", "withdrawn": "2026-09-17", "pattern": "allocation declared before an action runs", "unless": "", "why": "Canon ATP: consumed by action, regenerated through contribution; atp-adp-cycle.md: charged state of a pooled token. 'Declared before an action' is the registry shape withdrawn from /context's ATP/ADP section on 2026-09-15 but left in the glossary row."},
-
-    {"id": "adp-record-of-actual-outcome", "withdrawn": "2026-09-17", "pattern": "the record of actual outcome|ADP\\)? records what was\\s+actually spent", "unless": "this row.s wording until", "why": "Canon ADP: spent form of ATP, recyclable through validation; spec: discharged token state returned to the pool. A spend record is the fleet registry's approximation."},
-
-    {"id": "r7-every-tensor-delta", "withdrawn": "2026-09-17", "pattern": "R7.s seventh element in all but name", "unless": "Until 2026-09-17", "why": "r6-framework.md intro: 'R6 Results do include implicit tensor updates'; atp-adp-cycle.md R6/R7 note: direct-participant T3/V3 deltas are R6 Results. R7 is the cross-scale reputation feed; /context's R6/R7 section and /autonomy already said so."},
-
-    {"id": "sovereign-founding-member", "withdrawn": "2026-09-17", "pattern": "A Web4 society.s founding member", "unless": "", "why": "society-roles.md §2.1: Sovereign is a base-mandatory role (final charter-amendment authority, identity of last resort), fillable by human, AI, organization, society or federation."},
-
-    {"id": "identity-def-curriculum-state", "withdrawn": "2026-09-17", "pattern": "measured via raising curriculum state|behavioral patterns, accumulated experience,\\s+raising curriculum state|interaction patterns, accumulated experience, and raising curriculum\\.", "unless": "until 2026-09-17", "why": "/raising's definition excludes curriculum state (an input the treatment supplies, so it cannot measure the outcome). /context quoted, and /raising's status paragraph and /fleet restated, the older three-part version."},
-
-    {"id": "identity-def-on-home-page", "withdrawn": "2026-09-17", "pattern": "operational definition (this page and the home page give|behind the metaphor is on the\\s*home page)", "unless": "", "why": "Home carries no identity definition (rendered-text grep for 'session-to-session': zero). The definition is on /raising."},
-
-    {"id": "tensor-dimensions-in-expansion-slot", "withdrawn": "2026-09-17", "pattern": "\\b(T3|V3)( tensors?| scores?)?\\s*\\((Talent|Valuation)", "unless": "", "why": "CANONICAL_TERMS_v1: T3 = Trust Tensor, V3 = Value Tensor; the three dimensions are contents, not expansion. Four instances survived expansion greps (/context worked example x2, /fleet peer section, /raising mechanism paragraph)."},
-
-    {"id": "tool-stages-readiness-gated", "withdrawn": "2026-09-17", "pattern": "demonstrated readiness", "unless": "Until 2026-09-17|No such check", "why": "Curriculum phases advance by session number (/fleet); SAGE run_session_identity_anchored_fluid.py sets tool stage from a --tools CLI flag (silent/aware/active). No readiness assessment in code."},
-
-    {"id": "arc-no-published-baseline", "withdrawn": "2026-09-17", "pattern": "no published baseline|publishes no baseline", "unless": "Until 2026-09-17", "why": "ARC Prize scoring (RHAE) is action efficiency against a human baseline: median first-time human per level since the 2026-04-14 changelog, 3 days before the 2026-04-17 run; arcprize.org/arc-agi/3: '100% ... as efficiently as humans'."},
-
-    {"id": "account-pools-are-atp-cycle", "withdrawn": "2026-09-17", "pattern": "resource accounting for work done on these machines is the|pools are the human-scale version of", "unless": "", "why": "Canon ATP is regenerated through contribution; the account budgets reset every Thursday regardless of output. Analogy, not instance."},
-
-    {"id": "oversight-pool-machine-enforced", "withdrawn": "2026-09-17", "pattern": "Oversight: continuous availability, review and gating", "unless": "", "why": "The pool name is fleet.json's budget-account label (review, planning, coordination); the 2026-09-15 note under the heading withdrew the machine-enforced sense but the pools gloss above it kept it."},
-
-    {"id": "pattern6-attributes-to-raising", "withdrawn": "2026-09-17", "pattern": "awareness developed in raising now\\s+applies", "unless": "", "why": "Same paragraph: 'Co-present with raising, not attributed to it'; no run without raising history exists."},
-
-    {"id": "specialization-not-assigned", "withdrawn": "2026-09-17", "pattern": "specialization isn.t assigned; it emerges", "unless": "", "why": "Fleet routing assigns work; /raising's deflationary section names task routing as the simpler explanation."},
-
-    {"id": "governance-note-restated-per-page", "withdrawn": "2026-09-17", "pattern": "predates (the lab.s|this lab.s|Principle 10.s) governance.oversight", "unless": "is NOT the sense the word carries", "why": "Consolidated: the SAGE-name note had been appended on 7 of 9 pages (27 rendered mentions); both 09-17 visitor passes that counted it read it as the site talking to its auditors. One explanation lives at /context#governance-oversight. Link there; do not restate."},
-
-    {"id": "cbp-raising-line-paused", "withdrawn": "2026-09-18", "pattern": "paused . 240 session records", "unless": "until 2026-09-18", "why": "CBP migrated to cbp-qwen3.8-distill-4b on 2026-09-12, carrying all 240 sessions whole; that line is at 263 and fired 2026-09-18 08:03 UTC. The page was counting the directory the line had left."},
-
-    {"id": "sprout-loop-stopped-2026-08-28", "withdrawn": "2026-09-18", "pattern": "(Then the loop stopped|no .Sprout-Raising. commit exists anywhere in the repo after it)", "unless": "(is withdrawn|should not have been used|subject-prefix absence)", "why": "The 2026-08-28 thinning fires bracket a documented live model swap (cc69c715, 03:16 UTC); the swap commit says the being finished session 625 on the new model. The supporting evidence was a subject-prefix absence, the exact test /fleet demonstrates to be unsound; the successor line commits as raising(sprout):."},
-
-    {"id": "sprout-counts-are-additive", "withdrawn": "2026-09-18", "pattern": "and a further 625", "unless": "double-count", "why": "All 625 of the 0.8b line's record filenames reappear on sprout-qwen3.8-distill-2b: the 661 contains them. Reading the two lines as separate stacks counted 625 sessions twice."},
-
-    {"id": "all-lab-code-is-mit0", "withdrawn": "2026-09-18", "pattern": "code these principles produced is public and MIT-0", "unless": "", "why": "SAGE, web4, hestia, 4-hub and 4-life are AGPL-3.0 (GitHub API, 2026-09-18); only ARC-SAGE is MIT-0. Copyleft vs public-domain-equivalent is the one claim on /principles a reader would act on."},
-
-    {"id": "session-logs-not-auditable", "withdrawn": "2026-09-19", "pattern": "not yet externally auditable|internal session logs|[Rr]edacted (session-)?log samples|email below to inquire", "unless": "", "why": "False caveat. Raising session records are full public transcripts at sage/instances/<line>/sessions/ in dp-web4/SAGE (repo public, GitHub API 2026-09-19). What is unpublished is the reading method. A caveat is a factual claim and gets verified like one; this one deterred the audit it said was missing."},
-    {"id": "home-restates-fleet-line-states", "withdrawn": "2026-09-19", "pattern": "both Qwen lines", "unless": "", "why": "Home cited a /fleet count /fleet had replaced: three Qwen lines, CBP running. Home points to /fleet and restates no line state."},
-    {"id": "fleet-two-governing-dates", "withdrawn": "2026-09-19", "pattern": "before the 2026-09-12 count", "unless": "", "why": "The Raising-line state legend said 09-12 while the method paragraph said 09-18. One date governs: 09-18. Under it Legion (last record 2026-09-02) is quiet, not running."},
-    {"id": "tracks-dont-choose-task-definitions", "withdrawn": "2026-09-21", "pattern": "not chosen by the track itself|goal formation, self-modification", "unless": "", "why": "4-lab git history: 9 of 10 commits to maintainer/ and visitor/ CLAUDE.md carry a track prefix (counting 09-21), and all 11 commits to the maintainer checks do. The maintainer wrote its own stop rule (09-09) and reversed its own Step 0 (09-10). The purpose is authored by a human. The procedure is edited by the track. Flagged HIGH 09-20, unhandled because that maintainer session crashed."},
-    {"id": "no-track-can-modify-registry", "withdrawn": "2026-09-21", "pattern": "No track can modify the shared fleet registry", "unless": "", "why": "A capability claim resting on unverified process-level setup. Restated as practice (tracks are not given write access), which is what the same paragraph already said it was."},
-    {"id": "identity-collaborative-flat", "withdrawn": "2026-09-21", "pattern": "The resulting identity is collaborative", "unless": "", "why": "/raising stated flat what /principles #7 hedged as 'a framing, untested'; on 1,217 records the tutor is a fixed script with unconditional praise (SAGE session records; visitor 09-21 HIGH)."},
-    {"id": "constant-stimulus-unmeasured", "withdrawn": "2026-09-21", "pattern": "reports no such measurement|none has been reviewed for this page", "unless": "", "why": "Measured 2026-09-21 by maintainer/analysis/constant_stimulus_drift.py: no within-segment drift on the three descriptive measures; the only large change is the 2026-06-07 move onto the Rust sage-daemon (SAGE 046e45dc0)."},
-    {"id": "legion-e4b-not-in-session-record", "withdrawn": "2026-09-21", "pattern": "not visible in the session record|Both halves are now dead", "unless": "Until 2026-09-21 this card said", "why": "SAGE legion-gemma3-12b session_371..460: model gemma4:e4b (model_source: daemon health endpoint), from 2026-08-01. The cutover happened inside the old directory, the McNugget pattern."},
-    {"id": "being-in-site-voice", "withdrawn": "2026-09-21", "pattern": "went: the being", "unless": "", "why": "Ontological noun in site voice on a page that disowns consciousness readings; it is the operator's word in commit cc69c715, now quoted and attributed as such."},
-    {"id": "open-substrate-logged-as-drift", "withdrawn": "2026-09-19", "pattern": "open substrate.{0,12} is drift", "unless": "", "why": "The phrase is the upstream Web4 README's lead sentence since its September 2026 refocus. The site keeps 'ontology' and names the disagreement instead of logging upstream's headline as unattributed drift."},
-    {"id": "constant-stimulus-flat", "withdrawn": "2026-09-22", "pattern": "answers do not drift|measures are flat on all|strongest within-stretch effect is", "unless": "", "why": "Rerun 2026-09-22 excluding transport-error records (108 of 1,220) instead of <100 words: 3 of 21 tests nominal (p=0.008, 0.024, 0.026), mixed direction, none survives Bonferroni. The 09-21 filter kept part-failed records, which produced a spurious Legion p=0.003 decline. 'No corrected trend', not 'flat'."},
-    {"id": "hub-docker-tested-on-dev", "withdrawn": "2026-09-22", "pattern": "untested outside the development machine", "unless": "", "why": "web4 hub/README.md sprint 5: 'Docker untested on dev machine; first operator with Docker should report'. Untested anywhere, not tested-on-dev-only."},
-    {"id": "hub-api-is-mcp-server", "withdrawn": "2026-09-22", "pattern": "an MCP (\\(Model Context Protocol\\) )?HTTP server", "unless": "", "why": "web4 hub/README.md: 'a small MCP /tools/* convenience surface, a full REST /v1 API' - REST is the canonical write path."},
-    {"id": "hub-ledger-records-everything", "withdrawn": "2026-09-22", "pattern": "Acts as the trust-medium underneath", "unless": "", "why": "/context's worked example documents no chapter-ledger write for track work; the unscoped 'everything members do ... lands here' stated spec intent as current operation."},
-    {"id": "mcnugget-running-482", "withdrawn": "2026-09-22", "pattern": "running — 482 session records", "unless": "", "why": "SAGE mcnugget-gemma3-12b sessions 491-495 are all 'Daemon unreachable: HTTP Error 503'; no commit to the line after 2026-09-20 01:52 UTC; 43 of 47 gemma4:12b records carry a transport error."},
-    {"id": "evidence-ladder-four-kinds", "withdrawn": "2026-09-22", "pattern": "rest on four different kinds of evidence", "unless": "", "why": "The 2026-09-21 measured null is a fifth kind (measured internally, null) and bears on the internal-observations rung."},
-    {"id": "records-public-anyone-can-read", "withdrawn": "2026-09-23", "pattern": "anyone can read them without asking|session records (themselves )?are public,? as full transcripts", "unless": "", "why": "Undated public-record claim. True through 2026-09-19 only. SAGE commits cefb5c184 (2026-09-19 fleet ruling: being records private going forward), e57f6747 (CBP, 09-20), 8903017f (McNugget, 09-20), 18a6e92de (pub frozen at 240, 09-21)."},
-    {"id": "mcnugget-silent-since-0920", "withdrawn": "2026-09-23", "pattern": "silent since 2026-09-20", "unless": "", "why": "McNugget's public stop on 09-20 is the private-mirror switch (8903017f), not silence; supervisor and probe commits continue publicly."},
-    {"id": "raising-provisional-claim", "withdrawn": "2026-09-23", "pattern": "claiming, provisionally", "unless": "", "why": "No test in favor, the constant-stimulus measurement against; it is a working hypothesis. Wording dated to the site's first commit e35a6fa (2026-03-05)."},
-    {"id": "web4-protocol-site-voice", "withdrawn": "2026-09-23", "pattern": "Protocol: start with Web4|the protocol starting point|For the protocol and implementation|Want the protocol instead|the Web4 standard's", "unless": "", "why": "Web4 is an ontology in site voice; 'protocol'/'standard' were unattributed. Upstream nouns are quoted and attributed on /context."},
-    {"id": "t3v3-canon-neither-gated-misquote", "withdrawn": "2026-09-24", "pattern": "neither tensor is computed from|checked against, or gated by", "unless": "", "why": "Not in CANONICAL_TERMS_v1. Canon: 'Complementary, not combined. T3 measures trust, V3 measures value.' Its T3 NOT line defines combined as one 6-D tensor. The paraphrase manufactured a conflict with t3-v3-tensors.md §4.2 feedback."},
-    {"id": "oversight-always-machine-sense", "withdrawn": "2026-09-24", "pattern": "oversight(&rdquo;|”)? always means", "unless": "", "why": "/fleet's 'Oversight pool' is a registry budget label, not the machine-enforced sense; the /context claim is now scoped."},
-    {"id": "identity-continuity-no-metric", "withdrawn": "2026-09-24", "pattern": "interaction logs,? with no metric yet|no metric names what would actually be scored|does not yet yield a metric that could separate", "unless": "", "why": "maintainer/analysis/identity-continuity-attempt-2026-09-24.md: lexical similarity on the fixed tutor script separates Legion and McNugget on the same model (gemma3:12b). A candidate metric exists; the blocker is now what the developmental account predicts for a handed-history arm."},
-    {"id": "hill-curve-observed-for-trust", "withdrawn": "2026-09-25", "pattern": "curve shape observed|observed at both scales|following patterns analogous to Hill", "unless": "", "why": "The fleet trust tracker is a fixed step per outcome clamped to [0,1] (a ramp to a cap); no trust series has been fitted to or plotted against a Hill curve. /raising Pattern 3 and /principles already said so; /context called the shape observed at both scales."},
-    {"id": "sage-instance-holds-machine-lct", "withdrawn": "2026-09-25", "pattern": "instance directory holding the machine(&apos;|')s LCT|the identity the registry entry, the audit\\s+log, and the resulting commit all attribute to", "unless": "", "why": "SAGE instance identity files carry an lct:// name the SAGE bridge calls legacy (web4_lct_id null or a local placeholder). Machines' host LCTs are a separate credential; registry, audit log and commits name the machine by hostname and git author."},
-    {"id": "becoming-six-observed-patterns", "withdrawn": "2026-09-25", "pattern": "six observed patterns|observed descriptive categories", "unless": "", "why": "SAGE raising runners select phase question lists by session number (grounding 1-5 ... creating 41+), each asking for its pattern; Patterns 2-3 are harness-computed."},
-    {"id": "june-step-serving-software-only", "withdrawn": "2026-09-27", "pattern": "one large change was the serving software|day the serving software changed|turned out to be a\\s+serving-software change|change in serving software", "unless": "", "why": "SAGE 046e45dc0: before 2026-06-07 the Python daemon ignored the runner's system prompt (sent in unread metadata) and built its own identity prompt; after it the Rust daemon receives the runner's system prompt with no history. Web4 vocabulary in answers to the identical question 117/130 -> 0/273 (Legion), self-naming 21% -> 0. The step is a prompt change, not only a serving change."},
-    {"id": "only-one-quantitative-test", "withdrawn": "2026-09-27", "pattern": "(the one|the only) quantitative test\\b|it is the only quantitative evidence|The one measurement we have run", "unless": "", "why": "The identity-continuity metric (maintainer/analysis/identity-continuity-attempt-2026-09-24.md) is a second quantitative test of the raising records, with a non-null separation."}
+    {
+      "id": "v3-gates-recharge",
+      "withdrawn": "2026-09-11",
+      "pattern": "against V3\\b|V3\\b[^.]{0,60}-validated|Valuation gates|V3 (is|as) (the )?(gate|certifier)|V3[^.]{0,20}reaches across",
+      "unless": "NOT the gate|does not gate|not its certifier|earlier version|withdrawn|does not certify|never before",
+      "why": "Spec charge_atp: the society validates a value proof, converts ADP to ATP, THEN updates T3/V3. Canon names no tensor. V3 records the outcome; it does not gate recharge. Found live in 4 places on 09-14 after the 09-11 withdrawal."
+    },
+    {
+      "id": "t3-v3-verify-each-other",
+      "withdrawn": "2026-09-14",
+      "pattern": "T3 and V3 (are )?(verified|checked) against each other|T3 and V3 verify each other|T3[^.]{0,160}checked against its V3",
+      "unless": "not a claim that|neither tensor",
+      "why": "Canon: complementary, not combined. Spec t3-v3-tensors.md s.4 couples them both ways (T3 predicts V3; V3 outcomes feed T3). Neither is a verification of one against the other, and there is no pre-action T3-vs-V3 check."
+    },
+    {
+      "id": "v3-verifies-t3-via-peer-attestation",
+      "withdrawn": "2026-09-14",
+      "pattern": "verified by V3 \\(value\\) through peer attestation|V3 tensors[^.]{0,80}accumulate alongside|V3[^.]{0,80}accrues from peer verification",
+      "unless": "earlier version",
+      "why": "The SAGE peer trust tracker (sage/federation/peer_trust.py) holds T3 only. No V3 exists in the fleet tracker, and no attestation step verifies T3 by V3."
+    },
+    {
+      "id": "lct-portable-identity",
+      "withdrawn": "2026-09-14",
+      "pattern": "portable identity",
+      "unless": "earlier version|not a portable|rather than",
+      "why": "Canon binds an LCT permanently to one entity; /context's LCT row says non-transferable. 'Portable identity' in the worked example contradicted both."
+    },
+    {
+      "id": "arc-24-of-25",
+      "withdrawn": "2026-09-09",
+      "pattern": "\\b24 ?(/|of) ?25\\b|96\\.0 ?%",
+      "unless": "earlier|previously|was wrong|corrected",
+      "why": "Published ARC scorecard: total_environments_completed 23 of 25 (92.0%), 175 of 183 levels. 24/25 (96.0%) was wrong on five pages."
+    },
+    {
+      "id": "web4-no-runnable-demo",
+      "withdrawn": "2026-09-11",
+      "pattern": "no runnable demo",
+      "unless": "earlier|previously|no longer",
+      "why": "web4-core 0.3.0 is published on crates.io and PyPI and the Hub reference daemon lives in the repo."
+    },
+    {
+      "id": "delegation-instance-is-atp",
+      "withdrawn": "2026-09-14",
+      "pattern": "closest thing on this site is the budget",
+      "unless": "earlier version",
+      "why": "ATP allocates resource, not authority. Canon's Delegation grants authority; Hestia's delegate grant/revoke is the instance."
+    },
+    {
+      "id": "fleet-independent-review-seats",
+      "withdrawn": "2026-09-14",
+      "pattern": "independent implementation and review seats",
+      "unless": "not yet independent",
+      "why": "The tracks that write and audit the site share model families (/autonomy's correlated-auditor limit); /context says no external or blinded check exists."
+    },
+    {
+      "id": "synchronism-discovers-equations",
+      "withdrawn": "2026-09-14",
+      "pattern": "Synchronism discovers the equations",
+      "unless": "",
+      "why": "Stated flat beside a 400x failed derivation. Synchronism proposes; nothing here has been validated."
+    },
+    {
+      "id": "loop-fixes-within-one-cycle",
+      "withdrawn": "2026-09-14",
+      "pattern": "fixed reliably within one cycle",
+      "unless": "not reliably within one cycle",
+      "why": "Unmeasured, and contradicted by the 08-12..09-04 gap and by V3-as-gate living 3 days on 4 pages after withdrawal."
+    },
+    {
+      "id": "identity-portability-as-discovery",
+      "withdrawn": "2026-09-14",
+      "pattern": "surprising discover|Not because we engineered continuity",
+      "unless": "",
+      "why": "/raising calls persistence across a port that carries the state files partly true by construction and untested; the scramble control has not run."
+    },
+    {
+      "id": "thresholds-not-derivable-universal",
+      "withdrawn": "2026-09-14",
+      "pattern": "trust thresholds are empirical, not derivable",
+      "unless": "",
+      "why": "One failed derivation shows that derivation failed, not that none can succeed."
+    },
+    {
+      "id": "fleet-dated-today",
+      "withdrawn": "2026-09-14",
+      "pattern": "2026-\\d\\d-\\d\\d \\(today\\)|the most recent today",
+      "unless": "",
+      "why": "A page can't know when it is read. '(today)' on a 2026-09-12 count was two days stale when the visitor read it on 09-14."
+    },
+    {
+      "id": "fleet-t3v3-scores-live",
+      "withdrawn": "2026-09-15",
+      "pattern": "per-peer T3/V3 scores (are|is) live",
+      "unless": "",
+      "why": "The fleet peer tracker keeps T3 only and holds no V3 (sage/federation/peer_trust.py; /fleet said both in one paragraph and 'T3 only' three paragraphs later)."
+    },
+    {
+      "id": "sprout-488-restated",
+      "withdrawn": "2026-09-15",
+      "pattern": "stands at 488",
+      "unless": "",
+      "why": "/fleet retracted 488 (the 0.8b line as of July); /raising kept restating it with 'see /fleet'. Point at the owning page, don't restate its number."
+    },
+    {
+      "id": "quick-start-on-links",
+      "withdrawn": "2026-09-15",
+      "pattern": "Quick-start commands are on ?/links",
+      "unless": "",
+      "why": "The only quick start is on /projects#quick-start; /links links to it. Pointer outlived the single-sourcing."
+    },
+    {
+      "id": "links-leads-with-2563",
+      "withdrawn": "2026-09-15",
+      "pattern": "leads with the 2,563",
+      "unless": "Until 2026-09-15 this sentence said",
+      "why": "/links leads with 2,442 and gives 2,563 in parentheses. A sentence describing another page's figure, not reading it."
+    },
+    {
+      "id": "community-channels-on-links",
+      "withdrawn": "2026-09-15",
+      "pattern": "and community channels",
+      "unless": "",
+      "why": "/links lists repos, issue trackers and one email. No forum, chat or mailing list exists."
+    },
+    {
+      "id": "fleet-capacity-as-finding",
+      "withdrawn": "2026-09-15",
+      "pattern": "One finding shapes fleet strategy|fleet capacity findings|outperforms Phi-4",
+      "unless": "",
+      "why": "Evidence ladder files model-capacity as an internal observation with no metric; /fleet and /context called it a finding and an empirical result."
+    },
+    {
+      "id": "harness-ablation-in-progress",
+      "withdrawn": "2026-09-15",
+      "pattern": "Phase 2 work is isolating",
+      "unless": "",
+      "why": "No harness ablation has run or is scheduled; Phase 2 is local-model transfer (Gemma 4 E4B), which swaps the model rather than removing the harness."
+    },
+    {
+      "id": "coupling-empirical-grounding",
+      "withdrawn": "2026-09-15",
+      "pattern": "provide empirical grounding",
+      "unless": "",
+      "why": "Single-trial result on a coherence measure defined only inside the experiment; Principle 5 calls it ungrounded."
+    },
+    {
+      "id": "independent-security-reviews",
+      "withdrawn": "2026-09-15",
+      "pattern": "independent security reviews",
+      "unless": "not independent in the external",
+      "why": "Fleet-run, cross-model-family reviews; /context states there is no external, blinded or third-party check anywhere in the loop."
+    },
+    {
+      "id": "mcnugget-gemma3-current",
+      "withdrawn": "2026-09-15",
+      "pattern": "Gemma 3 12B \\(ollama\\) — instance mcnugget",
+      "unless": "",
+      "why": "Every McNugget session record from 449 (2026-09-08 UTC) names gemma4:12b; the instance directory name predates the switch."
+    },
+    {
+      "id": "raising-always-in-context",
+      "withdrawn": "2026-09-15",
+      "pattern": "always in-context|never weights|raising itself never does",
+      "unless": "Until 2026-09-15 this page said|not true of the history",
+      "why": "SAGE sprout-qwen2.5-0.5b: 84 session records with using_lora: true (2026-01-27..03-06), adapter trained on its own raising exchanges by sage/raising/training/sleep_training.py and loaded by autonomous_conversation.py. Frozen weights hold only since BECOMING_CURRICULUM.md (2026-04-04)."
+    },
+    {
+      "id": "becoming-label-as-observation",
+      "withdrawn": "2026-09-15",
+      "pattern": "BECOMING pattern observed: \\w",
+      "unless": "",
+      "why": "The card label is identity.json phase_name, set by session number in run_session_identity_anchored_fluid.py / ollama_raising_session.py (creating = 41+). A schedule, not an observation."
+    },
+    {
+      "id": "dream-becomes-identity-uncaveated",
+      "withdrawn": "2026-09-15",
+      "pattern": "session experience becomes long-term identity",
+      "unless": "",
+      "why": "The consolidator is Claude (dream_consolidation.py, claude --print), writing identity.json; uncaveated, the sentence hides that the identity record is partly the consolidator's wording."
+    },
+    {
+      "id": "rust-daemon-runs-12-step-loop",
+      "withdrawn": "2026-09-15",
+      "pattern": "starts the 12-step|dashboard shows it cycling|the current posture, and SNARC",
+      "unless": "",
+      "why": "SAGE sage/docs/RUST_VS_PYTHON_CAPABILITY.md: sage-daemon is an inference-and-metabolism gateway, posture/select/govern/filter ABSENT; dashboard.html has no posture and updateSnarc() is never called."
+    },
+    {
+      "id": "policygate-is-hardbounds",
+      "withdrawn": "2026-09-15",
+      "pattern": "Hardbound's enforcement checkpoint|Hardbound oversight sub-gate|PolicyGate is Hardbound",
+      "unless": "until 2026-09-15|Until 2026-09-15|used to separate",
+      "why": "sage/irp/plugins/policy_gate.py is SAGE's 'conscience checkpoint', mapped to step 10 Govern by the capability matrix; no Hardbound reference in the public code."
+    },
+    {
+      "id": "tired-energized-states",
+      "withdrawn": "2026-09-15",
+      "pattern": "tired ?/? energized|tired, energized",
+      "unless": "",
+      "why": "SAGE's metabolic controller names five states, WAKE/FOCUS/REST/DREAM/CRISIS, in both the Python kernel and the Rust daemon."
+    },
+    {
+      "id": "success-nudges-talent-only",
+      "withdrawn": "2026-09-15",
+      "pattern": "a success nudges Talent|successful task nudges the peer's Talent from 0.500 to 0.505 \\(",
+      "unless": "",
+      "why": "peer_trust.rs success deltas are talent +0.05, training +0.02, temperament +0.05: all three move."
+    },
+    {
+      "id": "hestia-is-sage-peer-tracker",
+      "withdrawn": "2026-09-15",
+      "pattern": "A trust tracker — hestia|hestia's current tracker holds three numbers per peer",
+      "unless": "",
+      "why": "Hestia's trust store (hestia repo core/src/derivation.rs, per member/role, adjudicated V3) and SAGE's peer_trust.rs (per peer machine, T3 only, own observations) are separate components."
+    },
+    {
+      "id": "atp-adp-two-artifacts",
+      "withdrawn": "2026-09-15",
+      "pattern": "one artifact for (the )?intention, one for the result",
+      "unless": "Until 2026-09-15 this",
+      "why": "atp-adp-cycle.md §1.2/§2: one semifungible token in two states, society-managed pools, minted as ADP, returned to pool on discharge. Two records is the fleet registry's approximation."
+    },
+    {
+      "id": "hardbound-gates-hardware-root-today",
+      "withdrawn": "2026-09-16",
+      "pattern": "Hardbound, which gates and reverts|Hardbound enforces them|It gates and reverts; trust itself|The rule binds Hardbound, which gates",
+      "unless": "",
+      "why": "/projects Hardbound card: hardware-anchored enforcement 'is what this research is building toward, not the current mechanism'; enforcement today is process-level. Present-tense gating against a hardware root was live on Home, /projects Hestia card, /context (3x) and P10."
+    },
+    {
+      "id": "raising-mechanism-unscoped",
+      "withdrawn": "2026-09-16",
+      "pattern": "in raising sessions, we shape context|interaction-history half",
+      "unless": "",
+      "why": "Sprout Qwen 0.5B line loaded a self-trained LoRA 2026-01-27..03-06 (84 session records using_lora: true). The 09-15 scoping reached P7 and /context but not /raising's mechanism paragraph; 'half' invented a two-part split of T3-Training."
+    },
+    {
+      "id": "self-description-drift-across-port",
+      "withdrawn": "2026-09-16",
+      "pattern": "self-description drifted (even though|while) (those|the) inputs|showed a consistent\\s+separation",
+      "unless": "until 2026-09-16",
+      "why": "SAGE commit 4f30be970 experience_buffer: both self-descriptions are TinyLlama output on CBP, sessions 115 (22:16) and 117 (22:58) on 2026-02-27; identity.json net diff is session_count and last_session only. Not drift across the port."
+    },
+    {
+      "id": "memoriescape-sprout-qwen-coinage",
+      "withdrawn": "2026-09-16",
+      "pattern": "SAGE-Sprout's own coinage",
+      "unless": "",
+      "why": "First occurrence (git -S) is a TinyLlama 1.1B response on CBP, session 117, 2026-02-27; the 'shape you can sense but not access' gloss was the prompt's wording."
+    },
+    {
+      "id": "thor-lora-loaded",
+      "withdrawn": "2026-09-16",
+      "pattern": "27B \\(transformers\\) · LoRA —",
+      "unless": "",
+      "why": "thor-qwen3.5-27b instance.json has_lora: false since 2026-03-14 (before its raising sessions); training/sessions empty; '· LoRA' was the manifest's lora_capable flag."
+    },
+    {
+      "id": "site-prose-above-equation",
+      "withdrawn": "2026-09-16",
+      "pattern": "more precise than the equation",
+      "unless": "",
+      "why": "Ranked site prose above canon. t3-v3-tensors.md: RDF triples in the MRH bind tensors to entity-role pairs; that is what the + does not show."
+    },
+    {
+      "id": "plus-glyph-canonical",
+      "withdrawn": "2026-09-17",
+      "pattern": "canonically .augmented with",
+      "unless": "",
+      "why": "The equation and its glyphs are not in CANONICAL_TERMS_v1; the /projects legend says so. 'Canonically' survived the 2026-09-09 provenance correction on the Web4 card."
+    },
+    {
+      "id": "atp-declared-before-action",
+      "withdrawn": "2026-09-17",
+      "pattern": "allocation declared before an action runs",
+      "unless": "",
+      "why": "Canon ATP: consumed by action, regenerated through contribution; atp-adp-cycle.md: charged state of a pooled token. 'Declared before an action' is the registry shape withdrawn from /context's ATP/ADP section on 2026-09-15 but left in the glossary row."
+    },
+    {
+      "id": "adp-record-of-actual-outcome",
+      "withdrawn": "2026-09-17",
+      "pattern": "the record of actual outcome|ADP\\)? records what was\\s+actually spent",
+      "unless": "this row.s wording until",
+      "why": "Canon ADP: spent form of ATP, recyclable through validation; spec: discharged token state returned to the pool. A spend record is the fleet registry's approximation."
+    },
+    {
+      "id": "r7-every-tensor-delta",
+      "withdrawn": "2026-09-17",
+      "pattern": "R7.s seventh element in all but name",
+      "unless": "Until 2026-09-17",
+      "why": "r6-framework.md intro: 'R6 Results do include implicit tensor updates'; atp-adp-cycle.md R6/R7 note: direct-participant T3/V3 deltas are R6 Results. R7 is the cross-scale reputation feed; /context's R6/R7 section and /autonomy already said so."
+    },
+    {
+      "id": "sovereign-founding-member",
+      "withdrawn": "2026-09-17",
+      "pattern": "A Web4 society.s founding member",
+      "unless": "",
+      "why": "society-roles.md §2.1: Sovereign is a base-mandatory role (final charter-amendment authority, identity of last resort), fillable by human, AI, organization, society or federation."
+    },
+    {
+      "id": "identity-def-curriculum-state",
+      "withdrawn": "2026-09-17",
+      "pattern": "measured via raising curriculum state|behavioral patterns, accumulated experience,\\s+raising curriculum state|interaction patterns, accumulated experience, and raising curriculum\\.",
+      "unless": "until 2026-09-17",
+      "why": "/raising's definition excludes curriculum state (an input the treatment supplies, so it cannot measure the outcome). /context quoted, and /raising's status paragraph and /fleet restated, the older three-part version."
+    },
+    {
+      "id": "identity-def-on-home-page",
+      "withdrawn": "2026-09-17",
+      "pattern": "operational definition (this page and the home page give|behind the metaphor is on the\\s*home page)",
+      "unless": "",
+      "why": "Home carries no identity definition (rendered-text grep for 'session-to-session': zero). The definition is on /raising."
+    },
+    {
+      "id": "tensor-dimensions-in-expansion-slot",
+      "withdrawn": "2026-09-17",
+      "pattern": "\\b(T3|V3)( tensors?| scores?)?\\s*\\((Talent|Valuation)",
+      "unless": "",
+      "why": "CANONICAL_TERMS_v1: T3 = Trust Tensor, V3 = Value Tensor; the three dimensions are contents, not expansion. Four instances survived expansion greps (/context worked example x2, /fleet peer section, /raising mechanism paragraph)."
+    },
+    {
+      "id": "tool-stages-readiness-gated",
+      "withdrawn": "2026-09-17",
+      "pattern": "demonstrated readiness",
+      "unless": "Until 2026-09-17|No such check",
+      "why": "Curriculum phases advance by session number (/fleet); SAGE run_session_identity_anchored_fluid.py sets tool stage from a --tools CLI flag (silent/aware/active). No readiness assessment in code."
+    },
+    {
+      "id": "arc-no-published-baseline",
+      "withdrawn": "2026-09-17",
+      "pattern": "no published baseline|publishes no baseline",
+      "unless": "Until 2026-09-17",
+      "why": "ARC Prize scoring (RHAE) is action efficiency against a human baseline: median first-time human per level since the 2026-04-14 changelog, 3 days before the 2026-04-17 run; arcprize.org/arc-agi/3: '100% ... as efficiently as humans'."
+    },
+    {
+      "id": "account-pools-are-atp-cycle",
+      "withdrawn": "2026-09-17",
+      "pattern": "resource accounting for work done on these machines is the|pools are the human-scale version of",
+      "unless": "",
+      "why": "Canon ATP is regenerated through contribution; the account budgets reset every Thursday regardless of output. Analogy, not instance."
+    },
+    {
+      "id": "oversight-pool-machine-enforced",
+      "withdrawn": "2026-09-17",
+      "pattern": "Oversight: continuous availability, review and gating",
+      "unless": "",
+      "why": "The pool name is fleet.json's budget-account label (review, planning, coordination); the 2026-09-15 note under the heading withdrew the machine-enforced sense but the pools gloss above it kept it."
+    },
+    {
+      "id": "pattern6-attributes-to-raising",
+      "withdrawn": "2026-09-17",
+      "pattern": "awareness developed in raising now\\s+applies",
+      "unless": "",
+      "why": "Same paragraph: 'Co-present with raising, not attributed to it'; no run without raising history exists."
+    },
+    {
+      "id": "specialization-not-assigned",
+      "withdrawn": "2026-09-17",
+      "pattern": "specialization isn.t assigned; it emerges",
+      "unless": "",
+      "why": "Fleet routing assigns work; /raising's deflationary section names task routing as the simpler explanation."
+    },
+    {
+      "id": "governance-note-restated-per-page",
+      "withdrawn": "2026-09-17",
+      "pattern": "predates (the lab.s|this lab.s|Principle 10.s) governance.oversight",
+      "unless": "is NOT the sense the word carries",
+      "why": "Consolidated: the SAGE-name note had been appended on 7 of 9 pages (27 rendered mentions); both 09-17 visitor passes that counted it read it as the site talking to its auditors. One explanation lives at /context#governance-oversight. Link there; do not restate."
+    },
+    {
+      "id": "cbp-raising-line-paused",
+      "withdrawn": "2026-09-18",
+      "pattern": "paused . 240 session records",
+      "unless": "until 2026-09-18",
+      "why": "CBP migrated to cbp-qwen3.8-distill-4b on 2026-09-12, carrying all 240 sessions whole; that line is at 263 and fired 2026-09-18 08:03 UTC. The page was counting the directory the line had left."
+    },
+    {
+      "id": "sprout-loop-stopped-2026-08-28",
+      "withdrawn": "2026-09-18",
+      "pattern": "(Then the loop stopped|no .Sprout-Raising. commit exists anywhere in the repo after it)",
+      "unless": "(is withdrawn|should not have been used|subject-prefix absence)",
+      "why": "The 2026-08-28 thinning fires bracket a documented live model swap (cc69c715, 03:16 UTC); the swap commit says the being finished session 625 on the new model. The supporting evidence was a subject-prefix absence, the exact test /fleet demonstrates to be unsound; the successor line commits as raising(sprout):."
+    },
+    {
+      "id": "sprout-counts-are-additive",
+      "withdrawn": "2026-09-18",
+      "pattern": "and a further 625",
+      "unless": "double-count",
+      "why": "All 625 of the 0.8b line's record filenames reappear on sprout-qwen3.8-distill-2b: the 661 contains them. Reading the two lines as separate stacks counted 625 sessions twice."
+    },
+    {
+      "id": "all-lab-code-is-mit0",
+      "withdrawn": "2026-09-18",
+      "pattern": "code these principles produced is public and MIT-0",
+      "unless": "",
+      "why": "SAGE, web4, hestia, 4-hub and 4-life are AGPL-3.0 (GitHub API, 2026-09-18); only ARC-SAGE is MIT-0. Copyleft vs public-domain-equivalent is the one claim on /principles a reader would act on."
+    },
+    {
+      "id": "session-logs-not-auditable",
+      "withdrawn": "2026-09-19",
+      "pattern": "not yet externally auditable|internal session logs|[Rr]edacted (session-)?log samples|email below to inquire",
+      "unless": "",
+      "why": "False caveat. Raising session records are full public transcripts at sage/instances/<line>/sessions/ in dp-web4/SAGE (repo public, GitHub API 2026-09-19). What is unpublished is the reading method. A caveat is a factual claim and gets verified like one; this one deterred the audit it said was missing."
+    },
+    {
+      "id": "home-restates-fleet-line-states",
+      "withdrawn": "2026-09-19",
+      "pattern": "both Qwen lines",
+      "unless": "",
+      "why": "Home cited a /fleet count /fleet had replaced: three Qwen lines, CBP running. Home points to /fleet and restates no line state."
+    },
+    {
+      "id": "fleet-two-governing-dates",
+      "withdrawn": "2026-09-19",
+      "pattern": "before the 2026-09-12 count",
+      "unless": "",
+      "why": "The Raising-line state legend said 09-12 while the method paragraph said 09-18. One date governs: 09-18. Under it Legion (last record 2026-09-02) is quiet, not running."
+    },
+    {
+      "id": "tracks-dont-choose-task-definitions",
+      "withdrawn": "2026-09-21",
+      "pattern": "not chosen by the track itself|goal formation, self-modification",
+      "unless": "",
+      "why": "4-lab git history: 9 of 10 commits to maintainer/ and visitor/ CLAUDE.md carry a track prefix (counting 09-21), and all 11 commits to the maintainer checks do. The maintainer wrote its own stop rule (09-09) and reversed its own Step 0 (09-10). The purpose is authored by a human. The procedure is edited by the track. Flagged HIGH 09-20, unhandled because that maintainer session crashed."
+    },
+    {
+      "id": "no-track-can-modify-registry",
+      "withdrawn": "2026-09-21",
+      "pattern": "No track can modify the shared fleet registry",
+      "unless": "",
+      "why": "A capability claim resting on unverified process-level setup. Restated as practice (tracks are not given write access), which is what the same paragraph already said it was."
+    },
+    {
+      "id": "identity-collaborative-flat",
+      "withdrawn": "2026-09-21",
+      "pattern": "The resulting identity is collaborative",
+      "unless": "",
+      "why": "/raising stated flat what /principles #7 hedged as 'a framing, untested'; on 1,217 records the tutor is a fixed script with unconditional praise (SAGE session records; visitor 09-21 HIGH)."
+    },
+    {
+      "id": "constant-stimulus-unmeasured",
+      "withdrawn": "2026-09-21",
+      "pattern": "reports no such measurement|none has been reviewed for this page",
+      "unless": "",
+      "why": "Measured 2026-09-21 by maintainer/analysis/constant_stimulus_drift.py: no within-segment drift on the three descriptive measures; the only large change is the 2026-06-07 move onto the Rust sage-daemon (SAGE 046e45dc0)."
+    },
+    {
+      "id": "legion-e4b-not-in-session-record",
+      "withdrawn": "2026-09-21",
+      "pattern": "not visible in the session record|Both halves are now dead",
+      "unless": "Until 2026-09-21 this card said",
+      "why": "SAGE legion-gemma3-12b session_371..460: model gemma4:e4b (model_source: daemon health endpoint), from 2026-08-01. The cutover happened inside the old directory, the McNugget pattern."
+    },
+    {
+      "id": "being-in-site-voice",
+      "withdrawn": "2026-09-21",
+      "pattern": "went: the being",
+      "unless": "",
+      "why": "Ontological noun in site voice on a page that disowns consciousness readings; it is the operator's word in commit cc69c715, now quoted and attributed as such."
+    },
+    {
+      "id": "open-substrate-logged-as-drift",
+      "withdrawn": "2026-09-19",
+      "pattern": "open substrate.{0,12} is drift",
+      "unless": "",
+      "why": "The phrase is the upstream Web4 README's lead sentence since its September 2026 refocus. The site keeps 'ontology' and names the disagreement instead of logging upstream's headline as unattributed drift."
+    },
+    {
+      "id": "constant-stimulus-flat",
+      "withdrawn": "2026-09-22",
+      "pattern": "answers do not drift|measures are flat on all|strongest within-stretch effect is",
+      "unless": "",
+      "why": "Rerun 2026-09-22 excluding transport-error records (108 of 1,220) instead of <100 words: 3 of 21 tests nominal (p=0.008, 0.024, 0.026), mixed direction, none survives Bonferroni. The 09-21 filter kept part-failed records, which produced a spurious Legion p=0.003 decline. 'No corrected trend', not 'flat'."
+    },
+    {
+      "id": "hub-docker-tested-on-dev",
+      "withdrawn": "2026-09-22",
+      "pattern": "untested outside the development machine",
+      "unless": "",
+      "why": "web4 hub/README.md sprint 5: 'Docker untested on dev machine; first operator with Docker should report'. Untested anywhere, not tested-on-dev-only."
+    },
+    {
+      "id": "hub-api-is-mcp-server",
+      "withdrawn": "2026-09-22",
+      "pattern": "an MCP (\\(Model Context Protocol\\) )?HTTP server",
+      "unless": "",
+      "why": "web4 hub/README.md: 'a small MCP /tools/* convenience surface, a full REST /v1 API' - REST is the canonical write path."
+    },
+    {
+      "id": "hub-ledger-records-everything",
+      "withdrawn": "2026-09-22",
+      "pattern": "Acts as the trust-medium underneath",
+      "unless": "",
+      "why": "/context's worked example documents no chapter-ledger write for track work; the unscoped 'everything members do ... lands here' stated spec intent as current operation."
+    },
+    {
+      "id": "mcnugget-running-482",
+      "withdrawn": "2026-09-22",
+      "pattern": "running — 482 session records",
+      "unless": "",
+      "why": "SAGE mcnugget-gemma3-12b sessions 491-495 are all 'Daemon unreachable: HTTP Error 503'; no commit to the line after 2026-09-20 01:52 UTC; 43 of 47 gemma4:12b records carry a transport error."
+    },
+    {
+      "id": "evidence-ladder-four-kinds",
+      "withdrawn": "2026-09-22",
+      "pattern": "rest on four different kinds of evidence",
+      "unless": "",
+      "why": "The 2026-09-21 measured null is a fifth kind (measured internally, null) and bears on the internal-observations rung."
+    },
+    {
+      "id": "records-public-anyone-can-read",
+      "withdrawn": "2026-09-23",
+      "pattern": "anyone can read them without asking|session records (themselves )?are public,? as full transcripts",
+      "unless": "",
+      "why": "Undated public-record claim. True through 2026-09-19 only. SAGE commits cefb5c184 (2026-09-19 fleet ruling: being records private going forward), e57f6747 (CBP, 09-20), 8903017f (McNugget, 09-20), 18a6e92de (pub frozen at 240, 09-21)."
+    },
+    {
+      "id": "mcnugget-silent-since-0920",
+      "withdrawn": "2026-09-23",
+      "pattern": "silent since 2026-09-20",
+      "unless": "",
+      "why": "McNugget's public stop on 09-20 is the private-mirror switch (8903017f), not silence; supervisor and probe commits continue publicly."
+    },
+    {
+      "id": "raising-provisional-claim",
+      "withdrawn": "2026-09-23",
+      "pattern": "claiming, provisionally",
+      "unless": "",
+      "why": "No test in favor, the constant-stimulus measurement against; it is a working hypothesis. Wording dated to the site's first commit e35a6fa (2026-03-05)."
+    },
+    {
+      "id": "web4-protocol-site-voice",
+      "withdrawn": "2026-09-23",
+      "pattern": "Protocol: start with Web4|the protocol starting point|For the protocol and implementation|Want the protocol instead|the Web4 standard's",
+      "unless": "",
+      "why": "Web4 is an ontology in site voice; 'protocol'/'standard' were unattributed. Upstream nouns are quoted and attributed on /context."
+    },
+    {
+      "id": "t3v3-canon-neither-gated-misquote",
+      "withdrawn": "2026-09-24",
+      "pattern": "neither tensor is computed from|checked against, or gated by",
+      "unless": "",
+      "why": "Not in CANONICAL_TERMS_v1. Canon: 'Complementary, not combined. T3 measures trust, V3 measures value.' Its T3 NOT line defines combined as one 6-D tensor. The paraphrase manufactured a conflict with t3-v3-tensors.md §4.2 feedback."
+    },
+    {
+      "id": "oversight-always-machine-sense",
+      "withdrawn": "2026-09-24",
+      "pattern": "oversight(&rdquo;|”)? always means",
+      "unless": "",
+      "why": "/fleet's 'Oversight pool' is a registry budget label, not the machine-enforced sense; the /context claim is now scoped."
+    },
+    {
+      "id": "identity-continuity-no-metric",
+      "withdrawn": "2026-09-24",
+      "pattern": "interaction logs,? with no metric yet|no metric names what would actually be scored|does not yet yield a metric that could separate",
+      "unless": "",
+      "why": "maintainer/analysis/identity-continuity-attempt-2026-09-24.md: lexical similarity on the fixed tutor script separates Legion and McNugget on the same model (gemma3:12b). A candidate metric exists; the blocker is now what the developmental account predicts for a handed-history arm."
+    },
+    {
+      "id": "hill-curve-observed-for-trust",
+      "withdrawn": "2026-09-25",
+      "pattern": "curve shape observed|observed at both scales|following patterns analogous to Hill",
+      "unless": "",
+      "why": "The fleet trust tracker is a fixed step per outcome clamped to [0,1] (a ramp to a cap); no trust series has been fitted to or plotted against a Hill curve. /raising Pattern 3 and /principles already said so; /context called the shape observed at both scales."
+    },
+    {
+      "id": "sage-instance-holds-machine-lct",
+      "withdrawn": "2026-09-25",
+      "pattern": "instance directory holding the machine(&apos;|')s LCT|the identity the registry entry, the audit\\s+log, and the resulting commit all attribute to",
+      "unless": "",
+      "why": "SAGE instance identity files carry an lct:// name the SAGE bridge calls legacy (web4_lct_id null or a local placeholder). Machines' host LCTs are a separate credential; registry, audit log and commits name the machine by hostname and git author."
+    },
+    {
+      "id": "becoming-six-observed-patterns",
+      "withdrawn": "2026-09-25",
+      "pattern": "six observed patterns|observed descriptive categories",
+      "unless": "",
+      "why": "SAGE raising runners select phase question lists by session number (grounding 1-5 ... creating 41+), each asking for its pattern; Patterns 2-3 are harness-computed."
+    },
+    {
+      "id": "june-step-serving-software-only",
+      "withdrawn": "2026-09-27",
+      "pattern": "one large change was the serving software|day the serving software changed|turned out to be a\\s+serving-software change|change in serving software",
+      "unless": "",
+      "why": "SAGE 046e45dc0: before 2026-06-07 the Python daemon ignored the runner's system prompt (sent in unread metadata) and built its own identity prompt; after it the Rust daemon receives the runner's system prompt with no history. Web4 vocabulary in answers to the identical question 117/130 -> 0/273 (Legion), self-naming 21% -> 0. The step is a prompt change, not only a serving change."
+    },
+    {
+      "id": "only-one-quantitative-test",
+      "withdrawn": "2026-09-27",
+      "pattern": "(the one|the only) quantitative test\\b|it is the only quantitative evidence|The one measurement we have run",
+      "unless": "",
+      "why": "The identity-continuity metric (maintainer/analysis/identity-continuity-attempt-2026-09-24.md) is a second quantitative test of the raising records, with a non-null separation."
+    },
+    {
+      "id": "sage-cognition-kernel-as-current",
+      "withdrawn": "2026-09-29",
+      "pattern": "Engine — (an )?on-device cognition kernel|Engine, (an|the lab(&#x27;s|'s)) on-device cognition kernel|is the on-device AI cognition kernel|On-device cognition kernel\\. The continuous|cognition machines builds the one of|this lab(&#x27;s|'s) on-device\\s+cognition kernel",
+      "unless": "",
+      "why": "SAGE AGENTS.md + sage/docs/LATEST_STATUS.md (2026-09-26): 'not accurately summarized by the 2025 cognition kernel documents alone'; current unit is the being, boundary is the Hestia-governed gateway. The kernel framing stays as dated history only."
+    },
+    {
+      "id": "fleet-ruled-privacy",
+      "withdrawn": "2026-09-29",
+      "pattern": "the fleet ruled|fleet ruling|fleet&#x27;s ruling",
+      "unless": "",
+      "why": "SAGE commit cefb5c184 opens 'dp ruling 2026-09-19': the privacy decision was the human lead's. 'The fleet ruled' read as the agents deciding to stop publishing their own transcripts."
+    },
+    {
+      "id": "tracks-self-scheduled",
+      "withdrawn": "2026-09-29",
+      "pattern": "self-scheduled|a track picks when it runs",
+      "unless": "(said|say|row said) (&#x27;|'|“|&ldquo;|‘)self-scheduled",
+      "why": "/autonomy: a human writes each track's cron entry and tracks cannot change their schedule. 'Self-scheduled' was the page's own definition contradicting its own evidence."
+    },
+    {
+      "id": "null-leans-against",
+      "withdrawn": "2026-09-29",
+      "pattern": "lean the other way|no test in its favor and one against it",
+      "unless": "",
+      "why": "The constant-stimulus and identity-continuity nulls are on proxies growth is not defined by; the page itself says they do not refute growth as defined. A null is not a test against."
+    }
   ]
 }

@@ -20,7 +20,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer."
+            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway."
           />
           <ExternalLink
             href="https://4-gov.org"
@@ -53,7 +53,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
             title="SAGE"
-            description="Situation-Aware Governance Engine — on-device cognition kernel. 12-step cognition loop (Python kernel; the deployed Rust daemon is an inference-and-metabolism gateway), metabolic states, experience buffer."
+            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway."
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
@@ -170,7 +170,7 @@ export default function Links() {
           records through 2026-09-19 are public as full transcripts in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>{" "}
           under <code>sage/instances/&lt;line&gt;/sessions/</code>. Since then most lines mirror
-          their records privately under a fleet ruling; see{" "}
+          their records privately under a ruling by the lab's human lead, not the machines (SAGE commit cefb5c184); see{" "}
           <a href="/raising" style={{ color: "var(--color-accent)" }}>/raising</a>. Coding criteria
           and a rater protocol are not published, and no third party has
           reviewed the readings.

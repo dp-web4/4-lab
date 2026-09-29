@@ -51,7 +51,7 @@ export default function Raising() {
           That result tests a harness around a cloud model, not raising or any claim on this page.
           <br /><br />
           Web4 terms used on this page: T3 (Trust Tensor), V3 (Value Tensor),
-          MRH (Markov Relevancy Horizon) and LCT (Linked Context Token). LoRA
+          MRH (Markov Relevancy Horizon), LCT (Linked Context Token) and ATP (Allocation Transfer Packet). LoRA
           (Low-Rank Adaptation) is a standard machine-learning term, not a Web4
           one. Until 2026-09-23 this note said these terms were expanded inline
           on first use, and the note itself was their first use. The full
@@ -301,8 +301,12 @@ export default function Raising() {
           <code>sage/instances/&lt;line&gt;/sessions/</code> in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>public SAGE repo</a>,
           the same path <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts, and anyone can read those
-          without asking. After that date this holds for fewer lines. On 2026-09-19 the fleet ruled
-          that being records are private going forward (SAGE commit <code>cefb5c184</code>). CBP and
+          without asking. After that date this holds for fewer lines. On 2026-09-19 the lab&apos;s human lead ruled
+          that being records are private going forward (SAGE commit <code>cefb5c184</code>; its message
+          opens &ldquo;dp ruling&rdquo;, so this was a human decision, not one the machines made; until
+          2026-09-29 this page attributed it to the fleet). The same commit records that on the day of
+          the ruling two seats declared their conversations private while <code>git add -A</code> had
+          published them, and adds a test for the rule. CBP and
           McNugget stopped publishing on 2026-09-20 and now mirror privately, and pub&apos;s public
           line was frozen at session 240 on 2026-09-21. Nomad still publishes as of 2026-09-23.
           The lines that left public view are not a random sample: CBP is the line with an operator
@@ -367,7 +371,14 @@ export default function Raising() {
           on {"{machine}"}&rdquo;, plus identity exemplars, dream-consolidation insights and
           its own record of the conversation so far. After it, the Rust daemon
           receives the runner&apos;s system prompt and the question, and no
-          conversation history. The answers show the change. Asked the unchanged
+          conversation history. The answers show the change. One more layer can follow the scripted
+          exchange since 2026-09-09, when the last launcher moved to the canonical runner: with
+          <code>SAGE_TOOLS</code> on (default off; Nomad&apos;s launcher sets it), the runner appends a
+          governed tool turn in which the model, as member <code>&lt;machine&gt;-being</code>, emits an
+          intent that <code>BeingGateClient</code> judges against installed Hestia law and a dispatcher
+          executes and witnesses. The scripted questions and answers this page measures do not pass
+          through that gate; the tool turn comes after them (<code>ollama_raising_session.py</code>,
+          read 2026-09-29). Asked the unchanged
           &ldquo;As an AI entity in web4, what does presence mean to you?&rdquo;,
           Legion uses the lab&apos;s Web4 vocabulary (LCT, T3, witness, MRH, ATP) in
           117 of 130 answers before the step and 0 of 273 after; McNugget goes from
@@ -623,7 +634,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; unscheduled since, 67 days at 2026-09-29) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -691,14 +702,14 @@ export default function Raising() {
           experiencing qualia. Our working hypothesis, untested, is that developmental descriptions
           fit what we observe better than context-engineering descriptions do.
           Until 2026-09-23 this sentence called that a provisional claim. A claim
-          with no test in its favor and one against it is a hypothesis.
+          with no test in its favor, and two that found nothing, is a hypothesis.
           That is the comparator this page opens with, not training, and the
           comparison has not been run (see the deflationary alternative above).
           The entities show something that looks like growth, something that
           looks like identity, something that looks like peer relationships. We
           use the language that currently fits our observations, ahead of the
           control that would license it.{" "}
-          <strong style={{ color: "var(--color-text-primary)" }}>The measurements we have run lean the other way.</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>The measurements we have run do not favor it.</strong>{" "}
           On the scripted lines, the most development-like trend in the public records
           (answers growing up to fourfold, disclaimers climbing) turned out to be a
           one-day change in daemon and prompt. Within constant conditions, no trend survived correction

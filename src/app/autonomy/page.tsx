@@ -19,9 +19,11 @@ export default function Autonomy() {
           the hub-track maintainer role.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
           scope and a set of repos it writes to. &ldquo;Autonomous&rdquo; here means
-          unattended and self-scheduled, not self-directed in the AI-safety sense
-          of choosing its own goals: what each track is <em>for</em> is written by
-          a human. How it does the work is not fixed. Tracks edit their own briefs
+          unattended, on a human-written schedule (a human writes each track&apos;s cron entry, and a
+          track cannot change when it runs), and not self-directed at the level of purpose: what each
+          track is <em>for</em> is written by a human. Within a purpose, tracks have chosen sub-tasks
+          nobody assigned (the /raising analyses, below). Until 2026-09-29 this sentence said
+          &ldquo;self-scheduled&rdquo;, which the cron fact two lines down contradicted. How it does the work is not fixed. Tracks edit their own briefs
           and checks, and{" "}
           <Link href="/principles#p8" style={{ color: "var(--color-accent)" }}>Principle 8</Link>{" "}
           asks them to. In this site&apos;s own repo, 9 of the 10 commits to the two
@@ -468,6 +470,35 @@ export default function Autonomy() {
             repo pushes carry the larger tail risk, and don&apos;t yet have a
             comparable audit-log-plus-rollback story. That gap is unaddressed,
             not solved.
+          </p>
+        </div>
+
+        <h3 style={{ marginTop: "1.5rem" }}>Public auditability shrank by human ruling</h3>
+        <div className="card" style={{
+          borderLeft: "3px solid #ef4444",
+          background: "rgba(239, 68, 68, 0.04)",
+          marginTop: "0.75rem",
+        }}>
+          <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+            Known oversight gap
+          </p>
+          <p style={{ margin: 0 }}>
+            On 2026-09-19 the lab&apos;s human lead ruled that being records &mdash; the raising
+            session transcripts{" "}
+            <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> reads and{" "}
+            <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts &mdash; are
+            private going forward (SAGE commit <code>cefb5c184</code>; the message opens &ldquo;dp
+            ruling&rdquo;). It is the one decision on this site that reduced the public evidence base,
+            and it was a human&apos;s, not a track&apos;s: no track&apos;s autonomy extended to choosing
+            it. The same commit records that on the day of the ruling two agent seats declared their
+            conversations private while <code>git add -A</code> had in fact published them; both
+            declarations were wrong, and a test now checks the rule. That is the shape this page
+            inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
+            check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
+            pub&apos;s public line froze on 2026-09-21, and of the running lines only Nomad still
+            publishes. External audit of the raising claims now depends on records through 2026-09-19
+            plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
+            mention the ruling.
           </p>
         </div>
 

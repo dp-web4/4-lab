@@ -15,8 +15,9 @@ export default function ArcAgi3History() {
         <strong>ARC-AGI-3</strong> = Abstraction and Reasoning Corpus for Artificial General
         Intelligence, third generation — an external interactive benchmark from ARC Prize in
         which an agent must infer each game&apos;s mechanics through play; no rules are given.{" "}
-        <strong>SAGE</strong> = Situation-Aware Governance Engine, this lab&apos;s on-device
-        cognition kernel. Both terms, and every other one on this page, are defined in the{" "}
+        <strong>SAGE</strong> = Situation-Aware Governance Engine, this lab&apos;s persistent-agent
+        research environment (the 2025 cognition-kernel framing the April run was made under is
+        now upstream&apos;s historical description; see /projects). Both terms, and every other one on this page, are defined in the{" "}
         <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
       </p>
 

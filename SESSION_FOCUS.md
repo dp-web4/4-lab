@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-17*
+*Last updated: 2026-09-29*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-09-29 maintainer: zero expansion drift (two visitor days, eight passes). The 09-28 run died on credits; its HIGH (SAGE README has no install path or link to the site's quick start) is upstream and sits under sign-off. **Two HIGHs fixed, both the site describing a subject its sources had moved past, in correct vocabulary.** (1) SAGE was presented as the 2025 cognition kernel (12-step loop, six organs one per machine) on /projects, /fleet, /context, /links and /arc-agi-3; SAGE's `AGENTS.md` and `sage/docs/LATEST_STATUS.md` (2026-09-26) say that framing does not summarize the system and name the being → Hestia gateway as the current boundary. Reframed from upstream's words; organs kept as dated 2025 design; new `#being` and `#seat` glossary rows. (2) "The fleet ruled" on the 2026-09-19 privacy decision (4 pages) was the human lead's ruling (SAGE `cefb5c184` opens "dp ruling"); attributed by role, and /autonomy gained a known-gap card for the one decision that shrank the public evidence base. Also: "self-scheduled" → human-written schedule with the sub-task caveat in the definition; the /raising null no longer "leans" against the hypothesis; scramble control dated (67 days); LCT row carries canon's "and reputation". **Read, not flagged:** the being gate in the raising runner is a flag-gated tool turn appended after the scripted exchange (`SAGE_TOOLS`, Nomad on since 09-09), so the measured Q/A does not pass through Hestia law. Withdrawn 85 → 89, 19 live pre-fix, 0 after. **Researcher question:** SAGE now keeps a dated `LATEST_STATUS.md`; should Step 0 read its `As of:` line the way it reads the manifest's `updated_at`, and flag the SAGE card whenever it moves?
 
 2026-09-17 maintainer: zero expansion drift (ninth pass). **The one HIGH was self-inflicted:** 09-16's sed replacement contained `&apos;`, and sed's `&` re-inserted the matched clause into the /projects Web4 card ("equationthe … )apos;s …"). New `maintainer/check-render.py` (entity fragments, paren imbalance, words glued to inline tags) found 8 real hits on the pre-fix build, 0 after, and is wired into `check-caveats.sh`. A 7-word splice detector was tried first and missed the real splice (the clauses were paraphrases). CLAUDE.md now forbids entities in sed replacements. **Propagation fixes:** ATP/ADP glossary rows kept the 09-15 registry reading; R7 row contradicted the page's R6/R7 reading (`r6-framework.md` now agrees with the narrower one); Sovereign is a role (society-roles §2.1), not a member; 4 T3/V3 dimensions-in-expansion-slot forms; /fleet oversight pool in two senses; account budgets called "the ATP cycle". **Upstream-artifact corrections:** ARC's "no published baseline" was refuted on 4 pages (RHAE is human-relative; ARC Prize changed the baseline to median first-time human on 2026-04-14, 3 days before the run). The visitor's "≥80 of 115 pre-port sessions loaded LoRA" is 45 by distinct session number (84 is a file count across two numbering series). /raising's "demonstrated readiness" gate doesn't exist in code (tool stage is a CLI flag). Patterns 2–3 are harness-computed signals. Identity definition single-sourced on /raising (the "home page" definition didn't exist). **governance→oversight notes consolidated: 27 rendered mentions on 7 pages → 3 on /context**, guarded. Withdrawn: 38 → 53, all firing pre-fix. **Researcher question:** with Sensing and Relating reduced to harness signals, BECOMING's developmental content is two uncounted "increasing" claims (Patterns 4–5). Keep a six-pattern frame?
 
@@ -40,7 +42,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-17. Zero expansion drift across 9 pages (ninth consecutive clean pass); 4 dimensions-in-expansion-slot forms fixed and guarded.
+Last maintainer session: 2026-09-29. Zero expansion drift across 9 pages (every pass since 2026-09-08). The live failure class is stale subject description in correct vocabulary (SAGE framing, 09-29) and a collective noun standing in for a human decider.
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓

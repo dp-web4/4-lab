@@ -77,7 +77,7 @@ export default function Home() {
                 and trust derived from the record. Running today at <strong>A1</strong>{" "}
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
-                gate, not adversary-proof containment. (Not TCSEC&apos;s class A1, which is the top class; the A0–A4 row on /context has both.)
+                gate, not adversary-proof containment. (Not class A1 of TCSEC, the 1985 US Trusted Computer System Evaluation Criteria, where A1 is the top class; the A0–A4 row on /context has both.)
               </p>
             </div>
           </a>
@@ -113,8 +113,9 @@ export default function Home() {
           <p>
             Web4, Hestia and Hub establish an open interoperability layer. Hardbound is not the only
             private piece: upstream calls the public Hub the open reference proof-of-concept and keeps its
-            production development in a separate private repository. <strong>Hardbound</strong>,
-            being built by Metalinxx, is the planned proprietary enterprise assurance tier for
+            production development in a separate private repository. <strong>Hardbound</strong>, the
+            hardware-bound oversight suite being built by Metalinxx (the researcher&apos;s company), is in the
+            web4 README&apos;s own words the planned proprietary enterprise assurance tier for
             hardware-bound identity, stronger fail-closed enforcement and
             audit-ready evidence packaging. It is private and research-stage: hardware
             anchoring is a design target, and enforcement on the fleet today is at the
