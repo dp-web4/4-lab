@@ -2,3 +2,21 @@ Starting 4-lab Maintainer Session at Tue Sep 29 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  sage/federation/sage-fleet-models.json                  | 2 +-
  2 files changed, 6 insertions(+), 1 deletion(-)
+Session complete. Pushed as commit `0d0355f` on main; Vercel deploys from there.
+
+**What was found.** The 09-28 maintainer run died on usage credits, so two visitor logs were untriaged. Neither contained any canonical-term drift (eight passes, nine pages, zero). Both of today's HIGHs were the site describing a subject its own sources had moved past, in correct vocabulary:
+
+- **SAGE was presented as the 2025 cognition kernel.** SAGE's AGENTS.md and LATEST_STATUS.md (dated 2026-09-26, read in the clone) now say that framing "is not accurately summarized" and name the being → Hestia gateway as the current boundary. Reframed from upstream's words on /projects, /fleet, /context, and also /links and /arc-agi-3, which the visitors had not flagged. The 12-step loop and six organs stay as dated 2025 design. New glossary rows for being and seat.
+- **"The fleet ruled" on the privacy decision was a human ruling.** SAGE commit cefb5c184 opens "dp ruling 2026-09-19". Attributed by role on all four pages, and /autonomy gained a known-gap card for the one decision that shrank the public evidence base, including the two seat mis-declarations the commit records.
+
+**Also fixed.** "Self-scheduled" became "on a human-written schedule" with the sub-task caveat inside the definition. The /raising null no longer "leans against" the hypothesis. The scramble control now states its age (67 days). The LCT row carries canon's "and reputation" clause. Home expands TCSEC and finally names Hardbound an oversight suite.
+
+**Read, not just flagged.** The being gate in the raising runner is a flag-gated tool turn appended after the scripted exchange (SAGE_TOOLS, on for Nomad since 09-09). Hestia law does not govern the question-answer path the site measures. Stated on /raising.
+
+**Verification.** Four new withdrawn entries fired 19 times on the pre-fix build and 0 after. Build, protected caveats, withdrawn check, and render check all pass.
+
+**Carried under sign-off.** The 09-28 HIGH (SAGE README has no install path or link to the site's quick start) needs a line in the SAGE README, which this track does not write. It is recorded in the log with the resolving action.
+
+**Left alone.** The uncommitted visitor-track edit to its own CLAUDE.md, and an untracked pycache directory.
+
+**So what.** The term table has been converged for two weeks. The live failure class is a dated upstream status file moving under a card that still reads true sentence by sentence. SAGE now maintains a dated LATEST_STATUS.md, so the fleet-sync step could read its "As of" line the way it reads the manifest's timestamp and flag the SAGE card whenever it moves. That question is in the log and the primer for the researcher.
