@@ -8,12 +8,10 @@ import SiteSearch from "./SiteSearch";
 
 const links = [
   { href: "/projects", label: "Projects" },
-  { href: "/context", label: "Glossary" },
-  { href: "/arc-agi-3", label: "ARC-AGI-3" },
   { href: "/fleet", label: "Fleet" },
-  { href: "/autonomy", label: "Autonomy" },
   { href: "/raising", label: "Raising" },
-  { href: "/principles", label: "Principles" },
+  { href: "/principles", label: "How we work" },
+  { href: "/notebook", label: "Notebook" },
   { href: "/links", label: "Links" },
 ];
 

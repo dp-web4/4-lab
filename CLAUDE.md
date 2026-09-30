@@ -4,7 +4,10 @@
 
 ## What this is
 
-The meta-site for the dp-web4 research collective. Explains the lab: how it's organized, why it works, what the philosophy is. Nine pages covering projects, fleet, autonomy, raising, principles, context, links, and ARC-AGI-3.
+The meta-site for the dp-web4 research collective, in two layers (dp, 2026-09-30):
+
+- **The front**: short pages for human visitors (home, projects, fleet, raising, how we work, links). Status by label, detail by link. Owned by dp; changed only through reviewed PRs; held to word budgets by `scripts/check-front-length.mjs`.
+- **The notebook** (`/notebook/...`): the fleet's full working record, every claim with its evidence, date and caveats. Maintained daily by the autonomous tracks, and the place AI readers should start (`public/llms.txt`).
 
 **Site**: https://4-lab.io/ (custom domain; default Vercel subdomain `4-lab.vercel.app` still resolves)
 **Stack**: Next.js 14 + Tailwind CSS 4 + TypeScript
@@ -61,22 +64,30 @@ Avoid "production ready" — we are in R&D.
 
 ```
 src/app/
-  page.tsx              # Home
-  projects/page.tsx     # Ecosystem + project cards
-  fleet/page.tsx        # 6 machines
-  autonomy/page.tsx     # Daily cycle timeline
-  raising/page.tsx      # BECOMING phases
-  principles/page.tsx   # 10 principles
-  context/page.tsx      # Knowledge flow + canonical glossary
-  links/page.tsx        # External links + contact
-  arc-agi-3/page.tsx    # ARC-AGI-3 benchmark results
+  page.tsx                  # FRONT  Home
+  projects/page.tsx         # FRONT  What we build, with status labels
+  fleet/page.tsx            # FRONT  The eight machines
+  raising/page.tsx          # FRONT  AI beings
+  principles/page.tsx       # FRONT  How we work
+  links/page.tsx            # FRONT  Sites, code, packages
+  notebook/page.tsx         # FRONT  Notebook index (explains the two layers)
+  notebook/home/            # NOTEBOOK  former home page ("the lab view")
+  notebook/projects/        # NOTEBOOK  every repo, maturity, what claims rest on
+  notebook/fleet/           # NOTEBOOK  machines, models, raising lines, counting basis
+  notebook/raising/         # NOTEBOOK  curriculum, observations, limits
+  notebook/autonomy/        # NOTEBOOK  daily tracks          (/autonomy redirects here)
+  notebook/principles/      # NOTEBOOK  principles with reasoning
+  notebook/context/         # NOTEBOOK  canonical glossary     (/context, /glossary redirect here)
+  notebook/arc-agi-3/       # NOTEBOOK  spring 2026 benchmark  (/arc-agi-3 redirects here)
+  notebook/links/           # NOTEBOOK  every repo, site and fork
 ```
 
 ## Conventions
 
 - Don't introduce new dependencies (Next.js, React, TypeScript, Tailwind, lucide-react only)
 - `npx next build` must pass before pushing
-- Preserve honest assessments — never weaken caveats
+- Preserve honest assessments — never weaken caveats in the notebook. The front states status by label and links to the notebook for caveats; a missing caveat on the front is not an error.
+- Build checks: `prebuild` (dropped JSX spaces) and `postbuild` (front word budgets) must pass.
 - Project-specific accent colors: Web4 (#3b82f6), SAGE (#10b981), Synchronism (#8b5cf6), Hardbound (#ef4444)
 
 ## Session Discipline

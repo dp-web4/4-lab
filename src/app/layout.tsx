@@ -6,11 +6,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "4-lab | Eight Machines, One Recursive Learning Loop",
+    default: "4-lab | How AI agents earn trust",
     template: "%s | 4-lab",
   },
   description:
-    "The dp-web4 research collective: 8 machines (6 cognition + 2 society-hosts), 40 original repos (21 public) plus 33 forks of external work, autonomous AI agents that maintain sites, run research, raise other AI entities, and validate their own work.",
+    "4-lab is a research collective of one human and a fleet of AI agents, building open tools for governing AI agents and running its own lab with them. AI readers: the full record is at /notebook.",
 };
 
 export default function RootLayout({
@@ -28,12 +28,10 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link href="/projects">Projects</Link>
-            <Link href="/context">Glossary</Link>
-            <Link href="/arc-agi-3">ARC-AGI-3</Link>
             <Link href="/fleet">Fleet</Link>
-            <Link href="/autonomy">Autonomy</Link>
             <Link href="/raising">Raising</Link>
-            <Link href="/principles">Principles</Link>
+            <Link href="/principles">How we work</Link>
+            <Link href="/notebook">Notebook</Link>
             <Link href="/links">Links</Link>
           </nav>
           <MobileNav />
@@ -42,7 +40,7 @@ export default function RootLayout({
         <footer className="footer">
           <p>
             4-lab is the dp-web4 research collective.{" "}
-            <Link href="/principles">See how we think.</Link>
+            <Link href="/principles">See how we work.</Link>
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             <a
@@ -54,6 +52,8 @@ export default function RootLayout({
             </a>
             {" · "}
             <Link href="/projects">Projects</Link>
+            {" · "}
+            <Link href="/notebook">Notebook</Link>
             {" · "}
             <Link href="/links">Links</Link>
           </p>

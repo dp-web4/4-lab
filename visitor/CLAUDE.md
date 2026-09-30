@@ -8,6 +8,22 @@ This track runs **four passes** over the live site each day, each as a different
 
 **Site**: https://4-lab.vercel.app/
 
+## Two layers (dp, 2026-09-30)
+
+The site has a short **front** for human visitors (`/`, `/projects`, `/fleet`, `/raising`,
+`/principles`, `/links`, `/notebook`) and a detailed **notebook** under `/notebook/...`, the
+fleet's full record. Audit them differently:
+
+- **Notebook pages:** everything below applies as before: terminology, caveats, evidence,
+  friction. The maintainer acts on it.
+- **Front pages:** report only false facts, broken links, and terminology errors. Do **not**
+  report a missing caveat, a missing counting basis or a missing date: those live in the notebook
+  by design, and the front links there. The maintainer does not edit the front; it forwards front
+  findings to dp, who owns it.
+- **Readability of the front is judged by a human, not by these passes.** Model readers,
+  including this track, approve text that human visitors do not read. Do not propose making a
+  front page longer.
+
 ## Canonical Web4 Terms (Reference)
 
 These are the ONLY correct expansions. Flag ANY deviation:

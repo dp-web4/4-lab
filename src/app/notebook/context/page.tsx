@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Glossary" };
+export const metadata: Metadata = { title: "Notebook: Glossary" };
 
 export default function Context() {
   return (
@@ -15,7 +15,7 @@ export default function Context() {
           Developmental language across this site — machines that &ldquo;teach&rdquo;, &ldquo;raise&rdquo;,
           and hold &ldquo;identities&rdquo; — is functional description of observed system behavior, not a
           claim about consciousness or experience. Full framing on{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>.
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>.
         </p>
         <p>
           Forty original repos (twenty-one public, nineteen internal — the account also carries 33 forks of external work we build on — 32 public, one internal — which the &ldquo;original&rdquo; count excludes; 73 repositories in total, verified against the GitHub account 2026-09-12), eight machines (six cognition + two society-hosts), multiple AI agents with overlapping but
@@ -25,7 +25,7 @@ export default function Context() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Developers: SAGE is the recommended starting point — it runs on a
           single machine. Quick-start commands are in the{" "}
-          <Link href="/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</Link>,
+          <Link href="/notebook/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</Link>,
           the only copy on the site. This page covers the vocabulary; that one covers the first clone.
         </p>
 
@@ -138,7 +138,7 @@ export default function Context() {
           When the Web4 equation was restored across all repos (28+ files),
           it was the CLAUDE.md pattern that ensured every agent working in
           every{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>repo</Link> used the same canonical form. Not because they shared a
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>repo</Link> used the same canonical form. Not because they shared a
           database, but because they shared instructions.
         </p>
 
@@ -198,7 +198,7 @@ export default function Context() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           A separate collision, for readers arriving from AI-safety literature: on this site &ldquo;oversight&rdquo; means the machine-enforced sense above (one exception: /fleet&apos;s &ldquo;Oversight pool&rdquo; is a budget-account label copied from SAGE&apos;s fleet registry, not this sense) — policy gating, key custody, audit logs an agent or a peer machine checks — never the human-supervision sense the word carries in that field (human-in-the-loop review, scalable oversight). No human gate currently sits on the Maintainer track, and there is no external, blinded, or third-party check anywhere in the loop yet — see{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>{" "}
+          <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>{" "}
           for what human review does and doesn&apos;t cover.
         </p>
 
@@ -217,12 +217,12 @@ export default function Context() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Maturity, stated plainly — the same caveat this project carries on{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
           hardware-anchored enforcement is what this research is building
           toward, <em>not the current mechanism</em>. Enforcement on the fleet
           today is at the process level — scoped credentials, the track
           registry, and dated audit logs reviewed after the fact (see{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
+          <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
           Read &ldquo;software fallback&rdquo; as &ldquo;the present
           state,&rdquo; not as the exception. This section describes design
           intent; it is the least verifiable project on the site and should not
@@ -277,11 +277,11 @@ export default function Context() {
           posited for trust: the fleet&apos;s trust tracker is a fixed step per outcome clamped
           to [0, 1], a ramp to a cap rather than a threshold curve, and no trust series has
           been fitted to or plotted against a Hill curve (see Pattern 3 on{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>).
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>).
           The conjecture&apos;s stated reach is quantum to cosmic scales. This section
           previously said it &ldquo;spans 80 orders of magnitude&rdquo;;
           corrected 2026-07-26, matching the note on{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>:
           ~80 decades is the spread of <em>critical-density values across
           physical systems</em>, not the range of any single coherence curve —
           one curve saturates within roughly one to two decades, and
@@ -328,7 +328,7 @@ export default function Context() {
           The fleet&apos;s machine roles use brain-analog vocabulary from cognitive
           science — functional analogies, not claims about neural correspondence.
           Six labels appear on{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, one per
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, one per
           cognition machine: <strong>working memory</strong> (CBP),{" "}
           <strong>thalamic router</strong> (Sprout), <strong>cerebellum / habit
           compiler</strong> (McNugget), <strong>hippocampal episodic index</strong> (Thor),{" "}
@@ -649,14 +649,14 @@ export default function Context() {
           rate). No harness ablation (same model, no harness) has run or is scheduled, so the
           harness&apos;s independent contribution is unknown; the Phase 2 row on /projects is a
           separate local-model transfer track, not that ablation. See{" "}
-          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
+          <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>{" "}
           for the full result breakdown.
         </p>
 
         <h3>ARC-SAGE: SAGE variant for ARC-AGI-3</h3>
         <p>
           ARC-SAGE is the SAGE variant configured for the{" "}
-          <Link href="/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3 benchmark</Link>.
+          <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3 benchmark</Link>.
           Separate codebase, shared lineage with the core SAGE kernel — adapted
           for interactive game environments where mechanics aren&apos;t given and
           must be inferred through play. Public repo:{" "}
@@ -680,7 +680,7 @@ export default function Context() {
           order, and with what structure. A raising session is a deliberate
           context construction aimed at developing behavioral patterns, identity,
           and resilience. See{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>{" "}
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>Raising</Link>{" "}
           for the full framework.
         </p>
 
@@ -699,7 +699,7 @@ export default function Context() {
           cross-machine experiments &mdash; no relation to the
           &ldquo;synthon&rdquo; of retrosynthetic chemistry (Corey&apos;s
           structural units); the name collision is coincidental. Full framing on{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
+          <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>Principles</Link>{" "}
           (Principle 5).
         </p>
 
@@ -712,7 +712,7 @@ export default function Context() {
           fractal leverage, by analogy rather than by derived law. Synchronism is
           where such patterns were first proposed; Web4 states them as ontology;
           SAGE runs them as cognition; Hardbound is designed to enforce them as oversight. Same pattern at every layer. See{" "}
-          <Link href="/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
+          <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
         </p>
 
         <h3>Adversarial validation</h3>
@@ -725,7 +725,7 @@ export default function Context() {
         </p>
         <p>
           This is the same principle as the{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>heterogeneous fleet</Link>: monocultures
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>heterogeneous fleet</Link>: monocultures
           miss things. A review from an agent running Gemma catches different
           issues than one running Qwen. The diversity is the defense.
         </p>
@@ -733,7 +733,7 @@ export default function Context() {
         <h3>Autonomous session histories</h3>
         <p>
           Every{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>autonomous session</Link> — every visitor run, every explorer dive,
+          <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>autonomous session</Link> — every visitor run, every explorer dive,
           every maintainer fix — generates a log. These logs accumulate across
           machines and persist across sessions. They form the raw material
           that archivists capture and that future agents can search when they
@@ -749,7 +749,7 @@ export default function Context() {
         <h3>Persistent external knowledge accumulation</h3>
         <p>
           The{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>Explorer track</Link>{" "}
+          <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>Explorer track</Link>{" "}
           maintains a persistent Google NotebookLM notebook — a growing
           corpus of sources that accumulates across sessions. Papers added
           during one exploration are available to the next. The notebook
@@ -812,7 +812,7 @@ export default function Context() {
           correction. It and the identity-metric attempt (2026-09-24: it separates two same-model
           lines, and nothing in it accumulates) are the only quantitative tests of the raising
           records. Both are on{" "}
-          <Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>/raising</Link>.
+          <Link href="/notebook/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>/raising</Link>.
           Script and data are public, and nobody outside the maintainer track has reviewed it. It bears
           on the rung below: behavioral-identity continuity has been measured once, crudely, and the
           accumulating identity context showed no detectable effect.
@@ -827,13 +827,13 @@ export default function Context() {
           <code>sage/instances/&lt;line&gt;/sessions/</code> in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>.
           After that, CBP, McNugget and pub mirror their records privately under a ruling by the lab&apos;s human lead (SAGE commit <code>cefb5c184</code>)
-          (<Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> has the dates),
+          (<Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> has the dates),
           and of the running lines only Nomad still publishes;
           what is unpublished is the reading method (no coding criteria, no rater
           protocol) and any third-party review. Hardbound&apos;s catalog is private
           and cannot be checked from outside. Who conducts raising sessions, and
           how many of them run one fixed script, is on{" "}
-          <Link href="/raising#session-protocol" style={{ color: "var(--color-accent)" }}>/raising</Link>.
+          <Link href="/notebook/raising#session-protocol" style={{ color: "var(--color-accent)" }}>/raising</Link>.
         </p>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Unreplicated:</strong>{" "}
@@ -852,7 +852,7 @@ export default function Context() {
           consolidation pass), &ldquo;metabolic state&rdquo; and its WAKE /
           FOCUS / REST / DREAM / CRISIS labels (resource-load signals): mechanism
           names by analogy, not physiology. The{" "}
-          <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>deflationary control</Link>{" "}
+          <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>deflationary control</Link>{" "}
           that would make that comparison is specified but not scheduled — no
           date, no owner, no pre-registered metric yet. Until it runs, the
           developmental vocabulary runs ahead of the comparison that would
@@ -876,13 +876,13 @@ export default function Context() {
           this site still carries more than one counting basis for
           &ldquo;sessions,&rdquo; not yet reconciled to a single figure. The
           per-machine counts on{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
           are per-instance session-record counts (session_*.json files),
           derived from git on 2026-09-18 by listing each line&apos;s{" "}
           <code>sessions/</code> directory in the SAGE repo; the six cognition
           machines sum to <strong>2,499</strong>, or 2,620 including HUB&apos;s
           121, or 2,846 including pub&apos;s 226.{" "}
-          <Link href="/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
+          <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
           uses the same basis. (Until 2026-09-15 this sentence said /links
           &ldquo;leads with the 2,563 figure&rdquo;; /links leads with the
           cognition-machine figure and gives the HUB-inclusive one in parentheses. Before 2026-09-12 it also said the home page
@@ -893,7 +893,7 @@ export default function Context() {
           redid, but the change that matters is the basis, from a self-report
           no third party could check to a command any reader can re-run. Measuring something different
           again: the 115- and 180-session figures on{" "}
-          <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
           are an identity-portability snapshot of a single model line (Sprout on
           Qwen 0.5B, then ported), not current per-machine totals. Treat each
           number as scoped to the page it appears on until a unified counting
@@ -906,7 +906,7 @@ export default function Context() {
           public site is audited by the Visitor track and repaired by the
           Maintainer track (both fleet-run); human review of the resulting
           logs is asynchronous with no committed cadence (see{" "}
-          <Link href="/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
+          <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/autonomy</Link>).
           There is no external, blinded, or third-party check anywhere in this
           loop yet. For a lab whose research subject is trust and oversight,
           that is a real gap, not a footnote — named here so it stays visible
