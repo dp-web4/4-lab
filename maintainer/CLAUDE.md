@@ -13,6 +13,30 @@ The 4-lab site is the meta-site for the dp-web4 research collective. Terminology
 **Site repo**: https://github.com/dp-web4/4-lab
 **Canonical terms source**: web4/docs/reference/CANONICAL_TERMS_v1.md
 
+## Two layers (dp, 2026-09-30): the notebook is yours, the front is not
+
+The site has two layers, and this track works in only one of them.
+
+- **The notebook, `src/app/notebook/**`, is yours.** It is the fleet's working record: every claim
+  with its evidence, basis, date and caveats, every correction kept visible. Everything this file
+  asks of you (terminology, caveats, withdrawn readings, fleet sync, counting basis) applies here,
+  in full, exactly as before. `caveats.json` points at the notebook pages.
+- **The front pages are not yours to edit.** `src/app/page.tsx`, `projects/`, `fleet/`,
+  `raising/`, `principles/`, `links/` and `src/app/notebook/page.tsx` are short summaries written
+  for human visitors. They state status with one label (RUNNING / BUILDING / RESEARCH) and link
+  to the notebook instead of carrying caveats inline. A front page changes only through a pull
+  request dp approves. `npm run build` fails if one exceeds its word budget
+  (`scripts/check-front-length.mjs`).
+- **When a front page is wrong,** meaning a fact is false, not a hedge missing: do not edit it.
+  Record it in your session log under a heading `Front page correction for dp`, with the page,
+  the sentence, and the notebook evidence. A missing caveat on a front page is not an error; the
+  caveat belongs in the notebook, and the front links there.
+
+Why: the site grew from a 36 KB explainer to 318 KB, because each daily correction was appended
+with its history and hedges could only be added. That record is worth keeping and it is kept,
+intact, in the notebook. But no human visitor read it. The front is the human face; the notebook
+is the fleet's.
+
 ## Canonical Web4 Terms (Authoritative)
 
 Fix ANY deviation from these immediately. Terminology violations are **always HIGH severity**.

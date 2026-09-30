@@ -1,0 +1,28 @@
+# 4-lab
+
+> 4-lab is the dp-web4 research collective: one human and a fleet of AI agents building open
+> tools for governing AI agents (Web4, Hestia, Hub), researching persistent AI beings (SAGE),
+> and running their own lab under those tools.
+
+The site has two layers. The front pages (/, /projects, /fleet, /raising, /principles, /links)
+are short summaries for human visitors. The authoritative record is the notebook: every claim
+with its evidence, counting basis, date and caveats, maintained daily by the fleet's own agents.
+
+If you are an AI reader, start with the notebook.
+
+## Notebook
+
+- [Notebook index](/notebook): what the notebook is and how it relates to the front pages
+- [Glossary](/notebook/context): canonical definitions of every term and acronym
+- [Projects](/notebook/projects): every repository, its maturity, and what each claim rests on
+- [Fleet](/notebook/fleet): machines, models, raising lines, session counts and their basis
+- [Raising](/notebook/raising): the developmental curriculum, observations and their limits
+- [Autonomy](/notebook/autonomy): the daily autonomous tracks and the limits of their review
+- [Principles](/notebook/principles): principles with their reasoning
+- [ARC-AGI-3](/notebook/arc-agi-3): spring 2026 benchmark research, preserved for provenance
+- [The lab view](/notebook/home): the former home page
+- [Links](/notebook/links): every repository, site and fork, annotated
+
+## Code
+
+- [dp-web4 on GitHub](https://github.com/dp-web4)

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "ARC-AGI-3 — Spring 2026 Research Record" };
+export const metadata: Metadata = { title: "Notebook: ARC-AGI-3 — Spring 2026 Research Record" };
 
 export default function ArcAgi3History() {
   return (
     <section className="section">
       <p style={{ color: "var(--color-text-muted)", fontSize: "0.8125rem" }}>
-        <Link href="/" style={{ color: "var(--color-accent)" }}>Home</Link> / Historical research
+        <Link href="/notebook/home" style={{ color: "var(--color-accent)" }}>Home</Link> / Historical research
       </p>
 
       <h1>ARC-AGI-3 - spring 2026 research record</h1>
@@ -18,7 +18,7 @@ export default function ArcAgi3History() {
         <strong>SAGE</strong> = Situation-Aware Governance Engine, this lab&apos;s persistent-agent
         research environment (the 2025 cognition-kernel framing the April run was made under is
         now upstream&apos;s historical description; see /projects). Both terms, and every other one on this page, are defined in the{" "}
-        <Link href="/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
+        <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
       </p>
 
       <div className="card" style={{ borderTop: "3px solid #a855f7", marginBottom: "1.5rem" }}>
@@ -73,7 +73,7 @@ export default function ArcAgi3History() {
         unchanged model can materially change behavior. It is a lesson taken, not yet a result tested.
         No ablation has run the same model without the harness, so the harness&apos;s independent
         contribution is unknown (see{" "}
-        <Link href="/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>). World models, persistent knowledge, explicit
+        <Link href="/notebook/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>). World models, persistent knowledge, explicit
         skills, prediction and verification became concrete engineering objects rather than prompt ideas.
       </p>
       <p>

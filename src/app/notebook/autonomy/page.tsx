@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Autonomy — The Daily Cycle" };
+export const metadata: Metadata = { title: "Notebook: Autonomy — The Daily Cycle" };
 
 export default function Autonomy() {
   return (
@@ -14,7 +14,7 @@ export default function Autonomy() {
           <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day</strong>{" "}
           (figures as of 2026-05-26, not recounted since).{" "}
           HUB (one of the two society-host machines — see{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
           the society (hub daemon, chapter ledger) as its primary role rather than research tracks — it does hold
           the hub-track maintainer role.{" "}
           A track is a scheduled autonomous job — a cron entry with a declared
@@ -25,7 +25,7 @@ export default function Autonomy() {
           nobody assigned (the /raising analyses, below). Until 2026-09-29 this sentence said
           &ldquo;self-scheduled&rdquo;, which the cron fact two lines down contradicted. How it does the work is not fixed. Tracks edit their own briefs
           and checks, and{" "}
-          <Link href="/principles#p8" style={{ color: "var(--color-accent)" }}>Principle 8</Link>{" "}
+          <Link href="/notebook/principles#p8" style={{ color: "var(--color-accent)" }}>Principle 8</Link>{" "}
           asks them to. In this site&apos;s own repo, 9 of the 10 commits to the two
           track briefs carry a track&apos;s commit prefix, and so do all 11 commits
           to the maintainer&apos;s checks (as of 2026-09-21; every commit uses one git
@@ -36,7 +36,7 @@ export default function Autonomy() {
           The line runs like this. A human writes a track&apos;s cron entry, model, repo scope and stated
           purpose. The track writes its brief, its checks, and any analysis it chooses to run. The clearest case
           is research output from a maintenance track. Both quantitative tests of the raising records
-          (<Link href="/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /raising</Link>)
+          (<Link href="/notebook/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /raising</Link>)
           were written and run by this site&apos;s maintainer track, whose stated purpose is fixing the
           site. Nobody assigned those analyses, and nobody has reviewed them. On 2026-09-27 a visitor pass,
           whose purpose is reading the site, ran a third (a diversity measure) on its own initiative. Whether
@@ -55,10 +55,10 @@ export default function Autonomy() {
           Code sessions that cron launches to write and maintain the lab&apos;s
           code, docs, and this site; SAGE (Situation-Aware Governance Engine &mdash;
           a legacy name; see the{" "}
-          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context glossary</Link>)
+          <Link href="/notebook/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context glossary</Link>)
           is the separate on-device cognition
           kernel that runs on each machine&apos;s local model (see{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
           sessions counted there are records of SAGE runs, not of track runs —
           the two share machines and repos, not a process.
         </p>
@@ -96,7 +96,7 @@ export default function Autonomy() {
             <div className="timeline-title">Archivist</div>
             <div className="timeline-desc">
               Captures session logs, research findings, and{" "}
-              <Link href="/context" style={{ color: "var(--color-accent)" }}>cross-repo state</Link>.
+              <Link href="/notebook/context" style={{ color: "var(--color-accent)" }}>cross-repo state</Link>.
               Ensures nothing discovered yesterday is lost today.
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Autonomy() {
             <div className="timeline-title">Visitor</div>
             <div className="timeline-desc">
               Four personas visit the{" "}
-              <Link href="/links" style={{ color: "var(--color-accent)" }}>public explainer sites</Link> as if encountering
+              <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>public explainer sites</Link> as if encountering
               them for the first time. Tests clarity, navigation, broken links,
               and whether the content makes sense to an outsider.
             </div>
@@ -221,7 +221,7 @@ export default function Autonomy() {
           word would suggest a human gates these pushes; see &ldquo;Consequential
           pushes are not human-gated before they ship&rdquo; below, and the full
           disambiguation on{" "}
-          <Link href="/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
+          <Link href="/notebook/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context</Link>.
         </p>
         <p>
           What this section delivers, stated before the detail: <strong style={{ color: "var(--color-text-primary)" }}>auditability,
@@ -285,14 +285,14 @@ export default function Autonomy() {
           building toward: it declares what autonomous operation is expected to do
           and what gets reverted when it doesn&apos;t, with hardware-anchored
           enforcement (key custody and attestation — see{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>Hardbound on /context</Link>)
+          <Link href="/notebook/context" style={{ color: "var(--color-accent)" }}>Hardbound on /context</Link>)
           as the goal, not the current mechanism. In{" "}
-          <Link href="/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
+          <Link href="/notebook/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
           (the trust-native ontology) terms, each scheduled
           track is issued an ATP (Allocation Transfer Packet) against its declared resource budget.
           An allocation has to be issued <em>to</em> someone, and this page has been
           quiet about who: the holder is the machine&apos;s host{" "}
-          <Link href="/context#lct" style={{ color: "var(--color-accent)" }}>LCT</Link>{" "}
+          <Link href="/notebook/context#lct" style={{ color: "var(--color-accent)" }}>LCT</Link>{" "}
           (Linked Context Token). Seven of the eight fleet machines have one (pub does not), each minted with its own
           Ed25519 keypair, anchored in a local hash-chained ledger, with signed peer-witness records.
           It is not the <code>lct://</code> name inside a SAGE instance&apos;s identity file,
@@ -301,10 +301,10 @@ export default function Autonomy() {
           and the resulting commit name the machine by hostname and git author; this site has not
           found one that references the host LCT, so the attribution is by mapping, not yet by
           mechanism. The holder is scoped by that machine&apos;s{" "}
-          <Link href="/context#mrh" style={{ color: "var(--color-accent)" }}>MRH</Link>{" "}
+          <Link href="/notebook/context#mrh" style={{ color: "var(--color-accent)" }}>MRH</Link>{" "}
           (Markov Relevancy Horizon) to the repos it declares, with the outcome
           feeding its{" "}
-          <Link href="/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
+          <Link href="/notebook/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
           (Trust Tensor — Talent / Training / Temperament). The identity half of the equation is
           what makes the resource half attributable;
           an ADP (Allocation Discharge Packet) records actual spend — the registry
@@ -313,22 +313,22 @@ export default function Autonomy() {
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
           recharges ADP back to ATP when the society validates a proof of the value
           the spend created (see{" "}
-          <Link href="/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
+          <Link href="/notebook/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
           only after that conversion are the producer&apos;s T3 and{" "}
-          <Link href="/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
+          <Link href="/notebook/context#v3" style={{ color: "var(--color-accent)" }}>V3</Link>{" "}
           (Value Tensor — Valuation / Veracity / Validity) updated &mdash; V3 records the
           outcome, it does not gate the recharge (specification: <code>charge_atp</code> in
           atp-adp-cycle.md). This track registry implements the accounting, not the recharge.
           In canon&apos;s action grammar, the loop this paragraph describes is{" "}
-          <Link href="/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
+          <Link href="/notebook/context#r7" style={{ color: "var(--color-accent)" }}>R7</Link>{" "}
           (R6 + Reputation), not bare{" "}
-          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link>{" "}
+          <Link href="/notebook/context#r6" style={{ color: "var(--color-accent)" }}>R6</Link>{" "}
           (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) —
           the outcome is meant to be attributed to the machine&apos;s host LCT and to feed trust
           evolution across scales. (The ATP spec counts tensor deltas on the direct
           participants as an ordinary R6 Result; it is the cross-scale feed that makes
           an action R7. See{" "}
-          <Link href="/context#r6" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
+          <Link href="/notebook/context#r6" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
           for where canon and spec differ.) The distinction is not cosmetic: what the registry actually
           implements is the R6 half. The reputation back-propagation that would make
           it R7 is the same missing piece as the recharge validation.
@@ -356,7 +356,7 @@ export default function Autonomy() {
           issues. Content that is technically correct but misleading. The
           visitor personas are good at surface-level quality but not at
           validating the underlying research. That&apos;s what{" "}
-          <Link href="/context" style={{ color: "var(--color-accent)" }}>adversarial
+          <Link href="/notebook/context" style={{ color: "var(--color-accent)" }}>adversarial
           validation</Link> and human review would be for. Neither covers this publishing loop today:
           review is not heterogeneous, and human review has no committed cadence (both stated in this
           assessment).
@@ -373,10 +373,10 @@ export default function Autonomy() {
           families as the tracks that author the content they audit — their
           misses are correlated with the authors&apos;, not independent of
           them. That is exactly the risk the fleet names elsewhere —{" "}
-          <Link href="/fleet" style={{ color: "var(--color-accent)" }}>
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>
           &ldquo;monocultures are fragile&rdquo;</Link> — and heterogeneous
           review is a stated{" "}
-          <Link href="/projects" style={{ color: "var(--color-accent)" }}>
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>
           Hardbound design target</Link>, not a current property of this
           publishing loop.
         </p>
@@ -433,7 +433,7 @@ export default function Autonomy() {
             here has taken the form of{" "}
             <em>forward fixes in a later session</em> rather than rollbacks — the
             revised threshold argument on{" "}
-            <Link href="/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
+            <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
             (&ldquo;the first version of this section got that wrong&rdquo;) is a
             worked example. A rollback count of zero is therefore a measurement of
             how corrections are applied, not proof that none were needed.
@@ -485,8 +485,8 @@ export default function Autonomy() {
           <p style={{ margin: 0 }}>
             On 2026-09-19 the lab&apos;s human lead ruled that being records &mdash; the raising
             session transcripts{" "}
-            <Link href="/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> reads and{" "}
-            <Link href="/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts &mdash; are
+            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> reads and{" "}
+            <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts &mdash; are
             private going forward (SAGE commit <code>cefb5c184</code>; the message opens &ldquo;dp
             ruling&rdquo;). It is the one decision on this site that reduced the public evidence base,
             and it was a human&apos;s, not a track&apos;s: no track&apos;s autonomy extended to choosing

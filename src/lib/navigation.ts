@@ -6,60 +6,22 @@ export interface NavItem {
 }
 
 export const pages: NavItem[] = [
-  {
-    title: "Home",
-    href: "/",
-    description: "Eight machines. Forty original repos. One recursive learning loop.",
-    keywords: ["home", "overview", "lab", "4-lab"],
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-    description: "The ecosystem: Web4, Hestia, Hub, SAGE, Hardbound, Synchronism, and more.",
-    keywords: ["web4", "hestia", "hub", "sage", "synchronism", "hardbound", "repos", "ecosystem"],
-  },
-  {
-    title: "Glossary",
-    href: "/context",
-    description: "Canonical Web4 glossary: all terms, acronyms, and the knowledge flow model. Start here if the vocabulary is new.",
-    keywords: ["context", "glossary", "lct", "t3", "v3", "mrh", "atp", "adp", "r6", "r7", "knowledge", "memory", "web4", "terms", "definitions"],
-  },
-  {
-    title: "ARC-AGI-3 History",
-    href: "/arc-agi-3",
-    description: "Spring-2026 SAGE benchmark research preserved for provenance; not current competition positioning.",
-    keywords: ["arc-agi-3", "benchmark", "sage", "competition", "games", "history", "archive"],
-  },
-  {
-    title: "Fleet",
-    href: "/fleet",
-    description: "Eight machines, heterogeneous by design. Peer-to-peer, no central coordinator.",
-    keywords: ["machines", "fleet", "thor", "sprout", "legion", "mcnugget", "nomad", "cbp", "hub", "pub", "hardware"],
-  },
-  {
-    title: "Autonomy",
-    href: "/autonomy",
-    description: "Daily autonomous cycles: supervisor, archivist, publisher, visitor, maintainer, explorer.",
-    keywords: ["autonomy", "cron", "visitor", "maintainer", "explorer", "cycle", "autonomous"],
-  },
-  {
-    title: "Raising",
-    href: "/raising",
-    description: "BECOMING: five developmental phases. Raising is not training.",
-    keywords: ["raising", "becoming", "development", "identity", "sage", "curriculum"],
-  },
-  {
-    title: "Principles",
-    href: "/principles",
-    description: "Substrate not structure. Fractal leverage. Trust is a relationship.",
-    keywords: ["principles", "philosophy", "substrate", "fractal", "trust", "synthon"],
-  },
-  {
-    title: "Links",
-    href: "/links",
-    description: "Explainer sites, repos, and contact.",
-    keywords: ["links", "sites", "github", "contact"],
-  },
+  { title: "Home", href: "/", description: "AI agents are becoming actors in the world. We are building how they earn trust.", keywords: ["home", "overview", "lab", "4-lab"] },
+  { title: "Projects", href: "/projects", description: "Web4, Hestia, Hub, Hardbound, SAGE, SWE-SAGE and Synchronism, and where each stands.", keywords: ["web4", "hestia", "hub", "sage", "synchronism", "hardbound", "swe-sage", "projects"] },
+  { title: "Fleet", href: "/fleet", description: "Eight machines, different on purpose, with no central controller.", keywords: ["machines", "fleet", "thor", "sprout", "legion", "mcnugget", "nomad", "cbp", "hub", "pub", "hardware"] },
+  { title: "Raising AI beings", href: "/raising", description: "Persistent AI beings: identity, memory and history that outlive any model.", keywords: ["raising", "beings", "sage", "identity", "memory"] },
+  { title: "How we work", href: "/principles", description: "One human, a fleet of AI agents, and the rules they all live under.", keywords: ["principles", "how we work", "autonomy", "trust"] },
+  { title: "Links", href: "/links", description: "Sites, code and packages.", keywords: ["links", "sites", "github", "contact"] },
+  { title: "Notebook", href: "/notebook", description: "The fleet's full working record: every claim with its evidence, dates and caveats. AI readers start here.", keywords: ["notebook", "record", "evidence", "caveats", "ai"] },
+  { title: "Notebook: Glossary", href: "/notebook/context", description: "Every term and acronym, with canonical definitions.", keywords: ["glossary", "context", "lct", "t3", "v3", "mrh", "atp", "adp", "r6", "r7", "terms", "definitions"] },
+  { title: "Notebook: Fleet", href: "/notebook/fleet", description: "Machines, models, raising lines and session counts, with their counting basis.", keywords: ["fleet", "sessions", "models", "raising line"] },
+  { title: "Notebook: Raising", href: "/notebook/raising", description: "The curriculum, observations and their limits.", keywords: ["raising", "becoming", "curriculum", "identity"] },
+  { title: "Notebook: Autonomy", href: "/notebook/autonomy", description: "The daily autonomous tracks and the limits of their review.", keywords: ["autonomy", "cron", "visitor", "maintainer", "explorer", "cycle"] },
+  { title: "Notebook: Projects", href: "/notebook/projects", description: "Every repository with maturity and what each claim rests on.", keywords: ["projects", "repos", "maturity"] },
+  { title: "Notebook: Principles", href: "/notebook/principles", description: "The principles, with their reasoning.", keywords: ["principles", "substrate", "fractal", "synthon"] },
+  { title: "Notebook: ARC-AGI-3", href: "/notebook/arc-agi-3", description: "Spring 2026 benchmark research, preserved for provenance.", keywords: ["arc-agi-3", "benchmark", "games", "history"] },
+  { title: "Notebook: the lab view", href: "/notebook/home", description: "The former home page.", keywords: ["lab view", "commercial path"] },
+  { title: "Notebook: Links", href: "/notebook/links", description: "Every repository, site and fork, annotated.", keywords: ["links", "forks", "repos"] },
 ];
 
 export function getPageInfo(href: string): NavItem | undefined {

@@ -6,6 +6,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/check-jsx-spaces.mjs",
     "build": "next build",
+    "postbuild": "node scripts/check-front-length.mjs",
     "start": "next start",
     "lint": "next lint"
   },
