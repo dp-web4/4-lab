@@ -372,7 +372,7 @@ export default function Raising() {
           its own record of the conversation so far. After it, the Rust daemon
           receives the runner&apos;s system prompt and the question, and no
           conversation history. The answers show the change. One more layer can follow the scripted
-          exchange since 2026-09-09, when the last launcher moved to the canonical runner: with
+          exchange since 2026-09-09, when the last launcher moved to the canonical runner: with{" "}
           <code>SAGE_TOOLS</code> on (default off; Nomad&apos;s launcher sets it), the runner appends a
           governed tool turn in which the model, as member <code>&lt;machine&gt;-being</code>, emits an
           intent that <code>BeingGateClient</code> judges against installed Hestia law and a dispatcher
