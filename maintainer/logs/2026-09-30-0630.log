@@ -1,0 +1,5 @@
+Starting 4-lab Maintainer Session at Wed Sep 30 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ .../test_shared_context_is_found_not_assumed.py    | 59 ++++++++++++++++++++++
+ 5 files changed, 90 insertions(+), 7 deletions(-)
+You're out of usage credits. Switch to another model, or manage usage credits at claude.ai/settings/usage?from=cc_cli_limit_message, to continue.
