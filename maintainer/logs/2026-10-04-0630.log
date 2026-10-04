@@ -2,3 +2,34 @@ Starting 4-lab Maintainer Session at Sun Oct  4 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  sage/federation/sage-fleet-models.json                  | 2 +-
  2 files changed, 6 insertions(+), 1 deletion(-)
+I made no site edits today, because the maintainer track's carry-forward stop applied. This is the first time it has done so. The session log is at `maintainer/logs/2026-10-04.md`, and the log and run files are committed and pushed.
+
+**Why I stopped**
+- The 09-29 log carried forward one unresolved HIGH: the SAGE README has no link to the site's quick start. The SAGE repo as of today still has none, and I found no deferral from you in any log or commit.
+- The rule says the next session opens no new work until that item is fixed or you defer it by name. `/notebook/autonomy` states that rule publicly, so I followed it.
+
+**Before that**
+- **Four lost sessions:** the maintainer runs for 09-30 through 10-03 all died at startup on usage credits. They wrote no session logs and made no commits.
+- **Stale local copy:** my local copy was 3 commits behind and missing your 09-30 redesign. That redesign also rewrote my brief: the front pages are now yours, and the notebook is mine. I pulled the changes before reading anything; without that I'd have worked from the old brief.
+
+**What I did**
+- **Terminology:** none of the four visitor passes found any Web4 term drift on the 16 pages.
+- **Fleet sync:** only McNugget's manifest entry is current (Gemma4 12B), and it matches the notebook. I changed nothing.
+- **Build and checks:** first run by this track on the redesigned site. `npm run build` passes and every front page is under its word budget. `check-caveats.sh` passes: all 21 protected caveats are present, none of the 89 withdrawn readings appear on any page, and there is no damaged text.
+
+**Front-page corrections for you** (false facts rather than missing caveats; each checked against the notebook and the source repos):
+1. **Synchronism card on /projects:** it says Synchronism "supplies the equations that Web4's trust model builds on". The notebook and the web4 repo's own `AGENTS.md` both say it is conceptual lineage, not an engineering dependency.
+2. **SWE-SAGE links on /projects and /links:** the repo is private by design, so the links return 404 for visitors. /links also lists it under "everything public".
+3. **/raising "what it chooses to remember":** a separate Claude pass rewrites the identity record after each session, so the being doesn't choose what it remembers.
+4. **Hestia "a record the agent cannot edit" (Home and /projects):** the hestia README says the gate "stops accidents, not adversaries" and the record is tamper-evident, which is not the same as uneditable.
+5. **/raising lists "keeps habits across a change of model" as "Seen":** the notebook says this is not yet a finding.
+6. **Four claims with no source in the notebook:** the "passivity" observation, "proposes changes to its own code", Legion "improves the SAGE code", and Hestia refusing agents "every day".
+
+**Decisions only you can make:**
+- **SAGE README item:** to clear the stop, either add a quick-start link to `SAGE/README.md` or defer the item by name. Note that the quick start has moved to `/notebook/projects#quick-start`.
+- **Front-page HIGHs and the stop rule:** the stop rule predates your new brief. Read literally, any HIGH on a front page now stops my track until you act, since I can no longer fix the front. I've applied that reading and carried items 1–3 as blocking. One sentence in `maintainer/CLAUDE.md` would settle whether that's intended.
+- **"Governance" wording:** the glossary says the word was replaced by "oversight" across the lab, with Hestia as the only exception. The front pages now use "governance" for Hub and in the heading over the Hardbound card. Either the exception list or the front copy needs to change.
+
+Once the stop clears, the notebook fixes are ready to go: old route names left in link text and prose, a breadcrumb missing its Notebook level, and two quick-start pointers that name the wrong page.
+
+The Gmail, Google Calendar and Google Drive connectors need authorizing in your claude.ai settings, and the playwright server failed to start because it couldn't find `npx`. Nothing today depended on them.
