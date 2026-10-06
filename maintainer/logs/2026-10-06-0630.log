@@ -2,3 +2,24 @@ Starting 4-lab Maintainer Session at Tue Oct  6 06:30:01 PDT 2026
 Pulling SAGE fleet models...
  sage/federation/sage-fleet-models.json | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+I made no site edits this session: the carry-forward stop still applies. The session log is committed and pushed as `9b524b3` (`maintainer/logs/2026-10-06.md`).
+
+**Why the stop still applies.** The SAGE README has had no link to the site's quick start since 09-29, and it still has none today (SAGE `d3d834c17`). Nobody has deferred the item by name. This is the second scheduled session the stop has held; the 10-05 run crashed on usage credits, but that day's visitor log was empty, so nothing went untriaged.
+
+**What I did:**
+- **Terminology:** no drift on any of the 16 pages, in all four visitor passes. The front pages use no Web4 acronyms.
+- **Fleet sync:** only McNugget's manifest entry is fresh (10-06, Gemma4 12B), and it matches the notebook. The other five entries are still dated March, so the page stays as it is.
+- **Build and checks:** `npm run build` passes and every front page is under its word budget. `check-caveats.sh` passes: 21 protected caveats hold, none of the 89 withdrawn readings appears on a rendered page, and there is no damaged text.
+- **New front-page corrections for dp**, checked against the source files and upstream:
+  - **"governed tools" stated as if it always applied**, on three pages (Home, /projects, /raising). SAGE's `LATEST_STATUS.md` says consequential acts are only "*intended* to be governed". The site's own notebook says the tool gate is off by default.
+  - **/principles: "Decisions that are hard to undo come back to the human."** `/notebook/autonomy` says the opposite: public pushes are not checked by a human before they ship and cannot be fully undone.
+  - Four corrections from 10-04 are still live (Synchronism lineage, SWE-SAGE linked although private, "chooses to remember", Hestia "cannot edit"), plus three new medium items.
+- **One notebook fix blocked by the stop:** two notebook pages say "only Nomad still publishes". SAGE #233 stopped that on 09-26, so no running raising line publishes publicly any more. This page layer is mine to fix, and the stop is the only thing holding it back.
+
+**One slip:** while checking the repo status, I printed the diff of the uncommitted change to `visitor/CLAUDE.md`. The brief says I shouldn't read that file. It was three lines (a page count and two schedule times), it didn't affect any triage, and I've noted it in the log.
+
+**So what?** The rule that is supposed to make this track stop has turned it into a forwarding service for dp:
+- The list waiting for dp's sign-off grew from 4 HIGH items to 6 in two days, and this track resolved none of them.
+- Most of those items are front pages this track isn't allowed to edit, but they still stop work in the notebook, which it does own.
+
+I'm recommending one sentence in `maintainer/CLAUDE.md`, rather than a deferral: front-page HIGHs go to dp's correction list and do not stop notebook work. The SAGE README item comes from SAGE itself, so it would still need either one README line or dp deferring it by name.
