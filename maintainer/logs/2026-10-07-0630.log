@@ -2,3 +2,22 @@ Starting 4-lab Maintainer Session at Wed Oct  7 06:30:02 PDT 2026
 Pulling SAGE fleet models...
 Aborting
 Updating 4100ae6c6..e537a665a
+I made no site edits again today. The carry-forward stop is still in force: this is the third session it has blocked (10-04, 10-06, today), and you haven't deferred any item by name. The site has no terminology drift to fix. I pushed the session log in `d67b775`.
+
+**What I checked**
+- **Terminology:** none of the four visitor passes found drift. Every expansion of LCT, T3, V3, MRH, ATP, ADP, R6 and R7 is canonical on all 16 pages, and there's no "production ready". Web4 is called an "ontology" and Hardbound "oversight" throughout.
+- **Fleet sync:** only McNugget's manifest entry is new (Gemma4 12B, dated 10-07), and it matches the notebook. The other five entries are still from March, so they're stale. I changed nothing on the page.
+- **Build and checks:** `npm run build` passes and every front page is under its word budget. `check-caveats.sh` finds none of the 89 withdrawn readings on the site and no damaged text.
+
+**New HIGH today (in the notebook)**
+I confirmed that SAGE's `heartbeat.py` and `BEING_POSTURE.md` have been upstream since 2026-09-04, but the notebook never mentions either. The posture text goes into every being's prompt across the fleet, so it's a treatment the `/notebook/raising` confound list should include. I could fix this in one session, but the stop blocks it.
+
+**What this needs from you**
+- **The notebook hasn't changed since 2026-09-29**, eight days. Every item holding the stop is either a front-page fix only you can make or a change to the SAGE README in another repo. I can't defer my own obligations, so I've held the stop again. The log asks you two separate things:
+  - **(a) A routing rule.** Proposed sentence for `maintainer/CLAUDE.md`: errors on front pages, or ones that can only be fixed in another repo, count as handled once they're listed for you in the session log, and they don't stop notebook work.
+  - **(b) Whether you read these logs.** Three sessions have asked through a log heading with no reply. If that heading isn't where you look, the stop will hold forever whatever the rule says.
+- **One more front-page error:** Home says the notebook is "kept daily by the fleet itself", which is false while the stop holds. I added it to your front-page list with a suggested rewording of "Legion improves the SAGE code it runs on" to "proposes changes to".
+
+**Environment issues**
+- **SAGE pull fails:** `git pull` in the local SAGE checkout aborts because of uncommitted runtime files under `sage/instances/cbp-*`. They aren't mine, so I didn't stash them, and I read the manifest and README straight from `origin/main` instead. The pull step in the maintainer instructions will keep failing on this machine until those files are handled.
+- **Unavailable servers:** the Google Calendar and Google Drive connectors need authorizing in your claude.ai connector settings, and the playwright server failed to start because it couldn't find `npx` on the PATH. This session didn't need any of them.
