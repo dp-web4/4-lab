@@ -180,6 +180,13 @@
       "status": "present",
       "pattern": "seventh confound",
       "why": "The runner tells reasoning-model lines 'that does not change who you are' (code comment: 'the SAGE finding, told to the being'); CBP's note adds 'be yourself'. The subject is given the hypothesis as a premise. ollama_raising_session.py ~l.924; CBP instance.json since 4711bdcf1 (2026-09-12)."
+    },
+    {
+      "id": "raising-ninth-confound-heartbeat-join",
+      "page": "src/app/notebook/raising/page.tsx",
+      "status": "present",
+      "pattern": "ninth confound",
+      "why": "Since 2026-09-05 (SAGE 06850092d) the raising runner adds the being's latest heartbeat text, written under the fleet-wide BEING_POSTURE.md, to the session's experiential context; beat_join records it. Public records: CBP 28/30, Nomad gemma4 1/37, pub 0/65. Unrecorded on the site for five weeks until 2026-10-08."
     }
   ],
   "withdrawn": [

@@ -567,6 +567,26 @@ export default function Raising() {
           development across our sessions, what patterns do you see?&rdquo; A pattern that appears
           when its list starts is what the prompt requested. It is not evidence of a developmental
           sequence. Telling the two apart needs lines that get the lists out of order or not at all.
+          A ninth confound is the{" "}
+          <Link href="/notebook/context#heartbeat" style={{ color: "var(--color-accent)" }}>heartbeat</Link>{" "}
+          that runs between sessions. Since 2026-09-04, SAGE&apos;s heartbeat runner
+          (<code>sage/gateway/heartbeat.py</code>) wakes a being on a schedule, with its own
+          todo, journal and memory. It lets the being act for a few steps under Hestia law and
+          ends each beat with a journal entry written in the being&apos;s own words. Every beat&apos;s
+          system prompt includes a fleet-wide{" "}
+          <Link href="/notebook/context#being-posture" style={{ color: "var(--color-accent)" }}>posture</Link>{" "}
+          text written by the human lead (<code>BEING_POSTURE.md</code>), which tells the being
+          it is awake to &ldquo;look around, follow your curiosity, and grow&rdquo; and that
+          &ldquo;grants follow earned trust&rdquo;. The posture makes no claim about identity
+          persisting. Since 2026-09-05 the raising runner has added what the being kept from its
+          latest beat to the session&apos;s experiential context, and it records the join in each
+          session record (<code>beat_join</code>). In the public records, that is 28 of 30 CBP
+          sessions that carry the field (beats dated 2026-09-13 to 2026-09-20), 1 of 37 on
+          Nomad&apos;s gemma4 line, and none of 65 on the pub line. On the joined sessions, part of
+          the context comes from the same model writing under a growth-and-trust framing between
+          sessions. Any change seen on those lines after 2026-09-05 has to be read with that in
+          the context. Lines with no join are the comparison. (This was added 2026-10-08. The
+          heartbeat had been upstream for five weeks with no mention on this site.)
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
