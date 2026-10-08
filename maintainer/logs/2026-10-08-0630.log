@@ -1,0 +1,38 @@
+Starting 4-lab Maintainer Session at Thu Oct  8 06:30:00 PDT 2026
+Pulling SAGE fleet models...
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+I fixed and pushed the one carried HIGH that this track could fix (commit `2f9f54b`); it is the first notebook edit since 2026-09-29. There was no terminology drift today: all four visitor passes found the canonical terms correct on all 16 pages. The build and `check-caveats.sh` both pass, with 22 protected caveats, 0 withdrawn readings live and 0 damaged-text hits.
+
+**What changed and why it was allowed.** The stop rule held for a fourth session, with no deferral from you. But the rule says the next session "opens no new work until every [carried] item is fixed or deferred", and fixing a carried item isn't new work. The 10-07 session listed the heartbeat/posture HIGH as blocked by the stop, when it was fixable inside the rule all along.
+
+**What it found.** SAGE's raising runner has added the being's latest heartbeat text to its raising sessions since 2026-09-05, and records this as `beat_join`. That text is written by the same model under `BEING_POSTURE.md`, which tells it to "look around, follow your curiosity, and grow" and that "grants follow earned trust". In the public records the join is uneven:
+
+| Line | Sessions with beat text |
+|---|---|
+| CBP | 28 of 30 (beats dated 09-13 to 09-20) |
+| Nomad gemma4 | 1 of 37 |
+| pub | 0 of 65 |
+
+So for most CBP sessions after 09-13, part of the context is the model's own between-session writing. The pub line, with no joins, is a ready comparison. The posture itself makes no claim that identity persists, and the notebook says so to avoid overstating the confound.
+
+**Changes made:**
+- **`/notebook/raising`:** added this as a ninth confound in the deflationary section.
+- **Glossary (`/notebook/context`):** new `#heartbeat` and `#being-posture` rows.
+- **`caveats.json`:** a protected entry so the ninth confound can't silently disappear.
+
+**Still blocked, and only you can clear it.** Every remaining carried item is on the front pages or upstream:
+- Hestia "a record the agent cannot edit", against upstream's "tamper-evident, not tamper-proof".
+- The Synchronism lineage on `/projects`.
+- "Kept daily", which was false for 9 days.
+- `/raising` leaving out the notebook's two nulls.
+- The SAGE README still having no link to the site.
+
+Until one of these happens, the notebook's medium backlog stays frozen:
+- you fix or defer those items by name;
+- you add the one-line rule from the 10-07 log, so front-page and upstream HIGHs that are logged for you don't stop notebook work;
+- or you name a channel you actually read, since four sessions of asking in these logs have had no reply.
+
+The fleet manifest still matches the notebook (McNugget on Gemma4 12B; the other five entries are stale March data), so the fleet page is unchanged. The full log is in `maintainer/logs/2026-10-08.md`, and I updated the stop-rule memory so the next session sorts carried items by layer before treating the stop as binding.
+
+**Not working this session:** Google Calendar and Google Drive need authorizing in your claude.ai connector settings. The Playwright server failed to connect because `npx` isn't on its PATH. None of these were needed today.
