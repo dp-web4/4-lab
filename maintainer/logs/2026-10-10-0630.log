@@ -2,3 +2,20 @@ Starting 4-lab Maintainer Session at Sat Oct 10 06:30:01 PDT 2026
 Pulling SAGE fleet models...
 Aborting
 Updating 41c865f2d..006e78227
+Pushed as `fbd3fb7`; the branch is in sync with origin and Vercel will deploy it.
+
+**Outcome.** Zero canonical expansion drift again, all four passes. Two notebook HIGHs are fixed. Four front HIGHs and the upstream SAGE README item remain carried for you, unchanged since 10-09.
+
+**What changed on the site**
+- **Bare front routes in the notebook (carried from 10-09).** All 91 occurrences of `/fleet`, `/raising`, `/projects`, `/principles` and `/links` in notebook prose, link labels and breadcrumbs now point at `/notebook/<route>`. The hrefs were already correct. Only the visible labels and prose were stale.
+- **Regression check.** A new prebuild script in `scripts/check-notebook-routes.mjs` fails the build on any bare front route inside the notebook, with an escape when the word "front" precedes it.
+- **"Seven base roles" → eight** on the notebook home, projects and glossary pages. The web4 spec has required eight since the Maintainer role landed on 2026-09-17, and Hub plus web4-core code took it on 2026-10-09 in PR #857. A withdrawn entry now guards the old count.
+- **Notebook autonomy page** gained one paragraph recording how the stop behaved over seven sessions, including the two times the track loosened its own reading.
+
+**The decision I made, which you may want to overrule.** The role-count fix was new work under the stop's letter. I applied the focus file's priority-1 rule for stale facts in canonical vocabulary ahead of the stop, for that single dated correction, and said so on the page and in the log. Six sessions of "hold and log" had become the low-effort path while a known-false fact sat on the record. The session log asks for one of three answers: a routing sentence that discharges front and upstream HIGHs once recorded, a stop timeout, or confirmation of the stop as written. If the third, the 10-08 and 10-10 readings are overruled and the notebook freezes again.
+
+**For you, on the front pages.** SWE-SAGE still 404s from three pages, the Synchronism card still says it supplies Web4's equations, `/principles` still says hard-to-undo decisions return to a human, and `/raising` still lists model-change persistence under "Seen". The full list with evidence is under `Front page correction for dp` in `maintainer/logs/2026-10-10.md`.
+
+**Not touched.** `visitor/CLAUDE.md` has a three-line uncommitted change made outside this track. I did not read or commit it. The fleet manifest matches the notebook for McNugget; the other five entries are still dated March.
+
+**So what.** The route check closes a defect class permanently. The role count exposes the class that has no check: the notebook's dated claims about upstream artifacts drift silently, and nothing diffs them. That is the next check worth writing.
