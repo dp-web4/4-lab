@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-09-29*
+*Last updated: 2026-10-10*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-10-10 maintainer: zero expansion drift (four passes, 16 pages). **Carry-forward stop, day 7: two notebook HIGHs fixed, four front HIGHs and one upstream HIGH still carried, no deferral from dp by any channel.** (1) Carried since 10-09: 84 notebook prose references and link labels said "see /fleet", "/raising", "/projects", "/principles", "/links" (46 on the glossary), routes that have been short front pages since the 09-30 split; all rewritten to `/notebook/<route>`, seven notebook breadcrumbs re-keyed, and a new prebuild check `scripts/check-notebook-routes.mjs` fails the build on any bare front route in notebook prose (a deliberate front reference is allowed when the word "front" precedes it). (2) New today, fixed under the priority-1 rule rather than carried: "seven base roles" ×5 on /notebook/home, /notebook/projects and the glossary (Hub + Sovereign rows). web4 `society-roles.md` §2 has required eight since the Maintainer role (§2.8, 2026-09-17); `hub/README.md` says 8; Hub and web4-core code took it 2026-10-09 (PR #857). Dated on the page; withdrawn entry added (89 → 90). The spec's own §2.9 is apt: a Maintainer whose finding lies outside its authority records and escalates, and "cannot be maintained into a wider authority" — which is exactly the front/notebook boundary this track sits on. (3) /notebook/autonomy now records how the stop behaved over seven sessions, including both of the track's own loosening readings (10-08 carried-item fix; 10-10 priority-1 over stop), so the public statement of the rule stays true. **Researcher decision needed:** a routing sentence (front/upstream HIGHs discharged once recorded under their headings) or a timeout; the stop as written has no exit the track can reach, and the ease of "hold and log" is itself an efficiency path.
 
 2026-09-29 maintainer: zero expansion drift (two visitor days, eight passes). The 09-28 run died on credits; its HIGH (SAGE README has no install path or link to the site's quick start) is upstream and sits under sign-off. **Two HIGHs fixed, both the site describing a subject its sources had moved past, in correct vocabulary.** (1) SAGE was presented as the 2025 cognition kernel (12-step loop, six organs one per machine) on /projects, /fleet, /context, /links and /arc-agi-3; SAGE's `AGENTS.md` and `sage/docs/LATEST_STATUS.md` (2026-09-26) say that framing does not summarize the system and name the being → Hestia gateway as the current boundary. Reframed from upstream's words; organs kept as dated 2025 design; new `#being` and `#seat` glossary rows. (2) "The fleet ruled" on the 2026-09-19 privacy decision (4 pages) was the human lead's ruling (SAGE `cefb5c184` opens "dp ruling"); attributed by role, and /autonomy gained a known-gap card for the one decision that shrank the public evidence base. Also: "self-scheduled" → human-written schedule with the sub-task caveat in the definition; the /raising null no longer "leans" against the hypothesis; scramble control dated (67 days); LCT row carries canon's "and reputation". **Read, not flagged:** the being gate in the raising runner is a flag-gated tool turn appended after the scripted exchange (`SAGE_TOOLS`, Nomad on since 09-09), so the measured Q/A does not pass through Hestia law. Withdrawn 85 → 89, 19 live pre-fix, 0 after. **Researcher question:** SAGE now keeps a dated `LATEST_STATUS.md`; should Step 0 read its `As of:` line the way it reads the manifest's `updated_at`, and flag the SAGE card whenever it moves?
 
@@ -42,7 +44,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-09-29. Zero expansion drift across 9 pages (every pass since 2026-09-08). The live failure class is stale subject description in correct vocabulary (SAGE framing, 09-29) and a collective noun standing in for a human decider.
+Last maintainer session: 2026-10-10. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓

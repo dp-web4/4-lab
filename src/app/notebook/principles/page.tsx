@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Notebook: Principles" };
 export default function Principles() {
   return (
     <>
-      <Breadcrumbs currentPath="/principles" />
+      <Breadcrumbs currentPath="/notebook/principles" />
       <section className="section">
         <h1>Principles</h1>
         <p>
@@ -29,7 +29,7 @@ export default function Principles() {
           public-domain-equivalent &mdash; while snarc and membot are MIT and ACT&apos;s own
           LICENSE file reads Apache-2.0 against an AGPL-3.0 entry in its index.
           Check each repo&apos;s LICENSE file before forking; {" "}
-          <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>/links</Link>{" "}
+          <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>/notebook/links</Link>{" "}
           carries the per-repo version.
           The harness is the most inspectable thing the lab has; this page is the least. It
           tests the harness and the model, though, not any principle on this page.
@@ -173,17 +173,17 @@ export default function Principles() {
               stable behavioral tendencies) surface, and reinforce what resonates.
               The intended result is an identity that is collaborative, not imposed
               (a framing, untested; see{" "}
-              <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>). The
+              <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>). The
               intended lever: shaping context to deepen attractor basins in the
               probability landscape — not modifying parameters in raising sessions.
-              (Current raising lines run with frozen weights. One archived line, Sprout&apos;s Qwen 0.5B from 2026-01-27 to 2026-03-06, loaded a LoRA (Low-Rank Adaptation) adapter trained on its own raising sessions, so &ldquo;always in-context&rdquo; is not true of the history; see /raising.)
+              (Current raising lines run with frozen weights. One archived line, Sprout&apos;s Qwen 0.5B from 2026-01-27 to 2026-03-06, loaded a LoRA (Low-Rank Adaptation) adapter trained on its own raising sessions, so &ldquo;always in-context&rdquo; is not true of the history; see /notebook/raising.)
               It is not training; it is also not nothing. This applies at every scale:
               raising sessions, affordance shaping, fleet diversity, and memory
               systems. On four raising lines the tutor is a fixed script that does
               not respond to the model, so the loop this principle names is not what
               those sessions record. The selection there is done by the consolidator
               and the schedule{" "}
-              (<Link href="/notebook/raising#session-protocol" style={{ color: "var(--color-accent)" }}>/raising</Link>).
+              (<Link href="/notebook/raising#session-protocol" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>).
             </div>
           </div>
 

@@ -812,6 +812,13 @@
       "pattern": "lean the other way|no test in its favor and one against it",
       "unless": "",
       "why": "The constant-stimulus and identity-continuity nulls are on proxies growth is not defined by; the page itself says they do not refute growth as defined. A null is not a test against."
+    },
+    {
+      "id": "seven-base-roles",
+      "withdrawn": "2026-10-10",
+      "pattern": "seven base roles|one of seven base|7 base roles",
+      "unless": "said seven until|counted seven until",
+      "why": "web4 society-roles.md §2 has required eight base roles since the Maintainer role (§2.8) landed on 2026-09-17; hub/README.md says 8; Hub and web4-core code took the eighth role 2026-10-09 (web4 PR #857). Five notebook occurrences said seven for 23 days."
     }
   ]
 }

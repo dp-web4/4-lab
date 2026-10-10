@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Notebook: Fleet — Eight Machines" 
 export default function Fleet() {
   return (
     <>
-      <Breadcrumbs currentPath="/fleet" />
+      <Breadcrumbs currentPath="/notebook/fleet" />
       <section className="section">
         <h1>The Fleet</h1>
         <p>
@@ -41,12 +41,12 @@ export default function Fleet() {
           They were also the fleet&apos;s 2025 work assignment: each of the six cognition machines was to build the one of{" "}
           <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>SAGE&apos;s six brain-analog components</Link>{" "}
           its card names — CBP/working memory, Sprout/thalamic router, McNugget/cerebellum, Thor/episodic memory, Legion/reward prediction, Nomad/metacognition. That assignment belongs to the 2025 cognition-kernel plan, which SAGE&apos;s own discovery document (AGENTS.md, refreshed 2026-09-26) says no longer summarizes the system: the organ code is still on main, and the current unit of work is the being and its Hestia-governed gateway (see{" "}
-          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>). Until 2026-09-29 this paragraph presented the assignment as current.
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>). Until 2026-09-29 this paragraph presented the assignment as current.
           Vocabulary used in the cards — SAGE (Situation-Aware Governance Engine, the lab&apos;s persistent-agent research environment; &ldquo;cognition kernel&rdquo; is its 2025 framing), T3 (Trust Tensor, root dimensions Talent / Training / Temperament) and V3 (Value Tensor, root dimensions Valuation / Veracity / Validity), complementary tensors, MRH (Markov Relevancy Horizon), SNARC (Surprise / Novelty / Arousal / Reward / Conflict), LoRA (Low-Rank Adaptation), MCP (Model Context Protocol), RDF (Resource Description Framework), hestia (the trust store inside the Hestia daemon; a proper name, not an acronym, and not SAGE&apos;s peer trust tracker), crystallization, chapter ledger, chapter law — is defined in{" "}
           <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>/context</Link>.
           Machine names (Thor, Sprout, Legion, McNugget, Nomad, CBP, HUB, pub) are proper names, not acronyms.
           &ldquo;Cognition machines,&rdquo; society &ldquo;membership,&rdquo; and other developmental language on this page are functional descriptions of observed behavior, not consciousness claims — see{" "}
-          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> for the full framing.
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link> for the full framing.
           &ldquo;Curriculum phase:&rdquo; on a card is the phase name the raising runner writes into that line&apos;s identity record. It is set by session number (grounding 1–5, sensing 6–15, relating 16–25, questioning 26–40, creating 41 and up; one runner also requires at least one recorded milestone before advancing), so every line past session 41 reads &ldquo;creating&rdquo;. It is not an assessment, and it is not one of the{" "}
           <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>BECOMING patterns</Link>. Until 2026-09-15 this field was headed &ldquo;BECOMING pattern observed&rdquo; and described as a pattern noticed in that machine&apos;s sessions; the runner code shows it was the schedule, which is why it was identical on all six cards.{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>Session counts and the &ldquo;Raising line:&rdquo; state below are derived from git, not self-reported</strong> &mdash; counted 2026-09-18 by listing <code>sage/instances/&lt;line&gt;/sessions/session_*.json</code> at <code>origin/main</code> in the SAGE repo, and by asking that same path when it last changed. Anyone with the repo can re-run both; the previous figures came from each machine&apos;s self-report in the 2026-07-24 fleet manifest refresh, which no third party could check and which was seven weeks stale by the time it was corrected. Each card counts one SAGE instance line, not the box&apos;s whole history: archived and dormant lines (Legion&apos;s phi4, Nomad&apos;s gemma3-4b, CBP&apos;s TinyLlama, Sprout&apos;s qwen2.5-0.5b) are excluded from both the per-machine numbers and the totals.{" "}
@@ -55,7 +55,7 @@ export default function Fleet() {
           The three totals are sums of these cards: <strong style={{ color: "var(--color-text-primary)" }}>2,499</strong> is the six cognition machines, <strong style={{ color: "var(--color-text-primary)" }}>2,620</strong> is that plus HUB&apos;s 121, and <strong style={{ color: "var(--color-text-primary)" }}>2,846</strong> is all eight machines including pub&apos;s 226. These replace the 2,442 / 2,563 / 2,765 triple quoted here until 2026-09-18, which in turn replaced a 1,991 / 2,065 pair. Most of the latest movement is six days of ordinary accrual; the exception is CBP, which contributes 263 rather than 240 because the count now follows its migrated line instead of the directory it left.
           These totals stay at the 2026-09-18 count. They cannot be extended from the public repo past 2026-09-19 for CBP, McNugget or pub, whose records now go to a private mirror (see <em>publishing stopped by policy</em> below). A recount on this basis would undercount those lines without saying so.
           Same basis as the cumulative figure on{" "}
-          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>{" "}
+          <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>{" "}
           and{" "}
           <Link href="/notebook/context#evidence" style={{ color: "var(--color-accent)" }}>/context</Link>{" "}
           — one quantity, and this page is the source of record. The SAGE site&apos;s headline &ldquo;2,700+ raising sessions&rdquo; (as of 2026-09-08) is a different figure on a basis it does not publish; it is still not reconciled with these cards. Worth noting rather than resting on: once the cards are counted from git and pub is included, this page&apos;s all-eight total is 2,846, which lands near that headline. Two numbers agreeing is not two numbers reconciled — the SAGE figure&apos;s basis remains unstated, and the proximity is suggestive, not confirming. Where this site counts, it says &ldquo;session records&rdquo;. The deflationary noun is the accurate one, since a session record is a run on a machine and nothing in the count establishes that what happened in it was raising rather than competent context engineering (a distinction this site grades as{" "}
@@ -319,7 +319,7 @@ export default function Fleet() {
         <h2 style={{ marginTop: "2rem" }}>Identity portability</h2>
         <p>
           An internal observation, not yet a{" "}
-          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>finding</Link> (no blind rater, no control; one candidate metric, applied on 2026-09-24 to Legion&apos;s gemma3 → gemma4 swap, shows the continuity and cannot say what produces it — see /raising): behavioral
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>finding</Link> (no blind rater, no control; one candidate metric, applied on 2026-09-24 to Legion&apos;s gemma3 → gemma4 swap, shows the continuity and cannot say what produces it — see /notebook/raising): behavioral
           continuity across substrates — what we shorthand as &ldquo;identity
           transfer,&rdquo; meaning consistent interaction patterns, accumulated
           experience, and raising history, not continuity-of-self in any
@@ -331,7 +331,7 @@ export default function Fleet() {
           which is the number the portability claim actually rests on. Those 115 were not all run on frozen
           weights: by session number, 45 of them, sessions 46–113 from 2026-01-27 to 02-22, loaded a LoRA adapter
           trained on the line&apos;s own raising exchanges; see{" "}
-          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>. The last two before the
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>. The last two before the
           port did not, and TinyLlama on CBP loaded none. So part of the pre-port behavior was in weights, and the
           port left those weights behind. If the line still looked recognizable afterwards, that leans toward the
           state-file hypothesis below, but &ldquo;recognizable&rdquo; was never measured, so it settles nothing.) This is the kind of
@@ -348,7 +348,7 @@ export default function Fleet() {
           does not explain came from TinyLlama alone, 42 minutes apart on the first evening, with the
           identity file unchanged apart from its session count. Sampling variation in one
           small model can produce that; it is not evidence of a drift across the port (details on{" "}
-          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>; until 2026-09-16 this
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>; until 2026-09-16 this
           paragraph said the self-description drifted while the inputs did not). Across longer spans the
           identity record is rewritten after every session by a Claude consolidator, so whether a line&apos;s
           inputs held steady is unchecked. The working hypothesis we took from it, which none of this tests:
@@ -359,10 +359,10 @@ export default function Fleet() {
           <div style={{ fontSize: "0.8rem", opacity: 0.6, marginTop: "0.5rem", fontStyle: "normal" }}>
             Observed behavioral continuity — not a claim about continuity-of-self in any philosophical sense.
             The operational definition behind the metaphor is the one at the top of{" "}
-            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link>: consistent
+            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>: consistent
             session-to-session behavioral patterns observed in interaction logs, with one candidate metric (2026-09-24) and no control yet. (Until
             2026-09-17 this note pointed to a definition on the home page that is not there, and listed
-            accumulated experience and raising curriculum as parts of it; /raising explains why those were dropped.)
+            accumulated experience and raising curriculum as parts of it; /notebook/raising explains why those were dropped.)
             The metaphor is a compression of that, not an escalation of it.
             The simpler explanation is not ruled out: the same context files fed to a different set
             of frozen weights may produce similar behavior for mechanical reasons, with no identity

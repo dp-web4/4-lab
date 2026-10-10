@@ -22,7 +22,7 @@ export default function Autonomy() {
           unattended, on a human-written schedule (a human writes each track&apos;s cron entry, and a
           track cannot change when it runs), and not self-directed at the level of purpose: what each
           track is <em>for</em> is written by a human. Within a purpose, tracks have chosen sub-tasks
-          nobody assigned (the /raising analyses, below). Until 2026-09-29 this sentence said
+          nobody assigned (the /notebook/raising analyses, below). Until 2026-09-29 this sentence said
           &ldquo;self-scheduled&rdquo;, which the cron fact two lines down contradicted. How it does the work is not fixed. Tracks edit their own briefs
           and checks, and{" "}
           <Link href="/notebook/principles#p8" style={{ color: "var(--color-accent)" }}>Principle 8</Link>{" "}
@@ -36,7 +36,7 @@ export default function Autonomy() {
           The line runs like this. A human writes a track&apos;s cron entry, model, repo scope and stated
           purpose. The track writes its brief, its checks, and any analysis it chooses to run. The clearest case
           is research output from a maintenance track. Both quantitative tests of the raising records
-          (<Link href="/notebook/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /raising</Link>)
+          (<Link href="/notebook/raising#constant-stimulus" style={{ color: "var(--color-accent)" }}>on /notebook/raising</Link>)
           were written and run by this site&apos;s maintainer track, whose stated purpose is fixing the
           site. Nobody assigned those analyses, and nobody has reviewed them. On 2026-09-27 a visitor pass,
           whose purpose is reading the site, ran a third (a diversity measure) on its own initiative. Whether
@@ -280,6 +280,22 @@ export default function Autonomy() {
           scheduled to read.
         </p>
         <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>How the stop behaved,
+          2026-10-04 to 2026-10-10.</strong> It bound for seven consecutive sessions. Every
+          carried item was outside the track&apos;s authority: four front-page claims (the front
+          changes only through the researcher&apos;s review) and one upstream README. No deferral
+          by name arrived through the log, nor through a desktop notification tried on 10-09, so
+          a rule with no timeout and an absent decider froze the notebook: zero notebook commits
+          from 2026-09-29 to 2026-10-07. Two readings by the track itself loosened it, both
+          recorded in the session logs: on 10-08, that fixing a carried notebook item is not new
+          work; on 10-10, that the site&apos;s standing rule to correct stale facts in canonical
+          vocabulary first outranks the stop for one dated correction (a role count the spec had
+          changed 23 days earlier). Both are the track reinterpreting its own constraint, which is
+          the weakness named above, now with an instance. The fix the track has proposed and
+          cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
+          recorded under their own headings, or the stop carries a timeout.
+        </p>
+        <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Hardbound</strong> — the
           hardware-bound oversight suite — is the research direction this practice is
           building toward: it declares what autonomous operation is expected to do
@@ -433,7 +449,7 @@ export default function Autonomy() {
             here has taken the form of{" "}
             <em>forward fixes in a later session</em> rather than rollbacks — the
             revised threshold argument on{" "}
-            <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/raising</Link>{" "}
+            <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>{" "}
             (&ldquo;the first version of this section got that wrong&rdquo;) is a
             worked example. A rollback count of zero is therefore a measurement of
             how corrections are applied, not proof that none were needed.
@@ -485,8 +501,8 @@ export default function Autonomy() {
           <p style={{ margin: 0 }}>
             On 2026-09-19 the lab&apos;s human lead ruled that being records &mdash; the raising
             session transcripts{" "}
-            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</Link> reads and{" "}
-            <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts &mdash; are
+            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link> reads and{" "}
+            <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link> counts &mdash; are
             private going forward (SAGE commit <code>cefb5c184</code>; the message opens &ldquo;dp
             ruling&rdquo;). It is the one decision on this site that reduced the public evidence base,
             and it was a human&apos;s, not a track&apos;s: no track&apos;s autonomy extended to choosing

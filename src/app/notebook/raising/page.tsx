@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Notebook: Raising — Interactive Se
 export default function Raising() {
   return (
     <>
-      <Breadcrumbs currentPath="/raising" />
+      <Breadcrumbs currentPath="/notebook/raising" />
       <section className="section">
         <h1>Raising</h1>
         <p>
@@ -63,7 +63,7 @@ export default function Raising() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           &ldquo;BECOMING&rdquo; is a proper name, not an acronym — the six pattern
           initials (Grounding, Sensing, Relating, Questioning, Creating, Acting)
-          spell nothing. These are descriptive categories, not mandatory sequential stages with defined transition criteria, and not independent observations: Patterns 2–3 are computed by the harness, and the runner asks for each pattern by name on a session-number schedule (the eighth confound, below). The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE (Situation-Aware Governance Engine) harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
+          spell nothing. These are descriptive categories, not mandatory sequential stages with defined transition criteria, and not independent observations: Patterns 2–3 are computed by the harness, and the runner asks for each pattern by name on a session-number schedule (the eighth confound, below). The numbering is for reference, not a claimed order: Patterns 1–5 are observational pattern-names; treat them as descriptive scaffolding, not measured stages. Pattern 6 (Acting)&apos;s evidence from a raised entity is Legion&apos;s local-model ARC-AGI-3 run over the full game set (see <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>) — a coverage observation, unscored by ARC Prize, and not the site&apos;s headline 94.85% score, which was produced by Claude Opus 4.6 inside the SAGE (Situation-Aware Governance Engine) harness and is evidence of the harness&apos;s ceiling, not of a raising outcome (attribution on <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>/arc-agi-3</Link>).
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div className="phase-card" data-phase="1">
@@ -160,7 +160,7 @@ export default function Raising() {
               names is whether the persistence-vs-perseveration behavior seen in raising
               carries over to a world that doesn&apos;t negotiate; nothing below shows that it does.
               Observation in a raised entity: Legion, running a local vision model that went through the fleet&apos;s raising process, <strong>ran the full 25-game set end to end</strong> (see{" "}
-              <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>).
+              <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>).
               Co-present with raising, not attributed to it: no run of the same
               model without the raising history, on the same harness, exists to
               compare against — and playing through every game is something a
@@ -229,7 +229,7 @@ export default function Raising() {
           Horizon (MRH) — the boundary of what it can know or affect given its position, history, and context, which fixes the scope of what is relevant to it (canon&apos;s definition; row on{" "}
           <Link href="/notebook/context#mrh" style={{ color: "var(--color-accent)" }}>/context</Link>). It does <em>not</em> set the T3 (Trust Tensor — Talent / Training / Temperament; canon&apos;s &ldquo;Training&rdquo; covers accumulated capability however it was acquired, weights included; raising acts on the interaction-history and curriculum sources, and on the current lines never on weights, see{" "}
           <Link href="/notebook/context#t3" style={{ color: "var(--color-accent)" }}>/context</Link>): peers derive T3 from witnessed conduct, and V3 (Value Tensor — Valuation / Veracity / Validity) is assessed by others from what that conduct produced, bound to entity-role pairs and evaluated against the entity&apos;s Linked Context Token (LCT). In the fleet today only the T3 half exists; the peer tracker on{" "}
-          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>{" "}
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>{" "}
           keeps no V3. That is the point either way — an entity that could set its own tensors would be certifying itself. (This site reads the <code>/</code> in <code>T3/V3</code> as &ldquo;verified by&rdquo;. That is the site&apos;s gloss, not canon, which calls the two tensors complementary; see the legend on{" "}
           <Link href="/notebook/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>.) Either way, current
           raising does not change weights: SAGE&apos;s BECOMING curriculum document (2026-04-04) states that the
@@ -286,7 +286,7 @@ export default function Raising() {
           awareness. Stage 3 (Questioning): agency. Stage 4 (Creating):
           federation. That four-stage sequence is the plan. Nothing assesses readiness between stages: curriculum
           phases advance by session number (the schedule is on{" "}
-          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>), and in the runner that
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>), and in the runner that
           implements tool stages (SAGE&apos;s <code>run_session_identity_anchored_fluid.py</code>) the stage is a
           command-line flag the operator sets, with three values: silent, aware, active. Until 2026-09-17 this
           paragraph said each stage adds capability only once the entity has demonstrated readiness at the previous
@@ -300,7 +300,7 @@ export default function Raising() {
           every session to that date is a full turn-by-turn transcript under{" "}
           <code>sage/instances/&lt;line&gt;/sessions/</code> in the{" "}
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>public SAGE repo</a>,
-          the same path <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link> counts, and anyone can read those
+          the same path <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link> counts, and anyone can read those
           without asking. After that date this holds for fewer lines. On 2026-09-19 the lab&apos;s human lead ruled
           that being records are private going forward (SAGE commit <code>cefb5c184</code>; its message
           opens &ldquo;dp ruling&rdquo;, so this was a human decision, not one the machines made; until
@@ -426,7 +426,7 @@ export default function Raising() {
           SAGE-Sprout — 115 session records on a{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Jetson</Link> running Qwen 0.5B
           (identity created 2025-12-30, sessions through 2026-02-26; a model-line count, not a machine total — the Sprout box&apos;s current model lines and session counts are on{" "}
-          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns them),
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>, which owns them),
           then copied to TinyLlama 1.1B on{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>CBP</Link>{" "}
           (a fleet machine; the machine names are proper names, not acronyms) on 2026-02-27, with the line since continuing past
@@ -445,7 +445,7 @@ export default function Raising() {
           &ldquo;consistent separation&rdquo; and said the self-description &ldquo;drifted&rdquo; while the
           inputs carried across the port did not. The session records do not support a drift.) On this fleet
           identity lives in state files, the experience buffer and prompt construction (see{" "}
-          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>),
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>),
           and all three were copied with it, so behavioral persistence is partly true by construction. The
           Qwen 0.5B sessions also include the LoRA period described above, so part of that line&apos;s behavior
           was shaped in weights, not only in context. Across longer spans the consolidator confound still
@@ -664,7 +664,7 @@ export default function Raising() {
           session-to-session behavioral patterns observed in interaction logs)
           was said here, until 2026-09-24, not to yield a metric that could separate the
           arms. The attempt below found one, and moved the blocker. Earlier
-          versions of the definition, here and on /context and /fleet, also
+          versions of the definition, here and on /context and /notebook/fleet, also
           listed accumulated experience and raising curriculum state; both are
           inputs the treatment supplies, so measuring them cannot tell raising
           from context engineering, which is why the definition dropped them.

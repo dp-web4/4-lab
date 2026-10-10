@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Notebook: Links & Contact" };
 export default function Links() {
   return (
     <>
-      <Breadcrumbs currentPath="/links" />
+      <Breadcrumbs currentPath="/notebook/links" />
       <section className="section">
         <h1>Links &amp; Contact</h1>
         <h2 style={{ marginTop: "1.5rem" }}>Explainer Sites</h2>
@@ -15,7 +15,7 @@ export default function Links() {
           <ExternalLink
             href="https://synchronism-site.vercel.app"
             title="Synchronism"
-            description="75 pages covering the coherence equation (Synchronism's central formalism — a research conjecture, not established physics; which mathematical object the equation is remains unsettled upstream, see /projects), predictions, interactive tools, and honest assessments"
+            description="75 pages covering the coherence equation (Synchronism's central formalism — a research conjecture, not established physics; which mathematical object the equation is remains unsettled upstream, see /notebook/projects), predictions, interactive tools, and honest assessments"
           />
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
@@ -48,7 +48,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) and V3 (Value Tensor — Valuation / Veracity / Validity) as complementary tensors (the site reads the equation's T3/V3 as “verified by”; that gloss is the site's, see the Glossary), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /projects Quick start)"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) and V3 (Value Tensor — Valuation / Veracity / Validity) as complementary tensors (the site reads the equation's T3/V3 as “verified by”; that gloss is the site's, see the Glossary), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /notebook/projects Quick start)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
@@ -108,7 +108,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/hestia"
             title="Hestia"
-            description="Open local-first governance daemon — agents from different vendors under one signed law on one machine, with a hash-chained action record. ('Governance' is deliberate here; see /projects.)"
+            description="Open local-first governance daemon — agents from different vendors under one signed law on one machine, with a hash-chained action record. ('Governance' is deliberate here; see /notebook/projects.)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/4-hub"
@@ -134,11 +134,11 @@ export default function Links() {
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
           The commands live in one place: the{" "}
-          <a href="/notebook/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /projects</a>{" "}
+          <a href="/notebook/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start on /notebook/projects</a>{" "}
           — Web4&apos;s published packages, a SAGE instance from clone to running daemon
           (including the <code>ollama pull</code> step). This page
           used to carry a second copy; the two drifted apart, so it now links instead.
-          SAGE is the hands-on starting point — it runs on a single machine, has 2,499 internally logged session records as context (2,620 including HUB; per-machine counts on <a href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the starting point for the ontology and its reference implementation. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
+          SAGE is the hands-on starting point — it runs on a single machine, has 2,499 internally logged session records as context (2,620 including HUB; per-machine counts on <a href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</a>, the source of record), and is where most fleet behavior originates. Web4 is the starting point for the ontology and its reference implementation. ACT is the Cosmos SDK take on the same trust primitives, but it is stalled and has no published first-run steps, so it is not a third starting point today.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
@@ -171,7 +171,7 @@ export default function Links() {
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>{" "}
           under <code>sage/instances/&lt;line&gt;/sessions/</code>. Since then most lines mirror
           their records privately under a ruling by the lab's human lead, not the machines (SAGE commit cefb5c184); see{" "}
-          <a href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/raising</a>. Coding criteria
+          <a href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</a>. Coding criteria
           and a rater protocol are not published, and no third party has
           reviewed the readings.
         </p>

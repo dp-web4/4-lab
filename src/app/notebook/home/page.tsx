@@ -44,13 +44,13 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <div className="stat-value">4</div>
-            <div className="stat-label">Model families deployed on raising lines: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived). Deployed is not the same as running: each line&apos;s current state is on <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>, which owns it</div>
+            <div className="stat-label">Model families deployed on raising lines: Qwen, Gemma, Granite, Llama (Phi and TinyLlama lines archived). Deployed is not the same as running: each line&apos;s current state is on <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>, which owns it</div>
           </div>
         </div>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginTop: "0.75rem" }}>
           Of these, the eight instances with raising history are the current raising lines, one per machine (archived lines such as Sprout&apos;s Qwen 0.5B also carry history and are not in the eight; how instance, line and session record nest is on{" "}
           <Link href="/notebook/context#instance-line" style={{ color: "var(--color-accent)" }}>/context</Link>). They are enumerated per machine on{" "}
-          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/fleet</Link>. Not all eight
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>. Not all eight
           are currently running: that page assigns each line a dated state (running, quiet,
           paused, instrumentation broken) and is the checkable version of these numbers. The configured-instance census is not.
         </p>
@@ -90,7 +90,7 @@ export default function Home() {
               <h3 style={{ color: "#14b8a6" }}>Hub</h3>
               <p>
                 A Rust society runtime for communities and organizations: member
-                identity, seven base roles, signed law, sealed channels and an
+                identity, eight base roles, signed law, sealed channels and an
                 append-only witnessed ledger. The fleet runs on the same society
                 runtime it is developing.
               </p>
@@ -122,7 +122,7 @@ export default function Home() {
             hardware-bound identity, stronger fail-closed enforcement and
             audit-ready evidence packaging. It is private and research-stage: hardware
             anchoring is a design target, and enforcement on the fleet today is at the
-            process level (see <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/projects</Link>). The open layer avoids governance lock-in;
+            process level (see <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>). The open layer avoids governance lock-in;
             the commercial layer raises assurance for deployments that require it.
           </p>
         </div>
@@ -155,7 +155,7 @@ export default function Home() {
               <p>
                 Measured, implemented-but-unexercised, hypothesized and refuted are
                 kept separate. Negative results and broken instruments stay in the record.
-                Two quantitative tests of the raising records have been run: a drift measurement that came back null, and an identity metric that separates lines but finds nothing accumulating. Both are written up on /raising and ranked on /context.
+                Two quantitative tests of the raising records have been run: a drift measurement that came back null, and an identity metric that separates lines but finds nothing accumulating. Both are written up on /notebook/raising and ranked on /context.
               </p>
             </div>
           </Link>
