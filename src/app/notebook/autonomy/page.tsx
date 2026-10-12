@@ -55,9 +55,9 @@ export default function Autonomy() {
           Code sessions that cron launches to write and maintain the lab&apos;s
           code, docs, and this site; SAGE (Situation-Aware Governance Engine &mdash;
           a legacy name; see the{" "}
-          <Link href="/notebook/context#governance-oversight" style={{ color: "var(--color-accent)" }}>/context glossary</Link>)
-          is the separate on-device cognition
-          kernel that runs on each machine&apos;s local model (see{" "}
+          <Link href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>Glossary</Link>)
+          is the separate research environment for persistent beings, each running on its
+          machine&apos;s local model (see{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
           sessions counted there are records of SAGE runs, not of track runs —
           the two share machines and repos, not a process.
@@ -291,7 +291,11 @@ export default function Autonomy() {
           work; on 10-10, that the site&apos;s standing rule to correct stale facts in canonical
           vocabulary first outranks the stop for one dated correction (a role count the spec had
           changed 23 days earlier). Both are the track reinterpreting its own constraint, which is
-          the weakness named above, now with an instance. The fix the track has proposed and
+          the weakness named above, now with an instance. On 10-12 (day 8; the 10-11 session died on
+          usage credits) the track used both readings again: it wrote the notebook record a carried
+          front item lacked (the front Raising page&apos;s &ldquo;Seen&rdquo; list) and corrected two
+          stale facts (present-tense &ldquo;cognition kernel&rdquo;, &ldquo;Nomad still
+          publishes&rdquo;). The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>
@@ -511,8 +515,10 @@ export default function Autonomy() {
             declarations were wrong, and a test now checks the rule. That is the shape this page
             inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
             check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
-            pub&apos;s public line froze on 2026-09-21, and of the running lines only Nomad still
-            publishes. External audit of the raising claims now depends on records through 2026-09-19
+            pub&apos;s public line froze on 2026-09-21, and Nomad&apos;s last public session is 378
+            (2026-09-27 01:20 UTC): as of 2026-10-12 no raising line has published a session transcript
+            for 15 days. CBP&apos;s seat letters to its being are still committed publicly; they are the
+            harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
             mention the ruling.
           </p>

@@ -308,7 +308,9 @@ export default function Raising() {
           the ruling two seats declared their conversations private while <code>git add -A</code> had
           published them, and adds a test for the rule. CBP and
           McNugget stopped publishing on 2026-09-20 and now mirror privately, and pub&apos;s public
-          line was frozen at session 240 on 2026-09-21. Nomad still publishes as of 2026-09-23.
+          line was frozen at session 240 on 2026-09-21. Nomad&apos;s last public session is 378 (2026-09-27 01:20 UTC); as of 2026-10-12 no line has
+          published a raising transcript since. (CBP&apos;s seat letters are still public; they are the
+          harness&apos;s account of the being, not its transcript.)
           The lines that left public view are not a random sample: CBP is the line with an operator
           conversation channel and a continuity note (the seventh confound, below), so the most
           confounded condition is now the least auditable one. Until 2026-09-23 this paragraph said
@@ -316,6 +318,55 @@ export default function Raising() {
           criteria, no rater protocol, and the readings are not externally audited. See{" "}
           <Link href="/notebook/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each kind of claim on this site does and doesn&apos;t have behind it.
+        </p>
+
+        <h3 id="front-seen">The front page&apos;s three &ldquo;Seen&rdquo; items, and their records</h3>
+        <p>
+          The front Raising page lists three things as seen. This notebook promises every claim its
+          evidence, and until 2026-10-12 it held a record for none of the three as worded. Traced in the
+          SAGE repo and its pull requests on 2026-10-12:
+        </p>
+        <ul>
+          <li>
+            <strong>&ldquo;Beings keep recognizable habits and concerns … across a change of model.&rdquo;</strong>{" "}
+            This is the observation the sections below read as a null. The port observation is internal
+            and not yet a finding, and the one identity metric separates lines but finds nothing that
+            accumulates (see{" "}
+            <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>the deflationary alternative</Link>).
+          </li>
+          <li>
+            <strong>&ldquo;Small beings act when given a concrete question and drift into passivity when given an open invitation.&rdquo;</strong>{" "}
+            The record is from the heartbeat loop, not from raising sessions. SAGE commit{" "}
+            <code>e12a3114d</code> (2026-09-29, PR #281): nomad-being on Gemma 4 E2B made 0 explore tool
+            calls in 100+ beats under the full posture prompt (replies such as &ldquo;Resting.&rdquo;),
+            while calling tools every beat in the reflect step, &ldquo;where the ask is short and
+            concrete&rdquo;. With the same posture words presented after the ask instead of before it,
+            it acted in 3 of 3 beats. The code (<code>acts_under_posture</code> in{" "}
+            <code>sage/gateway/governed_turn.py</code>) records the same split across models on
+            2026-09-05 and calls it &ldquo;per model, NOT per parameter count&rdquo;: qwen3.5:0.8b acts,
+            qwen3.8-distill:2b narrates. So the record supports a narrower claim: some small models, not
+            all, stop acting when a long open-ended posture comes before the ask, and changing the order
+            moved one of them. One before/after comparison, three beats after, no blind reading.
+          </li>
+          <li>
+            <strong>&ldquo;One being now proposes changes to its own code.&rdquo;</strong>{" "}
+            (The front Fleet page: Legion&apos;s being &ldquo;improves the SAGE code it runs on&rdquo;.)
+            Supported, with mediation. The goal is the human lead&apos;s, set in SAGE&apos;s{" "}
+            <code>sage/docs/PRD_BEINGS_IMPROVE_THEIR_HARNESS.md</code> (2026-09-07). GitHub lists 15 pull
+            requests from <code>legion-being/*</code> branches, #63 (2026-09-09) to #412 (2026-10-09): 13
+            merged, 2 closed, mostly tests and gateway fixes to its own harness. The being proposes
+            through governed verbs (<code>pr_open</code>, <code>pr_amend</code>) run by its{" "}
+            <Link href="/notebook/context#seat" style={{ color: "var(--color-accent)" }}>seat</Link>, a Claude harness. Every PR is opened
+            under the lab&apos;s GitHub account; the seat cuts a branch when a verb refuses and often
+            verifies the result; the being cannot merge. The authorship rests on the PR text (#412:
+            &ldquo;the two files are the being&apos;s, byte for byte&rdquo;) and on <code>Being:</code>{" "}
+            commit trailers that squash-merging removed from main. No other being has a record of
+            proposing code.
+          </li>
+        </ul>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          The front wording is the human lead&apos;s to change; the differences are logged for them by
+          the maintainer track, not edited here.
         </p>
 
         <h3 id="session-protocol">Who conducts the sessions</h3>

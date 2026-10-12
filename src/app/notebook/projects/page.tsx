@@ -17,7 +17,7 @@ export default function Projects() {
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>recursive learning through
           both success and failure</Link>. Synchronism is the conceptual lineage. Web4
           provides the ontology. Hestia governs the machine. Hub is the society that
-          checks the record Hestia makes. SAGE (Situation-Aware Governance Engine) provides the cognition. Hardbound
+          checks the record Hestia makes. SAGE (Situation-Aware Governance Engine) runs the persistent beings. Hardbound
           provides the oversight.
         </p>
 
@@ -178,7 +178,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ARC-AGI-3"
-            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation — an interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games serve as an external benchmark for the cognition kernel — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) audit trails. The games are the test; the capability is the product."
+            description="Claude Opus 4.6 inside the SAGE harness scored 94.85% on the official ARC Prize ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation — an interactive benchmark) action score — efficiency-weighted; public set, network-enabled; 23 of 25 environments completed (92.0%), 175 of 183 levels — for ~$250 in API cost. Two caveats travel with this number and neither is optional. (a) AFFORDANCES — the harness analyzed the games&apos; public engine source and built per-game world-model / solver cartridges. That is outside strict from-observation competition play, so the result shows what model+harness could do with engine-level context and tooling, not blind generalization. (b) ATTRIBUTION — the harness-vs-model ablation has not been run, so how much of the score is the harness is an open question. Published 2026-04-17; this is a historical research record, not current competition positioning — current competition-legal local-model work is well behind the leaders. The 25 unknown interactive games served as an external benchmark for what was then SAGE&apos;s cognition-kernel design (reframed upstream 2026-09-26) — world-model building, action planning, verification, and learning from failure. Phase 2, separate from the scored run and not scored by ARC Prize: the six local models, 0.8B (Sprout) to 27B (Thor) at benchmark time, work the same games through world models, membot cartridges, and R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) audit trails. The games are the test; the capability is the product."
             accentColor="#a855f7"
             isPublic={true}
             maturity="research-stage"
@@ -210,7 +210,7 @@ export default function Projects() {
           conceptual lineage; not an engineering dependency,&rdquo; and no Web4 primitive
           (LCT, T3/V3, MRH, ATP/ADP, R6/R7, where R7 is R6 + Reputation) is defined from a Synchronism equation. Web4
           states the patterns as ontology. Hestia adjudicates them on one machine; Hub
-          witnesses them across a society. SAGE runs them as cognition. Hardbound is designed to enforce
+          witnesses them across a society. SAGE runs them inside persistent beings. Hardbound is designed to enforce
           them as oversight.
           This isn&apos;t unification — it&apos;s{" "}
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)", fontWeight: 600 }}>
@@ -229,7 +229,7 @@ export default function Projects() {
 
         <h2 style={{ marginTop: "2rem" }}>Get involved</h2>
         <h3 id="quick-start" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
-        <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — on-device cognition kernel (recommended first clone)
+        <pre style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "0.75rem 1rem", fontSize: "0.8125rem", overflowX: "auto", marginBottom: "0.5rem" }}>{`# SAGE — research environment for persistent beings (recommended first clone)
 # Needs: Rust (stable), Ollama, Python 3.10+
 git clone https://github.com/dp-web4/SAGE
 cd SAGE

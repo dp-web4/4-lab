@@ -713,7 +713,7 @@ export default function Context() {
           binding and trust formation, reusing that curve at the second scale is
           fractal leverage, by analogy rather than by derived law. Synchronism is
           where such patterns were first proposed; Web4 states them as ontology;
-          SAGE runs them as cognition; Hardbound is designed to enforce them as oversight. Same pattern at every layer. See{" "}
+          SAGE runs them inside persistent beings; Hardbound is designed to enforce them as oversight. Same pattern at every layer. See{" "}
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
         </p>
 
@@ -830,7 +830,7 @@ export default function Context() {
           <a href="https://github.com/dp-web4/SAGE/tree/main/sage/instances" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>SAGE repo</a>.
           After that, CBP, McNugget and pub mirror their records privately under a ruling by the lab&apos;s human lead (SAGE commit <code>cefb5c184</code>)
           (<Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link> has the dates),
-          and of the running lines only Nomad still publishes;
+          and Nomad&apos;s last public session is 378 (2026-09-27), so no raising transcript has been public since;
           what is unpublished is the reading method (no coding criteria, no rater
           protocol) and any third-party review. Hardbound&apos;s catalog is private
           and cannot be checked from outside. Who conducts raising sessions, and

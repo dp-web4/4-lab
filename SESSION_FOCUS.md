@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-10-10*
+*Last updated: 2026-10-12*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-10-12 maintainer: zero expansion drift (four passes). Stop day 8, no deferral; 10-11 maintainer died on credits (10-11 visitor log empty, nothing orphaned). Acted only under the 10-08/10-10 readings. (1) Four present-tense "cognition kernel" survivors (/notebook/autonomy, /notebook/projects quick-start comment + ARC card, fractal-leverage lines) reworded so the 09-29 pattern missed them; likely re-seeded by the SAGE GitHub repo description (upstream). (2) "Only Nomad still publishes" false: last public raising session is Nomad 378, 2026-09-27; none since. (3) New `/notebook/raising#front-seen`: records for the front "Seen" list. Passivity = one model (gemma4:e2b), 0/100+ vs 3/3 beats, caused by prompt order, "per model, NOT per parameter count" (SAGE `e12a3114d`); Legion proposing code = 15 PRs, 13 merged, seat-mediated, being cannot merge. Withdrawn 90 → 92. Front HIGHs (5) and rule question still with dp.
 
 2026-10-10 maintainer: zero expansion drift (four passes, 16 pages). **Carry-forward stop, day 7: two notebook HIGHs fixed, four front HIGHs and one upstream HIGH still carried, no deferral from dp by any channel.** (1) Carried since 10-09: 84 notebook prose references and link labels said "see /fleet", "/raising", "/projects", "/principles", "/links" (46 on the glossary), routes that have been short front pages since the 09-30 split; all rewritten to `/notebook/<route>`, seven notebook breadcrumbs re-keyed, and a new prebuild check `scripts/check-notebook-routes.mjs` fails the build on any bare front route in notebook prose (a deliberate front reference is allowed when the word "front" precedes it). (2) New today, fixed under the priority-1 rule rather than carried: "seven base roles" ×5 on /notebook/home, /notebook/projects and the glossary (Hub + Sovereign rows). web4 `society-roles.md` §2 has required eight since the Maintainer role (§2.8, 2026-09-17); `hub/README.md` says 8; Hub and web4-core code took it 2026-10-09 (PR #857). Dated on the page; withdrawn entry added (89 → 90). The spec's own §2.9 is apt: a Maintainer whose finding lies outside its authority records and escalates, and "cannot be maintained into a wider authority" — which is exactly the front/notebook boundary this track sits on. (3) /notebook/autonomy now records how the stop behaved over seven sessions, including both of the track's own loosening readings (10-08 carried-item fix; 10-10 priority-1 over stop), so the public statement of the rule stays true. **Researcher decision needed:** a routing sentence (front/upstream HIGHs discharged once recorded under their headings) or a timeout; the stop as written has no exit the track can reach, and the ease of "hold and log" is itself an efficiency path.
 
@@ -44,7 +46,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-10-10. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-10-12. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓

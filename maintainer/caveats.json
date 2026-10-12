@@ -819,6 +819,20 @@
       "pattern": "seven base roles|one of seven base|7 base roles",
       "unless": "said seven until|counted seven until",
       "why": "web4 society-roles.md §2 has required eight base roles since the Maintainer role (§2.8) landed on 2026-09-17; hub/README.md says 8; Hub and web4-core code took the eighth role 2026-10-09 (web4 PR #857). Five notebook occurrences said seven for 23 days."
+    },
+    {
+      "id": "sage-cognition-kernel-survivors",
+      "withdrawn": "2026-10-12",
+      "pattern": "is the separate on-device cognition|on-device cognition kernel \\(recommended|benchmark for the cognition kernel|SAGE (\\(Situation-Aware Governance Engine\\) )?provides the cognition|SAGE runs them as cognition",
+      "unless": "",
+      "why": "Four present-tense survivors of the 2025 framing withdrawn 2026-09-29 (sage-cognition-kernel-as-current), worded so that entry's pattern missed them: /notebook/autonomy, the /notebook/projects quick-start comment and ARC card, and the fractal-leverage line on /notebook/projects and /notebook/context. SAGE AGENTS.md + LATEST_STATUS.md (2026-09-26). Likely source: the SAGE GitHub repo description, still 'A cognition kernel that wraps a frozen LLM' (upstream)."
+    },
+    {
+      "id": "nomad-still-publishes",
+      "withdrawn": "2026-10-12",
+      "pattern": "only Nomad still publishes|Nomad still publishes",
+      "unless": "corrected two stale facts",
+      "why": "SAGE origin/main: last [Nomad-Raising] session commit is 378, 7acf2f225, 2026-09-27 01:20 UTC; no raising session commit from any line since (checked 2026-10-12)."
     }
   ]
 }
