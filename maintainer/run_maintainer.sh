@@ -59,6 +59,15 @@ else
     fi
 fi
 
+# Flag outside contributors' issues/PRs to the fleet (forum note + hub ping), before the
+# session, so noticing them never depends on the session remembering to look (dp, 2026-10-13).
+# A failure here is logged and never stops the maintainer run.
+echo "Flagging external issues/PRs..." | tee -a "$LOG_FILE"
+EXTERNAL_CONTEXT=$(python3 /home/dp/ai-workspace/private-context/scripts/flag-external-items.py \
+    --track 4-lab --state "$SCRIPT_DIR/external-flagged.json" 2>>"$LOG_FILE" | tail -1) \
+    || EXTERNAL_CONTEXT="external-item flagging failed this run; see the log"
+echo "$EXTERNAL_CONTEXT" | tee -a "$LOG_FILE"
+
 # Launch maintainer session
 claude --dangerously-skip-permissions << EOF >> "$LOG_FILE" 2>&1
 # 4-lab Site — Maintainer Session ($DATE)
@@ -66,6 +75,8 @@ claude --dangerously-skip-permissions << EOF >> "$LOG_FILE" 2>&1
 You are running an automated maintainer session. Your instructions are in CLAUDE.md.
 
 ## Today's Context
+
+External issues/PRs: $EXTERNAL_CONTEXT (see "External issues and PRs" in CLAUDE.md)
 
 $FLEET_CONTEXT
 
@@ -88,7 +99,7 @@ echo "Maintainer session complete. Log: $LOG_FILE"
 
 # Commit and push results
 cd "$PROJECT_DIR"
-git add maintainer/logs/ src/ 2>/dev/null || true
+git add maintainer/logs/ maintainer/external-flagged.json src/ 2>/dev/null || true
 if ! git diff --cached --quiet 2>/dev/null; then
     git commit -m "maintainer: session $DATE" 2>/dev/null || true
     if git push origin HEAD; then
