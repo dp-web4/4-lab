@@ -47,8 +47,9 @@ export default function Projects() {
           Status labels: <strong style={{ color: "var(--color-text-primary)" }}>runnable</strong> = clone it and it executes end to end today (a demo, a script, a server) — not a claim about polish or completeness. <strong style={{ color: "var(--color-text-primary)" }}>research-stage</strong> = design docs, specs, and experiments; may not run end to end without additional setup or missing pieces. These describe maturity. The separate <strong style={{ color: "var(--color-text-primary)" }}>public</strong> / <strong style={{ color: "var(--color-text-primary)" }}>private</strong> badge is a different axis — repository visibility, not maturity: <strong style={{ color: "var(--color-text-primary)" }}>private</strong> = the source is not published, so nothing on that card is externally checkable and it is described here at the purpose level only. A project can be runnable and private, or public and research-stage; the two labels do not imply each other.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          This is the most acronym-dense page on the site. Every Web4 term the
-          cards use (LCT, T3/V3, MRH, ATP/ADP, R6/R7, MCP, RDF, SNARC) is defined
+          This is the most acronym-dense page on the site. Every acronym the
+          cards use (the Web4 terms LCT, T3/V3, MRH, ATP/ADP and R6/R7; the external
+          standards MCP and RDF; the lab project SNARC) is defined
           in the{" "}
           <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>
           {" "}— the cards expand each on first use, but the glossary is the
@@ -87,6 +88,14 @@ export default function Projects() {
             url="https://sage-site-murex.vercel.app"
             repoUrl="https://github.com/dp-web4/SAGE"
             footnote="'Governance' in the name is retained upstream across code, papers and the ARC Prize benchmark; see /context#governance-oversight for how the lab uses the word."
+          />
+          <ProjectCard
+            name="SWE-SAGE"
+            description="SAGE applied to software engineering (SWE): the lab&apos;s entry in the Google / Kaggle Gemma 4 Developer Agent Competition. The repository is private, so its link on the front /projects and /links pages returns 404 to visitors; this card is the public record of it. What can be checked publicly is SAGE&apos;s own description, sage/docs/SWE_SAGE.md (dated 2026-09-26) and item 10 of LATEST_STATUS.md: a private sibling of SAGE, kept private during the competition so that competition code is not published by accident. Its research question, in upstream&apos;s words: how much of a capable agent needs to live in the weights, and how much can live in persistent state, evidence handling, learned procedures and governed action around the model. The planned ablation compares base Gemma 4, post-trained Gemma 4, each with and without the persistent SAGE scaffold, and the combined system with governed, witnessed action; upstream says the scaffold &apos;is not presumed to outperform post-training&apos;. No results are public, and this site has none to report. General findings are to flow back into public SAGE by deliberate release, not by default. Nomad, the fleet&apos;s smallest being, is the machine the front /fleet page associates with it."
+            accentColor="var(--color-sage)"
+            isPublic={false}
+            maturity="research-stage"
+            url="https://github.com/dp-web4/SAGE/blob/main/sage/docs/SWE_SAGE.md"
           />
           <ProjectCard
             name="Hestia"

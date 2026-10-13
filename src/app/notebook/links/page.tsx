@@ -56,6 +56,11 @@ export default function Links() {
             description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway."
           />
           <ExternalLink
+            href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/SWE_SAGE.md"
+            title="SWE-SAGE (private repository; public description)"
+            description="SAGE applied to software engineering (SWE), the Gemma 4 Developer Agent Competition entry. The repository github.com/dp-web4/SWE-SAGE is private and returns 404 to visitors; this link is SAGE's public description of it (2026-09-26). No results published; see /notebook/projects"
+          />
+          <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
             title="Synchronism"
             description="Theoretical research program — coherence conjecture, coupling experiments; conceptual lineage for Web4, not an engineering dependency"

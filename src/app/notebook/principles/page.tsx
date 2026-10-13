@@ -38,6 +38,67 @@ export default function Principles() {
           Where principles use developmental or identity language (&ldquo;identity&rdquo;, &ldquo;attractors&rdquo; &mdash; stable response basins in the probability landscape, per Principle 7 &mdash; &ldquo;collaborative&rdquo;), they describe functional system behavior — not phenomenal or philosophical claims.
         </p>
 
+        <h2 id="front-six" style={{ marginTop: "1.5rem" }}>The front&apos;s six principles, mapped to this page</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          The front <Link href="/principles" style={{ color: "var(--color-accent)" }}>How we work</Link>{" "}
+          page lists six principles and says the reasoning behind each is here. This page was
+          written earlier, with ten different ones, so the two sets do not line up. Recorded
+          2026-10-13, after a visitor pass found that four of the six had no counterpart here.
+          The map below says where each one&apos;s reasoning is, and where the notebook&apos;s own
+          record describes the current practice differently.
+        </p>
+        <ul style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          <li>
+            <strong>Trust is a track record.</strong> Reasoning: <a href="#p4" style={{ color: "var(--color-accent)" }}>Principle 4</a>{" "}
+            (trust belongs to a relationship in context, not to an entity). The &ldquo;earned from
+            witnessed behavior&rdquo; half is the T3/V3 reading on the{" "}
+            <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
+          </li>
+          <li>
+            <strong>Rules before actions.</strong> No reasoning on this page yet. Current practice:
+            Hestia checks an agent&apos;s tool calls against a signed law before they run, at
+            assurance profile A1, a cooperative in-process hook (see the{" "}
+            <Link href="/notebook/context#assurance-ladder" style={{ color: "var(--color-accent)" }}>A0–A4 row</Link>).
+            Not every action passes through it: the law has no rule for <code>git push</code>{" "}
+            or deploys, so the pushes that ship this site and the fleet&apos;s repos are
+            detect-and-revert, not checked before they act (see{" "}
+            <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>,
+            Operational boundaries).
+          </li>
+          <li>
+            <strong>The record is kept by someone else.</strong> No reasoning on this page yet.
+            Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
+            edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
+            assurance row says a sophisticated agent can route around the hook. The step that
+            would put the record out of the agent&apos;s reach (A2, external enforcement) is not
+            shipped. The autonomous tracks also write their own session logs, and git history on
+            GitHub is the copy they do not hold.
+          </li>
+          <li>
+            <strong>We use what we build.</strong> No reasoning on this page yet. The record of it
+            is <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>:
+            the daily tracks, including this site&apos;s maintainer, run under Hestia&apos;s law.
+          </li>
+          <li>
+            <strong>Different on purpose.</strong> No reasoning on this page yet; the nearest is{" "}
+            <a href="#p5" style={{ color: "var(--color-accent)" }}>Principle 5</a> on emergent
+            coherence. One known exception: all four visitor personas that audit this site run on
+            the same model family as its authors. A persona on a different family is listed on{" "}
+            <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>{" "}
+            as the cheap fix and has not been scheduled.
+          </li>
+          <li>
+            <strong>Say what is not known.</strong> Reasoning:{" "}
+            <a href="#p6" style={{ color: "var(--color-accent)" }}>Principle 6</a>, Document failures.
+          </li>
+        </ul>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
+          The front&apos;s line that &ldquo;decisions that are hard to undo come back to the
+          human&rdquo; is also not current practice for pushes: /notebook/autonomy records that
+          consequential pushes are not human-gated before they ship, and that a repo push is not
+          fully revertible once public. Principles 1–3 and 7–10 below have no front counterpart.
+        </p>
+
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>
           <div className="principle-card">
             <h2 id="p1" className="principle-title">1. Substrate, not structure</h2>

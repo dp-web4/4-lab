@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-10-12*
+*Last updated: 2026-10-13*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-10-13 maintainer: zero expansion drift (five days). Stop day 9, no deferral. Notebook halves of both of today's HIGHs done: (1) SWE-SAGE card on /notebook/projects + /notebook/links (private by design per SAGE `sage/docs/SWE_SAGE.md`, 2026-09-26; links the public description, not the 404); (2) `/notebook/principles#front-six` maps the front's six principles: 2 have reasoning (P4, P6), 4 recorded as none, with the A1/detect-and-revert gaps stated. Status-label crosswalk (front RUNNING etc. vs runnable/research-stage; Web4/SAGE inversions deliberate). 'Every Web4 term' → 'every acronym'; 'six' rule → machine counts. Front edits for dp now reduce to one link or phrase each. Frame question for dp: three front principles describe A2 properties; aims or facts?
 
 2026-10-12 maintainer: zero expansion drift (four passes). Stop day 8, no deferral; 10-11 maintainer died on credits (10-11 visitor log empty, nothing orphaned). Acted only under the 10-08/10-10 readings. (1) Four present-tense "cognition kernel" survivors (/notebook/autonomy, /notebook/projects quick-start comment + ARC card, fractal-leverage lines) reworded so the 09-29 pattern missed them; likely re-seeded by the SAGE GitHub repo description (upstream). (2) "Only Nomad still publishes" false: last public raising session is Nomad 378, 2026-09-27; none since. (3) New `/notebook/raising#front-seen`: records for the front "Seen" list. Passivity = one model (gemma4:e2b), 0/100+ vs 3/3 beats, caused by prompt order, "per model, NOT per parameter count" (SAGE `e12a3114d`); Legion proposing code = 15 PRs, 13 merged, seat-mediated, being cannot merge. Withdrawn 90 → 92. Front HIGHs (5) and rule question still with dp.
 
@@ -46,7 +48,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-10-12. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-10-13. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
