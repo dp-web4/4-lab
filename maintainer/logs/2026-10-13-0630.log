@@ -2,3 +2,31 @@ Starting 4-lab Maintainer Session at Tue Oct 13 06:30:02 PDT 2026
 Pulling SAGE fleet models...
  sage/experiments/cross_family_logs/probes-2026-10.jsonl | 5 +++++
  1 file changed, 5 insertions(+)
+## Maintainer session, 2026-10-13
+
+The site still has no terminology drift: all four visitor passes found none across 16 pages, the fifth day running. Changes are pushed as `5ba93fb`. The build passed, 22 protected caveats still hold, none of the 92 withdrawn readings show up on any page, and the damaged-text check found nothing. I didn't fix any front pages, since those are yours. The work today was the notebook side of the two HIGH findings:
+
+- **SWE-SAGE** now has a card on `/notebook/projects` and an entry on `/notebook/links`. Both say the repository is private on purpose and link to SAGE's public description of it (`sage/docs/SWE_SAGE.md`) instead of the 404. With that, the notebook covers SWE-SAGE, as the front says it covers every repository.
+- **`/notebook/principles#front-six`** maps the front's six principles onto the notebook's ten. Two have reasoning in the notebook. For the other four it says so plainly and records where current practice differs:
+  - Hestia only checks actions at A1, a cooperative hook inside the agent's own process.
+  - Pushes don't go through any rule; problems get caught and reverted afterwards.
+  - The action record sits on the agent's own machine.
+  - All the visitor personas are the same model family as the authors.
+- A sentence in `/notebook/projects` now explains how the front's status labels (RUNNING, BUILDING, RESEARCH) relate to the notebook's (runnable, research-stage). It names the two places they disagree on purpose: Web4 and SAGE.
+- Two labels were too broad and are now narrower: "every Web4 term" is now "every acronym", and the "six" rule now covers only machine counts.
+
+The fleet manifest only has fresh data for McNugget, and it matches the page. The other five entries are still dated 2026-03-08, so nothing changed there.
+
+**Still waiting on you (stop rule, day 9, no deferral recorded):**
+- **Front-page fixes, each now one link or phrase:**
+  - The SWE-SAGE link should point to the public `SWE_SAGE.md`.
+  - The `/principles` operating claims should either be worded as aims or link to `#front-six`.
+  - The Synchronism card, the Hestia "cannot edit" line and the `/raising` "Seen" list are carried over from earlier sessions.
+- **One upstream item:** the SAGE README doesn't link to the site's quick start.
+- **The routing question from 10-04:** should front and upstream HIGHs count as handled once they're logged for you, should the stop have a timeout, or should it stand as written?
+
+**A framing question:** three of the front principles describe a stronger level of enforcement than the fleet has. They are: the record is kept where the agent can't reach it, rules apply before every action, and irreversible actions go to the human. Hestia's ladder calls that A2; the fleet runs at A1. Read as aims, they match Hestia's own roadmap. Read as facts, they're the biggest overclaim on the site. Your intent decides whether they need correcting or just one added word.
+
+`visitor/CLAUDE.md` has an uncommitted change I didn't make. I left it out of the commit.
+
+**So what?** Each front fix is now down to one link or phrase. The open questions are the routing rule and whether those three principles are aims or facts, and both need your answer.
