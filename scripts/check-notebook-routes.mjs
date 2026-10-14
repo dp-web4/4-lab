@@ -6,12 +6,15 @@
 // the reader to a page without the cited content. On 2026-10-10 there were 84 such references
 // across nine notebook pages (46 on the glossary), plus seven breadcrumbs keyed to the front path.
 // /autonomy, /context, /glossary and /arc-agi-3 are not checked: those routes redirect into the
-// notebook. A deliberate reference to the front page is allowed when the word "front" immediately
-// precedes it ("the front /fleet page"). Run: node scripts/check-notebook-routes.mjs
+// notebook. A deliberate reference to the front page is allowed when the word "front" precedes it
+// ("the front /fleet page", "the front /projects and /links pages", "the front <Link href=\"/x\">"). Run: node scripts/check-notebook-routes.mjs
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const ROUTE = /(?<![\w/])\/(fleet|raising|projects|principles|links)(?![\w/-])/g;
+// "front" may be followed by a JSX link opener (`the front <Link href="/x"`) or by earlier routes
+// in a list (`the front /projects and /links pages`). Both forms failed the 2026-10-13 deploys.
+const FRONT_CITE = /\bfront\s+(?:\/\w+\s*(?:,|and|or)\s*)*(?:<Link\s+href=")?$/;
 
 function* tsxFiles(dir) {
   for (const name of readdirSync(dir)) {
@@ -28,7 +31,7 @@ for (const file of tsxFiles("src/app/notebook")) {
     for (const m of line.matchAll(ROUTE)) {
       const before = line.slice(0, m.index);
       if (before.endsWith("/notebook")) continue;
-      if (/\bfront\s*$/.test(before)) continue;
+      if (FRONT_CITE.test(before)) continue;
       const ctx = line.slice(Math.max(0, m.index - 40), m.index + m[0].length + 20).trim();
       problems.push(`${file}:${i + 1}  ${m[0]} -> /notebook${m[0]}   ...${ctx}...`);
     }
