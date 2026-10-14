@@ -27,7 +27,7 @@ export default function Home() {
           <a href="https://github.com/dp-web4/web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>;
           for local agent governance see{" "}
           <a href="https://github.com/dp-web4/hestia" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Hestia</a>{" "}
-          (it runs on the lab&apos;s machines, but has no install guide for outside users yet; see the{" "}
+          (it runs on the lab&apos;s machines; its latest public release, v0.0.4 from 2026-08-11, is older than what runs here, and newer builds are pre-releases; see the{" "}
           <Link href="/notebook/projects#quick-start" style={{ color: "var(--color-accent)" }}>Quick start</Link>).
         </p>
       </section>

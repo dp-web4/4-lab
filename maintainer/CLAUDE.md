@@ -127,7 +127,14 @@ The visitor log includes a **Terminology Drift Summary** in the cross-persona sy
 
 - Edit source files in `../src/` (Next.js App Router, TypeScript, Tailwind)
 - Navigation source of truth: `../src/lib/navigation.ts`
-- Test locally: `cd .. && npx next build && bash maintainer/check-caveats.sh` — both must pass.
+- Test locally: `cd .. && npm run build && bash maintainer/check-caveats.sh` — both must pass.
+  Use `npm run build`, not `npx next build`: only the npm script runs `prebuild` (JSX spaces, notebook
+  routes) and `postbuild` (front word budgets), and Vercel runs all three. On 2026-10-13 two commits
+  passed `npx next build` locally, failed `prebuild` on Vercel, and the live site stayed a day behind.
+  If npm is not on PATH, run `node scripts/check-jsx-spaces.mjs && node scripts/check-notebook-routes.mjs
+  && node_modules/.bin/next build && node scripts/check-front-length.mjs`.
+- **After every push, read the deploy status**: `gh api repos/dp-web4/4-lab/commits/<sha>/status --jq .state`
+  must reach `success`. A push is not a deploy; do not write "green" in a commit or log until it does.
   The second checks two things. Protected caveats must still be present on their page
   (`caveats` in `caveats.json`). Withdrawn readings must be absent from every **rendered** page
   (`withdrawn` in `caveats.json`, via `check-withdrawn.py`, which reads `.next/` HTML, so build first).

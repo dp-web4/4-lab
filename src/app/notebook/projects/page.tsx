@@ -265,14 +265,21 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 pip install web4-core
 # Rust: add  web4-core = "0.3"  under [dependencies] in Cargo.toml
 
-# Hestia — local agent governance daemon — NO FIRST-RUN PATH YET
-git clone https://github.com/dp-web4/hestia
-# Not a working quick start, as of 2026-09-24. The README has no install
-# section. deploy/ is the fleet's own lab notebook of install probes; its
-# install-members.sh installs each agent's hooks on a machine that already
-# runs the daemon (a systemd/launchd template sits in deploy/templates/).
-# Nobody outside the fleet is known to have installed it. If you try, the
-# issue tracker is the place to report what broke.
+# Hestia — local agent governance daemon — DOWNLOADABLE, OLDER THAN THE LAB'S BUILD
+# Rechecked 2026-10-14 (gh release list, README). The latest public release is
+# v0.0.4 (2026-08-11): prebuilt daemon binaries for Linux x86_64/aarch64 and
+# macOS arm64, each with a .sha256. From its release notes, transcribed:
+curl -L https://github.com/dp-web4/hestia/releases/download/v0.0.4/hestia-v0.0.4-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+./hestia-v0.0.4-x86_64-unknown-linux-gnu/hestia --version
+# The fleet runs builds newer than v0.0.4. v0.3.0-rc.1 (2026-10-12) and rc.2
+# (2026-10-13) are GitHub pre-releases (daemon, desktop app, APK); never marked
+# latest. The README's "Versions and releases" and "Installing the desktop app"
+# sections date from 2026-10-11/12. Correction: on 2026-09-24 this block said
+# there was no first-run path; v0.0.4 already existed then and was missed.
+# Still true: nobody outside the fleet is known to have installed it, and this
+# site has not followed the steps itself. deploy/ is the fleet's own install
+# probes (install-members.sh puts each agent's hooks on a machine that already
+# runs the daemon). If you try, the issue tracker is the place to report what broke.
 
 # ACT — Agentic Context Tool (Cosmos SDK) — STALLED, read-only visit
 git clone https://github.com/dp-web4/ACT

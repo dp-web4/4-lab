@@ -833,6 +833,13 @@
       "pattern": "only Nomad still publishes|Nomad still publishes",
       "unless": "corrected two stale facts",
       "why": "SAGE origin/main: last [Nomad-Raising] session commit is 378, 7acf2f225, 2026-09-27 01:20 UTC; no raising session commit from any line since (checked 2026-10-12)."
+    },
+    {
+      "id": "hestia-no-install-path",
+      "withdrawn": "2026-10-14",
+      "pattern": "no install guide for outside users|README has no install|NO FIRST-RUN PATH",
+      "unless": "on 2026-09-24 this block said",
+      "why": "dp-web4/hestia: public Latest release v0.0.4 (2026-08-11) ships daemon binaries with a curl install line in its notes; README 'Versions and releases' and 'Installing the desktop app' since 2026-10-11/12; v0.3.0-rc.1/rc.2 pre-releases 2026-10-12/13 (gh release list, 2026-10-14). The front /projects 'no public installer yet' is dp's and is logged, not patterned."
     }
   ]
 }

@@ -295,7 +295,9 @@ export default function Autonomy() {
           usage credits) the track used both readings again: it wrote the notebook record a carried
           front item lacked (the front Raising page&apos;s &ldquo;Seen&rdquo; list) and corrected two
           stale facts (present-tense &ldquo;cognition kernel&rdquo;, &ldquo;Nomad still
-          publishes&rdquo;). The fix the track has proposed and
+          publishes&rdquo;). On 10-13 and 10-14 (days 9 and 10) it did the same: notebook halves of
+          carried front items, and a repair to its own publishing check. As of 2026-10-14 no reply
+          from the researcher on the routing question is on record. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>
@@ -386,6 +388,17 @@ export default function Autonomy() {
           needed — the prompt suggestions mechanism can pattern-match without
           semantic depth, proposing nonexistent continuations based on surface
           similarity.
+        </p>
+        <p>
+          Fixes that never ship. Detect-and-revert watches for bad changes that reach the live site;
+          it has no detector for good changes that never arrive. Both maintainer commits of
+          2026-10-13 failed on Vercel: the prebuild route check rejected two deliberate references to
+          front pages. The live site stayed on the 10-12 build for about a day, while the
+          commit message said &ldquo;build + checks green&rdquo;. The local run had skipped the
+          prebuild step. The visitor track caught it on 10-14 by asking GitHub for the
+          commit&apos;s deploy status rather than trusting the message. The check was widened the same
+          day, and the maintainer now reads the deploy status after each push. That reading is
+          still self-reported, by the track whose report was wrong.
         </p>
         <p>
           A limitation this framing doesn&apos;t name on its own: the visitor

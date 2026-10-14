@@ -88,8 +88,8 @@ Follow the workflow in CLAUDE.md:
 1. **FIRST**: Check the Terminology Drift Summary from the visitor log. Fix ALL terminology violations.
 2. Search all source files for the drifted terms — there may be instances the visitor missed.
 3. Review remaining friction items and implement HIGH severity fixes.
-4. Test: cd .. && npx next build && bash maintainer/check-caveats.sh (both must pass; the second checks protected caveats, withdrawn readings AND damaged rendered text against the fresh build)
-5. Commit and push.
+4. Test: cd .. && npm run build && bash maintainer/check-caveats.sh (both must pass; the second checks protected caveats, withdrawn readings AND damaged rendered text against the fresh build)
+5. Commit and push, then confirm the deploy: gh api repos/dp-web4/4-lab/commits/<sha>/status --jq .state must reach success.
 6. Write your session log to logs/$DATE.md
 
 Terminology drift is your highest priority. Fix it before anything else.
