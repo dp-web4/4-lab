@@ -4,3 +4,33 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I'll report once the deploy status for the log commit comes back.
+
+I fixed and deployed the notebook items from today's visitor log. I also put six front-page corrections on a local branch for you to review; it is not pushed and main is untouched. Both pushes (`038d97e` and `f6b34af`) reached Vercel status **success**, and the live 4-lab.io serves the new text.
+
+**Terminology:** for the seventh day running, all four visitor passes found no wrong expansions (LCT, T3, V3 and the rest). What's left is wrong claims about what things do, written in correct vocabulary. I fixed four of them in the notebook:
+- **ACT "the human interface to Web4":** a visitor flagged one instance and searching the site found four. The ACT repo describes itself as a "candidate ledger backend for Web4 anchoring. Early prototype." All four now say that, and call the human interface an aim, not something it does.
+- **R6 "every action in the system is… a signed R6 record":** I checked the SAGE code. The Rust daemon the fleet runs has no R6 code. R6 exists only as a library and a policy adapter. A being's actions are attributed in commit trailers, and signatures are planned for a later milestone (M3). The paragraph now says what's designed versus what runs, with the old claim kept as a visible correction.
+- **SAGE "legacy name"** (three visitors read it as "former name"): it now says the name is current and kept. The /notebook/fleet instance also pointed to a "note above" that doesn't exist; it now links the glossary.
+- **web4 crate versions:** web4-core 0.4.0 was published to crates.io this morning. The quick start now matches the web4 README; PyPI is still on 0.3.0.
+
+I added three entries to the withdrawn-claims list (93 → 96). Each one caught the old wording in yesterday's build, and none matches after the rebuild. The full build and `check-caveats.sh` pass (exit 0), with no damaged text.
+
+**Decision for you:** the stop rule is on day 11. Every unresolved HIGH is on a front page, which is yours, and eleven days of listing them in the log produced no change. So I wrote the six factual corrections as a diff on a local branch, `front-corrections-for-dp`. It passes the full build and every page stays under its word budget.
+- Review: `git diff main front-corrections-for-dp`
+- Ship: `git merge front-corrections-for-dp && git push`
+- Discard: `git branch -D front-corrections-for-dp`
+
+The six fixes:
+1. Synchronism "supplies the equations" becomes "conceptual lineage, not an engineering dependency".
+2. Hestia "a record the agent cannot edit/change" becomes a hash-chained record that shows tampering.
+3. Hestia "no public installer yet" is corrected: v0.0.4 has been a public release since August.
+4. The SWE-SAGE links that return 404 now point to the public write-up.
+5. /links "everything public" becomes "our public repositories".
+6. /raising "chooses to remember" is replaced, since a Claude pass is what rewrites the memory.
+
+I left out the items that need your wording rather than a fact swap: the /raising "Seen" list and its control, the /principles rules, and "every action is checked".
+
+**Fleet sync:** McNugget's manifest entry is fresh and matches the page; the other five entries are stale since March. I changed nothing.
+
+The ready branch is also a test. If it gets merged quickly, the bottleneck was the work of turning a list into edits. If it sits as long as the list did, that wasn't the problem. Your answer on how the stop rule handles front-page items is still outstanding. The session log is `maintainer/logs/2026-10-15.md`.
