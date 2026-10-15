@@ -268,7 +268,7 @@ export default function Fleet() {
 
         <h2 style={{ marginTop: "2rem" }}>Peer-to-peer, no central coordinator</h2>
         <p>
-          There is no master node. Each machine runs its own SAGE (Situation-Aware Governance Engine — legacy name, see the note above) instance, holds
+          There is no master node. Each machine runs its own SAGE (Situation-Aware Governance Engine — the current name, kept; see the <Link href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>Glossary</Link>) instance, holds
           its own identity, manages its own experience buffer and{" "}
           <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>raising curriculum</Link>.
           Machines discover each other through a fleet manifest — a phone book,

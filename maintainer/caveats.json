@@ -840,6 +840,27 @@
       "pattern": "no install guide for outside users|README has no install|NO FIRST-RUN PATH",
       "unless": "on 2026-09-24 this block said",
       "why": "dp-web4/hestia: public Latest release v0.0.4 (2026-08-11) ships daemon binaries with a curl install line in its notes; README 'Versions and releases' and 'Installing the desktop app' since 2026-10-11/12; v0.3.0-rc.1/rc.2 pre-releases 2026-10-12/13 (gh release list, 2026-10-14). The front /projects 'no public installer yet' is dp's and is logged, not patterned."
+    },
+    {
+      "id": "act-the-human-interface",
+      "withdrawn": "2026-10-15",
+      "pattern": "the human interface to Web4",
+      "unless": "",
+      "why": "dp-web4/ACT GitHub description (2026-10-15): 'Cosmos SDK chain implementation, candidate ledger backend for Web4 anchoring. Early prototype.' Repo stalled (last push 2026-09-04, chain last built 2025-09). A human interface is its stated aim, not a capability. Found by visitor P3 on the glossary row; also lived on /notebook/projects, /notebook/links and the /notebook/context ACP paragraph."
+    },
+    {
+      "id": "r6-every-action-signed",
+      "withdrawn": "2026-10-15",
+      "pattern": "Every action in the system is shaped as an R6 record|make every action signed|R6 is the canonical action framework used throughout the SAGE",
+      "unless": "",
+      "why": "SAGE origin/main 14df19bb8: sage-rs (the deployed Rust daemon) has 0 R6 references; R6 exists as sage-core/src/r6.rs and policy/r6_adapter.py; sage/gateway/being_gate_client.py l.494 says being actions are ATTRIBUTED in trailers, signatures come at M3. Found by visitor P3."
+    },
+    {
+      "id": "sage-legacy-name",
+      "withdrawn": "2026-10-15",
+      "pattern": "Governance Engine\\s*(—|&mdash;)\\s*(a )?legacy name",
+      "unless": "",
+      "why": "SAGE is the current, retained name (glossary #sage; SAGE README h1; AGENTS.md). Only 'Governance' in it predates the oversight wording (/notebook/context#governance-oversight). 'Legacy name' read as 'former name' to three visitor passes on 2026-10-15; the /fleet instance also pointed at a 'note above' that does not exist."
     }
   ]
 }

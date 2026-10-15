@@ -133,7 +133,7 @@ export default function Projects() {
           />
           <ProjectCard
             name="ACT"
-            description="Agentic Context Tool — the human interface to Web4. Built on Cosmos SDK; implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate. Status, plainly: stalled, and reserved rather than superseded. The chain last built in September 2025 and is blocked mid-rename; the last substantive commit was 2026-04-29, which added a daemon entry point and a chain startup path for the fleet machine CBP (the 2026-04-10 commit before it removed the README, whose content moved to the web4 repo); this site can confirm no running chain and no first-run steps published. Reviving it is a real intent with no date on it, not work in progress — and the repo's own metadata still claims active development, which is wrong. Nothing here should be read as a live chain or live anchoring."
+            description="Agentic Context Tool — a Cosmos SDK chain that its repo describes as a &lsquo;candidate ledger backend for Web4 anchoring. Early prototype.&rsquo; (GitHub description, checked 2026-10-15). Its earlier stated aim was to be a human interface to Web4; that is an aim, not a working capability. It implements the Agentic Context Protocol (ACP), enabling humans to interact with MCP (Model Context Protocol) servers through their Linked Context Tokens. ACP binds Web4 trust primitives — LCT binding and attestation — to MCP tool calls; the two are complementary, not alternatives, and MCP is a term in the Web4 equation, not a layer beneath it. On &lsquo;not a blockchain&rsquo; (see the Ontology entry in the /context glossary): Web4 is the ontology and requires no chain; ACT is one implementation of it that happens to use Cosmos SDK's ledger machinery as its witnessing substrate. Status, plainly: stalled, and reserved rather than superseded. The chain last built in September 2025 and is blocked mid-rename; the last substantive commit was 2026-04-29, which added a daemon entry point and a chain startup path for the fleet machine CBP (the 2026-04-10 commit before it removed the README, whose content moved to the web4 repo); this site can confirm no running chain and no first-run steps published. Reviving it is a real intent with no date on it, not work in progress — and the repo's own metadata still claims active development, which is wrong. Nothing here should be read as a live chain or live anchoring."
             accentColor="var(--color-act)"
             isPublic={true}
             maturity="research-stage"
@@ -263,7 +263,12 @@ SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 # Unlike the SAGE steps above, these lines ARE transcribed: from the web4
 # README's "Published core" section, which is authoritative for them.
 pip install web4-core
-# Rust: add  web4-core = "0.3"  under [dependencies] in Cargo.toml
+pip install web4-trust
+# Rust, under [dependencies] in Cargo.toml (README as of 2026-10-15; web4-core is
+# 0.4.0 on crates.io but still 0.3.0 on PyPI, so the two languages differ by a version):
+#   web4-core = "0.4"
+#   web4-trust-core = "0.3"
+#   web4-policy = "0.1"     (first published 2026-10-15)
 
 # Hestia — local agent governance daemon — DOWNLOADABLE, OLDER THAN THE LAB'S BUILD
 # Rechecked 2026-10-14 (gh release list, README). The latest public release is

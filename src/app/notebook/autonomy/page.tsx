@@ -54,7 +54,8 @@ export default function Autonomy() {
           How the tracks relate to SAGE, in one sentence: the tracks are Claude
           Code sessions that cron launches to write and maintain the lab&apos;s
           code, docs, and this site; SAGE (Situation-Aware Governance Engine &mdash;
-          a legacy name; see the{" "}
+          the current name, kept; only its &ldquo;Governance&rdquo; predates the lab&apos;s
+          oversight wording; see the{" "}
           <Link href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>Glossary</Link>)
           is the separate research environment for persistent beings, each running on its
           machine&apos;s local model (see{" "}

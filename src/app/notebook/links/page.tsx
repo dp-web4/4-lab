@@ -73,7 +73,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP): the human interface to Web4. Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and a chain startup path for the fleet machine CBP; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP); its repo calls it an early-prototype candidate ledger backend for Web4 anchoring (meant to become a human interface to Web4; not one today). Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and a chain startup path for the fleet machine CBP; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"

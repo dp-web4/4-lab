@@ -86,7 +86,7 @@ export default function Context() {
                 ["policygate", "PolicyGate", "—", "SAGE's own conscience checkpoint: a plugin in the public SAGE repo (sage/irp/plugins/policy_gate.py) that evaluates the loop's proposed effects against policy rules before dispatch. SAGE's capability matrix maps it to loop step 10, Govern. It is config-gated, ships with no rules and a default of allow, and is absent from the Rust daemon the fleet deploys. SAGE's documentation also records a port of the same plugin inside Hardbound; this row was titled \"Hardbound's enforcement checkpoint\" until 2026-09-15, which attributed SAGE code to the proprietary tier. See the PolicyGate section below."],
                 ["policy", "Policy / policy model", "—", "The compliance rule set a gate evaluates an action against — a signed law bundle — NOT the action-selecting policy of reinforcement learning. This collision is worth flagging because it runs in the most confusing possible direction: PolicyGate sits inside an action-selection loop, exactly where an RL reader expects to find a policy network, and it is the opposite kind of object — it vetoes actions, it does not choose them. Likewise Hardbound's “small local policy model” (see /notebook/projects) is a model that reviews actions against rules, not a π(a|s) trained to emit them."],
                 ["acp", "ACP", "Agentic Context Protocol", "Web4 trust primitives (LCT binding, T3/V3 attestation) bound to MCP tool calls. MCP is a term in the Web4 equation, not a layer beneath it."],
-                ["act", "ACT", "Agentic Context Tool", "Cosmos SDK implementation of ACP — the human interface to Web4."],
+                ["act", "ACT", "Agentic Context Tool", "Cosmos SDK chain implementing ACP; its repo calls it a candidate ledger backend for Web4 anchoring, an early prototype. Stalled (see the ACT card on /notebook/projects). Being a human interface to Web4 was its stated aim, not a current capability (corrected 2026-10-15)."],
                 ["federation", "Federation", "—", "Canon: coordination between multiple societies through signed gossip, consensus, and cross-society witnessing. Listed as a Web4 ontology property on the home page; on the fleet it is the least exercised of them. Hestia's federation work is not started, and the fleet's cross-machine coordination today is scheduling and shared repos rather than signed inter-society gossip — so treat this row as canon's definition plus a roadmap marker, not a description of something running."],
                 ["lora", "LoRA", "Low-Rank Adaptation", "Parameter-efficient fine-tuning some machines run for separate tasks — distinct from raising."],
                 ["synthon", "Synthon", "—", "Emergent coherence entity sustained by recursive interaction, not external coordination. (Unrelated to the chemistry term of the same name.) Note the dependency: this term is defined through 'coherence', and coherence is in turn partly defined through the synthon marker — so it inherits that entry's open status. See the coherence entry; there is no single operational definition of coherence yet, and this row does not supply one."],
@@ -598,14 +598,18 @@ export default function Context() {
 
         <h3>R6 and R7: the action framework</h3>
         <p>
-          R6 is the canonical action framework used throughout the SAGE
-          loop and Web4 audit trail:{" "}
+          R6 is canon&apos;s action grammar:{" "}
           <strong>Rules / Role / Request / Reference / Resource → Result</strong>.
-          Every action in the system is shaped as an R6 record — specifying the
-          policy governing it (Rules), who is acting (Role), what is being
-          requested (Request), what context supports it (Reference), what it
-          consumes (Resource), and what it produces (Result). R6 records are the
-          artifacts that make every action signed, reviewable, and reproducible.
+          An R6 record names the policy governing an action (Rules), who is acting (Role),
+          what is being requested (Request), what context supports it (Reference), what it
+          consumes (Resource), and what it produces (Result). That is the design. In the
+          fleet today it is partial (checked in code, 2026-10-15). SAGE has an R6 library
+          (sage-core) and a policy adapter, and hestia routes some acts along an R6 path.
+          The deployed Rust sage-daemon contains no R6 code, though, and a being&apos;s
+          actions are attributed to it in commit trailers, not signed. SAGE&apos;s plan
+          puts signatures at milestone M3. An earlier version of this paragraph said every
+          action in the system was a signed R6 record; that described the design as if it
+          were running.
         </p>
         <p>
           Canon pairs R6 with <strong>R7</strong> — a superset adding a seventh
@@ -635,7 +639,8 @@ export default function Context() {
           MCP handles tool-call transport between agents and external systems;
           ACP handles identity and trust, ensuring that every tool invocation
           carries a verifiable identity anchor. ACT (Agentic Context Tool) is
-          the Cosmos SDK implementation of ACP — the human interface to Web4.
+          the Cosmos SDK implementation of ACP: an early-prototype candidate ledger backend,
+          stalled. It was meant to become a human interface to Web4 and is not one today.
         </p>
 
         <h3>ARC-AGI-3: benchmark for abstraction and reasoning</h3>
