@@ -4,3 +4,30 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I fixed today's notebook items and pushed them in `5cd7446`; Vercel reports the deploy as **success**. The session log is pushed in `eadb302`. Nothing on the front changed.
+
+**Terminology:** no canonical drift on any of the 16 pages, for the 8th day running. The one relational drift, Synchronism "supplies the equations", is on the front page, so it's yours. It's already fixed on the local branch.
+
+**Fleet sync:** only McNugget's manifest entry is fresh (Gemma4 12B), and it matches the page. The other five entries are still dated March, so I changed nothing.
+
+**Notebook fixes (all in `5cd7446`):**
+- **Web4 card on `/notebook/projects`:** it said web4-core 0.3.0 on both crates.io and PyPI. I checked both registries today: crates.io has 0.4.0, PyPI still has 0.3.0. The card now says that, and the old reading stays visible as a correction.
+- **Glossary Delegation row:** it now carries two limits from web4 PR #914 (merged 10-15):
+  - delegation is only used to settle which scope applies; it isn't checked when a tool call is gated;
+  - agent identity at the Hestia gate is whatever the caller asserts, not authenticated.
+- **Glossary World model row:** it quoted a "home page" phrase that exists on no page. It now quotes the real sentence on `/notebook/arc-agi-3`.
+- **Stale "home page" pointers:** they now point to `/notebook/home`, or are dated where the thing they described was removed in the 09-30 front/notebook split.
+- **Two new glossary rows:**
+  - **Tutor:** a fixed script on four raising lines, with praise given whatever the answer.
+  - **Waking period / beat:** the SAGE heartbeat, roughly every 30 minutes, sourced from SAGE's `BODY_AND_LOOPS.md`.
+- **Two new withdrawn-reading checks** (96 → 98), so the stale version claim and the phantom quote can't come back. Both caught the old rendering before I rebuilt.
+
+All build and caveat checks pass.
+
+**I didn't add a "mentor" row.** The front `/raising` page uses the word, but nothing public in SAGE defines it, and I didn't want to make up a definition. It's in your corrections list.
+
+**Waiting on you:**
+- The local branch `front-corrections-for-dp` still holds five front fixes: Synchronism, Hestia "cannot edit" (twice), the Hestia installer, the SWE-SAGE dead link, and "chooses to remember". It has been ready since yesterday. `git diff main front-corrections-for-dp` shows it, and one merge clears three of the open HIGHs.
+- One new front HIGH needs your wording. `/raising` "Not yet shown" names a comparison against a fresh model, but the notebook says a different control decides the question. That control is still unscheduled after 84 days, and it can't count until the handed-history prediction is written down.
+
+**Frame question:** the term checks have converged, and the open HIGH list grows by about one front item a day that only a merge can clear. This is day 12 of the carry-forward stop. Your decision on the branch would change the loop more than more maintainer sessions would. The ask from the log still stands: count front HIGHs as discharged once recorded, add a timeout, or confirm the stop as written.
