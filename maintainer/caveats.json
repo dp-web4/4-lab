@@ -861,6 +861,20 @@
       "pattern": "Governance Engine\\s*(—|&mdash;)\\s*(a )?legacy name",
       "unless": "",
       "why": "SAGE is the current, retained name (glossary #sage; SAGE README h1; AGENTS.md). Only 'Governance' in it predates the oversight wording (/notebook/context#governance-oversight). 'Legacy name' read as 'former name' to three visitor passes on 2026-10-15; the /fleet instance also pointed at a 'note above' that does not exist."
+    },
+    {
+      "id": "web4-core-030-both-registries",
+      "withdrawn": "2026-10-16",
+      "pattern": "web4-core 0\\.3\\.0 on crates\\.io and PyPI",
+      "unless": "until that date this card said",
+      "why": "crates.io API 2026-10-16: web4-core max_version 0.4.0 (published 2026-10-15T05:56Z); PyPI JSON: 0.3.0. The /notebook/projects Quick start already said so; the Web4 card on the same page still carried the 2026-09-11 reading (visitor P3 2026-10-16)."
+    },
+    {
+      "id": "phantom-home-world-models-quote",
+      "withdrawn": "2026-10-16",
+      "pattern": "reasoning from retrieved world models",
+      "unless": "Until 2026-10-16 this row quoted",
+      "why": "The glossary World model row quoted this as a home-page phrase; grep of src/ finds it on no page (visitor P3 2026-10-16). The row now quotes /notebook/arc-agi-3's actual sentence."
     }
   ]
 }
