@@ -875,6 +875,13 @@
       "pattern": "reasoning from retrieved world models",
       "unless": "Until 2026-10-16 this row quoted",
       "why": "The glossary World model row quoted this as a home-page phrase; grep of src/ finds it on no page (visitor P3 2026-10-16). The row now quotes /notebook/arc-agi-3's actual sentence."
+    },
+    {
+      "id": "equation-legend-site-gloss",
+      "withdrawn": "2026-10-18",
+      "pattern": "legend is the site.s (own )?gloss|It is the site.s gloss\\.|That is the site.s gloss, not canon|reading is the site.s gloss|that gloss is the site.s|the reading is ours to defend and is flagged here rather than attributed upward",
+      "unless": "had called the whole legend the site.s gloss",
+      "why": "Upstream publishes the operator legend and 'T3 verified by V3': web4 whitepaper/sections/03-the-equation/index.md ('The Canonical Equation', last commit 2026-07-10) and web4-standard/GLOSSARY.md (2026-08-19). Only the ATP-verified-by-ADP reading is the site's. The 2026-09-09 note searched README + CANONICAL_TERMS_v1 only. Found by visitor P3 2026-10-18; lived on /notebook/context, /projects, /raising, /fleet, /links."
     }
   ]
 }

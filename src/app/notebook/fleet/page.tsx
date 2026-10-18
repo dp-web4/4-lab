@@ -284,7 +284,8 @@ export default function Fleet() {
           Veracity / Validity). Canon calls V3 complementary to T3, not combined
           with it. This site reads the equation&apos;s T3/V3 as &ldquo;trust
           verified by value&rdquo;, meaning value outcomes feeding back into trust
-          over time. That reading is the site&apos;s gloss, not canon&apos;s (see{" "}
+          over time. &ldquo;Verified by&rdquo; is upstream&apos;s reading (Web4 whitepaper section 3,
+          web4-standard/GLOSSARY.md), not CANONICAL_TERMS_v1&apos;s; the feedback-over-time sense is the site&apos;s (see{" "}
           <Link href="/notebook/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>),
           and the feedback loop is not implemented in this tracker. An earlier
           version of this paragraph said V3 accumulates alongside T3 and verifies it

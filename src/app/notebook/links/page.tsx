@@ -48,7 +48,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/web4"
             title="Web4"
-            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) and V3 (Value Tensor — Valuation / Veracity / Validity) as complementary tensors (the site reads the equation's T3/V3 as “verified by”; that gloss is the site's, see the Glossary), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /notebook/projects Quick start)"
+            description="Trust-native ontology — LCT (Linked Context Token) identity, T3 (Trust Tensor — Talent / Training / Temperament) and V3 (Value Tensor — Valuation / Veracity / Validity) as complementary tensors (the equation's T3/V3 reads “verified by” in the Web4 whitepaper and standard glossary; see the Glossary), contextualized by MRH (Markov Relevancy Horizon), resources cycled through ATP (Allocation Transfer Packet) / ADP (Allocation Discharge Packet) — charged, spent, recharged against validated value, not a one-way log — augmented with MCP (Model Context Protocol) and RDF (Resource Description Framework). Research-stage; core packages published (web4-core on crates.io and PyPI — install lines in the /notebook/projects Quick start)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/SAGE"
@@ -78,17 +78,17 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
             title="OpenClaw (fork)"
-            description="Web4 oversight extension for OpenClaw agent framework"
+            description="Web4 governance extension for OpenClaw agent framework (upstream branch web4-governance-complete)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/claude-flow"
             title="Claude Flow (fork)"
-            description="Web4 oversight WASM (WebAssembly) plugin for Claude Flow"
+            description="Web4 governance WASM (WebAssembly) plugin for Claude Flow"
           />
           <ExternalLink
             href="https://github.com/dp-web4/claude-code"
             title="Claude Code (fork)"
-            description="Web4 oversight hooks for Claude Code"
+            description="Web4 governance hooks for Claude Code (upstream branch add-web4-governance-plugin)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/ARC-SAGE"
