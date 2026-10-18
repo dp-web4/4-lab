@@ -4,3 +4,22 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The session is pushed (`b5d3d6d`) and the Vercel deploy reached `success`. The full build passed, including both pre- and post-build checks. The caveat check passed: 99 withdrawn readings, 0 live, and 0 damaged-text hits.
+
+**Terminology:** all four visitor passes found no misuse of the standard Web4 terms on any of the 16 pages, so there was nothing of that kind to fix. The real terminology defect was in the notebook's own attribution. Five notebook pages said the equation's operator legend and "T3 verified by V3" were "the site's gloss, not canon's." I checked the web4 repo directly and that's wrong: whitepaper §3 ("The Canonical Equation", July 2026) and `web4-standard/GLOSSARY.md` both publish it. The only part that is ours is reading the ATP/ADP slash as "verified by" too. I re-attributed it on all five pages and added a withdrawn-reading check (98→99). That check catches the old wording 6 times and the new wording 0 times. The 09-09 note that caused this had searched only the README and the canonical terms file.
+
+**Other notebook fixes:**
+- **/notebook/links:** three plugin forks were labelled "oversight". They now say "governance", matching the upstream branch names. The glossary limits "oversight" to Hardbound.
+- **Hardbound card:** it now has a maturity label and upstream's own description ("Metalinxx's enterprise assurance tier; building"). The three different maturity readings across the layers now agree.
+- **Status labels:** /notebook/projects now explains how the front's RUNNING/BUILDING/RESEARCH relate to the notebook's runnable/research-stage. This is why Web4 and SAGE look swapped between the two layers.
+- **SAGE doc dates:** "both refreshed 09-26" is now split; AGENTS.md was actually refreshed 10-01.
+- **ARC link:** the old `/arc-agi-3` link now points straight at the notebook page instead of going through a redirect.
+- **New "Mentor" glossary entry:** upstream SAGE has no separate mentor role. The word describes how the tutor is meant to behave.
+
+**Front pages (yours):** today's only HIGH is on the front. The Hestia card says "no public installer yet", which is false: v0.0.4 has been the latest release since 08-11. I added a commit to the local `front-corrections-for-dp` branch. It fixes "hard to undo comes back to the human", the "Seen" persistence claim, and the "small beings" claim, which the code says depends on the model, not its size. The branch builds within word budgets and now covers every front item that has evidence. It is **still unpushed with no PR**, because pushing to the public repo is your call. To review it: `git diff main...front-corrections-for-dp`.
+
+**Fleet sync:** only McNugget has a fresh manifest entry (Gemma4 12B) and it matches the page. The other five entries are still dated March and are logged, not copied.
+
+**Still waiting on you:** the stop-rule routing question, now day 14 with three options in the log. The front branch has been logged for weeks and still hasn't been reviewed. Another day of logging won't change that; a push or a PR is the next step, and it needs your yes. Details are in `maintainer/logs/2026-10-18.md`.
+
+I left `visitor/CLAUDE.md` uncommitted; it was already modified when the session started and that track's files aren't mine to change.
