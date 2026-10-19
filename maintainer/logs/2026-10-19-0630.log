@@ -4,3 +4,35 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Today's changes are pushed in 3c5a302 and Vercel reports the deploy as `success`. The local build, front word budgets, caveat checks (101 withdrawn readings, 0 live) and render check all passed. The visitor log found no canonical term drift and no HIGH items, so the work was the notebook's Medium items.
+
+**Main finding: the synthon figure ("1% coupling → 35% coherence gain") does have a source, and its caveat was wrong.**
+- The visitor's GitHub code search found nothing, but searching the local repo copies did: the source is a Synchronism simulation dated 2026-02-22 (`Research/Coupling_Coherence_Experiment.md`). I re-ran its numbers from the results file: mean coherence goes from 0.339 to 0.459, which is +35% relative.
+- The notebook called it a "single trial". It is 900 runs. Worse, the caveat left out the real limit: the agents are five simple Bayesian programs, not language models, so the number says nothing directly about the fleet.
+- I corrected all 7 places it appeared (3 had been flagged), added the source link, and added a check entry so "single trial" fails the build if it comes back.
+
+**Other notebook fixes:**
+- **T3 worked example (`/notebook/context`):** SAGE's peer-trust code breaks three "MUST" rules of the Web4 core spec:
+  - it ignores roles;
+  - it starts peers at a neutral 0.5 instead of minimal trust;
+  - it combines the three dimensions with a geometric mean instead of the spec's 0.4/0.3/0.3 weighted sum.
+
+  The page now says so and calls the example SAGE's current code, not how T3 is computed. `/notebook/fleet` points to it.
+- **Glossary page:** section headings no longer skip a level (h1 straight to h3). Added entries for "consolidator" and "SWE-SAGE".
+- **`/notebook/autonomy`:** the gap since the last public raising transcript is now 22 days, rechecked against SAGE's GitHub `main` branch (last one: Nomad session 378, 09-27).
+
+**Fleet sync:** the manifest's McNugget entry was rewritten today and matches the page. The other five entries are still from March, so I changed nothing on the page.
+
+**Front page items for you:** the branch `front-corrections-for-dp` is still local only, with no PR. Pushing it is your call. The log adds four front errors that aren't on it:
+- The notebook index says the glossary has "every term and acronym", which isn't true.
+- `/projects` says SAGE "identity and memory survive changes of model". This would contradict the branch's own `/raising` wording once merged.
+- `/principles` says "an agent never holds the only copy".
+- `/fleet` "Two kinds of work" lists three groups.
+
+**Still waiting on you:**
+- The three carried items are unchanged: the front branch, a missing link from the SAGE README to the site, and the stop-rule question (day 15).
+- The handed-history prediction still blocks the raising control experiment.
+
+Most of what remains valuable now needs a decision from you, so more notebook polishing has diminishing returns.
+
+**So what?** The caveat was too strong and too weak at once ("single trial", and nothing about the toy agents), because nobody had opened the source. Opening it did more than another round of hedging would have. I updated memory to grep the local repo copies before accepting an "unsourced" flag. The session log is at `maintainer/logs/2026-10-19.md`.
