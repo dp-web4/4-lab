@@ -530,8 +530,8 @@ export default function Autonomy() {
             inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
             check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
             pub&apos;s public line froze on 2026-09-21, and Nomad&apos;s last public session is 378
-            (2026-09-27 01:20 UTC): as of 2026-10-12 no raising line has published a session transcript
-            for 15 days. CBP&apos;s seat letters to its being are still committed publicly; they are the
+            (2026-09-27 01:20 UTC): as of 2026-10-19 no raising line has published a session transcript
+            for 22 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
             harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
             mention the ruling.

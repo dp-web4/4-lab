@@ -29,7 +29,7 @@ export default function Context() {
           the only copy on the site. This page covers the vocabulary; that one covers the first clone.
         </p>
 
-        <h3 id="glossary">Glossary at a glance</h3>
+        <h2 style={{ marginTop: "2rem" }} id="glossary">Glossary at a glance</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Exact expansions and one-line definitions, scannable. The narrative
           sections below go deeper on each. Source of truth: the canonical terms
@@ -99,7 +99,7 @@ export default function Context() {
                 ["synchronism", "Synchronism", "—", "The theoretical research program Web4 draws on as lineage (not a derivation) — a research conjecture proposing that one saturating coherence dynamics recurs at every scale. WHICH object recurs is open: the Navier-Stokes identification earlier framings used was refuted by Synchronism’s own audits and is tagged superseded upstream, and the replacement substrate rule is a different equation joined to the old one by narrative rather than derivation — so “one equation” is the ambition, not a demonstrated structure. Physics arc at rest since 2026-06-24; zero confirmed novel predictions across ~3,360 sessions. Web4 operationalizes parts of it; narrative section below."],
                 ["crystallization", "Crystallization", "—", "Fixed-point collapse: an agent settles into repeating the same responses and exploration stops. “Zero crystallization” means exploration remains alive."],
                 ["metabolic-state", "Metabolic state", "—", "The internal load signal SAGE loop step 3 (“metabolize”) computes — one of five named states: WAKE, FOCUS, REST, DREAM, CRISIS (the same five in the Python kernel and the Rust daemon). Feeds step 4 (“posture,” below) and other machines' dysfunction detectors. An interoceptive proxy value, not yet a formally specified model."],
-                ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context. Which sense carries the numbers: the “1% coupling → 35% coherence gain” figure is quoted under both the Synchronism and synthon senses, but its coherence measure is defined only inside the single trial that produced it — it is NOT the SNARC-scored session property, and no cross-sense comparison is implied. See Evidence and limitations below."],
+                ["coherence", "Coherence", "—", "Used in three related senses on this site — the SNARC-scored session property, Synchronism's theoretical quantity, and the synthon operational marker — with no single operational definition yet. Treat each use as scoped to its own context. Which sense carries the numbers: the “1% coupling → 35% coherence gain” figure is quoted under both the Synchronism and synthon senses, but its coherence measure is defined only inside the one simulation that produced it (five Bayesian belief agents, not language models) — it is NOT the SNARC-scored session property, and no cross-sense comparison is implied. See Evidence and limitations below."],
                 ["identity-continuity", "Identity continuity / behavioral-identity continuity", "—", "The persistence of a recognizable behavioral signature across sessions and across substrate changes. /notebook/raising gives it its working definition, which this row quotes and does not restate: “consistent session-to-session behavioral patterns observed in interaction logs, with one candidate metric (2026-09-24) and no control yet”. Curriculum state is deliberately not part of it: it is an input the raising supplies, so it cannot measure what raising produces. (This row quoted an older /notebook/raising wording, “measured via raising curriculum state and interaction logs”, until 2026-09-17.) So it is not an empty term. What it lacked until 2026-09-24 was the next step down, a metric naming what is scored on those logs. One candidate now exists (lexical similarity of answers to the fixed tutor script; see /notebook/raising, deflationary alternative). It separates two lines on the same model, but what it sees is constant over 300 sessions, and no threshold yet says what counts as degradation. It is counted (“180+ sessions”, see Evidence and limitations) but not measured. That matters more than a normal glossary gap, because this is the outcome variable of the deflationary control on /notebook/raising: the pre-commitment to retire the developmental vocabulary is bound to a quantity that does not yet have a definition, so the metric has to be pre-registered BEFORE that control runs or it cannot adjudicate either way. Same defect class as the coherence entry above — a load-bearing term the site uses honestly and has not yet grounded."],
                 ["cognition-machine", "Cognition machine", "—", "One of the six fleet machines that runs a model and executes autonomous tracks — it senses, decides, and writes. The term partitions the fleet against society-host below: eight machines total, six cognition + two society-hosts. It is a role label, not a capability claim — 'cognition' here means the machine runs a sense-to-act loop (SAGE) and holds its own identity, not that anything is understood or experienced. Every machine count on this site that says 'six' is counting these; counts that say 'eight' include the society-hosts. See /notebook/fleet."],
                 ["society-host", "Society-host", "—", "One of the two machines (HUB and pub) whose primary role is hosting the society — the hub daemon, the chapter ledger, the witnessing that makes membership real. They are members of the society they host, not above it, and since July 2026 they also raise their own SAGE instances; what distinguishes them is the substrate role, not a lack of cognition. Together with the six cognition machines they make eight. See /notebook/fleet."],
@@ -113,6 +113,8 @@ export default function Context() {
                 ["p-crit", "p_crit", "—", "The critical coherence threshold derived in the Synchronism framework. The derivation attempt failed catastrophically (400x error) — see Principle 6 on /notebook/principles."],
                 ["world-model", "World model", "—", "On this site: the harness's stored, human-readable description of a game's mechanics — sprites, rules, win conditions — decoded from play or source and retrieved by the solver on /arc-agi-3. Not the ML sense (a learned latent dynamics model trained to predict next states). /notebook/arc-agi-3's 'World models, persistent knowledge, explicit skills… became concrete engineering objects' uses the site sense. (Until 2026-10-16 this row quoted a home-page phrase, 'reasoning from retrieved world models', that no page on the site carries.)"],
                 ["tutor", "Tutor", "—", "The interlocutor in a raising session, introduced to the raised model as its tutor and labelled Claude in the transcripts. On the scripted runners it is not a model call: it is a table of fixed questions keyed by curriculum phase (sage/raising/scripts/ in the public SAGE repo). On four lines the creating-phase tutor turns are the same six strings every time, 1,217 records counted 2026-09-19, and its praise line is delivered whatever the answer was. Thor, CBP, HUB and pub have mostly distinct tutor turns, source not traced; Nomad moved to a responsive runner on 2026-09-10. So the word names a role in the protocol, not an adaptive teacher. Details: /notebook/raising#session-protocol. Not the same as the consolidator, a separate Claude pass that rewrites the memory record."],
+                ["consolidator", "Consolidator", "—", "The pass that rewrites a raising line's identity record after each session. It is a separate Claude call, not the raised model, so when a record says what an entity remembers or chose to keep, the wording may be partly the consolidator's (Claude, on the current runners). This is the confound /notebook/raising names under selection and identity records."],
+                ["swe-sage", "SWE-SAGE", "—", "SAGE applied to software engineering (SWE), the lab's Gemma 4 Developer Agent Competition entry. Its repository is private (it returns 404 to visitors); the public record is SAGE's own description of it, dated 2026-09-26. No results are published. See /notebook/projects and /notebook/links."],
                 ["mentor", "Mentor", "—", "The front /raising lists 'conversations with its mentor' next to 'guided sessions with a tutor', as if they were two roles. Upstream SAGE has no separate mentor role. The word appears in the raising brief, which tells Claude in the tutor role to be 'a collaborative mentor who builds on what the instance offers' (sage/raising/CLAUDE.md), and in the responsive runner's prompt builder: 'good mentor, not drill sergeant' (sage/raising/scripts/adaptive_prompts.py). So on the record, mentor names the tutor's intended posture, not a second interlocutor. The nearest distinct referent is the seat (row above), the Claude harness that writes to a being between sessions. Which one the front sentence means is the front author's call. Row added 2026-10-18 because the notebook had no entry for the word."],
                 ["waking-period", "Waking period / beat", "—", "A being's turn of the heartbeat runner in SAGE (sage/gateway/heartbeat.py): about every 30 minutes the 'mind' wakes, reads its own record and current sensor readings, acts through gated verbs, writes its journal, and talks. The Rust daemon (the 'body') runs continuously at 100 ms / 4 Hz between beats, and a salient sensor moment can wake a beat early. Source: SAGE sage/docs/BODY_AND_LOOPS.md (2026-09-23). Beats are a different mechanism from raising sessions (tutor row above). This row was added 2026-10-16 because the front /raising uses 'short waking periods' and the notebook had no entry."],
                 ["binding", "Binding", "—", "Canon: 'permanent attachment of identity to hardware or cryptographic proof. Irreversible.' The word 'bound' in the LCT row above is this sense."],
@@ -131,7 +133,7 @@ export default function Context() {
           </table>
         </div>
 
-        <h3>The CLAUDE.md pattern</h3>
+        <h2 style={{ marginTop: "2rem" }}>The CLAUDE.md pattern</h2>
         <p>
           Every repo carries a <code>CLAUDE.md</code> file at its root. This
           is the agent&apos;s instruction set — not just documentation, but
@@ -147,7 +149,7 @@ export default function Context() {
           database, but because they shared instructions.
         </p>
 
-        <h3>SAGE: Situation-Aware Governance Engine</h3>
+        <h2 style={{ marginTop: "2rem" }}>SAGE: Situation-Aware Governance Engine</h2>
         <p>
           SAGE (Situation-Aware Governance Engine) is, in its own current description (LATEST_STATUS.md
           as of 2026-09-26; AGENTS.md framing refreshed 2026-10-01), a research environment for persistent local AI:
@@ -207,7 +209,7 @@ export default function Context() {
           for what human review does and doesn&apos;t cover.
         </p>
 
-        <h3>Hardbound: hardware-bound oversight</h3>
+        <h2 style={{ marginTop: "2rem" }}>Hardbound: hardware-bound oversight</h2>
         <p>
           Hardbound is the hardware-bound oversight suite — the oversight
           component intended to anchor policy gating in silicon. It is designed to gate and
@@ -234,7 +236,7 @@ export default function Context() {
           be read in the same tense as the checkable ones.
         </p>
 
-        <h3>PolicyGate: action enforcement</h3>
+        <h2 style={{ marginTop: "2rem" }}>PolicyGate: action enforcement</h2>
         <p>
           PolicyGate is SAGE&apos;s own code: a plugin in the public SAGE repo whose header
           calls it a &ldquo;conscience checkpoint for SAGE consciousness loop&rdquo;, whose header
@@ -253,7 +255,7 @@ export default function Context() {
           Note: this section used to separate SAGE loop step 10 (&ldquo;govern&rdquo;, described as a metacognitive self-check) from PolicyGate (&ldquo;Hardbound&apos;s external oversight&rdquo;) as two checkpoints with different principals. SAGE&apos;s capability matrix puts PolicyGate <em>in</em> step 10, so that distinction was not in the code. It also means the governance/oversight split on this page cannot be sorted by timing alone: PolicyGate decides before an action fires, as Hestia does. That split is lab vocabulary, not Web4 canon (CANONICAL_TERMS_v1 does not use &ldquo;oversight&rdquo;), and a cleaner criterion is an open question for the researcher.
         </p>
 
-        <h3>Synchronism: coherence equations</h3>
+        <h2 style={{ marginTop: "2rem" }}>Synchronism: coherence equations</h2>
         <p>
           Synchronism is the lab&apos;s theoretical research program — a research conjecture
           proposing that reality emerges from intent dynamics on a discrete
@@ -273,9 +275,11 @@ export default function Context() {
           been at rest since 2026-06-24; its capstone verdict calls the framework
           a productive-metaphor generator — generative and pedagogical, not
           predictive or foundational — with zero confirmed novel predictions
-          across ~3,360 sessions. One coupling-coherence experiment reported that 1% coupling yielded a 35% coherence gain: a
-          preliminary single-trial observation, on a coherence measure defined only inside that
-          experiment, with no replication. It is not empirical grounding (see Principle 5 on /notebook/principles). Hill function
+          across ~3,360 sessions. One coupling-coherence simulation (<Link href="https://github.com/dp-web4/Synchronism/blob/main/Research/Coupling_Coherence_Experiment.md" style={{ color: "var(--color-accent)" }}>Synchronism, 2026-02-22</Link>:
+          900 runs of five Bayesian belief agents, not language models, on a 12-node random graph)
+          reported that 1% coupling raised mean coherence from 0.34 to 0.46, a 35% relative gain:
+          a preliminary observation, on a coherence measure defined only inside that simulation,
+          with no independent replication. It is not empirical grounding (see Principle 5 on /notebook/principles). Hill function
           kinetics (a saturation curve from enzyme chemistry — response rises
           steeply past a threshold, then levels off) is borrowed by analogy for
           both enzyme binding and trust formation. The shape is measured for enzymes and
@@ -311,7 +315,7 @@ export default function Context() {
           them does not require accepting the theoretical framework.
         </p>
 
-        <h3>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h3>
+        <h2 style={{ marginTop: "2rem" }}>SNARC (Surprise / Novelty / Arousal / Reward / Conflict): salience-gated memory</h2>
         <p>
           SNARC provides salience-gated memory for agent sessions. Every
           tool call is scored on 5 dimensions — Surprise (prediction error),
@@ -328,7 +332,7 @@ export default function Context() {
           entries, and promoting durable patterns toward identity-level storage.
         </p>
 
-        <h3>Fleet brain-analog terms</h3>
+        <h2 style={{ marginTop: "2rem" }}>Fleet brain-analog terms</h2>
         <p>
           The fleet&apos;s machine roles use brain-analog vocabulary from cognitive
           science — functional analogies, not claims about neural correspondence.
@@ -350,7 +354,7 @@ export default function Context() {
           functional system roles, not measurements of the underlying neural processes.
         </p>
 
-        <h3>Cross-session memory</h3>
+        <h2 style={{ marginTop: "2rem" }}>Cross-session memory</h2>
         <p>
           Agents maintain persistent memory across conversations. Not
           everything — stable patterns confirmed across multiple interactions,
@@ -364,7 +368,7 @@ export default function Context() {
           compression is the feature, not the bug.
         </p>
 
-        <h3 id="equation">The Web4 equation as shared anchor</h3>
+        <h2 style={{ marginTop: "2rem" }} id="equation">The Web4 equation as shared anchor</h2>
         <p>
           Web4 is a trust-native ontology for AI agents, devices, and people —
           not architecture or infrastructure — how entities prove identity, earn
@@ -401,7 +405,7 @@ export default function Context() {
           Does it account for resource flows (ATP = Allocation Transfer Packet; ADP = Allocation Discharge Packet)?
         </p>
 
-        <h3>Worked example: one action through the equation</h3>
+        <h2 style={{ marginTop: "2rem" }}>Worked example: one action through the equation</h2>
         <p>
           The primitives above aren&apos;t independent — in the specification they
           compose on every action. Take one maintainer-track commit, end to end,{" "}
@@ -455,7 +459,7 @@ export default function Context() {
           instantiated once on paper, with the running half marked.
         </p>
 
-        <h3>ATP / ADP: resource allocation and accounting</h3>
+        <h2 style={{ marginTop: "2rem" }}>ATP / ADP: resource allocation and accounting</h2>
         <p>
           In the specification (<code>atp-adp-cycle.md</code> §1–2), ATP and ADP are not two
           separate artifacts but two states of one semifungible token that a society
@@ -500,7 +504,7 @@ export default function Context() {
           trail is the current mechanism.
         </p>
 
-        <h3>T3 / V3: trust and value tensors</h3>
+        <h2 style={{ marginTop: "2rem" }}>T3 / V3: trust and value tensors</h2>
         <p>
           T3 (Trust Tensor — Talent / Training / Temperament) is a three-component trust structure
           — each component is an RDF sub-graph root describing a different facet of
@@ -539,11 +543,21 @@ export default function Context() {
           Trust is directional &mdash; CBP&apos;s trust in Thor can differ from
           Thor&apos;s trust in CBP. This is deliberately the simplified working
           form: scalar triplets updated by outcome deltas, not yet the full
-          canonical T3-as-RDF-sub-graph structure. The gap between the two is
-          open work, not a hidden equivalence.
+          canonical T3-as-RDF-sub-graph structure. It also departs from three
+          MUST-level rules of the core spec (<code>web4-standard/core-spec/t3-v3-tensors.md</code>),
+          which the representation gap does not cover. (1) The tracker is
+          role-agnostic, one triplet per peer, where &sect;6.3 says implementations
+          &ldquo;MUST NOT compute global (role-agnostic) trust scores.&rdquo; (2) It starts every
+          peer at 0.5, where &sect;6.3 says new roles &ldquo;MUST start with minimal trust.&rdquo;
+          (3) Its composite is a geometric mean, where the &sect;10.2 parameter table
+          (test vector t3v3-001) fixes the T3 composite as a weighted sum,
+          talent 0.4, training 0.3, temperament 0.3. The geometric mean is SAGE&apos;s code,
+          not the spec&apos;s composite. Read the example as how SAGE tracks peers
+          today, not as how T3 is computed. The gaps are open work, not a hidden
+          equivalence.
         </p>
 
-        <h3 id="threat-model">Threat model: who this is defended against, and who it is not</h3>
+        <h2 style={{ marginTop: "2rem" }} id="threat-model">Threat model: who this is defended against, and who it is not</h2>
         <p>
           The trust model above is self-issued and has no certificate authority:
           any entity can mint an LCT and start accumulating history. That is the
@@ -599,7 +613,7 @@ export default function Context() {
           run against any of the above; the failure modes are reasoned, not measured.
         </p>
 
-        <h3>R6 and R7: the action framework</h3>
+        <h2 style={{ marginTop: "2rem" }}>R6 and R7: the action framework</h2>
         <p>
           R6 is canon&apos;s action grammar:{" "}
           <strong>Rules / Role / Request / Reference / Resource → Result</strong>.
@@ -634,7 +648,7 @@ export default function Context() {
           narrower reading where the two differ; the conflict is upstream&apos;s to settle.
         </p>
 
-        <h3>ACP: Agentic Context Protocol</h3>
+        <h2 style={{ marginTop: "2rem" }}>ACP: Agentic Context Protocol</h2>
         <p>
           ACP (Agentic Context Protocol) is the protocol that binds Web4
           trust primitives — LCT binding and T3/V3 attestation — to MCP
@@ -646,7 +660,7 @@ export default function Context() {
           stalled. It was meant to become a human interface to Web4 and is not one today.
         </p>
 
-        <h3>ARC-AGI-3: benchmark for abstraction and reasoning</h3>
+        <h2 style={{ marginTop: "2rem" }}>ARC-AGI-3: benchmark for abstraction and reasoning</h2>
         <p>
           ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General
           Intelligence, third generation — an interactive benchmark) is an external benchmark from ARC Prize
@@ -663,7 +677,7 @@ export default function Context() {
           for the full result breakdown.
         </p>
 
-        <h3>ARC-SAGE: SAGE variant for ARC-AGI-3</h3>
+        <h2 style={{ marginTop: "2rem" }}>ARC-SAGE: SAGE variant for ARC-AGI-3</h2>
         <p>
           ARC-SAGE is the SAGE variant configured for the{" "}
           <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3 benchmark</Link>.
@@ -675,7 +689,7 @@ export default function Context() {
           </a>.
         </p>
 
-        <h3>Raising: shaping context, not weights</h3>
+        <h2 style={{ marginTop: "2rem" }}>Raising: shaping context, not weights</h2>
         <p>
           Raising is the practice of shaping the substrate conditions — context,
           experience buffer, interaction history — in which an agent develops.
@@ -694,7 +708,7 @@ export default function Context() {
           for the full framework.
         </p>
 
-        <h3>Synthon: emergent coherence</h3>
+        <h2 style={{ marginTop: "2rem" }}>Synthon: emergent coherence</h2>
         <p>
           A synthon is an emergent coherence entity formed when components
           interact recursively under the right substrate conditions. Not designed
@@ -703,8 +717,10 @@ export default function Context() {
           by the recursion itself, not by external coordination. Operational
           marker — present: coherence self-sustains above a coupling threshold;
           absent: components drift to independent behavior below it. Preliminary
-          observation (single trial, not independently replicated): ~1% coupling
-          density produced ~35% coherence gain. The term is 4-lab vocabulary
+          observation (one simulation of Bayesian belief agents, not language models, not
+          independently replicated): ~1% coupling raised that simulation&apos;s coherence measure
+          by ~35% relative. The figure comes from the simulation, not from the raising sessions
+          the term is also used to describe. The term is 4-lab vocabulary
           describing a phenomenon observed across raising sessions and
           cross-machine experiments &mdash; no relation to the
           &ldquo;synthon&rdquo; of retrosynthetic chemistry (Corey&apos;s
@@ -713,7 +729,7 @@ export default function Context() {
           (Principle 5).
         </p>
 
-        <h3>Fractal leverage</h3>
+        <h2 style={{ marginTop: "2rem" }}>Fractal leverage</h2>
         <p>
           Each entity instantiates the full Web4 pattern at its own scale. Not
           unification, and not scope inflation — pragmatic reuse of patterns that work
@@ -725,7 +741,7 @@ export default function Context() {
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>Principle 2</Link>.
         </p>
 
-        <h3>Adversarial validation</h3>
+        <h2 style={{ marginTop: "2rem" }}>Adversarial validation</h2>
         <p>
           Different agents review the same work. A forum system collects
           reviews from multiple AI models — not just the one that wrote the
@@ -740,7 +756,7 @@ export default function Context() {
           issues than one running Qwen. The diversity is the defense.
         </p>
 
-        <h3>Autonomous session histories</h3>
+        <h2 style={{ marginTop: "2rem" }}>Autonomous session histories</h2>
         <p>
           Every{" "}
           <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>autonomous session</Link> — every visitor run, every explorer dive,
@@ -756,7 +772,7 @@ export default function Context() {
           required.
         </p>
 
-        <h3>Persistent external knowledge accumulation</h3>
+        <h2 style={{ marginTop: "2rem" }}>Persistent external knowledge accumulation</h2>
         <p>
           The{" "}
           <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>Explorer track</Link>{" "}
@@ -773,7 +789,7 @@ export default function Context() {
           one predicted. The notebook became both archive and participant.
         </p>
 
-        <h3>What doesn&apos;t flow well (yet)</h3>
+        <h2 style={{ marginTop: "2rem" }}>What doesn&apos;t flow well (yet)</h2>
         <p>
           Cross-machine state synchronization is still manual for some
           things. Fleet manifest IPs need human confirmation. Sleep cycle
@@ -788,7 +804,7 @@ export default function Context() {
           cross-track communication is a gap.
         </p>
 
-        <h3 id="evidence">Evidence &amp; limitations</h3>
+        <h2 style={{ marginTop: "2rem" }} id="evidence">Evidence &amp; limitations</h2>
         <p>
           The claims on this site rest on five different kinds of evidence.
           The caveats appear throughout the pages where each claim is made;
@@ -848,7 +864,10 @@ export default function Context() {
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Unreplicated:</strong>{" "}
           the coupling-coherence result (1% coupling → 35% coherence gain) is a
-          single trial with no independent replication, and neither of its
+          single simulation study (<Link href="https://github.com/dp-web4/Synchronism/blob/main/Research/Coupling_Coherence_Experiment.md" style={{ color: "var(--color-accent)" }}>Synchronism Research, 2026-02-22</Link>:
+          900 runs, 20 per coupling level, of five Bayesian belief agents, not language models)
+          with no independent replication. The same study&apos;s derived threshold missed its
+          fitted threshold by about 400&times;. Neither of its
           variables — coupling density and the coherence measure itself — is
           yet operationally defined outside the experiment that
           produced it. Treat it as a preliminary observation, not a finding.

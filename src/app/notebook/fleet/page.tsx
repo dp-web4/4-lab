@@ -280,7 +280,7 @@ export default function Fleet() {
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>T3</Link> (Trust Tensor — Talent / Training / Temperament) scores that evolve
           from each machine&apos;s own health polls and delegated calls: success raises trust, timeouts lower it. The tracker
           keeps T3 only. That tracker, in the public SAGE repo, whose update
-          arithmetic /context quotes, holds no V3 (Value Tensor — Valuation /
+          arithmetic /context quotes along with three core-spec rules it departs from (role-agnostic, 0.5 start, geometric-mean composite), holds no V3 (Value Tensor — Valuation /
           Veracity / Validity). Canon calls V3 complementary to T3, not combined
           with it. This site reads the equation&apos;s T3/V3 as &ldquo;trust
           verified by value&rdquo;, meaning value outcomes feeding back into trust

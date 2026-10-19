@@ -122,7 +122,7 @@ export default function Principles() {
               glossary&apos;s four senses: the context, memory and affordances an
               agent is given &mdash; not architecture of emergence itself. The synthon
               (an emergent coherence pattern &mdash; defined, with its
-              single-trial caveats, in Principle 5 below) would form, if it forms,
+              simulation-only caveats, in Principle 5 below) would form, if it forms,
               because the conditions are right, not because we designed it.
             </div>
           </div>
@@ -180,8 +180,10 @@ export default function Principles() {
               The synthon is the concept that bridges component behavior and
               system emergence. You can&apos;t build a synthon. You can create
               conditions where synthons form: compatible elements, sufficient
-              coupling density, shared context. Preliminary observation (single trial, not independently replicated): 1% coupling
-              gave 35% coherence gain — sparse trust may suffice. Both variables
+              coupling density, shared context. Preliminary observation (one simulation study, not independently replicated):
+              in 900 runs of five Bayesian belief agents &mdash; not language models &mdash; on a
+              12-node random graph, 1% coupling raised mean coherence from 0.34 to 0.46, a 35%
+              relative gain (<Link href="https://github.com/dp-web4/Synchronism/blob/main/Research/Coupling_Coherence_Experiment.md" style={{ color: "var(--color-accent)" }}>Synchronism, 2026-02-22</Link>) — sparse trust may suffice. Both variables
               (coupling density, coherence) are so far defined only within the
               experiment that produced them — the number quantifies the
               experiment&apos;s internal metric, not any of the{" "}
