@@ -216,7 +216,13 @@ export default function Principles() {
               400x, measured on that experiment&apos;s own coherence measure, which Principle 5
               treats as ungrounded. So the failure is as provisional as the measure. It did not show that no derivation can work. We now treat
               trust thresholds as empirical until a derivation survives contact
-              with data. That is a result, not a failure. We
+              with data. That is a result, not a failure. A second documented failure is one of
+              method: the program&apos;s one executed preregistered bet (2026-09-30) fired all its kill
+              criteria on a coupling proxy that a 2026-10-07 review showed is an algebraic identity,
+              unable to move whatever the agents did. Preregistering the bet did not catch it, because the
+              instrument was never run on a known effect first; re-registering now requires that step
+              (Synchronism card on{" "}
+              <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>). We
               document what didn&apos;t work alongside what did. Honest
               assessment pages ship with every{" "}
               <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>explainer site</Link>.

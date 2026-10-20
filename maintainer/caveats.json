@@ -896,6 +896,13 @@
       "pattern": "The gap between the two is open work",
       "unless": "",
       "why": "The SAGE peer tracker also departs from three core-spec MUSTs, not only scalar-vs-RDF: role-agnostic (t3-v3-tensors.md 6.3 MUST NOT), neutral 0.5 start (6.3 minimal trust), geometric-mean composite (10.2 / t3v3-001 weighted sum 0.4/0.3/0.3). Visitor P3 2026-10-19."
+    },
+    {
+      "id": "governance-plugins-renamed-oversight",
+      "withdrawn": "2026-10-20",
+      "pattern": "Oversight Plugins|predate the terminology correction|web4-governance repo slugs",
+      "unless": "renamed them",
+      "why": "The upstream plugins are titled 'Web4 Governance Plugin' (claude-code fork, branch add-web4-governance-plugin, README h1) and gate each tool call before it runs, the same act-time adjudication for which the glossary keeps 'governance' for Hestia. The governance->oversight rule binds Hardbound only (/notebook/context#governance-oversight). Visitor P3 2026-10-08, carried to 2026-10-20."
     }
   ]
 }

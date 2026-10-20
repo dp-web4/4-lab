@@ -249,10 +249,13 @@ export default function Autonomy() {
           hit the weekly limit, and no maintainer session logs exist from 2026-08-12
           through 2026-09-04), when Hestia&apos;s policy layer denies a command, or
           when the researcher disables the schedule. What that policy layer covers matters for
-          the posture below, so stated as of 2026-09-15: the law in force on the maintainer&apos;s
-          machine is Hestia&apos;s safety preset (destructive filesystem commands, writes to block
-          devices, credential files, with warnings on deletion, memory-file writes and web
-          fetches). It has no rule for <code>git push</code> or deploys; its one push-related rule
+          the posture below, so stated as of 2026-10-20 (re-read from the law Hestia injects at the
+          start of the maintainer session; first stated 2026-09-15): the law in force on the
+          maintainer&apos;s machine is Hestia&apos;s safety preset (destructive filesystem commands,
+          writes to block devices, credential files, with warnings on deletion, memory-file writes and
+          web fetches), plus scope rules that refuse a shell command whose reach the gate cannot
+          enumerate (a command substitution or shell variable) or that names a secret path. Both
+          refused calls in this track&apos;s 2026-10-20 session. It has no rule for <code>git push</code> or deploys; its one push-related rule
           was removed on 2026-07-18. The maintainer&apos;s push also runs in the track&apos;s
           wrapper script after the session ends, outside any tool call the gate sees. So the
           gate can stop a track, but it does not pre-approve the pushes that ship this site, and

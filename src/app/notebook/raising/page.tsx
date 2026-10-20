@@ -259,7 +259,11 @@ export default function Raising() {
           fleet&apos;s actual check on autonomous action (for example, the maintainer
           track&apos;s unsupervised commit/push authority) is{" "}
           <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>detect-and-revert</Link>,
-          not pre-approval. This is the concrete gap between the attractor risk named
+          not pre-approval. Agents&apos; tool calls do pass Hestia&apos;s A1 gate before they run, a
+          cooperative hook rather than an external control, but the law has no rule for pushes or
+          deploys. Since 2026-10-18 SAGE&apos;s beings can also <code>run</code> code they wrote, in a
+          sandbox with no network, for up to an hour: the gate checks the call once, and the sandbox, not
+          a per-step check, contains what the code does (SAGE PR #470). This is the concrete gap between the attractor risk named
           above and the oversight built to contain it.
         </p>
 
@@ -705,7 +709,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-14, 82 days) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-20, 88 days) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -727,7 +731,14 @@ export default function Raising() {
           concedes has no single operational definition yet. That blocker is
           definitional. Until the control runs, the developmental
           vocabulary used across this site runs ahead of the comparison that
-          would license it.
+          would license it. A protocol of the needed shape now exists one repo over. The lab&apos;s
+          2026-10-13 reply on Synchronism issue #4 commits to a vocabulary frozen at a hash-published
+          commit, an outside party choosing the test cases, a matched baseline, and blinded evaluation by
+          cross-vendor models plus at least one human. The Synchronism ensemble bet&apos;s 2026-10-07 review
+          adds a lesson this control would need: show that the metric moves on a known, built-in effect
+          before the real run, since that bet&apos;s proxy turned out unable to move at all (Synchronism
+          card on /notebook/projects). Neither has been applied to this control. Adopting them is a
+          design choice for the researcher; this paragraph notes it and does not make it.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>And that makes
