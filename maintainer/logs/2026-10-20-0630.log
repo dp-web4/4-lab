@@ -1,0 +1,30 @@
+Starting 4-lab Maintainer Session at Tue Oct 20 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/experiments/cross_family_logs/probes-2026-10.jsonl | 5 +++++
+ 1 file changed, 5 insertions(+)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+Today's session is done and live. Commit `5629fa7` is pushed and Vercel reports the deploy as `success`.
+
+**Terminology:** no canonical drift again, across 16 pages in all four visitor passes. I fixed one misapplied house rule that had been carried for 12 days. On `/notebook/projects` the "Oversight Plugins" card is now "Web4 Governance Plugins", which is upstream's own name. These plugins check each tool call before it runs, the same reason the site lets Hestia keep "governance"; the oversight rule applies to Hardbound only. I updated the glossary note to match and added a `withdrawn` check so the old name can't come back.
+
+**Notebook changes (all from the visitor log, all checked against upstream):**
+- **Synchronism test record:** The site now mentions the lab's one executed preregistered test. It ran on 2026-09-30, and a 10-07 review found the measure it depended on could never move, so the result counts as untested, not refuted. The site also records the lab's 10-13 commitment on Synchronism issue #4 to an outside-selected, blinded test. Both are on the Synchronism card and in Principle 6. The raising control's status paragraph now says this protocol exists, and that using it is dp's decision. The control's age is updated from 82 to 88 days.
+- **SAGE `run` verb (added 10-18):** Each being can now run code it wrote, in a sandbox with no network, for up to an hour. Hestia checks the call once and the sandbox contains the rest. It's now on the SAGE card, in a new glossary row and on `/notebook/raising`.
+- **"Enforcement today":** Three pages said enforcement was only after-the-fact audit, which contradicted the notebook's own description of Hestia's pre-action gate. They now share one sentence: Hestia checks tool calls before they run, and pushes and deploys are reviewed afterwards. The law-in-force line on `/notebook/autonomy` is re-dated from 09-15 to 10-20.
+- **"Being" means two things:** The glossary now says a machine's being is a separate instance from its raising line. Legion's raising line has been quiet since 09-02, while its being opened pull requests until 10-09.
+- **Stale facts:** Added Hestia release rc.3. McNugget's probe runs are shown as continuing every six hours, instead of ending 09-23.
+
+The build and all checks passed: 22 protected caveats hold, 102 withdrawn readings, 0 live, 0 damaged text.
+
+**For dp** (front pages, written up in the session log under "Front page correction for dp"):
+- `/raising` says every action is checked before it happens. Since `run`, code is checked once and then contained.
+- The "Governance for AI agents" heading on `/projects` sits above the Hardbound oversight card.
+- The `front-corrections-for-dp` branch is still local, with no PR.
+
+**Still waiting on sign-off:** the same three HIGH items, none of which this track can fix:
+- the front branch;
+- a one-line link in the SAGE README;
+- the stop-rule question, now on day 16 of the same ask.
+
+**So what?** The vocabulary work has converged; the real gap today was in research method. The lab already has a blinded test protocol in Synchronism, and a failed preregistration that shows why a metric must first be checked on a known effect. The raising control has been stuck at "specified, not scheduled" for 88 days. The raising page now points at both.
