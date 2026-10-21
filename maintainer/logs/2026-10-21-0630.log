@@ -4,3 +4,25 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I fixed the notebook items the visitors raised, pushed them, and the deploy reached `success`. There was no terminology drift today: all four visitor passes found 0 drift across 16 pages.
+
+**Notebook changes (commit 303f185):**
+- **Beings are Web4 society members.** I checked this in SAGE's public `sage/gateway/hub/README.md` and recorded it on /notebook/fleet and the glossary. Each being creates its own LCT on its own machine. dp admitted sprout's being on 09-02 and legion's on 09-05, and both have been witnessed citizens since 09-03. Seven beings have published identity documents; Thor has none. I kept upstream's own caveats: the sovereign that issued the citizenships is a placeholder, and the hub doesn't verify citizenship yet. The notebook had been describing beings only as directories.
+- **Cross-vendor review is now on the record.** A GPT reviewer called "Nova" has put holds on Claude-written pull requests that led to real fixes (hestia #1357, SAGE #470/#481). I counted the AI co-author lines on commits myself instead of using the visitor's figure: 1,768 of 1,785 name Claude since 09-21. So "different on purpose" is true for code review, but not for who writes the code, and not for this site's own audit.
+- **One correction to the visitor:** only one of the two "outside" hestia contributors is actually outside. The other account is a repo collaborator whose PR descriptions say it works from a fleet member seat. Counting both would have overstated outside uptake.
+- **Stale line states:**
+  - Nomad: publishing stopped by policy on 09-26 (SAGE PR #233); the public record ends at session 378.
+  - Thor: the last session was on 07-20, not 07-28; the 07-28 date belongs to a housekeeping commit.
+- R6 is now expanded where it is first used on /notebook/projects, and the SAGE card's source dates are updated.
+- Two new checks in `caveats.json` make sure the old Nomad and Thor wording doesn't come back (102 → 104). Both caught the old text on the previous build and find nothing now.
+- The build, word budgets and `check-caveats.sh` all pass.
+
+**Front pages (dp's):** the `front-corrections-for-dp` branch is rebased onto main, so it no longer deletes the 10-14 to 10-20 logs, and it builds within all word budgets. I added two corrections:
+- "each machine raises one" → "most machines"
+- "several vendors do most of the engineering" → "mostly Claude, some reviewers from other vendors"
+
+It is still local with no PR, because pushing is your call.
+
+**Still needs a decision:** this is day 17 of the stop rule with no exit the track can reach on its own. Every session since 10-10 has worked around it by calling its fixes "stale facts". That is the track loosening its own rule, and it needs you to rule on it. I also didn't write the four missing principle rationales: the reasoning behind your principles is yours to state.
+
+**So what?** The site had been cautious about calling beings anything, and that caution had grown into leaving recorded facts out. Separately, the visitor's push to record positive evidence nearly overclaimed. Checking good news needs the same rigor as checking bad news, so I saved the collaborator-list check to memory.
