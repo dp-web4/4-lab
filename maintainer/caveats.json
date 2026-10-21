@@ -903,6 +903,20 @@
       "pattern": "Oversight Plugins|predate the terminology correction|web4-governance repo slugs",
       "unless": "renamed them",
       "why": "The upstream plugins are titled 'Web4 Governance Plugin' (claude-code fork, branch add-web4-governance-plugin, README h1) and gate each tool call before it runs, the same act-time adjudication for which the glossary keeps 'governance' for Hestia. The governance->oversight rule binds Hardbound only (/notebook/context#governance-oversight). Visitor P3 2026-10-08, carried to 2026-10-20."
+    },
+    {
+      "id": "thor-last-session-0728",
+      "withdrawn": "2026-10-21",
+      "pattern": "last one 2026-07-28",
+      "unless": "Until 2026-10-21 this card dated",
+      "why": "Thor session 268 was written 2026-07-20 01:17 UTC (SAGE commit subject [Thor-Raising] Session 268). The 2026-07-28 commits on the path are Archivist housekeeping, one reverting an accidental copy of 32 session files. Visitor P4 2026-10-21."
+    },
+    {
+      "id": "nomad-running-last-0915",
+      "withdrawn": "2026-10-21",
+      "pattern": "running — 363 session records, last 2026-09-15",
+      "unless": "publishing stopped by policy",
+      "why": "Nomad public record runs to session 378 (2026-09-27 01:20 UTC); SAGE bad5fd9d5 (PR #233, 2026-09-26) moved its records to a private mirror. /notebook/raising already gave 378. Visitor P4 2026-10-21."
     }
   ]
 }

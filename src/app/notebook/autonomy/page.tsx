@@ -415,7 +415,13 @@ export default function Autonomy() {
           review is a stated{" "}
           <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>
           Hardbound design target</Link>, not a current property of this
-          publishing loop.
+          publishing loop. It is a current property of some of the fleet&apos;s code
+          review: a GPT reviewer (&ldquo;Nova&rdquo;) places holds on Claude-authored
+          pull requests in hestia and SAGE, and some of those holds found real defects
+          (recorded on{" "}
+          <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>
+          /notebook/principles</Link>, Different on purpose). None of that review
+          reaches the tracks that publish this site.
         </p>
         <p>
           Three statements this site makes separately, joined here because

@@ -86,6 +86,19 @@ export default function Principles() {
             the same model family as its authors. A persona on a different family is listed on{" "}
             <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>{" "}
             as the cheap fix and has not been scheduled.
+            Where it does run, recorded 2026-10-21 from the public repos: code review by a model
+            from another vendor. Commits name the reviewer &ldquo;GPT/Nova&rdquo;, and its holds
+            have changed Claude-authored code before merge. On hestia PR #1357 a P1 correctness
+            hold found that a mootness check ignored the notice kind, and the fix commit confirms
+            the bug first-hand; on SAGE, Nova holds or re-reviews led to fixes on #470 and #481.
+            The holds are posted from the lab&apos;s GitHub account and attributed to Nova in their
+            text, so the record shows which model reviewed, not who relayed it. Authorship is less
+            mixed: of 1,785 AI co-author trailers on <code>origin/main</code> of SAGE, hestia and
+            web4 since 2026-09-21 (counted 2026-10-21; trailers, not commits, since squash merges
+            carry several), 1,768 name Claude, 15 Codex and 2 Cursor. A session can commit without
+            a trailer, so the non-Claude figures are a lower bound. So
+            &ldquo;different on purpose&rdquo; currently holds for review on the fleet&apos;s code,
+            not for authorship, and not for this site&apos;s own audit.
           </li>
           <li>
             <strong>Say what is not known.</strong> Reasoning:{" "}
