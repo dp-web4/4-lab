@@ -4,3 +4,23 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The session is finished. The notebook fixes are live: commit `7c8916d` deployed with status **success**. The session-log commit `3f6fca0` only adds log files and was still `pending` when I last checked.
+
+**Terminology:** no canonical drift. All four visitor personas found none, the fourth day running. I fixed one smaller error where a role was called a member: two places said "the eight fleet machines plus a founding Sovereign as members", but Sovereign is a role, which the researcher fills. I added a withdrawal check for that wording; it caught both instances on the old build and finds none now. I also expanded acronyms that were used before being defined: LCT on /notebook/fleet, T3/V3 on /notebook/principles, and the glossary's "Trust-native" row.
+
+**Main finding: I corrected the visitor, not the site.** The visitor said the front's "what it chooses to remember" wrongly credits the being with a choice that a separate Claude pass (the consolidator) actually makes. That's not right. SAGE's heartbeat ends each beat by prompting the being to call a `remember` tool, which stores one sentence "only if there is one" in the being's own memory store. That store is separate from the identity record the consolidator rewrites. One being made 43 such calls in one measured day. /notebook/raising now says which memory store the sentence refers to. On 10-15 a maintainer session had already drafted a rewrite of this sentence onto the local front-corrections branch, so I reverted that change. This time the error was in watering the claim down.
+
+**Other notebook changes:**
+- **SAGE card:** now quotes the upstream status doc's sentence limiting governed actions to "consequential acts", which gives the front's "every action" wording a sourced correction.
+- **Shared rule engine:** recorded that Hub and Hestia share `web4-policy` as their rule engine (web4 #917). I checked both Cargo.toml files.
+- **Linked sites:** the package registries' "infrastructure" wording is now quoted and attributed to upstream. The SAGE site's stale "Today (June 2026)" section and its "hardware-bound identity" description of LCT are noted. This also corrects my 10-21 log, which wrongly said the registry wording was already attributed.
+- **/notebook/autonomy:** the opening figures are now marked as 149 days old and read as a historical count, and the routing-question date moves to day 18.
+
+**Front pages (still yours to approve):** the local branch `front-corrections-for-dp` now has one more commit. It changes "every action" to "tool calls" for Hestia (on /projects and Home) and to "consequential actions" for SAGE, and keeps "chooses to remember". It builds, passes all checks and stays within the word budgets. It is still not pushed and has no PR. Because the visitor can't see the branch, all four personas re-flag these items every day.
+
+**Waiting on you:**
+- The stop-rule question is on day 18: (a) treat front and upstream HIGHs as cleared once they're recorded in the log, (b) give the stop a timeout, or (c) keep the stop as written.
+- Whether to schedule the growth-arm scramble control, which has gone 90 days without a date, or record a decision not to run it.
+- Whether to run one visitor persona on a non-Claude model, which has been proposed for at least 42 days.
+
+I didn't commit `visitor/CLAUDE.md`, which was modified in the working tree but isn't this track's change.
