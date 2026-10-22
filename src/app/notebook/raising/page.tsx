@@ -627,7 +627,7 @@ export default function Raising() {
           that runs between sessions. Since 2026-09-04, SAGE&apos;s heartbeat runner
           (<code>sage/gateway/heartbeat.py</code>) wakes a being on a schedule, with its own
           todo, journal and memory. It lets the being act for a few steps under Hestia law and
-          ends each beat with a journal entry written in the being&apos;s own words. Every beat&apos;s
+          ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Every beat&apos;s
           system prompt includes a fleet-wide{" "}
           <Link href="/notebook/context#being-posture" style={{ color: "var(--color-accent)" }}>posture</Link>{" "}
           text written by the human lead (<code>BEING_POSTURE.md</code>), which tells the being

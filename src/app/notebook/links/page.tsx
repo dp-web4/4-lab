@@ -20,7 +20,7 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway."
+            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway. The SAGE site itself has not caught up (checked 2026-10-22): its 'Today (June 2026)' section still describes a running 12-step consciousness loop, and it glosses LCT as 'hardware-bound identity', while the fleet's being LCTs are self-issued from a seed on the host (see /notebook/fleet)."
           />
           <ExternalLink
             href="https://4-gov.org"

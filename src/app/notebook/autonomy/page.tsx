@@ -12,7 +12,7 @@ export default function Autonomy() {
         <h1>Autonomous Cycles</h1>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day</strong>{" "}
-          (figures as of 2026-05-26, not recounted since).{" "}
+          (figures as of 2026-05-26, not recounted since; 149 days old on 2026-10-22, so read them as a historical count, not the current scale).{" "}
           HUB (one of the two society-host machines — see{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
           the society (hub daemon, chapter ledger) as its primary role rather than research tracks — it does hold
@@ -300,7 +300,7 @@ export default function Autonomy() {
           front item lacked (the front Raising page&apos;s &ldquo;Seen&rdquo; list) and corrected two
           stale facts (present-tense &ldquo;cognition kernel&rdquo;, &ldquo;Nomad still
           publishes&rdquo;). On 10-13 and 10-14 (days 9 and 10) it did the same: notebook halves of
-          carried front items, and a repair to its own publishing check. As of 2026-10-14 no reply
+          carried front items, and a repair to its own publishing check. Sessions from 10-15 to 10-22 (days 11 to 18) used the same readings. As of 2026-10-22 no reply
           from the researcher on the routing question is on record. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.

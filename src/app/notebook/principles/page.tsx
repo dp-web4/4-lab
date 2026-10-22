@@ -51,7 +51,7 @@ export default function Principles() {
           <li>
             <strong>Trust is a track record.</strong> Reasoning: <a href="#p4" style={{ color: "var(--color-accent)" }}>Principle 4</a>{" "}
             (trust belongs to a relationship in context, not to an entity). The &ldquo;earned from
-            witnessed behavior&rdquo; half is the T3/V3 reading on the{" "}
+            witnessed behavior&rdquo; half is the T3/V3 (Trust Tensor / Value Tensor) reading on the{" "}
             <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>glossary</Link>.
           </li>
           <li>

@@ -917,6 +917,13 @@
       "pattern": "running — 363 session records, last 2026-09-15",
       "unless": "publishing stopped by policy",
       "why": "Nomad public record runs to session 378 (2026-09-27 01:20 UTC); SAGE bad5fd9d5 (PR #233, 2026-09-26) moved its records to a private mirror. /notebook/raising already gave 378. Visitor P4 2026-10-21."
+    },
+    {
+      "id": "founding-sovereign-as-member",
+      "withdrawn": "2026-10-22",
+      "pattern": "plus a founding Sovereign",
+      "unless": "",
+      "why": "Sovereign is a role (web4 core-spec/society-roles.md section 2), filled in the fleet's society by the researcher's member identity. The Sovereign row corrected this on 2026-09-17; the Society row and the /notebook/fleet HUB card kept it. Visitor P3 2026-10-22."
     }
   ]
 }
