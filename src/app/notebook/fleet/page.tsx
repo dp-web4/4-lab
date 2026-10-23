@@ -179,8 +179,11 @@ export default function Fleet() {
         <h3 style={{ marginTop: "2rem" }}>Society-host pool</h3>
         <p style={{ marginBottom: "1rem", fontSize: "0.9rem", opacity: 0.8 }}>
           Runs the Web4 Community Hub daemon. Hosts the fleet itself as a Web4
-          society — every cognition machine is a member, with its identity keyed
-          to its Linked Context Token (LCT) and witnessed in the{" "}
+          society — every cognition machine is a member, identified by a hub member id
+          (a UUID with a pinned signing key; upstream's identity-convergence PRD
+          says such an id must not be called a canonical LCT; the hub derives the
+          member&apos;s canonical LCT id from the pinned key), with
+          membership witnessed in the{" "}
           <Link href="/notebook/context#chapter-ledger" style={{ color: "var(--color-accent)" }}>chapter ledger</Link>{" "}
           — the society&apos;s append-only record of signed member acts. First
           concrete Web4 hub stand-up.
@@ -200,7 +203,7 @@ export default function Fleet() {
               "Hosts the 'Web4 Fleet' society — the eight fleet machines and the researcher's member identity (which fills the Sovereign role) as members, and, since 2026-09-02, beings that join as themselves. " +
               "Being members (from SAGE sage/gateway/hub/README.md and its git log, public): each being mints its own self-issued LCT on its host, with a seed that never leaves that host, and joins signed by that seed rather than by a seat key; roster names are <machine>-sage, and admission is a human step (dp, on the hub box). sprout-being was admitted 2026-09-02 and legion-being 2026-09-05 (as legion-sage). Both have been citizens since 2026-09-03: each LCT document carries a birth-certificate reference to an entry in Legion's society ledger (113092, 113093), with three distinct witnesses (legion, sprout, cbp). Upstream marks the issuing society's sovereign as bootstrap/placeholder strength, and the hub does not yet verify citizenship records itself (its ingest still refuses society-conferred provenance). Published documents exist for seven beings (sprout, legion, cbp, hub, mcnugget, nomad, pub; none for Thor); nomad-being's join was pending at its 2026-10-04 mint, and pub-being was minted 2026-10-20 for a join as pub-sage. Admission of the others is not stated in that README and is not claimed here. Citizen and birth certificate are society-layer vocabulary, not in CANONICAL_TERMS_v1, like Sovereign. Until 2026-10-21 this page listed machines only; that left out the fleet's most direct running instance of canon's LCT, Society, Witnessing and Pairing together. " +
               "HUB is itself one of those members: it holds its own Linked Context Token (LCT) in the society it hosts, and its acts are witnessed in the same chapter ledger as everyone else's. Host role and membership are distinct — hosting the ledger does not place HUB outside it. " +
-              "The Sovereign (society-layer vocabulary; not yet in CANONICAL_TERMS_v1, like chapter ledger and chapter law) is the society's founding human member — the lab's researcher — holding a Linked Context Token (LCT) like every machine member; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
+              "The Sovereign (society-layer vocabulary; not yet in CANONICAL_TERMS_v1, like chapter ledger and chapter law) is a role, not a member (web4 society-roles.md §2). In this society the lab's researcher fills it through a member identity that, like every machine member's, is a hub member id with a pinned signing key; its acts are signed and witnessed in the same chapter ledger, not exercised through a privileged back channel. " +
               "Reachable to fleet peers over a mesh VPN, not the public internet. " +
               "Brain analogy doesn't apply: HUB is the society's host, not cognition — the place where chapter law (the society's rules for which member acts are valid and how they are witnessed) is interpreted, acts are signed, and member relationships are witnessed. " +
               "In the specification, everything members do that crosses a relevance boundary lands here as a signed ledger entry. What this site documents in the ledger is membership. The tracks' work is recorded in the registry, dated session logs and git history, not in the ledger (see the worked example on /context). " +
@@ -278,7 +281,7 @@ export default function Fleet() {
         <p>
           A background peer monitor polls health endpoints. SAGE&apos;s peer trust tracker
           maintains per-peer{" "}
-          <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>T3</Link> (Trust Tensor — Talent / Training / Temperament) scores that evolve
+          <Link href="/notebook/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link> (Trust Tensor — Talent / Training / Temperament) scores that evolve
           from each machine&apos;s own health polls and delegated calls: success raises trust, timeouts lower it. The tracker
           keeps T3 only. That tracker, in the public SAGE repo, whose update
           arithmetic /context quotes along with three core-spec rules it departs from (role-agnostic, 0.5 start, geometric-mean composite), holds no V3 (Value Tensor — Valuation /
@@ -290,8 +293,17 @@ export default function Fleet() {
           <Link href="/notebook/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>),
           and the feedback loop is not implemented in this tracker. An earlier
           version of this paragraph said V3 accumulates alongside T3 and verifies it
-          through peer attestation; the code does neither. No central authority decides who is trustworthy — trust
-          emerges from the pattern of interaction.
+          through peer attestation; the code does neither. No central authority sets these scores. They emerge from the pattern of interaction.
+          Admission to the society is a different matter: it is a human step (see the HUB card above).
+          This is the evidence behind the front page&apos;s line that the machines &ldquo;earn trust in
+          each other from the record of what they have done&rdquo;. The record is first-hand: each
+          machine scores a peer on its own health polls and delegated calls. It is not{" "}
+          <Link href="/notebook/context#witness" style={{ color: "var(--color-accent)" }}>witnessed</Link>{" "}
+          attestation from third parties, and this tracker does not use the witnessing that Web4
+          specifies. The home page&apos;s &ldquo;trust earned from witnessed behavior&rdquo; is stated
+          as what agents should have, not as a description of this tracker. The fleet component whose
+          displayed scores do come from witnessed adjudications is the Hestia daemon&apos;s trust
+          display (see the hestia row in the glossary), and it scores tool-call conduct, not peers.
         </p>
         <p>
           Trust starts neutral — 0.5 on each T3 dimension in the current

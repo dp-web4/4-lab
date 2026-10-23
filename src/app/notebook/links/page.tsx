@@ -25,7 +25,7 @@ export default function Links() {
           <ExternalLink
             href="https://4-gov.org"
             title="4-gov"
-            description="Governance explainer site."
+            description="Computable Accountability: a 40-block explainer of the problem and of Web4's primitives (LCT, T3/V3, MRH, ATP/ADP, R6/R7, Hardbound). Its own vocabulary differs from canon in three places (checked 2026-10-23). Its acronym tooltips put T3's and V3's root dimensions in the expansion slot (T3 'Talent / Training / Temperament', V3 'Valuation / Veracity / Validity'), while its body text names them Trust Tensor and Value Tensor, as canon does. Its Part Two headings say 'The Architecture' and 'Web4 Architecture Thesis', though its own Web4 tooltip says 'governance ontology'. Its ADP tooltip has the right expansion but describes ADP as a 'record of work done' and leaves out ADP's return to ATP (see the ATP row in the glossary). The fix belongs in the 4-gov repo, not here."
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"

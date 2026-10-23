@@ -924,6 +924,27 @@
       "pattern": "plus a founding Sovereign",
       "unless": "",
       "why": "Sovereign is a role (web4 core-spec/society-roles.md section 2), filled in the fleet's society by the researcher's member identity. The Sovereign row corrected this on 2026-09-17; the Society row and the /notebook/fleet HUB card kept it. Visitor P3 2026-10-22."
+    },
+    {
+      "id": "member-identity-keyed-to-lct",
+      "withdrawn": "2026-10-23",
+      "pattern": "identity keyed\\s+to (each member|its Linked Context|its LCT)|holds an LCT like every machine member|holding a Linked Context Token \\(LCT\\) like every machine member",
+      "unless": "",
+      "why": "web4 hub/docs/PRD_LCT_IDENTITY_CONVERGENCE.md FR1: hub members are identified by a UUID with a pinned signing key, and 'New code and documentation must not call a UUID a canonical LCT'; Slice B (#883) derives the canonical LCT id from the pin. Glossary Society/Sovereign rows and /notebook/fleet Society-host pool. Visitor P3/P4 2026-10-23."
+    },
+    {
+      "id": "sovereign-founding-human-member",
+      "withdrawn": "2026-10-23",
+      "pattern": "society.s founding human member",
+      "unless": "",
+      "why": "Sovereign is a role, not a member (web4 society-roles.md section 2). The 09-17 entry (sovereign-founding-member) and the 10-22 entry (founding-sovereign-as-member) were pinned to other phrasings and missed this one on the /notebook/fleet HUB card. Found by the maintainer 2026-10-23."
+    },
+    {
+      "id": "track-issued-an-atp",
+      "withdrawn": "2026-10-23",
+      "pattern": "track is issued an ATP",
+      "unless": "",
+      "why": "Tracks are not issued Allocation Transfer Packets. The registry is modeled on the ATP/ADP cycle's issue-and-discharge half (the /notebook/fleet note and the ATP row in the glossary); no packet is minted. Visitor P4 2026-10-23."
     }
   ]
 }

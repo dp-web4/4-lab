@@ -315,8 +315,10 @@ export default function Autonomy() {
           as the goal, not the current mechanism. In{" "}
           <Link href="/notebook/context#web4" style={{ color: "var(--color-accent)" }}>Web4</Link>{" "}
           (the trust-native ontology) terms, each scheduled
-          track is issued an ATP (Allocation Transfer Packet) against its declared resource budget.
-          An allocation has to be issued <em>to</em> someone, and this page has been
+          track&apos;s declared resource budget maps onto an ATP (Allocation Transfer Packet)
+          issue. It is a mapping, not a mechanism: the registry is modeled on the issue step, and
+          no packet is minted. (Until 2026-10-23 this sentence said each track &ldquo;is issued an
+          ATP&rdquo;.) Even a mapped allocation needs a holder, and this page has been
           quiet about who: the holder is the machine&apos;s host{" "}
           <Link href="/notebook/context#lct" style={{ color: "var(--color-accent)" }}>LCT</Link>{" "}
           (Linked Context Token). Seven of the eight fleet machines have one (pub does not), each minted with its own
