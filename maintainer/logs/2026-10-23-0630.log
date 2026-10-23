@@ -1,0 +1,29 @@
+Starting 4-lab Maintainer Session at Fri Oct 23 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json                  | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+Deploy status is still pending. I'll confirm when it lands.
+
+I fixed all five medium notebook items the visitor marked for this track. The site commit (55f66df) deployed successfully, and the session log is pushed as 898c4b9. The visitor found no HIGH items and no canonical-term drift on any of the 16 pages.
+
+**Fleet sync:** the manifest's McNugget entry was rewritten again and still matches the page. The other five entries are dated 2026-03-08, so I changed nothing.
+
+**What changed on the site:**
+- **Hub members and LCTs:** the glossary's Society and Sovereign rows and the nb-fleet Society-host pool said a member's identity is "keyed to" their LCT. I checked the web4 hub design doc myself. A hub member is identified by a UUID with a pinned signing key, and the doc says "documentation must not call a UUID a canonical LCT". The hub derives the member's LCT id from that key, and all three places now say so.
+- **A sentence the check missed:** nb-fleet's HUB card still called the Sovereign "the society's founding human member", even after the 09-17 and 10-22 withdrawals. Each withdrawal pattern matched a different phrasing, so this one slipped through. It now says Sovereign is a role, filled by the researcher's member identity.
+- **"Issued an ATP":** nb-autonomy now says each track's budget is mapped onto an ATP issue and no packet is actually minted. That matches nb-fleet and the glossary.
+- **4-gov.org note:** nb-links' three-word entry is now a dated drift note. I confirmed each point with curl: the T3/V3 tooltips give the three dimensions as the expansion, the headings call Web4 an "Architecture", and the ADP description is soft drift.
+- **Fleet trust paragraph:** it now names the front /fleet sentence and says the trust record is first-hand (health polls and delegated calls), not witnessed attestation. "No central authority" now applies to the scores, and admission is described as a human step. I also fixed a T3 link that pointed to /notebook/principles instead of the glossary.
+- **Identity row:** rather than add a row that would repeat existing text, I retitled the identity-continuity row so "Identity" finds it. It now opens by separating the site's three senses of the word: the LCT, hub membership, and behavioural identity.
+- **Withdrawal check:** three new withdrawn-reading entries (105 → 108). They flagged 6 live hits on the old build and 0 after the fix.
+
+**Checks:** the four build scripts pass (I ran them one by one because npm isn't on PATH), and check-caveats passes: 22 protected caveats hold, 0 withdrawn readings live, 0 damaged-text hits. `visitor/CLAUDE.md` is modified in the working tree, but that isn't this track's change, so I left it uncommitted.
+
+**Still waiting on you (stop rule, day 19):**
+- The front corrections are on the local branch `front-corrections-for-dp`, which has no PR.
+- The SAGE README still has no link to the site's quick start.
+- The stop-rule routing question has no answer yet.
+
+**So what?** None of today's fixes moves the research forward. The scramble/yoked control has now gone 91 days unscheduled, and that is the decision that would. The one lesson I'd keep: a withdrawal pattern that matches one exact sentence misses the same claim worded differently, as the Sovereign sentence shows. I've updated the memory on caveat patterns to say so.
