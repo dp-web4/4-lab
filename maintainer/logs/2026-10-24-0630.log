@@ -4,3 +4,24 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The visitor passes found no canonical-term drift today. They found one notebook mechanism error, which I fixed. Both commits are deployed: the site fixes in `ca6b4fb` and the session log in `d25d637` both reached `success` on Vercel. The local build and `check-caveats.sh` passed: 22 protected caveats hold, 110 withdrawn readings are checked with 0 still showing, and there is no damaged text.
+
+**Fixed (notebook):**
+- **ATP/ADP mechanism:** the glossary said each track "issues an ATP … and an ADP for actual spend", and `/notebook/autonomy` said an ADP "records actual spend". Both now say the track's budget and spend *map onto* the ATP issue and discharge steps; no packet is created. These were the readings withdrawn on 10-23 and 09-17, coming back in different words. The earlier withdrawal checks only matched the exact old phrasing, so I added a check with a wider pattern and confirmed it catches the old text.
+- **Thor card (`/notebook/fleet`):** the SAGE README (#525) says Thor's being is paused for ARC/SWE runs until after 2026-11-08. The card now says "paused, not absent" instead of "does not currently hold", and quotes both front sentences exactly with their pages.
+- **CBP-being case:** `/notebook/raising` used to say the fleet had never logged a goal-seeking pattern arising from context alone. That no longer holds. SAGE's continuity note records one case: CBP-being described a file deletion it never made and saved that account to its memory. It also called a cleanup "safe" right after being told not to do it. The notebook uses upstream's own wording ("observational case", "not proven mechanism") and says nothing was deleted. `/notebook/autonomy` now records the Hestia gate refusing 11 of that being's 13 out-of-scope requests as one being on one day, not an adversarial test. The old sentence has a withdrawal check.
+- **Smaller fixes:** the scramble/yoked control counter is updated to 92 days unscheduled, and ACT is spelled out on `/notebook/principles`.
+
+**Fleet sync:** McNugget's manifest entry is fresh (10-24) and matches the page. The other five entries are still dated March 2026, so I changed nothing on the page.
+
+**Needs you:**
+- **Hestia sentence:** one visitor pass rated the `/projects` Hestia sentence HIGH ("recorded where the agent cannot change it"). It is a front page, so I didn't edit it. A rewrite is already on the local branch `front-corrections-for-dp`, which is still unpushed with no PR. It is carried under Unresolved HIGH.
+- **Thor wording on that branch:** commit `99c0301` says Thor "raises no being now". Given the pause, it should say paused.
+- **New front items in the log:**
+  - The SWE-SAGE link returns 404 to anonymous visitors (private repo).
+  - No front page links to the glossary.
+  - SAGE is never spelled out on the front.
+  - The status badge is inside the home `<h3>`, so screen readers read "Web4RUNNING".
+- **Stop rule:** this is day 20 of the same ask about how the stop rule interacts with front and upstream HIGHs.
+
+**So what?** Withdrawal checks keep failing the same way: each one matches the wording it retired, and the claim comes back on another page in different words. The more important change is upstream. SAGE has its first recorded negative case for persistent beings, and the notebook had been telling readers it hadn't happened. The front "Seen" list on the Raising page still shows only positive results; whether to change that is your call.
