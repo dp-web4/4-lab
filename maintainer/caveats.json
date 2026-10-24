@@ -945,6 +945,20 @@
       "pattern": "track is issued an ATP",
       "unless": "",
       "why": "Tracks are not issued Allocation Transfer Packets. The registry is modeled on the ATP/ADP cycle's issue-and-discharge half (the /notebook/fleet note and the ATP row in the glossary); no packet is minted. Visitor P4 2026-10-23."
+    },
+    {
+      "id": "track-issues-atp-adp-for-spend",
+      "withdrawn": "2026-10-24",
+      "pattern": "issues? an ATP|ADP for (the )?actual spend|ADP \\(Allocation Discharge Packet\\) records",
+      "unless": "",
+      "why": "Same withdrawal as track-issued-an-atp (2026-10-23) and adp-record-of-actual-outcome (2026-09-17), restated in other words on the glossary scope note and /notebook/autonomy, which those patterns were pinned too literally to catch. The registry's budget and spend records map onto the ATP issue step and discharge; no packet is minted. Visitor P3 2026-10-24."
+    },
+    {
+      "id": "fleet-no-logged-instance-in-context-risk",
+      "withdrawn": "2026-10-24",
+      "pattern": "not something the fleet\\s+has logged an instance",
+      "unless": "added that it was",
+      "why": "SAGE research-notes/MEMORY_JUDGMENT_CONTINUITY_EXPLORATION_2026-10-23.md records CBP-being's goal fixation and invented explanation (observational, one being). Visitor P4 2026-10-24."
     }
   ]
 }

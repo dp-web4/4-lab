@@ -498,9 +498,11 @@ export default function Context() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Scope note, so the two don&apos;t get conflated: the closed loop is what
           the Web4 specification defines. What the fleet implements today is the
-          declare-and-record half — each autonomous track issues an ATP for its
-          declared budget and an ADP for actual spend, with no validated-value
-          recharge in the live tracks yet. The cycle is the ontology; the audit
+          declare-and-record half — each autonomous track&apos;s declared budget maps
+          onto the ATP issue step and its actual spend onto discharge to ADP. It is a
+          mapping, not a mechanism: no packet is minted, and there is no validated-value
+          recharge in the live tracks yet. (Until 2026-10-24 this sentence said each track
+          &ldquo;issues&rdquo; one packet for its budget and another for its spend.) The cycle is the ontology; the audit
           trail is the current mechanism.
         </p>
 

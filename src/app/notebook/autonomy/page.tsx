@@ -229,7 +229,13 @@ export default function Autonomy() {
           not a demonstrated safety property</strong>. The boundaries below are
           access control and after-the-fact review; none of them has been tested
           against an adversary, and calling them &ldquo;safety&rdquo; would overclaim
-          what they have shown. The current posture: boundaries are enforced at the
+          what they have shown. The nearest thing to a stress test so far was not adversarial and
+          not on these tracks: on 2026-10-23 one being, CBP-being, made 13 out-of-scope requests to
+          its Hestia gate, 11 were refused and 2 have no recorded outcome, and the deletion it then
+          proposed did not happen (SAGE continuity exploration, 2026-10-23; counts from the
+          operator&apos;s escalation records, n = 1 being, one day; see{" "}
+          <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>).
+          The current posture: boundaries are enforced at the
           process level — scoped credentials, the track registry, and dated
           audit logs reviewed after the fact — not cryptographic guarantees.
           The fleet&apos;s posture is{" "}
@@ -335,7 +341,8 @@ export default function Autonomy() {
           <Link href="/notebook/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
           (Trust Tensor — Talent / Training / Temperament). The identity half of the equation is
           what makes the resource half attributable;
-          an ADP (Allocation Discharge Packet) records actual spend — the registry
+          the registry&apos;s actual-spend record maps onto discharge to an ADP
+          (Allocation Discharge Packet), and the registry
           is the bookkeeping record that makes autonomous operation auditable. Note
           the scope: what runs here is the <em>issue-and-discharge half</em> of the
           ATP/ADP cycle, used one-way as a spend ledger. The full primitive also

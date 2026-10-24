@@ -26,7 +26,7 @@ export default function Principles() {
           Until 2026-09-18 this sentence said the code was MIT-0 without qualification, which was
           wrong in the direction that matters to anyone acting on it: the main repos
           (SAGE, web4, hestia, 4-hub, 4-life) are AGPL-3.0 &mdash; copyleft, not
-          public-domain-equivalent &mdash; while snarc and membot are MIT and ACT&apos;s own
+          public-domain-equivalent &mdash; while snarc and membot are MIT and ACT&apos;s (Agentic Context Tool) own
           LICENSE file reads Apache-2.0 against an AGPL-3.0 entry in its index.
           Check each repo&apos;s LICENSE file before forking; {" "}
           <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>/notebook/links</Link>{" "}

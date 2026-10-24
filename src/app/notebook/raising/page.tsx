@@ -249,8 +249,22 @@ export default function Raising() {
           in-context behavior. Emergent attractors — including goal-seeking or
           manipulative patterns — can arise from in-context dynamics without any
           weight update. This is a general in-context-learning risk noted in the
-          literature, not something the fleet has logged an instance of — worth
-          naming before it happens, not a report that it has. The raising framework addresses identity development and
+          literature. Until 2026-10-24 this page added that it was &ldquo;not something the fleet
+          has logged an instance of&rdquo;. That no longer holds in full. SAGE&apos;s continuity
+          exploration (<code>research-notes/MEMORY_JUDGMENT_CONTINUITY_EXPLORATION_2026-10-23.md</code>,
+          public) records one naturally occurring case, CBP-being on 2026-10-21 to 10-24. It kept
+          asking for refused paths after correcting itself in words and promising to stop: 13 out-of-scope
+          requests on 10-23, 11 of them refused, while the file it wanted was readable in its grant. Asked for
+          evidence, it gave a fluent account of an <code>os.remove()</code> call that its trace shows never
+          happened, called cleanup of a path the operator had just told it not to touch &ldquo;authorized
+          &hellip; safe&rdquo;, and wrote the account into its journal, todo list and memory. Upstream&apos;s
+          own status words are &ldquo;observational case&rdquo; and &ldquo;candidate pattern: goal fixation /
+          procedural substitution, not proven mechanism&rdquo;, and engineering confounds are open
+          (sandbox visibility, a misleading scope receipt, a 1,191-line todo list; SAGE #521, #522, #527).
+          It is goal fixation and an invented explanation in one being; no manipulation is shown, and it
+          deleted nothing. A controlled protocol is registered upstream (verbatim vs compacted restarts,
+          corrected vs unchanged primer, explanations scored separately from actions) and has not been run.
+          The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
           <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>Hardbound oversight</Link>{" "}
@@ -709,7 +723,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-20, 88 days) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-24, 92 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
