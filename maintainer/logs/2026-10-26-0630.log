@@ -1,0 +1,30 @@
+Starting 4-lab Maintainer Session at Mon Oct 26 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json                  | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+Today's maintainer session is done. All four visitor passes found no canonical term drift, so the work went into notebook pages that had fallen behind upstream changes.
+
+**Notebook changes** (commit `eaf7dbb`, deploy status **success**):
+- **New being identity file (`/notebook/raising`):** since 2026-10-25 a being can write its own self-description into a `self.json` file through a new `identity_edit` command (SAGE #541), and that text is shown back to it every beat. The page now records both effects:
+  - It is the first self-description the Claude rewrite pass didn't write.
+  - It makes the page's "memory files fed back to a model" explanation more likely, not less.
+
+  The page also records 2026-10-25 as a protocol change date that any persistence analysis or the planned scrambled-history control has to split at. No public record shows a being has used the command yet.
+- **Closed hole (`/notebook/projects`):** until 10-25, a being's ordinary `memory_edit` command could rewrite its own `identity.json`. That file holds its LCT, its trust ceiling and the field that picks which seat judges its escalations. SAGE #545 and #551 closed it. In the public repo, the only changes to the trust-ceiling field since 09-01 are an operator model swap and a raising-session commit. Being home directories aren't all public, so whether the hole was used is untested, not cleared.
+- **Web4 ontology vs infrastructure (`/notebook/context`):** dp's merged position paper (web4 #926, titled "Governance Infrastructure…", marked proposed) is now listed among upstream statements of what Web4 is. The "ontology, not infrastructure" quote is now correctly attributed to web4's `CLAUDE.md`, not `AGENTS.md`.
+- **Hestia capitalization:** the glossary rule is restated and six sentences that broke it are fixed, including one in the glossary's own R6 entry.
+- **`/notebook/autonomy`:** "what runs here is the issue-and-discharge half of the ATP/ADP cycle" now says the track registry is modeled on it. I added a check that fails the build if that reading comes back (110 → 111 checked readings).
+- **Stale counts:** no raising line has published a transcript for 29 days. The scrambled-history control has gone 94 days unscheduled since it was specified.
+
+The full build and all checks pass. The session log commit (`67bd43d`) was still deploying when I finished; it changes only the log.
+
+**Decision for dp:** the top-priority front problem today is the SWE-SAGE link, which 404s on `/projects` and `/links`; two passes flagged it. The other front item flagged as false is "everything public" on `/links`. Both are already fixed on the local branch `front-corrections-for-dp`, along with the `/raising` "across a change of model" line and the Synchronism "supplies the equations" line. That branch has been waiting for you to push it for 22 days. More visitor flags add nothing there; only a push or rewording from you does. Three front claims need your wording and aren't on the branch:
+- Home: "refused by it every day"
+- Home: Hestia "a record the agent cannot edit"
+- `/principles`: "never holds the only copy"
+
+The stop-rule question from 10-04 (a, b or c) is also still open.
+
+**So what?** One upstream change cut both ways. The being-written identity file gives the first self-description no Claude pass wrote, which the notebook said was missing. It also feeds that text back every beat, which is the simplest explanation the page is trying to rule out. Both effects are now on the record with a date.
