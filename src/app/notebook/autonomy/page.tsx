@@ -344,8 +344,8 @@ export default function Autonomy() {
           the registry&apos;s actual-spend record maps onto discharge to an ADP
           (Allocation Discharge Packet), and the registry
           is the bookkeeping record that makes autonomous operation auditable. Note
-          the scope: what runs here is the <em>issue-and-discharge half</em> of the
-          ATP/ADP cycle, used one-way as a spend ledger. The full primitive also
+          the scope: what the registry is modeled on is the <em>issue-and-discharge half</em> of the
+          ATP/ADP cycle, read one-way as a spend ledger; no packet is issued or discharged here. The full primitive also
           recharges ADP back to ATP when the society validates a proof of the value
           the spend created (see{" "}
           <Link href="/notebook/context#atp" style={{ color: "var(--color-accent)" }}>/context</Link>);
@@ -426,7 +426,7 @@ export default function Autonomy() {
           Hardbound design target</Link>, not a current property of this
           publishing loop. It is a current property of some of the fleet&apos;s code
           review: a GPT reviewer (&ldquo;Nova&rdquo;) places holds on Claude-authored
-          pull requests in hestia and SAGE, and some of those holds found real defects
+          pull requests in the hestia and SAGE repositories, and some of those holds found real defects
           (recorded on{" "}
           <Link href="/notebook/principles" style={{ color: "var(--color-accent)" }}>
           /notebook/principles</Link>, Different on purpose). None of that review
@@ -548,8 +548,8 @@ export default function Autonomy() {
             inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
             check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
             pub&apos;s public line froze on 2026-09-21, and Nomad&apos;s last public session is 378
-            (2026-09-27 01:20 UTC): as of 2026-10-19 no raising line has published a session transcript
-            for 22 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
+            (2026-09-27 01:20 UTC): as of 2026-10-26 no raising line has published a session transcript
+            for 29 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
             harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
             mention the ruling.

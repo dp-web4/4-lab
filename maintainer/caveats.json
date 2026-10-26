@@ -959,6 +959,13 @@
       "pattern": "not something the fleet\\s+has logged an instance",
       "unless": "added that it was",
       "why": "SAGE research-notes/MEMORY_JUDGMENT_CONTINUITY_EXPLORATION_2026-10-23.md records CBP-being's goal fixation and invented explanation (observational, one being). Visitor P4 2026-10-24."
+    },
+    {
+      "id": "registry-runs-atp-adp-cycle",
+      "withdrawn": "2026-10-26",
+      "pattern": "(runs|operates|is running) here is the issue-and-discharge|registry (runs|implements|executes) the (issue|ATP)",
+      "unless": "",
+      "why": "Same withdrawal as track-issued-an-atp (2026-10-23) and track-issues-atp-adp-for-spend (2026-10-24): the track registry is modeled on the ATP/ADP issue-and-discharge half; nothing runs the primitive and no packet is minted. 'What runs here' survived one sentence after the correction on /notebook/autonomy. Visitor P3 2026-10-26."
     }
   ]
 }

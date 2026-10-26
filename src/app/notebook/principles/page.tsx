@@ -93,8 +93,8 @@ export default function Principles() {
             the bug first-hand; on SAGE, Nova holds or re-reviews led to fixes on #470 and #481.
             The holds are posted from the lab&apos;s GitHub account and attributed to Nova in their
             text, so the record shows which model reviewed, not who relayed it. Authorship is less
-            mixed: of 1,785 AI co-author trailers on <code>origin/main</code> of SAGE, hestia and
-            web4 since 2026-09-21 (counted 2026-10-21; trailers, not commits, since squash merges
+            mixed: of 1,785 AI co-author trailers on <code>origin/main</code> of the SAGE, hestia and
+            web4 repositories since 2026-09-21 (counted 2026-10-21; trailers, not commits, since squash merges
             carry several), 1,768 name Claude, 15 Codex and 2 Cursor. A session can commit without
             a trailer, so the non-Claude figures are a lower bound. So
             &ldquo;different on purpose&rdquo; currently holds for review on the fleet&apos;s code,

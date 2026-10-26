@@ -326,8 +326,8 @@ export default function Raising() {
           the ruling two seats declared their conversations private while <code>git add -A</code> had
           published them, and adds a test for the rule. CBP and
           McNugget stopped publishing on 2026-09-20 and now mirror privately, and pub&apos;s public
-          line was frozen at session 240 on 2026-09-21. Nomad&apos;s last public session is 378 (2026-09-27 01:20 UTC); as of 2026-10-12 no line has
-          published a raising transcript since. (CBP&apos;s seat letters are still public; they are the
+          line was frozen at session 240 on 2026-09-21. Nomad&apos;s last public session is 378 (2026-09-27 01:20 UTC); as of 2026-10-26 no line has
+          published a raising transcript since (29 days; rechecked against SAGE <code>origin/main</code>). (CBP&apos;s seat letters are still public; they are the
           harness&apos;s account of the being, not its transcript.)
           The lines that left public view are not a random sample: CBP is the line with an operator
           conversation channel and a continuity note (the seventh confound, below), so the most
@@ -641,7 +641,7 @@ export default function Raising() {
           that runs between sessions. Since 2026-09-04, SAGE&apos;s heartbeat runner
           (<code>sage/gateway/heartbeat.py</code>) wakes a being on a schedule, with its own
           todo, journal and memory. It lets the being act for a few steps under Hestia law and
-          ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Every beat&apos;s
+          ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Since 2026-10-25 there is a third store (SAGE PR #541): the being can rewrite four fields of its own self-description (description, values, questions, learned) in a <code>self.json</code> through an <code>identity_edit</code> verb, each change logged with its reason and witnessed, and whatever it has written is shown back to it in every beat. That text is the being&apos;s, not the consolidator&apos;s, so it is the first channel that escapes the consolidator-authorship confound. It also cuts the other way: a self-written identity text fed into every prompt is close to a literal case of the front page&apos;s &ldquo;well-kept memory files fed back to a model&rdquo;, so it strengthens the feedback reading this page treats as the null. And it is a dated treatment change, like the 2026-06-07 runner move: any persistence series has to segment at 2026-10-25, and the scramble/yoked control (below) would have to scramble or withhold <code>self.json</code> too. No <code>self.json</code> is in the public repository, so whether any being has used the verb is untested (checked 2026-10-26). Every beat&apos;s
           system prompt includes a fleet-wide{" "}
           <Link href="/notebook/context#being-posture" style={{ color: "var(--color-accent)" }}>posture</Link>{" "}
           text written by the human lead (<code>BEING_POSTURE.md</code>), which tells the being
@@ -723,7 +723,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-24, 92 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-26, 94 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
