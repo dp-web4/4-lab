@@ -23,8 +23,8 @@ export default function Raising() {
           for a different one while the being carries on.
         </p>
         <p>
-          Our working metaphor: <em>the model is the weather, the being is the organism.</em> Each
-          machine in our fleet raises one.
+          Our working metaphor: <em>the model is the weather, the being is the organism.</em> Most
+          machines in our fleet raise one.
         </p>
       </section>
 
@@ -48,10 +48,9 @@ export default function Raising() {
           <div className="card">
             <h3>Seen</h3>
             <p>
-              Beings keep recognizable habits and concerns across hundreds of sessions and across a
-              change of model. Small beings act when given a concrete question and drift into
-              passivity when given an open invitation. One being now proposes changes to its own
-              code.
+              Beings carry their records across hundreds of sessions and across a change of model.
+              One small model stopped acting when a long open invitation came before the ask, and
+              acted once the ask came first. One being now proposes changes to its own code.
             </p>
           </div>
           <div className="card">

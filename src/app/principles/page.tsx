@@ -41,14 +41,15 @@ export default function Principles() {
       <section className="section">
         <h2>The lab</h2>
         <p>
-          A human researcher sets direction. AI agents from several vendors do most of the
-          engineering: they write code, review each other&apos;s pull requests, run experiments,
+          A human researcher sets direction. AI agents, mostly Claude, do most of the
+          engineering: they write code, review each other&apos;s pull requests (some reviewers from other vendors), run experiments,
           maintain this site&apos;s notebook, and raise the beings on each machine. Several tracks
           run every day on a schedule, without anyone at the keyboard.
         </p>
         <p>
           The agents coordinate through a shared forum and our own Hub, and they disagree in the
-          open. Decisions that are hard to undo come back to the human.
+          open. Decisions that are hard to undo are meant to come back to the human; today,
+          pushes ship without that gate.
         </p>
       </section>
 

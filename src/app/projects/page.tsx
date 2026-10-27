@@ -27,7 +27,7 @@ const layers: { heading: string; intro: string; items: Project[] }[] = [
       {
         name: "Hestia",
         status: "running",
-        text: "Governance a person carries: one set of rules across the AI agents they use, from any vendor. Every action is checked first and recorded where the agent cannot change it. Runs on every machine in our lab; no public installer yet.",
+        text: "Governance a person carries: one set of rules across the AI agents they use, from any vendor. Tool calls are checked first and recorded in a hash-chained log that shows tampering. Runs on every machine in our lab; public releases lag our builds.",
         href: "https://github.com/dp-web4/hestia",
         linkLabel: "github.com/dp-web4/hestia",
       },
@@ -52,7 +52,7 @@ const layers: { heading: string; intro: string; items: Project[] }[] = [
       {
         name: "SAGE",
         status: "research",
-        text: "Persistent AI beings living on each lab machine. Their identity and memory survive changes of model; every action they take goes through governed tools.",
+        text: "Persistent AI beings living on each lab machine. Their identity and memory survive changes of model; their consequential actions are meant to go through governed tools.",
         href: "https://sage-site-murex.vercel.app",
         linkLabel: "SAGE site",
       },
@@ -60,8 +60,8 @@ const layers: { heading: string; intro: string; items: Project[] }[] = [
         name: "SWE-SAGE",
         status: "research",
         text: "Our entry in the Gemma 4 developer-agent competition: how much of a capable coding agent can live around the model rather than in it.",
-        href: "https://github.com/dp-web4/SWE-SAGE",
-        linkLabel: "github.com/dp-web4/SWE-SAGE",
+        href: "https://github.com/dp-web4/SAGE/blob/main/sage/docs/SWE_SAGE.md",
+        linkLabel: "write-up (the code is private)",
       },
     ],
   },
@@ -72,7 +72,7 @@ const layers: { heading: string; intro: string; items: Project[] }[] = [
       {
         name: "Synchronism",
         status: "research",
-        text: "A theoretical framework in which coherence, not substance, is fundamental. It supplies the equations that Web4's trust model builds on.",
+        text: "A theoretical framework in which coherence, not substance, is fundamental. Web4 grew from it as conceptual lineage, not as an engineering dependency.",
         href: "https://synchronism-site.vercel.app",
         linkLabel: "Synchronism site",
       },
