@@ -37,13 +37,14 @@ export default function Raising() {
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
-          yet (see{" "}
+          yet, and as of 2026-10-27 this page does not yet say what result of it would
+          count against the developmental account (specified 2026-07-24, unscheduled 95 days) &mdash; see{" "}
           <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>The deflationary alternative</Link>{" "}
-          below).
+          below.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           This is the softest page on the site. The hardest thing the lab has
-          made is public and, in the case of the ARC-SAGE harness, MIT-0 (MIT No Attribution),
+          made is public and, in the case of the ARC-SAGE harness (SAGE: Situation-Aware Governance Engine, expanded below), MIT-0 (MIT No Attribution),
           with an independently scored result &mdash; the lab&apos;s main repos are AGPL-3.0, so
           check the LICENSE file of whichever one you fork &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
@@ -326,8 +327,8 @@ export default function Raising() {
           the ruling two seats declared their conversations private while <code>git add -A</code> had
           published them, and adds a test for the rule. CBP and
           McNugget stopped publishing on 2026-09-20 and now mirror privately, and pub&apos;s public
-          line was frozen at session 240 on 2026-09-21. Nomad&apos;s last public session is 378 (2026-09-27 01:20 UTC); as of 2026-10-26 no line has
-          published a raising transcript since (29 days; rechecked against SAGE <code>origin/main</code>). (CBP&apos;s seat letters are still public; they are the
+          line was frozen at session 240 on 2026-09-21. Nomad&apos;s last public session is 378 (2026-09-27 01:20 UTC); as of 2026-10-27 no line has
+          published a raising transcript since (30 days; rechecked against SAGE <code>origin/main</code>). (CBP&apos;s seat letters are still public; they are the
           harness&apos;s account of the being, not its transcript.)
           The lines that left public view are not a random sample: CBP is the line with an operator
           conversation channel and a continuity note (the seventh confound, below), so the most
@@ -713,7 +714,7 @@ export default function Raising() {
           </li>
         </ul>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
-          Stated as a pre-commitment, since{" "}
+          Stated as a publication commitment (not a pre-registration: no metric is pre-registered, as the status paragraph below says), since{" "}
           <Link href="/notebook/principles#p6" style={{ color: "var(--color-accent)" }}>Principle 6</Link>{" "}
           says failed experiments are signal: if this control runs and the result
           is a bare main effect, or no degradation at all, that outcome gets
@@ -723,7 +724,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-26, 94 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-27, 95 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -756,7 +757,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>And that makes
-          the pre-commitment above unreachable as written, which is worth saying
+          the publication commitment above unreachable as written, which is worth saying
           out loud.</strong> It fires on the result of a control whose dependent
           variable the preceding paragraph says does not exist. A promise
           conditioned on an event that cannot occur costs nothing and binds
@@ -768,7 +769,7 @@ export default function Raising() {
           published as its own artifact, <em>including if it fails</em>. A
           written-up failure to define the metric is the honest outcome and
           eliminates a possibility; silence is not. If that attempt is never
-          published, read the pre-commitment above as unbacked, and read this
+          published, read the publication commitment above as unbacked, and read this
           paragraph as the standard we asked to be held to.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>

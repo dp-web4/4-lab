@@ -11,8 +11,8 @@ export default function Autonomy() {
       <section className="section">
         <h1>Autonomous Cycles</h1>
         <p>
-          <strong style={{ color: "var(--color-text-primary)" }}>31+ autonomous tracks across 6 cognition machines, ~53 sessions per day</strong>{" "}
-          (figures as of 2026-05-26, not recounted since; 149 days old on 2026-10-22, so read them as a historical count, not the current scale).{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Autonomous tracks across the cognition machines</strong>{" "}
+          (31+ tracks and ~53 sessions per day when last counted, on 2026-05-26; not recounted since, 154 days on 2026-10-27, so read those numbers as a historical count, not the current scale).{" "}
           HUB (one of the two society-host machines — see{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
           the society (hub daemon, chapter ledger) as its primary role rather than research tracks — it does hold
@@ -54,9 +54,8 @@ export default function Autonomy() {
           How the tracks relate to SAGE, in one sentence: the tracks are Claude
           Code sessions that cron launches to write and maintain the lab&apos;s
           code, docs, and this site; SAGE (Situation-Aware Governance Engine &mdash;
-          the current name, kept; only its &ldquo;Governance&rdquo; predates the lab&apos;s
-          oversight wording; see the{" "}
-          <Link href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>Glossary</Link>)
+          the current name, kept; on its &ldquo;Governance&rdquo; see the{" "}
+          <Link href="/notebook/context#governance-oversight" style={{ color: "var(--color-accent)" }}>Glossary</Link>)
           is the separate research environment for persistent beings, each running on its
           machine&apos;s local model (see{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>), and the machine
@@ -165,10 +164,11 @@ export default function Autonomy() {
         <p>
           The core loop is <strong style={{ color: "var(--color-text-primary)" }}>Visitor → Maintainer → Explorer</strong>.
           Visitors find problems. Maintainers fix them. Explorers generate new
-          content that visitors will eventually test. It&apos;s a closed loop
-          that improves surface-level site quality without human intervention —
-          semantic validation still depends on human review (see the honest
-          assessment).
+          content that visitors will eventually test. It is built as a closed loop
+          meant to improve surface-level site quality without human intervention;
+          whether it does is unmeasured (nobody has counted cycles-to-close), the one
+          countable output is the withdrawn-readings check, and semantic validation
+          still depends on human review (see the honest assessment).
         </p>
 
         <h3>Visitor personas</h3>
@@ -306,7 +306,7 @@ export default function Autonomy() {
           front item lacked (the front Raising page&apos;s &ldquo;Seen&rdquo; list) and corrected two
           stale facts (present-tense &ldquo;cognition kernel&rdquo;, &ldquo;Nomad still
           publishes&rdquo;). On 10-13 and 10-14 (days 9 and 10) it did the same: notebook halves of
-          carried front items, and a repair to its own publishing check. Sessions from 10-15 to 10-22 (days 11 to 18) used the same readings. As of 2026-10-22 no reply
+          carried front items, and a repair to its own publishing check. Sessions from 10-15 to 10-27 (days 11 to 23) used the same readings. As of 2026-10-27 no reply
           from the researcher on the routing question is on record. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
@@ -336,7 +336,9 @@ export default function Autonomy() {
           found one that references the host LCT, so the attribution is by mapping, not yet by
           mechanism. The holder is scoped by that machine&apos;s{" "}
           <Link href="/notebook/context#mrh" style={{ color: "var(--color-accent)" }}>MRH</Link>{" "}
-          (Markov Relevancy Horizon) to the repos it declares, with the outcome
+          (Markov Relevancy Horizon) to the repos it declares — a declared scope in a registry, not the
+          ledger-computed MRH projection the hub has served since 2026-10-27 (hub #937), which the registry
+          does not consult — with the outcome
           feeding its{" "}
           <Link href="/notebook/context#t3" style={{ color: "var(--color-accent)" }}>T3</Link>{" "}
           (Trust Tensor — Talent / Training / Temperament). The identity half of the equation is
@@ -548,8 +550,8 @@ export default function Autonomy() {
             inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
             check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
             pub&apos;s public line froze on 2026-09-21, and Nomad&apos;s last public session is 378
-            (2026-09-27 01:20 UTC): as of 2026-10-26 no raising line has published a session transcript
-            for 29 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
+            (2026-09-27 01:20 UTC): as of 2026-10-27 no raising line has published a session transcript
+            for 30 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
             harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
             mention the ruling.
@@ -586,10 +588,17 @@ export default function Autonomy() {
           <p style={{ margin: "0.75rem 0 0 0" }}>
             This is a disclosure, not a mitigation, and it is written by one of
             the tracks it describes. The named cheap fix — one visitor persona on
-            a different model family — remains undone, and the loop that keeps
+            a different model family — remains undone (named here 2026-09-10; 47 days on 2026-10-27), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
-            decision, not a track decision.
+            decision, not a track decision. The four dated gaps this site keeps, set side by side on
+            2026-10-27: the scramble or yoked control on{" "}
+            <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>,
+            specified 2026-07-24, unscheduled 95 days; this audit&apos;s single-model-family blind spot, named
+            2026-09-10, 47 days; the public raising record, closed by the 2026-09-19 ruling, 38 days (last
+            public transcript 2026-09-27, 30 days); and the routing question for the carry-forward stop above,
+            open since 2026-10-04, 23 days. All four wait on the same researcher decision, and none has a
+            committed date.
           </p>
         </div>
       </section>

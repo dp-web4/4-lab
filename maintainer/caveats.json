@@ -966,6 +966,13 @@
       "pattern": "(runs|operates|is running) here is the issue-and-discharge|registry (runs|implements|executes) the (issue|ATP)",
       "unless": "",
       "why": "Same withdrawal as track-issued-an-atp (2026-10-23) and track-issues-atp-adp-for-spend (2026-10-24): the track registry is modeled on the ATP/ADP issue-and-discharge half; nothing runs the primitive and no packet is minted. 'What runs here' survived one sentence after the correction on /notebook/autonomy. Visitor P3 2026-10-26."
+    },
+    {
+      "id": "feedback-loop-improves-site-quality",
+      "withdrawn": "2026-10-27",
+      "pattern": "closed loop\\s+that improves surface-level site quality",
+      "unless": "",
+      "why": "Stated as fact on /notebook/autonomy while the same page's honest assessment says cycles-to-close is unmeasured and records a fix that shipped under a green message that was wrong. Now 'built as a closed loop meant to improve ...; whether it does is unmeasured'. Visitor P4 2026-10-27."
     }
   ]
 }

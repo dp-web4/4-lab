@@ -27,11 +27,11 @@ export default function Principles() {
           wrong in the direction that matters to anyone acting on it: the main repos
           (SAGE, web4, hestia, 4-hub, 4-life) are AGPL-3.0 &mdash; copyleft, not
           public-domain-equivalent &mdash; while snarc and membot are MIT and ACT&apos;s (Agentic Context Tool) own
-          LICENSE file reads Apache-2.0 against an AGPL-3.0 entry in its index.
+          LICENSE file reads Apache-2.0 against AGPL-3.0 in its own repo-index.yaml and AGPL-3.0-or-later in its CITATION.cff (checked 2026-10-27; unresolved upstream).
           Check each repo&apos;s LICENSE file before forking; {" "}
           <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>/notebook/links</Link>{" "}
           carries the per-repo version.
-          The harness is the most inspectable thing the lab has; this page is the least. It
+          The harness is the most inspectable thing the lab has; this page is among the least. It
           tests the harness and the model, though, not any principle on this page.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>

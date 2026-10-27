@@ -20,12 +20,12 @@ export default function Links() {
           <ExternalLink
             href="https://sage-site-murex.vercel.app"
             title="SAGE"
-            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway. The SAGE site itself has not caught up (checked 2026-10-22): its 'Today (June 2026)' section still describes a running 12-step consciousness loop, and it glosses LCT as 'hardware-bound identity', while the fleet's being LCTs are self-issued from a seed on the host (see /notebook/fleet)."
+            description="Situation-Aware Governance Engine — research environment for persistent local AI (beings) under identity, memory, learned state, tools and Hestia-governed action, per its own docs of 2026-09-26; the 12-step Python cognition loop is upstream's 2025 design, retained as history. The deployed Rust daemon is an inference-and-metabolism gateway. The SAGE site itself has not caught up (checked 2026-10-22): its 'Today (June 2026)' section still describes a running 12-step consciousness loop, and it glosses LCT as 'hardware-bound identity', while the fleet's being LCTs are self-issued from a seed on the host (see /notebook/fleet). Rechecked 2026-10-27: it also glosses ATP/ADP as 'Energy metabolism (bounded compute budgets)' — canon's ATP is an Allocation Transfer Packet, 'a unit of account, not a protocol currency' in the web4 README — and T3 as 'multi-dimensional trust scoring' (canon: Trust Tensor); says LCT is 'witnessed across 2,700+ sessions', a basis this site has never reconciled with its own counts; and labels HUB 'paused 2026-07-29, count frozen' and CBP 'paused 2026-08-06', where /notebook/fleet has HUB's loop still committing with its ledger frozen and CBP's publishing stopped by policy on 2026-09-20, and the SAGE README's 2026-10-23 census has every machine but Thor running a being: three sources, three states for two lines. It does carry a Get Started section (clone, Ollama, build the daemon). The fix belongs in the SAGE site repo."
           />
           <ExternalLink
             href="https://4-gov.org"
             title="4-gov"
-            description="Computable Accountability: a 40-block explainer of the problem and of Web4's primitives (LCT, T3/V3, MRH, ATP/ADP, R6/R7, Hardbound). Its own vocabulary differs from canon in three places (checked 2026-10-23). Its acronym tooltips put T3's and V3's root dimensions in the expansion slot (T3 'Talent / Training / Temperament', V3 'Valuation / Veracity / Validity'), while its body text names them Trust Tensor and Value Tensor, as canon does. Its Part Two headings say 'The Architecture' and 'Web4 Architecture Thesis', though its own Web4 tooltip says 'governance ontology'. Its ADP tooltip has the right expansion but describes ADP as a 'record of work done' and leaves out ADP's return to ATP (see the ATP row in the glossary). The fix belongs in the 4-gov repo, not here."
+            description="Computable Accountability: a 40-block explainer of the problem and of Web4's primitives (LCT, T3/V3, MRH, ATP/ADP, R6/R7, Hardbound). Its own vocabulary differs from canon in three places (checked 2026-10-23). Its acronym tooltips put T3's and V3's root dimensions in the expansion slot (T3 'Talent / Training / Temperament', V3 'Valuation / Veracity / Validity'), while its body text names them Trust Tensor and Value Tensor, as canon does. Its Part Two headings say 'The Architecture' and 'Web4 Architecture Thesis', though its own Web4 tooltip says 'governance ontology'. Its ADP tooltip has the right expansion but describes ADP as a 'record of work done' and leaves out ADP's return to ATP (see the ATP row in the glossary). Rechecked 2026-10-27: all three stand, and the body text adds a fourth instance, 'Open standard. Open architecture. Build with us.' The site's source is not public (no repository of that name under dp-web4; 4-gov.org links to the web4 and hestia repos, not to its own), so the fix belongs with its author, not here."
           />
           <ExternalLink
             href="https://4-life-ivory.vercel.app"
@@ -73,7 +73,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/ACT"
             title="ACT"
-            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP); its repo calls it an early-prototype candidate ledger backend for Web4 anchoring (meant to become a human interface to Web4; not one today). Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and a chain startup path for the fleet machine CBP; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today."
+            description="Agentic Context Tool — Cosmos SDK implementation of the Agentic Context Protocol (ACP); its repo calls it an early-prototype candidate ledger backend for Web4 anchoring (meant to become a human interface to Web4; not one today). Stalled, and reserved rather than abandoned: last substantive commit 2026-04-29 (a daemon entry point and a chain startup path for the fleet machine CBP; the 2026-04-10 commit before it removed the README, its content moved to the web4 repo), no running chain this site can confirm, no first-run steps published. Not a working entry point today. License unresolved: its LICENSE file is Apache-2.0 (the Ignite CLI template), while its own repo-index.yaml says AGPL-3.0 and CITATION.cff says AGPL-3.0-or-later (checked 2026-10-27)."
           />
           <ExternalLink
             href="https://github.com/dp-web4/openclaw"
@@ -113,12 +113,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/hestia"
             title="Hestia"
-            description="Open local-first governance daemon — agents from different vendors under one signed law on one machine, with a hash-chained action record. ('Governance' is deliberate here; see /notebook/projects.)"
+            description="Open local-first governance daemon — agents from different vendors under one signed law on one machine, with a hash-chained action record. ('Governance' is deliberate; the one explanation is at /notebook/context#governance-oversight.)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/4-hub"
             title="Hub (4-hub)"
-            description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo"
+            description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo. Its README still says seven roles (checked 2026-10-27; the web4 hub README, the glossary and /notebook/projects say eight, and upstream's 2026-10-23 landing audit lists the lag as P1); the mirror's code is current, pushed 2026-10-27 in step with hub #937"
           />
           <ExternalLink
             href="https://github.com/dp-web4/snarc"
@@ -148,7 +148,7 @@ export default function Links() {
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          ARC-SAGE: MIT-0 (MIT No Attribution; see repo). Gemma 4 Good Submission: Apache 2.0. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
+          ARC-SAGE: MIT-0 (MIT No Attribution; see repo). Gemma 4 Good Submission: Apache 2.0. ACT: unresolved &mdash; LICENSE file Apache-2.0, its own repo-index.yaml AGPL-3.0, CITATION.cff AGPL-3.0-or-later (checked 2026-10-27); treat it as undetermined until upstream reconciles them. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
         </p>
 
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>

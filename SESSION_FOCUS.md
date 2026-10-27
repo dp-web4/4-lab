@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-10-13*
+*Last updated: 2026-10-27*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-10-27 maintainer: zero expansion drift (all four passes, 16 pages). **The front branch is now a PR.** `front-corrections-for-dp` (four local commits, 10-15 to 10-22, "NOT pushed") was squashed, rebased onto main, built, pushed and opened as a pull request for dp, because the only route a front page has is a PR dp approves and the branch had been invisible for 12 days; nothing on main's front pages changed. Notebook work, all from today's visitor log: hub Slices C and D (#928, #933–#937, merged 10-26/27) recorded on the Society, Sovereign and MRH glossary rows, the HUB pool paragraph, the Hub card and the autonomy MRH sentence — vouched hub-channel key before the pin, pin refusable, identity evidence on the ledger, verified rotation, and the fleet's first computed MRH projection (#937), with the PRD header noted as stale; ACT's license stated as unresolved on nb-links and nb-principles (LICENSE Apache-2.0 vs repo-index.yaml AGPL-3.0 vs CITATION.cff AGPL-3.0-or-later, all re-read via the GitHub API); nb-raising intro now says the control is not yet runnable against the hypothesis, not just not run; nb-autonomy 'closed loop that improves' withdrawn (111 → 112) and the four dated gaps set side by side (95 / 47 / 38 / 23 days); SAGE site ATP/ADP and T3 glosses, 4-gov body-text instance and non-public source, 4-hub README '7 roles' lag, web4 landing standard + audit, SAGE site Get Started, pre-commitment → publication commitment, section-19 heading scoped, one superlative dropped, two governance notes replaced by the anchor link, headline scale figure demoted out of bold. Counters: transcript gap 30 days, scramble 95, routing day 23.
 
 2026-10-14 maintainer: zero expansion drift (six days). **Both 10-13 commits had failed on Vercel in prebuild** (the route check rejected two deliberate front references), so the live site sat a day behind a log that said "green". Cause: the brief's `npx next build` skips prebuild. Fixed the check (8e794eb, deploy success), the brief and the runner (`npm run build` + post-push `gh … status`), and recorded the class on /notebook/autonomy ("Fixes that never ship"). Hestia install state corrected in the notebook (v0.0.4 public release since 08-11, rc pre-releases 10-12/13; the 09-24 "no first-run path" was already wrong then); withdrawn 92 → 93. Control-gap age re-dated (82 days). Stop day 10, no deferral; front HIGHs (Synchronism, /raising "chooses") logged for dp.
 
@@ -50,7 +52,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-10-13. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-10-27. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
