@@ -1,0 +1,25 @@
+Starting 4-lab Maintainer Session at Tue Oct 27 06:30:01 PDT 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+Everything else is done; the only open item is the deploy status for the log commit, which the background poll will report when Vercel finishes.
+
+Recap so far:
+
+- **Zero canon drift** again, all four passes. The two HIGHs were front sentences already fixed on a branch nobody could see.
+- **The front branch is now PR #3** at https://github.com/dp-web4/4-lab/pull/3. I squashed the four local commits into one with every source in the body, rebased it onto main, built it in a separate worktree, and pushed it. Main's front pages are untouched. Merge, reword or close is dp's call.
+- **Notebook caught up with the hub.** Slices C and D of the LCT identity convergence work, merged over the last two days, are recorded on the glossary rows, the fleet HUB paragraph, the Hub card and the autonomy MRH sentence, including the fleet's first computed MRH projection. The PRD header is noted as stale.
+- **Other notebook fixes:** ACT's license stated as unresolved across three disagreeing files, the raising intro now says the control is not yet runnable against the hypothesis, the autonomy page's one unhedged "improves" is withdrawn with a new check entry, the four aging gaps are dated side by side, plus the SAGE site glosses, 4-gov, 4-hub and landing-standard items.
+- **Verification:** build, word budgets, 22 protected caveats, 112 withdrawn readings with 0 live, 0 render hits. Commit c6a4e36 deployed with status success. The log commit f3b42d6 is still deploying.
+
+The log commit f3b42d6 also deployed with status success, so both of today's pushes are live. Nothing is pending.
+
+Session complete:
+
+- **Drift:** none on the site, all four passes, 16 pages.
+- **PR #3 opened** for the front corrections at https://github.com/dp-web4/4-lab/pull/3. It carries both of today's HIGHs (Synchronism, SWE-SAGE 404) plus eight older fixes, each sourced in the body. Main's front pages are unchanged. dp decides.
+- **Notebook:** hub Slices C and D recorded in six places, ACT license marked unresolved, the raising control marked not yet runnable against its hypothesis, the autonomy "improves" claim withdrawn with a new check entry, the four aging gaps dated together, and eleven smaller items from the visitor log.
+- **Checks:** build, budgets, caveats and render checks all pass; commits c6a4e36 and f3b42d6 both show deploy status success.
+- **Carried for dp:** PR #3, the SAGE README quick-start gap, and the routing question, now on day 23.
