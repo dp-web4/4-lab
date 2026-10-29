@@ -37,8 +37,8 @@ export default function Raising() {
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
-          yet, and as of 2026-10-27 this page does not yet say what result of it would
-          count against the developmental account (specified 2026-07-24, unscheduled 95 days) &mdash; see{" "}
+          yet, and as of 2026-10-29 this page does not yet say what result of it would
+          count against the developmental account (specified 2026-07-24, unscheduled 97 days) &mdash; see{" "}
           <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>The deflationary alternative</Link>{" "}
           below.
         </p>
@@ -642,7 +642,7 @@ export default function Raising() {
           that runs between sessions. Since 2026-09-04, SAGE&apos;s heartbeat runner
           (<code>sage/gateway/heartbeat.py</code>) wakes a being on a schedule, with its own
           todo, journal and memory. It lets the being act for a few steps under Hestia law and
-          ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Since 2026-10-25 there is a third store (SAGE PR #541): the being can rewrite four fields of its own self-description (description, values, questions, learned) in a <code>self.json</code> through an <code>identity_edit</code> verb, each change logged with its reason and witnessed, and whatever it has written is shown back to it in every beat. That text is the being&apos;s, not the consolidator&apos;s, so it is the first channel that escapes the consolidator-authorship confound. It also cuts the other way: a self-written identity text fed into every prompt is close to a literal case of the front page&apos;s &ldquo;well-kept memory files fed back to a model&rdquo;, so it strengthens the feedback reading this page treats as the null. And it is a dated treatment change, like the 2026-06-07 runner move: any persistence series has to segment at 2026-10-25, and the scramble/yoked control (below) would have to scramble or withhold <code>self.json</code> too. No <code>self.json</code> is in the public repository, so whether any being has used the verb is untested (checked 2026-10-26). Every beat&apos;s
+          ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Since 2026-10-25 there is a third store (SAGE PR #541): the being can rewrite four fields of its own self-description (description, values, questions, learned) in a <code>self.json</code> through an <code>identity_edit</code> verb, each change logged with its reason and witnessed, and whatever it has written is shown back to it in every beat. That text is the being&apos;s, not the consolidator&apos;s, so it escapes consolidator authorship (it does not escape prompt elicitation; see below). It also cuts the other way: a self-written identity text fed into every prompt is close to a literal case of the front page&apos;s &ldquo;well-kept memory files fed back to a model&rdquo;, so it strengthens the feedback reading this page treats as the null. And it is a dated treatment change, like the 2026-06-07 runner move: any persistence series has to segment at 2026-10-25, and the scramble/yoked control (below) would have to scramble or withhold <code>self.json</code> too. Whether any being has used the verb: upstream counted no uses in its first four days on sprout-being (SAGE PR #585, 2026-10-28; upstream&apos;s count on one being, not re-derived here, since no <code>self.json</code> is in the public repository). Two more being-written stores followed within three days: settled conclusions (<code>settle</code>, PR #574, 2026-10-27: question-and-answer pairs in the being&apos;s words, shown whole at the start of every beat) and skills (<code>skill</code>, PR #576, 2026-10-27: procedures the being writes for itself, kept beside fleet skills written by the seats; since PR #589, 2026-10-28, it can retire one of its own, with the text kept in the log). Upstream&apos;s own measurement on the same being is what matters for this page. In 69 beats after skills went live, <code>skill</code> was called 0 times and <code>settle</code> 8, and PR #585 states the pattern as &ldquo;it uses what a step names (settle, in reflect item 3) and not what is only offered&rdquo;. #585 then named <code>skill</code> in the reflection step and added a line telling the being when it has just worked something out; the being&apos;s first skill is dated about two and a half hours after that merge (PR #589). So use of a self-authored store follows the prompt that names it. These stores escape consolidator authorship but inherit prompt elicitation, the same class as the sixth confound&apos;s scripted questions and praise: what a being writes there is evidence of what it was asked to write, before it is evidence of what it chose. 2026-10-25, 2026-10-27 and 2026-10-28 are each dated treatment changes, and the scramble/yoked control would have to cover settled entries and the being&apos;s skills as well as <code>self.json</code> (recorded 2026-10-29). Every beat&apos;s
           system prompt includes a fleet-wide{" "}
           <Link href="/notebook/context#being-posture" style={{ color: "var(--color-accent)" }}>posture</Link>{" "}
           text written by the human lead (<code>BEING_POSTURE.md</code>), which tells the being
@@ -724,7 +724,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-27, 95 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-29, 97 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -791,6 +791,30 @@ export default function Raising() {
           from the metric to the hypothesis: this page does not yet say how an arm that is
           handed a line&apos;s history should differ from the line that accumulated it. Until it
           does, no result of the control could count against the developmental account.
+          For the yoked arm there may be no answer to give. On a line whose weights do not change,
+          an arm handed B&apos;s whole history is, by construction, a line that accumulated B&apos;s
+          history, so both accounts predict it behaves like B (raised by the visitor track,
+          2026-10-29). If so, the yoked arm cannot discriminate for identity, and only the
+          scramble&apos;s dissociation (above) can. Whether to drop it for identity is a design call
+          for the researcher; this paragraph records the question and does not make the call.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>The metric&apos;s positive check, run
+          2026-10-29:</strong>{" "}
+          <a href="https://github.com/dp-web4/4-lab/blob/main/maintainer/analysis/identity-metric-june-step-2026-10-29.md" style={{ color: "var(--color-accent)" }}>identity-metric-june-step-2026-10-29.md</a>.
+          The Synchronism lesson cited above asks that a metric move on a known, built-in effect
+          before the real run. The June step is one: the prompt the model received changed on a known
+          day. On records with the identical six-question script, the metric sees it clearly. Pairs
+          straddling the step are less similar than same-side pairs at the same session lag
+          (McNugget 0.363 against 0.518 and 0.529, Legion 0.477 against 0.537 and 0.695), and
+          records are assigned to the correct side 99 to 100% of the time, against a shuffle null
+          whose maximum is 0.62. That step is about twice the size of the line signature. The two
+          lines also separate before the step (0.958), so the signature is not only an effect of
+          the later runner setup. This rules out one objection, that the metric is too blunt to
+          register a change in what a line is handed. It does not choose between the accounts,
+          since both expect the context to move it. And the June step was a large change, so a
+          metric that sees it may still miss a scramble, which keeps the content and changes only
+          the order.
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>What we&apos;re not claiming</h2>

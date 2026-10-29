@@ -973,6 +973,20 @@
       "pattern": "closed loop\\s+that improves surface-level site quality",
       "unless": "",
       "why": "Stated as fact on /notebook/autonomy while the same page's honest assessment says cycles-to-close is unmeasured and records a fix that shipped under a green message that was wrong. Now 'built as a closed loop meant to improve ...; whether it does is unmeasured'. Visitor P4 2026-10-27."
+    },
+    {
+      "id": "self-store-escapes-authorship-confound",
+      "withdrawn": "2026-10-29",
+      "pattern": "(first|only) channel that escapes|escapes the consolidator-authorship confound",
+      "unless": "",
+      "why": "A being-written store (self.json, settled entries, skills) escapes consolidator authorship but not prompt elicitation: SAGE PR #585 (2026-10-28) measured on sprout-being that the being uses what a reflection step names (settle 8, skill 0, identity_edit 0 in 4 days) and not what is only offered. Visitor P4 2026-10-29."
+    },
+    {
+      "id": "identity-edit-use-untested",
+      "withdrawn": "2026-10-29",
+      "pattern": "whether any being has used the verb is untested",
+      "unless": "",
+      "why": "Upstream counted it: identity_edit was used 0 times in its first four days on sprout-being (SAGE PR #585 body, 2026-10-28; n = 1 being, not re-derived here). Visitor P3/P4 2026-10-29."
     }
   ]
 }

@@ -592,12 +592,12 @@ export default function Autonomy() {
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
             decision, not a track decision. The four dated gaps this site keeps, set side by side on
-            2026-10-27: the scramble or yoked control on{" "}
+            2026-10-29: the scramble or yoked control on{" "}
             <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>,
-            specified 2026-07-24, unscheduled 95 days; this audit&apos;s single-model-family blind spot, named
-            2026-09-10, 47 days; the public raising record, closed by the 2026-09-19 ruling, 38 days (last
-            public transcript 2026-09-27, 30 days); and the routing question for the carry-forward stop above,
-            open since 2026-10-04, 23 days. All four wait on the same researcher decision, and none has a
+            specified 2026-07-24, unscheduled 97 days; this audit&apos;s single-model-family blind spot, named
+            2026-09-10, 49 days; the public raising record, closed by the 2026-09-19 ruling, 40 days (last
+            public transcript 2026-09-27, 32 days); and the routing question for the carry-forward stop above,
+            open since 2026-10-04, 25 days. All four wait on the same researcher decision, and none has a
             committed date.
           </p>
         </div>

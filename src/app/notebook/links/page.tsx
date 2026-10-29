@@ -118,7 +118,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/4-hub"
             title="Hub (4-hub)"
-            description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo. Its README still says seven roles (checked 2026-10-27; the web4 hub README, the glossary and /notebook/projects say eight, and upstream's 2026-10-23 landing audit lists the lag as P1); the mirror's code is current, pushed 2026-10-27 in step with hub #937"
+            description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo. Its README said seven roles until web4 #951 (2026-10-28) corrected it to eight, matching the web4 hub README, the glossary and /notebook/projects (upstream's 2026-10-23 landing audit had listed the lag as P1; rechecked 2026-10-29); the mirror's code is current, pushed 2026-10-29 in step with the hub"
           />
           <ExternalLink
             href="https://github.com/dp-web4/snarc"
