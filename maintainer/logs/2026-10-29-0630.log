@@ -4,3 +4,33 @@ Pulling SAGE fleet models...
  1 file changed, 1 insertion(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I updated the notebook for SAGE's changes since 10-27, recorded a design question about the control, and ran a new analysis. It's pushed as `bfe64ff` and the Vercel deploy shows success. The build and every check passed first: page word limits, protected caveats, withdrawn readings (114, none showing on the site) and damaged text.
+
+**Terminology:** all four visitor passes found no drift on any of the 16 pages. The drift that remains is in upstream sources (the web4 README, the web4-core package summary, the SAGE site), and the site already says so.
+
+**Notebook changes**
+- **Raising page, being-written stores:**
+  - The identity_edit verb is now recorded as tested: SAGE counted no uses in its first four days on sprout-being (in the #585 description).
+  - Two newer stores the being writes itself are added: settled conclusions (#574) and skills (#576, with retiring a skill since #589).
+  - SAGE's own measurement (#585) is the key point: the being used `skill` 0 times in 69 beats until the reflection step named it, and its first skill came about 2.5 hours later. So these stores avoid the consolidator writing them, but not the prompt steering them. The page now files this under the same confound as the tutor's scripted questions and praise.
+  - The old claim that the being's self-description "escapes the consolidator-authorship confound" is withdrawn, along with "whether any being has used the verb is untested". Both have `withdrawn` entries, and I confirmed the patterns catch the old rendered pages.
+- **Raising page, control design:** I recorded the visitor's point that, when the model's weights don't change, an arm handed another line's whole history *is* that line. If so, the yoked arm can't test identity. Whether to drop it is your call; the page states the question and doesn't make it.
+- **Glossary entry for LCT:** a key rotation now produces a new id, and continuity is carried by lineage (web4 #945). The hub's newer "attested lineage" (Slice E) is noted too.
+- **Links page:** the 4-hub README's "seven roles" was corrected upstream (#951); the 4-hub README now says eight.
+- **Autonomy and Raising pages:** the dated gap counters are updated to today (the scramble control has been unscheduled for 97 days).
+
+**New analysis:** I tested whether the 09-24 identity metric detects the known 2026-06-07 step, when the prompt the model received changed. It does:
+- Pairs of sessions on opposite sides of the step score clearly lower than pairs on the same side at the same distance. On McNugget it's 0.36 against about 0.52.
+- Sessions are assigned to the correct side of the step 99–100% of the time; chance is about 50%.
+- The step is about twice as large as the difference between the two lines. The two lines are also distinguishable before the step.
+
+My first run filtered sessions by the number of questions and put the pre-step line separation at chance. Filtering on the exact tutor wording is the right method, since the wording changed before the step. The write-up records both runs. This answers the objection that the metric is too blunt to notice changes to what a line is given. It doesn't show whether the metric would catch the smaller scramble, and it doesn't favour either account. What blocks the control now is the design question above, not the measurement.
+
+**Not edited (front pages, yours):**
+- **Seven low items for PR #3:** they're listed in the session log under "Front page correction for dp" — for example "mentor", "earn trust … from the record", and "Two kinds of work" sitting over three groups.
+- **Still needing your sign-off:**
+  - PR #3 is still open.
+  - The SAGE README still has no install path or link to the site's quick start.
+  - The question of how the carry-forward stop rule should treat these items is on day 25.
+
+The 10-28 sessions crashed: the maintainer run ran out of usage credits, and that day's visitor log is an empty header. So no high-severity finding was left untriaged.
