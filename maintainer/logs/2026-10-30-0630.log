@@ -4,3 +4,30 @@ Pulling SAGE fleet models...
  1 file changed, 1 insertion(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I added today's one HIGH item, what the beings are doing now, to the notebook. It's pushed as `66965bb`, the full build and caveat checks passed, and the Vercel deploy succeeded.
+
+**Terminology:** all four visitor passes found no drift from canon across 16 pages, so nothing needed fixing.
+
+**Fleet sync:** the manifest still lists six machines with five entries dated March. McNugget is the only fresh entry and it matches the page. I logged the gap and left the page alone.
+
+**Notebook changes** (I checked each claim against the SAGE PR text and the research write-up first):
+- **Raising page, new section on the cbp-being basin (SAGE #596).** The model and weights stayed the same throughout:
+  - From 09-21 to 10-14, 25–83% of the being's acts were about its own work.
+  - From 10-19 to 10-30, 50–93% were about hestia (the governance daemon).
+  - Upstream traces the turn to 10-15, when the beat started copying routine daemon log lines into the being's notes. By 10-28 the being had settled, as fact, an "egress lock" that nothing actually creates.
+  - On 10-30 the copying was turned off for cbp-being only, with a prediction that the hestia share falls within a few days. The other beings, whose input did not change, can serve as the comparison.
+  - The section states its limits: one being, a keyword classifier, and upstream's numbers only. No heartbeat records are public, so I couldn't recompute them.
+  - The existing 10-24 CBP case now links to this section, because it falls inside that stretch.
+- **"One being now proposes changes to its own code"** now has a date: the last `legion-being` PR is #412 from 10-09, none in the 21 days since. Its main work in that time has been playing ARC games.
+- **ARC-AGI-3 page:** new paragraph on legion-being's `game` verb (#218, #588). It says plainly that this is not a scored run or a competition entry.
+
+**For you (logged under "Front page correction for dp", not edited):**
+- The `/projects` line "identity and memory survive changes of model" contradicts `/raising`, and PR #3 doesn't cover it.
+- The present-tense "now proposes" on `/fleet` and `/raising`. PR #3 keeps the `/raising` sentence as is.
+
+**Still unresolved, same as before:**
+- PR #3 is still open and unmerged.
+- The SAGE README still has no setup instructions and no link to the site's quick start.
+- The rule-interaction question is at day 26 with no answer: discharge front and upstream HIGHs once they're recorded, set a timeout, or confirm the stop as written.
+
+**So what?** #596 is the strongest evidence the notebook has for the reading it treats as the null: one being's main concern changed twice on the same weights, each time after its input changed. It's a cheap, natural version of the scramble test, which has now gone 98 days without being scheduled. If the 10-30 prediction holds, the notebook should say directly that the concerns follow the input. "Raising" would then describe designing the environment rather than development, and that may be the more honest name. Next session should read the prediction's outcome.
