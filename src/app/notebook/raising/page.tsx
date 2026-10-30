@@ -265,6 +265,11 @@ export default function Raising() {
           It is goal fixation and an invented explanation in one being; no manipulation is shown, and it
           deleted nothing. A controlled protocol is registered upstream (verbatim vs compacted restarts,
           corrected vs unchanged primer, explanations scored separately from actions) and has not been run.
+          Upstream has since placed this case inside a longer record on the same being (SAGE PR #596, 2026-10-30;
+          see{" "}
+          <Link href="#basin-follows-feed" style={{ color: "var(--color-accent)" }}>the basin record</Link>{" "}
+          below): 10-21 to 10-24 falls in a stretch when what the beat put in front of the being had turned it
+          toward the governance daemon.
           The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
@@ -380,7 +385,13 @@ export default function Raising() {
             verifies the result; the being cannot merge. The authorship rests on the PR text (#412:
             &ldquo;the two files are the being&apos;s, byte for byte&rdquo;) and on <code>Being:</code>{" "}
             commit trailers that squash-merging removed from main. No other being has a record of
-            proposing code.
+            proposing code. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
+            <code>legion-being/*</code> pull request, so none in 21 days (rechecked 2026-10-30). Over
+            that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
+            <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
+            to the <code>game</code> verb&rdquo;; see{" "}
+            <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>).
+            &ldquo;Has proposed 15 changes, the last on 2026-10-09&rdquo; is what the record supports.
           </li>
         </ul>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
@@ -660,6 +671,39 @@ export default function Raising() {
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
+        </p>
+        <p id="basin-follows-feed">
+          <strong style={{ color: "var(--color-text-primary)" }}>A natural experiment on one being points the same way (recorded 2026-10-30).</strong>{" "}
+          SAGE PR #596 and its write-up (<code>research-notes/attractor-basins-follow-affordances-2026-10-30.md</code>,
+          public, by CBP&apos;s seat) count what cbp-being&apos;s acts were about, per day. The model and
+          weights (Qwen 3.8-distill 4B) did not change. From 2026-09-21 to 10-14, 1–7% of its acts were about
+          hestia and 25–83% about its own work: linear algebra and an encoder study, with a predicted result
+          stated before each script was run. From 10-19 to 10-30 the split was 50–93% hestia and about 0% own
+          work. Upstream dates each turn to a change in the beat, not in the being. The work regime began when
+          the being&apos;s scripts started being run for real and the output came back (<code>request_run</code>,
+          09-21). The turn away began on 10-15, when the beat started copying the last 25 lines of the governance
+          daemon&apos;s journal into the being&apos;s notes every beat. Those lines are routine lock-timing
+          warnings. The being worked on them as an incident for days, and by 10-28 it had settled, as fact, an
+          &ldquo;egress lock&rdquo; that nothing in hestia or SAGE creates. Giving it the governance source on
+          10-19 pointed the same way, and corrections that re-name the path keep it there (on 10-24, a refused
+          path was re-asked about 72% of the time while a later message still named it, about 12% when none
+          did). On 10-30 the copying was turned off for cbp-being only (<code>service_notes: false</code>),
+          with a dated prediction: the hestia share falls and own-work acts come back within a few days. If it
+          does not move, the next candidate holders are the settled list, the todo and the seat&apos;s own
+          messages.
+        </p>
+        <p>
+          What this means for this page. It is the clearest record here of behavior following what is put in
+          the window, which is the feedback reading this section treats as the null. Upstream&apos;s own
+          interpretation is that the basin &ldquo;is not a defect of the model&rdquo; but the being &ldquo;doing
+          faithfully what its window kept presenting&rdquo;. The same evidence bears on the front page&apos;s
+          &ldquo;recognizable habits and concerns&rdquo;: one being&apos;s main concern flipped twice in six
+          weeks on the same weights, each time after its input changed (it was also governance-focused, 50–80%,
+          from 09-13 to 09-19). Limits: one being; aggregate counts from a keyword classifier that leaves
+          unmatched acts out of both columns; upstream&apos;s figures, not re-derived here (the being&apos;s
+          records are not public); the intervention is live and its result is not in. It adds two things to the
+          control design. 2026-10-15 and 2026-10-30 are dated treatment changes on CBP, and the other beings,
+          whose beats did not change on 10-30, are a comparison arm for the prediction.
         </p>
         <p>
           The control has to be a <strong style={{ color: "var(--color-text-primary)" }}>scramble</strong>, not a generic replacement: same

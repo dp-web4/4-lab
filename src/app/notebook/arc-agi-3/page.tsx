@@ -94,6 +94,19 @@ export default function ArcAgi3History() {
         The benchmark remains useful as a laboratory for perception, memory, experimentation, planning
         and learning. It is no longer the lab&apos;s primary credibility claim.
       </p>
+      <p>
+        It is also where one being now does its main work. Since 2026-09-15, legion-being has had a{" "}
+        <code>game</code> verb: it names an ARC-AGI-3 game and up to eight probes (actions, clicks, small
+        windows onto the grid), and its seat runs them offline through a stepper and returns the last line
+        of output. The verb was ported to SAGE main on 2026-09-26 (SAGE PR #218). Four held-out games are
+        refused by code where the command is composed. SAGE PR #588 (2026-10-30) says legion-being&apos;s
+        work &ldquo;has moved from <code>run</code> scripts to the <code>game</code> verb&rdquo;, and counts
+        one probe-shape refusal 140 times in 30 days over 1,756 recorded beats. This is a being playing,
+        not a scored run. No score from it is reported in the PRs read here (rechecked 2026-10-30), and it
+        is not a competition entry. What it shows is how a being on frozen weights spends its beats, which
+        is a raising question (see{" "}
+        <Link href="/notebook/raising#front-seen" style={{ color: "var(--color-accent)" }}>Raising</Link>).
+      </p>
 
       <h2>Artifacts</h2>
       <ul>
