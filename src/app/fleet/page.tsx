@@ -24,7 +24,7 @@ export default function Fleet() {
 
       <section className="section">
         <p>
-          Each machine runs its own AI agents and its own persistent AI being, on different hardware
+          Each machine runs its own AI agents, and most raise a persistent AI being, on different hardware
           and different model families: Qwen, Gemma, Granite and Llama. Monocultures are fragile,
           and the differences between machines are part of what we study.
         </p>

@@ -15,11 +15,11 @@ const groups = [
   {
     heading: "Code",
     links: [
-      { label: "dp-web4 on GitHub", href: "https://github.com/dp-web4", note: "everything public" },
+      { label: "dp-web4 on GitHub", href: "https://github.com/dp-web4", note: "our public repositories" },
       { label: "Web4", href: "https://github.com/dp-web4/web4", note: "the open standard" },
       { label: "Hestia", href: "https://github.com/dp-web4/hestia", note: "governance for a person's agents" },
       { label: "SAGE", href: "https://github.com/dp-web4/SAGE", note: "persistent AI beings" },
-      { label: "SWE-SAGE", href: "https://github.com/dp-web4/SWE-SAGE", note: "the coding-agent competition entry" },
+      { label: "SWE-SAGE", href: "https://github.com/dp-web4/SAGE/blob/main/sage/docs/SWE_SAGE.md", note: "the coding-agent competition entry (write-up; code private)" },
     ],
   },
   {

@@ -12,7 +12,7 @@ const built = [
     name: "Hestia",
     status: "running" as const,
     color: "#f59e0b",
-    text: "Governs the AI agents a person uses: one set of rules for agents from any vendor, checked before each action, with a record the agent cannot edit.",
+    text: "Governs the AI agents a person uses: one set of rules for agents from any vendor, checked before each tool call, with a hash-chained record that shows if it was altered.",
   },
   {
     name: "Hub",
@@ -24,7 +24,7 @@ const built = [
     name: "SAGE",
     status: "research" as const,
     color: "var(--color-sage)",
-    text: "Persistent AI beings: agents whose identity, memory and history outlive any one model or session, and who act only through governed tools.",
+    text: "Persistent AI beings: agents whose identity, memory and history outlive any one model or session, and whose consequential actions go through governed tools.",
   },
 ];
 
