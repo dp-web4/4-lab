@@ -353,6 +353,8 @@ export default function Raising() {
         <ul>
           <li>
             <strong>&ldquo;Beings keep recognizable habits and concerns … across a change of model.&rdquo;</strong>{" "}
+            (Front text until 2026-10-30. Since PR #3 it reads &ldquo;Beings carry their records across
+            hundreds of sessions and across a change of model&rdquo;, which this record supports.){" "}
             This is the observation the sections below read as a null. The port observation is internal
             and not yet a finding, and the one identity metric separates lines but finds nothing that
             accumulates (see{" "}
@@ -360,6 +362,9 @@ export default function Raising() {
           </li>
           <li>
             <strong>&ldquo;Small beings act when given a concrete question and drift into passivity when given an open invitation.&rdquo;</strong>{" "}
+            (Front text until 2026-10-30. It now reads &ldquo;One small model stopped acting when a long open
+            invitation came before the ask, and acted once the ask came first&rdquo;, the narrower claim
+            below.){" "}
             The record is from the heartbeat loop, not from raising sessions. SAGE commit{" "}
             <code>e12a3114d</code> (2026-09-29, PR #281): nomad-being on Gemma 4 E2B made 0 explore tool
             calls in 100+ beats under the full posture prompt (replies such as &ldquo;Resting.&rdquo;),
@@ -370,7 +375,11 @@ export default function Raising() {
             2026-09-05 and calls it &ldquo;per model, NOT per parameter count&rdquo;: qwen3.5:0.8b acts,
             qwen3.8-distill:2b narrates. So the record supports a narrower claim: some small models, not
             all, stop acting when a long open-ended posture comes before the ask, and changing the order
-            moved one of them. One before/after comparison, three beats after, no blind reading.
+            moved one of them. One before/after comparison, three beats after, no blind reading. One more
+            condition (added 2026-10-31): nomad-being ran with thinking off. Gemma 4 had no model config, so
+            the gemma4 beings (mcnugget, nomad, thor) fell back to <code>thinking_supported: false</code>{" "}
+            until SAGE PR #599 (merged 2026-10-30 19:32 UTC) let the server&apos;s capability list decide.
+            The passivity and its fix were both seen without thinking; whether either holds with it is untested.
           </li>
           <li>
             <strong>&ldquo;One being now proposes changes to its own code.&rdquo;</strong>{" "}
@@ -392,6 +401,14 @@ export default function Raising() {
             to the <code>game</code> verb&rdquo;; see{" "}
             <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>).
             &ldquo;Has proposed 15 changes, the last on 2026-10-09&rdquo; is what the record supports.
+            The model writing them matters too (recorded 2026-10-31): legion-being runs{" "}
+            <code>qwen38-heretic:q3km</code>, a 27B Qwen 3.8 with its refusal training removed (see the Legion
+            card on <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>the notebook fleet page</Link>).
+            So for the one being with a code record, the checks on what it does are the ones outside the
+            model: the governed verbs and the hestia gate, the seat, and a human merge. Upstream reads the
+            same being as its strongest evidence that identity is not substrate (it kept its journal, todo
+            and memories across a whole-model transplant; PRD §3.2), which is the front&apos;s first
+            &ldquo;Seen&rdquo; item, and it is also continuity that the deflationary reading accounts for.
           </li>
         </ul>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
@@ -697,13 +714,23 @@ export default function Raising() {
           the window, which is the feedback reading this section treats as the null. Upstream&apos;s own
           interpretation is that the basin &ldquo;is not a defect of the model&rdquo; but the being &ldquo;doing
           faithfully what its window kept presenting&rdquo;. The same evidence bears on the front page&apos;s
-          &ldquo;recognizable habits and concerns&rdquo;: one being&apos;s main concern flipped twice in six
+          &ldquo;recognizable habits and concerns&rdquo; (its wording until 2026-10-30): one being&apos;s main concern flipped twice in six
           weeks on the same weights, each time after its input changed (it was also governance-focused, 50–80%,
           from 09-13 to 09-19). Limits: one being; aggregate counts from a keyword classifier that leaves
           unmatched acts out of both columns; upstream&apos;s figures, not re-derived here (the being&apos;s
           records are not public); the intervention is live and its result is not in. It adds two things to the
           control design. 2026-10-15 and 2026-10-30 are dated treatment changes on CBP, and the other beings,
-          whose beats did not change on 10-30, are a comparison arm for the prediction.
+          whose beats did not change on 10-30, are a comparison arm for the prediction. Narrowed 2026-10-31:
+          three of them changed that same day in another way. SAGE PR #599 (merged 19:32 UTC) turned thinking
+          on for the gemma4 beings (mcnugget, nomad, thor), which had been running with it off. When each seat
+          deployed it is not recorded here. Only sprout-being (thinking on before and after) and legion-being
+          (declared on in its own config) are unchanged on both counts, so the arm is two beings, not five.
+        </p>
+        <p>
+          The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
+          comparison against a fresh model&rdquo;. A model with no history, or with generic history, is the
+          replacement test the next paragraph rejects, because both readings predict that it does worse. The test that decides is the scramble or the yoked
+          run, and neither is scheduled (first logged for the human lead 2026-10-16; still unscheduled 2026-10-31).
         </p>
         <p>
           The control has to be a <strong style={{ color: "var(--color-text-primary)" }}>scramble</strong>, not a generic replacement: same

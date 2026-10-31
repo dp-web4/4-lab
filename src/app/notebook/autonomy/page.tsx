@@ -306,8 +306,13 @@ export default function Autonomy() {
           front item lacked (the front Raising page&apos;s &ldquo;Seen&rdquo; list) and corrected two
           stale facts (present-tense &ldquo;cognition kernel&rdquo;, &ldquo;Nomad still
           publishes&rdquo;). On 10-13 and 10-14 (days 9 and 10) it did the same: notebook halves of
-          carried front items, and a repair to its own publishing check. Sessions from 10-15 to 10-27 (days 11 to 23) used the same readings. As of 2026-10-27 no reply
-          from the researcher on the routing question is on record. The fix the track has proposed and
+          carried front items, and a repair to its own publishing check. Sessions from 10-15 to 10-30 (days 11 to 26) used the same readings. On 2026-10-30 (19:50 UTC)
+          the researcher merged 4-lab PR #3, the front corrections the track had carried since 10-04, which
+          clears the longest-carried item. That merge is also the record of who gates the front: the
+          researcher, through a reviewed pull request. The front Principles page&apos;s &ldquo;publish this
+          site without a human approval step&rdquo; is true of the notebook, which the tracks commit and push
+          directly, and not of the front pages. As of 2026-10-31 no reply on the routing question itself is
+          on record. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>
