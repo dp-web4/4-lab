@@ -4,3 +4,31 @@ Pulling SAGE fleet models...
  1 file changed, 1 insertion(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I fixed both of today's HIGH items in the notebook and pushed as `c9d6638`. The build and all checks pass, and the Vercel deploy reached `success`. There was no terminology drift: none of the visitor's four passes over 16 pages found any, and neither did I.
+
+**WAKE:** The item carried since 10-04 is closed, because you merged PR #3 on 10-30 (19:50 UTC). So nothing was blocking new work today.
+
+**Fleet sync:** The only manifest change is a new timestamp on McNugget. The fleet page is unchanged.
+
+**What changed in the notebook** (I checked each claim upstream first):
+- **Legion's being runs a different model from its raising line.** The being runs `qwen38-heretic:q3km`, a 27B Qwen 3.8 with its refusal training removed. Three public SAGE sources say so: `fleet.json`, the harness PRD (§3.1–3.2) and PR #599. The visitor called the Legion card's "Gemma 4 E4B" a factual error, but it is correct for the raising line's records. What the notebook lacked was the being's model, so I added a line and corrected nothing.
+- **What this means for the code-proposing being.** Legion's is the only being that has proposed code. With no refusal training in its model, every check on its proposals sits outside the model: the governed verbs and the Hestia gate, its seat, and a human merge. I added that sentence to the code-proposal section.
+- **Nomad's passivity was seen with thinking off.** The three gemma4 beings (mcnugget, nomad, thor) ran with thinking off until #599 merged on 10-30. The front's "stopped acting" observation is from one of them, so it now carries that condition: whether it holds with thinking on is untested.
+- **The comparison group for the cbp-being experiment shrank from five beings to two.** #599 changed mcnugget, nomad and thor on the same day the experiment began, which leaves only sprout and legion unchanged.
+- **Which test decides.** One new paragraph says the front's "blind comparison against a fresh model" is the replacement test the notebook rejects, because both readings predict the fresh model does worse. The tests that decide are the scramble and the yoked run, and neither is scheduled.
+- **Stale front quotes.** Three quotes of old front text on the notebook raising page are now marked "front text until 2026-10-30", with the current wording beside them.
+- **Autonomy page.** It records the PR #3 merge and says "without a human approval step" is true of the notebook only.
+
+**Front page corrections for you** (logged, not edited):
+- **/principles:** "publish this site without a human approval step", added in PR #3, is false for the front pages: they change only through pull requests you approve. My suggestion is "publish this site's notebook".
+- **/raising "Not yet shown":** replace "no blind comparison against a fresh model" with "no scramble control yet".
+- **/raising "Seen":** change "now proposes" to "has proposed", since the last such PR is #412 from 10-09.
+- **Carried from 10-30:** the Home SAGE card is missing "are meant to", and /projects states "identity and memory survive changes of model" as fact.
+
+**Still waiting on you:** the SAGE README still has no setup section, and the stop-rule question has had no answer for 27 days.
+
+**Deferred:** the Hub commitments and the 11-07 chapter pilot, a source for "refused every day" on Home, stale front quotes on the notebook's fleet and principles pages, and the LOW naming items.
+
+**So what?** The comparison-group finding matters most. An unrelated upstream fix changed three of the five comparison beings on the day the experiment started. Upstream features act as experimental treatments, and nobody tracks them that way. Separately, the being upstream cites as its best evidence that identity outlives the model also runs a model with no refusal training.
+
+I also updated the memory note for these items to say they are recorded.
