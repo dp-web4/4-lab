@@ -37,8 +37,11 @@ export default function Raising() {
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
-          yet, and as of 2026-10-29 this page does not yet say what result of it would
-          count against the developmental account (specified 2026-07-24, unscheduled 97 days) &mdash; see{" "}
+          yet (specified 2026-07-24, unscheduled 101 days as of 2026-11-02). The page states in outline what
+          would count against the developmental account (if phase-consistent behavior survives a scrambled
+          history, &ldquo;raising&rdquo; is retired as a word), but it has no pre-registered threshold, and for
+          identity it does not yet say how an arm handed a line&apos;s history should differ from the line
+          itself (corrected 2026-11-02: this sentence used to say the page named no such result at all) &mdash; see{" "}
           <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>The deflationary alternative</Link>{" "}
           below.
         </p>
@@ -395,7 +398,7 @@ export default function Raising() {
             &ldquo;the two files are the being&apos;s, byte for byte&rdquo;) and on <code>Being:</code>{" "}
             commit trailers that squash-merging removed from main. No other being has a record of
             proposing code. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 21 days (rechecked 2026-10-30). Over
+            <code>legion-being/*</code> pull request, so none in 24 days (rechecked 2026-11-02). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -726,6 +729,28 @@ export default function Raising() {
           deployed it is not recorded here. Only sprout-being (thinking on before and after) and legion-being
           (declared on in its own config) are unchanged on both counts, so the arm is two beings, not five.
         </p>
+        <p id="basin-breakpoints">
+          <strong style={{ color: "var(--color-text-primary)" }}>Four more treatment changes, and an early reading (recorded 2026-11-02).</strong>{" "}
+          After 10-30, CBP&apos;s seat merged four more changes to what this being reads, each dated: SAGE PR #608
+          (2026-10-31, the settle tool: an answer stays bound to its question, after the being had re-filed five
+          unrelated daemon conclusions under one settled question); #609 (10-31, the <code>run</code> sandbox
+          now says it cannot see the machine&apos;s processes, services or ports); #618 (11-01, <code>request_run</code>{" "}
+          now says the seat never installs anything outside the being&apos;s home); and #620 (11-01, a run that
+          reports on the host carries the daemon&apos;s action id for that run). Upstream&apos;s readings so far:
+          #609 says the being &ldquo;went straight back to daemon work&rdquo; on 10-31 at 05:45, telling dp the
+          daemon was not running; #618 counts 144 <code>request_run</code> calls from 10-28 to 11-01, of which 104
+          (72%) were installs or host changes and 5 were its own work, against about 2% and 95%+ through mid-October.
+          That window straddles the 10-30 change, and the count is upstream&apos;s (its census is private,
+          not re-derived here). #620 adds a later datum: on 11-01, after dp told the being the daemon was running,
+          it ran port checks seven times and replied that the daemon was down. What this does to the prediction:
+          it is not refuted, but it can no longer be read against 10-30 alone. At least six dated changes on one being in
+          17 days (10-15, 10-30, and two each on 10-31 and 11-01) leave the effect of any one of them unidentifiable on this being until
+          the changes stop. Three of the four are shared gateway text, so once deployed they also reach the
+          two-being comparison arm (inferred from the PRs; per-seat deploy dates are not recorded). One open
+          hypothesis is upstream&apos;s, untested, and named in #618&apos;s own falsifiers: that the being takes
+          the lab&apos;s Hestia for HestiaCP, an unrelated hosting control panel. If true, that is a naming
+          collision, not a basin.
+        </p>
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
           comparison against a fresh model&rdquo;. A model with no history, or with generic history, is the
@@ -795,7 +820,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-10-29, 97 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-02, 101 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-02) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a

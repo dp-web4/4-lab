@@ -137,6 +137,10 @@ export default function Principles() {
               (an emergent coherence pattern &mdash; defined, with its
               simulation-only caveats, in Principle 5 below) would form, if it forms,
               because the conditions are right, not because we designed it.
+              Emergence here is a design aim, not an observed result: this site records no
+              fleet-level pattern that its parts&apos; instructions do not already
+              account for, and &ldquo;pheromone field&rdquo; is a metaphor for shared files the
+              agents read and write.
             </div>
           </div>
 

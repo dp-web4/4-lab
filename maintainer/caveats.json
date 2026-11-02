@@ -987,6 +987,13 @@
       "pattern": "whether any being has used the verb is untested",
       "unless": "",
       "why": "Upstream counted it: identity_edit was used 0 times in its first four days on sprout-being (SAGE PR #585 body, 2026-10-28; n = 1 being, not re-derived here). Visitor P3/P4 2026-10-29."
+    },
+    {
+      "id": "raising-intro-no-refutation-condition",
+      "withdrawn": "2026-11-02",
+      "pattern": "does not yet say what result of it would",
+      "unless": "",
+      "why": "The /notebook/raising body states refutation conditions in outline (phase-consistent behavior surviving a scramble retires 'raising'); what is missing is a pre-registered threshold, and for identity how a handed-history arm should differ. Visitor P4 2026-11-02."
     }
   ]
 }
