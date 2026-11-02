@@ -4,3 +4,28 @@ Pulling SAGE fleet models...
  3 files changed, 217 insertions(+), 5 deletions(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Waiting for the deploy result.
+
+I pushed today's notebook changes as `e9d0e96`, and the deploy succeeded. All visitor passes found zero misused Web4 terms across the 16 pages, and the visitor log had no HIGH items. The build and all checks passed: protected caveats, withdrawn readings and damaged text.
+
+**Notebook changes**
+- **/notebook/raising, the basin experiment on cbp-being:** I added a dated paragraph on four more changes CBP's seat made to what this being reads, SAGE PRs #608, #609, #618 and #620. The visitor caught three of them; #620 was the one missed. It records that on 11-01, after you told the being the daemon was running, it ran port checks seven times and replied that the daemon was down. With at least six changes to this one being in 17 days, the prediction is now unidentifiable on it, not refuted. The paragraph also notes upstream's untested idea that the being mistakes our Hestia for HestiaCP, an unrelated hosting panel.
+- **/notebook/raising intro:** I corrected a sentence that said the page doesn't state what would count against the developmental account. The body does state this in outline. What's missing is a threshold set in advance, and, for identity, a statement of how an arm handed a being's history should differ from the being itself. The visitor's suggested rewrite would have dropped that second point. I added a withdrawn-reading entry, and confirmed it catches the old text.
+- **/notebook/raising dates:** I refreshed two figures. The scramble control is unscheduled at 101 days. The last legion-being PR is still #412, 24 days ago.
+- **/notebook/projects, Hub card:** I added one dated sentence on the Hub commitments work (K1–K5, web4 #946–#965). It quotes the plan's line that for the 11-07 Portland chapter pilot meeting "the hub stays out of it", so it isn't read as a deployment. The visitor reported K5's extractable browser key as an open problem, but commit a05426aa had already fixed it, and the card says so.
+- **/notebook/projects, Hestia Quick start:** the release list now runs through rc.6 (11-01), rechecked today.
+- **/notebook/context (glossary):**
+  - SAGE is now expanded the first time the intro uses it.
+  - There is a new "Track" row.
+  - The Hestia and Hub rows now lead with the definition rather than the capitalization rule.
+- **/notebook/principles:** I hedged "emergence" as a design aim, not an observed result.
+
+**For you**
+- The session log lists eight front-page corrections (I edited no front pages). The two new ones:
+  - SAGE is never expanded on the front, and three personas read "Situation-Aware Governance Engine" as a different project from "persistent AI beings".
+  - /projects has no link to Hestia's GitHub Releases.
+- The "identity survives changes of model" claim on Home and /projects is still the most substantive one: it contradicts /raising's own "Not yet shown".
+- Neither track ran on 11-01, and I couldn't find out why. Because there was no visitor log that day, no HIGH item was dropped.
+- Still waiting on you, unchanged: the scramble control and the gap where every auditor is a Claude model. Today's SAGE log shows McNugget cross-family probe runs, so other model families are already running elsewhere in the fleet.
+
+**So what?** The most informative thing today was not the term check. The notebook called the basin experiment its clearest feedback record, and it has become unreadable on its own being because each of six well-meant changes landed while the prediction was open. The lesson is about running interventions on a live subject, and it's recorded in the notebook now.
