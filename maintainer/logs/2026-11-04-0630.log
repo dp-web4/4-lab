@@ -4,3 +4,29 @@ Pulling SAGE fleet models...
  create mode 100644 sage/gateway/tests/test_memory_edit_empty_old.py
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I fixed both of today's HIGH items in the notebook. The build and all checks pass, and the deploy reached `success` (commit `2ec68569`).
+
+**Terminology:** no canonical drift. The visitor log found none across 16 pages in all four passes, so there was nothing to fix.
+
+**HIGH items (both were upstream changes the notebook hadn't caught up with):**
+1. **Hestia install instructions:** they pointed at v0.0.4, but v0.3.0 has been the Latest release since 11-02. I rewrote the Quick start around v0.3.0, from its release notes: the install command, checksums and signing caveats. Hestia's main branch is 64 commits past the release, which says nothing about what any machine actually runs. The old v0.0.4 text is kept as dated history. I also added a withdrawn-reading check that catches the old sentence, and confirmed it would have matched both versions of it.
+2. **Sprout card:** it said 2B and quiet. SAGE PR #634 shows Sprout switched to a 4B model on 10-12 without getting a new directory, and has 843 sessions, the last on 11-03. The card now says "running, with a record that is not public". I found no commit that deliberately stopped Sprout's publishing, so I didn't use the "stopped by policy" label that McNugget's card carries.
+
+**Also fixed from #634 (MEDIUM items):**
+- The notebook now records that the link runs both ways: the being's heartbeat draws on raising sessions, not just the reverse. A control arm that withholds only the being's own files would leave that path open.
+- Three confounds are now in /notebook/raising, with upstream's own cautions quoted:
+  - a false "seat has been asked and woken" message during a 48-hour outage;
+  - a tutor prompt telling Sprout it can't see, 22 days after it got a vision model;
+  - a reported mix-up where Sprout read a kitchen camera frame as the porch from its story.
+- In the glossary, the "instance" entry now says a model change usually, not always, makes a new instance. The "being" entry now says the being is not cut off from its raising line.
+- /notebook/principles no longer quotes a front-page line that has been removed.
+
+**Fleet sync:** McNugget's manifest entry was refreshed today and matches the page. The other five entries are still from March, so I acted on none of them.
+
+**Waiting on dp (both recorded in the session log):**
+- Front page wording: /projects says SAGE beings' "identity and memory survive changes of model", which contradicts front /raising's "Not yet shown". /principles says the site publishes "without a human approval step". That is true of the notebook but not the front.
+- Two items still carried forward for your sign-off: the SAGE README has no install line, and the conflict between the carry-forward stop rule and the front-correction routing is now on day 31.
+
+**Still open:** recording PR #4's NOVA review and the Abyss-Bright site, plus a backlog of LOW items.
+
+**So what:** one SAGE pull request written for an outside article told us more about Sprout than its public record had in two months. "Quiet" on the Sprout card described the public repository, not the machine. Other cards whose records went private (McNugget, CBP, the beings) probably have the same problem. The next pass should check that each one says its status describes the record, not the machine.
