@@ -106,10 +106,12 @@ export default function Principles() {
           </li>
         </ul>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          The front&apos;s line that &ldquo;decisions that are hard to undo come back to the
-          human&rdquo; is also not current practice for pushes: /notebook/autonomy records that
+          The front now says &ldquo;A human is pulled in where the rules say, not for
+          everything.&rdquo; That matches practice for pushes: /notebook/autonomy records that
           consequential pushes are not human-gated before they ship, and that a repo push is not
-          fully revertible once public. Principles 1–3 and 7–10 below have no front counterpart.
+          fully revertible once public. (Until 2026-11-04 this paragraph quoted an earlier front
+          line, &ldquo;decisions that are hard to undo come back to the human&rdquo;, which is no
+          longer on the front and did not match practice.) Principles 1–3 and 7–10 below have no front counterpart.
         </p>
 
         <div className="grid-2" style={{ marginTop: "1.5rem" }}>

@@ -279,17 +279,26 @@ pip install web4-trust
 # 0.4.0, PyPI 0.3.0, checked 2026-10-22). That is upstream's wording; this site
 # calls Web4 an ontology.
 
-# Hestia — local agent governance daemon — DOWNLOADABLE, OLDER THAN THE LAB'S BUILD
-# Rechecked 2026-11-02 (gh release list; README not re-read since 2026-10-20). The latest public release is
-# v0.0.4 (2026-08-11): prebuilt daemon binaries for Linux x86_64/aarch64 and
-# macOS arm64, each with a .sha256. From its release notes, transcribed:
-curl -L https://github.com/dp-web4/hestia/releases/download/v0.0.4/hestia-v0.0.4-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-./hestia-v0.0.4-x86_64-unknown-linux-gnu/hestia --version
-# The fleet runs builds newer than v0.0.4. v0.3.0-rc.1 (2026-10-12) through rc.6
-# (rc.4 2026-10-31, rc.5 and rc.6 2026-11-01) are GitHub pre-releases (daemon for Linux and macOS,
-# desktop app as .deb/AppImage/.dmg, Android APK, SHA256SUMS); none is marked latest. The README's "Versions and releases" and "Installing the desktop app"
-# sections date from 2026-10-11/12. Correction: on 2026-09-24 this block said
-# there was no first-run path; v0.0.4 already existed then and was missed.
+# Hestia — local agent governance daemon — DOWNLOADABLE (v0.3.0 is Latest)
+# Rechecked 2026-11-04 (gh release list; release notes read). The latest public release is
+# v0.3.0 (2026-11-02 23:09 UTC, a normal release, not a pre-release): the daemon for Linux
+# x86_64/aarch64 and macOS arm64, the desktop app (.deb/AppImage, .dmg/.app.tar.gz), and the
+# Android APK, one version and one tag. Every asset has a .sha256, SHA256SUMS covers all of
+# them, and the notes say each carries a Sigstore build attestation
+# (gh attestation verify <asset> --repo dp-web4/hestia). The macOS app is ad-hoc signed and
+# the Linux bundles are unsigned, per the same notes. From its release notes, transcribed:
+curl -L https://github.com/dp-web4/hestia/releases/download/v0.3.0/hestia-v0.3.0-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+./hestia-v0.3.0-x86_64-unknown-linux-gnu/hestia --version
+# Source has moved on since the tag: 64 commits on main after v0.3.0 (counted 2026-11-04), so
+# what runs on the fleet may still be newer than the release. That is a count of commits, not
+# a check of any machine's installed version.
+# The README's Status paragraph still says the public releases are older and that there is no
+# public desktop app artifact (read 2026-11-04). v0.3.0 ships one, so that sentence is upstream
+# lag, not a description of the release.
+# History: until 2026-11-04 this block led with v0.0.4 (2026-08-11) as the latest release and
+# listed v0.3.0-rc.1 to rc.6 as pre-releases; v0.3.0 was published two days before this
+# correction. Earlier correction: on 2026-09-24 this block said there was no first-run path; v0.0.4
+# already existed then and was missed.
 # Still true: nobody outside the fleet is known to have installed it, and this
 # site has not followed the steps itself. deploy/ is the fleet's own install
 # probes (install-members.sh puts each agent's hooks on a machine that already

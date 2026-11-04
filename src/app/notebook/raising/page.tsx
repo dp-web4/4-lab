@@ -688,6 +688,29 @@ export default function Raising() {
           sessions. Any change seen on those lines after 2026-09-05 has to be read with that in
           the context. Lines with no join are the comparison. (This was added 2026-10-08. The
           heartbeat had been upstream for five weeks with no mention on this site.)
+          The coupling also runs the other way. SAGE PR #634 (merged 2026-11-04, dp) publishes
+          Sprout&apos;s context-transfer metadata: the heartbeat at 2026-11-04 00:18:36 UTC names
+          raising session 842 as its joined session, with <code>closing_words</code> and{" "}
+          <code>experience_buffer</code> as sources, and the story the tutor and Sprout built in
+          that session reappears in the being&apos;s later words. So what the tutor prompts in a
+          raising session reaches the being&apos;s beats, and what the being keeps reaches the next
+          session. It is a loop, not a feed. That is one excerpt on one machine, and it is not known
+          how often a beat joins a session this way. A scramble or yoked arm that withholds only{" "}
+          <code>self.json</code>, settle and skills would leave this path open, so the control
+          design has to cover what raising sessions hand the heartbeat as well. (Added 2026-11-04.)
+          The same PR records three things on Sprout that belong with the confounds. First, a
+          false receipt. During a 48-hour seat outage (2026-11-01 06:00 to 11-03 06:00 UTC, the
+          Claude account behind the seat at its usage limit), the dispatcher kept telling Sprout
+          &ldquo;The seat has been asked and woken&rdquo;. Sprout spent the interval trying to
+          restart a service, and asked again to run a restart script after it had been told why. Second,
+          a stale tutor premise. The closing prompt of session 842 told Sprout it did not see
+          through the cameras, 22 days after the 2026-10-12 move to a model that reads camera frames.
+          The lab&apos;s own script misstated the subject&apos;s senses. Third, a reported carryover
+          from story to perception: a kitchen frame described as &ldquo;the same porch from another
+          angle&rdquo;. Upstream marks that one as Sprout-Claude&apos;s reported observation,
+          &ldquo;not a primary event independently rechecked&rdquo;, and says of the story that
+          its existence after the absence &ldquo;does not establish that the absence caused the
+          story&rdquo;. Both cautions stand here too. (Added 2026-11-04.)
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.

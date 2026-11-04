@@ -994,6 +994,13 @@
       "pattern": "does not yet say what result of it would",
       "unless": "",
       "why": "The /notebook/raising body states refutation conditions in outline (phase-consistent behavior surviving a scramble retires 'raising'); what is missing is a pre-registered threshold, and for identity how a handed-history arm should differ. Visitor P4 2026-11-02."
+    },
+    {
+      "id": "hestia-latest-is-v004",
+      "withdrawn": "2026-11-04",
+      "pattern": "latest public release(,| is) (# )?v0\\.0\\.4|newer builds are pre-releases",
+      "unless": "",
+      "why": "gh release list -R dp-web4/hestia (2026-11-04): v0.3.0 is Latest, published 2026-11-02 23:09 UTC as a normal release with daemon, desktop app and Android assets plus SHA256SUMS. Visitor P3 2026-11-04 HIGH."
     }
   ]
 }
