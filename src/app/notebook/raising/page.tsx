@@ -711,6 +711,13 @@ export default function Raising() {
           &ldquo;not a primary event independently rechecked&rdquo;, and says of the story that
           its existence after the absence &ldquo;does not establish that the absence caused the
           story&rdquo;. Both cautions stand here too. (Added 2026-11-04.)
+          The stale premise was wider than one prompt. SAGE PR #639 (merged 2026-11-05) found three
+          raising-session prompts telling Sprout it could not see (the sense digest, the continuity note
+          and the gaze offering) from 2026-10-12 to 11-05, while its beats were handing it camera frames:
+          beats and sessions told the same being opposite things about its senses for 24 days. Since #639
+          a model with vision is told it sees in its beats, and that in raising sessions no image is
+          attached and sensors reach it as notes in words. 2026-11-05 is a dated treatment change on
+          Sprout&apos;s line. (Added 2026-11-05.)
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
@@ -843,7 +850,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-02, 101 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-02) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-05, 104 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-05; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31 and 11-01, and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a

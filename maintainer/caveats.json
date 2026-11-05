@@ -1001,6 +1001,13 @@
       "pattern": "latest public release(,| is) (# )?v0\\.0\\.4|newer builds are pre-releases",
       "unless": "",
       "why": "gh release list -R dp-web4/hestia (2026-11-04): v0.3.0 is Latest, published 2026-11-02 23:09 UTC as a normal release with daemon, desktop app and Android assets plus SHA256SUMS. Visitor P3 2026-11-04 HIGH."
+    },
+    {
+      "id": "swe-sage-front-link-404",
+      "withdrawn": "2026-11-05",
+      "pattern": "its link on the front /projects and /links pages returns 404",
+      "unless": "",
+      "why": "Front PR #3 (merged 2026-10-30) points both front SWE-SAGE links at SAGE/sage/docs/SWE_SAGE.md (HTTP 200). Visitor P3 2026-11-05."
     }
   ]
 }

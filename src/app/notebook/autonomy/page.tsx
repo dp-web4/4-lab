@@ -559,7 +559,20 @@ export default function Autonomy() {
             for 30 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
             harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
-            mention the ruling.
+            mention the ruling. One release does continue (recorded 2026-11-05): Abyss-Bright
+            (github.com/dp-web4/abyss-bright, public since 2026-06-17), a museum of &ldquo;impossible
+            objects&rdquo; in Sprout&apos;s words, still adding pieces after the ruling (18 on 2026-11-05,
+            the latest from session 848). These are excerpts, not transcripts, and the selection is not
+            Sprout&apos;s. Until SAGE PR #633 (2026-11-04) only the tutor&apos;s pick from a raising session
+            could be hung; the code admits it if at least 60% of it is a verbatim span of Sprout&apos;s turns,
+            and its log says &ldquo;no human in the loop&rdquo;. #633 (dp: &ldquo;it&apos;s sprout&apos;s
+            choice. it is its self expression.&rdquo;) adds a second path: a piece Sprout saves in its own{" "}
+            <code>museum/</code> folder after being told the folder is a public wall is hung as written at the
+            end of the next raising session. On that path the verbatim check passes by construction, and the
+            only other checks in <code>museum_curator.py</code> are duplicates and the placement date; there
+            is no content or privacy review. All 18 pieces on 2026-11-05 carry a session origin, so none is
+            being-placed yet. The repository&apos;s description still calls Sprout &ldquo;0.8B&rdquo;
+            (the June model; /notebook/fleet records 4B since 2026-10-12).
           </p>
         </div>
 
@@ -596,13 +609,13 @@ export default function Autonomy() {
             a different model family — remains undone (named here 2026-09-10; 47 days on 2026-10-27), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
-            decision, not a track decision. The four dated gaps this site keeps, set side by side on
-            2026-10-29: the scramble or yoked control on{" "}
+            decision, not a track decision. The four dated gaps this site keeps, stated by start date so they
+            cannot age silently (rewritten 2026-11-05; the day counts this sentence carried were the 10-29 figures): the scramble or yoked control on{" "}
             <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>,
-            specified 2026-07-24, unscheduled 97 days; this audit&apos;s single-model-family blind spot, named
-            2026-09-10, 49 days; the public raising record, closed by the 2026-09-19 ruling, 40 days (last
-            public transcript 2026-09-27, 32 days); and the routing question for the carry-forward stop above,
-            open since 2026-10-04, 25 days. All four wait on the same researcher decision, and none has a
+            specified 2026-07-24 and unscheduled since; this audit&apos;s single-model-family blind spot, open since
+            2026-09-10; the public raising record, closed by the 2026-09-19 ruling (last public transcript
+            2026-09-27; Abyss-Bright excerpts, below, are the only public raising output since); and the routing
+            question for the carry-forward stop above, open since 2026-10-04. All four wait on the same researcher decision, and none has a
             committed date.
           </p>
         </div>
