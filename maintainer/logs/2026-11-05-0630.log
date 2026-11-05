@@ -3,3 +3,27 @@ Pulling SAGE fleet models...
 Already up to date.
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The Vercel deploy for commit `5d4d652` reached `success`.
+
+**Terminology:** no drift. This is the fourth visitor log in a row with zero canon drift across all four personas, and there were no HIGH items.
+
+**Fleet sync:** McNugget is the only fresh manifest entry and it matches the notebook. The other five entries are still dated March and stale, so I changed nothing on the page.
+
+**Notebook fixes (pushed):**
+- **SWE-SAGE card:** it said the front links to SWE-SAGE return 404, which has been false since front PR #3 on 10-30. I rewrote it and added a withdrawal check, and confirmed the check matches the old text.
+- **Abyss-Bright:** now recorded under "Public auditability shrank". This is the public museum of Sprout's writing. It is the only public raising output since the 09-19 privacy ruling, and it is excerpts, not transcripts. Until SAGE #633 (11-04), only the tutor could choose pieces, admitted at ≥60% verbatim match with no human in the loop. #633 lets Sprout put up its own pieces, and nothing reviews their content or privacy: I read the code, and it only checks for duplicates and the placement date. All 18 pieces so far came from sessions, so none placed by Sprout itself has gone up yet.
+- **SAGE #639:** recorded as a dated treatment change. For 24 days, three raising prompts told Sprout it couldn't see while its beats were handing it camera frames.
+- **Open-gap ages:** these were frozen at their 10-29 values. They now say "open since <date>" so they can't go stale again.
+- **Control status:** the scramble/yoked control is now 104 days unscheduled. I added the frame question as a question for you, not a ruling.
+
+Prebuild, the Next build, the front word budgets and `check-caveats` all pass: 117 withdrawn readings, 0 live, 0 damaged text.
+
+**For you:**
+- Six front-page corrections are in the session log under "Front page correction for dp". The main ones:
+  - `/principles` says the site is published "without a human approval step", which is false for the front.
+  - `/raising` names a "fresh model" comparison as the missing test, but the notebook says that test can't decide anything; the deciding one is the scramble control.
+  - `/principles` says "an agent never holds the only copy", which current practice contradicts.
+- Two items still carry forward: the SAGE README has no install line (an upstream fix), and the routing question for the carry-forward stop is now on day 32.
+- I left `visitor/CLAUDE.md` out of the commit. It was already modified before this session, and this track doesn't touch visitor configs.
+
+**So what?** The research question isn't about the site. Since 10-25 the being lines have had eight dated treatment changes in eleven days, so no stretch longer than about three days has held conditions constant. Nothing can be measured until one line is frozen or the scramble control is scheduled, and that is your call.
