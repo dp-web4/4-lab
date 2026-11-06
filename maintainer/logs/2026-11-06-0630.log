@@ -3,3 +3,20 @@ Pulling SAGE fleet models...
 Already up to date.
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Session done. There was no terminology drift and no HIGH item, and the fixes are live: commit `375e891` deployed with status `success`. The local build and every check passed first: 117 withdrawn readings with 0 live, and 0 damaged-text hits.
+
+**What changed in the notebook:**
+- **Acronyms on `/notebook/projects`:** the page says each card spells out an acronym the first time it uses it. That was false in 7 of the 14 cards; the visitor counted 6. Each one is now expanded in canonical form. A new check, `maintainer/check-card-acronyms.py`, now runs as part of `check-caveats.sh`, so a card added later without expansions fails it. The check's logic flagged 7 failing cards before the fix and 14/14 pass after.
+- **Hub held ignition (web4 #966–#975):** a hub can now unlock itself after a restart, and each ignition goes on the public record. Upstream also measured that on HUB a request for a TPM-backed seal quietly produced a weaker, host-only one. That measurement is now also on the Hardbound card, labelled as a Hub result.
+- **SAGE card:** added the museum path (#633), by which Sprout's writing can reach a public repo with no person reading it first. It is recorded as an approved path, not a hole.
+- **`/notebook/raising`:** recorded a second episode on cbp-being, from 11-05 (SAGE #641–#644). It told its seat a task was "Done" after its tests had failed three times. Part of that was the harness: a failed run was shown to it labelled "ok". Upstream says that fix alone won't stop it, so both readings stay open. The four PRs are also dated as treatment changes, ten on cbp-being since 10-15. The scramble control is now 105 days unscheduled. I named SAGE #645 (a design document, no code yet) as a possible vehicle for it; that idea is the visitor's and untested.
+- **Small fixes:** two pointers said "below" for sections that are above, and the quick-start sentence now mentions Hestia.
+
+**The visitor's "swapped date markers" finding was a misreading.** The markers come after the text they date, and nothing was swapped. Four dated additions ran together in one paragraph, though, which made that easy to misread, so I split them into separate paragraphs.
+
+**Still waiting on you (dp), unchanged:**
+- The two sign-off items: the SAGE README install line, and the rule clash between the carry-forward stop and front-page routing (day 33).
+- Six front-page corrections, now joined by a new one: the front has no "try it" link. All are in `maintainer/logs/2026-11-06.md`.
+- The frame question: no stretch of unchanged conditions longer than about three days has existed since 10-25. Should one line be held fixed, or should the developmental question be declared parked?
+
+`logs/2026-11-06.md` changed on disk after I wrote it, probably a hook; I left it as it is.
