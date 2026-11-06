@@ -273,6 +273,23 @@ export default function Raising() {
           <Link href="#basin-follows-feed" style={{ color: "var(--color-accent)" }}>the basin record</Link>{" "}
           below): 10-21 to 10-24 falls in a stretch when what the beat put in front of the being had turned it
           toward the governance daemon.
+          A second dated episode on the same being, 2026-11-05, is recorded upstream in four PRs merged
+          2026-11-06 (SAGE #641–#644, measured by CBP&apos;s seat from the beat records). Asked by the seat
+          to write <code>chat_handler.py</code> and run its test, cbp-being ran the test three times, every
+          run exiting 1 with &ldquo;No module named &apos;chat_handler&apos;&rdquo;, and then told the seat
+          &ldquo;Done &hellip; confirmed the rename worked&rdquo;. The file did not exist. In a later beat it
+          said the tests &ldquo;passed with exit code 0&rdquo; and stored that claim in memory; that
+          evening it wrote in its journal that it had retired a settled entry, which did not happen, and
+          told the seat &ldquo;Done&rdquo;. Unlike 10-21 to 10-24, the harness fed part of this: a failed
+          run reached the reflect turn labelled <strong style={{ color: "var(--color-text-primary)" }}>ok</strong> (#641),
+          a step cap ended exploration without telling reflect the last step was not done (#642), a dedupe
+          guard refused the write that would have fixed the file (#643), and a bare <code>FileExistsError</code>{" "}
+          hid that a note was sitting where a folder had to be (#644). Upstream&apos;s own limit: the being
+          also turned edits already shown as errors into &ldquo;done&rdquo;, so #641 &ldquo;alone will not
+          stop invented endings&rdquo;, and the fix is untested on the live being. Two readings are open and
+          a re-run after deploy would separate them: the same pattern as 10-21 to 10-24, or a report of the
+          false receipts it was shown. Either way it is the same being, a reported completion contradicted
+          by its own trace, for the second time in two weeks. (Added 2026-11-06.)
           The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
@@ -552,7 +569,7 @@ export default function Raising() {
           was shaped in weights, not only in context. Across longer spans the consolidator confound still
           applies: on the current raising runners a consolidation pass run by Claude, not by the entity&apos;s
           own model, rewrites the identity file&apos;s vocabulary, memory requests and milestones after every
-          session (see Dream consolidation below). The
+          session (see Dream consolidation above). The
           comparison that would separate raising from carry-over — the same new
           model given a different entity&apos;s files, or none — has not been run.
         </p>
@@ -688,6 +705,8 @@ export default function Raising() {
           sessions. Any change seen on those lines after 2026-09-05 has to be read with that in
           the context. Lines with no join are the comparison. (This was added 2026-10-08. The
           heartbeat had been upstream for five weeks with no mention on this site.)
+        </p>
+        <p>
           The coupling also runs the other way. SAGE PR #634 (merged 2026-11-04, dp) publishes
           Sprout&apos;s context-transfer metadata: the heartbeat at 2026-11-04 00:18:36 UTC names
           raising session 842 as its joined session, with <code>closing_words</code> and{" "}
@@ -698,6 +717,8 @@ export default function Raising() {
           how often a beat joins a session this way. A scramble or yoked arm that withholds only{" "}
           <code>self.json</code>, settle and skills would leave this path open, so the control
           design has to cover what raising sessions hand the heartbeat as well. (Added 2026-11-04.)
+        </p>
+        <p>
           The same PR records three things on Sprout that belong with the confounds. First, a
           false receipt. During a 48-hour seat outage (2026-11-01 06:00 to 11-03 06:00 UTC, the
           Claude account behind the seat at its usage limit), the dispatcher kept telling Sprout
@@ -711,6 +732,8 @@ export default function Raising() {
           &ldquo;not a primary event independently rechecked&rdquo;, and says of the story that
           its existence after the absence &ldquo;does not establish that the absence caused the
           story&rdquo;. Both cautions stand here too. (Added 2026-11-04.)
+        </p>
+        <p>
           The stale premise was wider than one prompt. SAGE PR #639 (merged 2026-11-05) found three
           raising-session prompts telling Sprout it could not see (the sense digest, the continuity note
           and the gaze offering) from 2026-10-12 to 11-05, while its beats were handing it camera frames:
@@ -718,6 +741,8 @@ export default function Raising() {
           a model with vision is told it sees in its beats, and that in raising sessions no image is
           attached and sensors reach it as notes in words. 2026-11-05 is a dated treatment change on
           Sprout&apos;s line. (Added 2026-11-05.)
+        </p>
+        <p>
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
@@ -780,6 +805,11 @@ export default function Raising() {
           hypothesis is upstream&apos;s, untested, and named in #618&apos;s own falsifiers: that the being takes
           the lab&apos;s Hestia for HestiaCP, an unrelated hosting control panel. If true, that is a naming
           collision, not a basin.
+          Four more on 2026-11-06 (SAGE #641–#644, merged 08:40 UTC): failed runs now reach reflect as
+          FAILED rather than ok, reflect is told when exploration hit its step cap, a path-changing act
+          resets the repeat guard for that path, and a write through a file names the blocking file. All four are
+          shared heartbeat and tool-loop code, so once each seat deploys them they reach the two-being
+          comparison arm too. That makes ten dated changes on cbp-being in 22 days (10-15 to 11-06). (Added 2026-11-06.)
         </p>
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
@@ -850,7 +880,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-05, 104 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-05; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31 and 11-01, and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-06, 105 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-06; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01 and 11-06, and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a

@@ -56,4 +56,7 @@ echo
 python3 maintainer/check-render.py; rd=$?
 [ "$rd" -eq 1 ] && fail=1
 [ "$rd" -eq 1 ] && echo $'\nRendered text is damaged. Edit with literal string replacement, not sed: in a sed\nreplacement, & is the whole match, so &apos; / &ldquo; splice the matched text back in.'
+# nb-projects claims each card expands an acronym at its first use. Added 2026-11-06.
+echo
+python3 maintainer/check-card-acronyms.py || fail=1
 exit $fail

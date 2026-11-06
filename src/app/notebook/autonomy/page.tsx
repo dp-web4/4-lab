@@ -614,7 +614,7 @@ export default function Autonomy() {
             <Link href="/notebook/raising#deflationary-alternative" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>,
             specified 2026-07-24 and unscheduled since; this audit&apos;s single-model-family blind spot, open since
             2026-09-10; the public raising record, closed by the 2026-09-19 ruling (last public transcript
-            2026-09-27; Abyss-Bright excerpts, below, are the only public raising output since); and the routing
+            2026-09-27; Abyss-Bright excerpts, above, are the only public raising output since); and the routing
             question for the carry-forward stop above, open since 2026-10-04. All four wait on the same researcher decision, and none has a
             committed date.
           </p>
