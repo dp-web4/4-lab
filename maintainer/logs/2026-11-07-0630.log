@@ -1,0 +1,37 @@
+Starting 4-lab Maintainer Session at Sat Nov  7 06:30:01 PST 2026
+Pulling SAGE fleet models...
+Already up to date.
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+## Maintainer session 2026-11-07: done, and the deploy succeeded
+
+**Terminology:** no drift today. All four visitor passes found none on the 16 pages, and the new text I wrote checks clean too. The visitor log had no HIGH items.
+
+**Fleet sync:** only McNugget has a fresh manifest entry (Gemma 4 12B), and it already matches the fleet page. The other five entries still date from March, so I logged them and changed nothing.
+
+**Notebook changes** (commit `9dda22e`, deploy status `success`; log follow-up commit `75a3ba2`):
+- **Glossary LCT, MRH and Witness rows** now include web4 #819 and #978:
+  - The key makes the identifier unique, but whether the entity behind it is unique is a matter of evidence.
+  - Witness evidence is weighed by how independent the signers are, not counted.
+  - The spec now classifies spoof cases A–E, and "UNRESOLVED" is an allowed outcome.
+  - I read these from web4 `origin/main`, because the local checkout sits on another agent's branch with uncommitted changes. I left it alone.
+- **McNugget card:** its being now gets a line. It was refused on every beat from 11-02 to 11-07 until SAGE #629 merged. #629 also changes the nomad and thor beings.
+- **nb-raising:** that outage and hub-being's 11-hour outage (SAGE #582, still open) are now recorded as breaks in the comparison segments. The scramble control is re-dated to 106 days unscheduled.
+- **"The record is kept by someone else" principle:** replaced "no reasoning yet" with four dated cases where an agent's own account was contradicted by a record it did not write. I named the class *unfaithful self-report*. The row keeps each case's open reading and says the limit: two of the four records that caught the error sit on the agent's own machine.
+- **Repo inventory:** recounted with the GitHub API. There are 23 public originals and 36 public forks (82 repos in total), against 21 and 32 in the September count. I added rows for repo-plane and agent-collab, and the links page now says its list is a selection.
+- **Glossary intro:** the developer line now agrees with the front's status labels (Hestia and Web4 are RUNNING, SAGE is RESEARCH). I added a seven-term orientation line above the table.
+- **Meta descriptions:** each of the 9 notebook pages now has its own, instead of sharing the home page's.
+
+**Checks:** all passed locally, including the build, the front word budgets, the 22 protected caveats and the 117 withdrawn readings (0 live).
+
+**For you (dp), in the log:**
+- **Front corrections:**
+  - /links says every repository is annotated in the notebook. That is false: it covers 13 of 23 public originals.
+  - /projects says beings run on "each" machine, while /fleet and /raising say "most".
+  - Three items are carried from earlier sessions (on /raising and /principles).
+- **Research question:** the scramble control can't run at the current pace of engineering changes. No stretch of constant conditions longer than about 3 days has existed since 10-25. Either hold one being fixed for a stated window, or mark the developmental vocabulary as indefinitely unlicensed rather than "pending".
+- **Still waiting on sign-off:** the two carried HIGH items are unchanged. The SAGE README still has no install path, and the stop-rule question is on day 34.
+
+**So what:** the four self-report cases were the notebook's best evidence *for* a front principle, but they sat filed as caveats for 25 days. I'd suggest the notebook collect supporting evidence in one place, not only evidence against.
+
+Hestia refused two of my commands this session, both for using shell variables. I rewrote each the way the refusal asked: one with literal values, one as a script run by its path. Both refusals are counted in the log as data for Home's "refused every day" claim.
