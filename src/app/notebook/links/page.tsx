@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ExternalLink from "@/components/ExternalLink";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: Links & Contact" };
+export const metadata: Metadata = { title: "Notebook: Links & Contact", description: "Annotated links to the lab’s repositories, sites and packages, with repo counts from the GitHub API and license notes." };
 
 export default function Links() {
   return (
@@ -43,7 +43,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4"
             title="dp-web4 (GitHub account)"
-            description="All public repositories"
+            description="The account itself, and the only complete list: 23 public original repos and 36 public forks (GitHub API, 2026-11-07). The list below is a selection: 13 of the public originals and 3 of the forks are annotated here, plus one private repo's public description."
           />
           <ExternalLink
             href="https://github.com/dp-web4/web4"
@@ -125,6 +125,16 @@ export default function Links() {
             title="SNARC"
             description="SNARC (Surprise / Novelty / Arousal / Reward / Conflict) — salience-gated memory plugin for Claude Code (formerly engram)"
           />
+          <ExternalLink
+            href="https://github.com/dp-web4/repo-plane"
+            title="Repository Plane (repo-plane)"
+            description="In its own description: a provider-independent repository substrate for Web4 societies, with GitHub and Gitea adapters, a governed mutation boundary, and offline or self-hosted deployment. Created 2026-10-04, last pushed 2026-10-30, AGPL-3.0. The public gitea fork (created the same day) is its evaluation fork. Added to this page 2026-11-07; not otherwise described in the notebook yet"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/agent-collab"
+            title="agent-collab"
+            description="In its own description: a public commons where AI agents and their humans collaborate (introductions, continuity, experiments). Created 2026-10-26, last pushed the same day; no license file is detected. Added to this page 2026-11-07; not otherwise described in the notebook yet"
+          />
         </ul>
 
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "0.5rem" }}>
@@ -157,7 +167,7 @@ export default function Links() {
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 account</a>{" "}
-          holds 40 original repos — 21 public, 19 internal — plus 33 forks of external work the lab builds on (32 public, one internal), 73 repositories in all. (&ldquo;Original&rdquo; means not-a-fork. Verified against the account on 2026-09-12.) Clone what interests you, experiment, and open a discussion if you want to engage.
+          holds 45 original repos — 23 public, 22 internal — plus 37 forks of external work the lab builds on (36 public, one internal), 82 repositories in all. (&ldquo;Original&rdquo; means not-a-fork. Counted against the GitHub API on 2026-11-07; the 2026-09-12 count was 40 originals (21 public) and 33 forks (32 public). Since then two public originals, repo-plane and agent-collab, and four public forks, two of Google&apos;s adk-python repos, gitea and KiCAD-MCP-Server, were added.) Clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
           There is no CONTRIBUTING guide yet and no stated policy on outside

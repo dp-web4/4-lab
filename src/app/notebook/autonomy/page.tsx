@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: Autonomy — The Daily Cycle" };
+export const metadata: Metadata = { title: "Notebook: Autonomy — The Daily Cycle", description: "The daily autonomous tracks of the 4-lab notebook: what they may do, what they have done, and the limits of their review." };
 
 export default function Autonomy() {
   return (
@@ -409,7 +409,7 @@ export default function Autonomy() {
           semantic depth, proposing nonexistent continuations based on surface
           similarity.
         </p>
-        <p>
+        <p id="fixes-that-never-ship">
           Fixes that never ship. Detect-and-revert watches for bad changes that reach the live site;
           it has no detector for good changes that never arrive. Both maintainer commits of
           2026-10-13 failed on Vercel: the prebuild route check rejected two deliberate references to

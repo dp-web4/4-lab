@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: Raising — Interactive Selection" };
+export const metadata: Metadata = { title: "Notebook: Raising — Interactive Selection", description: "The raising curriculum for SAGE beings: what has been observed, what has not been measured, and the controls that would decide it." };
 
 export default function Raising() {
   return (
@@ -248,7 +248,7 @@ export default function Raising() {
           raising did change weights. Until 2026-09-15 this page said raising was &ldquo;always in-context&rdquo;; that
           holds for the current lines, not for the history.
         </p>
-        <p>
+        <p id="unfaithful-self-report">
           One corollary worth naming: frozen weights do not guarantee safe
           in-context behavior. Emergent attractors — including goal-seeking or
           manipulative patterns — can arise from in-context dynamics without any
@@ -810,6 +810,15 @@ export default function Raising() {
           resets the repeat guard for that path, and a write through a file names the blocking file. All four are
           shared heartbeat and tool-loop code, so once each seat deploys them they reach the two-being
           comparison arm too. That makes ten dated changes on cbp-being in 22 days (10-15 to 11-06). (Added 2026-11-06.)
+          Outages are condition changes too, and two are on record upstream. hub-being was silent for about 11 hours
+          (2026-10-27 19:30 to 10-28 06:27 UTC, 22 beats): the step-1 preflight refused every explore while the seed
+          fitter found nothing to trim, and no intervention was logged (SAGE issue #582, still open 2026-11-07).
+          mcnugget-being was refused at step 1 on every beat from 2026-11-02 01:14 UTC until SAGE #629 merged on
+          2026-11-07 (about five days, same failure class, a gemma4 tokenizer ratio; see the McNugget card on the{" "}
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>fleet record</Link>). #629 changes the preflight for every gemma4 being,
+          so it is also a dated treatment change for nomad and thor. Neither being is in the two-being comparison arm.
+          A being that cannot act is not under constant conditions, so these windows split segments the same way a
+          merged PR does. (Added 2026-11-07.)
         </p>
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
@@ -880,7 +889,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-06, 105 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-06; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01 and 11-06, and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-07, 106 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-07; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06 and 11-07 (the gemma4 preflight ratio, SAGE #629), and two beings lost days to preflight outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a

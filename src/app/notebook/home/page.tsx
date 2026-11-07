@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "Notebook: the lab view (former home page)" };
+export const metadata: Metadata = { title: "Notebook: the lab view (former home page)", description: "The 4-lab notebook’s lab view: the former home page, kept with its evidence and caveats." };
 
 export default function Home() {
   return (

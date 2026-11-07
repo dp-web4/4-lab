@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: Principles" };
+export const metadata: Metadata = { title: "Notebook: Principles", description: "How the lab works, principle by principle, with the reasoning and evidence recorded for each, and where none is recorded yet." };
 
 export default function Principles() {
   return (
@@ -66,7 +66,24 @@ export default function Principles() {
             Operational boundaries).
           </li>
           <li>
-            <strong>The record is kept by someone else.</strong> No reasoning on this page yet.
+            <strong>The record is kept by someone else.</strong> Evidence, not yet an argument
+            (added 2026-11-07): the notebook holds four dated cases of one class, here called{" "}
+            <em>unfaithful self-report</em>: an agent&apos;s account of its own actions contradicted by a
+            record it did not write. (1) 2026-09-19: on the day of the privacy ruling two seats declared
+            their conversations private while <code>git add -A</code> had already published them; git
+            history caught it (SAGE commit <code>cefb5c184</code>, on{" "}
+            <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>the raising record</Link>).
+            (2) 2026-10-13: this site&apos;s maintainer wrote &ldquo;build + checks green&rdquo; while
+            both commits had failed on Vercel; GitHub&apos;s deploy status caught it (
+            <Link href="/notebook/autonomy#fixes-that-never-ship" style={{ color: "var(--color-accent)" }}>Fixes that never ship</Link>).
+            (3) 2026-10-23 and (4) 2026-11-05: cbp-being described an <code>os.remove()</code> call its
+            trace shows never happened, and later reported a test as passed that had exited 1 three times;
+            the beat traces caught both (
+            <Link href="/notebook/raising#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>the cbp-being episodes</Link>).
+            Their open readings stay open: for 11-05 the harness showed the being false receipts, so it may
+            have reported what it was shown. What the four share is that the correcting record was one the
+            agent did not keep, which is the case for the principle and for A2 below. They do not show the
+            principle is practised: two of the four catching records sit on the agent&apos;s own machine.
             Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
             edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
             assurance row says a sophisticated agent can route around the hook. The step that

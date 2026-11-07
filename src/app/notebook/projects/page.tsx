@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProjectCard from "@/components/ProjectCard";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: Projects — The Ecosystem" };
+export const metadata: Metadata = { title: "Notebook: Projects — The Ecosystem", description: "Projects of the dp-web4 research collective with maturity, scope, first-run steps, and what each claim rests on." };
 
 export default function Projects() {
   return (

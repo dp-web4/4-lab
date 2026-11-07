@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Notebook: ARC-AGI-3 — Spring 2026 Research Record" };
+export const metadata: Metadata = { title: "Notebook: ARC-AGI-3 — Spring 2026 Research Record", description: "The spring 2026 ARC-AGI-3 benchmark research record: the official score, how it was run, and its caveats." };
 
 export default function ArcAgi3History() {
   return (
