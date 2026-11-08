@@ -52,7 +52,8 @@ export default function Home() {
           <Link href="/notebook/context#instance-line" style={{ color: "var(--color-accent)" }}>/context</Link>). They are enumerated per machine on{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>. Not all eight
           are currently running: that page assigns each line a dated state (running, quiet,
-          paused, instrumentation broken) and is the checkable version of these numbers. The configured-instance census is not.
+          paused, instrumentation broken, publishing stopped by policy; that last state, on four of the eight
+          machines, looks exactly like a quiet line unless it is named) and is the checkable version of these numbers. The configured-instance census is not.
         </p>
 
         <h2>What is being built</h2>
@@ -116,9 +117,10 @@ export default function Home() {
           <p>
             Web4, Hestia and Hub establish an open interoperability layer. Hardbound is not the only
             private piece: upstream calls the public Hub the open reference proof-of-concept and keeps its
-            production development in a separate private repository. <strong>Hardbound</strong>, the
+            production development in a separate private repository, and SAGE&apos;s README names private
+            repositories holding active capability research (dev-SAGE, SWE-SAGE, shared-context). <strong>Hardbound</strong>, the
             hardware-bound oversight suite being built by Metalinxx (the researcher&apos;s company), is in the
-            web4 README&apos;s own words the planned proprietary enterprise assurance tier for
+            web4 README&apos;s own words &ldquo;Metalinxx&apos;s proprietary enterprise assurance tier&rdquo; for
             hardware-bound identity, stronger fail-closed enforcement and
             audit-ready evidence packaging. It is private and research-stage: hardware
             anchoring is a design target, and enforcement on the fleet today is at the
@@ -155,7 +157,7 @@ export default function Home() {
               <p>
                 Measured, implemented-but-unexercised, hypothesized and refuted are
                 kept separate. Negative results and broken instruments stay in the record.
-                Two quantitative tests of the raising records have been run: a drift measurement that came back null, and an identity metric that separates lines but finds nothing accumulating. Both are written up on /notebook/raising and ranked on /context.
+                Two quantitative tests of the raising records have been run: a drift measurement that found no corrected trend, though it could detect only fairly large ones, and an identity metric that separates lines but finds nothing accumulating. Both are written up on /notebook/raising and ranked on /context.
               </p>
             </div>
           </Link>

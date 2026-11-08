@@ -1008,6 +1008,13 @@
       "pattern": "its link on the front /projects and /links pages returns 404",
       "unless": "",
       "why": "Front PR #3 (merged 2026-10-30) points both front SWE-SAGE links at SAGE/sage/docs/SWE_SAGE.md (HTTP 200). Visitor P3 2026-11-05."
-    }
+    },
+    {"id": "hub-checks-hestia-record", "withdrawn": "2026-11-08", "pattern": "Hub is the society that checks|Hub is what checks it|checks the record Hestia makes|admissib\\w+ to a (Web4 )?hub", "unless": "", "why": "No running mechanism found: public Hub treats Hestia as signer, vault and router; hub/docs/PRD_HUB_HESTIA_SHOW_WITNESSING.md is 'Proposed / not implemented'; Hestia README limits 'something to check'. Unverified, not refuted. Visitor P3 2026-11-08."},
+    {"id": "lct-does-not-travel", "withdrawn": "2026-11-08", "pattern": "does not travel with the agent", "unless": "", "why": "Teaches 'non-transferable' as machine-bound; web4 docs/IDENTITY_CONTINUITY.md: 'Non-transferable does not mean trapped on one machine'. Visitor P3 2026-11-08."},
+    {"id": "no-review-reaches-publishing", "withdrawn": "2026-11-08", "pattern": "None of that review reaches", "unless": "", "why": "False since 4-lab PR #3 (GPT-6 MERGE-OK) and PR #4 (NOVA MERGE-OK). Visitor P4 2026-11-08."},
+    {"id": "merge-is-record-of-front-gate", "withdrawn": "2026-11-08", "pattern": "record of who gates the front", "unless": "", "why": "PR #3's body and reviewer state the opposite, and all PRs show one shared account, so the merge identifies nobody. Unsettled; asked of dp. Visitor P4 2026-11-08."},
+    {"id": "quickstart-never-followed", "withdrawn": "2026-11-08", "pattern": "site has not followed the steps", "unless": "", "why": "The visitor track followed most steps on 2026-11-08 on a fleet machine; the page now says what was and was not run."},
+    {"id": "every-term-on-the-site", "withdrawn": "2026-11-08", "pattern": "reference for every term on the site", "unless": "", "why": "Overclaim: BECOMING, PRD and E4B had no glossary entry. Rows added, claim softened. Visitor P2 2026-11-08."},
+    {"id": "hardbound-planned-as-quote", "withdrawn": "2026-11-08", "pattern": "own words the planned proprietary", "unless": "", "why": "web4 README says \"Metalinxx's proprietary enterprise assurance tier\"; 'planned' is not in it. Visitor P3 2026-11-08."}
   ]
 }

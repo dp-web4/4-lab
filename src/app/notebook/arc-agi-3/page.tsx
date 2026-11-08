@@ -26,7 +26,11 @@ export default function ArcAgi3History() {
         <p>
           This page preserves an important SAGE research milestone. It is <strong>not current competition
           positioning</strong> and should not be read as evidence that dp-web4 is near the top of the
-          ARC-AGI-3 leaderboard today. Current competition-legal local-model work is well behind the leaders.
+          ARC-AGI-3 leaderboard today. Current competition-legal local-model work is well behind the leaders: SAGE&apos;s README says that
+          continuation, &ldquo;the actual bet&rdquo;, &ldquo;scores 0.14 at best&rdquo; (the same frozen code draws
+          0.04&ndash;0.14) &ldquo;against a public leaderboard now above 11&rdquo;, and that the run recorded here
+          &ldquo;did not prove the local/edge SAGE thesis&rdquo;. Read 2026-11-08; figures are upstream&apos;s, not
+          re-derived here.
         </p>
       </div>
 

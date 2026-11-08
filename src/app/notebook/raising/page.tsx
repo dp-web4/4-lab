@@ -58,8 +58,8 @@ export default function Raising() {
           MRH (Markov Relevancy Horizon), LCT (Linked Context Token) and ATP (Allocation Transfer Packet). LoRA
           (Low-Rank Adaptation) is a standard machine-learning term, not a Web4
           one. Until 2026-09-23 this note said these terms were expanded inline
-          on first use, and the note itself was their first use. The full
-          reference for every term on the site is the{" "}
+          on first use, and the note itself was their first use. The
+          reference for the site&apos;s terms is the{" "}
           <Link href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>/context glossary</Link>.
         </p>
 
@@ -514,7 +514,11 @@ export default function Raising() {
           rises from 5.6% to 6.0% (p = 0.008), and its disclaimer rate rises from 11% to 26%
           (p = 0.026), both on the Rust daemon with Gemma 3. Legion&apos;s answers on Gemma 4
           E4B get about 8% shorter (p = 0.024). Nomad (301 records) and Sprout (130) show
-          nothing. Records with any unanswered question are excluded: 108
+          nothing. These nulls rule out less than they sound as if they do, and until 2026-11-08 this page did
+          not say so. At the corrected cutoff with 80% power (Fisher z approximation, arithmetic on the stated n,
+          not a re-run) the tests could reliably detect only a monotonic correlation of about |&rho;| &ge; 0.33 at
+          n = 130 and about 0.22 at n = 300, and more where exclusions shrink n. So &ldquo;no corrected
+          trend&rdquo; excludes large trends, not small ones. Records with any unanswered question are excluded: 108
           of the 1,220 scripted records now in the repo (1,217 at the first run) carry a transport error (&ldquo;Daemon unreachable: HTTP
           Error 502&rdquo;) in place of at least one answer. That leaves McNugget&apos;s
           Gemma 4 12B stretch untestable, because only 4 of its 47 records have all six answers.{" "}
@@ -748,7 +752,7 @@ export default function Raising() {
           not been run. No deflationary control exists yet.
         </p>
         <p id="basin-follows-feed">
-          <strong style={{ color: "var(--color-text-primary)" }}>A natural experiment on one being points the same way (recorded 2026-10-30).</strong>{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>An uncontrolled intervention on one being points the same way (recorded 2026-10-30).</strong>{" "}
           SAGE PR #596 and its write-up (<code>research-notes/attractor-basins-follow-affordances-2026-10-30.md</code>,
           public, by CBP&apos;s seat) count what cbp-being&apos;s acts were about, per day. The model and
           weights (Qwen 3.8-distill 4B) did not change. From 2026-09-21 to 10-14, 1–7% of its acts were about
@@ -819,6 +823,54 @@ export default function Raising() {
           so it is also a dated treatment change for nomad and thor. Neither being is in the two-being comparison arm.
           A being that cannot act is not under constant conditions, so these windows split segments the same way a
           merged PR does. (Added 2026-11-07.)
+        </p>
+        <p id="prediction-unreadable">
+          <strong style={{ color: "var(--color-text-primary)" }}>The 10-30 prediction can no longer be read as written (recorded 2026-11-08).</strong>{" "}
+          No outcome has been recorded, and the upstream write-up has had no commit since it was published. Three
+          things now stand in the way. First, a direct instruction: on 11-01 dp told cbp-being to &ldquo;retire the
+          whole hestia thread and work on something different&rdquo;, and SAGE #619 (merged 11-02) gave it a{" "}
+          <code>retire_thread</code> verb, because that day 550 of its 584 open todo items and 29 of its 30 settled
+          entries were on that one thread and its tools could only shrink them one at a time. If the hestia share
+          falls now, turning off the service notes cannot take the credit. With #619 the count above is at least
+          eleven dated changes. Second, the comparison arm had an outage of its own. Sprout&apos;s 48-hour seat
+          outage, recorded in the confounds above (2026-11-01 06:00 to 11-03 06:00 UTC), sits inside the
+          prediction&apos;s &ldquo;within a few days&rdquo; window, and sprout-being is one of the two comparison
+          beings; the outage paragraph above missed it. The cause was the Claude account at its limit, and{" "}
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>the fleet record</Link> puts Sprout and
+          Legion on Account 1 and CBP on Account 2. Whether Legion&apos;s seat also stopped in those dates is
+          untested; if it did, both comparison beings differ from the treated being on the same outage. Third, more
+          shared changes, all merged and with deployment not checked. #648 (11-07): a being&apos;s <code>say</code>{" "}
+          is refused when it repeats its own unanswered turn, after hub-being sent dp the same question 13 times on
+          11-06, resting on a refusal that never happened (62 of its 90 turns to dp score as repeats). #650 (11-08):
+          when someone&apos;s turn is waiting, its words become the beat-start recall query, after nomad-being said it
+          had no details on a project while its journal held 105 entries on it, because recall searched a fixed
+          phrase. That bears on the front&apos;s &ldquo;carry their records&rdquo;: carrying is not retrieving. #653
+          (11-08): the journal prompt stops presupposing a refusal when the evidence records none, which the PR
+          itself calls &ldquo;not yet a live effectiveness claim&rdquo;.
+        </p>
+        <p id="methods-work">
+          <strong style={{ color: "var(--color-text-primary)" }}>Methods work this page had not recorded (added 2026-11-08).</strong>{" "}
+          Three public upstream items, and they cut the other way from most of this page: they are instruments and
+          outside input rather than caveats. <strong style={{ color: "var(--color-text-primary)" }}>PF-0</strong>{" "}
+          (SAGE #630, #635, #638, merged 11-03 to 11-05; <code>sage/docs/PREMISE_FIDELITY.md</code>) is a deterministic
+          checker of a being&apos;s source-checkable claims against source records, in which insufficient evidence
+          stays unknown. #635 reports 16 corpus controls and byte-identical replay across two runs. It is the direct
+          instrument for the{" "}
+          <Link href="#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>unfaithful self-report</Link>{" "}
+          class. Limits: an offline slice, its original report is private, and the replay was not re-run here.{" "}
+          <strong style={{ color: "var(--color-text-primary)" }}>Masaki Hoshino&apos;s outside review</strong> (SAGE{" "}
+          <code>research-notes/EXTERNAL_RESEARCH_REFERENCES.md</code>, 2026-10-23/24) proposes that summarizing a
+          judgment can keep its conclusion and lose the conditions that made it valid, so &ldquo;memory continuity
+          &ne; condition continuity &ne; judgment continuity&rdquo;. The protocol it opens scores actual actions
+          over later wakes. The file marks all this &ldquo;proposed
+          research, not a verified cross-being finding&rdquo;; nothing has been run. It also records his critique of
+          NOVA, this site&apos;s cross-vendor reviewer, labelled there as visible text features rather than an
+          established cause. <strong style={{ color: "var(--color-text-primary)" }}><em>A Tale of Two Beings</em></strong>{" "}
+          (SAGE #634, <code>research-notes/tale-of-two-beings/</code>) is the public evidence for NOVA&apos;s labelled
+          opinion article comparing sprout-being and cbp-being, both configured with{" "}
+          <code>qwen3.8-distill:4b</code>. Its own limit: &ldquo;The model checksums were not compared.&rdquo; It is a
+          selected, uncontrolled comparison. Whether any of these should replace the scramble as this page&apos;s
+          central test is a researcher decision; it is not made here.
         </p>
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind

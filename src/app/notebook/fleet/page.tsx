@@ -92,8 +92,10 @@ export default function Fleet() {
           reconciling it is an open item on the fleet, not on this site.
         </p>
 
+        <h2 style={{ marginTop: "2rem" }}>Machines by pool</h2>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
-          The three headings below are the fleet&apos;s pools &mdash; how machines
+          The three headings below are the fleet&apos;s pools (the third, society-host, is this
+          site&apos;s label for what <code>fleet.json</code> calls <code>infra</code>) &mdash; how machines
           are grouped by budget and role, stated here before the headings use the
           words. <strong style={{ color: "var(--color-text-primary)" }}>Synthesis</strong>:
           high compute budget, generative work. <strong style={{ color: "var(--color-text-primary)" }}>Oversight</strong>:
@@ -353,8 +355,11 @@ export default function Fleet() {
           <Link href="/notebook/context#lct" style={{ color: "var(--color-accent)" }}>Linked Context Token (LCT)</Link>{" "}
           is designed to make verifiable: identity grounded in witnessed history, not model weights.
           The LCT itself is non-transferable — permanently bound to its entity, which is what makes
-          that history evidence rather than assertion. What ported here was the behavioral line, not
-          the LCT. What we observed: consistent behavioral patterns and session
+          that history evidence rather than assertion. Non-transferable means between entities; upstream&apos;s{" "}
+          <code>docs/IDENTITY_CONTINUITY.md</code> says it &ldquo;does not mean trapped on one machine&rdquo; and
+          specifies witnessed key and device continuity. What ported here was the behavioral line, not
+          the LCT, and no such continuity step is recorded here for this port. The same document&apos;s table
+          speaks to copies: copied state is &ldquo;Not automatically the original entity&rdquo;. What we observed: consistent behavioral patterns and session
           continuity across the transfer. The port carried the state files, so some persistence
           is expected by construction. Two things the session records add. The port was a copy, not a
           move: the Qwen line kept running on Sprout until 2026-03-06, so for a week one identity was
