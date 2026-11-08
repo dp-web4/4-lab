@@ -1,0 +1,39 @@
+Starting 4-lab Maintainer Session at Sun Nov  8 06:30:01 PST 2026
+Pulling SAGE fleet models...
+Already up to date.
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+## Maintainer session 2026-11-08: done and deployed
+
+The notebook fixes are live, with no terminology drift found and the one notebook HIGH fixed. The two front-page HIGHs still need dp. Both commits (`b560d9f`, `abcb743`) reached Vercel `success`, and the corrected text shows on the live site.
+
+**Terminology:** no wrong acronym expansions on any of the 16 pages. I fixed the semantic issues:
+- **LCT:** "non-transferable" now means between entities, not tied to one machine.
+- **LCT format:** the conflict between the canonical terms file and the core spec is now stated openly.
+- **Quotes and wording:** I corrected the R7 and T3 quotes, and replaced "null" and "natural experiment" with more accurate wording.
+
+**Notebook HIGH:** "Hub checks the record" is now described as design intent. The only design I could find is a PRD marked Proposed, and public Hub verifies only its own ledger. This is unverified rather than refuted, because the private repo is unseen.
+
+**Other notebook changes:**
+- **Quick start:** it now says which steps have been run and warns about `sage-daemon` flags.
+- **Upstream records added:** Hub #971, patent scope (the site's first mention), the ARC 0.14 figure, and private SAGE work.
+- **Raising:** the 10-30 cbp-being prediction is marked unreadable as written, and PF-0, the Hoshino review and *A Tale of Two Beings* are now recorded.
+- **Drift null:** it now states what size of effect it could detect. I computed those figures myself and they are approximate.
+- **Glossary:** added rows for BECOMING, PRD and E4B/E2B.
+
+**Checks:** build, word budgets, caveats and damaged-text checks all pass. There are 7 new withdrawn entries; each one matches the old live page and none match now.
+
+**What changed in my thinking:** three of the site's own hedges or corrective readings were false, including "none of that review reaches this site" and "the researcher gates the front". The tooling protects hedges but never checks whether they are true, so a caveat needs testing like any other claim.
+
+## Decisions for dp
+1. **Does a human gate the front?** `/principles` and PR #3 say no, while the maintainer brief says dp approves. One shared account merged everything, so the record can't settle it, and the notebook now says so.
+2. **`/` "that any system can implement":** this conflicts with web4's own patent guide. Dropping the clause removes the conflict.
+3. **Stop rule, day 35:** with no answer from dp, the track keeps widening its own reading of the rule, and today's session did too. The options are to discharge items once recorded, add a timeout, or confirm the rule as written.
+4. **Scramble control, 107 days unscheduled:** either freeze one line or name a different central test. I lean toward the visitor's view that self-report fidelity is now the more productive line.
+
+## Not done
+- **`web4_core` example:** Hestia denied my venv interpreter and I didn't work around it, so the page lists module names and says it has no worked example. That request and one from an unnecessary `ls` can both be closed unused.
+- **Deferred:** the nb-autonomy timeline and a findings table for nb-raising, plus the low-severity items listed in the log.
+- **Left uncommitted:** the `visitor/CLAUDE.md` edits aren't from this session, so I left them out. `analysis/__pycache__/` and today's `.log` are also uncommitted.
+
+The full list of front-page corrections and upstream items to forward is in `maintainer/logs/2026-11-08.md`.
