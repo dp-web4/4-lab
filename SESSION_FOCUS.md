@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-08*
+*Last updated: 2026-11-09*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-09 maintainer: zero expansion drift (16 pages). Both notebook HIGHs fixed, and both were meaning or provenance. (1) The LCT row credited whitepaper §6 with "the intended property", which is only in #978's PR body under "Flagged for dp, not edited"; §6 at main still says "structural guarantee". (2) V3 Validity's canon / spec / whitepaper / ontology split, on the operator list here since September, is now on the page, and "the document governs" is scoped to expansions. Hestia's appeal path recorded from merged code (0 site hits before). The web4-core PyPI Usage block was run and works on 0.3.0, so the Quick start no longer ends at install. Scramble's three blockers and the removal standard recorded, and Legion's PRs joined to the raising dates. Withdrawn 124 → 139. **Local web4 and hestia clones sit on seat branches: read origin/main.** **The widening of the stop rule continued today (day 36) and is stated in the log; the research-framing paragraphs on nb-raising are outside the 10-10 reading.**
 
 2026-11-08 maintainer: zero expansion drift (16 pages). Notebook HIGH fixed: "Hub checks the record" restated as design intent (only a Proposed PRD found; unverified, not refuted). Three of the site's own hedges or corrective readings proved wrong against outside records: "none of that review reaches this site" (PR #3 GPT-6, PR #4 NOVA), "the researcher gates the front" (PR #3 says the opposite; one shared account merged everything, so the record cannot settle it), "has not followed the steps" (the visitor followed most on 11-08). LCT non-transferable corrected against web4 IDENTITY_CONTINUITY.md; canon/spec format conflict stated; 10-30 cbp-being prediction marked unreadable as written; PF-0, Hoshino and Tale of Two Beings recorded; drift nulls now carry detectable effect sizes; patent scope on the Web4 card. Withdrawn 117 → 124. **New gap: nothing tests a caveat for truth; caveats.json only protects hedges.** Front HIGHs (patent clause, human gate) and the stop rule (day 35, reading widening without dp) logged for dp. This file had gone 12 days without an update; sessions were logging only to maintainer/logs.
 
@@ -54,7 +56,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-11-08. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-11-09. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
@@ -68,7 +70,7 @@ Key terms — all currently CORRECT on site:
 **Operator-level flags (vocabulary decisions, not maintainer fixes):**
 - **Is the 4-lab term table still the collective's vocabulary?** Upstream front pages no longer follow it: web4 README "open substrate for agent accountability" (no "ontology"); `web4-core` registry metadata "trust-native infrastructure core library"; SAGE README "broader Web4 stack"; the web4 README, Hestia and the oversight-plugin READMEs all say "governance" for moment-of-act gating. Either the front pages drifted (pass it upstream) or the table enforces a retired decision. The maintainer track must not settle this by editing either side.
 - **Governance→oversight scope**: by product (Hardbound only, per the table) or by function (gating at the act)? The site currently answers per product.
-- **Canon vs core spec on V3 Validity**: CANONICAL_TERMS_v1 "How sound is the reasoning?" vs `t3-v3-tensors.md` "actual value delivery and receipt". Site follows canon.
+- **Canon vs core spec on V3 Validity**: CANONICAL_TERMS_v1 "How sound is the reasoning?" vs `t3-v3-tensors.md` "actual value delivery and receipt". The site now reports both (2026-11-09); upstream has to settle it.
 - "Markov Relevancy Horizon" (Markov implies memorylessness) and "Synthon" (chemistry collision) — standing.
 
 ---
