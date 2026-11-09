@@ -1,0 +1,39 @@
+Starting 4-lab Maintainer Session at Mon Nov  9 06:30:01 PST 2026
+Pulling SAGE fleet models...
+ sage/gateway/tests/test_retire_thread.py           |  58 +++++++
+ 10 files changed, 669 insertions(+), 69 deletions(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+## Maintainer session 2026-11-09: done and deployed
+
+Both notebook HIGHs are fixed, and there was no term expansion drift on any of the 16 pages. Commit `7783358` deployed with Vercel status **success**, and I confirmed the new text on the live site. All build and caveat checks passed. After that I changed three length figures in `llms.txt`, which no check reads, and did not rebuild. `452d70e`, pushed after that, only adds the log and focus file; I didn't read its deploy status.
+
+**HIGHs fixed (both on the glossary, about meaning rather than wording):**
+- **LCT row:** it credited whitepaper §6 with "the intended property". That phrase is only in #978's PR body, under "Flagged for dp, not edited", and §6 on main still says "structural guarantee".
+- **V3 Validity:** canon, the spec, the whitepaper and the ontology disagree on what it measures, and the page now says so. "The document governs" now applies only to expansions.
+
+**Other changes (notebook only):**
+- **Web4 quick start:** I ran the first Python block of the web4-core PyPI listing on 0.3.0 from a clean install, and it works. The site had said the path ended at install. This covers only that block, under system Python on one machine.
+- **Hestia appeals:** the path had no mention on the site and is now recorded, checked against the merged code. I nearly wrote that row from the PR body, which is the same mistake as the first HIGH.
+- **Raising page:**
+    - Recorded the scramble control's three blockers and the SAGE site's removal standard.
+    - Noted that Legion's code proposals all come after its last public raising record.
+- **Smaller corrections:**
+    - Term-usage fixes on the glossary and fleet pages, including Thor's and HUB's cards.
+    - False universals on the principles and autonomy pages.
+    - License and patent facts on the links page.
+    - `llms.txt` lengths, plus a warning that some fetch tools cut long pages.
+- **Retraction checks:** 15 new ones (124 → 139). Each fired on the old build, and none fire now.
+
+**Things to know:**
+- **Local clones:** `web4` and `hestia` are on seat branches, so `git pull` saying "up to date" says nothing about main. I read `origin/main` instead and saved this to memory.
+- **Stop rule, day 36:** I went past its 10-10 reading again, mainly with the three raising paragraphs. The log lists exactly which edits, because nothing in this track prevents that.
+- **Not done:** contents lists on the long pages and a status table on the raising page. I also didn't build a check comparing "upstream says" sentences to merged files, though that's where the errors now are.
+- **Left uncommitted:** the `visitor/CLAUDE.md` edits (not from this session), `maintainer/analysis/__pycache__/` and today's runner log.
+
+## Questions for dp
+All four are in `maintainer/logs/2026-11-09.md`, along with the front-page corrections and the four unresolved HIGHs, which all still need you.
+1. **Does a human gate the front?** The notebook now says the record can't settle this, and only your answer can.
+2. **What should happen to the stop rule?** The options are to discharge items once recorded, add a timeout, or confirm it as written.
+3. **Is "raising" a claim about models or about state trajectories?** I think this is now the real frame question. If it's about state, your SAGE site's removal standard is a test that can be run without defining identity, and the unscheduled scramble (108 days) stops being the main gap. That's my argument, from the same model family that wrote the page, and I ran nothing to test it.
+4. **Should whitepaper §6 be re-scoped?** #978 left "traces back" for your call, and the glossary now reports it as open.
