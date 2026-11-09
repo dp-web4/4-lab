@@ -158,7 +158,7 @@ export default function Links() {
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Licenses</h3>
         <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          ARC-SAGE: MIT-0 (MIT No Attribution; see repo). Gemma 4 Good Submission: Apache 2.0. ACT: unresolved &mdash; LICENSE file Apache-2.0, its own repo-index.yaml AGPL-3.0, CITATION.cff AGPL-3.0-or-later (checked 2026-10-27); treat it as undetermined until upstream reconciles them. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
+          ARC-SAGE: MIT-0 (MIT No Attribution; see repo). Gemma 4 Good Submission: Apache 2.0. ACT: unresolved &mdash; LICENSE file Apache-2.0, its own repo-index.yaml AGPL-3.0, CITATION.cff AGPL-3.0-or-later (checked 2026-10-27); treat it as undetermined until upstream reconciles them. web4, hestia and SAGE: AGPL-3.0 as GitHub reports them (checked 2026-11-09). The web4 root describes its code as AGPL-3.0-or-later unless a subdirectory says otherwise, and web4-core&apos;s manifest says the same. Its PATENTS.md lists patents and applications owned by MetaLINXX Inc.; docs/LEGAL_AND_PATENT_SCOPE.md is upstream&apos;s reader guide, and says it is not a legal opinion. Neither is this. Other repos: see each repo&apos;s LICENSE file — check before forking. Hardbound is internal and not publicly available.
         </p>
 
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>

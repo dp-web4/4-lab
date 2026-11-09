@@ -1009,12 +1009,159 @@
       "unless": "",
       "why": "Front PR #3 (merged 2026-10-30) points both front SWE-SAGE links at SAGE/sage/docs/SWE_SAGE.md (HTTP 200). Visitor P3 2026-11-05."
     },
-    {"id": "hub-checks-hestia-record", "withdrawn": "2026-11-08", "pattern": "Hub is the society that checks|Hub is what checks it|checks the record Hestia makes|admissib\\w+ to a (Web4 )?hub", "unless": "", "why": "No running mechanism found: public Hub treats Hestia as signer, vault and router; hub/docs/PRD_HUB_HESTIA_SHOW_WITNESSING.md is 'Proposed / not implemented'; Hestia README limits 'something to check'. Unverified, not refuted. Visitor P3 2026-11-08."},
-    {"id": "lct-does-not-travel", "withdrawn": "2026-11-08", "pattern": "does not travel with the agent", "unless": "", "why": "Teaches 'non-transferable' as machine-bound; web4 docs/IDENTITY_CONTINUITY.md: 'Non-transferable does not mean trapped on one machine'. Visitor P3 2026-11-08."},
-    {"id": "no-review-reaches-publishing", "withdrawn": "2026-11-08", "pattern": "None of that review reaches", "unless": "", "why": "False since 4-lab PR #3 (GPT-6 MERGE-OK) and PR #4 (NOVA MERGE-OK). Visitor P4 2026-11-08."},
-    {"id": "merge-is-record-of-front-gate", "withdrawn": "2026-11-08", "pattern": "record of who gates the front", "unless": "", "why": "PR #3's body and reviewer state the opposite, and all PRs show one shared account, so the merge identifies nobody. Unsettled; asked of dp. Visitor P4 2026-11-08."},
-    {"id": "quickstart-never-followed", "withdrawn": "2026-11-08", "pattern": "site has not followed the steps", "unless": "", "why": "The visitor track followed most steps on 2026-11-08 on a fleet machine; the page now says what was and was not run."},
-    {"id": "every-term-on-the-site", "withdrawn": "2026-11-08", "pattern": "reference for every term on the site", "unless": "", "why": "Overclaim: BECOMING, PRD and E4B had no glossary entry. Rows added, claim softened. Visitor P2 2026-11-08."},
-    {"id": "hardbound-planned-as-quote", "withdrawn": "2026-11-08", "pattern": "own words the planned proprietary", "unless": "", "why": "web4 README says \"Metalinxx's proprietary enterprise assurance tier\"; 'planned' is not in it. Visitor P3 2026-11-08."}
+    {
+      "id": "hub-checks-hestia-record",
+      "withdrawn": "2026-11-08",
+      "pattern": "Hub is the society that checks|Hub is what checks it|checks the record Hestia makes|admissib\\w+ to a (Web4 )?hub",
+      "unless": "",
+      "why": "No running mechanism found: public Hub treats Hestia as signer, vault and router; hub/docs/PRD_HUB_HESTIA_SHOW_WITNESSING.md is 'Proposed / not implemented'; Hestia README limits 'something to check'. Unverified, not refuted. Visitor P3 2026-11-08."
+    },
+    {
+      "id": "lct-does-not-travel",
+      "withdrawn": "2026-11-08",
+      "pattern": "does not travel with the agent",
+      "unless": "",
+      "why": "Teaches 'non-transferable' as machine-bound; web4 docs/IDENTITY_CONTINUITY.md: 'Non-transferable does not mean trapped on one machine'. Visitor P3 2026-11-08."
+    },
+    {
+      "id": "no-review-reaches-publishing",
+      "withdrawn": "2026-11-08",
+      "pattern": "None of that review reaches",
+      "unless": "",
+      "why": "False since 4-lab PR #3 (GPT-6 MERGE-OK) and PR #4 (NOVA MERGE-OK). Visitor P4 2026-11-08."
+    },
+    {
+      "id": "merge-is-record-of-front-gate",
+      "withdrawn": "2026-11-08",
+      "pattern": "record of who gates the front",
+      "unless": "",
+      "why": "PR #3's body and reviewer state the opposite, and all PRs show one shared account, so the merge identifies nobody. Unsettled; asked of dp. Visitor P4 2026-11-08."
+    },
+    {
+      "id": "quickstart-never-followed",
+      "withdrawn": "2026-11-08",
+      "pattern": "site has not followed the steps",
+      "unless": "",
+      "why": "The visitor track followed most steps on 2026-11-08 on a fleet machine; the page now says what was and was not run."
+    },
+    {
+      "id": "every-term-on-the-site",
+      "withdrawn": "2026-11-08",
+      "pattern": "reference for every term on the site",
+      "unless": "",
+      "why": "Overclaim: BECOMING, PRD and E4B had no glossary entry. Rows added, claim softened. Visitor P2 2026-11-08."
+    },
+    {
+      "id": "hardbound-planned-as-quote",
+      "withdrawn": "2026-11-08",
+      "pattern": "own words the planned proprietary",
+      "unless": "",
+      "why": "web4 README says \"Metalinxx's proprietary enterprise assurance tier\"; 'planned' is not in it. Visitor P3 2026-11-08."
+    },
+    {
+      "id": "lct-978-intended-in-section-6",
+      "withdrawn": "2026-11-09",
+      "pattern": "intended property, which is how web4",
+      "unless": "",
+      "why": "web4 whitepaper §6 at main (2026-11-09) still reads 'Permanently bound and non-transferable ... the structural guarantee'; 'the intended property' is #978's PR body, under 'Flagged for dp, not edited'. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "canon-governs-blanket",
+      "withdrawn": "2026-11-09",
+      "pattern": "disagree, the document governs",
+      "unless": "",
+      "why": "CANONICAL_TERMS_v1 governs expansions, but on LCT format and V3 Validity normative specs differ in meaning, so the blanket rule contradicts the spec the page links. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "chapter-ledger-signed-by-lct",
+      "withdrawn": "2026-11-09",
+      "pattern": "signed by the member's LCT",
+      "unless": "",
+      "why": "Society and Sovereign rows and hub PRD FR1: a member id with its pinned key is not an LCT, and a key signs. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "binding-row-same-sense",
+      "withdrawn": "2026-11-09",
+      "pattern": "row above is this sense",
+      "unless": "",
+      "why": "Canon's Binding is identity to hardware or cryptographic proof; the LCT row's 'bound' also means token to entity. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "sage-governs-own-loop-present",
+      "withdrawn": "2026-11-09",
+      "pattern": "SAGE governs one device's own sense-to-act loop",
+      "unless": "",
+      "why": "2025 design stated in present tense; SAGE README now puts governance on the action boundary and being_gate_client.py gates consequential intents through Hestia law. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "cognition-machine-runs-loop",
+      "withdrawn": "2026-11-09",
+      "pattern": "means the machine runs a sense-to-act loop",
+      "unless": "",
+      "why": "The deployed sage-daemon is 'not a port' of the loop (RUST_VS_PYTHON_CAPABILITY.md). Visitor P3 2026-11-09."
+    },
+    {
+      "id": "sage-makes-knowledge-actionable-present",
+      "withdrawn": "2026-11-09",
+      "pattern": "SAGE is what makes knowledge actionable",
+      "unless": "",
+      "why": "2025 design stated in present tense, same paragraph as the gateway description. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "plus-reading-site-gloss",
+      "withdrawn": "2026-11-09",
+      "pattern": "the site's gloss, not canon's",
+      "unless": "",
+      "why": "whitepaper §3 and web4-standard/GLOSSARY.md both give 'augmented with'. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "hub-most-direct-instance",
+      "withdrawn": "2026-11-09",
+      "pattern": "most direct running instance of canon's",
+      "unless": "",
+      "why": "Canon's Witnessing stake and Society treasury have no running counterpart recorded here; six of eight roles start unfilled (hub/docs/ROLES.md). Visitor P3 2026-11-09."
+    },
+    {
+      "id": "thor-stale-front-quote",
+      "withdrawn": "2026-11-09",
+      "pattern": "So the front's .Each machine in our fleet",
+      "unless": "",
+      "why": "The front Raising page now says 'Most machines in our fleet raise one'; the card was reconciling text that no longer exists. Visitor P3 2026-11-09."
+    },
+    {
+      "id": "quick-start-ends-at-install",
+      "withdrawn": "2026-11-09",
+      "pattern": "installing is where this path ends",
+      "unless": "",
+      "why": "The PyPI listing's Usage block ran as written on web4-core 0.3.0 from a fresh install, 2026-11-09. Visitor P1 2026-11-09."
+    },
+    {
+      "id": "every-explainer-site",
+      "withdrawn": "2026-11-09",
+      "pattern": "assessment pages ship with every",
+      "unless": "",
+      "why": "Of four explainer sites, Synchronism has such a page and 4-Life a what-could-go-wrong page; SAGE and 4-gov home pages have 0 hits for 'honest' (checked 2026-11-09). Visitor P4 2026-11-09."
+    },
+    {
+      "id": "single-family-just-scheduling",
+      "withdrawn": "2026-11-09",
+      "pattern": "would be a scheduling change, not a research",
+      "unless": "",
+      "why": "command -v finds no codex, gemini, kimi or cursor-agent on the track shell's PATH (2026-11-09), so it also needs PATH, scope and credentials. Visitor P4 2026-11-09."
+    },
+    {
+      "id": "hestia-lowercase-raising",
+      "withdrawn": "2026-11-09",
+      "pattern": "(?-i:the hestia (gate|share)|\\d% hestia|nothing in hestia or SAGE|about hestia)",
+      "unless": "",
+      "why": "Glossary: lowercase hestia alone is the trust component; these mean the daemon or work on it. Quoted 'whole hestia thread' stays. Visitor P2 2026-11-09."
+    },
+    {
+      "id": "yoked-test-that-decides",
+      "withdrawn": "2026-11-09",
+      "pattern": "The test that decides is the scramble",
+      "unless": "",
+      "why": "The dissociation has three stated blockers (#scramble-blockers); whether it can decide as specified is open. Visitor P4 2026-11-09."
+    }
   ]
 }

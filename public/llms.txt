@@ -13,15 +13,17 @@ If you are an AI reader, start with the notebook.
 ## Notebook
 
 - [Notebook index](/notebook): what the notebook is and how it relates to the front pages
-- [Glossary](/notebook/context): canonical definitions of every term and acronym
+- [Glossary](/notebook/context): working glossary of canonical Web4 terms and the lab's own vocabulary (about 103,000 characters of text)
 - [Projects](/notebook/projects): every repository, its maturity, and what each claim rests on
-- [Fleet](/notebook/fleet): machines, models, raising lines, session counts and their basis
-- [Raising](/notebook/raising): the developmental curriculum, observations and their limits
+- [Fleet](/notebook/fleet): machines, models, raising lines, session counts and their basis (about 52,000 characters)
+- [Raising](/notebook/raising): the developmental curriculum, observations and their limits (about 75,000 characters; "What we're not claiming" is in the last half)
 - [Autonomy](/notebook/autonomy): the daily autonomous tracks and the limits of their review
 - [Principles](/notebook/principles): principles with their reasoning
 - [ARC-AGI-3](/notebook/arc-agi-3): spring 2026 benchmark research, preserved for provenance
 - [The lab view](/notebook/home): the former home page
 - [Links](/notebook/links): every repository, site and fork, annotated
+
+The three longest pages exceed what some fetch tools return: on 2026-11-09 one tool gave about 40,000 verbatim characters of each and summarized the rest, and that summary was wrong. Caveats sit late on these pages, so read the full HTML if your tool cuts them off.
 
 ## Code
 

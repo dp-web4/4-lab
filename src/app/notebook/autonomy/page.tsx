@@ -316,8 +316,8 @@ export default function Autonomy() {
           in on purpose (&ldquo;deliberate governance/design, <strong>not</strong> missing human review&rdquo;).
           GitHub shows <code>dp-web4</code> as author and merger of all four PRs, a shared account, so the merge
           identifies nobody. This track&apos;s brief says a front page changes only through a pull request dp
-          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08. As of 2026-10-31 no reply on the routing question itself is
-          on record. The fix the track has proposed and
+          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record as of 2026-11-09. The separate routing question, open
+          since 2026-10-04, also has no reply on record as of 2026-11-09. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>
@@ -457,10 +457,12 @@ export default function Autonomy() {
           uninformative precisely <em>because</em> the auditor&apos;s blind spots
           are the author&apos;s. The third follows from the second, and the
           second contradicts the first. Running even one visitor persona on a
-          different model family would be a scheduling change, not a research
-          program, and it would convert the rollback count from an
+          different model family would need no research program, and it would convert the rollback count from an
           uninterpretable number into a weak but real one. It has not been done;
-          the audit that keeps flagging it cannot change its own schedule.
+          the audit that keeps flagging it cannot change its own schedule. Nor is schedule all it
+          takes: on 2026-11-09 (one shell, one machine) none of codex, gemini, kimi or cursor-agent
+          was on this track&apos;s PATH, although the machine&apos;s start-up inventory lists several as
+          installed, so it also needs PATH, scope and credentials.
         </p>
         <h3>Maintainer track: higher blast radius</h3>
         <div className="card" style={{

@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </a>
 
-          <a href="https://github.com/dp-web4/4-hub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <a href="https://github.com/dp-web4/web4/tree/main/hub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div className="card" style={{ borderTop: "3px solid #14b8a6" }}>
               <h3 style={{ color: "#14b8a6" }}>Hub</h3>
               <p>

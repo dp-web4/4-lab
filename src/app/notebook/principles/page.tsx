@@ -259,9 +259,12 @@ export default function Principles() {
               instrument was never run on a known effect first; re-registering now requires that step
               (Synchronism card on{" "}
               <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>). We
-              document what didn&apos;t work alongside what did. Honest
-              assessment pages ship with every{" "}
-              <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>explainer site</Link>.
+              document what didn&apos;t work alongside what did. Of the four{" "}
+              <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>explainer sites</Link>,
+              Synchronism&apos;s has an honest-assessment page and 4-Life&apos;s a what-could-go-wrong page;
+              SAGE&apos;s has a &ldquo;What SAGE is not&rdquo; list, and 4-gov&apos;s home page links neither
+              (home pages checked 2026-11-09, so an unlinked page could be missed). Until that date this
+              sentence said every site had one.
             </div>
           </div>
 

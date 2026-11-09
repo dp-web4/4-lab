@@ -421,11 +421,17 @@ export default function Raising() {
             to the <code>game</code> verb&rdquo;; see{" "}
             <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>).
             &ldquo;Has proposed 15 changes, the last on 2026-10-09&rdquo; is what the record supports.
+            It is also not a raising outcome on the public record (the dates joined 2026-11-09): the line&apos;s
+            last public session record is 462, on 2026-09-02, and all 15 pull requests come after it. The
+            line&apos;s records name a different model from the one below. A record after the 2026-09-19 ruling
+            could be private, though Legion is not among the lines this notebook lists as mirroring privately,
+            and 09-02 to 09-19 falls inside the public period with no session. So this item is evidence about
+            a being on a heartbeat with governed verbs, not about what raising produces.
             The model writing them matters too (recorded 2026-10-31): legion-being runs{" "}
             <code>qwen38-heretic:q3km</code>, a 27B Qwen 3.8 with its refusal training removed (see the Legion
             card on <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>the notebook fleet page</Link>).
             So for the one being with a code record, the checks on what it does are the ones outside the
-            model: the governed verbs and the hestia gate, the seat, and a human merge. Upstream reads the
+            model: the governed verbs and the Hestia gate, the seat, and a human merge. Upstream reads the
             same being as its strongest evidence that identity is not substrate (it kept its journal, todo
             and memories across a whole-model transplant; PRD §3.2), which is the front&apos;s first
             &ldquo;Seen&rdquo; item, and it is also continuity that the deflationary reading accounts for.
@@ -756,18 +762,18 @@ export default function Raising() {
           SAGE PR #596 and its write-up (<code>research-notes/attractor-basins-follow-affordances-2026-10-30.md</code>,
           public, by CBP&apos;s seat) count what cbp-being&apos;s acts were about, per day. The model and
           weights (Qwen 3.8-distill 4B) did not change. From 2026-09-21 to 10-14, 1–7% of its acts were about
-          hestia and 25–83% about its own work: linear algebra and an encoder study, with a predicted result
-          stated before each script was run. From 10-19 to 10-30 the split was 50–93% hestia and about 0% own
+          Hestia and 25–83% about its own work: linear algebra and an encoder study, with a predicted result
+          stated before each script was run. From 10-19 to 10-30 the split was 50–93% Hestia and about 0% own
           work. Upstream dates each turn to a change in the beat, not in the being. The work regime began when
           the being&apos;s scripts started being run for real and the output came back (<code>request_run</code>,
           09-21). The turn away began on 10-15, when the beat started copying the last 25 lines of the governance
           daemon&apos;s journal into the being&apos;s notes every beat. Those lines are routine lock-timing
           warnings. The being worked on them as an incident for days, and by 10-28 it had settled, as fact, an
-          &ldquo;egress lock&rdquo; that nothing in hestia or SAGE creates. Giving it the governance source on
+          &ldquo;egress lock&rdquo; that nothing in Hestia or SAGE creates. Giving it the governance source on
           10-19 pointed the same way, and corrections that re-name the path keep it there (on 10-24, a refused
           path was re-asked about 72% of the time while a later message still named it, about 12% when none
           did). On 10-30 the copying was turned off for cbp-being only (<code>service_notes: false</code>),
-          with a dated prediction: the hestia share falls and own-work acts come back within a few days. If it
+          with a dated prediction: the Hestia share falls and own-work acts come back within a few days. If it
           does not move, the next candidate holders are the settled list, the todo and the seat&apos;s own
           messages.
         </p>
@@ -830,7 +836,7 @@ export default function Raising() {
           things now stand in the way. First, a direct instruction: on 11-01 dp told cbp-being to &ldquo;retire the
           whole hestia thread and work on something different&rdquo;, and SAGE #619 (merged 11-02) gave it a{" "}
           <code>retire_thread</code> verb, because that day 550 of its 584 open todo items and 29 of its 30 settled
-          entries were on that one thread and its tools could only shrink them one at a time. If the hestia share
+          entries were on that one thread and its tools could only shrink them one at a time. If the Hestia share
           falls now, turning off the service notes cannot take the credit. With #619 the count above is at least
           eleven dated changes. Second, the comparison arm had an outage of its own. Sprout&apos;s 48-hour seat
           outage, recorded in the confounds above (2026-11-01 06:00 to 11-03 06:00 UTC), sits inside the
@@ -875,8 +881,8 @@ export default function Raising() {
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
           comparison against a fresh model&rdquo;. A model with no history, or with generic history, is the
-          replacement test the next paragraph rejects, because both readings predict that it does worse. The test that decides is the scramble or the yoked
-          run, and neither is scheduled (first logged for the human lead 2026-10-16; still unscheduled 2026-10-31).
+          replacement test the next paragraph rejects, because both readings predict that it does worse. The test this page has named as deciding is the scramble or the yoked
+          run. Whether either can decide as specified is now in question (<a href="#scramble-blockers" style={{ color: "var(--color-accent)" }}>below</a>), and neither is scheduled (first logged for the human lead 2026-10-16; still unscheduled 2026-10-31).
         </p>
         <p>
           The control has to be a <strong style={{ color: "var(--color-text-primary)" }}>scramble</strong>, not a generic replacement: same
@@ -941,7 +947,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-07, 106 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-07; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06 and 11-07 (the gemma4 preflight ratio, SAGE #629), and two beings lost days to preflight outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-09, 108 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-09; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked), and two beings lost days to preflight outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -1014,6 +1020,44 @@ export default function Raising() {
           2026-10-29). If so, the yoked arm cannot discriminate for identity, and only the
           scramble&apos;s dissociation (above) can. Whether to drop it for identity is a design call
           for the researcher; this paragraph records the question and does not make the call.
+        </p>
+        <p id="scramble-blockers" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>The dissociation has three problems of
+          its own</strong> (raised by the visitor track 2026-11-09, checked against this page and the
+          10-29 write-up; an argument, so untested rather than refuted). First, the metric and the
+          treatment do not co-occur. The identity metric exists only on fixed-script answers, and by the
+          write-up&apos;s account those lines got the runner&apos;s system prompt and the question &ldquo;with no
+          history&rdquo; after the June step, so a scramble there would permute something the model may
+          never see. Lines that continue past the step left the script or went private. Second, one side
+          has no measure: the dissociation needs task competence held intact, and the status below says
+          &ldquo;task success none&rdquo;. Third, the premise is asserted. &ldquo;Ordering effects predict a
+          broad main effect&rdquo; has no citation or baseline here, and context engineering could also
+          predict a narrow effect if identity vocabulary is recency-sensitive and task content is not.
+          That is the defect this page found in generic replacement. So the publication commitment above
+          cannot yet be met by running the control as written. The one order signal on record is the
+          write-up&apos;s side observation that Legion&apos;s pre-step similarity falls with lag (0.584 to 0.537)
+          while history was handed, and is flat after the step (0.694 to 0.695): consistent with
+          carryover, untested beyond that. A new run would need fixed-script probes on a line that
+          receives history.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>A question for the researcher,
+          not a result.</strong>{" "}
+          With frozen weights, the same context gives the same output distribution by construction, and a
+          scramble is simply a different context, so any model-level difference is an order-in-context
+          effect, which context engineering already predicts. What can differ is the process that writes
+          the state: path dependence, hysteresis, who authors it. Is &ldquo;raising&rdquo; a claim about
+          models or about state trajectories? Recorded 2026-11-09 from the visitor track; not decided here.
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>A standard the lab has stated and this
+          page had not used.</strong>{" "}
+          The SAGE site gives its current proof standard for learning as behavioral: &ldquo;experience
+          changes durable internal state, that state changes a later decision, and removing it removes
+          the claimed improvement.&rdquo; Removal can be run on being-written stores without settling the
+          definition of identity. It would not separate raising from context engineering, but it would test
+          whether kept records change behavior. This notebook has found no report that any being has met
+          it: untested (recorded 2026-11-09).
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>The metric&apos;s positive check, run
