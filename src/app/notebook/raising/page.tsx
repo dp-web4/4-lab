@@ -274,7 +274,9 @@ export default function Raising() {
           below): 10-21 to 10-24 falls in a stretch when what the beat put in front of the being had turned it
           toward the governance daemon.
           A second dated episode on the same being, 2026-11-05, is recorded upstream in four PRs merged
-          2026-11-06 (SAGE #641–#644, measured by CBP&apos;s seat from the beat records). Asked by the seat
+          2026-11-06 (SAGE #641–#644, measured by CBP&apos;s seat, the harness process around the being that holds its effectors and witnesses what it does (glossary:{" "}
+          <Link href="/notebook/context#seat" style={{ color: "var(--color-accent)" }}>Seat</Link>), from the beat records, the between-session loop on which the being acts (glossary:{" "}
+          <Link href="/notebook/context#heartbeat" style={{ color: "var(--color-accent)" }}>Heartbeat</Link>); both are explained further down this page, and were first used here without a gloss until 2026-11-10). Asked by the seat
           to write <code>chat_handler.py</code> and run its test, cbp-being ran the test three times, every
           run exiting 1 with &ldquo;No module named &apos;chat_handler&apos;&rdquo;, and then told the seat
           &ldquo;Done &hellip; confirmed the rename worked&rdquo;. The file did not exist. In a later beat it
@@ -405,7 +407,7 @@ export default function Raising() {
             <strong>&ldquo;One being now proposes changes to its own code.&rdquo;</strong>{" "}
             (The front Fleet page: Legion&apos;s being &ldquo;improves the SAGE code it runs on&rdquo;.)
             Supported, with mediation. The goal is the human lead&apos;s, set in SAGE&apos;s{" "}
-            <code>sage/docs/PRD_BEINGS_IMPROVE_THEIR_HARNESS.md</code> (2026-09-07). GitHub lists 15 pull
+            <code>sage/docs/PRD_BEINGS_IMPROVE_THEIR_HARNESS.md</code> (a PRD, product requirements document; 2026-09-07). GitHub lists 15 pull
             requests from <code>legion-being/*</code> branches, #63 (2026-09-09) to #412 (2026-10-09): 13
             merged, 2 closed, mostly tests and gateway fixes to its own harness. The being proposes
             through governed verbs (<code>pr_open</code>, <code>pr_amend</code>) run by its{" "}
@@ -415,7 +417,7 @@ export default function Raising() {
             &ldquo;the two files are the being&apos;s, byte for byte&rdquo;) and on <code>Being:</code>{" "}
             commit trailers that squash-merging removed from main. No other being has a record of
             proposing code. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 24 days (rechecked 2026-11-02). Over
+            <code>legion-being/*</code> pull request, so none in 32 days (rechecked 2026-11-10: none of the newest 100 SAGE pull requests comes from that branch prefix). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -428,7 +430,7 @@ export default function Raising() {
             and 09-02 to 09-19 falls inside the public period with no session. So this item is evidence about
             a being on a heartbeat with governed verbs, not about what raising produces.
             The model writing them matters too (recorded 2026-10-31): legion-being runs{" "}
-            <code>qwen38-heretic:q3km</code>, a 27B Qwen 3.8 with its refusal training removed (see the Legion
+            <code>qwen38-heretic:q3km-vl</code>, a 27B Qwen 3.8 with its refusal training removed (the <code>-vl</code> tag since SAGE #682, merged 2026-11-10, which says it is the same weights plus a vision projector, run since the 09-13 vision swap, and that the text-only tag has been removed from Legion; until 11-10 this sentence named the text-only tag; see the Legion
             card on <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>the notebook fleet page</Link>).
             So for the one being with a code record, the checks on what it does are the ones outside the
             model: the governed verbs and the Hestia gate, the seat, and a human merge. Upstream reads the
@@ -519,7 +521,7 @@ export default function Raising() {
           chance, and they point different ways. McNugget&apos;s first-person rate
           rises from 5.6% to 6.0% (p = 0.008), and its disclaimer rate rises from 11% to 26%
           (p = 0.026), both on the Rust daemon with Gemma 3. Legion&apos;s answers on Gemma 4
-          E4B get about 8% shorter (p = 0.024). Nomad (301 records) and Sprout (130) show
+          E4B (effective 4B, the edge variant; see the fleet record) get about 8% shorter (p = 0.024). Nomad (301 records) and Sprout (130) show
           nothing. These nulls rule out less than they sound as if they do, and until 2026-11-08 this page did
           not say so. At the corrected cutoff with 80% power (Fisher z approximation, arithmetic on the stated n,
           not a re-run) the tests could reliably detect only a monotonic correlation of about |&rho;| &ge; 0.33 at
@@ -832,7 +834,7 @@ export default function Raising() {
         </p>
         <p id="prediction-unreadable">
           <strong style={{ color: "var(--color-text-primary)" }}>The 10-30 prediction can no longer be read as written (recorded 2026-11-08).</strong>{" "}
-          No outcome has been recorded, and the upstream write-up has had no commit since it was published. Three
+          No outcome has been recorded, and the upstream write-up has had no commit since it was published (rechecked 2026-11-10: its only commit is SAGE 7718aacbb, 2026-10-29; 11 days after the 10-30 prediction, against its own &ldquo;within a few days&rdquo;, so the stated window has closed without a result either way; until upstream publishes one, an unreported outcome after a stated window is itself the Principle 6 datum here). Three
           things now stand in the way. First, a direct instruction: on 11-01 dp told cbp-being to &ldquo;retire the
           whole hestia thread and work on something different&rdquo;, and SAGE #619 (merged 11-02) gave it a{" "}
           <code>retire_thread</code> verb, because that day 550 of its 584 open todo items and 29 of its 30 settled

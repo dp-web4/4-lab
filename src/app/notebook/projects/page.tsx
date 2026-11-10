@@ -286,7 +286,7 @@ pip install web4-trust
 #   web4-core = "0.4"
 #   web4-trust-core = "0.3"
 #   web4-policy = "0.1"     (first published 2026-10-15)
-# web4-policy is the R6 (Rules / Role / Request / Reference / Resource -> Result) law engine that Hub and Hestia both depend on (whitepaper
+# web4-policy is the R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) law engine that Hub and Hestia both depend on (whitepaper
 # section 11, web4 PR #917, merged 2026-10-17; checked in hub/Cargo.toml and hestia
 # core/Cargo.toml). It is the shared layer under both tools.
 # Both registries summarize web4-core as "trust-native infrastructure" (crates.io

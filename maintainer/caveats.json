@@ -1162,6 +1162,27 @@
       "pattern": "The test that decides is the scramble",
       "unless": "",
       "why": "The dissociation has three stated blockers (#scramble-blockers); whether it can decide as specified is open. Visitor P4 2026-11-09."
+    },
+    {
+      "id": "legion-last-pr-24-days",
+      "withdrawn": "2026-11-10",
+      "pattern": "none in 24 days \\(rechecked 2026-11-02\\)",
+      "unless": "",
+      "why": "Last legion-being/* PR is still #412 (2026-10-09): 32 days on 2026-11-10, none in the newest 100 SAGE PRs. Visitor P4 2026-11-10."
+    },
+    {
+      "id": "atp-metabolism-flagged-as-drift",
+      "withdrawn": "2026-11-10",
+      "pattern": "compute budgets\\)\\W{0,12}canon\\W{0,3}s ATP is an Allocation Transfer Packet",
+      "unless": "",
+      "why": "'Energy metabolism' is canon's own wording (CANONICAL_TERMS_v1 'Energy-based resource allocation unit'; web4-standard/GLOSSARY.md 'Bio-inspired energy metabolism'); the SAGE-site drift is 'bounded compute budgets', and 'unit of account' is the web4 README's. Visitor P3 2026-11-10."
+    },
+    {
+      "id": "legion-being-text-only-tag",
+      "withdrawn": "2026-11-10",
+      "pattern": "qwen38-heretic:q3km(</code>)?, a 27B Qwen 3\\.8",
+      "unless": "until 11-10 this (card|sentence) named",
+      "why": "SAGE #682 (merged 2026-11-10): Legion's being runs qwen38-heretic:q3km-vl; the text-only tag is removed. History lines naming the old tag stay. Visitor P3 2026-11-10."
     }
   ]
 }

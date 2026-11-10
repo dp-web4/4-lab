@@ -28,7 +28,7 @@ export default function ArcAgi3History() {
           positioning</strong> and should not be read as evidence that dp-web4 is near the top of the
           ARC-AGI-3 leaderboard today. Current competition-legal local-model work is well behind the leaders: SAGE&apos;s README says that
           continuation, &ldquo;the actual bet&rdquo;, &ldquo;scores 0.14 at best&rdquo; (the same frozen code draws
-          0.04&ndash;0.14) &ldquo;against a public leaderboard now above 11&rdquo;, and that the run recorded here
+          0.04&ndash;0.14) &ldquo;against a public leaderboard now above 11&rdquo; (the README gives no unit for either figure and this page cannot supply one; SAGE #681, merged 2026-11-10, cites 70.24 for Tufa Labs&apos; November 2026 second-place Seal release, on a scale the README figure is not stated to share), and that the run recorded here
           &ldquo;did not prove the local/edge SAGE thesis&rdquo;. Read 2026-11-08; figures are upstream&apos;s, not
           re-derived here.
         </p>

@@ -20,7 +20,7 @@ export default function Principles() {
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginBottom: "0.5rem" }}>
           If you would rather check something than read a list of beliefs: the
           code these principles produced is public, and one piece of it &mdash; the ARC-SAGE
-          harness &mdash; is MIT-0 (MIT No Attribution) and carries an
+          harness (SAGE, Situation-Aware Governance Engine, applied to the ARC-AGI-3 benchmark, Abstraction and Reasoning Corpus for Artificial General Intelligence, third generation) &mdash; is MIT-0 (MIT No Attribution) and carries an
           independently scored result; see{" "}
           <Link href="/notebook/arc-agi-3" style={{ color: "var(--color-accent)" }}>ARC-AGI-3</Link>.
           Until 2026-09-18 this sentence said the code was MIT-0 without qualification, which was

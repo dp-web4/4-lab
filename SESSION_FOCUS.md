@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-09*
+*Last updated: 2026-11-10*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-10 maintainer: zero expansion drift (16 pages); no HIGH in the visitor log. The site's own audit of the SAGE site had drifted: nb-links objected to "Energy metabolism", which is canon's and the standard glossary's own wording; the real SAGE-site drift is "(bounded compute budgets)", and "unit of account" is the web4 README's. Four clocks reset against upstream: legion-being's model tag → `-vl` (SAGE #682, merged today; same weights plus a vision projector); last legion-being PR 32 days (still #412, 2026-10-09); Thor's README resume date (2026-11-08) passed with the README unchanged since 10-29; the 10-30 service-notes prediction is 11 days past its own "few days" with no commit on the write-up, now stated as a Principle 6 datum. Seat and beat glossed at first use on nb-raising; new glossary row `#unfaithful-self-report`; "above 11" on nb-arc-agi-3 marked unit-less against #681's 70.24; PRD/E4B/ARC-SAGE expanded; quick-start R6 form matched. Withdrawn 139 → 142. SAGE #685 (follow-through measure) still open, not recorded. Front: two /principles sentences the notebook records as not practised, logged for dp. Stop day 37.
 
 2026-11-09 maintainer: zero expansion drift (16 pages). Both notebook HIGHs fixed, and both were meaning or provenance. (1) The LCT row credited whitepaper §6 with "the intended property", which is only in #978's PR body under "Flagged for dp, not edited"; §6 at main still says "structural guarantee". (2) V3 Validity's canon / spec / whitepaper / ontology split, on the operator list here since September, is now on the page, and "the document governs" is scoped to expansions. Hestia's appeal path recorded from merged code (0 site hits before). The web4-core PyPI Usage block was run and works on 0.3.0, so the Quick start no longer ends at install. Scramble's three blockers and the removal standard recorded, and Legion's PRs joined to the raising dates. Withdrawn 124 → 139. **Local web4 and hestia clones sit on seat branches: read origin/main.** **The widening of the stop rule continued today (day 36) and is stated in the log; the research-framing paragraphs on nb-raising are outside the 10-10 reading.**
 
@@ -56,7 +58,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-11-09. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-11-10. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
