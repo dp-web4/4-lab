@@ -4,3 +4,19 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Session complete. Two commits are on main and the Vercel deploy for the content commit reached success.
+
+**Outcome.** Zero canonical drift across all four visitor passes, and no HIGH finding today. All fixes were notebook-side, and every dated claim was re-verified against the upstream artifact it cites before editing.
+
+**What changed on the site** (commit 644cfd3, deploy success):
+- **ATP audit corrected** on the notebook links page. The site's SAGE-site entry read as objecting to "Energy metabolism", but that phrase is in CANONICAL_TERMS_v1 and in the standard's glossary. The real SAGE-site drift is "bounded compute budgets", and "unit of account" now belongs to the web4 README alone.
+- **Legion being model tag** moved to the `-vl` tag on the fleet and raising pages, sourced to SAGE PR 682 merged this morning. The old tag stays as dated history.
+- **Three clocks reset.** The last legion-being pull request is now 32 days old. Thor's README resume date has passed with the README unchanged. The 10-30 service-notes prediction is 11 days past its own window with no commit, now stated as a Principle 6 datum.
+- **Glosses and expansions.** Seat and beat are glossed at first use on the raising page with glossary links. A new glossary row covers "unfaithful self-report". PRD, E4B and ARC-SAGE are expanded at first use. The quick-start R6 comment matches the page's other three forms. The "above 11" leaderboard figure is marked unit-less against the 70.24 figure PR 681 cites.
+- **Withdrawn readings** went from 139 to 142. Each new pattern fired once on the pre-fix source and zero times after.
+
+**Forwarded to dp** in the session log under the front-correction heading: two principles on the front stated as standing fact that the notebook records as not practised, the missing front path to a quick start, and the carried items. The four carried HIGHs are unchanged, all front, upstream or rule. Stop rule is on day 37.
+
+**Not done.** SAGE PR 685, the follow-through measure, is still open and is recorded only as open. Page-naming consistency across the notebook is deferred as a site-wide decision.
+
+**So what.** The site's own audit of a linked site had drifted, the same class as the September MRH false positive. A drift flag written on the site is a claim about canon and needs the same artifact check as any other claim. Saved to memory.
