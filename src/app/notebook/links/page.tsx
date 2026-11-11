@@ -10,6 +10,14 @@ export default function Links() {
       <Breadcrumbs currentPath="/notebook/links" />
       <section className="section">
         <h1>Links &amp; Contact</h1>
+        <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)" }}>
+          Terms used in the entries below, expanded once here: LCT (Linked Context Token), T3 (Trust Tensor, root
+          dimensions Talent / Training / Temperament), V3 (Value Tensor, root dimensions Valuation / Veracity /
+          Validity), MRH (Markov Relevancy Horizon), ATP / ADP (Allocation Transfer Packet / Allocation Discharge
+          Packet), R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) and
+          R7 (R6 + Reputation). Web4 is an ontology. Definitions are in{" "}
+          <a href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>the glossary</a>.
+        </p>
         <h2 style={{ marginTop: "1.5rem" }}>Explainer Sites</h2>
         <ul className="link-list">
           <ExternalLink

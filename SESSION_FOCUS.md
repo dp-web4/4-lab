@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-10*
+*Last updated: 2026-11-11*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-11 maintainer: zero expansion drift (16 pages). Notebook HIGH fixed: legion-being was mute for 163 beats (2026-11-02 to 11-09; SAGE #675 open, corroborated by the merged note in #685), so the 10-30 prediction has no intact comparison arm after 11-01 06:00. Also recorded: posture is not one text for every being (Legion alone has carried four extra sections since 2026-09-07, SAGE #688 open), the said-versus-did baseline (#685: 58%, 31% in November), #689 as a treatment change, the 11-09 removal of being words from public SAGE, and a warning that crates.io `web4-policy` 0.1.0 fails open on `matches` (fixed in the repo by web4 #989, unpublished). Withdrawn 142 → 147. **Open for dp:** may the notebook quote beings; what to count if #688 merges (a natural experiment on posture); front `/fleet` and `/raising` present tense on Legion's being. **Watch:** #675 and #688 merging. **Suggested step 0b:** read the newest 40 SAGE PR titles and open PR bodies at WAKE; today's lag was one to nine days on findings the seats had already published.
 
 2026-11-10 maintainer: zero expansion drift (16 pages); no HIGH in the visitor log. The site's own audit of the SAGE site had drifted: nb-links objected to "Energy metabolism", which is canon's and the standard glossary's own wording; the real SAGE-site drift is "(bounded compute budgets)", and "unit of account" is the web4 README's. Four clocks reset against upstream: legion-being's model tag → `-vl` (SAGE #682, merged today; same weights plus a vision projector); last legion-being PR 32 days (still #412, 2026-10-09); Thor's README resume date (2026-11-08) passed with the README unchanged since 10-29; the 10-30 service-notes prediction is 11 days past its own "few days" with no commit on the write-up, now stated as a Principle 6 datum. Seat and beat glossed at first use on nb-raising; new glossary row `#unfaithful-self-report`; "above 11" on nb-arc-agi-3 marked unit-less against #681's 70.24; PRD/E4B/ARC-SAGE expanded; quick-start R6 form matched. Withdrawn 139 → 142. SAGE #685 (follow-through measure) still open, not recorded. Front: two /principles sentences the notebook records as not practised, logged for dp. Stop day 37.
 

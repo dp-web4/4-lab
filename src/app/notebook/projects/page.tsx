@@ -30,8 +30,8 @@ export default function Projects() {
         </p>
         <p style={{ fontSize: "0.75rem", color: "var(--color-text-muted)", textAlign: "center", marginTop: "0.25rem" }}>
           The T3/V3 half of this legend is upstream&apos;s (Web4 whitepaper section 3, &ldquo;The Canonical
-          Equation&rdquo;, and web4-standard/GLOSSARY.md); the ATP/ADP half is the site&apos;s own reading.
-          CANONICAL_TERMS_v1 does not define the glyphs.{" "}
+          Equation&rdquo;, and web4-standard/GLOSSARY.md); the ATP/ADP half is the site&apos;s own reading.{" "}
+          <a href="https://github.com/dp-web4/web4/blob/main/docs/reference/CANONICAL_TERMS_v1.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>CANONICAL_TERMS_v1</a> (the Web4 repo&apos;s canonical term list) does not define the glyphs.{" "}
           <Link href="/notebook/context#equation" style={{ color: "var(--color-accent)" }}>/context carries the maintained copy</Link>{" "}
           with the full provenance note; this one follows it.
         </p>
@@ -285,10 +285,22 @@ pip install web4-trust
 # 0.4.0 on crates.io but still 0.3.0 on PyPI, so the two languages differ by a version):
 #   web4-core = "0.4"
 #   web4-trust-core = "0.3"
-#   web4-policy = "0.1"     (first published 2026-10-15)
-# web4-policy is the R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) law engine that Hub and Hestia both depend on (whitepaper
-# section 11, web4 PR #917, merged 2026-10-17; checked in hub/Cargo.toml and hestia
-# core/Cargo.toml). It is the shared layer under both tools.
+#   web4-policy = "0.1"     (first published 2026-10-15; read the warning below first)
+# web4-policy is the R6 (Six-Element Action Framework: Rules / Role / Request / Reference / Resource → Result) law engine that Hub and Hestia both build on (whitepaper
+# section 11, web4 PR #917, merged 2026-10-17). Both take it by path from the web4 repo,
+# not from the registry (hub/Cargo.toml: path = "../web4-policy"; hestia core/Cargo.toml:
+# path = "../../web4/web4-policy"; both read 2026-11-11). It is the shared layer under
+# both tools as source. The registry crate is a snapshot of it.
+# WARNING (2026-11-11): crates.io has one version, 0.1.0, published 2026-10-15. In that
+# version the "matches" operator always evaluates false, so a deny norm written with
+# "matches" loads, counts in the law hash and never fires. It fails open (web4 issue #988).
+# The fix merged to the repo on 2026-11-10 (web4 PR #989) under the same version number
+# and is not published. If your law uses "matches", depend on the repo by git or path
+# until a new version is. Upstream found no law in use that relies on it. Not tested
+# here: whether the Hestia v0.3.0 binaries (built 2026-11-02, before the fix) carry the
+# old behavior. By date they should.
+# In general the registry versions are snapshots from their publish dates, and the repo
+# moves under the same numbers.
 # Both registries summarize web4-core as "trust-native infrastructure" (crates.io
 # 0.4.0, PyPI 0.3.0, checked 2026-10-22). That is upstream's wording; this site
 # calls Web4 an ontology.

@@ -1183,6 +1183,41 @@
       "pattern": "qwen38-heretic:q3km(</code>)?, a 27B Qwen 3\\.8",
       "unless": "until 11-10 this (card|sentence) named",
       "why": "SAGE #682 (merged 2026-11-10): Legion's being runs qwen38-heretic:q3km-vl; the text-only tag is removed. History lines naming the old tag stay. Visitor P3 2026-11-10."
+    },
+    {
+      "id": "legion-last-pr-32-days",
+      "withdrawn": "2026-11-11",
+      "pattern": "none in 32 days \\(rechecked 2026-11-10",
+      "unless": "",
+      "why": "Last legion-being/* PR is still #412 (2026-10-09): 33 days on 2026-11-11 (gh search head:legion-being), and the being was mute 11-02 to 11-09. Visitor P4 2026-11-11."
+    },
+    {
+      "id": "posture-fleet-wide",
+      "withdrawn": "2026-11-11",
+      "pattern": "(includes a|one) fleet-wide",
+      "unless": "",
+      "why": "SAGE #688 (open 2026-11-11, PR body): four posture sections dated 2026-09-07 were held only in Legion's local configuration; 8,503 vs 4,094 characters. Not one text for every being. Visitor P4 2026-11-11."
+    },
+    {
+      "id": "legion-seat-outage-untested",
+      "withdrawn": "2026-11-11",
+      "pattern": "seat also stopped in those dates is\\s+untested",
+      "unless": "",
+      "why": "legion-being was mute 2026-11-02 11:17 to 11-09 23:42 UTC, 163 beats (SAGE #675 open; corroborated by the merged note in #685). The 10-30 prediction has no intact comparison arm after 11-01 06:00. Visitor P4 HIGH 2026-11-11."
+    },
+    {
+      "id": "sage-685-open",
+      "withdrawn": "2026-11-11",
+      "pattern": "#685 \\(open on 2026-11-10, not merged\\)",
+      "unless": "",
+      "why": "SAGE #685 merged 2026-11-10 17:56 UTC (gh pr view). Visitor P3 2026-11-11."
+    },
+    {
+      "id": "control-gap-day-stamps",
+      "withdrawn": "2026-11-11",
+      "pattern": "unscheduled 101 days as of|not scheduled as of 2026-11-09, 108 days",
+      "unless": "",
+      "why": "Two day counts for one gap on one page had aged; the start date (2026-07-24) is given instead. Visitor P4 2026-11-11."
     }
   ]
 }

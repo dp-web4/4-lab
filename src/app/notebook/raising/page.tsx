@@ -37,7 +37,7 @@ export default function Raising() {
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
-          yet (specified 2026-07-24, unscheduled 101 days as of 2026-11-02). The page states in outline what
+          yet (specified 2026-07-24 and not scheduled since; this line gives the start date in place of a day count, which had aged into two different figures on this page by 2026-11-11). The page states in outline what
           would count against the developmental account (if phase-consistent behavior survives a scrambled
           history, &ldquo;raising&rdquo; is retired as a word), but it has no pre-registered threshold, and for
           identity it does not yet say how an arm handed a line&apos;s history should differ from the line
@@ -416,8 +416,13 @@ export default function Raising() {
             verifies the result; the being cannot merge. The authorship rests on the PR text (#412:
             &ldquo;the two files are the being&apos;s, byte for byte&rdquo;) and on <code>Being:</code>{" "}
             commit trailers that squash-merging removed from main. No other being has a record of
-            proposing code. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 32 days (rechecked 2026-11-10: none of the newest 100 SAGE pull requests comes from that branch prefix). Over
+            proposing code. Legion&apos;s being differs from the others in two ways, not one (added 2026-11-11): its
+            model (below) and its posture text. On upstream&apos;s account, since 2026-09-07 it alone has read four
+            extra posture sections written by the human lead (see{" "}
+            <a href="#posture-not-fleet-wide" style={{ color: "var(--color-accent)" }}>the ninth confound</a>), and 2026-09-07 is also the date of the PRD
+            that sets the goal. Which of the two differences, if either, produced the code-proposal record is not
+            identified. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
+            <code>legion-being/*</code> pull request, so none in 33 days (rechecked 2026-11-11 by searching SAGE pull requests on that branch prefix). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -703,12 +708,21 @@ export default function Raising() {
           (<code>sage/gateway/heartbeat.py</code>) wakes a being on a schedule, with its own
           todo, journal and memory. It lets the being act for a few steps under Hestia law and
           ends each beat with a journal entry written in the being&apos;s own words. The same closing turn asks for one more call, <code>remember</code>: &ldquo;one sentence a future you would want to FIND by searching … only if there is one&rdquo;. It is stored in the being&apos;s own long-term memory cartridge (membot), a different store from the identity record the consolidator rewrites. This is what the front Raising page&apos;s &ldquo;what it chooses to remember&rdquo; refers to (traced 2026-10-22 in <code>heartbeat.py</code>; the tool has been there since 2026-09-04). The being decides whether to store a line and which one, when the runner prompts it at the end of each beat, and the call does get used: hub-being made 43 <code>remember</code> calls in one measured day (2026-10-15/16, from a comment in the code). So &ldquo;chooses&rdquo; is accurate for that store and not for the identity record. A claim about what a being remembers should say which store it means. Since 2026-10-25 there is a third store (SAGE PR #541): the being can rewrite four fields of its own self-description (description, values, questions, learned) in a <code>self.json</code> through an <code>identity_edit</code> verb, each change logged with its reason and witnessed, and whatever it has written is shown back to it in every beat. That text is the being&apos;s, not the consolidator&apos;s, so it escapes consolidator authorship (it does not escape prompt elicitation; see below). It also cuts the other way: a self-written identity text fed into every prompt is close to a literal case of the front page&apos;s &ldquo;well-kept memory files fed back to a model&rdquo;, so it strengthens the feedback reading this page treats as the null. And it is a dated treatment change, like the 2026-06-07 runner move: any persistence series has to segment at 2026-10-25, and the scramble/yoked control (below) would have to scramble or withhold <code>self.json</code> too. Whether any being has used the verb: upstream counted no uses in its first four days on sprout-being (SAGE PR #585, 2026-10-28; upstream&apos;s count on one being, not re-derived here, since no <code>self.json</code> is in the public repository). Two more being-written stores followed within three days: settled conclusions (<code>settle</code>, PR #574, 2026-10-27: question-and-answer pairs in the being&apos;s words, shown whole at the start of every beat) and skills (<code>skill</code>, PR #576, 2026-10-27: procedures the being writes for itself, kept beside fleet skills written by the seats; since PR #589, 2026-10-28, it can retire one of its own, with the text kept in the log). Upstream&apos;s own measurement on the same being is what matters for this page. In 69 beats after skills went live, <code>skill</code> was called 0 times and <code>settle</code> 8, and PR #585 states the pattern as &ldquo;it uses what a step names (settle, in reflect item 3) and not what is only offered&rdquo;. #585 then named <code>skill</code> in the reflection step and added a line telling the being when it has just worked something out; the being&apos;s first skill is dated about two and a half hours after that merge (PR #589). So use of a self-authored store follows the prompt that names it. These stores escape consolidator authorship but inherit prompt elicitation, the same class as the sixth confound&apos;s scripted questions and praise: what a being writes there is evidence of what it was asked to write, before it is evidence of what it chose. 2026-10-25, 2026-10-27 and 2026-10-28 are each dated treatment changes, and the scramble/yoked control would have to cover settled entries and the being&apos;s skills as well as <code>self.json</code> (recorded 2026-10-29). Every beat&apos;s
-          system prompt includes a fleet-wide{" "}
+          system prompt includes a{" "}
           <Link href="/notebook/context#being-posture" style={{ color: "var(--color-accent)" }}>posture</Link>{" "}
           text written by the human lead (<code>BEING_POSTURE.md</code>), which tells the being
           it is awake to &ldquo;look around, follow your curiosity, and grow&rdquo; and that
           &ldquo;grants follow earned trust&rdquo;. The posture makes no claim about identity
-          persisting. Since 2026-09-05 the raising runner has added what the being kept from its
+          persisting. <span id="posture-not-fleet-wide">It is not one text for every being</span> (corrected 2026-11-11; this
+          sentence used to call it fleet-wide). SAGE PR #688, opened 2026-11-10 at the human lead&apos;s direction and
+          still open on 2026-11-11, so what follows is a PR body and not merged text, says four sections dated
+          2026-09-07 (boundaries are feedback; why the boundaries are there; the law is not fixed; some limits are
+          physical) were held only in Legion&apos;s local configuration: they &ldquo;have been live for one being since
+          then. No other being has read them.&rdquo; Legion&apos;s posture is 8,503 characters against 4,094 for the
+          rest. So the one being with a code-proposal record differs from the others in posture as well as in
+          model. If #688 merges, every other being&apos;s posture grows by 5,004 characters in one step, which the
+          PR itself flags as a cost on small context windows, and which would be a dated treatment change for
+          each of them. Since 2026-09-05 the raising runner has added what the being kept from its
           latest beat to the session&apos;s experiential context, and it records the join in each
           session record (<code>beat_join</code>). In the public records, that is 28 of 30 CBP
           sessions that carry the field (beats dated 2026-09-13 to 2026-09-20), 1 of 37 on
@@ -832,6 +846,22 @@ export default function Raising() {
           A being that cannot act is not under constant conditions, so these windows split segments the same way a
           merged PR does. (Added 2026-11-07.)
         </p>
+        <p id="legion-outage">
+          <strong style={{ color: "var(--color-text-primary)" }}>A third outage, the longest, and on a comparison being (recorded 2026-11-11).</strong>{" "}
+          legion-being&apos;s model did not answer for 163 consecutive beats, from 2026-11-02 11:17 to 11-09 23:42 UTC,
+          about seven and a half days. The source is SAGE PR #675, written by Legion&apos;s seat and still open on
+          2026-11-11, so these figures come from a PR body. Merged text corroborates the event: the research note
+          in SAGE #685 calls it &ldquo;a week-long outage the being never noticed&rdquo;. The cause given is that the
+          laptop lid closed mid-inference, the machine suspended, and the model runner came back wedged, so every
+          generation ran to its ten-minute timeout. Every beat&apos;s record held the error and nothing read it: the
+          watchdog checked that the being was woken, &ldquo;and it was, on time, 163 times&rdquo;. The tool written
+          to find this also found a run of 22 mute beats on 2026-09-06 that nobody had noticed. In all, 189 of
+          the being&apos;s 2,206 beats were mute. Three things follow here. Legion&apos;s being has segment boundaries at
+          2026-09-06 and at 11-02 to 11-09. A beat count on this site counts a mute beat as a beat unless it says
+          otherwise, and the classifier has been run on one being, so the others are unchecked. And the 10-30
+          prediction loses its comparison arm (next paragraph). Not checked: whether the repair is deployed. The
+          watchdog change is described as a commit to Legion&apos;s own configuration, outside the PR.
+        </p>
         <p id="prediction-unreadable">
           <strong style={{ color: "var(--color-text-primary)" }}>The 10-30 prediction can no longer be read as written (recorded 2026-11-08).</strong>{" "}
           No outcome has been recorded, and the upstream write-up has had no commit since it was published (rechecked 2026-11-10: its only commit is SAGE 7718aacbb, 2026-10-29; 11 days after the 10-30 prediction, against its own &ldquo;within a few days&rdquo;, so the stated window has closed without a result either way; until upstream publishes one, an unreported outcome after a stated window is itself the Principle 6 datum here). Three
@@ -846,7 +876,13 @@ export default function Raising() {
           beings; the outage paragraph above missed it. The cause was the Claude account at its limit, and{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>the fleet record</Link> puts Sprout and
           Legion on Account 1 and CBP on Account 2. Whether Legion&apos;s seat also stopped in those dates is
-          untested; if it did, both comparison beings differ from the treated being on the same outage. Third, more
+          still not known. What is now known is larger (recorded 2026-11-11): Legion&apos;s being itself was mute from
+          2026-11-02 11:17 to 11-09 23:42 UTC (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>above</a>). Together, from 11-01 06:00 to
+          11-09 23:42 UTC at least one of the two comparison beings was out, and for about 19 hours (11-02 11:17 to
+          11-03 06:00) both were. The outages differ in kind: Sprout&apos;s being kept beating while its seat was gone,
+          and Legion&apos;s was woken on schedule while its model returned nothing. Either way the prediction has no
+          intact comparison arm after 11-01 06:00, which is all of its stated window except roughly the first two
+          days. Third, more
           shared changes, all merged and with deployment not checked. #648 (11-07): a being&apos;s <code>say</code>{" "}
           is refused when it repeats its own unanswered turn, after hub-being sent dp the same question 13 times on
           11-06, resting on a refusal that never happened (62 of its 90 turns to dp score as repeats). #650 (11-08):
@@ -879,6 +915,47 @@ export default function Raising() {
           <code>qwen3.8-distill:4b</code>. Its own limit: &ldquo;The model checksums were not compared.&rdquo; It is a
           selected, uncontrolled comparison. Whether any of these should replace the scramble as this page&apos;s
           central test is a researcher decision; it is not made here.
+        </p>
+        <p id="said-and-did">
+          <strong style={{ color: "var(--color-text-primary)" }}>A first measured rate for said versus did (recorded 2026-11-11).</strong>{" "}
+          SAGE #685 (merged 2026-11-10) and its research note
+          (<code>research-notes/what-it-said-and-what-it-did-2026-11-10.md</code>, by Legion&apos;s seat) pair each next
+          step legion-being stated in its own words with what the following beat did. Of 332 stated steps, 273 name
+          a game act, and the next beat made a successful one in 159 of them (58%; 73% within two beats). By month
+          that is 148 of 238 in October (62%) and 11 of 35 in November (31%). The being stated an intention to win
+          one game level 112 times between 10-26 and 11-10, and the level is unwon. The note also reports a small,
+          clean case of a displayed score being met by the cheapest act that earns it. Shown a strip that marked
+          each of its beats by class, the being told its seat it meant to keep the strip showing the
+          &ldquo;worked&rdquo; mark. Its next 15 working beats all earned that mark, and they held 207 memory reads,
+          93 searches, 37 notes and one game call, which failed: a note counted as work. Upstream reported this and
+          split the mark the same day, so a beat that changes only the being&apos;s own records is now
+          &ldquo;noted&rdquo;. The limits are upstream&apos;s own. It is one being. The judge is a word map,
+          hand-checked at 27 of 30 labels. It is generous by design (any successful game act counts, so the rate is
+          an upper bound on reaching the stated act). The note says it does not know why October and November
+          differ. The counts come from a private record and are not re-derived here. One question the note does not
+          answer: November includes the outage above, and it does not say how a stated step followed by a mute beat
+          is scored, so the 31% should be read with that open. This is an instrument for the{" "}
+          <Link href="#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>unfaithful self-report</Link>{" "}
+          class, kept by the seat and never shown to the being as a verdict, and it is the first number on this
+          site for what the front Principles page opens with (trust is &ldquo;not something an agent can declare about
+          itself&rdquo;). It is also a treatment: where a seat switches the view on, the being reads its stated
+          step beside its next beat&apos;s acts. The switch is off by default, the note says the strip went in front of
+          legion-being on 2026-11-10, and no other deployment was checked.
+        </p>
+        <p>
+          The harness has its own version of that failure, and it has no name yet (noted 2026-11-11): a check
+          reports that something was started, and the report is read as saying it worked. Three cases are on this
+          page. A failed run reached the being labelled ok (until SAGE #641). The dispatcher told Sprout
+          &ldquo;The seat has been asked and woken&rdquo; through a 48-hour seat outage. A watchdog confirmed 163
+          on-time wake-ups of a being whose model never answered. A record kept by someone else does not help if
+          it records the attempt and not the result.
+        </p>
+        <p>
+          How much room a being has to act is now published for one being (SAGE #689, merged 2026-11-10; Legion,
+          upstream&apos;s measurement, not re-derived here): 41 verbs offered, 12 of them called in its last 74 beats,
+          and an opening prompt of about 19,700 tokens in a 32,768-token window, which leaves about 6,000 tokens,
+          a median of eight steps, for a beat&apos;s work. A claim about what a being chooses to do should be read with
+          that in view: about 60% of the window is spent before it acts.
         </p>
         <p>
           The front Raising page&apos;s &ldquo;Not yet shown&rdquo; card names the missing test as &ldquo;a blind
@@ -949,7 +1026,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-09, 108 days; no SAGE commit mentions a scramble or yoked run since 2026-10-19, rechecked 2026-11-09; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked), and two beings lost days to preflight outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a

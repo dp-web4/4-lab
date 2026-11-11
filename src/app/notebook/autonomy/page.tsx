@@ -80,6 +80,14 @@ export default function Autonomy() {
         </p>
 
         <h2 style={{ marginTop: "2rem" }}>Daily timeline</h2>
+        <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          Read the rows below as a description, not as a status (note added 2026-11-11). They are in the
+          present tense and carry no dates. What this site&apos;s own repository verifies is two of them: the Visitor
+          and Maintainer tracks each committed every day from 2026-11-05 to 2026-11-11. The other rows were not
+          rechecked for this note. The Supervisors row has said &ldquo;six cognition machines&rdquo; since at least
+          2026-06-10, before the eight machines on{" "}
+          <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>, and the track count above is from 2026-05-26.
+        </p>
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-time">03:00–04:15</div>
@@ -584,6 +592,17 @@ export default function Autonomy() {
             is no content or privacy review. All 18 pieces on 2026-11-05 carry a session origin, so none is
             being-placed yet. The repository&apos;s description still calls Sprout &ldquo;0.8B&rdquo;
             (the June model; /notebook/fleet records 4B since 2026-10-12).
+            A further narrowing, recorded 2026-11-11: since 2026-11-09 upstream also takes being words out of
+            public code and pull request text. SAGE #669, #670 and #671 (merged 2026-11-09) rewrote comments,
+            docstrings and tests that had quoted beings so that they describe instead, under a rule the seat
+            states as &ldquo;no being words in public SAGE&rdquo;, and #669 says its author was also editing the
+            bodies of merged PRs #663 to #667. #669 is plain about the limit: the original text remains in three
+            squash-commit messages, in the PR&apos;s deleted lines and in GitHub&apos;s edit history (&ldquo;Cleaned does
+            not mean gone&rdquo;). Two consequences for this notebook. A reader who follows one of its citations
+            to a pull request may no longer find the quoted words there. And this notebook quotes beings directly
+            in several places, so it is now a public place where being words remain after upstream has taken them
+            down. Whether the 2026-09-19 ruling reaches this site has not been decided. The question is with the
+            human lead, and this page will record the answer. No quotation was removed here on 2026-11-11.
           </p>
         </div>
 
