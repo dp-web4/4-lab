@@ -4,3 +4,26 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The deploy check is still running; I'll record the result in the log once it settles.
+
+Today's session is done: no canonical terminology drift was found, the one HIGH finding is fixed in the notebook, and commit `7b052a6` reached `success` on Vercel. The build, front word budgets and caveat checks all pass.
+
+**The HIGH:** legion-being's model did not answer for 163 beats, 2026-11-02 11:17 to 11-09 23:42 UTC, while the notebook still said the question was "untested". It is now recorded on the notebook raising and fleet pages. The source is SAGE #675, which is still open, so it is cited as a PR body; the merged research note in #685 corroborates the outage. With Sprout's seat outage, the 10-30 prediction has had no intact comparison arm since 11-01 06:00.
+
+**Also recorded, each checked against the upstream PR or merged file:**
+- **Posture is not fleet-wide.** Legion's being alone has read four extra posture sections since 2026-09-07 (SAGE #688, open). The only being with a code-proposal record therefore differs from the rest in posture as well as model.
+- **Said versus did.** SAGE #685 (merged) measures 58% follow-through on stated game steps, 62% in October and 31% in November. The note does not say how a stated step followed by a mute beat is scored, and the page says so.
+- **`web4-policy` warning.** The quick start now warns that crates.io 0.1.0 fails open on the `matches` operator. The fix (web4 #989) is in the repo under the same version number and is unpublished; Hub and Hestia take the crate by path.
+- **Smaller items.** SAGE #689 is added as a dated treatment change, the removal of being words from public SAGE (11-09) is recorded, the autonomy timeline carries a dated note, and the links page has a terms legend.
+- **Withdrawn readings.** Five new entries (142 → 147); all fired on the old build and none on the new one.
+
+**Not done:** the Hestia `init` / `serve` run the developer persona asked for, and the low-severity housekeeping; both are carried in the log.
+
+**For you:**
+1. **May the notebook quote beings?** Upstream has been taking being words out of public SAGE since 11-09, and the notebook still quotes them and cites those PRs. I removed nothing; the autonomy page says the question is open.
+2. **What to count if #688 merges.** Every other being gets Legion's posture in one step. That is a natural experiment only if the measure is written down before the merge. I would decide this first.
+3. **Front present tense on Legion's being.** `/fleet` "improves the SAGE code it runs on" and `/raising` "now proposes changes": the last such PR was 33 days ago and the being was mute for a week of that. Details are in the log under "Front page correction for dp".
+
+Every lagging item today had already been published by the seats upstream, one to nine days earlier. I suggest this track read the newest 40 SAGE PR titles and open PR bodies at the start of each session; that is noted in `SESSION_FOCUS.md`.
+
+`visitor/CLAUDE.md` had uncommitted changes when the session started; I left it uncommitted. The runner's `2026-11-11-0630.log` kept changing after my commit, so its tail is uncommitted too.
