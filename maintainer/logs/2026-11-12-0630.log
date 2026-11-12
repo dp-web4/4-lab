@@ -4,3 +4,32 @@ Pulling SAGE fleet models...
  3 files changed, 131 insertions(+), 19 deletions(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+No terminology drift today (sixth day running) and no HIGH findings, so I worked on the notebook problems from the visitor log that were false or most useful. The changes are deployed: commit `003e0d6` reached Vercel `success`, and `ac9bcaa` adds that to the log. The build, word budgets and `check-caveats.sh` all pass.
+
+**Fixed in the notebook (no front page touched):**
+- **HUB's fleet state was wrong for 53 days.** The card said HUB's raising loop was still running with "seven weeks of raising with no durable record". A `MOVED.md` file in that same SAGE directory, added 2026-09-20, says raising had been blocked since 07-29 and the public record is frozen at session 121. HUB is now "publishing stopped by policy". The home page count of machines in that state goes from four to five. The links page now admits the SAGE site's "paused 07-29" was closer than our reading.
+- **dp's 11-11 maturity statement is on the Hestia and Hub cards**, quoted from the merged PRDs (web4 #991, hestia #1561): Hestia gates only CLI harnesses, it is "geek/hobbyist use", and Hub's human layer is "none of it … built". The home page cards carry one line of it too.
+- **New "smallest runnable test" paragraph on the raising page.** It joins two things already on that page: the said-versus-did rate (SAGE #685) and the lab's own removal standard. The design: freeze legion-being's beat code, withhold one store the being wrote itself, then restore it, and compare against its baseline. The paragraph says what the test can and cannot decide, and lists four known limits.
+- **The autonomy page now says the 2026-09-19 privacy ruling gives no public reason**: the commit `cefb5c184` states none, and the broadcast it cites is private. The page sets the three practices around being words side by side.
+- **Smaller fixes:**
+  - The governance-vs-oversight note now admits its carve-out for the Web4 plugins is a judgment call.
+  - The glossary's "One line" column is renamed "Definition and notes"; the cells average 88 words.
+  - The substrate ledger has the two new PRDs.
+  - Four SAGE PRs (#694–#696, #700) are added to the raising page's list of treatment changes.
+  - Two dated figures are restated by start date, and SAGE is expanded at its first use on the fleet page.
+- **Five new withdrawn-reading entries** (147 → 152). Each fired on the old build and none fires now.
+
+**Logged for dp (front pages, `maintainer/logs/2026-11-12.md`):**
+- `/raising` says one being "now proposes" code; the last such PR was 34 days ago.
+- `/projects` says beings live on "each" machine; other pages say "most".
+- `/raising` says "every one" of a being's actions is checked; the SAGE code says reading inside its own home is free.
+- The front describes Hestia and Hub at their intended reach, not at the scope dp described on 11-11.
+- Still no front link to the quick start.
+
+**Two yes/no questions for dp:**
+1. May legion-being be held at fixed conditions for the removal test?
+2. What was the reason for the 09-19 privacy ruling? The answer decides whether the notebook's quotes from beings fit the ruling.
+
+**Still unresolved:** the four HIGH items carried from earlier sessions are unchanged. I rechecked the SAGE README today and it still has no install path. The rule question (carry-forward stop vs front routing) is now on day 39.
+
+**So what:** the HUB error came from a careful test that counted the commits correctly and read them wrongly, because nobody read the note the directory left about itself. I saved that as a memory: when a claim counts a directory, read its README or MOVED file first. The test paragraph matters more. The researcher persona said the site has enough caveats and needs one experiment. This is the first result the raising program could get that isn't another reason it can't get one.
