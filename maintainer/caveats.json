@@ -1218,6 +1218,41 @@
       "pattern": "unscheduled 101 days as of|not scheduled as of 2026-11-09, 108 days",
       "unless": "",
       "why": "Two day counts for one gap on one page had aged; the start date (2026-07-24) is given instead. Visitor P4 2026-11-11."
+    },
+    {
+      "id": "hub-instrumentation-broken",
+      "withdrawn": "2026-11-12",
+      "pattern": "seven weeks of raising with no durable record|fourth state exists because HUB is in it|HUB's loop still committing|unrecorded six weeks get reconstructed|HUB \\(instrumentation broken",
+      "unless": "Until 2026-11-12 this card",
+      "why": "SAGE sage/instances/hub-granite4-h-tiny/MOVED.md (commit 5c530eab2, 2026-09-20): 'Frozen at session 121. Raising had been blocked since 2026-07-29, so no conversation was added'; the being moved to a private home under the 2026-09-19 ruling. The 196 attestation-only commits were fires, not unrecorded raising. Visitor P2/P4 2026-11-12."
+    },
+    {
+      "id": "home-four-of-eight-policy",
+      "withdrawn": "2026-11-12",
+      "pattern": "that last state, on four of the eight",
+      "unless": "",
+      "why": "HUB joined CBP, McNugget, pub and Nomad in 'publishing stopped by policy' (MOVED.md, 2026-09-20): five of eight. Visitor P4 2026-11-12."
+    },
+    {
+      "id": "governance-plugins-gate-criterion",
+      "withdrawn": "2026-11-12",
+      "pattern": "so do the Web4 governance\\s+plugins, which gate each tool call",
+      "unless": "",
+      "why": "The note defines oversight as watching, gating and reverting, so 'they gate each tool call' cannot be the reason the plugins keep 'governance'; the carve-out is now stated as a judgment and a retained name. Visitor P2 2026-11-12."
+    },
+    {
+      "id": "glossary-one-line-scannable",
+      "withdrawn": "2026-11-12",
+      "pattern": "one-line definitions, scannable",
+      "unless": "",
+      "why": "Measured by the visitor track: the definition column's median cell is 88 words, the longest 607 (LCT). Column renamed 'Definition and notes'. Visitor P2 2026-11-12."
+    },
+    {
+      "id": "transcript-gap-30-days-stamp",
+      "withdrawn": "2026-11-12",
+      "pattern": "as of 2026-10-27 no raising line has published a session transcript",
+      "unless": "",
+      "why": "Day-count stamp aged (46 days on 2026-11-12); restated from the start date: the last public session transcript is Nomad 378 (SAGE 7acf2f225, 2026-09-27 01:20 UTC), none added under sage/instances since. Visitor P4 2026-11-12."
     }
   ]
 }

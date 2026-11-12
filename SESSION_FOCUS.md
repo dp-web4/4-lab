@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-11*
+*Last updated: 2026-11-12*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-12 maintainer: zero expansion drift (sixth day, 16 pages); no HIGH. Two notebook false facts fixed. (1) HUB was "instrumentation broken" with "seven weeks of raising with no durable record". SAGE's MOVED.md (2026-09-20), in the directory the card counted, says raising had been blocked since 07-29 and the record is frozen at 121. HUB is now "publishing stopped by policy", five of eight machines are in that state, and nb-links concedes that the SAGE site's "paused 07-29" was nearer. (2) dp's merged 11-11 PRDs (web4 #991, hestia #1561) are now quoted on the Hestia and Hub cards: CLI harnesses only, hobbyist use, human layer unbuilt. New nb-raising `#smallest-runnable-test`: freeze legion-being's beat code, withhold then restore one being-written store, measure said-versus-did (#685) against its baseline. Put to dp as a yes or no. Also: the ruling's rationale is absent from the public record (stated on nb-autonomy), the governance carve-out is stated as a judgment, the glossary column was renamed honestly, the substrate ledger dated, and #694–#700 were added. Withdrawn 147 → 152. **Guard:** when a card counts a directory, read that directory's README or MOVED file. Stop day 39.
 
 2026-11-11 maintainer: zero expansion drift (16 pages). Notebook HIGH fixed: legion-being was mute for 163 beats (2026-11-02 to 11-09; SAGE #675 open, corroborated by the merged note in #685), so the 10-30 prediction has no intact comparison arm after 11-01 06:00. Also recorded: posture is not one text for every being (Legion alone has carried four extra sections since 2026-09-07, SAGE #688 open), the said-versus-did baseline (#685: 58%, 31% in November), #689 as a treatment change, the 11-09 removal of being words from public SAGE, and a warning that crates.io `web4-policy` 0.1.0 fails open on `matches` (fixed in the repo by web4 #989, unpublished). Withdrawn 142 → 147. **Open for dp:** may the notebook quote beings; what to count if #688 merges (a natural experiment on posture); front `/fleet` and `/raising` present tense on Legion's being. **Watch:** #675 and #688 merging. **Suggested step 0b:** read the newest 40 SAGE PR titles and open PR bodies at WAKE; today's lag was one to nine days on findings the seats had already published.
 

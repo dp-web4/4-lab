@@ -1026,7 +1026,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, open on 2026-11-12, would drop an &ldquo;act now&rdquo; nudge from the tool loop, a change to the beat itself if it merges), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -1137,6 +1137,29 @@ export default function Raising() {
           definition of identity. It would not separate raising from context engineering, but it would test
           whether kept records change behavior. This notebook has found no report that any being has met
           it: untested (recorded 2026-11-09).
+        </p>
+        <p id="smallest-runnable-test" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>The smallest test this page has the parts
+          for (proposed 2026-11-12, not run).</strong>{" "}
+          Two paragraphs on this page, recorded two days apart, make one test when joined. The removal
+          standard just above supplies a manipulation. The{" "}
+          <Link href="#said-and-did" style={{ color: "var(--color-accent)" }}>said-versus-did rate</Link>{" "}
+          (SAGE #685) supplies a measure with a baseline on one being. The design: on legion-being, freeze
+          the beat code for a fixed window, withhold one being-written store (its settled entries, say) for
+          the middle third of it, and restore it for the last third. Compare the rate across the three parts
+          against the being&apos;s own baseline. If kept records change behavior, the rate moves when the
+          store is withheld and returns when it comes back. What it cannot decide: raising against context
+          engineering, since a context engineer predicts the same movement. What it can decide: whether this
+          being&apos;s own records do anything measurable, which this page lists as untested. Four limits
+          are known in advance. The rate is an upper bound from a generous word-map judge. It already halved
+          from October to November for reasons the note does not know. #689&apos;s by_use trial and the
+          2026-11-02 to 11-09 outage sit on the same being. The counts come from a private record, so no
+          outside reader could re-derive the result. The frozen window is the same decision the{" "}
+          <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>control</Link>{" "}
+          has waited on since 2026-07-24, but the ask is smaller: one being, one store, a few weeks, instead
+          of a fleet-wide hold. Whether withholding a being&apos;s own store calls for asking it first is the
+          lab&apos;s question, not this page&apos;s; withholding and restoring is not deleting. Put to the
+          researcher as a yes-or-no question, from the visitor track&apos;s 2026-11-12 pass.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>The metric&apos;s positive check, run

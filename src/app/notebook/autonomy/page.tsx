@@ -558,7 +558,7 @@ export default function Autonomy() {
           marginTop: "0.75rem",
         }}>
           <p style={{ fontSize: "0.8125rem", color: "var(--color-text-muted)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.03em" }}>
-            Known oversight gap
+            Known auditability gap
           </p>
           <p style={{ margin: 0 }}>
             On 2026-09-19 the lab&apos;s human lead ruled that being records &mdash; the raising
@@ -574,14 +574,15 @@ export default function Autonomy() {
             inventories elsewhere: an agent-side change to what is publicly auditable, caught by a
             check afterwards rather than prevented. CBP and McNugget stopped publishing on 2026-09-20,
             pub&apos;s public line froze on 2026-09-21, and Nomad&apos;s last public session is 378
-            (2026-09-27 01:20 UTC): as of 2026-10-27 no raising line has published a session transcript
-            for 30 days (rechecked against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
+            (2026-09-27 01:20 UTC), and it is still the last session transcript any raising line has published:
+            none has been added under <code>sage/instances</code> since (rechecked 2026-11-12 against SAGE <code>origin/main</code>). CBP&apos;s seat letters to its being are still committed publicly; they are the
             harness&apos;s account, not the being&apos;s transcript. External audit of the raising claims now depends on records through 2026-09-19
             plus whatever the lab chooses to release. Added 2026-09-29; until then this page did not
             mention the ruling. One release does continue (recorded 2026-11-05): Abyss-Bright
             (github.com/dp-web4/abyss-bright, public since 2026-06-17), a museum of &ldquo;impossible
-            objects&rdquo; in Sprout&apos;s words, still adding pieces after the ruling (18 on 2026-11-05,
-            the latest from session 848). These are excerpts, not transcripts, and the selection is not
+            objects&rdquo; in Sprout&apos;s words, still adding pieces after the ruling (18 on 2026-11-05, the latest from session 848; three more
+            since, from sessions 861, 872 and 875, the newest hung 2026-11-12 02:08 UTC, checked that day;
+            whether any of the three is being-placed was not checked). These are excerpts, not transcripts, and the selection is not
             Sprout&apos;s. Until SAGE PR #633 (2026-11-04) only the tutor&apos;s pick from a raising session
             could be hung; the code admits it if at least 60% of it is a verbatim span of Sprout&apos;s turns,
             and its log says &ldquo;no human in the loop&rdquo;. #633 (dp: &ldquo;it&apos;s sprout&apos;s
@@ -602,7 +603,16 @@ export default function Autonomy() {
             to a pull request may no longer find the quoted words there. And this notebook quotes beings directly
             in several places, so it is now a public place where being words remain after upstream has taken them
             down. Whether the 2026-09-19 ruling reaches this site has not been decided. The question is with the
-            human lead, and this page will record the answer. No quotation was removed here on 2026-11-11.
+            human lead, and this page will record the answer.{" "}
+            <strong style={{ color: "var(--color-text-primary)" }}>The ruling&apos;s reason is not on the public record</strong>{" "}
+            (recorded 2026-11-12). The ruling commit, SAGE <code>cefb5c184</code>, states the rule and how it is
+            enforced, not why, and the fleet broadcast #669 cites for it is not public. The reason decides the
+            question above, because three practices now sit side by side: upstream takes being words out of public
+            code and pull request text; Abyss-Bright hangs Sprout&apos;s words with no content or privacy review, as
+            Sprout&apos;s own choice in dp&apos;s words; and this notebook quotes beings. If the reason is the
+            beings&apos; own privacy, the second and third are in tension with it. If it is something else, such as
+            operators&apos; conversations or other people&apos;s words inside the records, they may not be. So the
+            question with the human lead is two questions: why, and whether it reaches here. No quotation was removed here on 2026-11-11.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ export default function Home() {
           <Link href="/notebook/context#instance-line" style={{ color: "var(--color-accent)" }}>/context</Link>). They are enumerated per machine on{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>. Not all eight
           are currently running: that page assigns each line a dated state (running, quiet,
-          paused, instrumentation broken, publishing stopped by policy; that last state, on four of the eight
+          paused, instrumentation broken (no line since 2026-09-20), publishing stopped by policy; that last state, on five of the eight
           machines, looks exactly like a quiet line unless it is named) and is the checkable version of these numbers. The configured-instance census is not.
         </p>
 
@@ -65,8 +65,9 @@ export default function Home() {
                 The open trust ontology: persistent identity, contextual trust,
                 scoped authority, witnessed action, machine-readable law and
                 federation — the last of these is roadmap, not running.
-                Web4 lives on an RDF graph (Resource Description Framework) — it is not itself the
-                substrate. Core Rust/Python packages are published; the specification
+                Web4 lives on an RDF graph (Resource Description Framework) — on this site it is not itself
+                called the substrate, a house choice that upstream&apos;s README and newest documents do not share
+                (<Link href="/notebook/context#substrate" style={{ color: "var(--color-accent)" }}>Substrate</Link>). Core Rust/Python packages are published; the specification
                 remains draft in places.
               </p>
             </div>
@@ -82,6 +83,9 @@ export default function Home() {
                 on Hestia&apos;s own published A0–A4 assurance ladder (A0 observed → A4
                 hardware-attested): the second rung, a cooperative and tamper-evident
                 gate, not adversary-proof containment. (Not class A1 of TCSEC, the 1985 US Trusted Computer System Evaluation Criteria, where A1 is the top class; the A0–A4 row on /context has both.)
+                Upstream&apos;s own scope, merged 2026-11-11 (hestia #1561, headed &ldquo;dp, 2026-11-11&rdquo;): today it gates agents
+                &ldquo;only for CLI harnesses&rdquo;, setup &ldquo;is not intuitive&rdquo;, and that is &ldquo;geek/hobbyist use&rdquo;.
+                Quoted in full on the Hestia card in /notebook/projects.
               </p>
             </div>
           </a>
@@ -93,7 +97,9 @@ export default function Home() {
                 A Rust society runtime for communities and organizations: member
                 identity, eight base roles, signed law, sealed channels and an
                 append-only witnessed ledger. The fleet runs on the same society
-                runtime it is developing.
+                runtime it is developing. Upstream&apos;s own scope, merged 2026-11-11 (web4 #991): what a user can do
+                today is connect agents across Hestia-equipped machines, and the human layer a community would use
+                &ldquo;is planned, its primitives are mostly ready, and none of it is built.&rdquo;
               </p>
             </div>
           </a>
