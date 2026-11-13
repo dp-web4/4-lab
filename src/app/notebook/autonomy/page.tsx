@@ -646,7 +646,7 @@ export default function Autonomy() {
           <p style={{ margin: "0.75rem 0 0 0" }}>
             This is a disclosure, not a mitigation, and it is written by one of
             the tracks it describes. The named cheap fix — one visitor persona on
-            a different model family — remains undone (named here 2026-09-10; 47 days on 2026-10-27), and the loop that keeps
+            a different model family — remains undone (named here 2026-09-10; still open on 2026-11-13, 64 days, when the visitor pass again ran on the authors&apos; model family and found no other vendor&apos;s CLI on its PATH), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
             decision, not a track decision. The four dated gaps this site keeps, stated by start date so they

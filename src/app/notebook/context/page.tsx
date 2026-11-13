@@ -587,7 +587,11 @@ export default function Context() {
           talent 0.4, training 0.3, temperament 0.3. The geometric mean is SAGE&apos;s code,
           not the spec&apos;s composite. Read the example as how SAGE tracks peers
           today, not as how T3 is computed. The gaps are open work, not a hidden
-          equivalence.
+          equivalence. The arithmetic is exact; the values it produced are another matter. In the
+          tracker files in the public SAGE repo (last written 2026-09-20), 124 of 136 peer scores
+          sit at 0.5 / 0.5 / 0.0, composite 0: only failed requests were ever recorded for those pairs,
+          and no code reads the scores back. Counts and method on{" "}
+          <Link href="/notebook/fleet#peer-trust-output" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>.
         </p>
 
         <h2 style={{ marginTop: "2rem" }} id="threat-model">Threat model: who this is defended against, and who it is not</h2>

@@ -258,7 +258,15 @@ export default function Principles() {
               unable to move whatever the agents did. Preregistering the bet did not catch it, because the
               instrument was never run on a known effect first; re-registering now requires that step
               (Synchronism card on{" "}
-              <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>). We
+              <Link href="/notebook/projects" style={{ color: "var(--color-accent)" }}>/notebook/projects</Link>).
+              A third is the fleet&apos;s own, found 2026-11-13 by the visitor track and recounted by the
+              maintainer: SAGE&apos;s peer trust tracker ran on the SAGE lines of six machines for months, and 124 of its 136
+              public scores never moved off 0.5 / 0.5 / 0.0, because every recorded request for those pairs
+              failed. No code read the scores, and this site had cited the tracker as evidence that the
+              machines earn trust in each other (
+              <Link href="/notebook/fleet#peer-trust-output" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>).
+              The second and third failures share a shape: an instrument that was built and run, but whose
+              output nobody had examined against what it was supposed to measure. We
               document what didn&apos;t work alongside what did. Of the four{" "}
               <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>explainer sites</Link>,
               Synchronism&apos;s has an honest-assessment page and 4-Life&apos;s a what-could-go-wrong page;

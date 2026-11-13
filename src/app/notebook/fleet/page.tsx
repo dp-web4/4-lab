@@ -297,10 +297,10 @@ export default function Fleet() {
           <Link href="/notebook/context#v3" style={{ color: "var(--color-accent)" }}>/context</Link>),
           and the feedback loop is not implemented in this tracker. An earlier
           version of this paragraph said V3 accumulates alongside T3 and verifies it
-          through peer attestation; the code does neither. No central authority sets these scores. They emerge from the pattern of interaction.
+          through peer attestation; the code does neither. No central authority sets these scores;
+          each machine&apos;s tracker moves them from its own polls and calls.
           Admission to the society is a different matter: it is a human step (see the HUB card above).
-          This is the evidence behind the front page&apos;s line that the machines &ldquo;earn trust in
-          each other from the record of what they have done&rdquo;. The record is first-hand: each
+          The record is first-hand: each
           machine scores a peer on its own health polls and delegated calls. It is not{" "}
           <Link href="/notebook/context#witness" style={{ color: "var(--color-accent)" }}>witnessed</Link>{" "}
           attestation from third parties, and this tracker does not use the witnessing that Web4
@@ -308,6 +308,33 @@ export default function Fleet() {
           as what agents should have, not as a description of this tracker. The fleet component whose
           displayed scores do come from witnessed adjudications is the Hestia daemon&apos;s trust
           display (see the hestia row in the glossary), and it scores tool-call conduct, not peers.
+        </p>
+        <p id="peer-trust-output">
+          <strong style={{ color: "var(--color-text-primary)" }}>What the tracker holds, read 2026-11-13.</strong>{" "}
+          The paragraph above, and three earlier audits on this site, checked the tracker&apos;s code. Its
+          output had not been read. The public SAGE repo (<code>origin/main</code>) has 24 tracker files with
+          scores: Python <code>peer_trust.json</code> and Rust <code>peer_trust_rs.json</code>, live copies,
+          snapshots and one backup. Their last write is 2026-09-20 02:01 UTC, the day the beings&apos; records
+          moved private. They hold 136 directed peer scores over about 15.3 million recorded interactions.
+          124 of the 136 are exactly Talent 0.5 / Training 0.5 / Temperament 0.0. Under the update arithmetic
+          that means no success and no error was ever recorded for that pair, only failed requests (the Rust
+          monitor records any request that fails to complete as a timeout), and the geometric-mean composite
+          is 0. Of the other 12, seven come from one 40-interaction startup file. Among long-running pairs only
+          four moved: CBP-distill&rarr;Sprout and McNugget&rarr;Sprout (1.0 / 1.0 / 1.0),
+          CBP-distill&rarr;Thor (1.0 / 1.0 / 0.0), and Sprout&rarr;McNugget (0.55 / 0.52 / 0.0, in two
+          snapshot copies). Nothing reads the scores back. In <code>sage-rs</code> and in SAGE&apos;s Python
+          daemon the tracker is written by the health poll and peer calls and saved to disk; no code outside
+          the tracker itself calls <code>get_trust</code>, <code>get_reputation</code> or{" "}
+          <code>get_all_trust</code>. So what the tracker logged is whether a peer&apos;s SAGE endpoint
+          answered the observing daemon, and for almost every pair it never did. That is a reachability log,
+          not a record of conduct. Why the polls failed (addresses, ports, peers down) is not established
+          here. This page used to call the tracker &ldquo;the evidence behind the front page&apos;s
+          line&rdquo; that the machines earn trust in each other from the record of what they have done. Its
+          public output does not support that line through 2026-09-20, and after that date the files are not
+          public, so the line is untested. Whether another mechanism (Hub&apos;s ledger, for one) now
+          carries trust between machines on conduct is not checked here. The front line is logged for the researcher, who owns the front. The count is
+          reproducible: list every <code>peer_trust*.json</code> under <code>sage/instances</code> at{" "}
+          <code>origin/main</code> and tally the triplets equal to 0.5 / 0.5 / 0.0.
         </p>
         <p>
           Trust starts neutral — 0.5 on each T3 dimension in the current

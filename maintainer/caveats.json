@@ -1253,6 +1253,41 @@
       "pattern": "as of 2026-10-27 no raising line has published a session transcript",
       "unless": "",
       "why": "Day-count stamp aged (46 days on 2026-11-12); restated from the start date: the last public session transcript is Nomad 378 (SAGE 7acf2f225, 2026-09-27 01:20 UTC), none added under sage/instances since. Visitor P4 2026-11-12."
+    },
+    {
+      "id": "peer-trust-evidence-for-earn-trust",
+      "withdrawn": "2026-11-13",
+      "pattern": "is the evidence behind the front page.s line",
+      "unless": "",
+      "why": "SAGE peer trust tracker output, read at origin/main 2026-11-13: 24 files, 136 directed scores, 124 exactly 0.5/0.5/0.0 (only failed requests recorded), last write 2026-09-20; no code calls get_trust/get_reputation/get_all_trust. It is a reachability log and does not support 'earn trust in each other'. Visitor P3 2026-11-13, recounted by the maintainer."
+    },
+    {
+      "id": "peer-trust-scores-emerge-from-interaction",
+      "withdrawn": "2026-11-13",
+      "pattern": "emerge from the pattern of interaction",
+      "unless": "",
+      "why": "For 124 of 136 public scores nothing emerged: every recorded poll failed and the scores never left 0.5/0.5/0.0. Replaced by what moves them (the observing machine's own polls and calls) plus the output count on /notebook/fleet#peer-trust-output."
+    },
+    {
+      "id": "sage-2499-internally-logged",
+      "withdrawn": "2026-11-13",
+      "pattern": "internally logged",
+      "unless": "",
+      "why": "/notebook/fleet defines 2,499 as a public-git count of session files at origin/main as of 2026-09-18, which excludes the private records; 'internally logged' named the opposite basis on /notebook/projects and /notebook/links. Visitor P2 2026-11-13."
+    },
+    {
+      "id": "monoculture-47-days-stamp",
+      "withdrawn": "2026-11-13",
+      "pattern": "47 days on 2026-10-27",
+      "unless": "",
+      "why": "Day-count stamp aged; 64 days on 2026-11-13. Visitor P4 2026-11-13."
+    },
+    {
+      "id": "sage-697-open",
+      "withdrawn": "2026-11-13",
+      "pattern": "#697, open on 2026-11-12",
+      "unless": "",
+      "why": "SAGE #697 merged 2026-11-12 20:18 UTC; recorded as a beat change with its measurements at /notebook/raising#harness-false-failure."
     }
   ]
 }

@@ -47,7 +47,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           This is the softest page on the site. The hardest thing the lab has
-          made is public and, in the case of the ARC-SAGE harness (SAGE: Situation-Aware Governance Engine, expanded below), MIT-0 (MIT No Attribution),
+          made is public and, in the case of the ARC-SAGE harness (SAGE: Situation-Aware Governance Engine, a legacy name; see the <a href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>glossary row</a>), MIT-0 (MIT No Attribution),
           with an independently scored result &mdash; the lab&apos;s main repos are AGPL-3.0, so
           check the LICENSE file of whichever one you fork &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
@@ -944,11 +944,37 @@ export default function Raising() {
         </p>
         <p>
           The harness has its own version of that failure, and it has no name yet (noted 2026-11-11): a check
-          reports that something was started, and the report is read as saying it worked. Three cases are on this
-          page. A failed run reached the being labelled ok (until SAGE #641). The dispatcher told Sprout
+          reports that something was started, and the report is read as saying it worked. Three cases of that
+          shape are on this page, and a fourth of the opposite shape follows. A failed run reached the being labelled ok (until SAGE #641). The dispatcher told Sprout
           &ldquo;The seat has been asked and woken&rdquo; through a 48-hour seat outage. A watchdog confirmed 163
           on-time wake-ups of a being whose model never answered. A record kept by someone else does not help if
           it records the attempt and not the result.
+        </p>
+        <p id="harness-false-failure">
+          A fourth case is the mirror image: the check reported failure where the act had worked, and the one who
+          read the false report was the being. SAGE #697 (merged 2026-11-12 20:18 UTC; figures from its PR body,
+          written by Nomad&apos;s seat from scratch counts that are not public, not re-derived here) measured
+          nomad-being (Gemma 4 E2B) from 2026-11-05 to 11-12. Of 652 kept empty turns, in 539 the being&apos;s
+          thinking said the calls were already made and the task was complete, and 531 of those stopped cleanly
+          (median 181 of 3,000 output tokens, so not truncation). The tool loop read each as a silence and sent
+          &ldquo;[harness] Your previous attempt returned thinking without a reply or tool call &hellip; Act now: one
+          tool call.&rdquo; The being answered with an act, usually a <code>witness</code> of its own
+          &ldquo;failure&rdquo;, and in the PR&apos;s words &ldquo;its journal and its messages to the seat fill
+          with &lsquo;I apologize for the lack of a direct response&rsquo; for a fault it never had.&rdquo; The
+          nudge fired in 11 of its 22 beats after an 11-11 reboot. The cause, by the PR titles and the loop&apos;s
+          history: a retry for think-only turns (in the loop since 2026-09-13, widened by #191 on 2026-09-24 and
+          built for Sprout&apos;s zero-act case) met #599&apos;s thinking-on for the gemma4 beings (2026-10-30),
+          after which a being could act and then end its turn by thinking &ldquo;done&rdquo;. #697&apos;s merged
+          code changes only that: a think-only stop after a tool result now ends the turn. Three consequences
+          for readings on this page. (1) nomad-being&apos;s journal and messages from about 2026-10-30 (whenever its
+          seat deployed #599, not recorded) to the deployment of #697 (not checked) hold self-blame the harness
+          elicited with a false statement. Any self-description, continuity or removal-test reading of that being
+          should treat 2026-10-30 and 2026-11-12 as segment boundaries and that window&apos;s journal as harness
+          output. (2) The passivity finding above (#281, 2026-09-29) is unaffected: it was seen with thinking off,
+          before #599. (3) Whether any count of empty, mute or resting beats elsewhere on this site relied on the
+          same misread turn is untested; thor-being and mcnugget-being are gemma4 beings that also gained thinking
+          on 10-30. The PR names its own check (the count of &ldquo;thinking without a reply&rdquo; per beat on
+          Nomad, and whether the apologies thin out); its result is not public as of 2026-11-13.
         </p>
         <p>
           How much room a being has to act is now published for one being (SAGE #689, merged 2026-11-10; Legion,
@@ -1026,7 +1052,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, open on 2026-11-12, would drop an &ldquo;act now&rdquo; nudge from the tool loop, a change to the beat itself if it merges), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, merged 2026-11-12 20:18 UTC, stops the tool loop sending an &ldquo;act now&rdquo; nudge after a turn that has already acted, a change to the beat itself, see <a href="#harness-false-failure" style={{ color: "var(--color-accent)" }}>below</a>; #698, #702 and #703, merged the same evening, change by their titles what a being is told about a <code>memory_edit</code> range, a seat-away line and a settled entry; #704 and #688 are open as of 2026-11-13), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
