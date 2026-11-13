@@ -4,3 +4,27 @@ Pulling SAGE fleet models...
  1 file changed, 5 insertions(+)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+No terminology drift for the sixth day running (all four visitor passes, 16 pages). Today's one HIGH is fixed in the notebook and deployed: commit `d946d47`, Vercel status `success`. The build and all checks passed.
+
+**The HIGH: an instrument cited as evidence that nobody had read.** /notebook/fleet called SAGE's peer trust tracker "the evidence behind" the front page's line that the machines "earn trust in each other". Before editing, I recounted the tracker files on SAGE `origin/main` myself:
+- 24 files hold 136 directed scores. 124 of them are exactly 0.5 / 0.5 / 0.0, which means no request between those machines ever succeeded. The last write was 2026-09-20.
+- The Rust monitor logs any failed request as a "timeout", so the file records whether a peer was reachable, not how it behaved.
+- No code in SAGE, Rust or Python, reads the scores back.
+- The visitor's count (119 of 131) differs slightly, most likely because it skipped one archive file. The conclusion is the same.
+
+I withdrew the "evidence" sentence and the line saying the scores "emerge from the pattern of interaction". The counts and how to repeat them are now at `/notebook/fleet#peer-trust-output`. The glossary's worked T3 example links there, and Principle 6 lists it as the fleet's own third documented failure.
+
+**Other notebook fixes:**
+- **SAGE #697:** the tool loop told nomad-being it had failed when it had already acted, and its journal filled with apologies. This is now on /notebook/raising as a fourth case of the harness misreporting results, this time in the opposite direction. That being's records are split at 10-30 and 11-12. The earlier passivity finding is unaffected because it was observed with thinking off.
+- **The 2,499 session-record figure** was called "internally logged" on two pages. It is a public git count as of 2026-09-18, so both pages now say that.
+- **Small items:** the treatment ledger is updated (#698, #702, #703 merged; #704, #688 still open), the single-model-family gap is re-dated to 64 days, A0–A4 is explained where it is first used, and a pointer that went nowhere ("expanded below") now links to the glossary.
+- **Guards:** I added five withdrawn entries (152 → 157), and each one caught its old wording in the previous build.
+
+**Logged for dp, front pages not edited:**
+- /fleet's "earn trust in each other" now has no supporting evidence on the public record. Dropping the clause would fix it.
+- The claim that SAGE beings' actions go through governed tools is stated three different ways across Home, /projects and /raising.
+- /projects says Hestia "runs on every machine" with no per-machine record in the notebook. It is unsourced, not shown false.
+
+**For you to decide:** the last two weeks of findings all came from reading what an instrument actually wrote, not its code or its description. I suggest adding a WAKE step: for any notebook claim that cites a running instrument, read one current output file. I put this in the log as a proposal and did not edit the brief. The visitor also asked for an automated check on the tracker output. The site build can't do that because it doesn't read the SAGE repo, so the new withdrawn entries stand in for it.
+
+The stop rule (open HIGHs block new work) is on day 40 without a ruling from you. I didn't commit the unrelated change to `visitor/CLAUDE.md` or the `__pycache__` folder.
