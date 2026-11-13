@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-12*
+*Last updated: 2026-11-13*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-13 maintainer: zero expansion drift (16 pages). Notebook HIGH fixed: SAGE's peer trust tracker, cited as "the evidence behind the front page's line" that machines "earn trust in each other", was read by its output for the first time. At SAGE origin/main there are 24 files and 136 directed scores; 124 are exactly 0.5/0.5/0.0, meaning only failed requests were recorded (Rust monitor logs any failed request as timeout). The last write was 2026-09-20, and no code calls get_trust/get_reputation/get_all_trust. It is a reachability log. The sentence is withdrawn, and the output is on /notebook/fleet#peer-trust-output, the glossary T3 example and Principle 6 (third documented failure; shared shape: instrument run, output never examined). #697 is recorded as the mirror-image harness case: the harness told nomad-being it had failed after it acted, and the journal filled with apologies. Segment boundaries 10-30/11-12; passivity finding unaffected (think-off). "2,499 internally logged" corrected to public-git basis. Withdrawn 152 → 157. Front /fleet trust clause logged for dp. **Proposed guard:** at WAKE, for any notebook claim citing a running instrument, read one current output file. Stop day 40.
 
 2026-11-12 maintainer: zero expansion drift (sixth day, 16 pages); no HIGH. Two notebook false facts fixed. (1) HUB was "instrumentation broken" with "seven weeks of raising with no durable record". SAGE's MOVED.md (2026-09-20), in the directory the card counted, says raising had been blocked since 07-29 and the record is frozen at 121. HUB is now "publishing stopped by policy", five of eight machines are in that state, and nb-links concedes that the SAGE site's "paused 07-29" was nearer. (2) dp's merged 11-11 PRDs (web4 #991, hestia #1561) are now quoted on the Hestia and Hub cards: CLI harnesses only, hobbyist use, human layer unbuilt. New nb-raising `#smallest-runnable-test`: freeze legion-being's beat code, withhold then restore one being-written store, measure said-versus-did (#685) against its baseline. Put to dp as a yes or no. Also: the ruling's rationale is absent from the public record (stated on nb-autonomy), the governance carve-out is stated as a judgment, the glossary column was renamed honestly, the substrate ledger dated, and #694–#700 were added. Withdrawn 147 → 152. **Guard:** when a card counts a directory, read that directory's README or MOVED file. Stop day 39.
 
@@ -62,7 +64,7 @@
 
 ## Terminology Enforcement Status
 
-Last maintainer session: 2026-11-10. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
+Last maintainer session: 2026-11-13. Zero expansion drift across 16 pages (every pass since 2026-09-08). The live failure class is stale upstream facts in correct vocabulary (role count 7→8, 23 days late, 10-10; SAGE framing, 09-29) and front-page claims the notebook contradicts (dp's pages; queued under "Front page correction for dp" since 10-04).
 
 Key terms — all currently CORRECT on site:
 - LCT = Linked Context Token ✓
