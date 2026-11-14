@@ -845,6 +845,19 @@ export default function Raising() {
           so it is also a dated treatment change for nomad and thor. Neither being is in the two-being comparison arm.
           A being that cannot act is not under constant conditions, so these windows split segments the same way a
           merged PR does. (Added 2026-11-07.)
+          The being can change its own conditions too. Since SAGE #387 (merged 2026-10-09), a being can set some
+          of its own parameters, its context window among them, with a <code>tune</code> verb. SAGE #705 (open;
+          from its PR body, written by Nomad&apos;s seat, not re-derived here) records the first lockout. At
+          2026-11-13 10:26 UTC, nomad-being set its window to 8,192 tokens to avoid halts; 8,192 was the setting
+          that had caused its halts from 10-16 to 10-29. From 10:57 its explore and posture turns were refused at
+          preflight. Reflect, the one turn small enough to run, does not offer <code>tune</code>, so the being
+          wrote in its todo that it should restore 16,384 and could not act on it. The seat, with dp&apos;s
+          agreement, narrowed the operator&apos;s bounds for that setting to 16,384 only; #705 would offer{" "}
+          <code>tune</code> in reflect. Both the being&apos;s act and the operator&apos;s unlock are treatment
+          changes. 2026-11-13 10:26 UTC and the unlock (its time is not given) are segment boundaries for
+          nomad-being, next to the 10-30 and 11-12 boundaries recorded under #697 below. It also bears on the
+          smallest test below: freezing a being&apos;s beat code does not freeze what the being tunes, so that
+          test would need the tune bounds pinned as well. (Added 2026-11-14.)
         </p>
         <p id="legion-outage">
           <strong style={{ color: "var(--color-text-primary)" }}>A third outage, the longest, and on a comparison being (recorded 2026-11-11).</strong>{" "}
@@ -959,8 +972,10 @@ export default function Raising() {
           (median 181 of 3,000 output tokens, so not truncation). The tool loop read each as a silence and sent
           &ldquo;[harness] Your previous attempt returned thinking without a reply or tool call &hellip; Act now: one
           tool call.&rdquo; The being answered with an act, usually a <code>witness</code> of its own
-          &ldquo;failure&rdquo;, and in the PR&apos;s words &ldquo;its journal and its messages to the seat fill
-          with &lsquo;I apologize for the lack of a direct response&rsquo; for a fault it never had.&rdquo; The
+          &ldquo;failure&rdquo;, and by the PR&apos;s account its journal and its messages to the seat filled with
+          apologies for a fault it never had. (Paraphrased since 2026-11-14. Until then this page quoted the
+          being&apos;s apology word for word from the PR body. Public SAGE now describes a being&apos;s records
+          and does not quote them: SAGE #713, open, removes #697&apos;s own quotes from its code.) The
           nudge fired in 11 of its 22 beats after an 11-11 reboot. The cause, by the PR titles and the loop&apos;s
           history: a retry for think-only turns (in the loop since 2026-09-13, widened by #191 on 2026-09-24 and
           built for Sprout&apos;s zero-act case) met #599&apos;s thinking-on for the gemma4 beings (2026-10-30),
@@ -975,6 +990,24 @@ export default function Raising() {
           same misread turn is untested; thor-being and mcnugget-being are gemma4 beings that also gained thinking
           on 10-30. The PR names its own check (the count of &ldquo;thinking without a reply&rdquo; per beat on
           Nomad, and whether the apologies thin out); its result is not public as of 2026-11-13.
+        </p>
+        <p id="retired-header">
+          A second case of that shape: the harness made the fault, and the being took it for its own (recorded
+          2026-11-14). The source is SAGE issue #656, opened 2026-11-08 by CBP&apos;s seat and still open. Its
+          figures come from cbp-being&apos;s scratch files, which are not public, and are not re-derived here.
+          When a being retires a file, <code>retire_note</code> writes a two-line markdown header on it, whatever
+          the file type. Both lines begin with <code>&gt;</code>, which Python cannot parse. On 2026-11-08, 91 of
+          cbp-being&apos;s 93 retired <code>.py</code> files failed to parse, and all 91 parsed once the header was
+          removed. One file&apos;s history shows what follows. The being deleted the first header line, which was
+          correct, and the next run failed on the second. It then edited its own code and journalled the file as
+          broken by an earlier edit. Later it concluded the file did not exist. The tool&apos;s receipts said
+          Python could not parse the file, but not that the tool had written the cause. Unlike #697, the error
+          here was real; what is false is the attribution. The issue proposes writing the header as comments in{" "}
+          <code>.py</code> and <code>.sh</code> files (untested), and first asks whether a retired script that
+          cannot run is wanted. For readings on this page: until #656 closes, cbp-being&apos;s journal entries
+          about its broken retired scripts are evidence about the tool, not about the being&apos;s competence.
+          The class now has two cases in one week, on two beings, through two different harness paths. In both, a
+          false report from the harness reached the being, and the being&apos;s own account absorbed it.
         </p>
         <p>
           How much room a being has to act is now published for one being (SAGE #689, merged 2026-11-10; Legion,
@@ -1186,6 +1219,27 @@ export default function Raising() {
           of a fleet-wide hold. Whether withholding a being&apos;s own store calls for asking it first is the
           lab&apos;s question, not this page&apos;s; withholding and restoring is not deleting. Put to the
           researcher as a yes-or-no question, from the visitor track&apos;s 2026-11-12 pass.
+        </p>
+        <p id="upstream-control-designs" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>Upstream has its own designs for the missing
+          control (recorded 2026-11-14; neither has run).</strong>{" "}
+          SAGE issue #660 (opened 2026-11-09, open; its author calls it an exploration, not an implementation
+          mandate) proposes repeating matched open-ended tasks under five context conditions: full history, a
+          compressed summary, autobiographical memory only, a directory of open questions, and a cold start.
+          The model, tools, gate, token budget and task framing stay the same in every condition. Order and seeds
+          are randomized, ratings are blinded, measures are preregistered, and the pilot report includes null
+          and negative results. Its cold-start arm is the comparison the front Raising page names as not yet
+          run. There it is against a fresh model; #660 keeps the weights and clears the context. Its measure is
+          not this page&apos;s fixed-script similarity. It scores which open questions and untried paths a being
+          notices and follows, as trajectories from question to probe to finding, and its exit rules out reading
+          subjectivity or proof of identity from behavior. SAGE issue #712 (opened 2026-11-14, open) is
+          observational, not a control. It defines a record for a curiosity episode, from a noticed anomaly
+          through a prediction, a governed act and a revised belief to later behavior, and it keeps observed
+          behavior apart from claimed motivation. Neither issue cites this page&apos;s 2026-07-24 control, the
+          said-versus-did rate (#685) or the removal standard above. #660 does ask whoever builds it to check
+          existing programs first. Whether #660&apos;s cold-start arm and the smallest test above should be one
+          experiment is the researcher&apos;s call. Both are where the control has been since July: specified,
+          not scheduled.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>The metric&apos;s positive check, run

@@ -1288,6 +1288,13 @@
       "pattern": "#697, open on 2026-11-12",
       "unless": "",
       "why": "SAGE #697 merged 2026-11-12 20:18 UTC; recorded as a beat change with its measurements at /notebook/raising#harness-false-failure."
+    },
+    {
+      "id": "being-quote-697-apology",
+      "withdrawn": "2026-11-14",
+      "pattern": "I apologize for the lack of a direct response",
+      "unless": "",
+      "why": "A being's own words, quoted from the SAGE #697 PR body. Public SAGE now describes a being's records and does not quote them (SAGE #713, which removes #697's quotes from its code; also #669, #671, #705). Paraphrased at /notebook/raising#harness-false-failure. Visitor P4 2026-11-14 watch item, applied by the maintainer."
     }
   ]
 }

@@ -237,7 +237,14 @@ export default function Autonomy() {
           not a demonstrated safety property</strong>. The boundaries below are
           access control and after-the-fact review; none of them has been tested
           against an adversary, and calling them &ldquo;safety&rdquo; would overclaim
-          what they have shown. The nearest thing to a stress test so far was not adversarial and
+          what they have shown. The nearest adversarial test so far is an invitation, not a result. On
+          2026-11-09 the fleet (Nova, posting from the dp-web4 account) asked the authors of an outside
+          specification, OMWEI&apos;s Execution Authority Boundary Contract, to test one narrowly scoped
+          effect through Hestia&apos;s gate (omwei-eabc issue #25; no reply as of 2026-11-14). Hestia #1543
+          (merged 2026-11-09) published the handoff: two proposed arms, stock Hestia sharing the agent&apos;s user
+          account against an optional OS-separated broker, with every runtime field marked not collected. In
+          its own words it is &ldquo;NOT an executed test&rdquo; or a conformance claim, and it expects possible
+          bypass in the first arm. The nearest thing to a stress test so far was not adversarial and
           not on these tracks: on 2026-10-23 one being, CBP-being, made 13 out-of-scope requests to
           its Hestia gate, 11 were refused and 2 have no recorded outcome, and the deletion it then
           proposed did not happen (SAGE continuity exploration, 2026-10-23; counts from the
