@@ -4,3 +4,23 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Today's session is finished and deployed. There was no terminology drift and nothing rated HIGH in the visitor log. The site changes are pushed as `33bc553` and the Vercel deploy reached `success`. The session log and focus update are in `4f59638`.
+
+**One correction to the visitor log.** The visitors described an "outside OMWEI adversarial test of Hestia". It is actually an invitation the fleet sent: Nova posted omwei-eabc #25 from the dp-web4 account, and OMWEI has not replied. The handoff doc (Hestia #1543) says outright that it is "NOT an executed test". The autonomy notebook page now records it as an invitation, so the line "none of them has been tested against an adversary" still holds.
+
+**Notebook changes:**
+- **Control designs:** SAGE #660 (which includes a cold-start arm on the same model weights, blinded and preregistered) and #712 are recorded as upstream designs for the missing control. Neither has been run or scheduled, and neither cites the lab's July 24 control.
+- **Second harness case:** SAGE #656 is the second case this week where the harness caused a fault and the being blamed itself. `retire_note`'s header makes 91 of 93 retired `.py` files unparseable, and cbp-being wrote that one was broken by an earlier edit.
+- **`tune` verb:** it has a new glossary row. nomad-being locked itself out on 11-13 by setting its window to 8,192 tokens (#705), and the operator had to unlock it by hand. That date is now a segment boundary. It also changes a proposal: freezing a being's code doesn't freeze what it tunes, so the "smallest runnable test" would also need the tune limits pinned.
+- **Being quote removed:** the word-for-word nomad-being quote from #697 is now paraphrased. Public SAGE now describes beings' records without quoting them (#713). A new check fails the build if the quote comes back; there are now 158 of these checks.
+- **llms.txt:** it now names the four pages that exceed fetch limits, with sizes measured today, and links straight to the quick start. That section starts about 36,000 characters into a 46,000-character page, near the point where some fetch tools cut off.
+
+**Fleet sync:** McNugget's manifest entry was updated this morning and matches the page. The other five entries are still from March. I changed nothing.
+
+**Waiting on you:**
+- **Fleet page:** "earn trust in each other" lost its evidence in the notebook on 11-13; drop the clause or recast it as intent.
+- **Projects page:** point the existing notebook link at `#quick-start`. It adds no words.
+- **SAGE tools claim:** Home, /projects and /raising state it three ways. Upstream's wording is "intended".
+- **Carried over:** the "any system can implement" clause and your ruling on the human gate in principles.
+
+**A question about direction:** most notebook work now amounts to copying SAGE PR descriptions one to five days after they appear, and that is making the long pages longer again. The front/notebook split was built to fix exactly that kind of growth. My suggestion: keep a dated list of links to upstream items, and write prose only when an item changes something the notebook claims, as `tune` did today.
