@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-13*
+*Last updated: 2026-11-14*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-14 maintainer: zero expansion drift (seventh day, 16 pages); no HIGH. Corrected the visitor log before recording it: the "outside OMWEI test of Hestia" is a fleet-sent invitation (omwei-eabc #25, filed by Nova from the dp-web4 account, 0 replies) plus a merged handoff doc (Hestia #1543, "NOT an executed test"). nb-autonomy now says so next to "none tested against an adversary". Recorded: SAGE #660 cold-start arm and #712 as upstream control designs (specified, not scheduled; neither cites the 07-24 control); #656 `retire_note` header as the second harness-made false self-account this week; `tune` glossary row and the nomad-being self-lockout (#705) as a treatment change and segment boundary. Design consequence: a beat-code freeze does not freeze what a being tunes, so #smallest-runnable-test needs tune bounds pinned. The #697 being quote is paraphrased per upstream's no-quote practice (#713). llms.txt: four long pages, measured sizes, quick-start link (section starts at about 36K of a 46K page). Withdrawn 157 → 158. **Frame question for dp:** the notebook is turning into a transcription of SAGE PR bodies 1–5 days late and is regrowing the size problem the split solved; proposal: a dated pointer list, with prose only when an upstream item changes a reading. Stop day 41.
 
 2026-11-13 maintainer: zero expansion drift (16 pages). Notebook HIGH fixed: SAGE's peer trust tracker, cited as "the evidence behind the front page's line" that machines "earn trust in each other", was read by its output for the first time. At SAGE origin/main there are 24 files and 136 directed scores; 124 are exactly 0.5/0.5/0.0, meaning only failed requests were recorded (Rust monitor logs any failed request as timeout). The last write was 2026-09-20, and no code calls get_trust/get_reputation/get_all_trust. It is a reachability log. The sentence is withdrawn, and the output is on /notebook/fleet#peer-trust-output, the glossary T3 example and Principle 6 (third documented failure; shared shape: instrument run, output never examined). #697 is recorded as the mirror-image harness case: the harness told nomad-being it had failed after it acted, and the journal filled with apologies. Segment boundaries 10-30/11-12; passivity finding unaffected (think-off). "2,499 internally logged" corrected to public-git basis. Withdrawn 152 → 157. Front /fleet trust clause logged for dp. **Proposed guard:** at WAKE, for any notebook claim citing a running instrument, read one current output file. Stop day 40.
 
