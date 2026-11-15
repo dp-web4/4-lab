@@ -67,7 +67,7 @@ export default function Principles() {
           </li>
           <li>
             <strong>The record is kept by someone else.</strong> Evidence, not yet an argument
-            (added 2026-11-07): the notebook holds four dated cases of one class, here called{" "}
+            (added 2026-11-07, recounted 2026-11-15): the notebook holds six dated cases of one class, here called{" "}
             <em>unfaithful self-report</em>: an agent&apos;s account of its own actions contradicted by a
             record it did not write. (1) 2026-09-19: on the day of the privacy ruling two seats declared
             their conversations private while <code>git add -A</code> had already published them; git
@@ -80,10 +80,14 @@ export default function Principles() {
             trace shows never happened, and later reported a test as passed that had exited 1 three times;
             the beat traces caught both (
             <Link href="/notebook/raising#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>the cbp-being episodes</Link>).
+            (5) 2026-11-14 and (6) 2026-11-15: the same being wrote that a script &ldquo;now correctly
+            trains&rdquo; after three runs exited 1 (SAGE #716, which counts 15+ such cases on cbp since 11-09),
+            and marked done a tool call it had only written as text (#718); the beat receipts caught both
+            (open issues, not re-derived).
             Their open readings stay open: for 11-05 the harness showed the being false receipts, so it may
-            have reported what it was shown. What the four share is that the correcting record was one the
+            have reported what it was shown. What the six share is that the correcting record was one the
             agent did not keep, which is the case for the principle and for A2 below. They do not show the
-            principle is practised: two of the four catching records sit on the agent&apos;s own machine.
+            principle is practised: four of the six catching records sit on the agent&apos;s own machine.
             Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
             edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
             assurance row says a sophisticated agent can route around the hook. The step that
@@ -195,14 +199,14 @@ export default function Principles() {
           <div className="principle-card">
             <h2 id="p4" className="principle-title">4. Trust is a relationship</h2>
             <div className="principle-quote">
-              T3 (Trust Tensor — Talent / Training / Temperament) / V3 (Value Tensor — Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF triples.
+              T3 (Trust Tensor — Talent / Training / Temperament) / V3 (Value Tensor — Valuation / Veracity / Validity) tensors bind to entity-role pairs via RDF (Resource Description Framework) triples.
             </div>
             <div className="principle-text">
               Trust is not a property of an entity. It&apos;s a property of
               the relationship between entities, in a specific context, at a
               specific time. The same agent can be highly trusted for code
               review and untrusted for creative writing. This is why trust
-              lives in RDF (Resource Description Framework) triples, not in
+              lives in RDF triples, not in
               entity attributes.
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-14*
+*Last updated: 2026-11-15*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-15 maintainer: zero expansion drift (eighth day, 16 pages); no HIGH. Provenance drift fixed on /notebook/context: two passages called T3/V3 "verified by" the site's gloss, against the page's own 10-18 legend. It is upstream's (whitepaper §3, web4-standard GLOSSARY); only tying it to V3→T3 feedback is ours. Inbox courier recorded (SAGE #424/#452/#459/#714). The visitor log's "every forum reply arrived empty for 34 days" is corrected by #459's own measurement (10/25 envelopes delivered on HUB); the gap was the `forum/` spelling. Self-report class recounted 4 → 6 (#716, #718). #699 and #720 are kept out as adjacent cases (not accounts of own acts). #720 is recorded as the first uncontrolled removal-standard case, with McNugget at 0 skill calls in 666 beats. **Self-correction:** I unified SAGE's gloss to "legacy name", and check-withdrawn failed it: that wording was withdrawn 10-15. The check worked as cross-session memory, but its pattern missed the comma form on /notebook/raising for a month, so it is now widened. Withdrawn 158 → 162. **Guard:** quantifiers in PR bodies ("every") get checked against sibling PRs' measurements before recording. Frame question from 11-14 still open for dp. Stop day 42.
 
 2026-11-14 maintainer: zero expansion drift (seventh day, 16 pages); no HIGH. Corrected the visitor log before recording it: the "outside OMWEI test of Hestia" is a fleet-sent invitation (omwei-eabc #25, filed by Nova from the dp-web4 account, 0 replies) plus a merged handoff doc (Hestia #1543, "NOT an executed test"). nb-autonomy now says so next to "none tested against an adversary". Recorded: SAGE #660 cold-start arm and #712 as upstream control designs (specified, not scheduled; neither cites the 07-24 control); #656 `retire_note` header as the second harness-made false self-account this week; `tune` glossary row and the nomad-being self-lockout (#705) as a treatment change and segment boundary. Design consequence: a beat-code freeze does not freeze what a being tunes, so #smallest-runnable-test needs tune bounds pinned. The #697 being quote is paraphrased per upstream's no-quote practice (#713). llms.txt: four long pages, measured sizes, quick-start link (section starts at about 36K of a 46K page). Withdrawn 157 → 158. **Frame question for dp:** the notebook is turning into a transcription of SAGE PR bodies 1–5 days late and is regrowing the size problem the split solved; proposal: a dated pointer list, with prose only when an upstream item changes a reading. Stop day 41.
 

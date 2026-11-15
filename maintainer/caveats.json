@@ -858,9 +858,9 @@
     {
       "id": "sage-legacy-name",
       "withdrawn": "2026-10-15",
-      "pattern": "Governance Engine\\s*(—|&mdash;)\\s*(a )?legacy name",
+      "pattern": "Governance Engine\\s*(—|&mdash;|,)\\s*(a |the )?legacy name",
       "unless": "",
-      "why": "SAGE is the current, retained name (glossary #sage; SAGE README h1; AGENTS.md). Only 'Governance' in it predates the oversight wording (/notebook/context#governance-oversight). 'Legacy name' read as 'former name' to three visitor passes on 2026-10-15; the /fleet instance also pointed at a 'note above' that does not exist."
+      "why": "SAGE is the current, retained name (glossary #sage; SAGE README h1; AGENTS.md). Only 'Governance' in it predates the oversight wording (/notebook/context#governance-oversight). 'Legacy name' read as 'former name' to three visitor passes on 2026-10-15; the /fleet instance also pointed at a 'note above' that does not exist. Pattern widened 2026-11-15 to the comma form: /notebook/raising had carried 'Engine, a legacy name' past this check since it was written."
     },
     {
       "id": "web4-core-030-both-registries",
@@ -1295,6 +1295,34 @@
       "pattern": "I apologize for the lack of a direct response",
       "unless": "",
       "why": "A being's own words, quoted from the SAGE #697 PR body. Public SAGE now describes a being's records and does not quote them (SAGE #713, which removes #697's quotes from its code; also #669, #671, #705). Paraphrased at /notebook/raising#harness-false-failure. Visitor P4 2026-11-14 watch item, applied by the maintainer."
+    },
+    {
+      "id": "t3v3-verified-by-site-gloss-feedback",
+      "withdrawn": "2026-11-15",
+      "pattern": "is all this site.s .verified by. gloss",
+      "unless": "",
+      "why": "Provenance: the 'verified by' reading of T3/V3 is upstream's (whitepaper §3; web4-standard/GLOSSARY.md), as the /notebook/context legend has said since 2026-10-18; only tying it to the V3→T3 feedback is this site's interpretation. Visitor P2+P3 2026-11-15."
+    },
+    {
+      "id": "t3v3-verified-by-site-reading",
+      "withdrawn": "2026-11-15",
+      "pattern": "site.s reading of the equation.s T3/V3 as",
+      "unless": "",
+      "why": "Same provenance slip as t3v3-verified-by-site-gloss-feedback, in the T3/V3 complementarity passage, which cited 'the legend above' while the legend said the opposite. Visitor P2+P3 2026-11-15."
+    },
+    {
+      "id": "self-report-four-cases",
+      "withdrawn": "2026-11-15",
+      "pattern": "holds four dated cases of one class",
+      "unless": "",
+      "why": "Recounted to six dated cases 2026-11-15 with SAGE #716 and #718 (issue bodies, not re-derived); #699 and #720 recorded as adjacent, not in the class. Visitor P4 2026-11-15."
+    },
+    {
+      "id": "sage-713-open",
+      "withdrawn": "2026-11-15",
+      "pattern": "SAGE #713, open",
+      "unless": "",
+      "why": "SAGE #713 merged 2026-11-15 00:00:42 UTC. Visitor P3 2026-11-15."
     }
   ]
 }

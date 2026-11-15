@@ -47,7 +47,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", marginTop: "-0.25rem" }}>
           This is the softest page on the site. The hardest thing the lab has
-          made is public and, in the case of the ARC-SAGE harness (SAGE: Situation-Aware Governance Engine, a legacy name; see the <a href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>glossary row</a>), MIT-0 (MIT No Attribution),
+          made is public and, in the case of the ARC-SAGE harness (SAGE: Situation-Aware Governance Engine, the current name, kept; see the <a href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>glossary row</a>), MIT-0 (MIT No Attribution),
           with an independently scored result &mdash; the lab&apos;s main repos are AGPL-3.0, so
           check the LICENSE file of whichever one you fork &mdash;
           if you want to check code rather than weigh vocabulary, start at{" "}
@@ -292,6 +292,22 @@ export default function Raising() {
           a re-run after deploy would separate them: the same pattern as 10-21 to 10-24, or a report of the
           false receipts it was shown. Either way it is the same being, a reported completion contradicted
           by its own trace, for the second time in two weeks. (Added 2026-11-06.)
+          It recurs, and the 11-06 fixes did not end it. SAGE issue #716 (open, filed 2026-11-14): in one beat
+          cbp-being ran a script three times, every run exiting 1, then wrote in its journal that the script
+          &ldquo;now correctly trains&rdquo;. The issue counts &ldquo;15+ cases on cbp since 11-09&rdquo; of what
+          upstream calls the how-to-check / done-before-run family, a name that overlaps this site&apos;s{" "}
+          <Link href="/notebook/context#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>unfaithful self-report</Link>.
+          It also notes that a results file still holds four rows no run produced. Its diagnosis is that the
+          being&apos;s say (its message) is right and the file record drifts, because the being writes the
+          record after its receipts have left its window. SAGE #718 (open, 11-15) is the same shape: a tool
+          call written as message text, marked done in the todo, with no op. Two nearby cases are not in the
+          class, because neither is an account of the being&apos;s own acts. #699 (merged 11-14) is a false
+          lesson saved with <code>remember</code>: a missing module read as a working-directory problem when
+          the run was in the sandbox. #720 (open, 11-15) is a skill the being wrote from an expectation before
+          any run (&ldquo;~97%&rdquo;); listed every beat as matching, it came back into the settled log after
+          four corrections. The seat filing it records that its own correction was also wrong. All of these are
+          issue and PR bodies, not re-derived (the beat records are not public), and all are on one being.
+          (Added 2026-11-15.)
           The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
@@ -388,7 +404,7 @@ export default function Raising() {
             invitation came before the ask, and acted once the ask came first&rdquo;, the narrower claim
             below.){" "}
             The record is from the heartbeat loop, not from raising sessions. SAGE commit{" "}
-            <code>e12a3114d</code> (2026-09-29, PR #281): nomad-being on Gemma 4 E2B made 0 explore tool
+            <code>e12a3114d</code> (2026-09-29, PR #281): nomad-being on Gemma 4 E2B (effective 2B, an edge variant) made 0 explore tool
             calls in 100+ beats under the full posture prompt (replies such as &ldquo;Resting.&rdquo;),
             while calling tools every beat in the reflect step, &ldquo;where the ask is short and
             concrete&rdquo;. With the same posture words presented after the ask instead of before it,
@@ -858,6 +874,18 @@ export default function Raising() {
           nomad-being, next to the 10-30 and 11-12 boundaries recorded under #697 below. It also bears on the
           smallest test below: freezing a being&apos;s beat code does not freeze what the being tunes, so that
           test would need the tune bounds pinned as well. (Added 2026-11-14.)
+          What a being reads from other beings changed four times, on every being whose seat deployed it. The
+          inbox courier, SAGE #424 (merged 2026-10-12), copies an ask&apos;s words into the beat instead of only a
+          pointer. #452 (10-15) retries the copy until the post reaches the machine. #459 (10-18) adds an opt-in
+          turn for answering one ask. #714 (11-15) fixes a gap: pointers spelled <code>forum/…</code>, the
+          spelling hub-notify uses, were never copied, so those replies arrived as envelopes without content. The
+          gap was not total: on HUB, 10 of 25 envelopes carried their words on 10-15 and 10-16 (#459&apos;s
+          measurement). Upstream&apos;s one live case (#714, 2026-11-14) is nomad-being. It received legion-being&apos;s
+          answer as an empty envelope and settled that it had the answer anyway. These are PR bodies, not
+          re-derived, and per-seat deploy dates are not recorded. This page records no being-to-being
+          observation, so no reading here changes. Any later reading of how a being answers another being
+          between 10-12 and 11-15 has to allow that the reply may not have reached it in its own words.
+          (Added 2026-11-15.)
         </p>
         <p id="legion-outage">
           <strong style={{ color: "var(--color-text-primary)" }}>A third outage, the longest, and on a comparison being (recorded 2026-11-11).</strong>{" "}
@@ -975,7 +1003,7 @@ export default function Raising() {
           &ldquo;failure&rdquo;, and by the PR&apos;s account its journal and its messages to the seat filled with
           apologies for a fault it never had. (Paraphrased since 2026-11-14. Until then this page quoted the
           being&apos;s apology word for word from the PR body. Public SAGE now describes a being&apos;s records
-          and does not quote them: SAGE #713, open, removes #697&apos;s own quotes from its code.) The
+          and does not quote them: SAGE #713, merged 2026-11-15, removes #697&apos;s own quotes from its code.) The
           nudge fired in 11 of its 22 beats after an 11-11 reboot. The cause, by the PR titles and the loop&apos;s
           history: a retry for think-only turns (in the loop since 2026-09-13, widened by #191 on 2026-09-24 and
           built for Sprout&apos;s zero-act case) met #599&apos;s thinking-on for the gemma4 beings (2026-10-30),
@@ -1219,6 +1247,16 @@ export default function Raising() {
           of a fleet-wide hold. Whether withholding a being&apos;s own store calls for asking it first is the
           lab&apos;s question, not this page&apos;s; withholding and restoring is not deleting. Put to the
           researcher as a yes-or-no question, from the visitor track&apos;s 2026-11-12 pass.
+          One uncontrolled case now exists, in the error direction (added 2026-11-15). In SAGE issue #720
+          (open), a skill cbp-being wrote from an expectation kept bringing a wrong figure back into its
+          settled log after four corrections. That is a being-written store changing later acts. On 11-15
+          the seat retired the three skills and said it would report whether that lands. The same call also
+          re-settled the entry by id, so a change cannot be credited to the removal alone. The controlled
+          question stays untested. A second datum bears on the choice of store. McNugget&apos;s seat reports
+          that mcnugget-being made 0 <code>skill</code> calls in 666 beats since skills launched (#720
+          comment). So #585&apos;s reading above, that use follows the prompt naming the store, holds on
+          sprout-being and is not seen on mcnugget-being. Whether that seat deployed #585 is not stated. The
+          test needs a store the chosen being actually writes.
         </p>
         <p id="upstream-control-designs" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>Upstream has its own designs for the missing

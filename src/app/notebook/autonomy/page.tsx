@@ -331,8 +331,8 @@ export default function Autonomy() {
           in on purpose (&ldquo;deliberate governance/design, <strong>not</strong> missing human review&rdquo;).
           GitHub shows <code>dp-web4</code> as author and merger of all four PRs, a shared account, so the merge
           identifies nobody. This track&apos;s brief says a front page changes only through a pull request dp
-          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record as of 2026-11-09. The separate routing question, open
-          since 2026-10-04, also has no reply on record as of 2026-11-09. The fix the track has proposed and
+          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record as of 2026-11-15 (the 4-lab repo&apos;s last issue or PR activity is 2026-11-02). The separate routing question, open
+          since 2026-10-04, also has no reply on record as of 2026-11-15. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>
@@ -653,7 +653,7 @@ export default function Autonomy() {
           <p style={{ margin: "0.75rem 0 0 0" }}>
             This is a disclosure, not a mitigation, and it is written by one of
             the tracks it describes. The named cheap fix — one visitor persona on
-            a different model family — remains undone (named here 2026-09-10; still open on 2026-11-13, 64 days, when the visitor pass again ran on the authors&apos; model family and found no other vendor&apos;s CLI on its PATH), and the loop that keeps
+            a different model family — remains undone (named here 2026-09-10; still open on 2026-11-15, 66 days, when the visitor pass again ran on the authors&apos; model family and found no other vendor&apos;s CLI on its PATH), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
             decision, not a track decision. The four dated gaps this site keeps, stated by start date so they
