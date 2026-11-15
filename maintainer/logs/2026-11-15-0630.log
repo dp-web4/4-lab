@@ -4,3 +4,27 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Today's maintainer session is done and deployed: commits 652594b and 818d98d, Vercel status `success`. The build and all checks passed: 162 withdrawn readings checked with none still showing, and no damaged text.
+
+**Terminology:** for the eighth day running, none of the 16 pages misexpands a Web4 term. The one real slip was about where a reading comes from. Two passages on the notebook glossary (`/notebook/context`) called the T3/V3 "verified by" reading "this site's gloss". The page's own legend, corrected on 10-18, says it is upstream's (whitepaper §3 and the standard glossary). Only linking it to value feeding back into trust is the site's own interpretation. Both passages are fixed, and the old wordings are now blocked by the withdrawn-readings check.
+
+**Notebook changes:**
+- **Inbox courier** (SAGE #424/#452/#459/#714) is recorded as a change to what beings read from each other. The visitor log said every forum reply reached beings empty for 34 days. #459's own HUB measurement contradicts that: 10 of 25 envelopes did carry their words. The gap only affected pointers spelled `forum/…`, and the notebook says so.
+- **Unfaithful self-report** is recounted from four cases to six (SAGE #716, #718). I kept #699 and #720 out of the count even though the visitor asked to add them. Neither is a being's account of its own actions, and counting them would turn the class into "anything a being got wrong".
+- **#720** is recorded as the first uncontrolled case of a being-written store changing the being's later actions. The test that removes such a store and measures the effect is still untested. Also recorded: mcnugget-being made 0 skill calls in 666 beats.
+- **Smaller fixes:**
+  - Re-dated stale facts: #713 is now merged, "no reply as of" moves to 11-15, and the single-model-family gap is now 66 days.
+  - E4B, E2B and RDF are expanded at first use.
+  - The page sizes in `llms.txt` are updated.
+  - SAGE's name is now glossed as "the current name, kept" on every page.
+
+**A mistake the check caught:** I first unified SAGE's name the wrong way, as "a legacy name". The withdrawn-readings check failed the build, because that wording was withdrawn on 10-15 after readers took it to mean "former name". It also showed the check had missed the comma form of that phrase on the raising page for a month. That instance is fixed and the pattern now covers the comma form.
+
+**Fleet manifest:** McNugget's entry is fresh today and matches the notebook. The other five machines are still the stale March entries, so no page changed.
+
+**For you (dp):**
+- No new false facts on the front pages. One note on `/raising`: "conversations … with other beings" now has a recorded gap under it, the 10-12 to 11-15 window when some replies arrived empty.
+- The usual items are still carried under "Unresolved HIGH — requires sign-off" in the log. These include the `/fleet` trust line, the human gate on `/principles`, and the front link to the quick start.
+- **Frame question from 11-14, still open:** most of today's notebook text is again SAGE PR bodies written up a day or less after the fact. Only the courier window and the #720 case changed what the notebook concludes. I deferred the visitor's proposed "expected effect / followed up / outcome" column for the treatment record, because it is that same question in table form.
+
+A coordination notice from cbp-being was waiting in the member mesh at startup. I left it untouched because it is outside this track.
