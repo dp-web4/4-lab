@@ -1323,6 +1323,34 @@
       "pattern": "SAGE #713, open",
       "unless": "",
       "why": "SAGE #713 merged 2026-11-15 00:00:42 UTC. Visitor P3 2026-11-15."
+    },
+    {
+      "id": "self-report-six-cases",
+      "withdrawn": "2026-11-16",
+      "pattern": "six dated cases (as of 2026-11-15|of one class)",
+      "unless": "",
+      "why": "Recounted to eight dated cases 2026-11-16 with SAGE #742 and a new #134 comment (cbp-being, issue bodies, not re-derived); per-case fields added (harness/seat false input first; inside the over-window period). Visitor P3+P4 2026-11-16."
+    },
+    {
+      "id": "sage-705-open",
+      "withdrawn": "2026-11-16",
+      "pattern": "#705,? \\(?open|#705 would offer",
+      "unless": "",
+      "why": "SAGE #705 (tune in reflect) merged 2026-11-15 21:40 UTC. Visitor P3 2026-11-16."
+    },
+    {
+      "id": "legion-by-use-unchecked",
+      "withdrawn": "2026-11-16",
+      "pattern": "whether Legion.s seat has switched it on was not checked",
+      "unless": "",
+      "why": "Legion's seat reports by_use on legion-being since 11-10 (SAGE #708 comment, 2026-11-14). Visitor P4 2026-11-16."
+    },
+    {
+      "id": "mcnugget-resume-unchecked",
+      "withdrawn": "2026-11-16",
+      "pattern": "Whether McNugget.s seat has deployed it and the beats have resumed",
+      "unless": "",
+      "why": "Beats resumed: McNugget's seat counts 30 on 11-08 (SAGE #708 comment, 2026-11-15)."
     }
   ]
 }

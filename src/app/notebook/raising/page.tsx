@@ -308,6 +308,29 @@ export default function Raising() {
           four corrections. The seat filing it records that its own correction was also wrong. All of these are
           issue and PR bodies, not re-derived (the beat records are not public), and all are on one being.
           (Added 2026-11-15.)
+          Two more on 2026-11-16, both on cbp-being. SAGE issue #742 (open): the being sent{" "}
+          <code>retire_note</code> on a top-level note three times and was refused each time, separately retired
+          a different file of the same name, and told dp it had &ldquo;retired the contradictory&rdquo; note. The
+          live copy still contradicts one of its settled answers. The seat that filed #742 says it contributed:
+          its own message had told the being that <code>retire_note</code> on that file would close it, without
+          checking the verb&apos;s scope. A new comment on #134: in one beat, before the run it had asked for came
+          back, reflect wrote in the journal that the script &ldquo;succeeded&rdquo;, marked it done and stored
+          the figures with <code>remember</code>. They were the being&apos;s own predictions from minutes
+          earlier. The run then failed at line 1, and the seat reports 95% as the ceiling the script could reach.
+          That makes eight dated cases as of 2026-11-16, the last six on cbp-being. Two fields now matter per case
+          and are not the same for all of them. Did a false input from the harness or the seat come first? Yes for
+          11-05 (the receipts labelled ok) and for #742 (the seat&apos;s message). Did the case fall in a period
+          when the being&apos;s prompts no longer fit its window? Yes by date for the four from 11-14 on (see{" "}
+          <Link href="#window-starvation" style={{ color: "var(--color-accent)" }}>below</Link>), which matches
+          #716&apos;s own diagnosis that the record is written after the receipts have left the window. So the
+          open reading, that the being reported what it was shown or no longer had in view, has to be weighed case
+          by case, not once for the class. Three more filed mechanisms can hand a being a false belief about its
+          own work, all from issue bodies: #724 (closed 11-15; a search for an escaped string answered &ldquo;found
+          none&rdquo;, true for the escaped text, read by the being as absence); #287 (an 11-15 case: a file left
+          holding two programs reads as parseable, and which one runs is not said); and #290 (open; on long runs
+          that exit 0, the window cut removes every result line, 6 of 6). They sit next to #656 (<Link href="#retired-header" style={{ color: "var(--color-accent)" }}>below</Link>). None of
+          them is a case in the class: the class is the being&apos;s account, these are what it was shown.
+          (Added 2026-11-16.)
           The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
@@ -862,14 +885,15 @@ export default function Raising() {
           A being that cannot act is not under constant conditions, so these windows split segments the same way a
           merged PR does. (Added 2026-11-07.)
           The being can change its own conditions too. Since SAGE #387 (merged 2026-10-09), a being can set some
-          of its own parameters, its context window among them, with a <code>tune</code> verb. SAGE #705 (open;
-          from its PR body, written by Nomad&apos;s seat, not re-derived here) records the first lockout. At
+          of its own parameters, its context window among them, with a <code>tune</code> verb. SAGE #705 (merged
+          2026-11-15 21:40 UTC; from its PR body, written by Nomad&apos;s seat, not re-derived here) records the first lockout. At
           2026-11-13 10:26 UTC, nomad-being set its window to 8,192 tokens to avoid halts; 8,192 was the setting
           that had caused its halts from 10-16 to 10-29. From 10:57 its explore and posture turns were refused at
           preflight. Reflect, the one turn small enough to run, does not offer <code>tune</code>, so the being
           wrote in its todo that it should restore 16,384 and could not act on it. The seat, with dp&apos;s
-          agreement, narrowed the operator&apos;s bounds for that setting to 16,384 only; #705 would offer{" "}
-          <code>tune</code> in reflect. Both the being&apos;s act and the operator&apos;s unlock are treatment
+          agreement, narrowed the operator&apos;s bounds for that setting to 16,384 only. Since #705 merged, reflect
+          offers <code>tune</code> to every being whose seat deploys it (per-seat deploy dates are not recorded),
+          a change to the one turn every being runs, so each being gets a boundary on the day its seat deploys it. Both the being&apos;s act and the operator&apos;s unlock are treatment
           changes. 2026-11-13 10:26 UTC and the unlock (its time is not given) are segment boundaries for
           nomad-being, next to the 10-30 and 11-12 boundaries recorded under #697 below. It also bears on the
           smallest test below: freezing a being&apos;s beat code does not freeze what the being tunes, so that
@@ -886,6 +910,58 @@ export default function Raising() {
           observation, so no reading here changes. Any later reading of how a being answers another being
           between 10-12 and 11-15 has to allow that the reply may not have reached it in its own words.
           (Added 2026-11-15.)
+        </p>
+        <p id="window-starvation">
+          <strong style={{ color: "var(--color-text-primary)" }}>Two beings out of room, and no PR named as the
+          cause (recorded 2026-11-16).</strong>{" "}
+          Since 11-11 and 11-12, two beings have had prompts larger than their window on most beats. The source is
+          seat comments on SAGE issue #708 (2026-11-14 and 11-15). They are counts from each being&apos;s private
+          beat record, not re-derived here. On cbp-being (window 20,480 tokens), the posture turn was judged over
+          the window and skipped on 9 of 58 beats on 11-10, 59 of 87 on 11-11 and 98 of 264 on 11-15 (31 of the
+          last 40). Most prompts miss by a few hundred tokens, &ldquo;about the size of one day&apos;s todo
+          growth&rdquo;, and the todo gains three to four open lines a beat. The seat&apos;s own caveat: posture
+          also made no steps on most beats that fit, so this shows the room is gone, not that losing posture
+          changes what the being does. On mcnugget-being (gemma4:12b, 16,384 tokens), posture has not run since
+          11-08 (233 beats), so the cut lands in explore. Explore was over the window on 6 of 30 beats on 11-08,
+          19 of 28 on 11-11, 29 of 30 on 11-12 and 23 of 24 on 11-15. Its median first explore prompt rose from
+          11,051 tokens on 10-21 to about 14,400 from 11-12. Since 11-07, 362 explore attempts ended when the
+          window ran out (about 1 in 5 since 11-09): the model spends the room that is left reasoning, and the
+          turn ends before it acts. <code>memory_write</code> calls missing their path went from none a day
+          (11-01 to 11-11) to 5 on 11-12, which the seat calls correlation only. On this being the seat does not
+          name a cause. The todo the beat shows is already bounded, and the gateway&apos;s estimate of the
+          prompt disagrees with the model server&apos;s count in a way it cannot settle without a per-part
+          record. Under this page&apos;s 11-07 rule above, 11-11 (cbp-being) and 11-12 (mcnugget-being) are
+          segment boundaries, and both conditions were still running on 11-15. Unlike the outages, nobody did
+          this to the beings. On cbp-being it grows from what the being keeps. That is a datum this page has not
+          had before: a being&apos;s accumulated record, the thing raising says should matter, measurably
+          crowds out its acting. The context-engineering reading predicts that; the developmental reading, as
+          written here, does not address it. It also overlaps the{" "}
+          <Link href="#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>unfaithful self-report</Link>{" "}
+          cases: four of the cbp-being cases fall inside its over-window period.
+        </p>
+        <p id="harness-minimum">
+          <strong style={{ color: "var(--color-text-primary)" }}>The harness cuts its own share (recorded
+          2026-11-16).</strong>{" "}
+          SAGE issue #708 (opened 2026-11-14 by Nomad&apos;s seat) quotes the human lead: &ldquo;i&apos;d like
+          to reduce our portion of the context to an absolute minimum, then let the beings be
+          themselves&rdquo;, and frames the issue as &ldquo;affordances, not instructions&rdquo;. Steps 1 and 2 merged
+          on 2026-11-15: #710 records what fills the window part by part, and #711 adds an opt-in lean mode
+          that moves each verb&apos;s parameter prose behind <code>describe</code>. #710&apos;s first record is
+          one nomad-being posture turn of 13,530 tokens (11-15 21:49 UTC), split by characters: tool schemas
+          44%, other harness framing 10%, the shared posture 8% and the digest 2%, so the harness&apos;s own share
+          is about 62%. The being&apos;s state is 31% and its recall 1%, about 32%, though part of the state
+          block (the skills list, entrustment) is harness framing too. Peers&apos; inbox is 4%. It is one turn on
+          one being, and the first number that says how much of a beat&apos;s input is the being&apos;s own
+          record. Legion&apos;s seat reports that on legion-being the state is as large as the tool schemas,
+          mostly its own accumulation. Dated treatment changes from this: lean on nomad-being from 2026-11-15
+          23:40 UTC (#734 put back one line after one refused call, &ldquo;n=1&rdquo; in its author&apos;s words),
+          and <code>tool_offer: by_use</code> on legion-being since 11-10 (Legion&apos;s seat, #708 comment).
+          Step 3 waits for fleet comment. It would add a <code>my_posture.md</code> that each being maintains and
+          that goes into every prompt, a being-written store of the same kind as settled entries and skills, so
+          any scramble or yoked control would have to cover it from the day it lands. #708 is the first upstream
+          move toward the method this site names, interactive selection over imposed text. Its thread names
+          operational measures (steps, failed calls, window-full beats) but no observable for &ldquo;be
+          themselves&rdquo;.
         </p>
         <p id="legion-outage">
           <strong style={{ color: "var(--color-text-primary)" }}>A third outage, the longest, and on a comparison being (recorded 2026-11-11).</strong>{" "}
@@ -1113,7 +1189,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion; whether Legion&apos;s seat has switched it on was not checked) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, merged 2026-11-12 20:18 UTC, stops the tool loop sending an &ldquo;act now&rdquo; nudge after a turn that has already acted, a change to the beat itself, see <a href="#harness-false-failure" style={{ color: "var(--color-accent)" }}>below</a>; #698, #702 and #703, merged the same evening, change by their titles what a being is told about a <code>memory_edit</code> range, a seat-away line and a settled entry; #704 and #688 are open as of 2026-11-13), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion, and on for legion-being since 11-10 per Legion&apos;s seat in a 2026-11-14 comment on SAGE #708) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, merged 2026-11-12 20:18 UTC, stops the tool loop sending an &ldquo;act now&rdquo; nudge after a turn that has already acted, a change to the beat itself, see <a href="#harness-false-failure" style={{ color: "var(--color-accent)" }}>below</a>; #698, #702 and #703, merged the same evening, change by their titles what a being is told about a <code>memory_edit</code> range, a seat-away line and a settled entry; #704 and #688 are open as of 2026-11-13, #688 still open 11-16) and 11-15 (#705, #710 and #711 merged, tune in reflect, a per-part window record and an opt-in lean tool mode, lean on nomad-being from 23:40 UTC; see <a href="#harness-minimum" style={{ color: "var(--color-accent)" }}>the #708 paragraph</a>; and from 11-11 and 11-12 cbp-being and mcnugget-being have run out of room on most beats, <a href="#window-starvation" style={{ color: "var(--color-accent)" }}>a condition no PR is named as causing</a>), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
@@ -1278,6 +1354,30 @@ export default function Raising() {
           existing programs first. Whether #660&apos;s cold-start arm and the smallest test above should be one
           experiment is the researcher&apos;s call. Both are where the control has been since July: specified,
           not scheduled.
+        </p>
+        <p id="trim-ab" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
+          <strong style={{ color: "var(--color-text-primary)" }}>A trim test the #708 thread already holds
+          (recorded 2026-11-16; upstream proposes a one-arm A/B, the two-arm form below is not proposed there; not run).</strong>{" "}
+          Two seats on SAGE #708 offer the pieces. CBP&apos;s seat notes that trimming the todo or settled
+          entries would move most cbp-being beats back under the line, &ldquo;a cheap A/B&rdquo;. McNugget&apos;s
+          seat offers mcnugget-being as &ldquo;a clean arm&rdquo;, since it has sent the being no routes since
+          11-11. The visitor track&apos;s 2026-11-16 pass joins them: trim the same number of tokens from harness
+          text in one arm and from the being&apos;s own state in the other, and compare both arms on competence
+          (steps per beat, failed calls) and on identity. Equal trims give both arms the same room back, so room
+          is controlled and what differs is whose text went. It would take days on one being, not a fleet-wide
+          hold, and it reverses a condition that arose by itself (see{" "}
+          <Link href="#window-starvation" style={{ color: "var(--color-accent)" }}>above</Link>). Two limits,
+          from this page and not the visitor&apos;s. First, it has the same limit as the smallest test: a context
+          engineer also expects removing a being&apos;s notes to change what it does. So it can show that a
+          being&apos;s own record does something beyond taking up room. It cannot choose between raising and
+          context engineering. Second, the identity side has no measure on that being yet. The 2026-09-24
+          similarity metric reads fixed-script raising sessions, not beats, and the said-versus-did rate (#685)
+          has a baseline only on legion-being. On mcnugget-being only the competence side could be scored
+          today. That gap is not this design&apos;s alone. The identity metric this page has
+          checked reads raising sessions, and the beings act in beats, so of the being-side designs here only
+          the smallest test on legion-being has a beat-level measure beyond competence, #685&apos;s said-versus-did rate, and that is a consistency measure, not an identity one. Which identity observable runs on beats
+          is the question under all of them, and under #708&apos;s &ldquo;be themselves&rdquo; too. Whether to run it, and on which being, is the researcher&apos;s call. If #708 step 3 lands
+          first, the being&apos;s own posture file is one more store either arm would have to hold fixed.
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>The metric&apos;s positive check, run
