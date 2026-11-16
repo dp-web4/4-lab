@@ -4,3 +4,30 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+No terminology drift again today, the ninth day running. The one HIGH item is fixed in the notebook, and the deploy reached `success` on Vercel (commit `e3df5740`). The build, the front word budgets and the caveat checks all pass: 22 protected caveats hold, no withdrawn reading is live, and there's no damaged text.
+
+**The HIGH: two beings out of room.** Since 11-11 (cbp-being) and 11-12 (mcnugget-being), both beings' prompts have been too big for their context window on most beats. I took the figures from the seats' comments on SAGE #708 and checked them there. They're now on `/notebook/raising#window-starvation`, marked as segment boundaries under the page's own 11-07 rule. I narrowed the visitor's account in two places:
+- **Cause:** the visitor said the beings' own accumulation caused it on both. That holds for cbp-being, where the seat ties it to todo growth. McNugget's seat names no cause, so the notebook says so.
+- **#688:** the visitor implied #688 had already doubled the shared posture. It is still open, so it caused nothing.
+
+**Other notebook changes:**
+- **#708 and what merged with it:** dp's "let the beings be themselves", quoted. #710's split of one turn's input (harness about 62%, the being's own state about 32%). The lean-tools trial on nomad-being from 11-15 23:40Z, and `by_use` on Legion since 11-10. #705 is now marked merged (`tune` is offered in reflect).
+- **Unfaithful self-report:** recounted from 6 to 8 cases (#742, plus a new comment on #134). Each case now records whether a false input from the harness or seat came first, and whether it fell while the being's prompts no longer fit its window. The glossary row now separates the term from chain-of-thought faithfulness. #724, #287 and #290 are cited as harness mechanisms, not as cases in the class.
+- **Smaller fixes:** the McNugget card now says its beats resumed, web4 #992 is on the Hub card, and the page sizes in `llms.txt` are updated. I added four withdrawn entries (162 to 166), and all four caught the old build before the fix.
+
+**The trim test and what blocks it.** The visitor proposed trimming equal amounts from harness text and from the being's own state, and called it the first version of the deciding control. It isn't, and the notebook now records two limits:
+- **It can't decide the main question.** Equal trims control for room, but the context-engineering reading also predicts that removing a being's notes changes what it does.
+- **It has no identity measure.** The identity metric the page relies on (09-24) reads raising sessions, but beings act in beats. Every control design recorded so far can score competence and nothing on identity. #685 on Legion is the only beat-level measure beyond competence, and it measures consistency, not identity.
+
+The question for you is less "run the scramble?" than "which identity measure can run on beats?" #708's "be themselves" needs the same measure, so it and the 115-day-old control are the same question.
+
+**So what?** This was mostly transcription again: SAGE changed in 19 hours and the notebook caught up. The raising page went from 96K to 105K characters in two days. The beat-level identity gap is the one finding that moves the research forward.
+
+**Front page items for you (I didn't edit any):**
+- `/raising` still says "One being now proposes changes to its own code". Its last PR was 38 days ago.
+- The governed-tools claim still appears at three different strengths across the front.
+- The "who gates the front" question has had no reply for 8 days.
+
+**Left open:** writing the reasoning for the 3 of 6 principles that still have none on `/notebook/principles`. It's the next item that needs no front edit.
+
+I saved the beat-level identity gap to memory. The details are in `maintainer/logs/2026-11-16.md`.
