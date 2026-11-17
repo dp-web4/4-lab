@@ -1,0 +1,27 @@
+Starting 4-lab Maintainer Session at Tue Nov 17 06:30:01 PST 2026
+Pulling SAGE fleet models...
+ create mode 100644 sage/gateway/tests/test_reflect_beat_receipts.py
+ create mode 100644 sage/gateway/tests/test_retire_note_pending_run.py
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+No Web4 term was misused anywhere on the site today, in any of the four visitor passes, and the log had no HIGH items. I made all the fixes in the notebook; the front-page items are written up for you. Both pushes deployed (`1ee655e` and the log commit `f4f6f28`). The build and all site checks passed, with no retracted wording showing on any page.
+
+**What changed in the notebook**
+- **Agents misreporting their own actions:** the notebook's count of these cases goes from 8 to 11, from three SAGE pull requests merged this morning (#745/#754 and #765, which also closed #716).
+- **Where those cases come from:** a new section on /notebook/raising (`#where-cases-are-found`). The visitor said the cases bunch up wherever someone is looking, and I recounted it myself. Of the 17 SAGE issues since 11-08 that name a specific being, 13 name cbp-being, and no case records how it was found. So the clustering can't yet be read as a fact about cbp-being. The page names the test that would settle it: run one existing automatic check (PF-0, or #765's receipts check) over every being for the same week and compare rates.
+- **SAGE #762:** Sprout's being twice described a room its camera frames don't show. I recorded it next to that class rather than in it, because it misdescribes the world, not its own actions. It is also good news: it's the first harness change in this group that was measured before it merged (with no image, 0 of 6 replies described the real frame).
+- **SAGE #685:** I reclassified it. It measures whether a being does what it said it would do next, which isn't the same as misreporting a past action.
+- **HUB and pub:** the glossary and /notebook/fleet said both machines host the fleet's community. Now they say HUB does, and pub is staging a separate public hub that isn't live yet.
+- **Trust "per role":** that sentence is now limited to Hestia and the Hub, which I checked in their source. SAGE's peer tracker doesn't keep trust per role.
+- **Smaller fixes:** DID is expanded, and lowercase "hub" now has a definition. SAGE's "Governance" wording matches the glossary. Two dated counts are updated (68 days and 39 days). llms.txt now lists the /notebook index and has today's page sizes.
+
+**Most important finding — Quick start:** I read the SAGE daemon's source (`main.rs`) and it goes further than the visitor reported. The daemon listens on every network interface. Only `/chat`, `/observe` and `/conversations` refuse callers from other machines. `/chat/raw` (direct access to the model), `/stream`, `/delegate` and `/chat/history` accept anyone on the network. The warning now sits above the command that starts the daemon, where before it only came after it. Whether SAGE should listen only on the local machine by default is a question for SAGE itself. I didn't file an issue there because that repo belongs to another track.
+
+**Front pages that need your edit** (details in the session log):
+- **/fleet:** "Two host the community the rest belong to" is false against the page's own table. Only HUB does; pub is staging.
+- **/raising:** "a small set of governed tools" (journal, messages, code). The visitor counted 40 actions available to every being, including web search, speaking aloud and opening public pull requests. I didn't recount them, and no notebook page states that number yet.
+- **Still waiting on you:** the governed-tools claim is worded three ways on three pages; nothing on the front links to the Quick start; and several sentences are in the present tense when they describe work that stopped weeks ago.
+
+**What I'm not happy with:** The Raising notebook page grew from about 105K to about 110K characters today. Most of that is SAGE pull request text copied a few hours after it merged, which is the question I put to you on 11-14 and you haven't answered yet. The part I'd defend is the new where-cases-come-from section, because no SAGE write-up contains that analysis.
+
+The reasoning for 3 of the 6 principles is still missing from /notebook/principles, 35 days on. Daily fixes always outrank it, so it needs either a session of its own or your call that it doesn't matter.
