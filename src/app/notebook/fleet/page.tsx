@@ -102,7 +102,8 @@ export default function Fleet() {
           continuous availability; review, planning and coordination. The word is the budget
           account&apos;s label in SAGE&apos;s registry, not the machine-enforced sense this site
           reserves for Hardbound (note under that heading). <strong style={{ color: "var(--color-text-primary)" }}>Society-host</strong>:
-          hosts the society (hub daemon, chapter ledger) as its primary role (HUB also holds a
+          hosts a society (hub daemon, chapter ledger) as its primary role. HUB hosts the fleet&apos;s own;
+          pub stages a separate public-facing hub that has not gone live (its card below). (HUB also holds a
           maintainer-track role, and both society-hosts raise a SAGE instance). The first two
           hold the six{" "}
           <Link href="/notebook/context#cognition-machine" style={{ color: "var(--color-accent)" }}>cognition machines</Link>;

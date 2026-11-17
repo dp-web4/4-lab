@@ -1351,6 +1351,48 @@
       "pattern": "Whether McNugget.s seat has deployed it and the beats have resumed",
       "unless": "",
       "why": "Beats resumed: McNugget's seat counts 30 on 11-08 (SAGE #708 comment, 2026-11-15)."
+    },
+    {
+      "id": "self-report-eight-cases",
+      "withdrawn": "2026-11-17",
+      "pattern": "eight dated cases",
+      "unless": "recounted to eleven",
+      "why": "Recounted to eleven dated cases 2026-11-17 with SAGE #745 (closed by #754) and two cases listed in #765's body (being not named); issue and PR bodies, not re-derived. Visitor P3 2026-11-17."
+    },
+    {
+      "id": "sage-716-open",
+      "withdrawn": "2026-11-17",
+      "pattern": "#716,? \\(open",
+      "unless": "",
+      "why": "SAGE #716 closed 2026-11-17 13:26 UTC by #765 (reflect shows the beat's receipts). Visitor P3 2026-11-17."
+    },
+    {
+      "id": "said-vs-did-as-class-instrument",
+      "withdrawn": "2026-11-17",
+      "pattern": "(?<!not )an instrument for the unfaithful self-report|Instruments that bear on it, both upstream",
+      "unless": "",
+      "why": "Construct slip: SAGE #685 pairs a stated next step with the next beat's act (intention follow-through), not an account of a past act checked against a record, which is the class's definition; PF-0 is the class's instrument. Visitor P4 2026-11-17."
+    },
+    {
+      "id": "society-host-both-host-fleet",
+      "withdrawn": "2026-11-17",
+      "pattern": "two society-host machines \\(HUB and pub\\), running|whose primary role is hosting the society . the hub daemon",
+      "unless": "",
+      "why": "pub is the staging host for a separate public-facing hub that has not gone live (its /notebook/fleet card); only HUB hosts the fleet's own society. Notebook twin of the front /fleet 'Two host the community' line. Visitor P2+P3 2026-11-17."
+    },
+    {
+      "id": "trust-per-role-unscoped",
+      "withdrawn": "2026-11-17",
+      "pattern": "\\) Trust is also directional and per-role",
+      "unless": "",
+      "why": "Per-role holds for Hestia (derivation.rs keyed by plugin and role_lct) and the Hub (state.rs reputation keyed by subject_lct, role_lct), not for SAGE's role-agnostic peer tracker, which the sentence followed. Checked at main 2026-11-17. Visitor P3 2026-11-17."
+    },
+    {
+      "id": "sage-governance-only-legacy",
+      "withdrawn": "2026-11-17",
+      "pattern": "like the Governance in SAGE.s name, and not a claim",
+      "unless": "",
+      "why": "The glossary SAGE row: the 2025 sense of Governance is legacy, but SAGE's current README uses the word for action under explicit authority, so it is not only a legacy label. Visitor P2 2026-11-17."
     }
   ]
 }

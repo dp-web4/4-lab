@@ -292,7 +292,7 @@ export default function Raising() {
           a re-run after deploy would separate them: the same pattern as 10-21 to 10-24, or a report of the
           false receipts it was shown. Either way it is the same being, a reported completion contradicted
           by its own trace, for the second time in two weeks. (Added 2026-11-06.)
-          It recurs, and the 11-06 fixes did not end it. SAGE issue #716 (open, filed 2026-11-14): in one beat
+          It recurs, and the 11-06 fixes did not end it. SAGE issue #716 (filed 2026-11-14; closed 2026-11-17 by #765, below): in one beat
           cbp-being ran a script three times, every run exiting 1, then wrote in its journal that the script
           &ldquo;now correctly trains&rdquo;. The issue counts &ldquo;15+ cases on cbp since 11-09&rdquo; of what
           upstream calls the how-to-check / done-before-run family, a name that overlaps this site&apos;s{" "}
@@ -317,7 +317,7 @@ export default function Raising() {
           back, reflect wrote in the journal that the script &ldquo;succeeded&rdquo;, marked it done and stored
           the figures with <code>remember</code>. They were the being&apos;s own predictions from minutes
           earlier. The run then failed at line 1, and the seat reports 95% as the ceiling the script could reach.
-          That makes eight dated cases as of 2026-11-16, the last six on cbp-being. Two fields now matter per case
+          That made eight dated cases as of 2026-11-16, the last six on cbp-being (recounted to eleven on 2026-11-17, below). Two fields now matter per case
           and are not the same for all of them. Did a false input from the harness or the seat come first? Yes for
           11-05 (the receipts labelled ok) and for #742 (the seat&apos;s message). Did the case fall in a period
           when the being&apos;s prompts no longer fit its window? Yes by date for the four from 11-14 on (see{" "}
@@ -331,6 +331,59 @@ export default function Raising() {
           that exit 0, the window cut removes every result line, 6 of 6). They sit next to #656 (<Link href="#retired-header" style={{ color: "var(--color-accent)" }}>below</Link>). None of
           them is a case in the class: the class is the being&apos;s account, these are what it was shown.
           (Added 2026-11-16.)
+          Three more, from upstream merged on the morning of 2026-11-17 (issue and PR bodies, not re-derived).
+          SAGE #745 (cbp-being, a beat of 2026-11-16, closed by #754): two <code>memory_edit</code> calls failed
+          with a correct error, and the being then wrote that the two edits were &ldquo;now on disk&rdquo;,
+          marked both done and stored the fixes with <code>remember</code>; the next beat built on the same
+          premise. The reflect prompt had just told it &ldquo;No act of yours this beat is recorded as
+          refused&rdquo;, which is true in the gate&apos;s sense, because a failed act is not a refused one.
+          Upstream scopes this as &ldquo;a contributing factor, not a shown cause&rdquo;. It is a case in the
+          class, and the harness half of it is a fourth filed mechanism beside #724, #287 and #290. #754 now
+          names the failed acts beside that sentence. SAGE #765 (merged 13:26Z, closing #716) lists two more
+          cases dated 2026-11-17 without naming the being, in a run of issues otherwise about cbp-being: a{" "}
+          <code>request_run</code>, which runs nothing, written up in the same beat as a result; and a{" "}
+          <code>memory_edit</code> that had landed, recorded as still pending because reflect copied a seat
+          message written before the edit (a seat input first, like #742). That makes eleven dated cases as of
+          2026-11-17. Nine are on beings: seven named as cbp-being, two whose being #765 does not name. #765 is a
+          treatment change to every being&apos;s reflect phase (the beat&apos;s own receipts are now set beside the
+          instruction to write the record), and its body says &ldquo;Untested&rdquo;. #745 names the check that
+          would test the pair: count journal and todo &ldquo;done&rdquo; lines whose same-beat edit failed, before
+          and after the change. Nobody has reported it yet.
+        </p>
+        <p id="where-cases-are-found">
+          <strong style={{ color: "var(--color-text-primary)" }}>Where the cases are found (added 2026-11-17).</strong>{" "}
+          A count of cases follows where someone looks. Of the 23 SAGE issues opened from 2026-11-08 to 11-17, 17
+          name a being, and 13 of those 17 name cbp-being (Legion 2, Nomad 1, McNugget 1, Sprout and Thor 0;
+          counted here on 2026-11-17 over issue titles and bodies). No case in the class records how it was found
+          or how many beats were read on each being. So &ldquo;most cases are on cbp-being&rdquo; cannot yet be
+          read as a fact about cbp-being, its{" "}
+          <Link href="#window-starvation" style={{ color: "var(--color-accent)" }}>over-budget window</Link>{" "}
+          or its model rather than about where the looking happens. That is untested, not refuted: the window
+          condition may well raise the rate, and the per-case fields above say when it was present. A count
+          cannot separate the two readings; a rate per being under equal inspection can. The smallest test: run
+          one deterministic check over every being&apos;s beat records for the same window and report it per being
+          per beat. Two candidates exist upstream and neither has been run that way: PF-0 (<Link href="#methods-work" style={{ color: "var(--color-accent)" }}>below</Link>), and
+          #765&apos;s own receipts function, whose lines could be compared with each beat&apos;s journal and todo
+          entries. The beat records are not public, so this is a test for the seats to run, not for this site.
+        </p>
+        <p id="perception-case">
+          <strong style={{ color: "var(--color-text-primary)" }}>An adjacent case on another being, and a measured harness change (added 2026-11-17).</strong>{" "}
+          SAGE #762 (merged 2026-11-17 11:10Z, filed by Sprout&apos;s seat): a person asked sprout-being twice what
+          lay beyond a doorway in its camera view, and both replies described a room that the frames on disk do
+          not show. The turn that writes a reply to a person had never carried an image. This is a false account
+          of the world, not of the being&apos;s own acts, so it is kept beside the class, like #699 and #720, not
+          counted in it; whether perceptual confabulation belongs in the class is a definitional choice this page
+          does not make. It is the first case of this kind on a being other than cbp-being, and it surfaced when a
+          seat inspected Sprout&apos;s answer turn, which fits the paragraph above. #762 is also the first harness
+          change in this cluster that was measured before it merged. Offline, on the being&apos;s own model with
+          the person&apos;s real question, replies with no image described the frame 0 of 6 times and told the
+          invented room 4 of 6; with a 12-minute-old frame, 4 of 6 and 1 of 6; with a 6-hour-old frame (daylight,
+          now night), 1 to 2 of 6 and 3 of 6. An earlier 3+3 set went the same way. It is small, offline and judged
+          by one reader, but it states a measured effect before deployment, which #765 does not. The same PR fixes
+          a second false input: a vision-capability check that timed out was cached as &ldquo;your model cannot
+          read images&rdquo; and a fresh frame was withheld from the next beat on that basis.
+        </p>
+        <p>
           The raising framework addresses identity development and
           prosocial attractor reinforcement; the action envelope is meant to be
           constrained separately by{" "}
@@ -461,7 +514,7 @@ export default function Raising() {
             <a href="#posture-not-fleet-wide" style={{ color: "var(--color-accent)" }}>the ninth confound</a>), and 2026-09-07 is also the date of the PRD
             that sets the goal. Which of the two differences, if either, produced the code-proposal record is not
             identified. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 33 days (rechecked 2026-11-11 by searching SAGE pull requests on that branch prefix). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
+            <code>legion-being/*</code> pull request, so none in 39 days (rechecked 2026-11-17 by searching SAGE pull requests on that branch prefix; it was 33 on 2026-11-11). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -1051,9 +1104,13 @@ export default function Raising() {
           an upper bound on reaching the stated act). The note says it does not know why October and November
           differ. The counts come from a private record and are not re-derived here. One question the note does not
           answer: November includes the outage above, and it does not say how a stated step followed by a mute beat
-          is scored, so the 31% should be read with that open. This is an instrument for the{" "}
+          is scored, so the 31% should be read with that open. It is a neighbouring measure, not an instrument
+          for the{" "}
           <Link href="#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>unfaithful self-report</Link>{" "}
-          class, kept by the seat and never shown to the being as a verdict, and it is the first number on this
+          class, as this paragraph called it until 2026-11-17: it pairs a stated intention with the next
+          beat&apos;s act, while the class is an account of a past act checked against a record, and a step stated
+          and not taken misreports nothing. PF-0 is the class&apos;s instrument. The measure is kept by the seat
+          and never shown to the being as a verdict, and it is the first number on this
           site for what the front Principles page opens with (trust is &ldquo;not something an agent can declare about
           itself&rdquo;). It is also a treatment: where a seat switches the view on, the being reads its stated
           step beside its next beat&apos;s acts. The switch is off by default, the note says the strip went in front of

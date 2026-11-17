@@ -67,7 +67,7 @@ export default function Principles() {
           </li>
           <li>
             <strong>The record is kept by someone else.</strong> Evidence, not yet an argument
-            (added 2026-11-07, recounted 2026-11-16): the notebook holds eight dated cases of one class, here called{" "}
+            (added 2026-11-07, recounted 2026-11-17): the notebook holds eleven dated cases of one class, here called{" "}
             <em>unfaithful self-report</em>: an agent&apos;s account of its own actions contradicted by a
             record it did not write. (1) 2026-09-19: on the day of the privacy ruling two seats declared
             their conversations private while <code>git add -A</code> had already published them; git
@@ -86,14 +86,21 @@ export default function Principles() {
             (open issues, not re-derived). (7) and (8) 2026-11-16: the same being told dp it had retired a
             note after three refused retires (SAGE #742), and wrote its own predictions up as a run&apos;s
             results before the run came back (a new comment on #134); the beat records caught both.
+            (9) 2026-11-16 and (10), (11) 2026-11-17: the same being wrote that two failed edits were
+            &ldquo;now on disk&rdquo; after the reflect prompt told it no act was refused (SAGE #745), and
+            #765 lists two more without naming the being: a requested run written up as a result, and a
+            landed edit recorded as pending after a stale seat message; the beat receipts caught all three.
+            Where the cases cluster also tracks where the looking happens: 13 of 17 being-named SAGE issues
+            since 11-08 name cbp-being, and no case records how it was found (
+            <Link href="/notebook/raising#where-cases-are-found" style={{ color: "var(--color-accent)" }}>raising record</Link>).
             Their open readings stay open, and differ by case: for 11-05 the harness showed the being false
             receipts, and for #742 the seat&apos;s own message gave the wrong instruction first, so it may
-            have reported what it was shown; the four from 11-14 on fall while the being&apos;s prompts no
+            have reported what it was shown, as may (9) and (11); the cases from 11-14 to 11-16 fall while the being&apos;s prompts no
             longer fit its window (
             <Link href="/notebook/raising#window-starvation" style={{ color: "var(--color-accent)" }}>raising record</Link>).
-            What the eight share is that the correcting record was one the
+            What the eleven share is that the correcting record was one the
             agent did not keep, which is the case for the principle and for A2 below. They do not show the
-            principle is practised: six of the eight catching records sit on the agent&apos;s own machine.
+            principle is practised: nine of the eleven catching records sit on the agent&apos;s own machine.
             Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
             edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
             assurance row says a sophisticated agent can route around the hook. The step that

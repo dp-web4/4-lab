@@ -262,7 +262,11 @@ python3 -m sage.instances.init --machine mybox --model gemma3:4b --operator-name
 # 2. Build the daemon
 cd sage-rs && cargo build --release && cd ..
 
-# 3. Run the loop
+# 3. Run the loop. Read first: the daemon listens on ALL interfaces (0.0.0.0:8760), and its
+#    peer list loads the lab's own eight-machine fleet.json even as mybox. From main.rs at SAGE
+#    main (last changed 2026-10-12, read 2026-11-17): /chat, /observe and the /conversations
+#    routes refuse callers not on loopback; /chat/raw (the raw model), /stream, /delegate and
+#    /chat/history have no such check. On a shared network, firewall port 8760.
 SAGE_MACHINE=mybox SAGE_MODEL=gemma3:4b ./sage-rs/target/release/sage-daemon
 # Always set SAGE_MACHINE, and do not probe this binary with flags. It has no --version: it
 # ignores the flag and starts, and with SAGE_MACHINE unset it takes the identity "sprout", a
@@ -318,7 +322,8 @@ curl -L https://github.com/dp-web4/hestia/releases/download/v0.3.0/hestia-v0.3.0
 # --version only shows the binary runs; nothing is governed yet. hestia --help lists init and
 # serve, and the README's "Installing the daemon" section is the upstream path from here
 # (not transcribed on this page, and not followed by this site).
-# Source has moved on since the tag: 64 commits on main after v0.3.0 (counted 2026-11-04), so
+# Source has moved on since the tag: 119 commits on main after v0.3.0 (GitHub compare,
+# 2026-11-17; it was 64 on 2026-11-04), and v0.3.0 is still Latest, so
 # what runs on the fleet may still be newer than the release. That is a count of commits, not
 # a check of any machine's installed version.
 # The README's Status paragraph still says the public releases are older and that there is no
@@ -357,12 +362,19 @@ cd ACT
           <a href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/RUST_VS_PYTHON_CAPABILITY.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>capability matrix</a>{" "}
           calls it &ldquo;an inference-and-metabolism gateway, not a port of the Python 12-step
           consciousness kernel&rdquo; (an upstream code name that predates this site&apos;s framing;
-          a legacy label, like the Governance in SAGE&apos;s name, and not a claim). The dashboard at port 8760 shows version, uptime, the model,
+          a legacy label and not a claim. The Governance in SAGE&apos;s name is different: its 2025 sense, a
+          device&apos;s own sense-to-act loop, is legacy, but SAGE&apos;s current README uses the word for action
+          under explicit authority; see the glossary&apos;s{" "}
+          <Link href="/notebook/context#sage" style={{ color: "var(--color-accent)" }}>SAGE</Link> row). The dashboard at port 8760 shows version, uptime, the model,
           a metabolic-state badge (one of WAKE / FOCUS / REST / DREAM / CRISIS), an ATP (Allocation Transfer Packet) gauge and
           cycle count, and the peer list. From the source, not observed: the peer monitor loads the
           fleet&apos;s own eight-machine <code>fleet.json</code> even for an instance named{" "}
           <code>mybox</code>, and the daemon binds <code>0.0.0.0</code>, so expect the lab&apos;s machines in that
-          list and a service listening on all interfaces. Whether it sends them traffic is untested. It has SNARC
+          list and a service listening on all interfaces. Whether it sends them traffic is untested. Only some
+          routes check the caller: <code>/chat</code>, <code>/observe</code> and the <code>/conversations</code>{" "}
+          routes refuse anyone not on loopback; <code>/chat/raw</code>, <code>/stream</code>,{" "}
+          <code>/delegate</code> and <code>/chat/history</code> do not (main.rs, read 2026-11-17). Both warnings
+          now also sit above step 3 in the block; until 2026-11-17 they were only here, below the command. It has SNARC
           (Surprise / Novelty / Arousal / Reward / Conflict) bars, but as of 2026-09-15 nothing on the
           dashboard fills them, so they stay empty. There is no posture display, because posture is
           absent from the Rust daemon. An idle daemon in WAKE with an empty buffer is the correct first

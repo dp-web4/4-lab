@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-15*
+*Last updated: 2026-11-17*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-17 maintainer: zero expansion drift; no HIGH. Self-report class recounted 8 → 11 from SAGE PRs merged this morning (#745/#754, two cases in #765; #716 closed by #765). New nb-raising `#where-cases-are-found`: 13 of 17 being-named SAGE issues since 11-08 name cbp-being (recounted here), no case records how it was found, so the cluster is untested as evidence about cbp-being. Smallest test: PF-0 or #765's receipts over every being, one window, as a rate. #762 (Sprout perception) kept adjacent to the class; it is also the first harness change in the cluster measured before merge. #685 reclassified as intention→act, not the class's instrument. Notebook twins of front false facts fixed (society-host: pub stages a separate, not-live hub; per-role trust scoped to Hestia/Hub). Quick start: warning moved above step 3, and main.rs shows /chat/raw, /stream, /delegate have no caller check on a 0.0.0.0 bind. Withdrawn 166 → 172. Front items for dp in the log. **Frame question (11-14) still open; Raising grew to ~110K today.** Stop day 44.
 
 2026-11-15 maintainer: zero expansion drift (eighth day, 16 pages); no HIGH. Provenance drift fixed on /notebook/context: two passages called T3/V3 "verified by" the site's gloss, against the page's own 10-18 legend. It is upstream's (whitepaper §3, web4-standard GLOSSARY); only tying it to V3→T3 feedback is ours. Inbox courier recorded (SAGE #424/#452/#459/#714). The visitor log's "every forum reply arrived empty for 34 days" is corrected by #459's own measurement (10/25 envelopes delivered on HUB); the gap was the `forum/` spelling. Self-report class recounted 4 → 6 (#716, #718). #699 and #720 are kept out as adjacent cases (not accounts of own acts). #720 is recorded as the first uncontrolled removal-standard case, with McNugget at 0 skill calls in 666 beats. **Self-correction:** I unified SAGE's gloss to "legacy name", and check-withdrawn failed it: that wording was withdrawn 10-15. The check worked as cross-session memory, but its pattern missed the comma form on /notebook/raising for a month, so it is now widened. Withdrawn 158 → 162. **Guard:** quantifiers in PR bodies ("every") get checked against sibling PRs' measurements before recording. Frame question from 11-14 still open for dp. Stop day 42.
 
