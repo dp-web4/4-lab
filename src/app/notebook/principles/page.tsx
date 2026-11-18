@@ -283,7 +283,11 @@ export default function Principles() {
               machines earn trust in each other (
               <Link href="/notebook/fleet#peer-trust-output" style={{ color: "var(--color-accent)" }}>/notebook/fleet</Link>).
               The second and third failures share a shape: an instrument that was built and run, but whose
-              output nobody had examined against what it was supposed to measure. We
+              output nobody had examined against what it was supposed to measure. A fourth is a whole paper of
+              them, and the first that shows the method working: the SWE-SAGE competition paper (<a href="https://github.com/dp-web4/swe-paper" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4/swe-paper</a>, public
+              2026-11-12) reports that most of what was tried did not move the score, and that gains read on the
+              team&apos;s own 24-task panel (19 of 20) did not hold on fresh tasks (3 of 19). It found that because
+              every reading was written before its score and the fresh-task rule was set in advance. (Added 2026-11-18.) We
               document what didn&apos;t work alongside what did. Of the four{" "}
               <Link href="/notebook/links" style={{ color: "var(--color-accent)" }}>explainer sites</Link>,
               Synchronism&apos;s has an honest-assessment page and 4-Life&apos;s a what-could-go-wrong page;

@@ -51,7 +51,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4"
             title="dp-web4 (GitHub account)"
-            description="The account itself, and the only complete list: 23 public original repos and 36 public forks (GitHub API, 2026-11-07). The list below is a selection: 13 of the public originals and 3 of the forks are annotated here, plus one private repo's public description."
+            description="The account itself, and the only complete list: 24 public original repos and 37 public forks (GitHub API, 2026-11-18). The list below is a selection: 14 of the public originals and 3 of the forks are annotated here, plus one private repo's public description."
           />
           <ExternalLink
             href="https://github.com/dp-web4/web4"
@@ -66,7 +66,12 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/SWE_SAGE.md"
             title="SWE-SAGE (private repository; public description)"
-            description="SAGE applied to software engineering (SWE), the Gemma 4 Developer Agent Competition entry. The repository github.com/dp-web4/SWE-SAGE is private and returns 404 to visitors; this link is SAGE's public description of it (2026-09-26). No results published; see /notebook/projects"
+            description="SAGE applied to software engineering (SWE), the Gemma 4 Developer Agent Competition entry. The repository github.com/dp-web4/SWE-SAGE is private and returns 404 to visitors; this link is SAGE's public description of it (2026-09-26). Results: the public paper repository below (2026-11-12); see /notebook/projects"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/swe-paper"
+            title="swe-paper (public, 2026-11-12)"
+            description="SWE-SAGE's paper-track submission, 'When the Harness Holds the Agent Back', with its pre-registered submission ledger, panels, grader data and reviews. Mostly negative: gains measured on the development panel did not hold on fresh tasks (19 of 20 vs 3 of 19)"
           />
           <ExternalLink
             href="https://github.com/dp-web4/Synchronism"
@@ -151,7 +156,7 @@ export default function Links() {
 
         <h2 style={{ marginTop: "2rem" }}>Contributing</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", marginBottom: "0.75rem" }}>
-          New here? Read <a href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: start with SAGE. The ontology and its code: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side, but it is stalled — don&apos;t start there.
+          New here? Read <a href="/notebook/context#glossary" style={{ color: "var(--color-accent)" }}>the /context glossary</a> for the vocabulary. Hands-on: Web4&apos;s core packages and Hestia&apos;s release binaries are the most finished things to try; SAGE is the deepest, and its README (2026-11-17) calls it a developer-operated research stack. The ontology and its code: start with Web4, whose core packages now install directly. ACT is the Cosmos SDK side, but it is stalled — don&apos;t start there.
         </p>
 
         <h3 style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Quick start</h3>
@@ -175,7 +180,7 @@ export default function Links() {
           <a href="https://github.com/dp-web4/web4/issues" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Web4</a>{" "}
           are the most active issue trackers. The{" "}
           <a href="https://github.com/dp-web4" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>dp-web4 account</a>{" "}
-          holds 45 original repos — 23 public, 22 internal — plus 37 forks of external work the lab builds on (36 public, one internal), 82 repositories in all. (&ldquo;Original&rdquo; means not-a-fork. Counted against the GitHub API on 2026-11-07; the 2026-09-12 count was 40 originals (21 public) and 33 forks (32 public). Since then two public originals, repo-plane and agent-collab, and four public forks, two of Google&apos;s adk-python repos, gitea and KiCAD-MCP-Server, were added.) Clone what interests you, experiment, and open a discussion if you want to engage.
+          holds 46 original repos — 24 public, 22 internal — plus 38 forks of external work the lab builds on (37 public, one internal), 84 repositories in all. (&ldquo;Original&rdquo; means not-a-fork. Counted against the GitHub API on 2026-11-18; the 2026-09-12 count was 40 originals (21 public) and 33 forks (32 public). Since then three public originals, repo-plane, agent-collab and swe-paper (2026-11-12), and five public forks, two of Google&apos;s adk-python repos, gitea, KiCAD-MCP-Server and freerouting (2026-11-13), were added.) Clone what interests you, experiment, and open a discussion if you want to engage.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)" }}>
           There is no CONTRIBUTING guide yet and no stated policy on outside

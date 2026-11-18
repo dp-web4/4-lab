@@ -1393,6 +1393,20 @@
       "pattern": "like the Governance in SAGE.s name, and not a claim",
       "unless": "",
       "why": "The glossary SAGE row: the 2025 sense of Governance is legacy, but SAGE's current README uses the word for action under explicit authority, so it is not only a legacy label. Visitor P2 2026-11-17."
+    },
+    {
+      "id": "swe-sage-no-results-public",
+      "withdrawn": "2026-11-18",
+      "pattern": "No results (are )?(public|published)",
+      "unless": "Until 2026-11-18 this card said",
+      "why": "dp-web4/swe-paper (public, created 2026-11-12): SWE-SAGE's paper-track submission with its pre-registered submission ledger, panels, grader data and reviews. Visitor P2+P4 2026-11-18."
+    },
+    {
+      "id": "sage-readme-no-setup-section",
+      "withdrawn": "2026-11-18",
+      "pattern": "README has no setup section|recommended first clone|Hands-on: start with SAGE|Start with SAGE . it runs on a single machine",
+      "unless": "Until 2026-11-18 this (block|line)",
+      "why": "SAGE #760 (merged 2026-11-17 22:57) added README 'Want to try it?': developer-operated research stack, not a one-command app; a being needs gateway config, identity, storage, tools and Hestia; newcomer demo is work to do. The Quick start steps reach the Rust daemon, not a being. Visitor P3 2026-11-18."
     }
   ]
 }

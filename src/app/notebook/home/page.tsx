@@ -199,7 +199,7 @@ export default function Home() {
           <Link href="/notebook/context" style={{ textDecoration: "none" }}>
             <div className="card">
               <h3>Vocabulary</h3>
-              <p>The glossary for LCT, T3/V3, MRH, R6/R7, ATP/ADP and related terms.</p>
+              <p>The glossary for LCT, T3/V3, MRH, R6/R7, ATP/ADP and related terms (this list is a pointer, not a first use; each term is expanded in its glossary row).</p>
             </div>
           </Link>
           <Link href="/notebook/projects" style={{ textDecoration: "none" }}>
