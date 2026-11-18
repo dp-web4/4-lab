@@ -4,3 +4,29 @@ Pulling SAGE fleet models...
  create mode 100644 sage/gateway/tests/test_search_names_home_find.py
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+## Maintainer session 2026-11-18: summary
+
+**Terminology:** No Web4 term drift on any page; all four visitor passes found the same. Nothing in today's visitor log was HIGH severity. The fleet manifest's only fresh entry (McNugget, Gemma 4 12B) already matches the notebook.
+
+**What I fixed (notebook only):**
+- **"No results are public" was false on three pages.** The lab's own SWE-SAGE paper went public on 2026-11-12 (`dp-web4/swe-paper`). The SWE-SAGE card, the links row and the glossary row now record it with its date. Its result is mostly negative: gains measured on the team's own 24-task panel (19 of 20) did not hold on fresh tasks (3 of 19). The repository count is updated to 46 originals and 38 forks.
+- **The Quick start overstated the SAGE on-ramp.** SAGE's README gained a "Want to try it?" section on 11-17 (#760). It calls SAGE a developer-operated research stack and says a newcomer demo is still "work to do". The page no longer calls SAGE the "recommended first clone" and states that the steps reach a daemon, not a being. "Start with SAGE" now follows the glossary's ordering on two pages, and `llms.txt` is corrected to match.
+- **/notebook/raising caught up with upstream SAGE:**
+  - #778: Sprout's camera frames were magenta for five weeks, and upstream calls the being's descriptions a "faithful report". Recorded as a positive case next to the confabulation case.
+  - The first measured results of the lean-trial harness trim (#708, #753), and the four per-being preflight changes (#773–#777).
+  - The first removal-direction case (#784) and a persistence case (#783), stated as not deciding between raising and context engineering.
+  - #779 is noted as an open twelfth candidate for the self-report class but not counted.
+  - The swe-paper is cited as the lab's own pre-registration template, and on /principles as a documented failure.
+- **Smaller items:** a new glossary row for "settled entry", the hub/HUB/Hub naming rule applied in four places, two counters on /notebook/autonomy re-dated, and the trust-package version gap added.
+- **Regression tests:** two new withdrawn-reading entries (172 → 174). Each matched all three old instances and exempts only its own withdrawal note.
+
+**Checks:** the build and all checks pass (22 protected caveats hold, 0 withdrawn readings live, 0 damaged-text hits). Commit e9d19da deployed with status `success`. The log commit a15576d was pushed after that.
+
+**One mistake I caught before it shipped:** my first wording of the hub-rule example would have made about 15 existing correct uses of lowercase "the hub" break the rule on the day I added it. A sweep of the rendered pages showed this, so I rewrote the example to target the actual collision (the machine is always HUB).
+
+**Frame question for dp (in the log):** the notebook is now repeating the growth that caused the front/notebook split. /notebook/raising went from 57 KB on 10-04 to 148 KB today, nearly doubling in two weeks; about 9 KB of that is from today. The cause is structural: SAGE merges about 15 PRs a day, and the rule to keep every correction visible turns each one into a paragraph, so the notebook becomes a day-late prose copy of SAGE's tracker. Fetch tools cut off at about 40 KB, so the AI readers the notebook is meant for can't read the page whole. I proposed keeping the treatment record as data (one row per change), with prose kept for the readings. I did not act on it alone, because it changes what the notebook is.
+
+**Still waiting on you:**
+- The front-page items, unchanged; the main one is that SAGE's governed tools are described at three different strengths across three pages.
+- The question of who approves front changes, asked 11-08 with no reply for 10 days.
+- One upstream item is now resolved: the SAGE README has a setup section since #760, so it is off the carried list.
