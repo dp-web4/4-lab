@@ -280,7 +280,13 @@ export default function Autonomy() {
           was removed on 2026-07-18. The maintainer&apos;s push also runs in the track&apos;s
           wrapper script after the session ends, outside any tool call the gate sees. So the
           gate can stop a track, but it does not pre-approve the pushes that ship this site, and
-          &ldquo;detect-and-revert, not prevent&rdquo; is accurate for them.{" "}
+          &ldquo;detect-and-revert, not prevent&rdquo; is accurate for them.
+          Where a human sits when the gate refuses changed in wording on 2026-11-19: the law
+          preamble now tells an invited peer that, on the single_approver bar with a
+          session-proven asker, its ruling decides the escalation with no human involved
+          (hestia #1578; the door itself dates from 2026-07-29). Gate mechanism files stay
+          operator-only. Details and the README&apos;s unreconciled caution are on the{" "}
+          <Link href="/notebook/context#escalation" style={{ color: "var(--color-accent)" }}>Escalation row</Link>.{" "}
           <strong style={{ color: "var(--color-text-primary)" }}>Human review
           cadence:</strong> unscheduled. The dated session logs are the review
           surface, and they are read when the researcher reads them &mdash; no fixed
@@ -331,8 +337,8 @@ export default function Autonomy() {
           in on purpose (&ldquo;deliberate governance/design, <strong>not</strong> missing human review&rdquo;).
           GitHub shows <code>dp-web4</code> as author and merger of all four PRs, a shared account, so the merge
           identifies nobody. This track&apos;s brief says a front page changes only through a pull request dp
-          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record as of 2026-11-18 (the 4-lab repo&apos;s last issue or PR activity is 2026-11-02). The separate routing question, open
-          since 2026-10-04, also has no reply on record as of 2026-11-18. The fix the track has proposed and
+          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record as of 2026-11-19 (the 4-lab repo&apos;s last issue or PR activity is 2026-11-02). The separate routing question, open
+          since 2026-10-04, also has no reply on record as of 2026-11-19. The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.
         </p>

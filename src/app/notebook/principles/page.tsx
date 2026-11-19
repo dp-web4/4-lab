@@ -63,7 +63,11 @@ export default function Principles() {
             or deploys, so the pushes that ship this site and the fleet&apos;s repos are
             detect-and-revert, not checked before they act (see{" "}
             <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>,
-            Operational boundaries).
+            Operational boundaries). When the law refuses, the front&apos;s &ldquo;a human is pulled
+            in where the rules say&rdquo; holds for the gate&apos;s own files; on the lower
+            single_approver bar a not-same AI peer&apos;s ruling can decide instead (stated in the
+            law since 2026-11-19; see the{" "}
+            <Link href="/notebook/context#escalation" style={{ color: "var(--color-accent)" }}>Escalation row</Link>).
           </li>
           <li>
             <strong>The record is kept by someone else.</strong> Evidence, not yet an argument

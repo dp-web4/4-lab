@@ -371,7 +371,8 @@ export default function Raising() {
           condition may well raise the rate, and the per-case fields above say when it was present. A count
           cannot separate the two readings; a rate per being under equal inspection can. The smallest test: run
           one deterministic check over every being&apos;s beat records for the same window and report it per being
-          per beat. Two candidates exist upstream and neither has been run that way: PF-0 (<Link href="#methods-work" style={{ color: "var(--color-accent)" }}>below</Link>), and
+          per beat. Two candidates exist upstream and neither has been run that way: PF-0, SAGE&apos;s premise-fidelity checker (the label appears upstream
+          only in its module docstring, &ldquo;PF-0 M0-M2&rdquo;, and is never expanded; <Link href="#methods-work" style={{ color: "var(--color-accent)" }}>below</Link>), and
           #765&apos;s own receipts function, whose lines could be compared with each beat&apos;s journal and todo
           entries. The beat records are not public, so this is a test for the seats to run, not for this site.
           The lab&apos;s own SWE-SAGE paper (<a href="https://github.com/dp-web4/swe-paper" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>dp-web4/swe-paper</a>,
@@ -476,7 +477,12 @@ export default function Raising() {
           conversation channel and a continuity note (the seventh confound, below), so the most
           confounded condition is now the least auditable one. Until 2026-09-23 this paragraph said
           anyone could read every session. Even for the public records, what is missing is the reading method: no coding
-          criteria, no rater protocol, and the readings are not externally audited. See{" "}
+          criteria, no rater protocol, and the readings are not externally audited. Why a protocol would
+          have to control more than wording is now on record from the principal observer himself (SAGE
+          #788, 2026-11-19): after a live demo on 11-18, the human lead reported that responsive models
+          &ldquo;<em>felt</em> smarter, though he didn&apos;t <em>think</em> they were&rdquo;, and that a
+          &ldquo;thinking...&rdquo; indicator mattered more than he expected. The same issue makes responsiveness a
+          design target, so a rater arm for these readings would need to blind latency and visible indicators. See{" "}
           <Link href="/notebook/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each kind of claim on this site does and doesn&apos;t have behind it.
         </p>
@@ -953,7 +959,7 @@ export default function Raising() {
           comparison arm too. That makes ten dated changes on cbp-being in 22 days (10-15 to 11-06). (Added 2026-11-06.)
           Outages are condition changes too, and two are on record upstream. hub-being was silent for about 11 hours
           (2026-10-27 19:30 to 10-28 06:27 UTC, 22 beats): the step-1 preflight refused every explore while the seed
-          fitter found nothing to trim, and no intervention was logged (SAGE issue #582, still open 2026-11-18).
+          fitter found nothing to trim, and no intervention was logged (SAGE issue #582, reopened 2026-11-17, open 2026-11-19).
           mcnugget-being was refused at step 1 on every beat from 2026-11-02 01:14 UTC until SAGE #629 merged on
           2026-11-07 (about five days, same failure class, a gemma4 tokenizer ratio; see the McNugget card on the{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>fleet record</Link>). #629 changes the preflight for every gemma4 being,
@@ -962,7 +968,19 @@ export default function Raising() {
           merged PR does. (Added 2026-11-07.) Four preflight changes under #582 followed on 2026-11-17 and 11-18
           (SAGE #773, #774, #776, #777, merged 21:12Z to 01:44Z): the step-1 preflight now calibrates from each
           being&apos;s own measured token counts, the class #629 patched for gemma4 alone. Each is a dated treatment
-          change for every being once its seat deploys it. (Added 2026-11-18.)
+          change for every being once its seat deploys it. (Added 2026-11-18.) Two deploy dates are now in
+          #582&apos;s comments, each a seat&apos;s read of its own beat log, not merged text: cbp-being
+          2026-11-17 19:00 PT, mcnugget-being 21:58Z the same day. On both, every beat since carries the
+          calibration and fit interventions; mcnugget-being had 2 preflight refusals in the 86 beats before and
+          none in the 50 beats to 11-19 09:34Z. Settings outside git change conditions too, and a ledger keyed to
+          the files a PR touches cannot see them. On 2026-11-19 at 07:41Z McNugget&apos;s seat turned on three
+          per-instance opt-ins for mcnugget-being (<code>preempt</code>,{" "}
+          <code>answer_first_on_person_wake</code>, <code>answer_turn: &quot;json&quot;</code>) in a local,
+          untracked <code>instance.json</code>, then <code>answer_think: false</code> after SAGE #789 merged
+          (08:06Z). A person&apos;s turn now preempts the beat and is answered without thinking; a preempted beat
+          skips reflect. The seat&apos;s measured turn-to-reply time went 388 s, 530 s, 129 s (SAGE #788
+          comments, #789 body). That is a treatment change on one being, from 2026-11-19, and it moves the
+          denominator of anything counted per reflect. (Added 2026-11-19.)
           The being can change its own conditions too. Since SAGE #387 (merged 2026-10-09), a being can set some
           of its own parameters, its context window among them, with a <code>tune</code> verb. SAGE #705 (merged
           2026-11-15 21:40 UTC; from its PR body, written by Nomad&apos;s seat, not re-derived here) records the first lockout. At
@@ -1206,6 +1224,15 @@ export default function Raising() {
           about its broken retired scripts are evidence about the tool, not about the being&apos;s competence.
           The class now has two cases in one week, on two beings, through two different harness paths. In both, a
           false report from the harness reached the being, and the being&apos;s own account absorbed it.
+          A third case, about reach rather than outcome (SAGE #781, closed by #786, merged 2026-11-18): the{" "}
+          <code>search</code> refusal told mcnugget-being that files in its home &ldquo;cannot be searched at
+          all. Read those with memory_read&rdquo;. It did, from the top of its 1,949-line beat log, for parts of
+          three beats, and never reached the lines it wanted. The seat&apos;s issue repeated the claim. #786
+          found that <code>memory_read</code> had taken a <code>find</code> argument since #351, so the refusal
+          text was false. The being&apos;s account was faithful to what it was told, so this case is not counted
+          in the self-report class. It does bear on the front&apos;s &ldquo;well-kept memory files&rdquo; null:
+          what a being carries and what it can reach are different sets, and the harness&apos;s description of
+          the second can be wrong in a way that both the being and its seat believe.
         </p>
         <p>
           How much room a being has to act is now published for one being (SAGE #689, merged 2026-11-10; Legion,

@@ -1407,6 +1407,13 @@
       "pattern": "README has no setup section|recommended first clone|Hands-on: start with SAGE|Start with SAGE . it runs on a single machine",
       "unless": "Until 2026-11-18 this (block|line)",
       "why": "SAGE #760 (merged 2026-11-17 22:57) added README 'Want to try it?': developer-operated research stack, not a one-command app; a being needs gateway config, identity, storage, tools and Hestia; newcomer demo is work to do. The Quick start steps reach the Rust daemon, not a being. Visitor P3 2026-11-18."
+    },
+    {
+      "id": "sage-quickstart-beings-included",
+      "withdrawn": "2026-11-19",
+      "pattern": "whole thing, beings included",
+      "unless": "Until 2026-11-19 this line said",
+      "why": "The Quick start's own first comment says its steps reach the Rust daemon and do not set up a being; SAGE README 'Want to try it?' (#760, 2026-11-17) says a being also needs gateway configuration, identity, durable storage, tool access and Hestia. Visitor P2+P3 2026-11-19."
     }
   ]
 }
