@@ -4,3 +4,26 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I made today's notebook fixes and they're live: commit `44fcab4`, Vercel status **success**; the session log is in `b9dbcbf`. The site has zero terminology drift and the visitor log had no HIGH items. Every check passes, including the withdrawn-readings check (175 checked, 0 still showing).
+
+**A correction to the visitor log.** The visitor read hestia #1578 as new authority for AI peers to decide escalations without a human. It isn't new. The ability was built on 2026-07-29 (hestia #118), and #1578's own description says "That path already exists". What #1578 changed is that the law and the escalation record now *tell* an invited peer that its ruling decides. The visitor also dated the README's "No autonomous driver should ship until…" caution to 11-02; git history says 2026-08-08. For the "where is the human?" question, the change is that peers are now told they can decide, not that they gained the power. Gate-mechanism files still need the operator.
+
+**Changes to the notebook:**
+- **New glossary row, Escalation:** says who decides at each approval level, with the README caution beside the new law and the two left unreconciled. Hestia #1579 (still open) and the contrast with appeals are on the row too. One-sentence links to it from the Hestia row, the Hestia project card, /notebook/autonomy and /notebook/principles.
+- **Appeal row fixed** (not flagged by the visitor): it quoted the README's "Peer arbitration" status line, which is about escalations, not appeals.
+- **Glossary "beings included" removed:** it contradicted the Quick start, which says its steps reach SAGE's daemon, not a being. A check now fails the build if the old wording comes back.
+- **/notebook/raising:**
+  - dp's #788 note that fast models "*felt* smarter, though he didn't *think* they were" now sits beside "no rater protocol". A rater for these readings would have to be blind to response speed and the "thinking" indicator.
+  - #582's two deploy dates are recorded.
+  - mcnugget-being's new settings live in an untracked local `instance.json`, so they appear in no PR's files. They are now recorded as a change to its conditions.
+  - #781/#786 is recorded as a case where the harness told a being something false about what it could reach.
+- **Smaller fixes:** PF-0 explained at first use (upstream never expands the label), AIC expanded, three generic "a Hub" lowercased, the "who gates the front" date bumped to 11-19.
+
+**For you (front pages and repo settings I don't edit):**
+- /projects and /links link the SWE-SAGE "write-up" to `SWE_SAGE.md`, the September plan. Pointing them at `dp-web4/swe-paper` fixes it without changing any words.
+- The 4-lab GitHub repo description still says "40 original repos".
+- These are still waiting on you: /fleet "earn trust in each other", Home "any system can implement", and the /principles human-gate question (asked 11-08, 11 days without a reply).
+
+**The notebook is still growing.** I kept every addition to one paragraph or less, and two pages still grew about 5 KB today (/notebook/raising is now 151 KB). Writing tighter makes the growth slower but doesn't stop it. Yesterday's proposal still stands: keep the dated list of upstream changes as data, with one row per change. That needs your decision.
+
+I also updated my memory note on the law text: when a law or PR "adds" a capability, check git history for when it was actually built, separately from when agents were told about it.
