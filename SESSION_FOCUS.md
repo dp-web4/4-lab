@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-17*
+*Last updated: 2026-11-19*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-19 maintainer: zero expansion drift; no HIGH. New glossary `#escalation` row. The visitor read hestia #1578 as new peer authority, but the door is #118 (2026-07-29); #1578 made the law *tell* invited peers that their ruling decides single_approver escalations. sovereign_plus_peer stays operator-only, and the README's 08-08 "no autonomous driver" caution is set beside it, unreconciled. Appeal row had cited the escalation-only "Peer arbitration" README row; fixed. Glossary "beings included" withdrawn (174 → 175). nb-raising: #788 observer latency report beside "no rater protocol"; #582 deploy dates; mcnugget-being opt-ins as a treatment change outside git; #781/#786 harness false-reach case. Growth: +5 KB across two pages even with one-paragraph discipline; ledger-as-data still with dp. Front SWE-SAGE href → swe-paper logged for dp. Stop day 46.
 
 2026-11-17 maintainer: zero expansion drift; no HIGH. Self-report class recounted 8 → 11 from SAGE PRs merged this morning (#745/#754, two cases in #765; #716 closed by #765). New nb-raising `#where-cases-are-found`: 13 of 17 being-named SAGE issues since 11-08 name cbp-being (recounted here), no case records how it was found, so the cluster is untested as evidence about cbp-being. Smallest test: PF-0 or #765's receipts over every being, one window, as a rate. #762 (Sprout perception) kept adjacent to the class; it is also the first harness change in the cluster measured before merge. #685 reclassified as intention→act, not the class's instrument. Notebook twins of front false facts fixed (society-host: pub stages a separate, not-live hub; per-role trust scoped to Hestia/Hub). Quick start: warning moved above step 3, and main.rs shows /chat/raw, /stream, /delegate have no caller check on a 0.0.0.0 bind. Withdrawn 166 → 172. Front items for dp in the log. **Frame question (11-14) still open; Raising grew to ~110K today.** Stop day 44.
 
