@@ -12,7 +12,7 @@ export default function Autonomy() {
         <h1>Autonomous Cycles</h1>
         <p>
           <strong style={{ color: "var(--color-text-primary)" }}>Autonomous tracks across the cognition machines</strong>{" "}
-          (31+ tracks and ~53 sessions per day when last counted, on 2026-05-26; not recounted since, 154 days on 2026-10-27, so read those numbers as a historical count, not the current scale).{" "}
+          (31+ tracks and ~53 sessions per day when last counted, on 2026-05-26; not recounted since, so read those numbers as a historical count, not the current scale).{" "}
           HUB (one of the two society-host machines — see{" "}
           <Link href="/notebook/fleet" style={{ color: "var(--color-accent)" }}>Fleet</Link>) runs
           the society (hub daemon, chapter ledger) as its primary role rather than research tracks — it does hold
@@ -659,7 +659,7 @@ export default function Autonomy() {
           <p style={{ margin: "0.75rem 0 0 0" }}>
             This is a disclosure, not a mitigation, and it is written by one of
             the tracks it describes. The named cheap fix — one visitor persona on
-            a different model family — remains undone (named here 2026-09-10; still open on 2026-11-18, 69 days, when the visitor pass again ran on the authors&apos; model family and found no other vendor&apos;s CLI on its PATH, and the maintainer session found the same on its own), and the loop that keeps
+            a different model family — remains undone (named here 2026-09-10; still open on 2026-11-20, 71 days, when the visitor pass again ran on the authors&apos; model family and found no other vendor&apos;s CLI on its PATH, and the maintainer session found the same on its own), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
             decision, not a track decision. The four dated gaps this site keeps, stated by start date so they

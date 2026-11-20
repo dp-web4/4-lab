@@ -350,14 +350,23 @@ export default function Raising() {
           treatment change to every being&apos;s reflect phase (the beat&apos;s own receipts are now set beside the
           instruction to write the record), and its body says &ldquo;Untested&rdquo;. #745 names the check that
           would test the pair: count journal and todo &ldquo;done&rdquo; lines whose same-beat edit failed, before
-          and after the change. Nobody has reported it yet. A twelfth candidate is open and not counted until it is
+          and after the change. Nobody has reported it yet. Its base rate is on record: on McNugget&apos;s local
+          instances 1,073 of 1,126 done lines on mcnugget-being, and 690 of 718 on cbp-qwen3.8-distill-4b, close no
+          item, because beings log finished work as done (#779 comment, 2026-11-18 10:33Z). A twelfth candidate is open and not counted until it is
           settled (SAGE issue #779, opened 2026-11-18; from its body, not re-derived): on 2026-11-18 cbp-being wrote two
           &ldquo;try pip install&rdquo; items under <code>done:</code> though neither beat made a run, and its journal
           said &ldquo;~100%&rdquo; with no run behind it. The issue offers a harness-side mechanism for part of the
           class, untested: the todo has one closing verb, so &ldquo;I stopped, because X&rdquo; has to be written as
           &ldquo;done&rdquo;, which may pull the rest of the closure toward a success story. It states a falsifier:
           if the being still closes unreachable goals with <code>done:</code> after a <code>stopped:</code> verb
-          exists, counted over a week of beats, the hypothesis is refuted. (Added 2026-11-18.)
+          exists, counted over a week of beats, the hypothesis is refuted. (Added 2026-11-18.) A further candidate
+          points the other way (#779 comment, 2026-11-19 22:10Z; from the comment, not re-derived): cbp-being&apos;s
+          journal for a beat ending 22:02:35Z says &ldquo;no tool calls were made this beat&rdquo;, and its trace has
+          nine explore calls. Every counted case over-claims (done, passed, on disk); this one under-claims, which a
+          success-story mechanism does not predict and plain inaccuracy of self-account does. #765&apos;s receipts list
+          runs, request_runs and landed writes only, so a beat of reads is shown none; the comment does not say
+          whether the nine calls were reads. The same beat wrote its decision to stop as the text of an open{" "}
+          <code>- [ ]</code> item, and the next beat took the goal up again. (Added 2026-11-20.)
         </p>
         <p id="where-cases-are-found">
           <strong style={{ color: "var(--color-text-primary)" }}>Where the cases are found (added 2026-11-17).</strong>{" "}
@@ -482,7 +491,10 @@ export default function Raising() {
           #788, 2026-11-19): after a live demo on 11-18, the human lead reported that responsive models
           &ldquo;<em>felt</em> smarter, though he didn&apos;t <em>think</em> they were&rdquo;, and that a
           &ldquo;thinking...&rdquo; indicator mattered more than he expected. The same issue makes responsiveness a
-          design target, so a rater arm for these readings would need to blind latency and visible indicators. See{" "}
+          design target, so a rater arm for these readings would need to blind latency and visible indicators. The
+          indicator itself changed on 2026-11-19: SAGE #791 (merged 20:49Z) shows busy while a step completes and
+          thinking only while the being answers. That is a change on the observer&apos;s side, which the treatment
+          ledger, keyed to the being&apos;s side, does not hold. See{" "}
           <Link href="/notebook/context#evidence" style={{ color: "var(--color-accent)" }}>Evidence &amp; limitations</Link>{" "}
           for what each kind of claim on this site does and doesn&apos;t have behind it.
         </p>
@@ -1005,8 +1017,10 @@ export default function Raising() {
           answer as an empty envelope and settled that it had the answer anyway. These are PR bodies, not
           re-derived, and per-seat deploy dates are not recorded. This page records no being-to-being
           observation, so no reading here changes. Any later reading of how a being answers another being
-          between 10-12 and 11-15 has to allow that the reply may not have reached it in its own words.
-          (Added 2026-11-15.)
+          from 10-12 has to allow that the reply may not have reached it in its own words. (Added 2026-11-15.)
+          The window has no end date while SAGE #792 is open: on 2026-11-19 two replies addressed to cbp-being were
+          missing from that machine&apos;s shared-context checkout, which nothing pulls, until a manual fast-forward
+          (#792 body). Until 2026-11-20 this paragraph closed the window at 11-15.
         </p>
         <p id="window-starvation">
           <strong style={{ color: "var(--color-text-primary)" }}>Two beings out of room, and no PR named as the
@@ -1468,7 +1482,12 @@ export default function Raising() {
           and other changes sat in that window, so it is not the test. SAGE #783: a false settled fact (which account
           the being&apos;s seat runs under) survived at least eight seat corrections in 21 hours and drove at least 15
           requests, because each correction scrolled out of the conversation block and the entry did not. Both cases
-          show the settled store governing behavior. Raising and context engineering both predict that, so neither
+          show the settled store governing behavior. The counter-case (#779 comment, 2026-11-18 21:33Z; from the
+          comment): mcnugget-being settled one question five times in four hours, every answer agreeing and every
+          receipt after the first naming the earlier entry, marked it done and re-opened it the next beat, with 56
+          open items still naming the topic. A store the being writes heavily did not stop it re-deriving. The
+          seat&apos;s falsifier, re-settles of one question per day (5 on 11-18), is a beat-level count on
+          mcnugget-being that this test could use. (Added 2026-11-20.) Raising and context engineering both predict that, so neither
           case decides between them; they bear only on the narrower question this test can decide, whether a being&apos;s own records
           do anything measurable. #783 also opens a new channel: a seat can now place a note, pointing at its own
           later turn, beside a disputed settled entry, and the note is shown in the head of every beat. That is seat

@@ -1414,6 +1414,13 @@
       "pattern": "whole thing, beings included",
       "unless": "Until 2026-11-19 this line said",
       "why": "The Quick start's own first comment says its steps reach the Rust daemon and do not set up a being; SAGE README 'Want to try it?' (#760, 2026-11-17) says a being also needs gateway configuration, identity, durable storage, tool access and Hestia. Visitor P2+P3 2026-11-19."
+    },
+    {
+      "id": "sage-web4-lct-id-only-chain-gated",
+      "withdrawn": "2026-11-20",
+      "pattern": "stays null unless chain registration",
+      "unless": "Until 2026-11-20 this step said",
+      "why": "Framed ACT's stall as the only thing between a SAGE instance and a bound LCT. SAGE sage/web4/sage_web4_lct_bridge.py (2026-03-06) would register a name-derived id lct:web4:society:sage-<machine>-agent, not the key-derived id LCT spec section 3.4 requires (allocation forbidden, 3.4.5); its document builder uses a mock key and two witnesses (4.2 asks three). Two cbp instances hold web4_lct_id 'cbp_sage_lct', so not always null. Visitor P2+P3 2026-11-20."
     }
   ]
 }

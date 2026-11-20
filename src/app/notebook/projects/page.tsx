@@ -291,6 +291,9 @@ pip install web4-trust
 # block ran as written on 0.3.0 from a fresh install, 2026-11-09 (mint, sign and verify, T3, V3,
 # coherence); the listing's other blocks were not run. In the repo, web4-core/examples/ holds Rust
 # helpers rather than a tutorial: holder_proof.rs calls itself a throwaway, the rest were not read.
+# The listing's prose says LCTs are "blockchain tokens" that "must be minted". The LCT spec does
+# not require a chain (anchor RECOMMENDED, not required), and the ledgers the crate ships are
+# in-memory or one host's hash-chained file. Glossary: /notebook/context#lct-chain (2026-11-20).
 # Rust, under [dependencies] in Cargo.toml (README as of 2026-10-15; web4-core is
 # 0.4.0 on crates.io but still 0.3.0 on PyPI, so the two languages differ by a version;
 # the trust package differs too: web4-trust-core 0.3.0 on crates.io, web4-trust 0.2.0 on
@@ -364,8 +367,13 @@ cd ACT
           step 1 writes an instance directory holding an identity file and an
           empty experience buffer. The identity file names the instance with an{" "}
           <code>lct://</code> string, which SAGE&apos;s bridge calls the legacy form; it is not a
-          bound, witnessed LCT (Linked Context Token; <code>web4_lct_id</code> stays null unless chain registration
-          succeeds, and ACT is stalled). Step 3 starts the Rust <code>sage-daemon</code>. That daemon is
+          bound, witnessed LCT (Linked Context Token; <code>web4_lct_id</code> is null or a local placeholder).
+          The bridge that would fill it registers on ACT, which is stalled, and would write a name-derived
+          id rather than the key-derived one the LCT specification requires, so a revived chain would not by
+          itself give the instance a conformant LCT; the hub&apos;s key-derived ids are the fleet&apos;s conformant
+          ones (glossary,{" "}
+          <Link href="/notebook/context#lct-chain" style={{ color: "var(--color-accent)" }}>LCT and chains</Link>).
+          Until 2026-11-20 this step said <code>web4_lct_id</code> stayed null unless chain registration succeeded. Step 3 starts the Rust <code>sage-daemon</code>. That daemon is
           not the 12-step loop. SAGE&apos;s own{" "}
           <a href="https://github.com/dp-web4/SAGE/blob/main/sage/docs/RUST_VS_PYTHON_CAPABILITY.md" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-sage)" }}>capability matrix</a>{" "}
           calls it &ldquo;an inference-and-metabolism gateway, not a port of the Python 12-step
