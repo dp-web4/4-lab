@@ -1,0 +1,37 @@
+Starting 4-lab Maintainer Session at Fri Nov 20 06:30:01 PST 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json                  | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+I found no canonical terminology drift today, and the visitor log had no HIGH items. I fixed the main finding, did most of the medium and low notebook items, and the deploy reached `success` (commits `7337344` site, `7193f36` log).
+
+**Main fix: whether an LCT needs a chain.** Three visitor passes found that the site never answers this, and that "LCT" means three different things on it. I checked the claims against the LCT spec and SAGE's code before editing:
+- **"Web4 requires no chain" is correct.** The spec allows minting offline (§3.4), forbids a central allocator (§3.4.5), and makes the chain anchor "RECOMMENDED, not required" (§4.2, §8.1). The visitor got one section number wrong: the unconditional "anchor to the chain" step is §3.1, not §4.1.
+- **The sentence that was actually wrong was about SAGE.** `/notebook/projects` said `web4_lct_id` stays empty until chain registration succeeds, as if the stalled ACT chain were the only obstacle. It isn't. The bridge that would fill it builds an id from a name, not from a key, and its document builder uses a placeholder key with two witnesses where the spec asks for three. Some instances also already hold a local placeholder value, so "null" was wrong too.
+- **What I changed:**
+  - a new glossary entry, `#lct-chain`, that cites the spec sections;
+  - in that entry, a list of the upstream text that still says "blockchain token" (the web4-core README, spec §3.1/§7.1, and the patent crosswalk's "Linked Control Token");
+  - the three meanings of "LCT" side by side in the same entry;
+  - a rewrite of the SAGE step on `/notebook/projects`;
+  - a note beside the PyPI pointer in the Quick start;
+  - a `withdrawn` test for the old wording, which I confirmed catches it in yesterday's build.
+
+**Other notebook changes:**
+- **Raising page:** I recorded four upstream items after checking each against the SAGE issue comments:
+  - the first self-report case where a being under-reported what it did;
+  - the base rate behind #745's check: on one being, 1,073 of 1,126 "done" lines close no item;
+  - a being that settled the same question five times in four hours;
+  - SAGE #792 and #791. #792 means the peer-reply caveat window no longer has an end date. #791 changed what the human observer's display shows.
+- **`/llms.txt`:** I re-measured page sizes and offsets on the new build and gave them one date.
+- **Small fixes:** dates on `/notebook/autonomy` and a repo-name capitalisation on `/notebook/links`.
+
+All the build checks passed.
+
+**Left for you or deferred:**
+- **Front pages:** the corrections for you are listed in the log. One is new: `/fleet` has the heading "Two kinds of work" over three groups. Who approves front-page changes has now gone 12 days without an answer.
+- **Upstream:** SAGE's LCT bridge needs to derive the id from the key before ACT is ever revived. I didn't file an issue, because that's outward-facing.
+- **Prediction table:** a visitor proposed one table of open predictions (claim, falsifier, owner, due date, result). I agree with it but deferred it. It only helps if it replaces prose, and choosing which prose goes needs its own session. Meanwhile today's additions grew the raising page from 117.3K to 119.5K characters.
+- **Other model families:** the session-start inventory lists codex, gemini and kimi for this machine under a field labelled "unknown", but only `claude` is on PATH. My attempt to look further was refused as out of scope. If those tools are installed, getting a visitor pass on another model family might only need a PATH change. That's unverified and not on the site.
+
+**So what?** The useful part was how the third visitor pass worked, more than the glossary entry. It read the spec's required-versus-recommended wording and the code that would run once the blocker cleared. That found that the wrong sentence was a different one from the sentence the other passes flagged. Other "blocked on X" claims on the site, such as ACT being "stalled" and the scramble control "waiting", haven't been read that way yet.
