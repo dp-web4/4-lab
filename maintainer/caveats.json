@@ -1421,6 +1421,20 @@
       "pattern": "stays null unless chain registration",
       "unless": "Until 2026-11-20 this step said",
       "why": "Framed ACT's stall as the only thing between a SAGE instance and a bound LCT. SAGE sage/web4/sage_web4_lct_bridge.py (2026-03-06) would register a name-derived id lct:web4:society:sage-<machine>-agent, not the key-derived id LCT spec section 3.4 requires (allocation forbidden, 3.4.5); its document builder uses a mock key and two witnesses (4.2 asks three). Two cbp instances hold web4_lct_id 'cbp_sage_lct', so not always null. Visitor P2+P3 2026-11-20."
+    },
+    {
+      "id": "posture-688-merge-forecast",
+      "withdrawn": "2026-11-21",
+      "pattern": "grows by 5,004 characters|#688, open on 2026-11-11|still open on 2026-11-11, so what follows",
+      "unless": "",
+      "why": "SAGE #688 merged 2026-11-21 03:17Z (c1ed25b1f). The merged diff moved the four 2026-09-07 sections to sage/gateway/BEING_BOUNDARIES.md (linked by path), so BEING_POSTURE.md grew 4,094 -> 5,046 bytes, not +5,004 as the PR body (an earlier draft) forecast. Same merge added 'When nothing seems to be asked of you, that is a stall too ... pick one' for every being. Visitor P3+P4 2026-11-21."
+    },
+    {
+      "id": "cbp-13-scope-records-as-asks",
+      "withdrawn": "2026-11-21",
+      "pattern": "made 13 out-of-scope requests|13 out-of-scope requests on 10-23",
+      "unless": "",
+      "why": "hestia #1497 (merged 2026-11-21): from 2026-10-05 the gate opened a scope request on every scope refusal, and such a record 'reads as intent'. The 10-23 count comes from escalation records in that window and mixes gate-opened records with deliberate request_scope calls; not split. Visitor P3 2026-11-21."
     }
   ]
 }

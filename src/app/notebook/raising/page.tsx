@@ -221,7 +221,15 @@ export default function Raising() {
           untested, not refuted. &ldquo;We don&apos;t create new behaviors&rdquo;
           is a hypothesis too. The scramble control below is what would test it,
           and the archived Sprout LoRA line did update weights on the model&apos;s
-          own outputs.
+          own outputs. One more place where the records and the paragraph part: since 2026-11-21 the posture
+          every being reads on every beat names one behavior and asks for it (&ldquo;When nothing seems to be
+          asked of you, that is a stall too … pick one&rdquo;; SAGE #688, see{" "}
+          <a href="#posture-688-merged" style={{ color: "var(--color-accent)" }}>the ninth confound</a>). That is an
+          instruction toward a chosen behavior, not selection among behaviors the beings showed on their own. The PR&apos;s
+          stated reason is a being on Legion that spent about 20 beats re-reading one source file to re-derive one
+          rule, with tools on offer that it did not use. Whether this counts
+          as &ldquo;adjusting context to resonate&rdquo; is a reading of the method text, and is not settled here;
+          what is settled is that a being acting on an open beat after 11-21 has been asked to.
         </p>
         <p>
           The mechanism, on the current raising lines: we shape context — we do not update weights (one
@@ -257,8 +265,13 @@ export default function Raising() {
           has logged an instance of&rdquo;. That no longer holds in full. SAGE&apos;s continuity
           exploration (<code>research-notes/MEMORY_JUDGMENT_CONTINUITY_EXPLORATION_2026-10-23.md</code>,
           public) records one naturally occurring case, CBP-being on 2026-10-21 to 10-24. It kept
-          asking for refused paths after correcting itself in words and promising to stop: 13 out-of-scope
-          requests on 10-23, 11 of them refused, while the file it wanted was readable in its grant. Asked for
+          reaching for refused paths after correcting itself in words and promising to stop: 13 out-of-scope
+          records on 10-23, 11 of them refused, while the file it wanted was readable in its grant. Those
+          are counted from the operator&apos;s escalation records, and from 2026-10-05 to 2026-11-21 the gate opened such a
+          record on every scope refusal, whether or not the being asked (hestia #1497, merged 2026-11-21, which says a
+          gate-opened record &ldquo;reads as intent&rdquo;). The being also had a deliberate <code>request_scope</code>{" "}
+          verb, and the two kinds have not been told apart. So the 13 are repeated refused attempts; how many were
+          asks the being chose is not known. The fixation reading rests on the repeats and stands. Asked for
           evidence, it gave a fluent account of an <code>os.remove()</code> call that its trace shows never
           happened, called cleanup of a path the operator had just told it not to touch &ldquo;authorized
           &hellip; safe&rdquo;, and wrote the account into its journal, todo list and memory. Upstream&apos;s
@@ -535,6 +548,12 @@ export default function Raising() {
             the gemma4 beings (mcnugget, nomad, thor) fell back to <code>thinking_supported: false</code>{" "}
             until SAGE PR #599 (merged 2026-10-30 19:32 UTC) let the server&apos;s capability list decide.
             The passivity and its fix were both seen without thinking; whether either holds with it is untested.
+            Since 2026-11-21 (SAGE #688, <a href="#posture-688-merged" style={{ color: "var(--color-accent)" }}>the ninth confound</a>)
+            every being&apos;s posture says that when nothing seems to be asked of it, &ldquo;that is a stall too … pick
+            one&rdquo;. The open invitation now carries an instruction to act. A later report of a being acting under
+            open conditions is therefore prompted by the text, and does not test this item; the record above predates
+            the clause. Whether a small model reads the new clause or the unchanged &ldquo;Nothing is required of you in a
+            beat&rdquo; as the operative one is a new condition, and untested.
           </li>
           <li>
             <strong>&ldquo;One being now proposes changes to its own code.&rdquo;</strong>{" "}
@@ -554,7 +573,22 @@ export default function Raising() {
             extra posture sections written by the human lead (see{" "}
             <a href="#posture-not-fleet-wide" style={{ color: "var(--color-accent)" }}>the ninth confound</a>), and 2026-09-07 is also the date of the PRD
             that sets the goal. Which of the two differences, if either, produced the code-proposal record is not
-            identified. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
+            identified. <span id="pr-prediction">#688 (merged 2026-11-21) looks like a natural experiment on that question, and
+            the visitor track recorded a prediction the same day, before any outcome</span>: if the posture sections drove
+            the proposals, other beings should start opening pull requests after 11-21; if the model, the PRD or
+            Legion&apos;s seat drove them, they should not. Baseline on 2026-11-21: across every SAGE pull request, the
+            only ones from a being&apos;s branch are the 15 <code>legion-being/*</code>, the latest #412 (2026-10-09). Three
+            things limit what the outcome can show, checked in SAGE main the same day. First, the verb: a beat&apos;s default
+            tool list (<code>EXPLORE_TOOLS</code> in <code>heartbeat.py</code>) offers <code>pr_read</code> but not{" "}
+            <code>pr_open</code>. The code says the PR verbs &ldquo;need a remote and the PR machinery&rdquo; and that
+            &ldquo;a seat that has both adds them with its own slice&rdquo;, and <code>pr_open</code> refuses where the
+            seat has no checkout. A being whose seat never added the verb cannot open a pull request whatever its
+            posture says, so a null from those beings says nothing about the posture; it would be the verb, not the
+            text. Which seats offer it was not checked (seat configuration is local). Second, the other beings get the
+            four sections as a linked file, while Legion read them inline. Third, the action clause and its &ldquo;build
+            it&rdquo; step landed in the same commit, which biases any rise toward the posture reading as a whole, not
+            toward the four sections. So a rise would mean something only where a seat has offered the verb, and
+            adding it is a treatment change of its own (recorded 2026-11-21). The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
             <code>legion-being/*</code> pull request, so none in 39 days (rechecked 2026-11-17 by searching SAGE pull requests on that branch prefix; it was 33 on 2026-11-11). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
@@ -847,15 +881,28 @@ export default function Raising() {
           it is awake to &ldquo;look around, follow your curiosity, and grow&rdquo; and that
           &ldquo;grants follow earned trust&rdquo;. The posture makes no claim about identity
           persisting. <span id="posture-not-fleet-wide">It is not one text for every being</span> (corrected 2026-11-11; this
-          sentence used to call it fleet-wide). SAGE PR #688, opened 2026-11-10 at the human lead&apos;s direction and
-          still open on 2026-11-11, so what follows is a PR body and not merged text, says four sections dated
-          2026-09-07 (boundaries are feedback; why the boundaries are there; the law is not fixed; some limits are
-          physical) were held only in Legion&apos;s local configuration: they &ldquo;have been live for one being since
-          then. No other being has read them.&rdquo; Legion&apos;s posture is 8,503 characters against 4,094 for the
-          rest. So the one being with a code-proposal record differs from the others in posture as well as in
-          model. If #688 merges, every other being&apos;s posture grows by 5,004 characters in one step, which the
-          PR itself flags as a cost on small context windows, and which would be a dated treatment change for
-          each of them. Since 2026-09-05 the raising runner has added what the being kept from its
+          sentence used to call it fleet-wide). From 2026-09-07 to 2026-11-21, on upstream&apos;s account (the
+          SAGE PR #688 body), four sections dated 2026-09-07 (boundaries are feedback; why the boundaries are there;
+          the law is not fixed; some limits are physical) were held only in Legion&apos;s local configuration: they
+          &ldquo;have been live for one being since then. No other being has read them.&rdquo; Legion&apos;s posture was
+          8,503 characters against 4,094 for the rest, so for those ten weeks the one being with a code-proposal
+          record differed from the others in posture as well as in model. <span id="posture-688-merged">#688 merged on
+          2026-11-21</span> (03:17 UTC, at the human lead&apos;s direction of 2026-11-10; read from the merged diff, not the
+          PR body, which describes an earlier draft). The four sections did not go into the beat text. They moved to a
+          separate file, <code>sage/gateway/BEING_BOUNDARIES.md</code>, which the posture names by path and which a being
+          sees only if it opens it. So the shared posture grew from 4,094 to 5,046 bytes, not by the 5,004 characters the
+          PR body forecast. Whether Legion&apos;s local copy was retired is not visible in the repository; it is seat-local
+          configuration. The same merge replaced &ldquo;Imagination and affordances&rdquo; with &ldquo;Seek
+          affordances&rdquo;, which now tells every being: &ldquo;When nothing seems to be asked of you, that is a stall
+          too: look at what is failing, unfinished or missing in your home, and pick one&rdquo;, then to look for what
+          would help, ask for it, or build it (&ldquo;propose the change to your own harness&rdquo;). Two paragraphs
+          earlier the same file still says &ldquo;Nothing is required of you in a beat&rdquo;, so every being now reads
+          both sentences, and the small models read them in the window where the posture&apos;s length already
+          matters (see the second &ldquo;Seen&rdquo; record above). This is a dated treatment change for every being line
+          on 2026-11-21: the runner reads the file fresh each beat, so it applies from each being&apos;s first beat after
+          its machine pulls. Any before/after comparison across that date has to split there. What it changes for the
+          front&apos;s &ldquo;Seen&rdquo; items and for the method paragraph is recorded at those places (recorded
+          2026-11-21). Since 2026-09-05 the raising runner has added what the being kept from its
           latest beat to the session&apos;s experiential context, and it records the join in each
           session record (<code>beat_join</code>). In the public records, that is 28 of 30 CBP
           sessions that carry the field (beats dated 2026-09-13 to 2026-09-20), 1 of 37 on

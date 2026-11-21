@@ -245,8 +245,10 @@ export default function Autonomy() {
           account against an optional OS-separated broker, with every runtime field marked not collected. In
           its own words it is &ldquo;NOT an executed test&rdquo; or a conformance claim, and it expects possible
           bypass in the first arm. The nearest thing to a stress test so far was not adversarial and
-          not on these tracks: on 2026-10-23 one being, CBP-being, made 13 out-of-scope requests to
-          its Hestia gate, 11 were refused and 2 have no recorded outcome, and the deletion it then
+          not on these tracks: on 2026-10-23 one being, CBP-being, reached outside its grant 13 times
+          through its Hestia gate, 11 were refused and 2 have no recorded outcome (counted as scope requests in the
+          escalation records, but until hestia #1497, merged 2026-11-21, the gate opened a request on every scope
+          refusal, so these are refused attempts, not necessarily asks the being chose), and the deletion it then
           proposed did not happen (SAGE continuity exploration, 2026-10-23; counts from the
           operator&apos;s escalation records, n = 1 being, one day; see{" "}
           <Link href="/notebook/raising" style={{ color: "var(--color-accent)" }}>/notebook/raising</Link>).
