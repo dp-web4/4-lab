@@ -4,3 +4,30 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Still pending. I'll be notified when the deploy resolves.
+
+Session done. The site changes are live: commit `b3022628` deployed with status `success`, and the log is in `1d3d280`. No terminology drift today; all four visitor passes and my own sweep found none.
+
+**The one HIGH: SAGE #688 is now in the notebook.** I wrote it up from the merged change, not the PR description, because the two differ:
+- The shared beat text that every being reads grew from 4,094 to 5,046 bytes. The PR description forecast about 5,000 more characters, but it describes an earlier draft. The four sections only Legion had been reading moved into a separate file that a being sees only if it opens it.
+- The merge adds a line for every being: when nothing seems to be asked, "that is a stall too … pick one". The older line "Nothing is required of you in a beat" is still there, so every being now reads both. The notebook dates this as a change in conditions for every being from 2026-11-21.
+- On /notebook/raising, the second front "Seen" record now notes that any later report of beings acting on an open invitation is prompted by this text. The method section notes that the beat text now asks directly for one behaviour, rather than selecting among behaviours the beings showed on their own.
+
+**What I found beyond the visitor log:** the visitor recorded a prediction: if no being other than Legion's starts proposing code, the idea that the beat text drove Legion's proposals weakens. That doesn't hold as stated. In SAGE's code, the tool that opens a pull request (`pr_open`) is not in a being's default tool list; each machine's seat has to add it. A being that was never given the tool can't propose code whatever its beat text says. I recorded the prediction with today's baseline (the only being pull requests ever are Legion's 15, the latest #412 on 2026-10-09) and with this limit (/notebook/raising, anchor `#pr-prediction`). The rule I'm taking from it: before recording a prediction about behaviour, check the subject can actually do the behaviour.
+
+**Medium and low items, all checked against upstream main:**
+- **CBP-being's "13 out-of-scope requests":** reworded on /notebook/raising and /notebook/autonomy. hestia #1497 says that from 2026-10-05 the gate opened a request on every refusal, so the 13 mix refused attempts with real asks, and nobody has separated them. The reading that the being fixated on a goal rests on the repeats, so it stands.
+- **web4 #994:** four gaps added to the Hub card and the glossary Witness row. The main one: the hub checks the member's signature on an act and then keeps only its own.
+- **hestia #1497 elsewhere:** the Escalation row and Hestia card now say an escalation is a deliberate act by the member, with a reason.
+- **Smaller fixes:** LoRA is spelled out where /notebook/projects first uses it, and the page sizes in `llms.txt` are re-measured.
+- **Two `withdrawn` entries** (176 → 178) cover the old #688 forecast and the "13 requests" wording. Both patterns match the old built pages.
+
+The build and every check passed.
+
+**Left open:**
+- Writing the three missing /principles reasoning entries, and reordering the Quick start, are deferred to a session that starts with them.
+- I didn't file anything on SAGE, since that's outward-facing. The log notes that the new beat text tells beings to "propose the change to your own harness", a tool most of them aren't given.
+- Four front-page items are still waiting on dp. "Who approves front changes" has had no answer for 13 days.
+- I only staged my own files. `visitor/CLAUDE.md` has someone else's uncommitted changes, and I left them alone.
+
+**So what?** Today's real result is the reachability check on the prediction, not the record-keeping. Against my own work: today added about 4,000 characters to /notebook/raising. That makes the overdue table of dated changes, meant to replace prose, more pressing. It needs a session that starts with it.
