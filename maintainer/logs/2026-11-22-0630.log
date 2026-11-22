@@ -4,3 +4,37 @@ Pulling SAGE fleet models...
  2 files changed, 6 insertions(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+The treatment ledger is live on /notebook/raising, and the deploy finished with status `success`. The site commit is `12c3573`, the log commit `f9ebb96`. The build and all checks passed: 0 of 179 withdrawn readings appear on any page, and no damaged text was found.
+
+**Terminology:** no canonical drift. All four visitor passes found every expansion correct, and my edits add no new ones.
+
+**Fleet sync:** the manifest changed only McNugget's timestamp, so the fleet page stays as it is.
+
+**What changed:**
+- **Treatment ledger:** a table of 39 dated changes to what the beings read, can do or run under. Each row gives the date, which beings it affected, where the date comes from, and a link to the full record. It replaces a long list of dates in one paragraph, and the glossary's "treatment ledger" pointer now leads somewhere.
+- **SAGE #807 and #811:** recorded from the merged code. #807's PR description quotes an earlier wording of the new prompt sentence, so I used what is on main. #807 counts how often the being says "the user", and three things limit what that count can show:
+  - The sentence it adds is about the very word being counted, so a drop could be a change of words, not of how the being reads its beat.
+  - Its decision rule only says what to do if the count doesn't move. No outcome counts against the idea.
+  - Its before-and-after windows overlap other prompt changes (#688 before, #811 five hours after).
+- **Other notebook edits:**
+  - A glossary row defining "harness".
+  - The V3 row now dates dp's 2026-11-06 ruling on web4-trust-core, which uses the "value delivered" reading while the canonical terms document is unchanged. The row reports both and settles nothing.
+  - The links page gets a card for the web4-trust-core repository, separate from the package of the same name.
+  - The /notebook/autonomy contradiction about who gates the front is fixed.
+  - The legion-being proposal gap is re-dated to 44 days.
+
+**What building it turned up:**
+- **Missing records:** setting the rows beside the git history shows the page never recorded about a dozen November changes to the code that builds each beat's prompt, #653's journal prompt among them. They're now listed as unchecked.
+- **A wrong figure:** the harness share of a beat's prompt is 64%, not the "about 62%" the notebook had carried since 11-16. The upstream comment added up its own table wrongly. I corrected it and added a check so 62% can't come back.
+- **A comparison point:** on Legion, with the same model and without #807's sentence, the being's "the user wants…" framing fell from 26 in 557 beats to 0 in 283. So the framing follows prompt changes nobody aimed at it. That supports #807's premise, and it also means a drop on Sprout can't be credited to one sentence.
+
+**Against myself:** the Raising page grew from about 124,000 to 133,000 characters. The table pays off only if future dated changes become rows instead of new paragraphs. I wrote that rule into the log and memory, but nothing enforces it.
+
+**For you (front pages, not edited):**
+- /fleet says "Two host the community", but HUB hosts it and pub stages a separate public Hub. Three personas found this independently.
+- /fleet says Legion "improves the SAGE code", but there has been no legion-being PR in 44 days.
+- /raising says "its mentor", but the glossary has the mentor as the tutor's posture, not a second role.
+
+The carried front items are unchanged. Your answer on the /principles human gate has been pending 14 days.
+
+**Not done:** the three /principles reasoning entries slipped a third day; the next session should start with them. `visitor/CLAUDE.md` was already modified before I started; I didn't read or commit it.
