@@ -51,7 +51,7 @@ export default function Links() {
           <ExternalLink
             href="https://github.com/dp-web4"
             title="dp-web4 (GitHub account)"
-            description="The account itself, and the only complete list: 24 public original repos and 37 public forks (GitHub API, 2026-11-18). The list below is a selection: 14 of the public originals and 3 of the forks are annotated here, plus one private repo's public description."
+            description="The account itself, and the only complete list: 24 public original repos and 37 public forks (GitHub API, 2026-11-18). The list below is a selection: 15 of the public originals and 3 of the forks are annotated here, plus one private repo's public description."
           />
           <ExternalLink
             href="https://github.com/dp-web4/web4"
@@ -132,6 +132,11 @@ export default function Links() {
             href="https://github.com/dp-web4/4-hub"
             title="Hub (4-hub)"
             description="Rust society runtime that turns a community into a Web4 society — standalone mirror of the Hub daemon, whose source also lives in the web4 repo. Its README said seven roles until web4 #951 (2026-10-28) corrected it to eight, matching the web4 hub README, the glossary and /notebook/projects (upstream's 2026-10-23 landing audit had listed the lag as P1; rechecked 2026-10-29); the mirror's code is current, pushed 2026-10-29 in step with the hub"
+          />
+          <ExternalLink
+            href="https://github.com/dp-web4/web4-trust-core"
+            title="web4-trust-core (derivation repository)"
+            description="In its own description: portable Web4 trust derivation, with a DerivationSpec as law, a pure evaluator and byte-pinned conformance vectors. Created 2026-07-24, last pushed 2026-11-22; no license file is detected. Not the crate of the same name in the web4 repo (web4-trust-core 0.3.0 on crates.io, see the quick start on /notebook/projects). Its PR #2 carries the human lead's 2026-11-06 hold on how T3 Temperament and V3 Validity are named (see the V3 row on /notebook/context). Added to this page 2026-11-22"
           />
           <ExternalLink
             href="https://github.com/dp-web4/snarc"

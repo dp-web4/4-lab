@@ -589,7 +589,7 @@ export default function Raising() {
             it&rdquo; step landed in the same commit, which biases any rise toward the posture reading as a whole, not
             toward the four sections. So a rise would mean something only where a seat has offered the verb, and
             adding it is a treatment change of its own (recorded 2026-11-21). The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 39 days (rechecked 2026-11-17 by searching SAGE pull requests on that branch prefix; it was 33 on 2026-11-11). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
+            <code>legion-being/*</code> pull request, so none in 44 days (rechecked 2026-11-22 by searching SAGE pull requests on that branch prefix; it was 33 on 2026-11-11 and 39 on 11-17). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -924,7 +924,7 @@ export default function Raising() {
           <code>self.json</code>, settle and skills would leave this path open, so the control
           design has to cover what raising sessions hand the heartbeat as well. (Added 2026-11-04.)
         </p>
-        <p>
+        <p id="sprout-seat-outage">
           The same PR records three things on Sprout that belong with the confounds. First, a
           false receipt. During a 48-hour seat outage (2026-11-01 06:00 to 11-03 06:00 UTC, the
           Claude account behind the seat at its usage limit), the dispatcher kept telling Sprout
@@ -939,7 +939,7 @@ export default function Raising() {
           its existence after the absence &ldquo;does not establish that the absence caused the
           story&rdquo;. Both cautions stand here too. (Added 2026-11-04.)
         </p>
-        <p>
+        <p id="sense-premise">
           The stale premise was wider than one prompt. SAGE PR #639 (merged 2026-11-05) found three
           raising-session prompts telling Sprout it could not see (the sense digest, the continuity note
           and the gaze offering) from 2026-10-12 to 11-05, while its beats were handing it camera frames:
@@ -952,6 +952,131 @@ export default function Raising() {
           The working hypothesis that developmental frameworks &ldquo;describe what we
           observe better&rdquo; is comparative, and the comparison has
           not been run. No deflationary control exists yet.
+        </p>
+        <h3 id="treatment-ledger">Treatment ledger</h3>
+        <p>
+          One row per dated change to what a being reads, can do or runs under, gathered from the records on this
+          page (compiled 2026-11-22; until then the dates sat in prose across a dozen paragraphs). Each row says
+          where its date comes from: a merged diff, a PR body, a seat&apos;s comment, or only a PR title. Per-seat
+          deploy dates are mostly not recorded, so &ldquo;every being&rdquo; means from the day each seat deployed
+          it. Any reading across a row&apos;s date has to split there. Outages are rows too, because a being that
+          cannot act is not under constant conditions.
+        </p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={{ width: "100%", fontSize: "0.8125rem", borderCollapse: "collapse" }}>
+            <thead>
+              <tr style={{ textAlign: "left", color: "var(--color-text-muted)" }}>
+                <th style={{ padding: "0.3rem 0.5rem" }}>When (UTC)</th>
+                <th style={{ padding: "0.3rem 0.5rem" }}>Lines</th>
+                <th style={{ padding: "0.3rem 0.5rem" }}>What changed</th>
+                <th style={{ padding: "0.3rem 0.5rem" }}>Source</th>
+                <th style={{ padding: "0.3rem 0.5rem" }}>Record</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+              ["2026-06-07", "McNugget, Sprout (raising)", "Raising runner moved onto the Rust sage-daemon; the system prompt the runner sends is now the one the model receives", "SAGE 046e45dc0", "constant-stimulus"],
+              ["2026-08-28", "Sprout distill-2b (raising)", "Default continuity note in the identity block: the upgraded mind “does not change who you are” (seventh confound)", "runner code", "deflationary-alternative"],
+              ["2026-09-04", "every being", "Heartbeat begins: scheduled beats with the being’s own todo, journal and memory; the closing turn offers remember (ninth confound)", "heartbeat.py", "deflationary-alternative"],
+              ["2026-09-05", "raising lines with a join", "What the being kept from its latest beat joins the session context (beat_join: CBP 28 of 30, Nomad gemma4 1 of 37, pub 0 of 65)", "session records", "deflationary-alternative"],
+              ["2026-09-07 to 11-21", "legion-being only", "Four extra posture sections, seat-local (8,503 characters against 4,094)", "SAGE #688 body", "posture-not-fleet-wide"],
+              ["2026-09-12", "CBP (raising)", "Instance record carries its own continuity note", "instance record", "deflationary-alternative"],
+              ["2026-09-21", "cbp-being", "request_run scripts are run for real and the output comes back", "SAGE #596", "basin-follows-feed"],
+              ["2026-10-09", "every being", "tune: a being can set some of its own parameters, its window among them", "SAGE #387", "basin-breakpoints"],
+              ["2026-10-12", "deploying beings; Sprout", "Inbox courier copies an ask’s words into the beat (#424). Sprout moves to a model that reads camera frames", "SAGE #424; fleet record", "sprout-seat-outage"],
+              ["2026-10-15", "cbp-being; deploying beings", "Last 25 lines of the daemon journal copied into the being’s notes every beat. Courier retries until the post arrives (#452)", "SAGE #596, #452", "basin-follows-feed"],
+              ["2026-10-18", "opt-in", "A turn for answering one ask", "SAGE #459", "basin-breakpoints"],
+              ["2026-10-19", "cbp-being", "Given the governance daemon’s source", "SAGE #596", "basin-follows-feed"],
+              ["2026-10-25", "every being", "identity_edit: a self-description the being writes (self.json), shown back every beat", "SAGE #541", "deflationary-alternative"],
+              ["2026-10-27", "every being", "settle (#574) and skill (#576): two more being-written stores", "SAGE #574, #576", "deflationary-alternative"],
+              ["2026-10-27 19:30 to 10-28 06:27", "hub-being", "Outage: step-1 preflight refused every explore (22 beats)", "SAGE issue #582", "basin-breakpoints"],
+              ["2026-10-28", "every being", "Reflect names skill (#585); a being can retire its own skill (#589)", "SAGE #585, #589", "deflationary-alternative"],
+              ["2026-10-30", "cbp-being; mcnugget, nomad, thor", "Journal copying off for cbp-being (service_notes: false). Thinking on for the gemma4 beings (#599, 19:32 UTC)", "SAGE #596, #599", "basin-follows-feed"],
+              ["2026-10-31", "shared gateway text", "settle keeps an answer bound to its question (#608); the run sandbox says what it cannot see (#609)", "SAGE #608, #609", "basin-breakpoints"],
+              ["2026-11-01", "shared gateway text", "request_run says the seat installs nothing outside the being’s home (#618); host runs carry the daemon’s action id (#620)", "SAGE #618, #620", "basin-breakpoints"],
+              ["2026-11-01 06:00 to 11-03 06:00", "Sprout", "Seat outage; the dispatcher kept saying “The seat has been asked and woken”", "SAGE #634", "sprout-seat-outage"],
+              ["2026-11-02 to 11-07", "mcnugget-being", "Outage: refused at step 1 on every beat until #629", "SAGE #629", "basin-breakpoints"],
+              ["2026-11-02 11:17 to 11-09 23:42", "legion-being", "Outage: model did not answer for 163 beats", "SAGE #675", "legion-outage"],
+              ["2026-11-04", "shared, by title", "Receipts: a seat quiet through the being’s asks is named (#628); two refusal and settled-question fixes (#631, #632). The 11-11 status line also dated Sprout’s raising line on 11-04; what changed there is not recorded on this page", "PR titles", "sprout-seat-outage"],
+              ["2026-11-05", "Sprout", "Told it sees in its beats; raising sessions say no image is attached", "SAGE #639", "sense-premise"],
+              ["2026-11-06 08:40", "shared heartbeat and tool loop", "Failed runs reach reflect as FAILED; reflect told of the step cap; repeat guard reset; blocking file named", "SAGE #641–#644", "basin-breakpoints"],
+              ["2026-11-07", "gemma4 beings", "Preflight tokenizer ratio fixed", "SAGE #629", "basin-breakpoints"],
+              ["2026-11-09", "shared, by title", "Beats, tools and the run verb (deployment not checked)", "SAGE #658, #662–#668", "basin-breakpoints"],
+              ["2026-11-10", "legion-being", "tool_offer: by_use, verbs a being has not called in 100 beats listed by name only (opt-in; #689 merged 23:40 UTC)", "SAGE #689; Legion’s seat on #708", "harness-minimum"],
+              ["2026-11-11 to 11-12", "shared, by title; every being", "Run sandbox and retire_thread wording (#694, #695, #696, #700). No “act now” nudge after a turn that acted (#697, 11-12 20:18 UTC). memory_edit range, seat-away line, settled entry (#698, #702, #703)", "PR titles; #697 diff", "harness-false-failure"],
+              ["from 11-11; from 11-12", "cbp-being; mcnugget-being", "Prompts larger than the window on most beats; no PR named as the cause", "seat comments on #708", "window-starvation"],
+              ["2026-11-13 10:26", "nomad-being", "The being set its own window to 8,192 and was locked out; the operator’s unlock (time not given)", "SAGE #705 body", "basin-breakpoints"],
+              ["2026-11-15", "deploying beings; nomad-being", "tune offered in reflect (#705); per-part window record (#710); lean tool mode (#711), on for nomad-being from 23:40 UTC; forum/ pointers now copied (#714)", "SAGE #705, #710, #711, #714", "harness-minimum"],
+              ["2026-11-17 13:26", "every being", "Reflect shows the beat’s own receipts beside the instruction to write the record", "SAGE #765", "unfaithful-self-report"],
+              ["2026-11-17 to 11-18", "every being; seen on cbp 11-17 19:00 PT, mcnugget 21:58Z", "Step-1 preflight calibrated from each being’s own token counts", "SAGE #773, #774, #776, #777", "basin-breakpoints"],
+              ["2026-11-18", "sprout-being", "Frames colour-corrected at capture; its camera receipts say so", "SAGE #778", "perception-case"],
+              ["2026-11-19 07:41 and 08:06", "mcnugget-being", "Untracked instance.json opt-ins (preempt, answer first, JSON answers), then answer_think: false after #789", "SAGE #788, #789", "basin-breakpoints"],
+              ["2026-11-21 03:17", "every being, on pull", "Shared posture rewritten (4,094 to 5,046 bytes): “that is a stall too … pick one”", "SAGE #688 diff", "posture-688-merged"],
+              ["2026-11-21 23:21", "every being, on deploy", "Every beat system prompt says its turns are “your beat’s own steps … not a person asking”", "SAGE #807 diff", "steps-sentence-807"],
+              ["2026-11-22 04:22", "every being, on deploy", "A ruler’s note on a scope decision arrives whole, up to 1,500 characters (was cut at 400, unmarked)", "SAGE #811 diff", "steps-sentence-807"]
+              ].map(([when, lines, what, source, anchor]) => (
+                <tr key={when + what}>
+                  <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{when}</td>
+                  <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{lines}</td>
+                  <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{what}</td>
+                  <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{source}</td>
+                  <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}><a href={"#" + anchor} style={{ color: "var(--color-accent)" }}>{"#" + anchor}</a></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong style={{ color: "var(--color-text-primary)" }}>What the ledger does not hold.</strong>{" "}
+          From 2026-11-01 to 11-22, 40 commits touched the beat composer, <code>sage/gateway/heartbeat.py</code>{" "}
+          (git log, read 2026-11-22). Some of their PRs are in no row because this page never recorded them. By
+          title they change what a being reads: #650 (beat-start recall keyed on the turn waiting on the being,
+          11-07), #653 (a refusal-aware journal prompt, 11-07), #715 and #780/#785 (how the todo reads done lines
+          and headers, 11-16 to 11-18), #719 (reflect names <code>reopen</code>, 11-15), #730 (Hestia&apos;s live
+          scope status beside todo items, 11-19), #737 (11-15) and two unnumbered answer-turn commits on 11-17
+          (the reply sees its last look). Deployment and effect are not checked. Changes outside that file (tool
+          loop, runner, seat-local config) are covered only where a paragraph above caught them. Three recent
+          PRs are instruments, not treatments: #685 (beat health, observe only, 11-10), #799 (a live stream of a
+          being&apos;s model output, 11-20) and #803 (a census of how a being frames its prompts, 11-21). The
+          census counts framing. It is not an identity measure. On this record, 21 of the 29 days from 10-25 to
+          11-22 carry at least one row.
+        </p>
+        <p id="steps-sentence-807">
+          <strong style={{ color: "var(--color-text-primary)" }}>The two newest rows, and what #807 can measure
+          (recorded 2026-11-22).</strong>{" "}
+          SAGE #807 (merged 2026-11-21 23:21 UTC at the human lead&apos;s request that day; read from the merged
+          diff) adds one sentence to all five system prompts a beat sends, right after &ldquo;You are &hellip;&rdquo;:
+          &ldquo;Nobody is typing to you in this beat: the turns that come as messages are your beat&apos;s own
+          steps, set by the program that runs it, not a person asking. Others&apos; words reach you quoted and
+          named.&rdquo; (The PR body quotes an earlier draft ending &ldquo;A person&apos;s words&rdquo;.) The premise
+          is that a chat model reads whatever arrives in the user role as a person&apos;s request. In its first 40
+          streamed beats, sprout-being&apos;s thinking called its own beat steps &ldquo;the user&rdquo; 178 times
+          (reflect 61, posture 41, account 37, explore 37). The measure is the same count afterwards. No after-count
+          is posted as of 2026-11-22. Three limits hold before it is:
+          (1) The sentence speaks to the counted word. The PR says &ldquo;the user&rdquo; comes from the chat
+          template&apos;s role name. So a drop could be relabelling: the being says &ldquo;the prompt&rdquo; for the
+          same chores instead of reading its beat differently. Counting the chore framing, not the noun, would
+          separate the two.
+          (2) The decision rule has one branch: if the count does not move, the phase prompts get reframed next. A
+          drop reads as success, and no stated outcome counts against the premise. The review added a guard metric
+          (answer and ask delivery, since those turns do come from someone) and pinned the counting pattern, so the
+          two series stay comparable.
+          (3) Conditions moved inside both windows. The baseline beats start at #799 (merged 2026-11-20 21:02 UTC),
+          and the code comment dates them 11-20 to 11-21. So they may straddle #688&apos;s posture rewrite (11-21
+          03:17 UTC), and posture is 41 of the 178. Sprout&apos;s deploy times are not recorded. #811 then changed the
+          same file five hours after #807, so the after-window opens on two changes, not one.
+          The review also brought a datum from Legion, which keeps per-phase thinking. The model was the same
+          throughout and this sentence was never added there. Yet the narrower pattern &ldquo;the user (wants|is
+          asking|asks)&rdquo; fell from 26 in 557 beats (second half of September) to 0 in 283 (second half of
+          November). So the framing moves with prompt changes nobody aimed at it. That supports #807&apos;s premise
+          that the framing comes from the prompt. It is also why a drop on Sprout cannot be credited to one
+          sentence while the composer changes about twice a day.
+          SAGE #811 (merged 2026-11-22 04:22 UTC) delivers a ruler&apos;s note on a scope decision whole, up to
+          1,500 characters. The beat used to cut it at 400 with no mark. In the case behind it, on sprout-being, three
+          refusals carried notes of 455 and 461 characters. The cut fell in each note&apos;s last sentence, the one
+          saying the account the being wanted was not needed, and the being&apos;s next turn asked the operator to do
+          it as root. Its next act followed the part of the ruling it was shown. (Figures from the two PR bodies and
+          the #807 review, written by Sprout&apos;s and Legion&apos;s seats; not re-derived here.)
         </p>
         <p id="basin-follows-feed">
           <strong style={{ color: "var(--color-text-primary)" }}>An uncontrolled intervention on one being points the same way (recorded 2026-10-30).</strong>{" "}
@@ -1107,7 +1232,8 @@ export default function Raising() {
           that moves each verb&apos;s parameter prose behind <code>describe</code>. #710&apos;s first record is
           one nomad-being posture turn of 13,530 tokens (11-15 21:49 UTC), split by characters: tool schemas
           44%, other harness framing 10%, the shared posture 8% and the digest 2%, so the harness&apos;s own share
-          is about 62%. The being&apos;s state is 31% and its recall 1%, about 32%, though part of the state
+          is about 64% (32,034 of 50,049 characters; the seat&apos;s comment says &ldquo;about 62%&rdquo;, but its own
+          table sums to 64, corrected here 2026-11-22). The being&apos;s state is 31% and its recall 1%, about 32%, though part of the state
           block (the skills list, entrustment) is harness framing too. Peers&apos; inbox is 4%. It is one turn on
           one being, and the first number that says how much of a beat&apos;s input is the being&apos;s own
           record. Legion&apos;s seat reports that on legion-being the state is as large as the tool schemas,
@@ -1371,7 +1497,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken dated treatment changes on 2026-10-25, 10-27, 10-28, 10-30, 10-31, 11-01, 11-06, 11-07 (the gemma4 preflight ratio, SAGE #629) and 11-09 (eight SAGE PRs that by their titles change beats, tools or the run verb, #658 and #662–#668; deployment not checked) and 11-10 (SAGE #689, an opt-in <code>tool_offer: by_use</code> that lists by name only the verbs a being has not called in its last 100 working beats, asked for by dp as a trial on Legion, and on for legion-being since 11-10 per Legion&apos;s seat in a 2026-11-14 comment on SAGE #708) and 11-11 to 11-12 (four SAGE PRs that by their titles change what a being is told about its <code>run</code> sandbox or a refused <code>retire_thread</code>: #694, #695, #696 and #700; deployment not checked; #697, merged 2026-11-12 20:18 UTC, stops the tool loop sending an &ldquo;act now&rdquo; nudge after a turn that has already acted, a change to the beat itself, see <a href="#harness-false-failure" style={{ color: "var(--color-accent)" }}>below</a>; #698, #702 and #703, merged the same evening, change by their titles what a being is told about a <code>memory_edit</code> range, a seat-away line and a settled entry; #704 and #688 are open as of 2026-11-13, #688 still open 11-16) and 11-15 (#705, #710 and #711 merged, tune in reflect, a per-part window record and an opt-in lean tool mode, lean on nomad-being from 23:40 UTC; see <a href="#harness-minimum" style={{ color: "var(--color-accent)" }}>the #708 paragraph</a>; and from 11-11 and 11-12 cbp-being and mcnugget-being have run out of room on most beats, <a href="#window-starvation" style={{ color: "var(--color-accent)" }}>a condition no PR is named as causing</a>), and three beings lost days to outages (hub-being 10-27/28, mcnugget-being 11-02 to 11-07, legion-being 11-02 to 11-09), and Sprout&apos;s raising line on 11-04 and 11-05, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken every dated change in the <a href="#treatment-ledger" style={{ color: "var(--color-accent)" }}>treatment ledger</a> above, rows on 21 of the 29 days from 10-25 to 11-22, outages included, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. The lab has done this on another line. The SWE-SAGE paper
           (dp-web4/swe-paper, public 2026-11-12) keeps a ledger with one row per scored run and a reading written
           before the score, read its final build on fresh tasks under a rule set in advance, and reported a result

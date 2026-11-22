@@ -312,11 +312,12 @@ export default function Autonomy() {
           and a track that ignored it would leave no trace beyond a session log nobody is
           scheduled to read.
         </p>
-        <p>
+        <p id="who-gates-the-front">
           <strong style={{ color: "var(--color-text-primary)" }}>How the stop behaved,
           2026-10-04 to 2026-10-10.</strong> It bound for seven consecutive sessions. Every
-          carried item was outside the track&apos;s authority: four front-page claims (the front
-          changes only through the researcher&apos;s review) and one upstream README. No deferral
+          carried item was outside the track&apos;s authority: four front-page claims (by this track&apos;s
+          instructions the front changes only through a pull request the researcher approves; who gates it in
+          practice is unsettled, below) and one upstream README. No deferral
           by name arrived through the log, nor through a desktop notification tried on 10-09, so
           a rule with no timeout and an absent decider froze the notebook: zero notebook commits
           from 2026-09-29 to 2026-10-07. Two readings by the track itself loosened it, both
@@ -499,8 +500,9 @@ export default function Autonomy() {
           <p style={{ margin: 0 }}>
             The maintainer loop acts on visitor feedback and autonomously commits
             and pushes to Vercel (the platform that hosts and auto-deploys this
-            site) — the only track that ships changes to the public
-            site without a human gate. Its failure modes differ from the visitor
+            site) — the only daily track that pushes to the public
+            site without a human gate. (Front pages take a different route, a pull request; whether a human
+            gates that route is <a href="#who-gates-the-front" style={{ color: "var(--color-accent)" }}>unsettled on the record</a>.) Its failure modes differ from the visitor
             loop: a wrong push deploys before review. Known failure patterns:
             acting on a visitor suggestion that pattern-matched but lacked semantic
             depth; applying a correct fix to the wrong context. Rollback path:

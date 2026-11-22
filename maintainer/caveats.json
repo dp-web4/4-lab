@@ -1435,6 +1435,13 @@
       "pattern": "made 13 out-of-scope requests|13 out-of-scope requests on 10-23",
       "unless": "",
       "why": "hestia #1497 (merged 2026-11-21): from 2026-10-05 the gate opened a scope request on every scope refusal, and such a record 'reads as intent'. The 10-23 count comes from escalation records in that window and mixes gate-opened records with deliberate request_scope calls; not split. Visitor P3 2026-11-21."
+    },
+    {
+      "id": "harness-share-62-percent",
+      "withdrawn": "2026-11-22",
+      "pattern": "harness(&apos;s|'s|’s) own share\\s+is about 62%|about 62% in all",
+      "unless": "says (“|&ldquo;|\")?(about )?62%",
+      "why": "SAGE #708 comment (nomad-claude, 2026-11-15) states 'The harness's own share is about 62% (tools, posture, framing and digest)', but its own table sums to 21,941+4,762+4,093+1,238 = 32,034 of 50,049 characters = 64.0%. The notebook copied 62% on 2026-11-16. Found while writing the Harness glossary row, 2026-11-22."
     }
   ]
 }
