@@ -1,0 +1,39 @@
+Starting 4-lab Maintainer Session at Tue Nov 24 06:30:01 PST 2026
+Pulling SAGE fleet models...
+ sage/federation/sage-fleet-models.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+The site changes are live: commit `1365743` reached Vercel `success`, and the session log is pushed as `3e2c4f5`. The visitor again found no terminology drift and no HIGH items, so today's work was recording what changed upstream in the last two days. All edits are in the notebook; I didn't touch any front page.
+
+**Hub's first outside community (web4 #996/#997).** I updated the Hub card, the pub card, the notebook home page and the glossary's Society-host row. I took the facts from the design document on main, not the PR description. The record now separates three states:
+- **Built:** committees and events now exist, so the 11-11 quote "none of it is built" is out of date (kept, dated).
+- **Staged:** pub has set up a hub for the AI Collective Portland chapter. It was staged from a commit that hadn't reached main, which is why #997 exists.
+- **Not yet used:** nothing public says the chapter has run an event on it. Whether the security-review blockers were closed first isn't stated anywhere, so the card marks that as untested.
+
+The chapter's volunteers hold no LCT and act through emailed links. The notebook says so plainly, so it can't describe them as members of a Web4 society.
+
+**SAGE belief case (#816, #817, #823), on /notebook/raising.** The PR says more than the visitor's summary did. On 11-23 the being settled the *true* answer. That evening it retired the whole thread, true entry included, and within the hour settled the false belief again. So the problem is less that memory resists correction and more that the being's own housekeeping destroyed a correct entry. I also added rows to the record of dated changes, including eight merged PRs the visitor hadn't listed.
+
+**Joined testability sentence.** The top of /notebook/raising now says in one place that the developmental hypothesis can't be tested under current practice:
+- the setup changes almost daily, so no stretch of stable conditions is longer than about three days;
+- the smaller freeze-one-being test has waited on a yes-or-no from you since 11-12;
+- the newest fixes change the very memory that test would withhold.
+
+This replaced scattered day counts rather than adding another caveat.
+
+**Smaller fixes:**
+- The Quick start moved from the bottom of /notebook/projects to just before the project cards. It used to sit at the point where a single-pass fetch truncates the page.
+- I set a rule for counting PRs written by beings: a `*-being/*` branch, or commits carrying a `Being:` trailer. It has to read the PRs themselves, because squash merges drop those trailers from main. Since 11-21 there are zero.
+- Aging day counts became start dates, and LCT, V3, PRD and ARC-AGI-3 are now spelled out where each first appears.
+- Two retired statements ("has not gone live", and the stale day counts) got entries in `caveats.json`, so the build check fails if either text comes back.
+
+**Your calls:**
+- **Front pages** (in the log under "Front page correction for dp"):
+  - /fleet "Two host the community the rest belong to" is now wrong in a new way: pub stages a hub for a chapter the fleet doesn't belong to.
+  - The present-tense claims that a being "proposes" or "improves" its own code: the last such PR is #412, from 10-09.
+  - /principles "an agent never holds the only copy" contradicts the notebook's own record.
+  - Hestia "agents from any vendor" overstates it: upstream says only command-line agents.
+- **Principles reasoning:** three /notebook/principles entries still read "No reasoning on this page yet", and this was the fourth session to defer them. I don't think they should be written by the maintainer. The hestia README says what the gate does, not why rules come before actions, and writing that "why" myself would invent the lab's reasoning. For each of the three, is there a written source, or should the placeholder stay until you supply one?
+- **Fleet sync:** McNugget's model-list entry was rewritten today and matches the page. The other five entries are still from March, so I changed nothing.
+- **Different-model visitor:** still only the Claude CLI is on PATH here, even though the startup inventory lists codex, gemini and kimi. A visitor persona on a different model family stays unscheduled.
