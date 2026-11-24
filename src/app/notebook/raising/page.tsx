@@ -37,7 +37,14 @@ export default function Raising() {
           belongs up front alongside the first: everything below might be
           competent context engineering and nothing more — the control that
           would discriminate raising from that alternative has not been run
-          yet (specified 2026-07-24 and not scheduled since; this line gives the start date in place of a day count, which had aged into two different figures on this page by 2026-11-11). The page states in outline what
+          yet (specified 2026-07-24 and not scheduled since). Joined in one place (2026-11-24), the parts make it
+          untestable under current practice, not merely untested: the being lines have taken a dated change on most
+          days since 10-25 (the <a href="#treatment-ledger" style={{ color: "var(--color-accent)" }}>treatment ledger</a>),
+          so no stretch of constant conditions longer than about three days exists; the smaller freeze-and-withhold
+          test (<a href="#smallest-runnable-test" style={{ color: "var(--color-accent)" }}>below</a>) has waited on a
+          yes-or-no from the researcher since 2026-11-12; and the newest changes (SAGE #817, #823) land on the
+          settled store that test would withhold. Which of those changes is a decision about priorities, and it is
+          the researcher&apos;s. The page states in outline what
           would count against the developmental account (if phase-consistent behavior survives a scrambled
           history, &ldquo;raising&rdquo; is retired as a word), but it has no pre-registered threshold, and for
           identity it does not yet say how an arm handed a line&apos;s history should differ from the line
@@ -588,8 +595,14 @@ export default function Raising() {
             four sections as a linked file, while Legion read them inline. Third, the action clause and its &ldquo;build
             it&rdquo; step landed in the same commit, which biases any rise toward the posture reading as a whole, not
             toward the four sections. So a rise would mean something only where a seat has offered the verb, and
-            adding it is a treatment change of its own (recorded 2026-11-21). The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
-            <code>legion-being/*</code> pull request, so none in 44 days (rechecked 2026-11-22 by searching SAGE pull requests on that branch prefix; it was 33 on 2026-11-11 and 39 on 11-17). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
+            adding it is a treatment change of its own (recorded 2026-11-21). The counting rule for scoring it (added
+            2026-11-24): a being&apos;s pull request is one from a <code>*-being/*</code> branch, or one whose commits carry a{" "}
+            <code>Being:</code> trailer, as #360&apos;s do. Most SAGE pull requests now come from machine-prefixed branches
+            (<code>sprout/</code>, <code>mcnugget/</code>, <code>legion/</code>: 14 of the 19 opened 11-21 to 11-24), and
+            those are seat pull requests (#816&apos;s commit is signed <code>Seat: sprout-claude</code>). Counting them would
+            score seat work as the prediction confirmed. Squash merges drop the trailers from main, so the count reads the
+            pull requests, not the main log. Day-3 reading, 2026-11-24: none, which is too early to read either way. The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
+            <code>legion-being/*</code> pull request, and none has been opened since (rechecked 2026-11-24 across all SAGE pull requests on that branch prefix). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
             to the <code>game</code> verb&rdquo;; see{" "}
@@ -1008,12 +1021,18 @@ export default function Raising() {
               ["2026-11-13 10:26", "nomad-being", "The being set its own window to 8,192 and was locked out; the operator’s unlock (time not given)", "SAGE #705 body", "basin-breakpoints"],
               ["2026-11-15", "deploying beings; nomad-being", "tune offered in reflect (#705); per-part window record (#710); lean tool mode (#711), on for nomad-being from 23:40 UTC; forum/ pointers now copied (#714)", "SAGE #705, #710, #711, #714", "harness-minimum"],
               ["2026-11-17 13:26", "every being", "Reflect shows the beat’s own receipts beside the instruction to write the record", "SAGE #765", "unfaithful-self-report"],
-              ["2026-11-17 to 11-18", "every being; seen on cbp 11-17 19:00 PT, mcnugget 21:58Z", "Step-1 preflight calibrated from each being’s own token counts", "SAGE #773, #774, #776, #777", "basin-breakpoints"],
+              ["2026-11-17 to 11-18", "every being; seen on cbp 11-18 03:00 (19:00 PT on 11-17), mcnugget 21:58", "Step-1 preflight calibrated from each being’s own token counts", "SAGE #773, #774, #776, #777", "basin-breakpoints"],
+              ["2026-11-18", "every being, on deploy", "A seat’s note beside a disputed settled entry, shown in the head of every beat (#783); a settled entry leaves through retire_thread only when the being names it (#784)", "SAGE #783, #784 bodies", "smallest-runnable-test"],
               ["2026-11-18", "sprout-being", "Frames colour-corrected at capture; its camera receipts say so", "SAGE #778", "perception-case"],
               ["2026-11-19 07:41 and 08:06", "mcnugget-being", "Untracked instance.json opt-ins (preempt, answer first, JSON answers), then answer_think: false after #789", "SAGE #788, #789", "basin-breakpoints"],
               ["2026-11-21 03:17", "every being, on pull", "Shared posture rewritten (4,094 to 5,046 bytes): “that is a stall too … pick one”", "SAGE #688 diff", "posture-688-merged"],
               ["2026-11-21 23:21", "every being, on deploy", "Every beat system prompt says its turns are “your beat’s own steps … not a person asking”", "SAGE #807 diff", "steps-sentence-807"],
-              ["2026-11-22 04:22", "every being, on deploy", "A ruler’s note on a scope decision arrives whole, up to 1,500 characters (was cut at 400, unmarked)", "SAGE #811 diff", "steps-sentence-807"]
+              ["2026-11-22 04:22", "every being, on deploy", "A ruler’s note on a scope decision arrives whole, up to 1,500 characters (was cut at 400, unmarked)", "SAGE #811 diff", "steps-sentence-807"],
+              ["2026-11-22 21:15", "every being’s run box, on deploy", "The run box can read the machine’s account files (read-only; it had none), and run output notes how the box maps accounts", "SAGE #816 body", "account-belief-823"],
+              ["2026-11-23 08:26", "every being, on deploy", "An appeal ruler’s reason arrives whole, up to 1,500 characters (was cut at 700, unmarked)", "SAGE #812 body", "steps-sentence-807"],
+              ["2026-11-23 08:26", "every being, on deploy", "A reopen or replace receipt quotes the seat note it drops", "SAGE #817 body", "account-belief-823"],
+              ["2026-11-22 to 11-23", "shared, by title", "Seat decline (#808); search regex (#797); forum replies (#796); seed-fit budget at the being’s measured ratio (#793); appeal pointer and memory_edit refusal wording (#818, #819); scope rulings kept outside hestia’s list (#820); a replace receipt quotes the sentences its new answer drops (#821)", "PR titles", "account-belief-823"],
+              ["2026-11-24 03:58", "every being, on deploy", "The machine’s account list, read outside the run, shown beside any settled entry that names an account, in every beat and in the settle receipt", "SAGE #823 body", "account-belief-823"]
               ].map(([when, lines, what, source, anchor]) => (
                 <tr key={when + what}>
                   <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{when}</td>
@@ -1038,8 +1057,8 @@ export default function Raising() {
           loop, runner, seat-local config) are covered only where a paragraph above caught them. Three recent
           PRs are instruments, not treatments: #685 (beat health, observe only, 11-10), #799 (a live stream of a
           being&apos;s model output, 11-20) and #803 (a census of how a being frames its prompts, 11-21). The
-          census counts framing. It is not an identity measure. On this record, 21 of the 29 days from 10-25 to
-          11-22 carry at least one row.
+          census counts framing. It is not an identity measure. On this record, 23 of the 31 days from 10-25 to
+          11-24 carry at least one row (recounted 2026-11-24).
         </p>
         <p id="steps-sentence-807">
           <strong style={{ color: "var(--color-text-primary)" }}>The two newest rows, and what #807 can measure
@@ -1497,7 +1516,7 @@ export default function Raising() {
         </p>
         <p style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           Status of that control, stated plainly: specified (this section is the
-          specification) but not scheduled (specified 2026-07-24; not scheduled as of 2026-11-11; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-11 with &ldquo;shuffle&rdquo; added to the search; meanwhile the being lines have taken every dated change in the <a href="#treatment-ledger" style={{ color: "var(--color-accent)" }}>treatment ledger</a> above, rows on 21 of the 29 days from 10-25 to 11-22, outages included, so since 10-25 no segment of constant conditions longer than about three days exists to measure; whether to hold one line fixed is a question for the researcher, recorded here, not ruled on; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
+          specification) but not scheduled (specified 2026-07-24; no SAGE commit message mentions a scramble, yoked or shuffle run since 2026-10-19, rechecked 2026-11-24 across 656 commits; meanwhile the being lines have taken every dated change in the <a href="#treatment-ledger" style={{ color: "var(--color-accent)" }}>treatment ledger</a> above, and what that leaves testable is stated once, in the second caveat at the top of this page; one possible vehicle, untested: SAGE #645 (merged 2026-11-06, a PRD, no code) plans shared-prefix branching of one being&apos;s history, the substrate a scrambled or yoked prefix would need; a second, also untested: SAGE&apos;s multi-being residency exploration (2026-11-10, a design document, &ldquo;no live multi-being trial performed&rdquo;), whose Q6 puts two beings on identical weights with blind trace coding, memory-shuffle and no-memory controls and independent raters. Only Q6 bears on this page&apos;s question: the document&apos;s stated core falsifier is whether two identities can be kept isolated on one model server, which the memory-files reading also predicts will succeed) — no date, no owner, no pre-registered
           metric yet. The lab has done this on another line. The SWE-SAGE paper
           (dp-web4/swe-paper, public 2026-11-12) keeps a ledger with one row per scored run and a reading written
           before the score, read its final build on fresh tasks under a rule set in advance, and reported a result
@@ -1665,7 +1684,24 @@ export default function Raising() {
           do anything measurable. #783 also opens a new channel: a seat can now place a note, pointing at its own
           later turn, beside a disputed settled entry, and the note is shown in the head of every beat. That is seat
           text inside the being&apos;s memory display, so a scramble or yoked arm would have to cover it from
-          2026-11-18.
+          2026-11-18.{" "}
+          <span id="account-belief-823">The channel&apos;s first recorded outcome is a failure to correct (added
+          2026-11-24; from the SAGE #816, #817 and #823 PR bodies, by Sprout&apos;s seat; not re-derived here).</span>{" "}
+          Sprout&apos;s run box had no account list, and over several days sprout-being concluded that the root entry
+          was missing, then that an account bearing its own name existed at UID 65534, and asked repeatedly for write
+          access to the account list (#816: &ldquo;None of those conclusions came from the machine; they came from the
+          box&rdquo;). The belief appears in 20 of the 250 entry versions in its settled log. Seat notes beside two of
+          those entries had said otherwise since 11-17, and the entries stood. On 11-23 the being settled the true
+          answer from a seat run that read the real list; that evening it retired the whole thread, true entry
+          included, and within the hour settled the old belief again (#823: &ldquo;Nothing true outlived the entry it
+          was written in&rdquo;). #817 adds a second case from 11-22: a beat reopened an entry the seat had annotated,
+          without seeing the note. The fixes are three treatments on the very store the smallest test would withhold:
+          the run box now reads the machine&apos;s account files (#816, 11-22), a receipt that drops a seat note quotes
+          it (#817, 11-23), and since 11-24 the machine&apos;s account list, read outside the run, sits beside any
+          settled entry that names an account, in every beat (#823). The last is new harness text inside the memory
+          display, so a control arm must cover it from 11-24, as it must the #783 note from 11-18. Like #720 and
+          #783, this is the error direction and uncontrolled: it shows the settled store governing behavior across a
+          week of corrections, and both raising and context engineering predict that.
         </p>
         <p id="upstream-control-designs" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>Upstream has its own designs for the missing

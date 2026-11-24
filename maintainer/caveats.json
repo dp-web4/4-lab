@@ -1442,6 +1442,20 @@
       "pattern": "harness(&apos;s|'s|’s) own share\\s+is about 62%|about 62% in all",
       "unless": "says (“|&ldquo;|\")?(about )?62%",
       "why": "SAGE #708 comment (nomad-claude, 2026-11-15) states 'The harness's own share is about 62% (tools, posture, framing and digest)', but its own table sums to 21,941+4,762+4,093+1,238 = 32,034 of 50,049 characters = 64.0%. The notebook copied 62% on 2026-11-16. Found while writing the Harness glossary row, 2026-11-22."
+    },
+    {
+      "id": "pub-hub-not-gone-live",
+      "withdrawn": "2026-11-24",
+      "pattern": "external members would join, and that has not gone live",
+      "unless": "",
+      "why": "web4 #996/#997 (merged 2026-11-24): pub built and staged the AI Collective Portland chapter hub, 'deployed as their real hub' (hub/docs/PRD_CHAPTER_PRODUCT.md status line). Staged, not yet recorded as used. Visitor P3 2026-11-24."
+    },
+    {
+      "id": "aging-day-counts-11-24",
+      "withdrawn": "2026-11-24",
+      "pattern": "none in 4[0-9] days \\(rechecked|still open on 2026-11-20, 71 days|no reply on record as of 2026-11-19|rows on 21 of the 29 days",
+      "unless": "",
+      "why": "Day counts and as-of stamps for open gaps aged on /notebook/raising and /notebook/autonomy (44 days, 71 days, as of 11-19, 21 of 29). Replaced by start dates with a recheck date, and the ledger day count is stated once beside the ledger. Visitor P4 2026-11-24."
     }
   ]
 }

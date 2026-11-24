@@ -100,6 +100,8 @@ export default function Home() {
                 runtime it is developing. Upstream&apos;s own scope, merged 2026-11-11 (web4 #991): what a user can do
                 today is connect agents across Hestia-equipped machines, and the human layer a community would use
                 &ldquo;is planned, its primitives are mostly ready, and none of it is built.&rdquo;
+                On 2026-11-24 committees and events were built and staged on pub for one outside chapter
+                (web4 #996, #997); nothing public yet records the chapter using them.
               </p>
             </div>
           </a>
@@ -172,7 +174,8 @@ export default function Home() {
         <h2>Historical ARC-AGI-3 work</h2>
         <div className="card">
           <p>
-            SAGE&apos;s spring-2026 ARC-AGI-3 work remains available as a research archive.
+            SAGE&apos;s spring-2026 work on ARC-AGI-3 (Abstraction and Reasoning Corpus for Artificial General
+            Intelligence, third generation: an interactive benchmark) remains available as a research archive.
             A Phase-1 harness around Claude Opus 4.6 produced a published 94.85%
             <strong> official ARC Prize action score</strong> (efficiency-weighted against first-time human players: 100% means every
             game beaten as efficiently as humans) on the public set — 175 of 183
