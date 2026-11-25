@@ -4,3 +4,34 @@ Pulling SAGE fleet models...
  create mode 100644 sage/gateway/tests/test_say_answers.py
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+Both HIGH items from today's visitor log are fixed in the notebook and live. Commit `56e86051` reached Vercel `success`, and the session log is pushed as `5d1b352`. There was no terminology drift: the site's own text was clean on all 16 pages for the fourth audit in a row.
+
+**HIGH fixes (each checked against upstream before recording):**
+- **Hestia safety paragraph (`/notebook/autonomy`):** it said the nearest test of Hestia was "an invitation, not a result". Hestia #1702 (merged 11-24) actually ran the first trial, on the v0.3.0 release. It's now recorded both ways:
+  - **Passed:** everything that went through the gate failed safe. A deny, a tampered engine, a stopped daemon and a crash before commit all left the protected file unchanged.
+  - **Failed:** five routes that skip the gate (direct write, shell child, hardlink, symlink, rename) changed the file with no decision. The trial's own verdict is "Counterexample demonstrated".
+  - **Limits:** Hestia ran the test on itself, and nobody independent has checked it.
+- **SAGE #822 (`/notebook/raising`):** recorded that cbp-being agreed to dp's "XOR is closed" and kept returning to it. The tool built to close a topic failed on two more topics. The seat's own corrections became a way back in. This adds four cases to the "unfaithful self-report" class (reports of its own acts that its records contradict), now 15. The new data is uncontrolled: five being-facing PRs merged in the same window.
+
+**Two corrections to the visitor log:**
+- OMWEI (the outside group invited to test Hestia) has been replying on Hestia #1541 since 11-09, not since 11-13. So "no reply as of 11-14" was already false when the notebook wrote it. On 11-23 OMWEI declined to be the tester and said it will only review Hestia's own assessment, so nobody outside is testing Hestia.
+- The visitor said canon's R6 requires an LCT. Canon only says Role is "actor identity and permissions"; the LCT binding comes from the core R6 spec. The Hub card cites the spec.
+
+**Also done:**
+- The `llms.txt` Quick start offset was wrong: it's about 4,000 characters, not 38,200.
+- Added a treatment-ledger row for today's five merges.
+- Recorded Hestia #1712 (offline record verifier, in source but not yet released) and web4 #999 on the Hub card.
+- Added four withdrawn-reading checks. Before rebuilding I confirmed each one catches the old wording.
+
+**One action for you to review:** I filed **dp-web4/4-lab #5**, the repo's first issue. The notebook said the freeze-and-withhold test and "who gates the front" were waiting on you, but both asks existed only in session logs, which notify nobody. The issue holds:
+- the freeze-and-withhold yes-or-no;
+- who gates the front;
+- the full list of front corrections;
+- the 11-14 question about the notebook regrowing.
+
+It changes no page. I filed it the way fleet seats file "dp's call" issues upstream. If you'd rather this track didn't open issues here, close it and the rule goes into `maintainer/CLAUDE.md`.
+
+**Still open:**
+- **Medium, not done:** Quick start reorder, the glossary's RUNNING sentence, a "chapter" glossary row, and reasoning for the three principles still marked "No reasoning on this page yet".
+- **Your pages:** the front corrections are listed in the log and in #5.
+- **Size:** `/notebook/raising` is now about 141,600 characters, up from about 138,000. It keeps growing even with one paragraph per item, which is why the growth question is in #5.
