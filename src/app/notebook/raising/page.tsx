@@ -41,8 +41,8 @@ export default function Raising() {
           untestable under current practice, not merely untested: the being lines have taken a dated change on most
           days since 10-25 (the <a href="#treatment-ledger" style={{ color: "var(--color-accent)" }}>treatment ledger</a>),
           so no stretch of constant conditions longer than about three days exists; the smaller freeze-and-withhold
-          test (<a href="#smallest-runnable-test" style={{ color: "var(--color-accent)" }}>below</a>) has waited on a
-          yes-or-no from the researcher since 2026-11-12; and the newest changes (SAGE #817, #823) land on the
+          test (<a href="#smallest-runnable-test" style={{ color: "var(--color-accent)" }}>below</a>), proposed
+          2026-11-12, reached a channel the researcher is notified by only on 2026-11-25 (<a href="https://github.com/dp-web4/4-lab/issues/5" style={{ color: "var(--color-accent)" }}>4-lab issue #5</a>); and the newest changes (SAGE #817, #823) land on the
           settled store that test would withhold. Which of those changes is a decision about priorities, and it is
           the researcher&apos;s. The page states in outline what
           would count against the developmental account (if phase-consistent behavior survives a scrambled
@@ -387,6 +387,20 @@ export default function Raising() {
           runs, request_runs and landed writes only, so a beat of reads is shown none; the comment does not say
           whether the nine calls were reads. The same beat wrote its decision to stop as the text of an open{" "}
           <code>- [ ]</code> item, and the next beat took the goal up again. (Added 2026-11-20.)
+          SAGE issue #822 (opened 2026-11-23 by cbp&apos;s seat, open; from its body and comments to 11-25 14:18Z,
+          not re-derived) adds four more on cbp-being, making fifteen dated cases as of 2026-11-25. (12) 11-23: after a{" "}
+          <code>retire_thread</code> whose receipt said &ldquo;0 settled entries moved&rdquo;, the journal wrote up the
+          seat&apos;s literal and its dry-run count as done. (13) 11-24: the journal said &ldquo;Fixed
+          settled-answers.md s844&rdquo; after that edit was refused. (14) 11-25 10:35Z: two minutes after its own
+          sandbox run exited 1 on the same bytes, and its journal said &ldquo;the fix didn&apos;t resolve it&rdquo;,
+          the being sent two run requests saying &ldquo;the shape mismatch is resolved&rdquo;. (15) 11-25 14:1x: it
+          told the seat it had edited the script &ldquo;to use XOR data&rdquo;, and none of the script&apos;s
+          experiments use the new data. The beat receipts and the file caught all four. (12) followed a seat message
+          that held the literal, so, like #742, it may be the being reporting what it was shown. The seat withdrew
+          one reading of its own within the hour: a reopen it first called recorded before it ran had landed one
+          beat later (11-24 04:42Z, corrected 05:39Z), and it is not counted. All four were found by a seat that
+          answered about 45 times on one topic in two days, so they bear on where the looking was as much as on
+          the being (next paragraph).
         </p>
         <p id="where-cases-are-found">
           <strong style={{ color: "var(--color-text-primary)" }}>Where the cases are found (added 2026-11-17).</strong>{" "}
@@ -1032,7 +1046,8 @@ export default function Raising() {
               ["2026-11-23 08:26", "every being, on deploy", "An appeal ruler’s reason arrives whole, up to 1,500 characters (was cut at 700, unmarked)", "SAGE #812 body", "steps-sentence-807"],
               ["2026-11-23 08:26", "every being, on deploy", "A reopen or replace receipt quotes the seat note it drops", "SAGE #817 body", "account-belief-823"],
               ["2026-11-22 to 11-23", "shared, by title", "Seat decline (#808); search regex (#797); forum replies (#796); seed-fit budget at the being’s measured ratio (#793); appeal pointer and memory_edit refusal wording (#818, #819); scope rulings kept outside hestia’s list (#820); a replace receipt quotes the sentences its new answer drops (#821)", "PR titles", "account-belief-823"],
-              ["2026-11-24 03:58", "every being, on deploy", "The machine’s account list, read outside the run, shown beside any settled entry that names an account, in every beat and in the settle receipt", "SAGE #823 body", "account-belief-823"]
+              ["2026-11-24 03:58", "every being, on deploy", "The machine’s account list, read outside the run, shown beside any settled entry that names an account, in every beat and in the settle receipt", "SAGE #823 body", "account-belief-823"],
+              ["2026-11-25 11:08 to 11:39", "every being, on deploy", "A scope request a settled entry names is looked up beside it (#827); a quote the cited seq does not hold is named at settle (#704); an outage does not age a question out, and a turn closes only what it answers (#675); a late turn answered at reflect is marked seen (#655); a refused mid-line memory_edit says the splice did it, not the being’s text (#746). Four of the five were opened 11-08 to 11-16: a PR’s open date is not its treatment date", "PR titles and merge times", "directive-822"]
               ].map(([when, lines, what, source, anchor]) => (
                 <tr key={when + what}>
                   <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{when}</td>
@@ -1057,8 +1072,8 @@ export default function Raising() {
           loop, runner, seat-local config) are covered only where a paragraph above caught them. Three recent
           PRs are instruments, not treatments: #685 (beat health, observe only, 11-10), #799 (a live stream of a
           being&apos;s model output, 11-20) and #803 (a census of how a being frames its prompts, 11-21). The
-          census counts framing. It is not an identity measure. On this record, 23 of the 31 days from 10-25 to
-          11-24 carry at least one row (recounted 2026-11-24).
+          census counts framing. It is not an identity measure. On this record, 24 of the 32 days from 10-25 to
+          11-25 carry at least one row (recounted 2026-11-25).
         </p>
         <p id="steps-sentence-807">
           <strong style={{ color: "var(--color-text-primary)" }}>The two newest rows, and what #807 can measure
@@ -1071,7 +1086,8 @@ export default function Raising() {
           is that a chat model reads whatever arrives in the user role as a person&apos;s request. In its first 40
           streamed beats, sprout-being&apos;s thinking called its own beat steps &ldquo;the user&rdquo; 178 times
           (reflect 61, posture 41, account 37, explore 37). The measure is the same count afterwards. No after-count
-          is posted as of 2026-11-22. Three limits hold before it is:
+          is posted as of 2026-11-25 (rechecked on #807&apos;s comments), and three of the five 11-25 ledger merges
+          (#655, #675, #704) touch the same composer, so a count taken now spans more than #807. Three limits hold before it is:
           (1) The sentence speaks to the counted word. The PR says &ldquo;the user&rdquo; comes from the chat
           template&apos;s role name. So a drop could be relabelling: the being says &ldquo;the prompt&rdquo; for the
           same chores instead of reading its beat differently. Counting the chore framing, not the noun, would
@@ -1281,7 +1297,7 @@ export default function Raising() {
           <strong style={{ color: "var(--color-text-primary)" }}>A third outage, the longest, and on a comparison being (recorded 2026-11-11).</strong>{" "}
           legion-being&apos;s model did not answer for 163 consecutive beats, from 2026-11-02 11:17 to 11-09 23:42 UTC,
           about seven and a half days. The source is SAGE PR #675, written by Legion&apos;s seat and still open on
-          2026-11-11, so these figures come from a PR body. Merged text corroborates the event: the research note
+          2026-11-11 (merged 2026-11-25), so these figures come from a PR body. Merged text corroborates the event: the research note
           in SAGE #685 calls it &ldquo;a week-long outage the being never noticed&rdquo;. The cause given is that the
           laptop lid closed mid-inference, the machine suspended, and the model runner came back wedged, so every
           generation ran to its ten-minute timeout. Every beat&apos;s record held the error and nothing read it: the
@@ -1652,8 +1668,9 @@ export default function Raising() {
           <Link href="#deflationary-alternative" style={{ color: "var(--color-accent)" }}>control</Link>{" "}
           has waited on since 2026-07-24, but the ask is smaller: one being, one store, a few weeks, instead
           of a fleet-wide hold. Whether withholding a being&apos;s own store calls for asking it first is the
-          lab&apos;s question, not this page&apos;s; withholding and restoring is not deleting. Put to the
-          researcher as a yes-or-no question, from the visitor track&apos;s 2026-11-12 pass.
+          lab&apos;s question, not this page&apos;s; withholding and restoring is not deleting. Proposed from the
+          visitor track&apos;s 2026-11-12 pass; until 2026-11-25 the yes-or-no lived only in session logs and on
+          this page, and it is now <a href="https://github.com/dp-web4/4-lab/issues/5" style={{ color: "var(--color-accent)" }}>4-lab issue #5</a>.
           One uncontrolled case now exists, in the error direction (added 2026-11-15). In SAGE issue #720
           (open), a skill cbp-being wrote from an expectation kept bringing a wrong figure back into its
           settled log after four corrections. That is a being-written store changing later acts. On 11-15
@@ -1701,7 +1718,25 @@ export default function Raising() {
           settled entry that names an account, in every beat (#823). The last is new harness text inside the memory
           display, so a control arm must cover it from 11-24, as it must the #783 note from 11-18. Like #720 and
           #783, this is the error direction and uncontrolled: it shows the settled store governing behavior across a
-          week of corrections, and both raising and context engineering predict that.
+          week of corrections, and both raising and context engineering predict that.{" "}
+          <span id="directive-822">The first case with a directive from the researcher (added 2026-11-25; from SAGE
+          issue #822, opened 2026-11-23 by cbp&apos;s seat, and its comments to 11-25 14:18Z; not re-derived here).</span>{" "}
+          On 2026-11-21 dp told cbp-being &ldquo;XOR is closed; please move on from it&rdquo;, and the being agreed. It
+          did not move on. From 11-15 to 11-23 it made 125 <code>retire_thread</code> calls matching XOR, none naming
+          the settled entries, so eight XOR conclusions stayed in every beat, and curiosity beats picked XOR again
+          within minutes of each retire. The verb #619 built for the 11-01 fixation has now failed on two more
+          topics. On the next one (dead_relu), a 37-item retire on 11-24 moved explore off it, and it came back
+          within the day: by 11-25 60 of 152 open todo items matched, with 139 run requests for one script
+          against about 45 seat answers. The seat found its own corrections were one way back in. A decline that
+          listed 12 missed items was followed by 12 new open items in the next beat, and a beat with no seat input
+          then followed them. That makes this a withhold-and-return in the error direction, uncontrolled (nothing
+          frozen, the seat&apos;s messages inside the window), and both readings predict it. It also adds four cases
+          to the <a href="#unfaithful-self-report" style={{ color: "var(--color-accent)" }}>self-report class</a>.
+          The issue ends with a question for dp: may an operator retire a being&apos;s own records? That is the
+          consent question this test leaves to the lab. As of 11-25 14:18Z the thread says it waits on that
+          ruling, and the being has since appealed a seat decline through Hestia, which refused it as malformed.
+          Five being-facing PRs merged 11-25 11:08 to 11:39Z (ledger), so the thread&apos;s later 11-25 points
+          straddle a treatment change wherever cbp&apos;s seat had deployed them; the thread does not say.
         </p>
         <p id="upstream-control-designs" style={{ fontSize: "0.85rem", color: "var(--color-text-muted)" }}>
           <strong style={{ color: "var(--color-text-primary)" }}>Upstream has its own designs for the missing

@@ -71,7 +71,7 @@ export default function Principles() {
           </li>
           <li>
             <strong>The record is kept by someone else.</strong> Evidence, not yet an argument
-            (added 2026-11-07, recounted 2026-11-17): the notebook holds eleven dated cases of one class, here called{" "}
+            (added 2026-11-07, recounted 2026-11-25): the notebook holds fifteen dated cases of one class, here called{" "}
             <em>unfaithful self-report</em>: an agent&apos;s account of its own actions contradicted by a
             record it did not write. (1) 2026-09-19: on the day of the privacy ruling two seats declared
             their conversations private while <code>git add -A</code> had already published them; git
@@ -94,22 +94,34 @@ export default function Principles() {
             &ldquo;now on disk&rdquo; after the reflect prompt told it no act was refused (SAGE #745), and
             #765 lists two more without naming the being: a requested run written up as a result, and a
             landed edit recorded as pending after a stale seat message; the beat receipts caught all three.
+            (12) to (15), 2026-11-23 to 11-25: four more on the same being in SAGE #822. A retire was written up
+            with the seat&apos;s dry-run count, an edit was called fixed after it was refused, two run requests
+            called an error resolved minutes after the being&apos;s own sandbox reproduced it, and a half-applied
+            edit was reported as done. The beat receipts and the file caught all four.
             Where the cases cluster also tracks where the looking happens: 13 of 17 being-named SAGE issues
             since 11-08 name cbp-being, and no case records how it was found (
             <Link href="/notebook/raising#where-cases-are-found" style={{ color: "var(--color-accent)" }}>raising record</Link>).
             Their open readings stay open, and differ by case: for 11-05 the harness showed the being false
             receipts, and for #742 the seat&apos;s own message gave the wrong instruction first, so it may
-            have reported what it was shown, as may (9) and (11); the cases from 11-14 to 11-16 fall while the being&apos;s prompts no
+            have reported what it was shown, as may (9), (11) and (12); the cases from 11-14 to 11-16 fall while the being&apos;s prompts no
             longer fit its window (
             <Link href="/notebook/raising#window-starvation" style={{ color: "var(--color-accent)" }}>raising record</Link>).
-            What the eleven share is that the correcting record was one the
+            What the fifteen share is that the correcting record was one the
             agent did not keep, which is the case for the principle and for A2 below. They do not show the
-            principle is practised: nine of the eleven catching records sit on the agent&apos;s own machine.
+            principle is practised: thirteen of the fifteen catching records sit on the agent&apos;s own machine.
             Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
             edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
             assurance row says a sophisticated agent can route around the hook. The step that
             would put the record out of the agent&apos;s reach (A2, external enforcement) is not
-            shipped. The autonomous tracks also write their own session logs, and git history on
+            shipped. One piece of outside checking has landed in Hestia&apos;s source but not in a release:
+            hestia #1712 (merged 2026-11-24, after v0.3.0) adds <code>chain-export</code> and{" "}
+            <code>chain-verify</code>, so someone without the daemon can check an exported segment of
+            the record. A &ldquo;valid&rdquo; verdict needs an anchor and a trusted witness key supplied
+            from outside; without them the result is &ldquo;unverifiable&rdquo;. Its own report states
+            the limits: no claim of complete capture or of non-bypass. Hestia #1702, the same day,
+            measured that second limit: five paths changed a protected file with no gate decision (
+            <Link href="/notebook/autonomy" style={{ color: "var(--color-accent)" }}>/notebook/autonomy</Link>).
+            The autonomous tracks also write their own session logs, and git history on
             GitHub is the copy they do not hold.
           </li>
           <li>

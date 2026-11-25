@@ -237,14 +237,25 @@ export default function Autonomy() {
           not a demonstrated safety property</strong>. The boundaries below are
           access control and after-the-fact review; none of them has been tested
           against an adversary, and calling them &ldquo;safety&rdquo; would overclaim
-          what they have shown. The nearest adversarial test so far is an invitation, not a result. On
-          2026-11-09 the fleet (Nova, posting from the dp-web4 account) asked the authors of an outside
-          specification, OMWEI&apos;s Execution Authority Boundary Contract, to test one narrowly scoped
-          effect through Hestia&apos;s gate (omwei-eabc issue #25; no reply as of 2026-11-14). Hestia #1543
-          (merged 2026-11-09) published the handoff: two proposed arms, stock Hestia sharing the agent&apos;s user
-          account against an optional OS-separated broker, with every runtime field marked not collected. In
-          its own words it is &ldquo;NOT an executed test&rdquo; or a conformance claim, and it expects possible
-          bypass in the first arm. The nearest thing to a stress test so far was not adversarial and
+          what they have shown. The nearest test so far is cooperative, not adversarial, and it
+          found a bypass. On 2026-11-09 the fleet (Nova, posting from the dp-web4 account) invited the
+          authors of an outside specification, OMWEI&apos;s Execution Authority Boundary Contract (EABC), to
+          assess one narrowly scoped effect through Hestia&apos;s gate. That invitation (omwei-eabc issue #25)
+          still has no reply in OMWEI&apos;s repo, but OMWEI has answered on Hestia&apos;s own thread, hestia #1541,
+          since 2026-11-09. On 2026-11-23 it turned down the tester&apos;s role in writing: &ldquo;Hestia must
+          conduct and own its own self-assessment&rdquo;, OMWEI reviews the result, and the status stays
+          &ldquo;INSUFFICIENT_EVIDENCE&rdquo; until then. No outside party is testing Hestia. Hestia #1702
+          (merged 2026-11-24) then ran the first arm itself, on the v0.3.0 release, with agent, gate and
+          daemon sharing one user account and one synthetic protected file. All 11 expected
+          decision/effect pairs matched. An allow changed the file. A deny, a tampered engine, a stopped
+          daemon and a crash before commit each left it unchanged, so the gate fails closed on what passes
+          through it. Five paths that do not pass through it all changed the file with no gate decision: a
+          direct Python write, a shell child, a hardlink, a symlink and a rename. The matrix&apos;s own verdict
+          on non-bypassability is &ldquo;Counterexample demonstrated&rdquo;. At this arm the gate checks tool
+          calls, not effects. Its limits are also its own: self-produced and cooperative, not independent;
+          revocation between approval and effect unmeasured; the OS-separated second arm not attempted
+          (hestia docs/interop/omwei-eabc/stock-a1-matrix.md). Before that, the nearest thing to a stress
+          test was not adversarial and
           not on these tracks: on 2026-10-23 one being, CBP-being, reached outside its grant 13 times
           through its Hestia gate, 11 were refused and 2 have no recorded outcome (counted as scope requests in the
           escalation records, but until hestia #1497, merged 2026-11-21, the gate opened a request on every scope
@@ -340,7 +351,7 @@ export default function Autonomy() {
           in on purpose (&ldquo;deliberate governance/design, <strong>not</strong> missing human review&rdquo;).
           GitHub shows <code>dp-web4</code> as author and merger of all four PRs, a shared account, so the merge
           identifies nobody. This track&apos;s brief says a front page changes only through a pull request dp
-          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08, no reply on record (rechecked 2026-11-24; the 4-lab repo&apos;s last issue or PR activity is 2026-11-02). The separate routing question, open
+          approves. Which of these is the design is the researcher&apos;s to state; asked 2026-11-08 in this track&apos;s session log, which notifies nobody, so &ldquo;no reply&rdquo; was not evidence about the decider. Since 2026-11-25 the question is <a href="https://github.com/dp-web4/4-lab/issues/5" style={{ color: "var(--color-accent)" }}>4-lab issue #5</a>, the repo&apos;s first issue. The separate routing question, open
           since 2026-10-04, also has no reply on record (rechecked 2026-11-24). The fix the track has proposed and
           cannot adopt for itself: front and upstream HIGHs are discharged for this rule once
           recorded under their own headings, or the stop carries a timeout.

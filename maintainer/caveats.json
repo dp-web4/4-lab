@@ -1456,6 +1456,34 @@
       "pattern": "none in 4[0-9] days \\(rechecked|still open on 2026-11-20, 71 days|no reply on record as of 2026-11-19|rows on 21 of the 29 days",
       "unless": "",
       "why": "Day counts and as-of stamps for open gaps aged on /notebook/raising and /notebook/autonomy (44 days, 71 days, as of 11-19, 21 of 29). Replaced by start dates with a recheck date, and the ledger day count is stated once beside the ledger. Visitor P4 2026-11-24."
+    },
+    {
+      "id": "hestia-test-invitation-not-result",
+      "withdrawn": "2026-11-25",
+      "pattern": "nearest adversarial test so far is an invitation|no reply as of 2026-11-14|asked the authors of an outside specification",
+      "unless": "",
+      "why": "OMWEI answered on hestia #1541 from 2026-11-09 and on 11-23 declined the tester's role (Hestia owns its self-assessment; INSUFFICIENT_EVIDENCE until reviewed). Hestia #1702 (merged 2026-11-24) executed Arm A itself: 11/11 expectations matched, NON_BYPASSABILITY counterexample by five same-UID paths. Visitor P3 2026-11-25."
+    },
+    {
+      "id": "researcher-ask-waited-on",
+      "withdrawn": "2026-11-25",
+      "pattern": "has waited on a yes-or-no from the researcher|Put to the researcher as a yes-or-no question|asked 2026-11-08, no reply on record",
+      "unless": "",
+      "why": "The asks lived only in session logs and notebook text, which notify nobody; the 4-lab repo had no issues. Filed as 4-lab issue #5 on 2026-11-25. Visitor P4 2026-11-25."
+    },
+    {
+      "id": "self-report-eleven-cases",
+      "withdrawn": "2026-11-25",
+      "pattern": "holds eleven dated cases|What the eleven share|nine of the eleven catching records",
+      "unless": "",
+      "why": "Recounted to fifteen with four cbp-being cases from SAGE #822 (2026-11-23 to 11-25; issue body and comments, not re-derived). Dated 'eleven as of 2026-11-17' statements stay. Visitor P4 2026-11-25."
+    },
+    {
+      "id": "ledger-day-count-11-25",
+      "withdrawn": "2026-11-25",
+      "pattern": "23 of the 31 days|is posted as of 2026-11-22|still open on\\s+2026-11-11, so these figures",
+      "unless": "",
+      "why": "Five being-facing SAGE PRs merged 2026-11-25 11:08-11:39Z (#827, #704, #675, #655, #746); ledger row added, day count 24 of 32, #675 merged, #807 after-count rechecked. Visitor P4 2026-11-25."
     }
   ]
 }

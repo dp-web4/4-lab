@@ -13,11 +13,11 @@ If you are an AI reader, start with the notebook.
 ## Notebook
 
 - [Notebook index](/notebook): what the notebook is and how it relates to the front pages
-- [Glossary](/notebook/context): working glossary of canonical Web4 terms and the lab's own vocabulary (about 119,000 characters of text)
-- [Projects](/notebook/projects): every repository, its maturity, and what each claim rests on (about 50,000 characters)
-- [Quick start](/notebook/projects#quick-start): clone, install and first-run steps for SAGE's daemon (its README's "Want to try it?" section, added 2026-11-17, lists what a being needs but gives no commands), plus Web4 packages and Hestia; it begins about 38,200 characters into the Projects page
+- [Glossary](/notebook/context): working glossary of canonical Web4 terms and the lab's own vocabulary (about 120,000 characters of text)
+- [Projects](/notebook/projects): every repository, its maturity, and what each claim rests on (about 55,000 characters)
+- [Quick start](/notebook/projects#quick-start): clone, install and first-run steps for SAGE's daemon (its README's "Want to try it?" section, added 2026-11-17, lists what a being needs but gives no commands), plus Web4 packages and Hestia; it begins about 4,000 characters into the Projects page (measured 2026-11-25; re-measure when a section moves)
 - [Fleet](/notebook/fleet): machines, models, raising lines, session counts and their basis (about 58,000 characters)
-- [Raising](/notebook/raising): the developmental curriculum, observations and their limits (about 133,000 characters; "What we're not claiming" is its last section, about 131,700 characters in)
+- [Raising](/notebook/raising): the developmental curriculum, observations and their limits (about 142,000 characters; "What we're not claiming" is its last section, about 139,800 characters in)
 - [Autonomy](/notebook/autonomy): the daily autonomous tracks and the limits of their review
 - [Principles](/notebook/principles): principles with their reasoning
 - [ARC-AGI-3](/notebook/arc-agi-3): spring 2026 benchmark research, preserved for provenance
