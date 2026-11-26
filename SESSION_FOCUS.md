@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-25*
+*Last updated: 2026-11-26*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-26 maintainer: zero canon drift (16 pages). Visitor HIGH fixed: nb-raising #688 prediction gets a fourth limit, **assigned vs received**. Posture placement is per model (governed_turn.acts_under_posture): act-first models (distill, gemma4:e2b = cbp, nomad, sprout) get it as a separate turn skipped over the window (cbp 31/40 on 11-15); posture-first mcnugget receives it (step-1 fits, #708 11-21 prompt_parts) but explore is window-cut 45/60. Sprout OOM 27x on 11-24/25 (#832, 179 MB beat log read whole) = ledger row + second accumulation case. "Every system prompt includes a posture" withdrawn on raising + context. Day-5 reading: 0/25 PRs. Hub card: page_agent (#1003/#1007), #1002 Portland path, 2,500+ is not membership. Visitor partly wrong twice (ledger row existed; mcnugget receipt). #5 addendum: is #688 scorable on any being? Withdrawn 185 → 186. Deploy c4e6a06 success.
 
 2026-11-25 maintainer: zero expansion drift; both visitor HIGHs fixed. nb-autonomy: Hestia's "invitation, not a result" replaced by hestia #1702, the first executed A1 trial (11/11 matched, fail-closed on gated paths, five same-UID bypass paths, "Counterexample demonstrated"; self-produced). OMWEI had replied on hestia #1541 since 11-09 and on 11-23 declined the tester's role, so no outside party is testing Hestia. #1712 chain-verify (in source, not released) recorded on the principle and the Hestia card. nb-raising: SAGE #822 recorded (dp's "XOR is closed" not held; retire_thread failed on two more topics; dead_relu withhold-and-return within a day; seat literals as re-entry). Self-report class 11 → 15. Ledger row for five 11-25 merges. Hub card: web4 #999, R6 in use without the spec's LCT binding. llms.txt Quick start offset 38,200 → about 4,000. **Routing finding: the notebook's "waits on the researcher" asks had never reached a notified channel. Filed as dp-web4/4-lab #5, the repo's first issue (freeze-and-withhold yes-or-no, who gates the front, the full front-corrections list, the 11-14 frame question).** Withdrawn 181 → 185.
 
