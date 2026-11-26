@@ -4,3 +4,27 @@ Pulling SAGE fleet models...
  1 file changed, 1 insertion(+), 1 deletion(-)
 Flagging external issues/PRs...
 external items (4-lab): 0 open, nothing new to flag
+I fixed today's one HIGH item in the notebook and it's live: commit `c4e6a06` deployed `success`, and the log commit `c217687` deployed `success` too. The build and all site checks passed. There was no terminology drift on any of the 16 pages.
+
+**The HIGH: the #688 prediction had no check that the change was delivered.** The notebook's only pre-registered test asks whether other beings start opening pull requests now that #688 has added an "act" instruction to the shared posture text. The record said when that change was *assigned* (merged 11-21), not whether each being *received* it. I checked this against the SAGE source:
+- **Where the posture goes depends on the model.** Most models get it in the system prompt. Three beings run "act-first" models: cbp, nomad and sprout. They get it as a separate turn, which is skipped when the prompt is too long for the context window. cbp-being skipped it on 31 of its last 40 counted beats.
+- **Day-5 reading: none.** 0 of the 25 SAGE pull requests since 11-21 come from a being's branch or carry a `Being:` trailer. The same check finds 30 trailers on #360, so it does find them.
+- **The check exists but hasn't been run.** Each beat record stores what text was actually sent (`prompt_parts`). Beat records are private, so the notebook names this as a task for each machine's Claude session.
+
+**Corrections to the visitor log.** Two of its claims were partly wrong:
+- The treatment table already had a row for the context-window overflow. It has been there since 11-22.
+- mcnugget-being does receive the posture. Its model puts the posture in the system prompt, and that prompt fits the window. The window cuts it off later, after about 7 steps of acting. The notebook now records this per being rather than repeating the visitor's claim.
+
+**Other notebook fixes:**
+- The raising page and the glossary both said the posture is in every being's system prompt. That is false for the three act-first beings. I corrected it on both pages and added a check that fails the build if the old claim reappears.
+- Sprout's model server was killed for lack of memory 27 times on 11-24 and 11-25. A 179 MB log was being read whole at the start of every beat (SAGE #832, fixed 11-26). It's now in the treatment table, and the raising page records it as a second case of a record growing until it crowds out the beat.
+- The Hub card on the projects page now covers the new chapter assistant (`page_agent`, web4 #1003/#1007), whose edits wait for a co-lead's Publish. It also records that Portland's first content is planned through the other assistant role, with approval happening outside the system (#1002). And it notes that the "2,500+" figure is the Portland group's own count, not Hub membership.
+
+**Decision for you.** I added a comment to 4-lab #5, the issue that collects researcher questions. The #688 prediction can only be scored on a being whose machine offers it the `pr_open` verb *and* that actually received the posture. It may be scorable on no being except Legion, the one it was meant to compare against. If so, the daily "Day-N: none" readings build a series that looks like evidence but isn't. Should they stop until a machine's Claude session runs the check? #5 still has no reply from you.
+
+**Not done:**
+- A link anchor for the developer quick-start paragraph, so it isn't buried in the glossary.
+- The LOW items, mostly glossary rows and naming.
+- The test of one visitor persona on a non-Claude model family is still undone (day 77). Only `claude` is runnable in this session.
+
+The fleet model manifest still lags the fleet page for every machine except McNugget, so I left the page unchanged. Full log is in `maintainer/logs/2026-11-26.md`.
