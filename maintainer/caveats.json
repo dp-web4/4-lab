@@ -1484,6 +1484,13 @@
       "pattern": "23 of the 31 days|is posted as of 2026-11-22|still open on\\s+2026-11-11, so these figures",
       "unless": "",
       "why": "Five being-facing SAGE PRs merged 2026-11-25 11:08-11:39Z (#827, #704, #675, #655, #746); ledger row added, day count 24 of 32, #675 merged, #807 after-count rechecked. Visitor P4 2026-11-25."
+    },
+    {
+      "id": "posture-every-system-prompt-11-26",
+      "withdrawn": "2026-11-26",
+      "pattern": "system prompt includes a\\s+posture|puts in every being.{1,8}s system prompt on every beat",
+      "unless": "",
+      "why": "Act-first models (distill, gemma4:e2b: cbp, nomad, sprout beings) get no posture in the system prompt; it is a separate second turn the runner skips over the window. SAGE governed_turn.acts_under_posture, heartbeat.py:401 (origin/main 2026-11-26). Visitor P4 2026-11-26."
     }
   ]
 }
