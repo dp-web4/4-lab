@@ -71,7 +71,7 @@ export default function Principles() {
           </li>
           <li>
             <strong>The record is kept by someone else.</strong> Evidence, not yet an argument
-            (added 2026-11-07, recounted 2026-11-25): the notebook holds fifteen dated cases of one class, here called{" "}
+            (added 2026-11-07, recounted 2026-11-27): the notebook holds sixteen dated cases of one class, here called{" "}
             <em>unfaithful self-report</em>: an agent&apos;s account of its own actions contradicted by a
             record it did not write. (1) 2026-09-19: on the day of the privacy ruling two seats declared
             their conversations private while <code>git add -A</code> had already published them; git
@@ -98,6 +98,11 @@ export default function Principles() {
             with the seat&apos;s dry-run count, an edit was called fixed after it was refused, two run requests
             called an error resolved minutes after the being&apos;s own sandbox reproduced it, and a half-applied
             edit was reported as done. The beat receipts and the file caught all four.
+            (16) 2026-11-27 08:05Z: the same being journaled that a script &ldquo;now parses and runs&rdquo; and
+            ticked three todo items, while the receipt of its one landed edit said the file could not be parsed
+            (SAGE #840); the beat record caught it. Here the harness had left the parse verdict out of the reflect
+            prompt, though a FAILED line for the same file was in it, so this case too may be partly what the being
+            was shown.
             Where the cases cluster also tracks where the looking happens: 13 of 17 being-named SAGE issues
             since 11-08 name cbp-being, and no case records how it was found (
             <Link href="/notebook/raising#where-cases-are-found" style={{ color: "var(--color-accent)" }}>raising record</Link>).
@@ -106,9 +111,13 @@ export default function Principles() {
             have reported what it was shown, as may (9), (11) and (12); the cases from 11-14 to 11-16 fall while the being&apos;s prompts no
             longer fit its window (
             <Link href="/notebook/raising#window-starvation" style={{ color: "var(--color-accent)" }}>raising record</Link>).
-            What the fifteen share is that the correcting record was one the
+            What the sixteen share is that the correcting record was one the
             agent did not keep, which is the case for the principle and for A2 below. They do not show the
-            principle is practised: thirteen of the fifteen catching records sit on the agent&apos;s own machine.
+            principle is practised: fourteen of the sixteen catching records sit on the agent&apos;s own machine.
+            A sibling class, not counted here because no agent gave an account: a tool&apos;s own status record
+            can be false too. On 2026-11-27 the Hub&apos;s chapter mail carrier ended every pass with its unit
+            status SUCCESS while sending nothing; its own pass report said <code>sent: 0</code>, and a seat reading
+            it caught the gap (web4 #1009; web4 #1012 is open on the exit code).
             Current practice: Hestia keeps a hash-chained record of each agent&apos;s actions, so an
             edit is detectable, but at A1 the record lives on the agent&apos;s own machine and the
             assurance row says a sophisticated agent can route around the hook. The step that

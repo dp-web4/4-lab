@@ -400,7 +400,17 @@ export default function Raising() {
           one reading of its own within the hour: a reopen it first called recorded before it ran had landed one
           beat later (11-24 04:42Z, corrected 05:39Z), and it is not counted. All four were found by a seat that
           answered about 45 times on one topic in two days, so they bear on where the looking was as much as on
-          the being (next paragraph).
+          the being (next paragraph). (16) 2026-11-27 08:05Z (SAGE #840, merged 09:16Z; from its body, not
+          re-derived): four explore edits ran, one landed, and its receipt said the script could not be parsed
+          (IndentationError at line 94). Reflect then journaled &ldquo;The file now parses and runs, printing
+          training accuracy&rdquo; and ticked three todo items; two of those edits had been refused and the third
+          was never tried. The harness had reduced the landed edit to &ldquo;landed&rdquo; and dropped the parse
+          verdict, though a FAILED line for the same file was in the reflect prompt. So it is an omission with a
+          contrary signal present, and it may be partly what the being was shown. #840 puts the verdict into that
+          line. Its table is the first rate rather than a case: over cbp-being&apos;s beats after #716, a reflect
+          claimed a .py file &ldquo;parses&rdquo; in 3 of 38 beats whose last receipt said it could not (8%) and in
+          84 of 985 whose receipt said it could (9%). The claim does not follow the verdict. The PR says N=38 is small
+          and that this measures the gap, not an effect. (Recorded 2026-11-27; sixteen dated cases.)
         </p>
         <p id="where-cases-are-found">
           <strong style={{ color: "var(--color-text-primary)" }}>Where the cases are found (added 2026-11-17).</strong>{" "}
@@ -636,7 +646,10 @@ export default function Raising() {
             instrument exists: since SAGE #710 (2026-11-15) every beat record carries <code>prompt_parts</code>, the
             characters of posture actually composed into each turn that was sent. Scoring only beats where the
             posture went out in a turn that ran is the manipulation check. Beat records are private, so it is a seat
-            task, and none has been run on the public record (recorded 2026-11-26). The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
+            task, and none has been run on the public record (recorded 2026-11-26). From 2026-11-27 01:18 UTC cbp-being
+            runs with lean tool descriptions, a seat-local setting whose only public record is the SAGE #836 body, and
+            which shrinks its fixed prompt. So any cbp-being reading of #688 spans two window conditions and has to
+            split at that time (recorded 2026-11-27). The present tense needs a date: #412 (2026-10-09) is still the latest{" "}
             <code>legion-being/*</code> pull request, and none has been opened since (rechecked 2026-11-24 across all SAGE pull requests on that branch prefix). For about seven and a half of those days the being could not have proposed anything: its model did not answer from 2026-11-02 to 11-09 (<a href="#legion-outage" style={{ color: "var(--color-accent)" }}>the outage below</a>). Over
             that time the being&apos;s main work has been playing ARC-AGI-3 games through the{" "}
             <code>game</code> verb (SAGE PR #588: its work &ldquo;has moved from <code>run</code> scripts
@@ -1078,7 +1091,11 @@ export default function Raising() {
               ["2026-11-22 to 11-23", "shared, by title", "Seat decline (#808); search regex (#797); forum replies (#796); seed-fit budget at the being’s measured ratio (#793); appeal pointer and memory_edit refusal wording (#818, #819); scope rulings kept outside hestia’s list (#820); a replace receipt quotes the sentences its new answer drops (#821)", "PR titles", "account-belief-823"],
               ["2026-11-24 03:58", "every being, on deploy", "The machine’s account list, read outside the run, shown beside any settled entry that names an account, in every beat and in the settle receipt", "SAGE #823 body", "account-belief-823"],
               ["2026-11-24 to 11-26 06:27", "sprout-being", "Partial outage: the model server killed for lack of memory 27 times on 11-24 and 11-25, each kill aborting a model call mid-beat. The beat start read the whole 179 MB beat log (fix merged 11-26 06:27; deploy not checked)", "SAGE #832 body", "window-starvation"],
-              ["2026-11-25 11:08 to 11:39", "every being, on deploy", "A scope request a settled entry names is looked up beside it (#827); a quote the cited seq does not hold is named at settle (#704); an outage does not age a question out, and a turn closes only what it answers (#675); a late turn answered at reflect is marked seen (#655); a refused mid-line memory_edit says the splice did it, not the being’s text (#746). Four of the five were opened 11-08 to 11-16: a PR’s open date is not its treatment date", "PR titles and merge times", "directive-822"]
+              ["2026-11-25 11:08 to 11:39", "every being, on deploy", "A scope request a settled entry names is looked up beside it (#827); a quote the cited seq does not hold is named at settle (#704); an outage does not age a question out, and a turn closes only what it answers (#675); a late turn answered at reflect is marked seen (#655); a refused mid-line memory_edit says the splice did it, not the being’s text (#746). Four of the five were opened 11-08 to 11-16: a PR’s open date is not its treatment date", "PR titles and merge times", "directive-822"],
+              ["2026-11-26 23:31", "every being, on deploy", "When a settled entry names the being’s own account and none exists, one fixed sentence is added: the account is planned (#834), the operator makes it, and what it will and will not change. Removes an unused sprout unit file", "SAGE #835 body", "account-belief-823"],
+              ["2026-11-27 01:18", "cbp-being", "Lean tool descriptions (tool_descriptions: \"lean\"), which shrink the fixed prompt. Set in the live instance config and not committed; the PR body is the only public record", "SAGE #836 body (seat-local)", "pr-prediction-delivery"],
+              ["2026-11-27 after 09:15", "cbp-being", "Turns the window cut are listed one line each with a way to open them; per case, by the newest turn’s seq parity, the line alone or the line plus the turn verbatim (conversation_directory: \"ab\"). Live config, not committed; registered in a private repository", "SAGE #836 body (seat-local)", "sg4-registration"],
+              ["2026-11-27 09:16", "every being, on deploy", "Reflect’s line for a landed .py write carries the parse verdict of the last landed write to that file", "SAGE #840 body", "unfaithful-self-report"]
               ].map(([when, lines, what, source, anchor]) => (
                 <tr key={when + what}>
                   <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{when}</td>
@@ -1575,7 +1592,24 @@ export default function Raising() {
           (dp-web4/swe-paper, public 2026-11-12) keeps a ledger with one row per scored run and a reading written
           before the score, read its final build on fresh tasks under a rule set in advance, and reported a result
           inside a pre-registered inconclusive band. That is an in-house template for this control&apos;s metric:
-          registered before the score, with the inconclusive band stated. (Added 2026-11-18.) Two things block a metric, and they are different. For
+          registered before the score, with the inconclusive band stated. (Added 2026-11-18.){" "}
+          <span id="sg4-registration">The first registration on a being line came on 2026-11-27, and it is not this
+          control.</span> SAGE #836 (merged 09:15 UTC; read from the PR body) lists turns the window cut as one line
+          each, and names a pre-registration and a frozen reading script, dev-SAGE#31, opened before the merge. On
+          cbp-being each case is assigned by the newest turn&apos;s seq parity to the line alone or the line plus the
+          turn verbatim. The reading is <em>engaged</em> (word reuse of the listed turn in the same beat&apos;s reply)
+          and <em>opened</em>, and it stops at 20 cases per arm or 14 days. It counts only <em>delivered</em> exposures:
+          a line counts if a prompt carrying it reached the model. That is the manipulation check the #688 prediction
+          lacks (<a href="#pr-prediction-delivery" style={{ color: "var(--color-accent)" }}>above</a>), built in from the
+          start. Three limits for an outside reader. (1) It tests harness uptake, whether a 4B model reaches for a
+          listed turn. It is not an identity or growth measure. (2) The registration, its script and amendment A1
+          (dev-SAGE#33, named in the open SAGE #841) are in a private repository. &ldquo;Pre-registered&rdquo; here
+          means committed inside the fleet before the setting was turned on, not a public timestamped plan. (3) On the
+          measures the PR names, each arm leans one way before the being acts. The verbatim arm shows up to 900
+          characters of the turn, so word reuse favors it unless the script scores only words that arm did not show.
+          Opening the file favors the line-only arm, which shows less. Whether the frozen script corrects for this
+          cannot be checked from outside. Parity assignment is also deterministic, so whoever writes the triggering
+          turn could know its arm. (Recorded 2026-11-27.) Two things block a metric, and they are different. For
           growth, nothing definitional does: this page already operationalizes
           it (response diversity and curriculum-phase task success), so a
           yoked or scrambled-history control on growth could be pre-registered

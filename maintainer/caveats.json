@@ -1491,6 +1491,20 @@
       "pattern": "system prompt includes a\\s+posture|puts in every being.{1,8}s system prompt on every beat",
       "unless": "",
       "why": "Act-first models (distill, gemma4:e2b: cbp, nomad, sprout beings) get no posture in the system prompt; it is a separate second turn the runner skips over the window. SAGE governed_turn.acts_under_posture, heartbeat.py:401 (origin/main 2026-11-26). Visitor P4 2026-11-26."
+    },
+    {
+      "id": "self-report-fifteen-cases",
+      "withdrawn": "2026-11-27",
+      "pattern": "holds fifteen dated cases|What the fifteen share|thirteen of the fifteen catching records",
+      "unless": "",
+      "why": "Recounted to sixteen with SAGE #840 (cbp-being, 2026-11-27 08:05Z: journaled 'now parses and runs' against a landed edit's IndentationError receipt; PR body, not re-derived). Dated 'fifteen as of 2026-11-25' in the #822 paragraph stays. Visitor P3+P4 2026-11-27."
+    },
+    {
+      "id": "pub-hub-not-gone-live-11-27",
+      "withdrawn": "2026-11-27",
+      "pattern": "public-facing hub that has not gone live",
+      "unless": "",
+      "why": "First live step taken 2026-11-27: chapter welcome mail enabled 04:26Z, failed 403 then 501, fixed by web4 #1009/#1010; sends reported only in a non-public fleet note. Visitor P3 2026-11-27."
     }
   ]
 }
