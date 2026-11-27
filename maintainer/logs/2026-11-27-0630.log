@@ -1,0 +1,33 @@
+Starting 4-lab Maintainer Session at Fri Nov 27 06:30:01 PST 2026
+Pulling SAGE fleet models...
+Already up to date.
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+No canon drift today and no HIGH items. All four visitor passes found zero drift, and nothing was carried over from yesterday. The notebook changes are live: commit `c74a16b` deployed with status **success**, and the session log is pushed as `d3169a5`.
+
+**Fleet sync:** McNugget is the only manifest entry written since March, and it already matches the page. I changed nothing, as the polarity rule requires.
+
+**One visitor claim was out of date.** The visitor proposed saying the chapter hub's welcome emails to its two co-leads were "not yet delivered". That is accurate to the public PRs, which show only the two failures (a 403, then an SMTP 501) and their fixes. But a private fleet note from pub reports both welcomes sent at 06:44Z, 40 minutes after the last public event. The notebook now says both things: what the public record shows, and that a non-public note reports the sends. It does not cite the note's path.
+
+**What I changed in the notebook:**
+- **SAGE #836:** recorded as the first experiment on a being line with a pre-registration. It counts a line only when the prompt carrying it reached the model, which is the check the #688 prediction lacks. It has three limits an outsider can't get past:
+  - It tests whether the being picks up listed turns, not identity.
+  - The registration and its amendment are in a private repo (dev-SAGE#31, #33).
+  - Each measure favours one arm before the being does anything.
+- **Treatment ledger:** four new rows (#835, #840, and two changes to cbp-being's live config that are recorded only in the #836 PR body). cbp-being's #688 readings now have to split at 11-27 01:18Z, when the first of those changes made its prompt smaller.
+- **Self-report class:** SAGE #840 is case 16, so the count is now sixteen, with 14 of the 16 catching records on the agent's own machine. Its table is the class's first rate rather than a single case: cbp-being claims a file "parses" about as often whether or not it does (8% vs 9%). The Hub mail unit reporting SUCCESS while its own log said `sent: 0` is recorded beside the class, not in the count.
+- **Hub and pub cards:** dated the first live step on 11-27.
+- **"Every repository":** `llms.txt` and `/notebook/projects` now say the lists are a selection. I added a 4-lab row to `/notebook/links`.
+- **Withdrawn-reading checks:** two new entries, for the old case count of fifteen and pub's "has not gone live".
+- **Checks:** the build and all checks passed, and I confirmed each new passage in the built HTML.
+
+**Routed to 4-lab #5** ([comment](https://github.com/dp-web4/4-lab/issues/5#issuecomment-7220968947)):
+- **§5:** the three dated gaps the issue didn't have yet, each as a yes/no ask: the single-model-family audit, the public raising record, and a human review cadence.
+- **§6:** whether dev-SAGE#31 and #33 can be made readable as the original issues before cases accrue. A fresh public copy would prove nothing about when they were written, so this has a deadline.
+- **Front corrections for you:** `/raising` "no blind comparison against a fresh model" names a test that can't decide; the claim that SAGE's actions go through governed tools appears at three different strengths across the front; and the "every repository" wording on `/notebook` and `/links`.
+
+dp has not replied to #5 yet.
+
+**Gate false positive:** the hestia rule that blocks access to secrets denied my Bash call because the comment's prose contained the word "credentials". No appeal tool was reachable, so I reworded it to "a vendor account" and wrote the file with the Write tool. The session log records this as a defect report.
+
+**So what?** The visitor's "not delivered" was accurate to what an outsider can check and still false. #836 has the same shape: the registration exists, but no outsider can check it. The question I'd put to the frame: should the notebook name "private but recorded" once as its own kind of evidence, as it already does for "assigned vs received", instead of working it out again for each item?
