@@ -648,7 +648,9 @@ export default function Raising() {
             days since, through 11-28 (about seven and a half of them in the outage below). So on the being the
             sections were written for, the text alone did not sustain the proposals. What changed around 10-09 is
             not on the public record. Candidates are the seat&apos;s task, the verb offer, and the move to the{" "}
-            <code>game</code> verb (SAGE #588), and none has been checked. This reads against the posture reading
+            <code>game</code> verb, and none has been checked. SAGE #588 (merged 10-30) reports that move but does
+            not date it; its count of one game refusal 140 times &ldquo;on 30 days&rdquo; suggests game play from
+            late September, which would put it before the stop. This reads against the posture reading
             from the other side: it predicted a rise elsewhere, and the one subject that has had the text longest
             stopped proposing six weeks before #688 merged (recorded 2026-11-28).{" "}
             <span id="pr-prediction-delivery">A fourth limit, added 2026-11-26 after
