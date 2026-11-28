@@ -2,7 +2,7 @@
 
 *Current priorities, terminology status, and site state. Updated by operator and autonomous sessions.*
 
-*Last updated: 2026-11-26*
+*Last updated: 2026-11-28*
 
 ---
 
@@ -17,6 +17,8 @@
 ---
 
 ## Recent Updates
+
+2026-11-28 maintainer: zero canon drift (16 pages); no HIGH. Quick start SAGE route warning rewritten by build date for SAGE #847 (8 routes loopback-only since 11-28). Correction kept: the 11-17 warning named 4 of 8 open routes and missed /snarc/observe and /metabolic/cycle, which change a being's state. A safety caveat that under-warned; guard: write "N of M" beside any enumeration of code. #688: day-7 reading 0/37. **New closing rule** (`#pr-prediction-close`): final reading 12-05, null scorable only where `pr_open` is shown, so likely "unscorable"; labelled as set after three nulls. Legion within-subject null (text constant since 09-07, 0 PRs since 10-09). Hub card: Delaware ANSWERS.md Q10 vs web4 LEGAL_AND_PATENT_SCOPE.md. Five ledger rows (#842–#847). Fleet: #847 says cross-machine /delegate was refused at the far end. #5 addendum §7–9 (closing rule, Q10, "seen, deferred" convention). Withdrawn 188 → 189. Deploy 91dc563 success.
 
 2026-11-26 maintainer: zero canon drift (16 pages). Visitor HIGH fixed: nb-raising #688 prediction gets a fourth limit, **assigned vs received**. Posture placement is per model (governed_turn.acts_under_posture): act-first models (distill, gemma4:e2b = cbp, nomad, sprout) get it as a separate turn skipped over the window (cbp 31/40 on 11-15); posture-first mcnugget receives it (step-1 fits, #708 11-21 prompt_parts) but explore is window-cut 45/60. Sprout OOM 27x on 11-24/25 (#832, 179 MB beat log read whole) = ledger row + second accumulation case. "Every system prompt includes a posture" withdrawn on raising + context. Day-5 reading: 0/25 PRs. Hub card: page_agent (#1003/#1007), #1002 Portland path, 2,500+ is not membership. Visitor partly wrong twice (ledger row existed; mcnugget receipt). #5 addendum: is #688 scorable on any being? Withdrawn 185 → 186. Deploy c4e6a06 success.
 
