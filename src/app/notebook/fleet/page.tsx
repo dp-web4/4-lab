@@ -330,7 +330,11 @@ export default function Fleet() {
           <code>get_all_trust</code>. So what the tracker logged is whether a peer&apos;s SAGE endpoint
           answered the observing daemon, and for almost every pair it never did. That is a reachability log,
           not a record of conduct. Why the polls failed (addresses, ports, peers down) is not established
-          here. This page used to call the tracker &ldquo;the evidence behind the front page&apos;s
+          here. One of the tracker&apos;s two inputs could not succeed between Rust daemons in any case.
+          SAGE #847 (merged 2026-11-28) says <code>/delegate</code> reaches a peer at the peer&apos;s own{" "}
+          <code>/chat</code>, &ldquo;which was already loopback-only. So cross-machine delegation was already
+          refused at the far end.&rdquo; When <code>/chat</code> became loopback-only, and so whether delegated
+          calls were ever a live input on the Rust fleet, is not checked here. This page used to call the tracker &ldquo;the evidence behind the front page&apos;s
           line&rdquo; that the machines earn trust in each other from the record of what they have done. Its
           public output does not support that line through 2026-09-20, and after that date the files are not
           public, so the line is untested. Whether another mechanism (Hub&apos;s ledger, for one) now

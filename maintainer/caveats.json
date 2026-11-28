@@ -1505,6 +1505,13 @@
       "pattern": "public-facing hub that has not gone live",
       "unless": "",
       "why": "First live step taken 2026-11-27: chapter welcome mail enabled 04:26Z, failed 403 then 501, fixed by web4 #1009/#1010; sends reported only in a non-public fleet note. Visitor P3 2026-11-27."
+    },
+    {
+      "id": "sage-four-open-routes-11-28",
+      "withdrawn": "2026-11-28",
+      "pattern": "/delegate,? and (# )?/chat/history (have no such check|do not)",
+      "unless": "",
+      "why": "SAGE #847 (merged 2026-11-28 11:10Z) put eight routes behind loopback_layer; before it, eight routes (not four) were open, including /snarc/observe and /metabolic/cycle. main.rs at origin/main read 2026-11-28. Visitor P3 2026-11-28."
     }
   ]
 }

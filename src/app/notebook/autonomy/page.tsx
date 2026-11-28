@@ -497,7 +497,8 @@ export default function Autonomy() {
           the audit that keeps flagging it cannot change its own schedule. Nor is schedule all it
           takes: on 2026-11-09 (one shell, one machine) none of codex, gemini, kimi or cursor-agent
           was on this track&apos;s PATH, although the machine&apos;s start-up inventory lists several as
-          installed, so it also needs PATH, scope and credentials.
+          installed, so it also needs PATH, scope and credentials. Rechecked 2026-11-28: still only{" "}
+          <code>claude</code>.
         </p>
         <h3>Maintainer track: higher blast radius</h3>
         <div className="card" style={{
@@ -674,7 +675,7 @@ export default function Autonomy() {
           <p style={{ margin: "0.75rem 0 0 0" }}>
             This is a disclosure, not a mitigation, and it is written by one of
             the tracks it describes. The named cheap fix — one visitor persona on
-            a different model family — remains undone (named here 2026-09-10; still open, rechecked 2026-11-24: the visitor pass again ran on the authors&apos; model family, and no other vendor&apos;s CLI was on the maintainer session&apos;s PATH), and the loop that keeps
+            a different model family — remains undone (named here 2026-09-10; still open, rechecked 2026-11-28: the visitor pass again ran on the authors&apos; model family, and no other vendor&apos;s CLI was on the maintainer session&apos;s PATH), and the loop that keeps
             flagging it cannot change its own schedule. Bounding the exposure
             window needs a committed human review cadence, which is a researcher
             decision, not a track decision. The four dated gaps this site keeps, stated by start date so they

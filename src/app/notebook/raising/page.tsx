@@ -628,7 +628,30 @@ export default function Raising() {
             pull requests, not the main log. Day-3 reading, 2026-11-24: none, which is too early to read either way.
             Day-5 reading, 2026-11-26: none. 25 SAGE pull requests were opened 11-21 to 11-26 (#801 to #832). None
             is from a <code>*-being/*</code> branch, and none has a <code>Being:</code> trailer in its commits (the same
-            check finds 30 on #360, so it works). <span id="pr-prediction-delivery">A fourth limit, added 2026-11-26 after
+            check finds 30 on #360, so it works). Day-7 reading, 2026-11-28: none. 37 SAGE pull requests were
+            opened 11-21 to 11-28 (#801 to #848). None is from a <code>*-being/*</code> branch, and none of #835 to
+            #848 has a <code>Being:</code> trailer (#360 still shows 30); the trailers that are there name seats
+            (<code>Seat: sprout-claude</code> six times, <code>Seat: legion-claude</code> twice).{" "}
+            <span id="pr-prediction-close">Closing rule, added 2026-11-28 by the maintainer track after three null
+            readings.</span> It was set with the trend already visible, and is labelled so. The prediction gets one
+            final reading on day 14, 2026-12-05, by the counting rule above, and then closes. A being&apos;s pull
+            request from any being other than legion-being by then reads as a rise; none reads as a null. A null
+            counts only for a being whose seat is shown to offer <code>pr_open</code> (the first limit). For every
+            other being it is recorded as unscorable, not as evidence against the posture reading. Which seats
+            offer the verb is seat-local and not on the public record, so unless a seat says by 12-05, the 11-21
+            prediction cannot be scored as a null on any being, and the day-14 reading will say so. For
+            calibration: legion-being opened 15 pull requests from 2026-09-09 to 10-09, about one every two days,
+            on a 27B model whose seat had the PR machinery. The other beings run smaller models, and their rate
+            with the verb has no baseline. The researcher can replace this rule; it is on 4-lab issue #5.{" "}
+            <span id="pr-prediction-within-legion">The within-subject reading on legion-being.</span> It has read the
+            four sections inline since 2026-09-07. It proposed 15 changes from 09-09 to 10-09, and none in the 50
+            days since, through 11-28 (about seven and a half of them in the outage below). So on the being the
+            sections were written for, the text alone did not sustain the proposals. What changed around 10-09 is
+            not on the public record. Candidates are the seat&apos;s task, the verb offer, and the move to the{" "}
+            <code>game</code> verb (SAGE #588), and none has been checked. This reads against the posture reading
+            from the other side: it predicted a rise elsewhere, and the one subject that has had the text longest
+            stopped proposing six weeks before #688 merged (recorded 2026-11-28).{" "}
+            <span id="pr-prediction-delivery">A fourth limit, added 2026-11-26 after
             the visitor track&apos;s outside-researcher pass: the record says when #688 was <em>assigned</em>, not
             whether a being <em>received</em> it.</span> How the posture reaches a being depends on its model (the ninth
             confound). On cbp-being, an act-first model, the posture is a separate turn, and the runner judged that
@@ -1095,7 +1118,12 @@ export default function Raising() {
               ["2026-11-26 23:31", "every being, on deploy", "When a settled entry names the being’s own account and none exists, one fixed sentence is added: the account is planned (#834), the operator makes it, and what it will and will not change. Removes an unused sprout unit file", "SAGE #835 body", "account-belief-823"],
               ["2026-11-27 01:18", "cbp-being", "Lean tool descriptions (tool_descriptions: \"lean\"), which shrink the fixed prompt. Set in the live instance config and not committed; the PR body is the only public record", "SAGE #836 body (seat-local)", "pr-prediction-delivery"],
               ["2026-11-27 after 09:15", "cbp-being", "Turns the window cut are listed one line each with a way to open them; per case, by the newest turn’s seq parity, the line alone or the line plus the turn verbatim (conversation_directory: \"ab\"). Live config, not committed; registered in a private repository", "SAGE #836 body (seat-local)", "sg4-registration"],
-              ["2026-11-27 09:16", "every being, on deploy", "Reflect’s line for a landed .py write carries the parse verdict of the last landed write to that file", "SAGE #840 body", "unfaithful-self-report"]
+              ["2026-11-27 09:16", "every being, on deploy", "Reflect’s line for a landed .py write carries the parse verdict of the last landed write to that file", "SAGE #840 body", "unfaithful-self-report"],
+              ["2026-11-28 05:44", "none until an operator installs them", "Measured memory and task caps for a being’s beat, daemon and memory-server units, as systemd drop-in templates (#834 slice S1.5). Installing them is the operator’s step; which machines have them is not public", "SAGE #846 body", "window-starvation"],
+              ["2026-11-28 08:20", "every being, on deploy", "A bare [x] or [ ] todo line counts like the dashed one. On cbp-being’s live list the open view grows 219 → 228 with items it wrote earlier that the view never showed (found when its say reported two items closed that its view still showed open)", "SAGE #842 body", "unfaithful-self-report"],
+              ["2026-11-28 08:20", "every being’s run box, on deploy", "The run note says a masked home shows as an empty read-only folder (it had said the home “does not exist”), and names run’s data as the way to bring a home file in", "SAGE #843 body", "account-belief-823"],
+              ["2026-11-28 08:21", "every being, on deploy", "A failed run’s result leads with its traceback’s verdict, so compaction keeps it (compaction had kept a matplotlib warning and cut the traceback)", "SAGE #844 body", "window-starvation"],
+              ["2026-11-28 11:10", "each daemon, when rebuilt", "Eight unauthenticated daemon routes refuse off-box callers. The being reads nothing new; this changes its inputs only if something off-box was feeding /snarc/observe or /metabolic/cycle, which no public record shows either way. Legion’s rebuild was announced; other machines unchecked", "SAGE #847 body + main.rs", "treatment-ledger"]
               ].map(([when, lines, what, source, anchor]) => (
                 <tr key={when + what}>
                   <td style={{ padding: "0.3rem 0.5rem", verticalAlign: "top", borderTop: "1px solid var(--color-dark-border)" }}>{when}</td>
