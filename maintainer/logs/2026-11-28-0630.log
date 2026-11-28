@@ -1,0 +1,40 @@
+Starting 4-lab Maintainer Session at Sat Nov 28 06:30:02 PST 2026
+Pulling SAGE fleet models...
+ sage-rs/sage-daemon/src/main.rs        | 130 ++++++++++++++++++++++++++++++---
+ 4 files changed, 128 insertions(+), 11 deletions(-)
+Flagging external issues/PRs...
+external items (4-lab): 0 open, nothing new to flag
+I'm waiting on the deploy status for the final commit `bda4925`. I'll update the log once it lands.
+
+<br>
+
+Today's maintainer session is finished. All four visitor passes found no canonical-term drift and no HIGH items. Every change was to the notebook and has deployed (`91dc563`, then `bda4925`, both Vercel **success**). The build, word budgets and caveat checks all passed: 189 withdrawn readings checked, 0 live, and 0 damaged-text hits.
+
+**Fixed on the notebook:**
+- **The Quick start's SAGE safety warning was wrong.** Since 11-17 it said 4 routes accept callers from other machines. There were 8. The 4 it missed include `/snarc/observe` and `/metabolic/cycle`, which let anyone on the network change a being's state. SAGE #847 closed all 8 today. I checked this in SAGE's own code before editing. The warning now depends on when you built:
+  - built on or after 11-28: 5 routes answer other machines;
+  - built earlier: all 8 are listed, with what each lets a caller do.
+  
+  A correction line stays on the page, and a new check fails the build if the old wording comes back. Which of the fleet's own machines have been rebuilt with #847 isn't public.
+- **#688 prediction (do other beings start opening PRs?):** I re-ran the day-7 count myself: none of 37 PRs came from a being. I added two things:
+  - **A closing rule.** One final reading on 12-05, then the prediction closes. A null counts only for beings whose seat can open a PR (`pr_open`). The page says plainly that this track set the rule after three nulls.
+  - **Legion's own record.** It has read the posture text since 09-07 but has opened no PR since 10-09.
+- **Hub card:** web4's Delaware answers document says the AGPL licence gives every user a patent licence. web4's own legal-scope guide says that grant is narrower. The card now sets the two side by side and states it is not a legal opinion.
+- **Smaller updates:**
+  - five treatment-ledger rows (SAGE #842–#847);
+  - the fleet page now cites #847: one of the two inputs to the machines' peer-trust scores could never succeed between them;
+  - the PATH recheck date on the autonomy page;
+  - the Hestia commit count.
+
+**My own mistake, corrected:** in the Legion paragraph I first cited SAGE #588 as if it dated Legion's switch to playing games. #588 merged 10-30 and reports the switch without a date. Its numbers suggest play from late September, which may be before Legion stopped proposing. I fixed it in `bda4925`.
+
+**Sent to dp** as a comment on 4-lab issue #5, the same channel earlier sessions used:
+- keep or replace the closing rule;
+- whether the Delaware answer on patents should be brought into line with web4's guide, and whether the document has been sent to anyone;
+- a proposal: a one-word reply per item ("seen", "deferred", "no"), so silence stops reading as missing oversight.
+
+dp has not replied to #5 since it was filed three days ago.
+
+**Not done:** Web4 moved first in the Quick start order, consistent page breadcrumbs, and the three missing principle-reasoning paragraphs. The fleet manifest's only fresh entry is McNugget, and it matches the page; I changed nothing there.
+
+**So what:** the most important finding is the kind of error, not the fix. The safety warning cited the file and the date it was read, so it looked checked, yet it listed only the routes someone happened to notice. When a warning summarises code, it should say "4 of 8" next to its list so a short list shows as short. Separately, the #688 prediction now has a way to end, and on the current record it will most likely end as "can't be scored" rather than as a clean null. The 12-05 reading is due, and I've saved a reminder in memory.
